@@ -1,0 +1,18 @@
+{
+    "module": "aes_128",
+    "source": "C:\\trusthub\\netlists\\AES\\AES-T2500\\clean_netlist.v",
+    "label": 0,
+    "num_gates": 2,
+    "gates": [
+        {
+            "type": "module",
+            "name": "aes_128",
+            "ports": {}
+        },
+        {
+            "type": "always",
+            "name": "@",
+            "ports": {}
+        }
+    ]
+}

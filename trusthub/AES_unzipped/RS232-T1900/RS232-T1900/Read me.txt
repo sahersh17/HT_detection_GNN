@@ -1,0 +1,40 @@
+1.Home directory includes:
+ 1.1 src
+ ---uart_scan_route.v: Layout netlist of Trojan-inserted circuit
+ ---uart_scan_route.def: DEF file of the layout.
+ 1.2 pattren
+ --PathDelay: includes patterns for path delay
+ --StuckAt: includes patterns for stuck at
+ --TransitionDelay: includes patterns for transition delay
+ 1.3 Spec.doc
+ ---Specification
+ 1.4 RS232-T1900.pdf
+ ---Evaluation results
+ 
+2.Trojan
+  Trojan Description
+	Trojan trigger is a sequential comparator. Trigger input probability is 3.37e-6  while it is externally controlled. Whenever Trojan gets triggered, its payload gains control over xmit_doneH primary output signal.
+
+  Trojan Taxonomy
+	Abstraction level: Layout-level
+	Activation mechanism: Externally conditionally triggered
+	Effects: Change functionality
+	Physical characteristics: Functional 
+
+  Trojan Circuit
+	AND2X1  U309 (.A(sys_clk), .B(ena), .Y(sys_clk_temp));
+	SDFFSRX1  iDatasend_reg_1 (.CK(sys_clk_temp), .D(iRECEIVER_state_0_temp), .Q(n400), .RN(n264), .SE(test_se), .SI(iXMIT_bitCell_cntrH_0_), .SN(1'b1)); 
+	SDFFSRX1  iDatasend_reg_2 (.CK(sys_clk_temp), .D(n190_temp), .Q(n401), .RN(n266), .SE(test_se), .SI(iXMIT_state_2_), .SN(1'b1));
+	SDFFSRX1  iDatasend_reg_3 (.CK(sys_clk_temp), .D(uart_REC_dataH_temp), .Q(n402), .RN(1'b1), .SE(test_se), .SI(iRECEIVER_rec_datH), .SN(n266));
+	SDFFSRX1  iDatasend_reg_4 (.CK(sys_clk_temp), .D(iRECEIVER_rec_datSyncH_temp), .Q(n403_temp), .RN(1'b1), .SE(test_se), .SI(rec_dataH_rec[7]), SN(n266));
+	AND2X1  U305 (.A(ena), .B(iRECEIVER_state_0_), .Y(iRECEIVER_state_0_temp));
+	AND2X1  U306 (.A(ena), .B(n190), .Y(n190_temp));
+	AND2X1  U307 (.A(ena), .B(uart_REC_dataH), .Y(uart_REC_dataH_temp));
+	AND2X1  U308 (.A(ena), .B(iRECEIVER_rec_datSyncH), .Y(iRECEIVER_rec_datSyncH_temp));
+	AND2X1  U304 (.A(ena), .B(n403_temp), .Y(n403));
+	NAND3X1  U400 (.A(iXMIT_next_state_2_), .B(iXMIT_N46), .C(ena), .Y(iXMIT_state_CTRL_2));
+	NAND4X1  U292 (.A(ena), .B(iXMIT_state_0_), .C(iXMIT_state_1_), .D(iXMIT_state_2_), .Y(iXMIT_state_CTRL_1));
+	NAND4X1  U293 (.A(ena), .B(iXMIT_N45), .C(iXMIT_N44), .D(iXMIT_N29), .Y(iXMIT_N_CTRL_1_));
+	NAND4X1  U294 (.A(n400), .B(n401), .C(n402), .D(n403), .Y(iXMIT_N_CTRL_2_));
+	OR4X1  U296 (.A(iXMIT_state_CTRL_2), .B(iXMIT_N_CTRL_1_), .C(iXMIT_N_CTRL_2_), .D(iXMIT_state_CTRL_1), .Y(iXMIT_CRTL));	
+	AND2X1  U303 (.A(iXMIT_CRTL), .B(xmit_doneH_temp), .Y(xmit_doneH));

@@ -1,0 +1,14 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
+
+-- Executing script file `C:\trusthub\netlists\RS232\RS232-T300\standard.ys' --
+
+1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmpsi1wovf2\u_rec.v
+Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmpsi1wovf2\u_rec.v' to AST representation.
+
+ERROR: Can't open include file `/home/salmani_h/Trust_HUB/Trojan_Inserted/inc.h'!

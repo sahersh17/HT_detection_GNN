@@ -1,0 +1,18 @@
+{
+    "module": "uart",
+    "source": "C:\\trusthub\\netlists\\RS232\\RS232-T2400\\tjin_netlist.v",
+    "label": -1,
+    "num_gates": 2,
+    "gates": [
+        {
+            "type": "module",
+            "name": "uart",
+            "ports": {}
+        },
+        {
+            "type": "always",
+            "name": "@",
+            "ports": {}
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+1.Home directory includes:
+ 1.1 src
+ ---uart.v Source code
+ 1.2 pattren
+ --PathDelay: includes patterns for path delay
+ --StuckAt: includes patterns for stuck at
+ --TransitionDelay: includes patterns for transition delay
+ 1.3 Spec.doc
+ ---Specification
+ 1.4 RS232-T1000.pdf
+ ---Evaluation results
+
+2.Trojan
+  Trojan Description
+	Trojan trigger is a combinational comparator whose trigger input probability is 3.55e-13. Whenever Trojan gets triggered, its payload gains control over one primary output signal and two internal signals. 
+
+  Trojan Taxonomy
+	Insertion phase: Design
+	Abstraction level: Gate-level
+	Activation mechanism: Internally conditionally triggered
+	Effects: Change functionality
+	Physical characteristics: Functional 
+
+  Trojan Circuit	
+	NAND4X1 U293(.A(n251),.B(n239),.C(n242),.D(n246),.Y(iXMIT_N_CTRL_1_));
+	NAND4X1 U294(.A(iXMIT_N28),.B(iXMIT_N27),.C(iXMIT_N26),.D(iXMIT_N25),.Y(iXMIT_N_CTRL_2_));
+	NAND4X1 U295(.A(iXMIT_N24),.B(iXMIT_xmit_ShiftRegH_7_),.C(iXMIT_xmit_ShiftRegH_6_),.D(iXMIT_xmit_ShiftRegH_5_),.Y(iXMIT_xmit_CTRL));
+	OR4X1   U296(.A(1'b0),.B(iXMIT_N_CTRL_1_),.C(iXMIT_N_CTRL_2_),.D(iXMIT_xmit_CTRL),.Y(iXMIT_CRTL));  
+	NAND4X1 U297(.A(iRECEIVER_next_state_2_),.B(iRECEIVER_state_0_),.C(iRECEIVER_state_1_),.D(iRECEIVER_state_2_),.Y(iRECEIVER_state_CTRL));
+	NAND4X1 U298(.A(iRECEIVER_N28),.B(iRECEIVER_N27),.C(iRECEIVER_N26),.D(iRECEIVER_N23),.Y(iRECEIVER_N_CTRL_1_));
+	NAND4X1 U299(.A(iRECEIVER_N22),.B(iRECEIVER_N21),.C(iRECEIVER_N20),.D(iRECEIVER_N19),.Y(iRECEIVER_N_CTRL_2_));
+	NAND4X1 U300(.A(iRECEIVER_N18),.B(iRECEIVER_N17),.C(iRECEIVER_bitCell_cntrH_0_),.D(iRECEIVER_bitCell_cntrH_1_),.Y(iRECEIVER_bitCell_CTRL));
+	OR4X1   U301(.A(iRECEIVER_state_CTRL),.B(iRECEIVER_N_CTRL_1_),.C(iRECEIVER_N_CTRL_2_),.D(iRECEIVER_bitCell_CTRL),.Y(iRECEIVER_CTRL));
+	OR2X1   U302(.A(iXMIT_CRTL),.B(iRECEIVER_CTRL),.Y(iCTRL));
+	AND2X1  U303(.A(iCTRL),.B(xmit_doneH_temp),.Y(xmit_doneH));
+	AND2X1  U304(.A(iCTRL),.B(rec_dataH_rec_0_temp),.Y(rec_dataH_rec[0]));
+	AND2X1  U305(.A(iCTRL),.B(iXMIT_state_1_temp),.Y(iXMIT_state_1_));

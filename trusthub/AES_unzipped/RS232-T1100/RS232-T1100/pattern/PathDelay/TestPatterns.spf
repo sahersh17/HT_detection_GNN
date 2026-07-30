@@ -1,0 +1,311 @@
+STIL 1.0 { Design 2005; }
+Header {
+   Title "  TetraMAX (TM)  D-2010.03-SP5-2-i101213_153359 STIL output";
+   Date "Mon Oct 10 17:41:15 2011";
+   Source "Minimal STIL for design `uart'";
+   History {
+      Ann {*  Thu Jul 29 15:46:39 2010  *}
+      Ann {*  DFT Compiler Y-2006.06-SP2  *}
+      Ann {*   Uncollapsed Path_delay Fault Summary Report *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* fault class                     code   #faults *}
+      Ann {* ------------------------------  ----  --------- *}
+      Ann {* Detected                         DT         29 *}
+      Ann {* Possibly detected                PT          0 *}
+      Ann {* Undetectable                     UD          0 *}
+      Ann {* ATPG untestable                  AU         11 *}
+      Ann {* Not detected                     ND          0 *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* total faults                                40 *}
+      Ann {* test coverage                            72.50% *}
+      Ann {* fault coverage                           72.50% *}
+      Ann {* ATPG effectiveness                      100.00% *}
+      Ann {* ----------------------------------------------- *}
+      Ann {*  *}
+      Ann {*            Pattern Summary Report *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* #internal patterns                           6 *}
+      Ann {*     #full_sequential patterns                6 *}
+      Ann {* ----------------------------------------------- *}
+      Ann {*  *}
+      Ann {* rule  severity  #fails  description *}
+      Ann {* ----  --------  ------  --------------------------------- *}
+      Ann {* N23   warning        1  inconsistent UDP *}
+      Ann {* V14   warning        1  missing state *}
+      Ann {* P22   warning        3  off-path node values not satisfiable *}
+      Ann {*  *}
+      Ann {* clock_name        off  usage *}
+      Ann {* ----------------  ---  -------------------------- *}
+      Ann {* sys_clk            0   master shift  *}
+      Ann {* sys_rst_l          1    *}
+      Ann {*  *}
+      Ann {* port_name         constraint_value *}
+      Ann {* ----------------  --------------- *}
+      Ann {* sys_rst_l           1 *}
+      Ann {* test_mode           1 *}
+      Ann {*  *}
+      Ann {* There are no equivalent pins *}
+      Ann {* There are no net connections *}
+      Ann {* Unified STIL Flow *}
+      Ann {* serial_flag = 1 *}
+   }
+}
+Signals {
+   "sys_clk" In; "sys_rst_l" In; "xmitH" In; "xmit_dataH[7]" In; "xmit_dataH[6]" In;
+   "xmit_dataH[5]" In; "xmit_dataH[4]" In; "xmit_dataH[3]" In; "xmit_dataH[2]" In;
+   "xmit_dataH[1]" In; "xmit_dataH[0]" In; "uart_REC_dataH" In; "test_mode" In; "test_se" In;
+   "test_si" In { ScanIn; } "uart_XMIT_dataH" Out; "xmit_doneH" Out; "rec_dataH[7]" Out;
+   "rec_dataH[6]" Out; "rec_dataH[5]" Out; "rec_dataH[4]" Out; "rec_dataH[3]" Out;
+   "rec_dataH[2]" Out; "rec_dataH[1]" Out; "rec_dataH[0]" Out; "rec_readyH" Out; "test_so" Out
+   { ScanOut; }
+}
+SignalGroups {
+   "_pi" = '"sys_clk" + "sys_rst_l" + "uart_REC_dataH" + "xmitH" +
+   "xmit_dataH[0]" + "xmit_dataH[1]" + "xmit_dataH[2]" + "xmit_dataH[3]" +
+   "xmit_dataH[4]" + "xmit_dataH[5]" + "xmit_dataH[6]" + "xmit_dataH[7]" +
+   "test_mode" + "test_se" + "test_si"'; // #signals=15
+   "_in" = '"sys_clk" + "sys_rst_l" + "xmitH" + "xmit_dataH[7]" +
+   "xmit_dataH[6]" + "xmit_dataH[5]" + "xmit_dataH[4]" + "xmit_dataH[3]" +
+   "xmit_dataH[2]" + "xmit_dataH[1]" + "xmit_dataH[0]" + "uart_REC_dataH" +
+   "test_mode" + "test_se" + "test_si"'; // #signals=15
+   "all_inputs" = '"sys_clk" + "sys_rst_l" + "uart_REC_dataH" + "xmitH" +
+   "xmit_dataH[0]" + "xmit_dataH[1]" + "xmit_dataH[2]" + "xmit_dataH[3]" +
+   "xmit_dataH[4]" + "xmit_dataH[5]" + "xmit_dataH[6]" + "xmit_dataH[7]" +
+   "test_mode" + "test_se" + "test_si"'; // #signals=15
+   "_po" = '"rec_dataH[0]" + "rec_dataH[1]" + "rec_dataH[2]" + "rec_dataH[3]" +
+   "rec_dataH[4]" + "rec_dataH[5]" + "rec_dataH[6]" + "rec_dataH[7]" +
+   "rec_readyH" + "uart_XMIT_dataH" + "xmit_doneH" + "test_so"'; // #signals=12
+   "_si" = '"test_si"' { ScanIn; } // #signals=1
+   "all_outputs" = '"rec_dataH[0]" + "rec_dataH[1]" + "rec_dataH[2]" +
+   "rec_dataH[3]" + "rec_dataH[4]" + "rec_dataH[5]" + "rec_dataH[6]" +
+   "rec_dataH[7]" + "rec_readyH" + "uart_XMIT_dataH" + "xmit_doneH" + "test_so"';
+   // #signals=12
+   "all_ports" = '"all_inputs" + "all_outputs"'; // #signals=27
+   "_clk" = '"sys_clk" + "sys_rst_l"'; // #signals=2
+   "_so" = '"test_so"' { ScanOut; } // #signals=1
+   "_out" = '"uart_XMIT_dataH" + "xmit_doneH" + "rec_dataH[7]" + "rec_dataH[6]" +
+   "rec_dataH[5]" + "rec_dataH[4]" + "rec_dataH[3]" + "rec_dataH[2]" +
+   "rec_dataH[1]" + "rec_dataH[0]" + "rec_readyH" + "test_so"'; // #signals=12
+}
+Timing {
+   WaveformTable "_launch_capture_WFT_" {
+      Period '10ns';
+      Waveforms {
+         "all_inputs" { 0 { '0ns' D; } }
+         "all_inputs" { 1 { '0ns' U; } }
+         "all_inputs" { Z { '0ns' Z; } }
+         "all_inputs" { N { '0ns' N; } }
+         "all_outputs" { X { '0ns' X; '4ns' X; } }
+         "all_outputs" { H { '0ns' X; '4ns' H; } }
+         "all_outputs" { L { '0ns' X; '4ns' L; } }
+         "all_outputs" { T { '0ns' X; '4ns' T; } }
+         "sys_clk" { P { '0ns' D; '5ns' U; '10ns' D; } }
+         "sys_rst_l" { P { '0ns' U; '5ns' D; '10ns' U; } }
+      }
+   }
+   WaveformTable "_launch_WFT_" {
+      Period '10ns';
+      Waveforms {
+         "all_inputs" { 0 { '0ns' D; } }
+         "all_inputs" { 1 { '0ns' U; } }
+         "all_inputs" { Z { '0ns' Z; } }
+         "all_inputs" { N { '0ns' N; } }
+         "all_outputs" { X { '0ns' X; '4ns' X; } }
+         "all_outputs" { H { '0ns' X; '4ns' H; } }
+         "all_outputs" { L { '0ns' X; '4ns' L; } }
+         "all_outputs" { T { '0ns' X; '4ns' T; } }
+         "sys_clk" { P { '0ns' D; '5ns' U; '10ns' D; } }
+         "sys_rst_l" { P { '0ns' U; '5ns' D; '10ns' U; } }
+      }
+   }
+   WaveformTable "_capture_WFT_" {
+      Period '10ns';
+      Waveforms {
+         "all_inputs" { 0 { '0ns' D; } }
+         "all_inputs" { 1 { '0ns' U; } }
+         "all_inputs" { Z { '0ns' Z; } }
+         "all_inputs" { N { '0ns' N; } }
+         "all_outputs" { X { '0ns' X; '4ns' X; } }
+         "all_outputs" { H { '0ns' X; '4ns' H; } }
+         "all_outputs" { L { '0ns' X; '4ns' L; } }
+         "all_outputs" { T { '0ns' X; '4ns' T; } }
+         "sys_clk" { P { '0ns' D; '5ns' U; '10ns' D; } }
+         "sys_rst_l" { P { '0ns' U; '5ns' D; '10ns' U; } }
+      }
+   }
+   WaveformTable "_default_WFT_" {
+      Period '10ns';
+      Waveforms {
+         "all_inputs" { 0 { '0ns' D; } }
+         "all_inputs" { 1 { '0ns' U; } }
+         "all_inputs" { Z { '0ns' Z; } }
+         "all_inputs" { N { '0ns' N; } }
+         "all_outputs" { X { '0ns' X; '4ns' X; } }
+         "all_outputs" { H { '0ns' X; '4ns' H; } }
+         "all_outputs" { L { '0ns' X; '4ns' L; } }
+         "all_outputs" { T { '0ns' X; '4ns' T; } }
+         "sys_clk" { P { '0ns' D; '5ns' U; '10ns' D; } }
+         "sys_rst_l" { P { '0ns' U; '5ns' D; '10ns' U; } }
+      }
+   }
+}
+ScanStructures {
+   ScanChain "1" {
+      ScanLength 58;
+      ScanIn "test_si";
+      ScanOut "test_so";
+      ScanInversion 0;
+      ScanCells "uart.iRECEIVER_bitCell_cntrH_reg_0_.SI" "uart.iRECEIVER_bitCell_cntrH_reg_1_.SI" 
+      "uart.iRECEIVER_bitCell_cntrH_reg_2_.SI" "uart.iRECEIVER_bitCell_cntrH_reg_3_.SI" 
+      "uart.iRECEIVER_par_dataH_reg_0_.SI" "uart.iRECEIVER_par_dataH_reg_1_.SI" 
+      "uart.iRECEIVER_par_dataH_reg_2_.SI" "uart.iRECEIVER_par_dataH_reg_3_.SI" 
+      "uart.iRECEIVER_par_dataH_reg_4_.SI" "uart.iRECEIVER_par_dataH_reg_5_.SI" 
+      "uart.iRECEIVER_par_dataH_reg_6_.SI" "uart.iRECEIVER_par_dataH_reg_7_.SI" 
+      "uart.iRECEIVER_rec_datH_reg.SI" "uart.iRECEIVER_rec_datSyncH_reg.SI" 
+      "uart.iRECEIVER_rec_readyH_reg.SI" "uart.iRECEIVER_recd_bitCntrH_reg_0_.SI" 
+      "uart.iRECEIVER_recd_bitCntrH_reg_1_.SI" "uart.iRECEIVER_recd_bitCntrH_reg_2_.SI" 
+      "uart.iRECEIVER_recd_bitCntrH_reg_3_.SI" "uart.iRECEIVER_state_reg_0_.SI" 
+      "uart.iRECEIVER_state_reg_1_.SI" "uart.iRECEIVER_state_reg_2_.SI" 
+      "uart.iXMIT_bitCell_cntrH_reg_0_.SI" "uart.iXMIT_bitCell_cntrH_reg_1_.SI" 
+      "uart.iXMIT_bitCell_cntrH_reg_2_.SI" "uart.iXMIT_bitCell_cntrH_reg_3_.SI" 
+      "uart.iXMIT_bitCountH_reg_0_.SI" "uart.iXMIT_bitCountH_reg_1_.SI" 
+      "uart.iXMIT_bitCountH_reg_2_.SI" "uart.iXMIT_bitCountH_reg_3_.SI" 
+      "uart.iXMIT_state_reg_0_.SI" "uart.iXMIT_state_reg_1_.SI" "uart.iXMIT_state_reg_2_.SI" 
+      "uart.iXMIT_xmit_ShiftRegH_reg_0_.SI" "uart.iXMIT_xmit_ShiftRegH_reg_1_.SI" 
+      "uart.iXMIT_xmit_ShiftRegH_reg_2_.SI" "uart.iXMIT_xmit_ShiftRegH_reg_3_.SI" 
+      "uart.iXMIT_xmit_ShiftRegH_reg_4_.SI" "uart.iXMIT_xmit_ShiftRegH_reg_5_.SI" 
+      "uart.iXMIT_xmit_ShiftRegH_reg_6_.SI" "uart.iXMIT_xmit_ShiftRegH_reg_7_.SI" 
+      "uart.iXMIT_xmit_doneH_reg.SI" "uart.rec_dataH_reg_0_.SI" "uart.rec_dataH_reg_1_.SI" 
+      "uart.rec_dataH_reg_2_.SI" "uart.rec_dataH_reg_3_.SI" "uart.rec_dataH_reg_4_.SI" 
+      "uart.rec_dataH_reg_5_.SI" "uart.rec_dataH_reg_6_.SI" "uart.rec_dataH_reg_7_.SI" 
+      "uart.rec_dataH_temp_reg_0_.SI" "uart.rec_dataH_temp_reg_1_.SI" 
+      "uart.rec_dataH_temp_reg_2_.SI" "uart.rec_dataH_temp_reg_3_.SI" 
+      "uart.rec_dataH_temp_reg_4_.SI" "uart.rec_dataH_temp_reg_5_.SI" 
+      "uart.rec_dataH_temp_reg_6_.SI" "uart.rec_dataH_temp_reg_7_.SI" ;
+      ScanMasterClock "sys_clk" ;
+   }
+}
+PatternBurst "_burst_" {
+   PatList { "_pattern_" {
+   }
+}}
+PatternExec {
+   PatternBurst "_burst_";
+}
+Procedures {
+   "capture" {
+      W "_default_WFT_";
+      F { "sys_rst_l"=1; "test_mode"=1; }
+      C { "all_inputs"=01\r10 N 1NN; "all_outputs"=\r12 X ; }
+      V { "_pi"=\r15 # ; }
+      V { "_po"=\r12 # ; }
+   }
+   "capture_sys_clk" {
+      W "_default_WFT_";
+      F { "sys_rst_l"=1; "test_mode"=1; }
+      C { "all_inputs"=01\r10 N 1NN; "all_outputs"=\r12 X ; }
+      "forcePI": V { "_pi"=\r15 # ; }
+      "measurePO": V { "_po"=\r12 # ; }
+      C { "rec_dataH[0]"=X; "rec_dataH[1]"=X; "rec_dataH[2]"=X; "rec_dataH[3]"=X; "rec_dataH[4]"=X; 
+         "rec_dataH[5]"=X; "rec_dataH[6]"=X; "rec_dataH[7]"=X; "rec_readyH"=X; "uart_XMIT_dataH"=X; 
+         "xmit_doneH"=X; }
+      "pulse": V { "sys_clk"=P; }
+   }
+   "capture_sys_rst_l" {
+      W "_default_WFT_";
+      F { "sys_rst_l"=1; "test_mode"=1; }
+      C { "all_inputs"=01\r10 N 1NN; "all_outputs"=\r12 X ; }
+      "forcePI": V { "_pi"=\r15 # ; }
+      "measurePO": V { "_po"=\r12 # ; }
+      C { "rec_dataH[0]"=X; "rec_dataH[1]"=X; "rec_dataH[2]"=X; "rec_dataH[3]"=X; "rec_dataH[4]"=X; 
+         "rec_dataH[5]"=X; "rec_dataH[6]"=X; "rec_dataH[7]"=X; "rec_readyH"=X; "uart_XMIT_dataH"=X; 
+         "xmit_doneH"=X; }
+      "pulse": V { "sys_rst_l"=P; }
+   }
+   "load_unload" {
+      W "_default_WFT_";
+      C { "all_inputs"=01\r10 N 1NN; "all_outputs"=\r12 X ; }
+      "Internal_scan_pre_shift": V { "_clk"=01; "_si"=N; "_so"=X; "test_se"=1; }
+      Shift {          W "_default_WFT_";
+         V { "_clk"=P1; "_si"=#; "_so"=#; }
+      }
+   }
+}
+MacroDefs {
+   "test_setup" {
+      W "_default_WFT_";
+      C { "all_inputs"=\r15 N ; "all_outputs"=\r12 X ; }
+      V { "sys_clk"=0; "sys_rst_l"=1; }
+      V { "sys_rst_l"=P; }
+      V { "sys_rst_l"=1; "test_mode"=1; }
+   }
+}
+Pattern "_pattern_" {
+   W "_default_WFT_";
+   "precondition all Signals": C { "_pi"=\r15 0 ; "_po"=\r12 X ; }
+   Macro "test_setup";
+   Ann {* full_sequential *}
+   "pattern 0": Call "load_unload" { 
+      "test_si"=1101010010010000111000010011101111010101110111100001100011; }
+   V { "_pi"=011100101100101; }
+   W "_launch_WFT_";
+   V { "sys_clk"=P; }
+   W "_capture_WFT_";
+   V { "sys_clk"=P; }
+   W "_default_WFT_";
+   Ann {* full_sequential *}
+   "pattern 1": Call "load_unload" { 
+      "test_so"=HLLLLHHLHLLLLHHLLHHLLLLHLHLLHHLLLLLLLLHHHHLLHHHLLLLHHLLLLL; 
+      "test_si"=1011010110010101010101010011100011100111010010010001111101; }
+   V { "_pi"=011110110101100; }
+   W "_launch_WFT_";
+   V { "sys_clk"=P; }
+   W "_capture_WFT_";
+   V { "sys_clk"=P; }
+   W "_default_WFT_";
+   Ann {* full_sequential *}
+   "pattern 2": Call "load_unload" { 
+      "test_so"=LHLLLHHHLHLLLHHHLHLHLHLHLHLHHLLLLLLHHLLHLHLLHHLHLLLHHHLLLL; 
+      "test_si"=0111101100101011001010101011100011100110010100101001011110; }
+   V { "_pi"=010100000100100; }
+   W "_launch_WFT_";
+   V { "sys_clk"=P; }
+   W "_capture_WFT_";
+   V { "sys_clk"=P; }
+   W "_default_WFT_";
+   Ann {* full_sequential *}
+   "pattern 3": Call "load_unload" { 
+      "test_so"=HLHLLHLHHLHLLHLHLLHLHLHLHHLHHLLLLLLHLHHLLHHLLLLHLHLLHLLLLL; 
+      "test_si"=0101000101010101011010001100101111011010101110001010100010; }
+   V { "_pi"=011000011110100; }
+   W "_launch_WFT_";
+   V { "sys_clk"=P; }
+   W "_capture_WFT_";
+   V { "sys_clk"=P; }
+   W "_default_WFT_";
+   Ann {* full_sequential *}
+   "pattern 4": Call "load_unload" { 
+      "test_so"=LLHLHLHLLLHLHLHLLHHHLHLLLLHHHLHHLLLHLLHLLLLHHHLLHLHLHLLLLL; 
+      "test_si"=1110111011111010101010011111100110100110000011010110101110; }
+   V { "_pi"=010100011111100; }
+   W "_launch_WFT_";
+   V { "sys_clk"=P; }
+   W "_capture_WFT_";
+   V { "sys_clk"=P; }
+   W "_default_WFT_";
+   Ann {* full_sequential *}
+   "pattern 5": Call "load_unload" { 
+      "test_so"=LHLHHLHLLHLHHLHLLLHLHLLHHHHHHLLHHHLLLHHLLLHLLLHLHLHHLHLLLL; 
+      "test_si"=0011001010000111100110000111010110110110011011010010111110; }
+   V { "_pi"=010101011111100; }
+   W "_launch_WFT_";
+   V { "sys_clk"=P; }
+   W "_capture_WFT_";
+   V { "sys_clk"=P; }
+   W "_default_WFT_";
+   Ann {* full_sequential *}
+   "end 5 unload": Call "load_unload" { 
+      "test_so"=LHLLHLHHLHLLHLHHLLLHHLLLLHHHLHLHHHLHLHHLHLLLLLHLHLLHLHLLLL; }
+}
+
+// Patterns reference 35 V statements, generating 434 test cycles

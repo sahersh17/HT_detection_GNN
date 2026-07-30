@@ -1,0 +1,39 @@
+1.Home directory includes:
+ 1.1 src
+ ---uart.v Source code
+ 1.2 pattren
+ --PathDelay: includes patterns for path delay
+ --StuckAt: includes patterns for stuck at
+ --TransitionDelay: includes patterns for transition delay
+ 1.3 Spec.doc
+ ---Specification
+ 1.4 RS232-T1200.pdf
+ ---Evaluation results
+
+2.Trojan
+  Trojan Description
+	Trojan trigger is a sequential comparator whose trigger input probability is 5.00e-11. Whenever Trojan gets triggered, its payload gains control over xmit_doneH primary output signal. 
+
+  Trojan Taxonomy
+	Insertion phase: Design
+	Abstraction level: Gate-level
+	Activation mechanism: Internally conditionally triggered
+	Effects: Change functionality
+	Physical characteristics: Functional 
+
+  Trojan Circuit	
+	SDFFSRX1 iDatasend_reg_1 ( .D(iXMIT_N27), .SI(iXMIT_bitCell_cntrH_0_), .SE(test_se), .CK(sys_clk), .SN(1'b1), .RN(n264), .Q(n400) );
+	SDFFSRX1 iDatasend_reg_2 ( .D(n190), .SI(iXMIT_state_2_), .SE(test_se), .CK(sys_clk), .SN(1'b1), .RN(n266), .Q(n401));
+	SDFFSRX1 iDatasend_reg_3 ( .D(uart_REC_dataH), .SI(iRECEIVER_rec_datH), .SE(test_se), .CK(sys_clk), .SN(n266), .RN(1'b1),.Q(n402) );
+	SDFFSRX1 iDatasend_reg_4 ( .D(iRECEIVER_rec_datSyncH), .SI(rec_dataH_rec[7]), .SE(test_se), .CK(sys_clk), .SN(n266), .RN(1'b1),.Q(n403));
+	NAND4X1 U292(.A(iXMIT_next_state_2_),.B(iXMIT_state_0_),.C(iXMIT_state_1_),.D(iXMIT_state_2_),.Y(iXMIT_state_CTRL));
+	NAND4X1 U293(.A(iXMIT_N46),.B(iXMIT_N45),.C(iXMIT_N44),.D(iXMIT_N29),.Y(iXMIT_N_CTRL_1_));
+	NAND4X1 U294(.A(iXMIT_N28),.B(iXMIT_N27),.C(iXMIT_N26),.D(iXMIT_N25),.Y(iXMIT_N_CTRL_2_));
+	NAND4X1 U295(.A(iXMIT_N24),.B(iXMIT_xmit_ShiftRegH_7_),.C(iXMIT_xmit_ShiftRegH_6_),.D(iXMIT_xmit_ShiftRegH_5_),.Y(iXMIT_xmit_CTRL));
+	OR4X1   U296(.A(iXMIT_state_CTRL),.B(iXMIT_N_CTRL_1_),.C(iXMIT_N_CTRL_2_),.D(iXMIT_xmit_CTRL),.Y(iXMIT_CRTL));
+	NAND4X1 U297(.A(iRECEIVER_next_state_2_),.B(iRECEIVER_state_0_),.C(iRECEIVER_state_1_),.D(iRECEIVER_state_2_),.Y(iRECEIVER_state_CTRL));
+	NAND4X1 U300(.A(n400),.B(n401),.C(n402),.D(n403),.Y(iRECEIVER_bitCell_CTRL));
+	OR2X1   U301(.A(iRECEIVER_state_CTRL), .B(iRECEIVER_bitCell_CTRL), .Y(iRECEIVER_CTRL));
+	OR2X1   U302(.A(iXMIT_CRTL),.B(iRECEIVER_CTRL),.Y(iCTRL));
+	AND2X1  U303(.A(iCTRL),.B(xmit_doneH_temp),.Y(xmit_doneH));
+	

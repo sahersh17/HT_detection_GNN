@@ -1,0 +1,2691 @@
+{
+    "module": "uart",
+    "source": "C:\\trusthub\\netlists\\RS232\\RS232-T1200\\90nm_netlist.v",
+    "label": -1,
+    "num_gates": 274,
+    "gates": [
+        {
+            "type": "module",
+            "name": "uart",
+            "ports": {}
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U1",
+            "ports": {
+                "IN1": "n196",
+                "IN2": "iXMIT_xmit_ShiftRegH_1_",
+                "Q": "n174",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U10",
+            "ports": {
+                "IN": "n11",
+                "QN": "n106"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U100",
+            "ports": {
+                "IN1": "n242",
+                "IN2": "n57",
+                "QN": "n62"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U101",
+            "ports": {
+                "IN1": "n254",
+                "IN2": "n75",
+                "QN": "n57"
+            }
+        },
+        {
+            "type": "NAND3X4",
+            "name": "U102",
+            "ports": {
+                "IN1": "iXMIT_bitCell_cntrH_2_",
+                "IN2": "iXMIT_bitCell_cntrH_1_",
+                "IN3": "iXMIT_bitCell_cntrH_3_",
+                "QN": "n75"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U103",
+            "ports": {
+                "IN1": "n106",
+                "IN2": "rec_readyH",
+                "Q": "n133",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U104",
+            "ports": {
+                "IN1": "n109",
+                "IN2": "iRECEIVER_recd_bitCntrH_2_",
+                "Q": "n134",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U105",
+            "ports": {
+                "IN1": "rec_dataH_temp[0]",
+                "IN2": "xmit_doneH_temp",
+                "Q": "n135",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U106",
+            "ports": {
+                "IN1": "n238",
+                "IN2": "n245",
+                "IN3": "n77",
+                "QN": "iRECEIVER_rec_readyInH"
+            }
+        },
+        {
+            "type": "NAND3X4",
+            "name": "U107",
+            "ports": {
+                "IN1": "n241",
+                "IN2": "n238",
+                "IN3": "iRECEIVER_rec_datH",
+                "QN": "n77"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U108",
+            "ports": {
+                "IN1": "n79",
+                "IN2": "n80",
+                "Q": "iRECEIVER_next_state_2_"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U109",
+            "ports": {
+                "IN1": "n81",
+                "IN2": "n82",
+                "IN3": "n18",
+                "IN4": "n83",
+                "QN": "iRECEIVER_next_state_1_"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U11",
+            "ports": {
+                "IN1": "n243",
+                "IN2": "n8",
+                "IN3": "iRECEIVER_recd_bitCntrH_0_",
+                "IN4": "n9",
+                "QN": "n11"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U110",
+            "ports": {
+                "IN1": "rec_dataH_rec[0]",
+                "IN2": "rec_dataH[7]",
+                "Q": "n136",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U111",
+            "ports": {
+                "IN1": "n238",
+                "IN2": "iRECEIVER_state_0_",
+                "QN": "n8"
+            }
+        },
+        {
+            "type": "NAND3X4",
+            "name": "U112",
+            "ports": {
+                "IN1": "n241",
+                "IN2": "n238",
+                "IN3": "n248",
+                "QN": "n82"
+            }
+        },
+        {
+            "type": "ISOLORX8",
+            "name": "U113",
+            "ports": {
+                "D": "iRECEIVER_state_0_",
+                "ISO": "n84",
+                "Q": "n81"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U114",
+            "ports": {
+                "IN1": "iRECEIVER_state_1_",
+                "IN2": "n85",
+                "IN3": "n248",
+                "QN": "n84"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U115",
+            "ports": {
+                "IN1": "n116",
+                "IN2": "iRECEIVER_bitCell_cntrH_3_",
+                "Q": "n138",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U116",
+            "ports": {
+                "IN1": "n83",
+                "IN2": "n238",
+                "IN3": "n86",
+                "IN4": "n87",
+                "QN": "iRECEIVER_next_state_0_"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U117",
+            "ports": {
+                "IN1": "n88",
+                "IN2": "iRECEIVER_state_1_",
+                "IN3": "iRECEIVER_rec_datH",
+                "IN4": "n241",
+                "QN": "n87"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U118",
+            "ports": {
+                "IN1": "n80",
+                "IN2": "iRECEIVER_recd_bitCntrH_3_",
+                "IN3": "n89",
+                "IN4": "n243",
+                "QN": "n86"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U119",
+            "ports": {
+                "IN1": "rec_dataH_temp[1]",
+                "IN2": "rec_dataH[0]",
+                "Q": "n139",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U12",
+            "ports": {
+                "IN": "n12",
+                "QN": "n109"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U120",
+            "ports": {
+                "IN1": "iRECEIVER_recd_bitCntrH_2_",
+                "IN2": "iRECEIVER_recd_bitCntrH_1_",
+                "QN": "n89"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U121",
+            "ports": {
+                "IN1": "rec_dataH_rec[1]",
+                "IN2": "rec_dataH_temp[0]",
+                "Q": "n140",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U122",
+            "ports": {
+                "IN1": "n123",
+                "IN2": "rec_dataH_rec[0]",
+                "Q": "n141",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U123",
+            "ports": {
+                "IN1": "n241",
+                "IN2": "n245",
+                "QN": "n80"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U124",
+            "ports": {
+                "IN1": "iRECEIVER_N19",
+                "IN2": "n92",
+                "Q": "iRECEIVER_N23"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U125",
+            "ports": {
+                "IN1": "iRECEIVER_N18",
+                "IN2": "n92",
+                "Q": "iRECEIVER_N22"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U126",
+            "ports": {
+                "IN1": "iRECEIVER_N17",
+                "IN2": "n92",
+                "Q": "iRECEIVER_N21"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U127",
+            "ports": {
+                "IN1": "n255",
+                "IN2": "n92",
+                "Q": "iRECEIVER_N20"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U128",
+            "ports": {
+                "IN1": "n93",
+                "IN2": "n94",
+                "Q": "n92"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U129",
+            "ports": {
+                "IN1": "n88",
+                "IN2": "n245",
+                "IN3": "iRECEIVER_state_2_",
+                "QN": "n94"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U13",
+            "ports": {
+                "IN1": "iRECEIVER_N28",
+                "IN2": "n8",
+                "IN3": "iRECEIVER_recd_bitCntrH_3_",
+                "IN4": "n9",
+                "QN": "n12"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U130",
+            "ports": {
+                "IN1": "rec_dataH_temp[2]",
+                "IN2": "rec_dataH[1]",
+                "Q": "n142",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U131",
+            "ports": {
+                "IN": "n85",
+                "QN": "n88"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U132",
+            "ports": {
+                "IN1": "iRECEIVER_bitCell_cntrH_2_",
+                "IN2": "n255",
+                "IN3": "n244",
+                "IN4": "n256",
+                "QN": "n85"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U133",
+            "ports": {
+                "IN1": "rec_dataH_rec[2]",
+                "IN2": "rec_dataH_temp[1]",
+                "Q": "n143",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U134",
+            "ports": {
+                "IN1": "n130",
+                "IN2": "rec_dataH_rec[1]",
+                "Q": "n145",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U135",
+            "ports": {
+                "IN1": "n79",
+                "IN2": "iRECEIVER_state_0_",
+                "IN3": "n241",
+                "QN": "n93"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U136",
+            "ports": {
+                "IN1": "rec_dataH_temp[3]",
+                "IN2": "rec_dataH[2]",
+                "Q": "n146",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U137",
+            "ports": {
+                "IN": "n91",
+                "QN": "n79"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U138",
+            "ports": {
+                "IN1": "iRECEIVER_bitCell_cntrH_3_",
+                "IN2": "iRECEIVER_bitCell_cntrH_2_",
+                "IN3": "iRECEIVER_bitCell_cntrH_1_",
+                "IN4": "n255",
+                "QN": "n91"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U139",
+            "ports": {
+                "IN1": "rec_dataH_rec[3]",
+                "IN2": "rec_dataH_temp[2]",
+                "Q": "n147",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U14",
+            "ports": {
+                "IN1": "n238",
+                "IN2": "n245",
+                "IN3": "n15",
+                "QN": "n9"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U140",
+            "ports": {
+                "IN1": "n137",
+                "IN2": "rec_dataH_rec[2]",
+                "Q": "n148",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U141",
+            "ports": {
+                "IN1": "rec_dataH_temp[4]",
+                "IN2": "rec_dataH[3]",
+                "Q": "n149",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U142",
+            "ports": {
+                "IN1": "rec_dataH_rec[4]",
+                "IN2": "rec_dataH_temp[3]",
+                "Q": "n150",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U143",
+            "ports": {
+                "IN1": "n144",
+                "IN2": "rec_dataH_rec[3]",
+                "Q": "n152",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U144",
+            "ports": {
+                "IN1": "rec_dataH_temp[5]",
+                "IN2": "rec_dataH[4]",
+                "Q": "n153",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U145",
+            "ports": {
+                "IN1": "rec_dataH_rec[5]",
+                "IN2": "rec_dataH_temp[4]",
+                "Q": "n154",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U146",
+            "ports": {
+                "IN1": "n151",
+                "IN2": "rec_dataH_rec[4]",
+                "Q": "n155",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U147",
+            "ports": {
+                "IN1": "rec_dataH_temp[6]",
+                "IN2": "rec_dataH[5]",
+                "Q": "n156",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U148",
+            "ports": {
+                "IN1": "rec_dataH_rec[6]",
+                "IN2": "rec_dataH_temp[5]",
+                "Q": "n157",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U149",
+            "ports": {
+                "IN1": "n158",
+                "IN2": "rec_dataH_rec[5]",
+                "Q": "n159",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U15",
+            "ports": {
+                "IN1": "iRECEIVER_state_1_",
+                "IN2": "n248",
+                "IN3": "n238",
+                "QN": "n15"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U150",
+            "ports": {
+                "IN1": "rec_dataH_temp[7]",
+                "IN2": "rec_dataH[6]",
+                "Q": "n160",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U151",
+            "ports": {
+                "IN1": "rec_dataH_rec[7]",
+                "IN2": "rec_dataH_temp[6]",
+                "Q": "n161",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U152",
+            "ports": {
+                "IN1": "n165",
+                "IN2": "rec_dataH_rec[6]",
+                "Q": "n162",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U153",
+            "ports": {
+                "IN1": "iRECEIVER_rec_readyInH",
+                "IN2": "iRECEIVER_rec_datSyncH",
+                "Q": "n163",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U154",
+            "ports": {
+                "IN1": "iRECEIVER_next_state_2_",
+                "IN2": "iRECEIVER_state_1_",
+                "Q": "n164",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U155",
+            "ports": {
+                "IN1": "iRECEIVER_N23",
+                "IN2": "iRECEIVER_bitCell_cntrH_2_",
+                "Q": "n166",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U156",
+            "ports": {
+                "IN1": "iRECEIVER_N22",
+                "IN2": "iRECEIVER_bitCell_cntrH_1_",
+                "Q": "n167",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U157",
+            "ports": {
+                "IN1": "iRECEIVER_N21",
+                "IN2": "iRECEIVER_bitCell_cntrH_0_",
+                "Q": "n168",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U158",
+            "ports": {
+                "IN1": "iRECEIVER_N20",
+                "IN2": "test_si",
+                "Q": "n169",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U159",
+            "ports": {
+                "IN1": "iRECEIVER_next_state_0_",
+                "IN2": "iRECEIVER_recd_bitCntrH_3_",
+                "Q": "n170",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U16",
+            "ports": {
+                "IN": "n17",
+                "QN": "n116"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U160",
+            "ports": {
+                "IN1": "iRECEIVER_next_state_1_",
+                "IN2": "iRECEIVER_state_0_",
+                "Q": "n171",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U161",
+            "ports": {
+                "IN1": "iXMIT_xmit_doneInH",
+                "IN2": "iXMIT_xmit_ShiftRegH_7_",
+                "Q": "n172",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U162",
+            "ports": {
+                "IN1": "n193",
+                "IN2": "n281",
+                "Q": "n173",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U163",
+            "ports": {
+                "IN1": "iRECEIVER_rec_datSyncH",
+                "IN2": "rec_dataH_rec[7]",
+                "Q": "n124",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U164",
+            "ports": {
+                "IN1": "uart_REC_dataH",
+                "IN2": "n1",
+                "Q": "n125",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U165",
+            "ports": {
+                "IN1": "n190",
+                "IN2": "n4",
+                "Q": "n126",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U166",
+            "ports": {
+                "IN1": "iXMIT_N27",
+                "IN2": "n5",
+                "Q": "n127",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX0",
+            "name": "U167",
+            "ports": {
+                "IN": "n248",
+                "QN": "n1"
+            }
+        },
+        {
+            "type": "INVX0",
+            "name": "U168",
+            "ports": {
+                "IN": "n242",
+                "QN": "n4"
+            }
+        },
+        {
+            "type": "INVX0",
+            "name": "U169",
+            "ports": {
+                "IN": "n254",
+                "QN": "n5"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U17",
+            "ports": {
+                "IN1": "rec_dataH_rec[1]",
+                "IN2": "n8",
+                "IN3": "rec_dataH_rec[0]",
+                "IN4": "n18",
+                "QN": "n17"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U18",
+            "ports": {
+                "IN": "n19",
+                "QN": "n123"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U19",
+            "ports": {
+                "IN1": "rec_dataH_rec[2]",
+                "IN2": "n8",
+                "IN3": "rec_dataH_rec[1]",
+                "IN4": "n18",
+                "QN": "n19"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U2",
+            "ports": {
+                "IN1": "n199",
+                "IN2": "iXMIT_xmit_ShiftRegH_2_",
+                "Q": "n175",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U20",
+            "ports": {
+                "IN": "n20",
+                "QN": "n130"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U201",
+            "ports": {
+                "IN1": "n80",
+                "IN2": "n91",
+                "QN": "n83"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U202",
+            "ports": {
+                "IN": "n8",
+                "QN": "n18"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U204",
+            "ports": {
+                "IN1": "n67",
+                "IN2": "n68",
+                "QN": "iXMIT_next_state_0_"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U205",
+            "ports": {
+                "IN1": "n42",
+                "IN2": "n43",
+                "QN": "n211"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U206",
+            "ports": {
+                "IN1": "xmit_dataH[7]",
+                "IN2": "n26",
+                "QN": "n43"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U207",
+            "ports": {
+                "IN1": "n63",
+                "IN2": "n44",
+                "QN": "iXMIT_next_state_1_"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U208",
+            "ports": {
+                "IN1": "iXMIT_bitCountH_1_",
+                "IN2": "iXMIT_bitCountH_0_",
+                "QN": "n270"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U209",
+            "ports": {
+                "IN1": "n61",
+                "IN2": "n69",
+                "QN": "n53"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U21",
+            "ports": {
+                "IN1": "rec_dataH_rec[3]",
+                "IN2": "n8",
+                "IN3": "rec_dataH_rec[2]",
+                "IN4": "n18",
+                "QN": "n20"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U210",
+            "ports": {
+                "IN1": "iRECEIVER_recd_bitCntrH_1_",
+                "IN2": "iRECEIVER_recd_bitCntrH_0_",
+                "QN": "n274"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U211",
+            "ports": {
+                "IN1": "iXMIT_bitCell_cntrH_1_",
+                "IN2": "iXMIT_bitCell_cntrH_0_",
+                "QN": "n268"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U212",
+            "ports": {
+                "IN1": "iRECEIVER_bitCell_cntrH_1_",
+                "IN2": "iRECEIVER_bitCell_cntrH_0_",
+                "QN": "n272"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U213",
+            "ports": {
+                "IN1": "n55",
+                "IN2": "n56",
+                "QN": "iXMIT_xmit_doneInH"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U214",
+            "ports": {
+                "IN": "n64",
+                "QN": "n28"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U215",
+            "ports": {
+                "IN1": "iXMIT_bitCell_cntrH_1_",
+                "IN2": "iXMIT_bitCell_cntrH_0_",
+                "Q": "iXMIT_N23"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U216",
+            "ports": {
+                "IN1": "n251",
+                "IN2": "n268",
+                "Q": "iXMIT_N24"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U217",
+            "ports": {
+                "IN1": "n268",
+                "IN2": "n251",
+                "QN": "n269"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U218",
+            "ports": {
+                "IN1": "iXMIT_bitCell_cntrH_3_",
+                "IN2": "n269",
+                "Q": "iXMIT_N25"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U219",
+            "ports": {
+                "IN1": "iXMIT_bitCountH_1_",
+                "IN2": "iXMIT_bitCountH_0_",
+                "Q": "iXMIT_N44"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U22",
+            "ports": {
+                "IN": "n21",
+                "QN": "n137"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U220",
+            "ports": {
+                "IN1": "n247",
+                "IN2": "n270",
+                "Q": "iXMIT_N45"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U221",
+            "ports": {
+                "IN1": "n270",
+                "IN2": "n247",
+                "QN": "n271"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U222",
+            "ports": {
+                "IN1": "iXMIT_bitCountH_3_",
+                "IN2": "n271",
+                "Q": "iXMIT_N46"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U223",
+            "ports": {
+                "IN1": "iRECEIVER_bitCell_cntrH_1_",
+                "IN2": "iRECEIVER_bitCell_cntrH_0_",
+                "Q": "iRECEIVER_N17"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U224",
+            "ports": {
+                "IN1": "n249",
+                "IN2": "n272",
+                "Q": "iRECEIVER_N18"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U225",
+            "ports": {
+                "IN1": "n272",
+                "IN2": "n249",
+                "QN": "n273"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U226",
+            "ports": {
+                "IN1": "iRECEIVER_bitCell_cntrH_3_",
+                "IN2": "n273",
+                "Q": "iRECEIVER_N19"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U227",
+            "ports": {
+                "IN1": "iRECEIVER_recd_bitCntrH_1_",
+                "IN2": "iRECEIVER_recd_bitCntrH_0_",
+                "Q": "iRECEIVER_N26"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U228",
+            "ports": {
+                "IN1": "n250",
+                "IN2": "n274",
+                "Q": "iRECEIVER_N27"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U229",
+            "ports": {
+                "IN1": "n274",
+                "IN2": "n250",
+                "QN": "n275"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U23",
+            "ports": {
+                "IN1": "rec_dataH_rec[4]",
+                "IN2": "n8",
+                "IN3": "rec_dataH_rec[3]",
+                "IN4": "n18",
+                "QN": "n21"
+            }
+        },
+        {
+            "type": "XOR2X2",
+            "name": "U230",
+            "ports": {
+                "IN1": "iRECEIVER_recd_bitCntrH_3_",
+                "IN2": "n275",
+                "Q": "iRECEIVER_N28"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U24",
+            "ports": {
+                "IN": "n22",
+                "QN": "n144"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U25",
+            "ports": {
+                "IN1": "rec_dataH_rec[5]",
+                "IN2": "n8",
+                "IN3": "rec_dataH_rec[4]",
+                "IN4": "n18",
+                "QN": "n22"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U26",
+            "ports": {
+                "IN": "n23",
+                "QN": "n151"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U27",
+            "ports": {
+                "IN1": "rec_dataH_rec[6]",
+                "IN2": "n8",
+                "IN3": "rec_dataH_rec[5]",
+                "IN4": "n18",
+                "QN": "n23"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U28",
+            "ports": {
+                "IN": "n24",
+                "QN": "n158"
+            }
+        },
+        {
+            "type": "NAND2X4",
+            "name": "U289",
+            "ports": {
+                "IN1": "1'h1",
+                "IN2": "test_mode",
+                "QN": "n370"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U29",
+            "ports": {
+                "IN1": "rec_dataH_rec[7]",
+                "IN2": "n8",
+                "IN3": "rec_dataH_rec[6]",
+                "IN4": "n18",
+                "QN": "n24"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U290",
+            "ports": {
+                "IN": "n370",
+                "QN": "n371"
+            }
+        },
+        {
+            "type": "MUX21X2",
+            "name": "U291",
+            "ports": {
+                "IN1": "rec_readyH",
+                "IN2": "sys_clk",
+                "Q": "\\test_point/DOUT",
+                "S": "n371"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U292",
+            "ports": {
+                "IN1": "iXMIT_next_state_2_",
+                "IN2": "iXMIT_state_0_",
+                "IN3": "iXMIT_state_1_",
+                "IN4": "iXMIT_state_2_",
+                "QN": "iXMIT_state_CTRL"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U293",
+            "ports": {
+                "IN1": "iXMIT_N46",
+                "IN2": "iXMIT_N45",
+                "IN3": "iXMIT_N44",
+                "IN4": "iXMIT_N29",
+                "QN": "iXMIT_N_CTRL_1_"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U294",
+            "ports": {
+                "IN1": "iXMIT_N28",
+                "IN2": "iXMIT_N27",
+                "IN3": "iXMIT_N26",
+                "IN4": "iXMIT_N25",
+                "QN": "iXMIT_N_CTRL_2_"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U295",
+            "ports": {
+                "IN1": "iXMIT_N24",
+                "IN2": "iXMIT_xmit_ShiftRegH_7_",
+                "IN3": "iXMIT_xmit_ShiftRegH_6_",
+                "IN4": "iXMIT_xmit_ShiftRegH_5_",
+                "QN": "iXMIT_xmit_CTRL"
+            }
+        },
+        {
+            "type": "OR4X4",
+            "name": "U296",
+            "ports": {
+                "IN1": "iXMIT_state_CTRL",
+                "IN2": "iXMIT_N_CTRL_1_",
+                "IN3": "iXMIT_N_CTRL_2_",
+                "IN4": "iXMIT_xmit_CTRL",
+                "Q": "iXMIT_CRTL"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U297",
+            "ports": {
+                "IN1": "iRECEIVER_next_state_2_",
+                "IN2": "iRECEIVER_state_0_",
+                "IN3": "iRECEIVER_state_1_",
+                "IN4": "iRECEIVER_state_2_",
+                "QN": "iRECEIVER_state_CTRL"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U3",
+            "ports": {
+                "IN1": "iXMIT_state_2_",
+                "IN2": "iXMIT_state_1_",
+                "IN3": "n2",
+                "QN": "uart_XMIT_dataH"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U30",
+            "ports": {
+                "IN": "n25",
+                "QN": "n165"
+            }
+        },
+        {
+            "type": "NAND4X1",
+            "name": "U300",
+            "ports": {
+                "IN1": "n400",
+                "IN2": "n401",
+                "IN3": "n402",
+                "IN4": "n403",
+                "QN": "iRECEIVER_bitCell_CTRL"
+            }
+        },
+        {
+            "type": "ISOLORX8",
+            "name": "U301",
+            "ports": {
+                "D": "iRECEIVER_state_CTRL",
+                "ISO": "iRECEIVER_bitCell_CTRL",
+                "Q": "iRECEIVER_CTRL"
+            }
+        },
+        {
+            "type": "ISOLORX8",
+            "name": "U302",
+            "ports": {
+                "D": "iXMIT_CRTL",
+                "ISO": "iRECEIVER_CTRL",
+                "Q": "iCTRL"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U303",
+            "ports": {
+                "IN1": "iCTRL",
+                "IN2": "xmit_doneH_temp",
+                "Q": "xmit_doneH"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U31",
+            "ports": {
+                "IN1": "iRECEIVER_rec_datH",
+                "IN2": "n8",
+                "IN3": "rec_dataH_rec[7]",
+                "IN4": "n18",
+                "QN": "n25"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U32",
+            "ports": {
+                "IN1": "n257",
+                "IN2": "n26",
+                "IN3": "n27",
+                "QN": "n190"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U33",
+            "ports": {
+                "IN1": "xmit_dataH[0]",
+                "IN2": "n28",
+                "IN3": "iXMIT_xmit_ShiftRegH_1_",
+                "IN4": "n29",
+                "QN": "n27"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U34",
+            "ports": {
+                "IN1": "n202",
+                "IN2": "iXMIT_xmit_ShiftRegH_3_",
+                "Q": "n176",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U35",
+            "ports": {
+                "IN1": "n263",
+                "IN2": "n26",
+                "IN3": "n31",
+                "QN": "n193"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U36",
+            "ports": {
+                "IN1": "xmit_dataH[1]",
+                "IN2": "n28",
+                "IN3": "iXMIT_xmit_ShiftRegH_2_",
+                "IN4": "n29",
+                "QN": "n31"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U37",
+            "ports": {
+                "IN1": "n205",
+                "IN2": "iXMIT_xmit_ShiftRegH_4_",
+                "Q": "n177",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U38",
+            "ports": {
+                "IN1": "n26",
+                "IN2": "n262",
+                "IN3": "n33",
+                "QN": "n196"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U39",
+            "ports": {
+                "IN1": "xmit_dataH[2]",
+                "IN2": "n28",
+                "IN3": "iXMIT_xmit_ShiftRegH_3_",
+                "IN4": "n29",
+                "QN": "n33"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U4",
+            "ports": {
+                "IN1": "iXMIT_state_2_",
+                "IN2": "iXMIT_state_0_",
+                "IN3": "n3",
+                "QN": "n2"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U40",
+            "ports": {
+                "IN1": "n208",
+                "IN2": "iXMIT_xmit_ShiftRegH_5_",
+                "Q": "n178",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U41",
+            "ports": {
+                "IN1": "n26",
+                "IN2": "n261",
+                "IN3": "n35",
+                "QN": "n199"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U42",
+            "ports": {
+                "IN1": "xmit_dataH[3]",
+                "IN2": "n28",
+                "IN3": "iXMIT_xmit_ShiftRegH_4_",
+                "IN4": "n29",
+                "QN": "n35"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U43",
+            "ports": {
+                "IN1": "n211",
+                "IN2": "iXMIT_xmit_ShiftRegH_6_",
+                "Q": "n179",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U44",
+            "ports": {
+                "IN1": "n26",
+                "IN2": "n260",
+                "IN3": "n37",
+                "QN": "n202"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U45",
+            "ports": {
+                "IN1": "xmit_dataH[4]",
+                "IN2": "n28",
+                "IN3": "iXMIT_xmit_ShiftRegH_5_",
+                "IN4": "n29",
+                "QN": "n37"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U46",
+            "ports": {
+                "IN1": "n214",
+                "IN2": "iXMIT_bitCountH_2_",
+                "Q": "n180",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U47",
+            "ports": {
+                "IN1": "n26",
+                "IN2": "n259",
+                "IN3": "n39",
+                "QN": "n205"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U48",
+            "ports": {
+                "IN1": "xmit_dataH[5]",
+                "IN2": "n28",
+                "IN3": "iXMIT_xmit_ShiftRegH_6_",
+                "IN4": "n29",
+                "QN": "n39"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U49",
+            "ports": {
+                "IN1": "n217",
+                "IN2": "iXMIT_bitCountH_1_",
+                "Q": "n181",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U5",
+            "ports": {
+                "IN1": "n242",
+                "IN2": "n239",
+                "IN3": "n257",
+                "QN": "n3"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U50",
+            "ports": {
+                "IN1": "n26",
+                "IN2": "n258",
+                "IN3": "n41",
+                "QN": "n208"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U51",
+            "ports": {
+                "IN1": "xmit_dataH[6]",
+                "IN2": "n28",
+                "IN3": "iXMIT_xmit_ShiftRegH_7_",
+                "IN4": "n29",
+                "QN": "n41"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U52",
+            "ports": {
+                "IN1": "n220",
+                "IN2": "iXMIT_bitCountH_0_",
+                "Q": "n182",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U53",
+            "ports": {
+                "IN1": "n223",
+                "IN2": "iXMIT_bitCell_cntrH_3_",
+                "Q": "n183",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U54",
+            "ports": {
+                "IN1": "iXMIT_next_state_1_",
+                "IN2": "iXMIT_state_0_",
+                "Q": "n184",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U55",
+            "ports": {
+                "IN": "n44",
+                "QN": "n26"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U56",
+            "ports": {
+                "IN1": "iXMIT_xmit_ShiftRegH_7_",
+                "IN2": "n44",
+                "IN3": "n29",
+                "QN": "n42"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U57",
+            "ports": {
+                "IN1": "n44",
+                "IN2": "n28",
+                "QN": "n29"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U58",
+            "ports": {
+                "IN": "n45",
+                "QN": "n214"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U59",
+            "ports": {
+                "IN1": "n46",
+                "IN2": "iXMIT_bitCountH_3_",
+                "IN3": "iXMIT_N46",
+                "IN4": "n47",
+                "QN": "n45"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U6",
+            "ports": {
+                "IN": "n7",
+                "QN": "n100"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U60",
+            "ports": {
+                "IN": "n48",
+                "QN": "n217"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U61",
+            "ports": {
+                "IN1": "iXMIT_bitCountH_2_",
+                "IN2": "n46",
+                "IN3": "iXMIT_N45",
+                "IN4": "n47",
+                "QN": "n48"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U62",
+            "ports": {
+                "IN": "n49",
+                "QN": "n220"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U63",
+            "ports": {
+                "IN1": "iXMIT_bitCountH_1_",
+                "IN2": "n46",
+                "IN3": "iXMIT_N44",
+                "IN4": "n47",
+                "QN": "n49"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U64",
+            "ports": {
+                "IN": "n50",
+                "QN": "n223"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U65",
+            "ports": {
+                "IN1": "iXMIT_bitCountH_0_",
+                "IN2": "n46",
+                "IN3": "n252",
+                "IN4": "n47",
+                "QN": "n50"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U66",
+            "ports": {
+                "IN1": "n51",
+                "IN2": "n47",
+                "QN": "n46"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U67",
+            "ports": {
+                "IN1": "n52",
+                "IN2": "n53",
+                "QN": "n47"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U68",
+            "ports": {
+                "IN": "n54",
+                "QN": "n52"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U69",
+            "ports": {
+                "IN": "n55",
+                "QN": "n51"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U7",
+            "ports": {
+                "IN1": "iRECEIVER_N27",
+                "IN2": "n8",
+                "IN3": "iRECEIVER_recd_bitCntrH_2_",
+                "IN4": "n9",
+                "QN": "n7"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U70",
+            "ports": {
+                "IN1": "iXMIT_next_state_2_",
+                "IN2": "iXMIT_state_1_",
+                "Q": "n185",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "NAND3X4",
+            "name": "U71",
+            "ports": {
+                "IN1": "iXMIT_state_2_",
+                "IN2": "iXMIT_state_0_",
+                "IN3": "n57",
+                "QN": "n56"
+            }
+        },
+        {
+            "type": "NAND3X4",
+            "name": "U72",
+            "ports": {
+                "IN1": "n242",
+                "IN2": "n58",
+                "IN3": "n246",
+                "QN": "n55"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U73",
+            "ports": {
+                "IN": "xmitH",
+                "QN": "n58"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U74",
+            "ports": {
+                "IN": "n60",
+                "QN": "iXMIT_next_state_2_"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U75",
+            "ports": {
+                "IN1": "n54",
+                "IN2": "n61",
+                "IN3": "n62",
+                "IN4": "iXMIT_state_0_",
+                "QN": "n60"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U76",
+            "ports": {
+                "IN1": "iXMIT_next_state_0_",
+                "IN2": "iXMIT_bitCountH_3_",
+                "Q": "n186",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U77",
+            "ports": {
+                "IN1": "n239",
+                "IN2": "iXMIT_state_2_",
+                "IN3": "n28",
+                "QN": "n44"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U78",
+            "ports": {
+                "IN1": "iXMIT_N28",
+                "IN2": "iXMIT_bitCell_cntrH_1_",
+                "Q": "n187",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "NAND3X4",
+            "name": "U79",
+            "ports": {
+                "IN1": "n246",
+                "IN2": "n242",
+                "IN3": "xmitH",
+                "QN": "n64"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U8",
+            "ports": {
+                "IN": "n10",
+                "QN": "n103"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U80",
+            "ports": {
+                "IN1": "iXMIT_state_1_",
+                "IN2": "n65",
+                "IN3": "n66",
+                "QN": "n63"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U81",
+            "ports": {
+                "IN1": "iXMIT_N26",
+                "IN2": "iRECEIVER_state_2_",
+                "Q": "n128",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "AOI21X2",
+            "name": "U82",
+            "ports": {
+                "IN1": "n66",
+                "IN2": "n57",
+                "IN3": "n62",
+                "QN": "n68"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U83",
+            "ports": {
+                "IN1": "n54",
+                "IN2": "n53",
+                "IN3": "iXMIT_state_2_",
+                "IN4": "n239",
+                "QN": "n67"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U84",
+            "ports": {
+                "IN1": "iXMIT_N29",
+                "IN2": "iXMIT_bitCell_cntrH_2_",
+                "Q": "n129",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "OR4X4",
+            "name": "U85",
+            "ports": {
+                "IN1": "n253",
+                "IN2": "iXMIT_bitCountH_0_",
+                "IN3": "iXMIT_bitCountH_1_",
+                "IN4": "iXMIT_bitCountH_2_",
+                "Q": "n69"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U86",
+            "ports": {
+                "IN1": "n100",
+                "IN2": "iRECEIVER_recd_bitCntrH_1_",
+                "Q": "n131",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U87",
+            "ports": {
+                "IN1": "iXMIT_N25",
+                "IN2": "n71",
+                "Q": "iXMIT_N29"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U88",
+            "ports": {
+                "IN1": "iXMIT_N24",
+                "IN2": "n71",
+                "Q": "iXMIT_N28"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U89",
+            "ports": {
+                "IN1": "iXMIT_N23",
+                "IN2": "n71",
+                "Q": "iXMIT_N27"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U9",
+            "ports": {
+                "IN1": "iRECEIVER_N26",
+                "IN2": "n8",
+                "IN3": "iRECEIVER_recd_bitCntrH_1_",
+                "IN4": "n9",
+                "QN": "n10"
+            }
+        },
+        {
+            "type": "AND2X4",
+            "name": "U90",
+            "ports": {
+                "IN1": "n254",
+                "IN2": "n71",
+                "Q": "iXMIT_N26"
+            }
+        },
+        {
+            "type": "OAI21X2",
+            "name": "U91",
+            "ports": {
+                "IN1": "n239",
+                "IN2": "n72",
+                "IN3": "n73",
+                "QN": "n71"
+            }
+        },
+        {
+            "type": "AOI22X2",
+            "name": "U92",
+            "ports": {
+                "IN1": "n66",
+                "IN2": "n74",
+                "IN3": "n54",
+                "IN4": "n65",
+                "QN": "n73"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U93",
+            "ports": {
+                "IN": "n61",
+                "QN": "n65"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U94",
+            "ports": {
+                "IN1": "n75",
+                "IN2": "iXMIT_bitCell_cntrH_0_",
+                "QN": "n61"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U95",
+            "ports": {
+                "IN1": "n246",
+                "IN2": "n239",
+                "QN": "n54"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U96",
+            "ports": {
+                "IN": "n57",
+                "QN": "n74"
+            }
+        },
+        {
+            "type": "NOR2X4",
+            "name": "U97",
+            "ports": {
+                "IN1": "n246",
+                "IN2": "iXMIT_state_0_",
+                "QN": "n66"
+            }
+        },
+        {
+            "type": "MUX21X1",
+            "name": "U98",
+            "ports": {
+                "IN1": "n103",
+                "IN2": "iRECEIVER_recd_bitCntrH_0_",
+                "Q": "n132",
+                "S": "test_se"
+            }
+        },
+        {
+            "type": "INVX32",
+            "name": "U99",
+            "ports": {
+                "IN": "n62",
+                "QN": "n72"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iDatasend_reg_1",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n127",
+                "Q": "n400",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iDatasend_reg_2",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n126",
+                "Q": "n401",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFASX1",
+            "name": "iDatasend_reg_3",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n125",
+                "Q": "n402",
+                "SETB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFASX1",
+            "name": "iDatasend_reg_4",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n124",
+                "Q": "n403",
+                "SETB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_bitCell_cntrH_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n169",
+                "Q": "iRECEIVER_bitCell_cntrH_0_",
+                "QN": "n255",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_bitCell_cntrH_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n168",
+                "Q": "iRECEIVER_bitCell_cntrH_1_",
+                "QN": "n244",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_bitCell_cntrH_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n167",
+                "Q": "iRECEIVER_bitCell_cntrH_2_",
+                "QN": "n249",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_bitCell_cntrH_reg_3_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n166",
+                "Q": "iRECEIVER_bitCell_cntrH_3_",
+                "QN": "n256",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_par_dataH_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n138",
+                "Q": "rec_dataH_rec[0]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_par_dataH_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n141",
+                "Q": "rec_dataH_rec[1]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_par_dataH_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n145",
+                "Q": "rec_dataH_rec[2]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_par_dataH_reg_3_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n148",
+                "Q": "rec_dataH_rec[3]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_par_dataH_reg_4_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n152",
+                "Q": "rec_dataH_rec[4]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_par_dataH_reg_5_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n155",
+                "Q": "rec_dataH_rec[5]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_par_dataH_reg_6_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n159",
+                "Q": "rec_dataH_rec[6]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_par_dataH_reg_7_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n162",
+                "Q": "rec_dataH_rec[7]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFASX1",
+            "name": "iRECEIVER_rec_datH_reg",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n124",
+                "Q": "iRECEIVER_rec_datH",
+                "QN": "n248",
+                "SETB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFASX1",
+            "name": "iRECEIVER_rec_datSyncH_reg",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n125",
+                "Q": "iRECEIVER_rec_datSyncH",
+                "SETB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_rec_readyH_reg",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n163",
+                "Q": "rec_readyH",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_recd_bitCntrH_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n133",
+                "Q": "iRECEIVER_recd_bitCntrH_0_",
+                "QN": "n243",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_recd_bitCntrH_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n132",
+                "Q": "iRECEIVER_recd_bitCntrH_1_",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_recd_bitCntrH_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n131",
+                "Q": "iRECEIVER_recd_bitCntrH_2_",
+                "QN": "n250",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_recd_bitCntrH_reg_3_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n134",
+                "Q": "iRECEIVER_recd_bitCntrH_3_",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFASX1",
+            "name": "iRECEIVER_state_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n170",
+                "Q": "iRECEIVER_state_0_",
+                "QN": "n245",
+                "SETB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_state_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n171",
+                "Q": "iRECEIVER_state_1_",
+                "QN": "n241",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iRECEIVER_state_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n164",
+                "Q": "iRECEIVER_state_2_",
+                "QN": "n238",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_bitCell_cntrH_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n128",
+                "Q": "iXMIT_bitCell_cntrH_0_",
+                "QN": "n254",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_bitCell_cntrH_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n127",
+                "Q": "iXMIT_bitCell_cntrH_1_",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_bitCell_cntrH_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n187",
+                "Q": "iXMIT_bitCell_cntrH_2_",
+                "QN": "n251",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_bitCell_cntrH_reg_3_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n129",
+                "Q": "iXMIT_bitCell_cntrH_3_",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_bitCountH_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n183",
+                "Q": "iXMIT_bitCountH_0_",
+                "QN": "n252",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_bitCountH_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n182",
+                "Q": "iXMIT_bitCountH_1_",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_bitCountH_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n181",
+                "Q": "iXMIT_bitCountH_2_",
+                "QN": "n247",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_bitCountH_reg_3_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n180",
+                "Q": "iXMIT_bitCountH_3_",
+                "QN": "n253",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_state_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n186",
+                "Q": "iXMIT_state_0_",
+                "QN": "n239",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_state_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n184",
+                "Q": "iXMIT_state_1_",
+                "QN": "n246",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_state_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n185",
+                "Q": "iXMIT_state_2_",
+                "QN": "n242",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_ShiftRegH_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n126",
+                "Q": "n281",
+                "QN": "n257",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_ShiftRegH_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n173",
+                "Q": "iXMIT_xmit_ShiftRegH_1_",
+                "QN": "n263",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_ShiftRegH_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n174",
+                "Q": "iXMIT_xmit_ShiftRegH_2_",
+                "QN": "n262",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_ShiftRegH_reg_3_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n175",
+                "Q": "iXMIT_xmit_ShiftRegH_3_",
+                "QN": "n261",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_ShiftRegH_reg_4_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n176",
+                "Q": "iXMIT_xmit_ShiftRegH_4_",
+                "QN": "n260",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_ShiftRegH_reg_5_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n177",
+                "Q": "iXMIT_xmit_ShiftRegH_5_",
+                "QN": "n259",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_ShiftRegH_reg_6_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n178",
+                "Q": "iXMIT_xmit_ShiftRegH_6_",
+                "QN": "n258",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_ShiftRegH_reg_7_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n179",
+                "Q": "iXMIT_xmit_ShiftRegH_7_",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "iXMIT_xmit_doneH_reg",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n172",
+                "Q": "xmit_doneH_temp",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_reg_0_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n135",
+                "Q": "rec_dataH[0]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_reg_1_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n139",
+                "Q": "rec_dataH[1]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_reg_2_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n142",
+                "Q": "rec_dataH[2]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_reg_3_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n146",
+                "Q": "rec_dataH[3]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_reg_4_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n149",
+                "Q": "rec_dataH[4]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_reg_5_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n153",
+                "Q": "rec_dataH[5]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_reg_6_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n156",
+                "Q": "rec_dataH[6]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_reg_7_",
+            "ports": {
+                "CLK": "sys_clk",
+                "D": "n160",
+                "Q": "rec_dataH[7]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_temp_reg_0_",
+            "ports": {
+                "CLK": "\\test_point/DOUT",
+                "D": "n136",
+                "Q": "rec_dataH_temp[0]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_temp_reg_1_",
+            "ports": {
+                "CLK": "\\test_point/DOUT",
+                "D": "n140",
+                "Q": "rec_dataH_temp[1]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_temp_reg_2_",
+            "ports": {
+                "CLK": "\\test_point/DOUT",
+                "D": "n143",
+                "Q": "rec_dataH_temp[2]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_temp_reg_3_",
+            "ports": {
+                "CLK": "\\test_point/DOUT",
+                "D": "n147",
+                "Q": "rec_dataH_temp[3]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_temp_reg_4_",
+            "ports": {
+                "CLK": "\\test_point/DOUT",
+                "D": "n150",
+                "Q": "rec_dataH_temp[4]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_temp_reg_5_",
+            "ports": {
+                "CLK": "\\test_point/DOUT",
+                "D": "n154",
+                "Q": "rec_dataH_temp[5]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_temp_reg_6_",
+            "ports": {
+                "CLK": "\\test_point/DOUT",
+                "D": "n157",
+                "Q": "rec_dataH_temp[6]",
+                "RSTB": "sys_rst_l"
+            }
+        },
+        {
+            "type": "DFFARX1",
+            "name": "rec_dataH_temp_reg_7_",
+            "ports": {
+                "CLK": "\\test_point/DOUT",
+                "D": "n161",
+                "Q": "rec_dataH_temp[7]",
+                "RSTB": "sys_rst_l"
+            }
+        }
+    ]
+}

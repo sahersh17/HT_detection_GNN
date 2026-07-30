@@ -1,0 +1,42 @@
+STIL 1.0 {
+   Design P2002.13;
+   CTL P2002.18;
+   TRC P2002.3;
+}
+Header {
+   Title "  TetraMAX (TM)  D-2010.03-SP5-2-i101213_153359 STIL output";
+   Date "Mon Oct 10 13:40:09 2011";
+   Source "Minimal STIL for design `uart'";
+   History {
+      Ann {*  Thu Jul 29 15:46:39 2010  *}
+      Ann {*  DFT Compiler Y-2006.06-SP2  *}
+   }         //end History
+}            //end Header
+PatternInformation {
+   Pattern "_pattern_" {
+      Purpose Scan;
+      FileReference "results/TestPatterns.spf";
+      PatternCharacteristics {
+         BreakPoint No;
+         ConditionalStatements No;
+         CoreUsageReady No;
+         NonCyclized No;
+         DeltaChangeVectorData Yes;
+         GoTo No;
+         IddqTestPoints No;
+         Macro Yes;
+         MultiBitData No;
+         NumberPatternUnits 40;
+         PatternVariables No;
+         ProcedureCalls WithParameters;
+         Shift Yes;
+         STILPatterns Yes;
+      }      //end PatternCharacteristics
+      Fault {
+         Type Transition;
+         FaultCount 1458;
+         FaultsDetected 1048;
+         FaultCoverage 75;
+      }      //end Fault
+   }         //end Pattern
+}            //end PatternInformation

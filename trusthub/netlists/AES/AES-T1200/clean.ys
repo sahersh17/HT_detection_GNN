@@ -1,0 +1,15 @@
+read_verilog "C:\trusthub\AES_unzipped\AES-T1200\AES-T1200\src\TjFree\aes_128.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T1200\AES-T1200\src\TjFree\round.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T1200\AES-T1200\src\TjFree\table.v"
+
+hierarchy -top aes_128
+
+proc
+opt
+flatten
+opt
+techmap
+opt
+abc
+opt
+write_verilog "C:\trusthub\netlists\AES\AES-T1200\clean_netlist.v"

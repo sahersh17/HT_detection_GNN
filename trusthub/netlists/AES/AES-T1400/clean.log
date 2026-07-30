@@ -1,0 +1,682 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
+
+-- Executing script file `C:\trusthub\netlists\AES\AES-T1400\clean.ys' --
+
+1. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v
+Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v' to AST representation.
+Generating RTLIL representation for module `\aes_128'.
+Generating RTLIL representation for module `\expand_key_128'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\round.v
+Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\round.v' to AST representation.
+Generating RTLIL representation for module `\one_round'.
+Generating RTLIL representation for module `\final_round'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v
+Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v' to AST representation.
+Generating RTLIL representation for module `\table_lookup'.
+Generating RTLIL representation for module `\S4'.
+Generating RTLIL representation for module `\T'.
+Generating RTLIL representation for module `\S'.
+Generating RTLIL representation for module `\xS'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \aes_128
+Used module:     \final_round
+Used module:         \S4
+Used module:             \S
+Used module:     \one_round
+Used module:         \table_lookup
+Used module:             \T
+Used module:                 \xS
+Used module:     \expand_key_128
+
+4.2. Analyzing design hierarchy..
+Top module:  \aes_128
+Used module:     \final_round
+Used module:         \S4
+Used module:             \S
+Used module:     \one_round
+Used module:         \table_lookup
+Used module:             \T
+Used module:                 \xS
+Used module:     \expand_key_128
+Removed 0 unused modules.
+Mapping positional arguments of cell T.s4 (xS).
+Mapping positional arguments of cell T.s0 (S).
+Mapping positional arguments of cell S4.S_3 (S).
+Mapping positional arguments of cell S4.S_2 (S).
+Mapping positional arguments of cell S4.S_1 (S).
+Mapping positional arguments of cell S4.S_0 (S).
+Mapping positional arguments of cell table_lookup.t3 (T).
+Mapping positional arguments of cell table_lookup.t2 (T).
+Mapping positional arguments of cell table_lookup.t1 (T).
+Mapping positional arguments of cell table_lookup.t0 (T).
+Mapping positional arguments of cell final_round.S4_4 (S4).
+Mapping positional arguments of cell final_round.S4_3 (S4).
+Mapping positional arguments of cell final_round.S4_2 (S4).
+Mapping positional arguments of cell final_round.S4_1 (S4).
+Mapping positional arguments of cell one_round.t3 (table_lookup).
+Mapping positional arguments of cell one_round.t2 (table_lookup).
+Mapping positional arguments of cell one_round.t1 (table_lookup).
+Mapping positional arguments of cell one_round.t0 (table_lookup).
+Mapping positional arguments of cell expand_key_128.S4_0 (S4).
+Mapping positional arguments of cell aes_128.rf (final_round).
+Mapping positional arguments of cell aes_128.r9 (one_round).
+Mapping positional arguments of cell aes_128.r8 (one_round).
+Mapping positional arguments of cell aes_128.r7 (one_round).
+Mapping positional arguments of cell aes_128.r6 (one_round).
+Mapping positional arguments of cell aes_128.r5 (one_round).
+Mapping positional arguments of cell aes_128.r4 (one_round).
+Mapping positional arguments of cell aes_128.r3 (one_round).
+Mapping positional arguments of cell aes_128.r2 (one_round).
+Mapping positional arguments of cell aes_128.r1 (one_round).
+Mapping positional arguments of cell aes_128.a10 (expand_key_128).
+Mapping positional arguments of cell aes_128.a9 (expand_key_128).
+Mapping positional arguments of cell aes_128.a8 (expand_key_128).
+Mapping positional arguments of cell aes_128.a7 (expand_key_128).
+Mapping positional arguments of cell aes_128.a6 (expand_key_128).
+Mapping positional arguments of cell aes_128.a5 (expand_key_128).
+Mapping positional arguments of cell aes_128.a4 (expand_key_128).
+Mapping positional arguments of cell aes_128.a3 (expand_key_128).
+Mapping positional arguments of cell aes_128.a2 (expand_key_128).
+Mapping positional arguments of cell aes_128.a1 (expand_key_128).
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:331$37 in module xS.
+Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:64$36 in module S.
+Removed a total of 0 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 6 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 2 switches.
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\xS.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:331$37'.
+     1/1: $0\out[7:0]
+Creating decoders for process `\S.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:64$36'.
+     1/1: $0\out[7:0]
+Creating decoders for process `\final_round.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\round.v:78$34'.
+Creating decoders for process `\one_round.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\round.v:45$29'.
+Creating decoders for process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:88$12'.
+Creating decoders for process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:77$7'.
+Creating decoders for process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:26$1'.
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\xS.\out' using process `\xS.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:331$37'.
+  created $dff cell `$procdff$48' with positive edge clock.
+Creating register for signal `\S.\out' using process `\S.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:64$36'.
+  created $dff cell `$procdff$49' with positive edge clock.
+Creating register for signal `\final_round.\state_out' using process `\final_round.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\round.v:78$34'.
+  created $dff cell `$procdff$50' with positive edge clock.
+Creating register for signal `\one_round.\state_out' using process `\one_round.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\round.v:45$29'.
+  created $dff cell `$procdff$51' with positive edge clock.
+Creating register for signal `\expand_key_128.\out_1' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:88$12'.
+  created $dff cell `$procdff$52' with positive edge clock.
+Creating register for signal `\expand_key_128.\k0a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:77$7'.
+  created $dff cell `$procdff$53' with positive edge clock.
+Creating register for signal `\expand_key_128.\k1a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:77$7'.
+  created $dff cell `$procdff$54' with positive edge clock.
+Creating register for signal `\expand_key_128.\k2a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:77$7'.
+  created $dff cell `$procdff$55' with positive edge clock.
+Creating register for signal `\expand_key_128.\k3a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:77$7'.
+  created $dff cell `$procdff$56' with positive edge clock.
+Creating register for signal `\aes_128.\s0' using process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:26$1'.
+  created $dff cell `$procdff$57' with positive edge clock.
+Creating register for signal `\aes_128.\k0' using process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:26$1'.
+  created $dff cell `$procdff$58' with positive edge clock.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\xS.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:331$37'.
+Removing empty process `xS.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:331$37'.
+Found and cleaned up 1 empty switch in `\S.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:64$36'.
+Removing empty process `S.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\table.v:64$36'.
+Removing empty process `final_round.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\round.v:78$34'.
+Removing empty process `one_round.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\round.v:45$29'.
+Removing empty process `expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:88$12'.
+Removing empty process `expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:77$7'.
+Removing empty process `aes_128.$proc$C:\trusthub\AES_unzipped\AES-T1400\AES-T1400\src\TjFree\aes_128.v:26$1'.
+Cleaned up 2 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module xS.
+Optimizing module S.
+Optimizing module T.
+Optimizing module S4.
+Optimizing module table_lookup.
+Optimizing module final_round.
+Optimizing module one_round.
+Optimizing module expand_key_128.
+Optimizing module aes_128.
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module xS.
+Optimizing module S.
+Optimizing module T.
+Optimizing module S4.
+Optimizing module table_lookup.
+Optimizing module final_round.
+Optimizing module one_round.
+Optimizing module expand_key_128.
+Optimizing module aes_128.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\xS'.
+Computing hashes of 3 cells of `\xS'.
+Finding duplicate cells in `\xS'.
+Finding identical cells in module `\S'.
+Computing hashes of 3 cells of `\S'.
+Finding duplicate cells in `\S'.
+Finding identical cells in module `\T'.
+Computing hashes of 3 cells of `\T'.
+Finding duplicate cells in `\T'.
+Finding identical cells in module `\S4'.
+Computing hashes of 4 cells of `\S4'.
+Finding duplicate cells in `\S4'.
+Finding identical cells in module `\table_lookup'.
+Computing hashes of 4 cells of `\table_lookup'.
+Finding duplicate cells in `\table_lookup'.
+Finding identical cells in module `\final_round'.
+Computing hashes of 9 cells of `\final_round'.
+Finding duplicate cells in `\final_round'.
+Finding identical cells in module `\one_round'.
+Computing hashes of 21 cells of `\one_round'.
+Finding duplicate cells in `\one_round'.
+Finding identical cells in module `\expand_key_128'.
+Computing hashes of 14 cells of `\expand_key_128'.
+Finding duplicate cells in `\expand_key_128'.
+Finding identical cells in module `\aes_128'.
+Computing hashes of 23 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \xS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \S..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \T..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \S4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \table_lookup..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \final_round..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \one_round..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \expand_key_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \aes_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \xS.
+  Optimizing cells in module \S.
+  Optimizing cells in module \T.
+  Optimizing cells in module \S4.
+  Optimizing cells in module \table_lookup.
+  Optimizing cells in module \final_round.
+  Optimizing cells in module \one_round.
+  Optimizing cells in module \expand_key_128.
+  Optimizing cells in module \aes_128.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\xS'.
+Computing hashes of 3 cells of `\xS'.
+Finding duplicate cells in `\xS'.
+Finding identical cells in module `\S'.
+Computing hashes of 3 cells of `\S'.
+Finding duplicate cells in `\S'.
+Finding identical cells in module `\T'.
+Computing hashes of 3 cells of `\T'.
+Finding duplicate cells in `\T'.
+Finding identical cells in module `\S4'.
+Computing hashes of 4 cells of `\S4'.
+Finding duplicate cells in `\S4'.
+Finding identical cells in module `\table_lookup'.
+Computing hashes of 4 cells of `\table_lookup'.
+Finding duplicate cells in `\table_lookup'.
+Finding identical cells in module `\final_round'.
+Computing hashes of 9 cells of `\final_round'.
+Finding duplicate cells in `\final_round'.
+Finding identical cells in module `\one_round'.
+Computing hashes of 21 cells of `\one_round'.
+Finding duplicate cells in `\one_round'.
+Finding identical cells in module `\expand_key_128'.
+Computing hashes of 14 cells of `\expand_key_128'.
+Finding duplicate cells in `\expand_key_128'.
+Finding identical cells in module `\aes_128'.
+Computing hashes of 23 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \xS..
+Finding unused cells or wires in module \S..
+Finding unused cells or wires in module \T..
+Finding unused cells or wires in module \S4..
+Finding unused cells or wires in module \table_lookup..
+Finding unused cells or wires in module \final_round..
+Finding unused cells or wires in module \one_round..
+Finding unused cells or wires in module \expand_key_128..
+Finding unused cells or wires in module \aes_128..
+Removed 0 unused cells and 28 unused wires.
+<suppressed ~7 debug messages>
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module xS.
+Optimizing module S.
+Optimizing module T.
+Optimizing module S4.
+Optimizing module table_lookup.
+Optimizing module final_round.
+Optimizing module one_round.
+Optimizing module expand_key_128.
+Optimizing module aes_128.
+
+6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \xS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \S..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \T..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \S4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \table_lookup..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \final_round..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \one_round..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \expand_key_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \aes_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \xS.
+  Optimizing cells in module \S.
+  Optimizing cells in module \T.
+  Optimizing cells in module \S4.
+  Optimizing cells in module \table_lookup.
+  Optimizing cells in module \final_round.
+  Optimizing cells in module \one_round.
+  Optimizing cells in module \expand_key_128.
+  Optimizing cells in module \aes_128.
+Performed a total of 0 changes.
+
+6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\xS'.
+Computing hashes of 3 cells of `\xS'.
+Finding duplicate cells in `\xS'.
+Finding identical cells in module `\S'.
+Computing hashes of 3 cells of `\S'.
+Finding duplicate cells in `\S'.
+Finding identical cells in module `\T'.
+Computing hashes of 3 cells of `\T'.
+Finding duplicate cells in `\T'.
+Finding identical cells in module `\S4'.
+Computing hashes of 4 cells of `\S4'.
+Finding duplicate cells in `\S4'.
+Finding identical cells in module `\table_lookup'.
+Computing hashes of 4 cells of `\table_lookup'.
+Finding duplicate cells in `\table_lookup'.
+Finding identical cells in module `\final_round'.
+Computing hashes of 9 cells of `\final_round'.
+Finding duplicate cells in `\final_round'.
+Finding identical cells in module `\one_round'.
+Computing hashes of 21 cells of `\one_round'.
+Finding duplicate cells in `\one_round'.
+Finding identical cells in module `\expand_key_128'.
+Computing hashes of 14 cells of `\expand_key_128'.
+Finding duplicate cells in `\expand_key_128'.
+Finding identical cells in module `\aes_128'.
+Computing hashes of 23 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \xS..
+Finding unused cells or wires in module \S..
+Finding unused cells or wires in module \T..
+Finding unused cells or wires in module \S4..
+Finding unused cells or wires in module \table_lookup..
+Finding unused cells or wires in module \final_round..
+Finding unused cells or wires in module \one_round..
+Finding unused cells or wires in module \expand_key_128..
+Finding unused cells or wires in module \aes_128..
+
+6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module xS.
+Optimizing module S.
+Optimizing module T.
+Optimizing module S4.
+Optimizing module table_lookup.
+Optimizing module final_round.
+Optimizing module one_round.
+Optimizing module expand_key_128.
+Optimizing module aes_128.
+
+6.16. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing FLATTEN pass (flatten design).
+Deleting now unused module xS.
+Deleting now unused module S.
+Deleting now unused module T.
+Deleting now unused module S4.
+Deleting now unused module table_lookup.
+Deleting now unused module final_round.
+Deleting now unused module one_round.
+Deleting now unused module expand_key_128.
+<suppressed ~39 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module aes_128.
+<suppressed ~10 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\aes_128'.
+Computing hashes of 2025 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \aes_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \aes_128.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\aes_128'.
+Computing hashes of 2025 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \aes_128..
+Removed 1 unused cells and 11 unused wires.
+<suppressed ~3 debug messages>
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module aes_128.
+
+8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \aes_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \aes_128.
+Performed a total of 0 changes.
+
+8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\aes_128'.
+Computing hashes of 2024 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \aes_128..
+
+8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module aes_128.
+
+8.16. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: C:\Users\saher\DOWNLO~1\OSS-CA~1\bin\../share/yosys/techmap.v
+Parsing Verilog input from `C:\Users\saher\DOWNLO~1\OSS-CA~1\bin\../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $dff.
+No more expansions possible.
+<suppressed ~855 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module aes_128.
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\aes_128'.
+Computing hashes of 16238 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \aes_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \aes_128.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\aes_128'.
+Computing hashes of 16238 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \aes_128..
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module aes_128.
+
+10.9. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `\aes_128' to `<abc-temp-dir>/input.blif'..
+
+11.1.1. Executed ABC.
+Extracted 8272 gates and 13840 wires to a netlist network with 5568 inputs and 3536 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+11.1.2. Re-integrating ABC results.
+ABC RESULTS:               NOT cells:       16
+ABC RESULTS:              XNOR cells:     3593
+ABC RESULTS:               XOR cells:     4294
+ABC RESULTS:        internal signals:     4736
+ABC RESULTS:           input signals:     5568
+ABC RESULTS:          output signals:     3536
+Removing temp directory.
+Removing global temp directory.
+
+12. Executing OPT pass (performing simple optimizations).
+
+12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module aes_128.
+
+12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\aes_128'.
+Computing hashes of 15869 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \aes_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \aes_128.
+Performed a total of 0 changes.
+
+12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\aes_128'.
+Computing hashes of 15869 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+12.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \aes_128..
+Removed 0 unused cells and 9223 unused wires.
+<suppressed ~12 debug messages>
+
+12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module aes_128.
+
+12.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+12.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \aes_128..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \aes_128.
+Performed a total of 0 changes.
+
+12.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\aes_128'.
+Computing hashes of 15869 cells of `\aes_128'.
+Finding duplicate cells in `\aes_128'.
+Removed a total of 0 cells.
+
+12.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \aes_128..
+
+12.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module aes_128.
+
+12.16. Finished fast OPT passes. (There is nothing left to do.)
+
+13. Executing Verilog backend.
+
+13.1. Executing BMUXMAP pass.
+
+13.2. Executing DEMUXMAP pass.
+Dumping module `\aes_128'.
+
+End of script. Logfile hash: f8673883c9
+Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
+Time spent: 3% 12x opt_expr (0 sec), 3% 11x opt_merge (0 sec), ...
+

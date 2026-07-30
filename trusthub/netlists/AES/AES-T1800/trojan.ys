@@ -1,0 +1,17 @@
+read_verilog "C:\trusthub\AES_unzipped\AES-T1800\AES-T1800\src\TjIn\aes_128.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T1800\AES-T1800\src\TjIn\round.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T1800\AES-T1800\src\TjIn\table.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T1800\AES-T1800\src\TjIn\top.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T1800\AES-T1800\src\TjIn\TSC.v"
+
+hierarchy -top top
+
+proc
+opt
+flatten
+opt
+techmap
+opt
+abc
+opt
+write_verilog "C:\trusthub\netlists\AES\AES-T1800\trojan_netlist.v"

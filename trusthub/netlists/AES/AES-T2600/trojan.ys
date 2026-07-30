@@ -1,0 +1,16 @@
+read_verilog "C:\trusthub\AES_unzipped\AES-T2600\AES-T2600\src\TjIn\aes_128.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T2600\AES-T2600\src\TjIn\round.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T2600\AES-T2600\src\TjIn\table.v"
+read_verilog "C:\trusthub\AES_unzipped\AES-T2600\AES-T2600\src\TjIn\TSC_async_ctr.v"
+
+hierarchy -top top
+
+proc
+opt
+flatten
+opt
+techmap
+opt
+abc
+opt
+write_verilog "C:\trusthub\netlists\AES\AES-T2600\trojan_netlist.v"

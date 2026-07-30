@@ -1,0 +1,2 @@
+vcs -sverilog $SAED90nm_PATH aes_synth_opt.v tbTOP.v -debug_all
+./simv -gui

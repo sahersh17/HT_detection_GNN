@@ -1,0 +1,18 @@
+{
+    "module": "top",
+    "source": "C:\\trusthub\\netlists\\AES\\AES-T900\\trojan_netlist.v",
+    "label": -1,
+    "num_gates": 2,
+    "gates": [
+        {
+            "type": "module",
+            "name": "top",
+            "ports": {}
+        },
+        {
+            "type": "always",
+            "name": "@",
+            "ports": {}
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+read_verilog "C:\Users\saher\AppData\Local\Temp\tmp6_qvfrw0\uart_scan_route.v"
+
+hierarchy -top uart
+
+proc
+opt
+flatten
+opt
+techmap
+opt
+abc
+opt
+write_verilog "C:\trusthub\netlists\RS232\RS232-T1900\180nm_netlist.v"

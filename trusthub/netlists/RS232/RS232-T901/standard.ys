@@ -1,0 +1,15 @@
+read_verilog "C:\Users\saher\AppData\Local\Temp\tmp6g7qno7a\u_rec.v"
+read_verilog "C:\Users\saher\AppData\Local\Temp\tmp6g7qno7a\u_xmit.v"
+read_verilog "C:\Users\saher\AppData\Local\Temp\tmp6g7qno7a\uart.v"
+
+hierarchy -top uart
+
+proc
+opt
+flatten
+opt
+techmap
+opt
+abc
+opt
+write_verilog "C:\trusthub\netlists\RS232\RS232-T901\standard_netlist.v"

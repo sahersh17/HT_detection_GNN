@@ -1,0 +1,30 @@
+1.Home directory includes:
+ 1.1 src
+ ---uart_scan_route.v: Layout netlist of Trojan-inserted circuit
+ ---uart_scan_route.def: DEF file of the layout.
+ 1.2 pattren
+ --PathDelay: includes patterns for path delay
+ --StuckAt: includes patterns for stuck at
+ --TransitionDelay: includes patterns for transition delay
+ 1.3 Spec.doc
+ ---Specification
+ 1.4 RS232-T1800.pdf
+ ---Evaluation results
+ 
+2.Trojan
+  Trojan Description
+	Trojan is a chain of inverters which is driven by a the design main clock. 
+
+  Trojan Taxonomy
+	Insertion phase: Design
+	Abstraction level: Layout-level
+	Activation mechanism: Externally conditionally triggered
+	Effects: Reduce design reliability
+	Physical characteristics: Functional 
+
+  Trojan Circuit
+    AND2X1  U300 (.A(ena), .B(sys_clk), .Y(sys_clk_l));
+    INVX1  U301 (.A(sys_clk_l), .Y(sys_clk_h));
+    INVX1  U302 (.A(sys_clk_h), .Y(sys_clk_hl));
+    INVX1  U303 (.A(sys_clk_hl), .Y(sys_clk_hh));
+
