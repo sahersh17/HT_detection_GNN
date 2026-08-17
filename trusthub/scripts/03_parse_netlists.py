@@ -7,15 +7,15 @@ import json
 # CONFIG
 # ============================================================
 
-NETLIST_ROOT = Path(r"C:\trusthub\netlists")
-
-OUTPUT_ROOT = Path(r"C:\trusthub\parsed")
+NETLIST_ROOT = Path(r"C:\HT_detection_GNN\trusthub\netlists")
+OUTPUT_ROOT = Path(r"C:\HT_detection_GNN\trusthub\parsed")
 
 OUTPUT_ROOT.mkdir(
     parents=True,
     exist_ok=True
 )
-
+KEYWORDS = {"module", "endmodule", "input", "output", "inout", "wire",
+            "reg", "assign", "parameter", "always", "initial", "generate", "endgenerate"}
 
 # ============================================================
 # REGEX
@@ -56,17 +56,18 @@ port_re = re.compile(
 # ============================================================
 
 def get_label(file):
+    stem = file.stem.lower()
+    tag = stem.replace("_netlist", "")
 
-    name = file.name.lower()
-
-    if "clean" in name:
+    if tag in {"clean", "tjfree"}:
         return 0
-
-    if "_t" in name:
+    if tag in {"trojan", "tjin"}:
         return 1
+    if tag in {"standard", "90nm", "180nm"}:
+        return 1   # confirmed via RS232-T100's README: these are Trojan-inserted variants
+                    # with no separate clean baseline shipped in the same folder
 
     return -1
-
 
 
 # ============================================================
@@ -109,7 +110,11 @@ def parse_netlist(file):
                 module = match.group(1)
 
 
+        first_token = line.strip().split(" ", 1)[0].split("(")[0]
 
+        if first_token.lower() in KEYWORDS:
+            i += 1
+            continue
         # ----------------------------------------------------
         # Find gate instances
         # ----------------------------------------------------
@@ -122,7 +127,6 @@ def parse_netlist(file):
             gate_type = match.group(1)
 
             gate_name = match.group(2)
-
 
             block = line
 
@@ -289,3 +293,10 @@ print(
 )
 
 print("================================")
+
+#note :One thing worth flagging honestly before you move on: your class balance
+#is skewed toward label 1. All 15 RS232 standard/90nm/180nm netlists
+#are label 1 with no clean counterpart, plus 40-ish AES/RS232 Trojan
+#netlists vs. matching clean ones — so you'll have noticeably more Trojan (1)
+#samples than clean (0) samples overall. Not a blocker, but something
+#to account for later (class weighting or stratified splitting) when you train the GNN
