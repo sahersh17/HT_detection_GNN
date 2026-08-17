@@ -1,13 +1,13 @@
 from pathlib import Path
 import subprocess
 import shutil
-
+import re
 # ==========================================================
 # CONFIGURATION
 # ==========================================================
 
-ROOT = Path(r"C:\trusthub\AES_unzipped")
-OUTROOT = Path(r"C:\trusthub\netlists\AES")
+ROOT = Path(r"C:\HT_detection_GNN\trusthub\AES_unzipped")
+OUTROOT = Path(r"C:\HT_detection_GNN\trusthub\netlists\AES")
 
 YOSYS = shutil.which("yosys") or "yosys"
 
@@ -16,6 +16,12 @@ OUTROOT.mkdir(parents=True, exist_ok=True)
 # ==========================================================
 # FILE FILTER
 # ==========================================================
+def detect_top_module(verilog_files, default="aes_128"):
+    for vf in verilog_files:
+        text = vf.read_text(errors="ignore")
+        if re.search(r'\bmodule\s+top\b', text):
+            return "top"
+    return default
 
 def is_testbench(file_path: Path):
     """Return True if this Verilog file is a testbench."""
@@ -61,7 +67,7 @@ abc
 opt
 """)
 
-        f.write(f'write_verilog "{output_netlist}"\n')
+        f.write(f'write_verilog -noexpr "{output_netlist}"\n')
 
 
 # ==========================================================
@@ -134,7 +140,14 @@ print(f"\nFound {len(benchmarks)} AES benchmarks\n")
 success = 0
 failed = 0
 
+SKIP_BENCHMARKS = {"AES-T2200"} 
+
 for bench in benchmarks:
+
+    if bench.name in SKIP_BENCHMARKS:    # <-- and this check as the first thing inside the loop
+        print("=" * 70)
+        print(bench.name, "- SKIPPED (pre-synthesized netlist, not RTL)")
+        continue
 
     print("=" * 70)
     print(bench.name)
@@ -179,12 +192,14 @@ for bench in benchmarks:
     tjin = src / "TjIn"
 
     if tjin.exists():
-
         print("   TROJAN")
+
+        tjin_files = [vf for vf in sorted(tjin.glob("*.v")) if not is_testbench(vf)]
+        top = detect_top_module(tjin_files)
 
         ok = synthesize(
             folder=tjin,
-            top_module="top",
+            top_module=top,
             output_name="trojan",
             outdir=outdir
         )

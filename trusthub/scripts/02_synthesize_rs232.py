@@ -2,13 +2,14 @@ from pathlib import Path
 import subprocess
 import shutil
 import tempfile
+import re
 
 # =====================================================
 # CONFIGURATION
 # =====================================================
 
-ROOT = Path(r"C:\trusthub\AES_unzipped")
-OUTROOT = Path(r"C:\trusthub\netlists\RS232")
+ROOT = Path(r"C:\HT_detection_GNN\trusthub\AES_unzipped")
+OUTROOT = Path(r"C:\HT_detection_GNN\trusthub\netlists\RS232")
 
 YOSYS = shutil.which("yosys") or "yosys"
 
@@ -28,20 +29,37 @@ def is_testbench(name):
     )
 
 
+
 def patch_file(src, dst):
+
     """
-    Copy Verilog file and fix Linux include paths.
+
+    Copy Verilog file and fix absolute include paths
+
+    (different TrustHub contributors baked in different
+
+    hardcoded Linux paths).
+
     """
+
     text = src.read_text(errors="ignore")
 
-    # Replace absolute include path
-    text = text.replace(
-        "/home/xuehui/project/benchmark/src/inc.h",
-        "inc.h"
+    # Rewrite `include "/any/absolute/path/whatever.h" -> `include "whatever.h"
+
+    text = re.sub(
+
+        r'(`include\s+")([^"]*[\\/])?([^"/\\]+\.h)(")',
+
+        r'\1\3\4',
+
+        text
+
     )
 
     dst.write_text(text)
 
+
+  
 
 def synthesize(folder, top_module, outdir, tag):
 
@@ -99,7 +117,7 @@ abc
 opt
 """)
 
-        f.write(f'write_verilog "{netlist}"\n')
+        f.write(f'write_verilog -noexpr "{netlist}"\n')
 
     result = subprocess.run(
         [YOSYS, "-s", str(ys)],
