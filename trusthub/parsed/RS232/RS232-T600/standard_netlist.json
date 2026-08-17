@@ -1,18 +1,962 @@
 {
     "module": "uart",
-    "source": "C:\\trusthub\\netlists\\RS232\\RS232-T600\\standard_netlist.v",
-    "label": -1,
-    "num_gates": 2,
+    "source": "C:\\HT_detection_GNN\\trusthub\\netlists\\RS232\\RS232-T600\\standard_netlist.v",
+    "label": 1,
+    "num_gates": 106,
     "gates": [
         {
-            "type": "module",
-            "name": "uart",
-            "ports": {}
+            "type": "\\$_AND_",
+            "name": "_097_",
+            "ports": {
+                "A": "\\iXMIT.state_DataSend [1]",
+                "B": "\\iXMIT.state_DataSend [0]",
+                "Y": "_056_"
+            }
         },
         {
-            "type": "always",
-            "name": "@",
-            "ports": {}
+            "type": "\\$_AND_",
+            "name": "_098_",
+            "ports": {
+                "A": "\\iXMIT.state_DataSend [2]",
+                "B": "_056_",
+                "Y": "_014_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_099_",
+            "ports": {
+                "A": "_056_",
+                "B": "\\iXMIT.state_DataSend [2]",
+                "Y": "_000_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_100_",
+            "ports": {
+                "A": "xmit_dataH[6]",
+                "B": "xmit_dataH[2]",
+                "Y": "_057_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_101_",
+            "ports": {
+                "A": "xmit_dataH[3]",
+                "B": "xmit_dataH[7]",
+                "Y": "_058_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_102_",
+            "ports": {
+                "A": "_057_",
+                "B": "_058_",
+                "Y": "_059_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_103_",
+            "ports": {
+                "A": "xmit_dataH[5]",
+                "B": "xmit_dataH[1]",
+                "Y": "_060_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_104_",
+            "ports": {
+                "A": "xmit_dataH[4]",
+                "B": "xmit_dataH[0]",
+                "Y": "_061_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_105_",
+            "ports": {
+                "A": "_060_",
+                "B": "_061_",
+                "Y": "_062_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_106_",
+            "ports": {
+                "A": "_059_",
+                "B": "_062_",
+                "Y": "_063_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_107_",
+            "ports": {
+                "A": "_014_",
+                "B": "_063_",
+                "Y": "_064_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_108_",
+            "ports": {
+                "A": "xmit_dataH[5]",
+                "B": "xmit_dataH[3]",
+                "Y": "_065_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_109_",
+            "ports": {
+                "A": "xmit_dataH[1]",
+                "B": "_065_",
+                "Y": "_066_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_110_",
+            "ports": {
+                "A": "xmit_dataH[6]",
+                "B": "xmit_dataH[2]",
+                "Y": "_067_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_111_",
+            "ports": {
+                "A": "_061_",
+                "B": "_067_",
+                "Y": "_068_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_112_",
+            "ports": {
+                "A": "xmit_dataH[7]",
+                "B": "\\iXMIT.state_DataSend [2]",
+                "Y": "_069_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_113_",
+            "ports": {
+                "A": "_056_",
+                "B": "_069_",
+                "Y": "_070_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_114_",
+            "ports": {
+                "A": "_068_",
+                "B": "_070_",
+                "Y": "_071_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_115_",
+            "ports": {
+                "A": "_066_",
+                "B": "_071_",
+                "Y": "_072_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_116_",
+            "ports": {
+                "A": "_064_",
+                "B": "_072_",
+                "Y": "_012_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_117_",
+            "ports": {
+                "A": "xmit_dataH[4]",
+                "B": "xmit_dataH[0]",
+                "Y": "_073_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_118_",
+            "ports": {
+                "A": "\\iXMIT.state_DataSend [0]",
+                "B": "\\iXMIT.state_DataSend [2]",
+                "Y": "_074_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_119_",
+            "ports": {
+                "A": "_073_",
+                "B": "_074_",
+                "Y": "_075_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_120_",
+            "ports": {
+                "A": "_060_",
+                "B": "_075_",
+                "Y": "_076_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_121_",
+            "ports": {
+                "A": "_059_",
+                "B": "_076_",
+                "Y": "_077_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_122_",
+            "ports": {
+                "A": "\\iXMIT.state_DataSend [1]",
+                "B": "_077_",
+                "Y": "_078_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_123_",
+            "ports": {
+                "A": "_078_",
+                "B": "_012_",
+                "Y": "_079_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_124_",
+            "ports": {
+                "A": "xmit_dataH[7]",
+                "B": "\\iXMIT.state_DataSend [1]",
+                "Y": "_080_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_125_",
+            "ports": {
+                "A": "_057_",
+                "B": "_080_",
+                "Y": "_081_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_126_",
+            "ports": {
+                "A": "_075_",
+                "B": "_081_",
+                "Y": "_082_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_127_",
+            "ports": {
+                "A": "_066_",
+                "B": "_082_",
+                "Y": "_083_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_128_",
+            "ports": {
+                "A": "_079_",
+                "B": "_083_",
+                "Y": "_010_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_129_",
+            "ports": {
+                "A": "\\iXMIT.state [2]",
+                "B": "\\iXMIT.state [1]",
+                "Y": "_084_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_130_",
+            "ports": {
+                "A": "\\iXMIT.state [0]",
+                "B": "\\iXMIT.state [1]",
+                "Y": "_085_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_131_",
+            "ports": {
+                "A": "\\iXMIT.state [2]",
+                "B": "xmitH",
+                "Y": "_086_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_132_",
+            "ports": {
+                "A": "_085_",
+                "B": "_086_",
+                "Y": "_087_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_133_",
+            "ports": {
+                "A": "_084_",
+                "B": "_087_",
+                "Y": "\\iXMIT.next_state [1]"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_134_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [3]",
+                "B": "\\iRECEIVER.bitCell_cntrH [0]",
+                "Y": "_088_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_135_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [1]",
+                "B": "\\iRECEIVER.bitCell_cntrH [2]",
+                "Y": "_089_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_136_",
+            "ports": {
+                "A": "_088_",
+                "B": "_089_",
+                "Y": "_090_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_137_",
+            "ports": {
+                "A": "\\iRECEIVER.state [1]",
+                "B": "\\iRECEIVER.state [2]",
+                "Y": "_091_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_138_",
+            "ports": {
+                "A": "\\iRECEIVER.state [0]",
+                "B": "_091_",
+                "Y": "_092_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_139_",
+            "ports": {
+                "A": "_090_",
+                "B": "_092_",
+                "Y": "\\iRECEIVER.next_state [2]"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_140_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [1]",
+                "B": "\\iRECEIVER.bitCell_cntrH [0]",
+                "Y": "_093_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_141_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [2]",
+                "B": "\\iRECEIVER.bitCell_cntrH [3]",
+                "Y": "_094_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_142_",
+            "ports": {
+                "A": "_093_",
+                "B": "_094_",
+                "Y": "_095_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_143_",
+            "ports": {
+                "A": "_091_",
+                "B": "\\iRECEIVER.state [0]",
+                "Y": "_096_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_144_",
+            "ports": {
+                "A": "_095_",
+                "B": "_096_",
+                "Y": "_015_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_145_",
+            "ports": {
+                "A": "\\iRECEIVER.state [2]",
+                "B": "\\iRECEIVER.state [1]",
+                "Y": "_016_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_146_",
+            "ports": {
+                "A": "_016_",
+                "B": "\\iRECEIVER.state [0]",
+                "Y": "\\iRECEIVER.countH"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_147_",
+            "ports": {
+                "A": "\\iRECEIVER.state [0]",
+                "B": "\\iRECEIVER.state [1]",
+                "Y": "_017_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_148_",
+            "ports": {
+                "A": "_015_",
+                "B": "\\iRECEIVER.countH",
+                "Y": "_018_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_149_",
+            "ports": {
+                "A": "\\iRECEIVER.next_state [2]",
+                "B": "_017_",
+                "Y": "_019_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_150_",
+            "ports": {
+                "A": "_018_",
+                "B": "_019_",
+                "Y": "_020_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_151_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [1]",
+                "B": "\\iRECEIVER.bitCell_cntrH [0]",
+                "Y": "_021_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_152_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [2]",
+                "B": "_021_",
+                "Y": "_022_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_153_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [2]",
+                "B": "_021_",
+                "Y": "_023_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_154_",
+            "ports": {
+                "A": "_020_",
+                "B": "_023_",
+                "Y": "_003_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_155_",
+            "ports": {
+                "A": "_093_",
+                "B": "_021_",
+                "Y": "_024_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_156_",
+            "ports": {
+                "A": "_020_",
+                "B": "_024_",
+                "Y": "_002_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_157_",
+            "ports": {
+                "A": "_020_",
+                "B": "\\iRECEIVER.bitCell_cntrH [0]",
+                "Y": "_001_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_158_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [0]",
+                "B": "\\iRECEIVER.recd_bitCntrH [1]",
+                "Y": "_025_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_159_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [2]",
+                "B": "_025_",
+                "Y": "_026_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_160_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [2]",
+                "B": "_025_",
+                "Y": "_027_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_161_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_027_",
+                "Y": "_028_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_162_",
+            "ports": {
+                "A": "_026_",
+                "B": "_028_",
+                "Y": "_007_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_163_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [0]",
+                "B": "\\iRECEIVER.recd_bitCntrH [1]",
+                "Y": "_029_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_164_",
+            "ports": {
+                "A": "_025_",
+                "B": "_029_",
+                "Y": "_030_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_165_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_030_",
+                "Y": "_006_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_166_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "\\iRECEIVER.recd_bitCntrH [0]",
+                "Y": "_005_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_167_",
+            "ports": {
+                "A": "\\iXMIT.state [2]",
+                "B": "\\iXMIT.state [1]",
+                "Y": "_031_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_168_",
+            "ports": {
+                "A": "\\iXMIT.state [0]",
+                "B": "_084_",
+                "Y": "_032_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_169_",
+            "ports": {
+                "A": "_031_",
+                "B": "_032_",
+                "Y": "\\iXMIT.next_state [0]"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_170_",
+            "ports": {
+                "A": "\\iXMIT.state_DataSend [0]",
+                "B": "\\iXMIT.state_DataSend [1]",
+                "Y": "_033_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_171_",
+            "ports": {
+                "A": "_067_",
+                "B": "\\iXMIT.state_DataSend [2]",
+                "Y": "_034_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_172_",
+            "ports": {
+                "A": "_033_",
+                "B": "_034_",
+                "Y": "_035_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_173_",
+            "ports": {
+                "A": "_062_",
+                "B": "_035_",
+                "Y": "_036_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_174_",
+            "ports": {
+                "A": "_058_",
+                "B": "_036_",
+                "Y": "_037_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_175_",
+            "ports": {
+                "A": "_079_",
+                "B": "_037_",
+                "Y": "_011_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_176_",
+            "ports": {
+                "A": "_090_",
+                "B": "_092_",
+                "Y": "_038_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_177_",
+            "ports": {
+                "A": "_017_",
+                "B": "\\iRECEIVER.state [2]",
+                "Y": "_039_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_178_",
+            "ports": {
+                "A": "_095_",
+                "B": "_096_",
+                "Y": "_040_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_179_",
+            "ports": {
+                "A": "_096_",
+                "B": "_039_",
+                "Y": "_041_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_180_",
+            "ports": {
+                "A": "\\iRECEIVER.rec_datH",
+                "B": "_041_",
+                "Y": "_042_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_181_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_042_",
+                "Y": "_043_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_182_",
+            "ports": {
+                "A": "_038_",
+                "B": "_040_",
+                "Y": "_044_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_183_",
+            "ports": {
+                "A": "_043_",
+                "B": "_044_",
+                "Y": "\\iRECEIVER.next_state [1]"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_184_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [3]",
+                "B": "\\iRECEIVER.recd_bitCntrH [2]",
+                "Y": "_045_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_185_",
+            "ports": {
+                "A": "_029_",
+                "B": "_045_",
+                "Y": "_046_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_186_",
+            "ports": {
+                "A": "_092_",
+                "B": "_046_",
+                "Y": "_047_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_187_",
+            "ports": {
+                "A": "\\iRECEIVER.rec_datH",
+                "B": "\\iRECEIVER.state [2]",
+                "Y": "_048_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_188_",
+            "ports": {
+                "A": "_017_",
+                "B": "_048_",
+                "Y": "\\iRECEIVER.rec_readyInH"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_189_",
+            "ports": {
+                "A": "_047_",
+                "B": "\\iRECEIVER.rec_readyInH",
+                "Y": "_049_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_190_",
+            "ports": {
+                "A": "_038_",
+                "B": "_049_",
+                "Y": "_050_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_191_",
+            "ports": {
+                "A": "_018_",
+                "B": "_050_",
+                "Y": "\\iRECEIVER.next_state [0]"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_192_",
+            "ports": {
+                "A": "\\iRECEIVER.rec_datH",
+                "B": "_039_",
+                "Y": "_051_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_193_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_051_",
+                "Y": "_009_"
+            }
+        },
+        {
+            "type": "\\$_XNOR_",
+            "name": "_194_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [3]",
+                "B": "_026_",
+                "Y": "_052_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_195_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_052_",
+                "Y": "_008_"
+            }
+        },
+        {
+            "type": "\\$_XNOR_",
+            "name": "_196_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [3]",
+                "B": "_022_",
+                "Y": "_053_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_197_",
+            "ports": {
+                "A": "_020_",
+                "B": "_053_",
+                "Y": "_004_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_198_",
+            "ports": {
+                "A": "_085_",
+                "B": "\\iXMIT.state [2]",
+                "Y": "_054_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_199_",
+            "ports": {
+                "A": "_054_",
+                "B": "xmitH",
+                "Y": "_055_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_200_",
+            "ports": {
+                "A": "\\iXMIT.DataSend_ena",
+                "B": "_055_",
+                "Y": "_013_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_201_",
+            "ports": {
+                "A": "\\iXMIT.state [0]",
+                "B": "_031_",
+                "Y": "\\iXMIT.next_state [2]"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_202_",
+            "ports": {
+                "A": "_054_",
+                "B": "\\iXMIT.next_state [2]",
+                "Y": "uart_XMIT_dataH"
+            }
         }
     ]
 }

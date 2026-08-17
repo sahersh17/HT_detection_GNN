@@ -1,14 +1,9 @@
 {
     "module": "uart",
-    "source": "C:\\trusthub\\netlists\\RS232\\RS232-T1100\\90nm_netlist.v",
-    "label": -1,
-    "num_gates": 272,
+    "source": "C:\\HT_detection_GNN\\trusthub\\netlists\\RS232\\RS232-T1100\\90nm_netlist.v",
+    "label": 1,
+    "num_gates": 271,
     "gates": [
-        {
-            "type": "module",
-            "name": "uart",
-            "ports": {}
-        },
         {
             "type": "NBUFFX16",
             "name": "ByHassan1",

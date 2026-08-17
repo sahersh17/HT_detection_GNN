@@ -5,8 +5,8 @@ from graph_builder import GraphBuilder
 # CONFIG
 # ============================================================
 
-PARSED_ROOT = Path(r"C:\trusthub\parsed")
-GRAPH_ROOT = Path(r"C:\trusthub\graphs")
+PARSED_ROOT = Path(r"C:\HT_detection_GNN\trusthub\parsed")
+GRAPH_ROOT = Path(r"C:\HT_detection_GNN\trusthub\graphs")
 
 GRAPH_ROOT.mkdir(parents=True, exist_ok=True)
 
@@ -74,4 +74,4 @@ print("\n" + "=" * 70)
 print("Finished")
 print(f"Successful : {success}")
 print(f"Failed     : {failed}")
-print("=" * 70)p
+print("=" * 70)

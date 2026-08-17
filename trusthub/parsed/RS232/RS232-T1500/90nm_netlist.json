@@ -1,14 +1,9 @@
 {
     "module": "uart",
-    "source": "C:\\trusthub\\netlists\\RS232\\RS232-T1500\\90nm_netlist.v",
-    "label": -1,
-    "num_gates": 271,
+    "source": "C:\\HT_detection_GNN\\trusthub\\netlists\\RS232\\RS232-T1500\\90nm_netlist.v",
+    "label": 1,
+    "num_gates": 270,
     "gates": [
-        {
-            "type": "module",
-            "name": "uart",
-            "ports": {}
-        },
         {
             "type": "MUX21X1",
             "name": "U1",

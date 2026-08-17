@@ -1,0 +1,746 @@
+[
+  {
+    "graph_id": "AES/AES-T100/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T100\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T100\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T100/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7716,
+    "num_edges": 6530,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T100\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T100\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1000/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1000\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1000\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1000/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7907,
+    "num_edges": 6719,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1000\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1000\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1100/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1100\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1100\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1100/trojan_netlist",
+    "label": 1,
+    "num_nodes": 8076,
+    "num_edges": 6921,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1100\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1100\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1200/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1200\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1200\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1200/trojan_netlist",
+    "label": 1,
+    "num_nodes": 8289,
+    "num_edges": 7485,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1200\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1200\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1300/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1300\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1300\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1300/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1300\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1300\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1400/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1400\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1400\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1400/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1400\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1400\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1500/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1500\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1500\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1500/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1500\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1500\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1600/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1600\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1600\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1600/trojan_netlist",
+    "label": 1,
+    "num_nodes": 8057,
+    "num_edges": 6912,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1600\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1600\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1700/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1700\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1700\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1700/trojan_netlist",
+    "label": 1,
+    "num_nodes": 8276,
+    "num_edges": 7606,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1700\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1700\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1800/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1800\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1800\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1800/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1800\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1800\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1900/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1900\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1900\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T1900/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T1900\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T1900\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T200/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T200\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T200\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T200/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7736,
+    "num_edges": 6531,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T200\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T200\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2000/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2000\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2000\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2000/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2000\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2000\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2100/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2100\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2100\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2100/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2100\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2100\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2300/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2300\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2300\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2300/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7906,
+    "num_edges": 6521,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2300\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2300\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2400/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2400\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2400\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2400/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7906,
+    "num_edges": 6521,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2400\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2400\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2500/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2500\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2500\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2500/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7917,
+    "num_edges": 6530,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2500\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2500\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2600/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2600\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2600\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2600/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7918,
+    "num_edges": 6532,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2600\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2600\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2700/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2700\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2700\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2700/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7867,
+    "num_edges": 6482,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2700\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2700\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2800/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2800\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2800\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T2800/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7932,
+    "num_edges": 6546,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2800\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2800\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T300/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T300\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T300\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T300/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T300\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T300\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T400/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T400\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T400\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T400/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7892,
+    "num_edges": 6708,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T400\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T400\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T500/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T500\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T500\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T500/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7705,
+    "num_edges": 6528,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T500\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T500\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T600/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T600\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T600\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T700/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T700\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T700\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T700/trojan_netlist",
+    "label": 1,
+    "num_nodes": 7845,
+    "num_edges": 6658,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T700\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T700\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T800/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T800\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T800\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T800/trojan_netlist",
+    "label": 1,
+    "num_nodes": 8017,
+    "num_edges": 6863,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T800\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T800\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T900/clean_netlist",
+    "label": 0,
+    "num_nodes": 7903,
+    "num_edges": 6519,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T900\\clean_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T900\\clean_netlist.json"
+  },
+  {
+    "graph_id": "AES/AES-T900/trojan_netlist",
+    "label": 1,
+    "num_nodes": 8229,
+    "num_edges": 7552,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T900\\trojan_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T900\\trojan_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T100/standard_netlist",
+    "label": 1,
+    "num_nodes": 88,
+    "num_edges": 110,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T100\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T100\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1000/180nm_netlist",
+    "label": 1,
+    "num_nodes": 215,
+    "num_edges": 551,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1000\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1000\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1000/90nm_netlist",
+    "label": 1,
+    "num_nodes": 268,
+    "num_edges": 550,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1000\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1000\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1100/180nm_netlist",
+    "label": 1,
+    "num_nodes": 216,
+    "num_edges": 552,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1100\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1100\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1100/90nm_netlist",
+    "label": 1,
+    "num_nodes": 271,
+    "num_edges": 552,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1100\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1100\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1200/180nm_netlist",
+    "label": 1,
+    "num_nodes": 216,
+    "num_edges": 553,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1200\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1200\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1200/90nm_netlist",
+    "label": 1,
+    "num_nodes": 273,
+    "num_edges": 550,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1200\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1200\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1300/180nm_netlist",
+    "label": 1,
+    "num_nodes": 213,
+    "num_edges": 540,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1300\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1300\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1300/90nm_netlist",
+    "label": 1,
+    "num_nodes": 267,
+    "num_edges": 541,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1300\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1300\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1400/180nm_netlist",
+    "label": 1,
+    "num_nodes": 215,
+    "num_edges": 555,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1400\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1400\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1400/90nm_netlist",
+    "label": 1,
+    "num_nodes": 269,
+    "num_edges": 554,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1400\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1400\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1500/180nm_netlist",
+    "label": 1,
+    "num_nodes": 216,
+    "num_edges": 554,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1500\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1500\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1500/90nm_netlist",
+    "label": 1,
+    "num_nodes": 270,
+    "num_edges": 552,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1500\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1500\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1600/180nm_netlist",
+    "label": 1,
+    "num_nodes": 214,
+    "num_edges": 542,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1600\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1600\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1600/90nm_netlist",
+    "label": 1,
+    "num_nodes": 265,
+    "num_edges": 535,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1600\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1600\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1700/180nm_netlist",
+    "label": 1,
+    "num_nodes": 210,
+    "num_edges": 531,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1700\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1700\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1700/90nm_netlist",
+    "label": 1,
+    "num_nodes": 264,
+    "num_edges": 532,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1700\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1700\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1800/180nm_netlist",
+    "label": 1,
+    "num_nodes": 206,
+    "num_edges": 511,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1800\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1800\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1800/90nm_netlist",
+    "label": 1,
+    "num_nodes": 256,
+    "num_edges": 509,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1800\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1800\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1900/180nm_netlist",
+    "label": 1,
+    "num_nodes": 218,
+    "num_edges": 546,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1900\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1900\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T1900/90nm_netlist",
+    "label": 1,
+    "num_nodes": 276,
+    "num_edges": 547,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T1900\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T1900\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T200/standard_netlist",
+    "label": 1,
+    "num_nodes": 67,
+    "num_edges": 85,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T200\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T200\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2000/180nm_netlist",
+    "label": 1,
+    "num_nodes": 213,
+    "num_edges": 535,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2000\\180nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2000\\180nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2000/90nm_netlist",
+    "label": 1,
+    "num_nodes": 268,
+    "num_edges": 536,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2000\\90nm_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2000\\90nm_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2100/tjfree_netlist",
+    "label": 0,
+    "num_nodes": 66,
+    "num_edges": 83,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2100\\tjfree_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2100\\tjfree_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2100/tjin_netlist",
+    "label": 1,
+    "num_nodes": 82,
+    "num_edges": 88,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2100\\tjin_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2100\\tjin_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2200/tjfree_netlist",
+    "label": 0,
+    "num_nodes": 66,
+    "num_edges": 83,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2200\\tjfree_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2200\\tjfree_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2200/tjin_netlist",
+    "label": 1,
+    "num_nodes": 80,
+    "num_edges": 86,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2200\\tjin_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2200\\tjin_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2300/tjfree_netlist",
+    "label": 0,
+    "num_nodes": 66,
+    "num_edges": 83,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2300\\tjfree_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2300\\tjfree_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2300/tjin_netlist",
+    "label": 1,
+    "num_nodes": 79,
+    "num_edges": 88,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2300\\tjin_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2300\\tjin_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2400/tjfree_netlist",
+    "label": 0,
+    "num_nodes": 66,
+    "num_edges": 83,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2400\\tjfree_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2400\\tjfree_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T2400/tjin_netlist",
+    "label": 1,
+    "num_nodes": 84,
+    "num_edges": 89,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2400\\tjin_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2400\\tjin_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T300/standard_netlist",
+    "label": 1,
+    "num_nodes": 201,
+    "num_edges": 244,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T300\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T300\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T400/standard_netlist",
+    "label": 1,
+    "num_nodes": 67,
+    "num_edges": 85,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T400\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T400\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T500/standard_netlist",
+    "label": 1,
+    "num_nodes": 131,
+    "num_edges": 146,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T500\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T500\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T600/standard_netlist",
+    "label": 1,
+    "num_nodes": 106,
+    "num_edges": 132,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T600\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T600\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T700/standard_netlist",
+    "label": 1,
+    "num_nodes": 105,
+    "num_edges": 131,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T700\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T700\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T800/standard_netlist",
+    "label": 1,
+    "num_nodes": 79,
+    "num_edges": 97,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T800\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T800\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T900/standard_netlist",
+    "label": 1,
+    "num_nodes": 124,
+    "num_edges": 146,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T900\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T900\\standard_netlist.json"
+  },
+  {
+    "graph_id": "RS232/RS232-T901/standard_netlist",
+    "label": 1,
+    "num_nodes": 121,
+    "num_edges": 149,
+    "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T901\\standard_netlist.pt",
+    "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T901\\standard_netlist.json"
+  }
+]

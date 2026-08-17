@@ -1,0 +1,2644 @@
+{
+  "graph_id": "RS232/RS232-T2000/90nm_netlist",
+  "label": 1,
+  "num_nodes": 268,
+  "num_edges": 536,
+  "node_names": [
+    "U1",
+    "U10",
+    "U100",
+    "U101",
+    "U102",
+    "U103",
+    "U104",
+    "U105",
+    "U106",
+    "U107",
+    "U108",
+    "U109",
+    "U11",
+    "U110",
+    "U111",
+    "U112",
+    "U113",
+    "U114",
+    "U115",
+    "U116",
+    "U117",
+    "U118",
+    "U119",
+    "U12",
+    "U120",
+    "U121",
+    "U122",
+    "U123",
+    "U124",
+    "U125",
+    "U126",
+    "U127",
+    "U128",
+    "U129",
+    "U13",
+    "U130",
+    "U131",
+    "U132",
+    "U133",
+    "U134",
+    "U135",
+    "U136",
+    "U137",
+    "U138",
+    "U139",
+    "U14",
+    "U140",
+    "U141",
+    "U142",
+    "U143",
+    "U144",
+    "U145",
+    "U146",
+    "U147",
+    "U148",
+    "U149",
+    "U15",
+    "U150",
+    "U151",
+    "U152",
+    "U153",
+    "U154",
+    "U155",
+    "U156",
+    "U157",
+    "U158",
+    "U159",
+    "U16",
+    "U160",
+    "U161",
+    "U162",
+    "U163",
+    "U164",
+    "U165",
+    "U166",
+    "U167",
+    "U17",
+    "U18",
+    "U19",
+    "U2",
+    "U20",
+    "U201",
+    "U202",
+    "U204",
+    "U205",
+    "U206",
+    "U207",
+    "U208",
+    "U209",
+    "U21",
+    "U210",
+    "U211",
+    "U212",
+    "U213",
+    "U214",
+    "U215",
+    "U216",
+    "U217",
+    "U218",
+    "U219",
+    "U22",
+    "U220",
+    "U221",
+    "U222",
+    "U223",
+    "U224",
+    "U225",
+    "U226",
+    "U227",
+    "U228",
+    "U229",
+    "U23",
+    "U230",
+    "U24",
+    "U25",
+    "U26",
+    "U27",
+    "U28",
+    "U289",
+    "U29",
+    "U290",
+    "U291",
+    "U292",
+    "U293",
+    "U294",
+    "U295",
+    "U296",
+    "U3",
+    "U30",
+    "U302",
+    "U303",
+    "U308",
+    "U309",
+    "U31",
+    "U32",
+    "U33",
+    "U34",
+    "U35",
+    "U36",
+    "U37",
+    "U38",
+    "U39",
+    "U4",
+    "U40",
+    "U401",
+    "U41",
+    "U42",
+    "U43",
+    "U44",
+    "U45",
+    "U46",
+    "U47",
+    "U48",
+    "U49",
+    "U5",
+    "U50",
+    "U51",
+    "U52",
+    "U53",
+    "U54",
+    "U55",
+    "U56",
+    "U57",
+    "U58",
+    "U59",
+    "U6",
+    "U60",
+    "U61",
+    "U62",
+    "U63",
+    "U64",
+    "U65",
+    "U66",
+    "U67",
+    "U68",
+    "U69",
+    "U7",
+    "U70",
+    "U71",
+    "U72",
+    "U73",
+    "U74",
+    "U75",
+    "U76",
+    "U77",
+    "U78",
+    "U79",
+    "U8",
+    "U80",
+    "U81",
+    "U82",
+    "U83",
+    "U84",
+    "U85",
+    "U86",
+    "U87",
+    "U88",
+    "U89",
+    "U9",
+    "U90",
+    "U91",
+    "U92",
+    "U93",
+    "U94",
+    "U95",
+    "U96",
+    "U97",
+    "U98",
+    "U99",
+    "iDatasend_reg",
+    "iRECEIVER_bitCell_cntrH_reg_0_",
+    "iRECEIVER_bitCell_cntrH_reg_1_",
+    "iRECEIVER_bitCell_cntrH_reg_2_",
+    "iRECEIVER_bitCell_cntrH_reg_3_",
+    "iRECEIVER_par_dataH_reg_0_",
+    "iRECEIVER_par_dataH_reg_1_",
+    "iRECEIVER_par_dataH_reg_2_",
+    "iRECEIVER_par_dataH_reg_3_",
+    "iRECEIVER_par_dataH_reg_4_",
+    "iRECEIVER_par_dataH_reg_5_",
+    "iRECEIVER_par_dataH_reg_6_",
+    "iRECEIVER_par_dataH_reg_7_",
+    "iRECEIVER_rec_datH_reg",
+    "iRECEIVER_rec_datSyncH_reg",
+    "iRECEIVER_rec_readyH_reg",
+    "iRECEIVER_recd_bitCntrH_reg_0_",
+    "iRECEIVER_recd_bitCntrH_reg_1_",
+    "iRECEIVER_recd_bitCntrH_reg_2_",
+    "iRECEIVER_recd_bitCntrH_reg_3_",
+    "iRECEIVER_state_reg_0_",
+    "iRECEIVER_state_reg_1_",
+    "iRECEIVER_state_reg_2_",
+    "iXMIT_bitCell_cntrH_reg_0_",
+    "iXMIT_bitCell_cntrH_reg_1_",
+    "iXMIT_bitCell_cntrH_reg_2_",
+    "iXMIT_bitCell_cntrH_reg_3_",
+    "iXMIT_bitCountH_reg_0_",
+    "iXMIT_bitCountH_reg_1_",
+    "iXMIT_bitCountH_reg_2_",
+    "iXMIT_bitCountH_reg_3_",
+    "iXMIT_state_reg_0_",
+    "iXMIT_state_reg_1_",
+    "iXMIT_state_reg_2_",
+    "iXMIT_xmit_ShiftRegH_reg_0_",
+    "iXMIT_xmit_ShiftRegH_reg_1_",
+    "iXMIT_xmit_ShiftRegH_reg_2_",
+    "iXMIT_xmit_ShiftRegH_reg_3_",
+    "iXMIT_xmit_ShiftRegH_reg_4_",
+    "iXMIT_xmit_ShiftRegH_reg_5_",
+    "iXMIT_xmit_ShiftRegH_reg_6_",
+    "iXMIT_xmit_ShiftRegH_reg_7_",
+    "iXMIT_xmit_doneH_reg",
+    "rec_dataH_reg_0_",
+    "rec_dataH_reg_1_",
+    "rec_dataH_reg_2_",
+    "rec_dataH_reg_3_",
+    "rec_dataH_reg_4_",
+    "rec_dataH_reg_5_",
+    "rec_dataH_reg_6_",
+    "rec_dataH_reg_7_",
+    "rec_dataH_temp_reg_0_",
+    "rec_dataH_temp_reg_1_",
+    "rec_dataH_temp_reg_2_",
+    "rec_dataH_temp_reg_3_",
+    "rec_dataH_temp_reg_4_",
+    "rec_dataH_temp_reg_5_",
+    "rec_dataH_temp_reg_6_",
+    "rec_dataH_temp_reg_7_"
+  ],
+  "node_types": [
+    "MUX21X1",
+    "INVX32",
+    "NOR2X4",
+    "NOR2X4",
+    "NAND3X4",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "OAI21X2",
+    "NAND3X4",
+    "AND2X4",
+    "NAND4X1",
+    "AOI22X2",
+    "MUX21X1",
+    "NOR2X4",
+    "NAND3X4",
+    "ISOLORX8",
+    "AOI21X2",
+    "MUX21X1",
+    "NAND4X1",
+    "AOI22X2",
+    "NAND4X1",
+    "MUX21X1",
+    "INVX32",
+    "NOR2X4",
+    "MUX21X1",
+    "MUX21X1",
+    "NOR2X4",
+    "AND2X4",
+    "AND2X4",
+    "AND2X4",
+    "AND2X4",
+    "AND2X4",
+    "AOI21X2",
+    "AOI22X2",
+    "MUX21X1",
+    "INVX32",
+    "NAND4X1",
+    "MUX21X1",
+    "MUX21X1",
+    "AOI21X2",
+    "MUX21X1",
+    "INVX32",
+    "NAND4X1",
+    "MUX21X1",
+    "OAI21X2",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "OAI21X2",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "INVX32",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "AOI22X2",
+    "INVX32",
+    "AOI22X2",
+    "MUX21X1",
+    "INVX32",
+    "NAND2X4",
+    "INVX32",
+    "NAND2X4",
+    "NAND2X4",
+    "NAND2X4",
+    "NAND2X4",
+    "NAND2X4",
+    "NAND2X4",
+    "AOI22X2",
+    "NAND2X4",
+    "NAND2X4",
+    "NAND2X4",
+    "NAND2X4",
+    "INVX32",
+    "XOR2X2",
+    "XOR2X2",
+    "NOR2X4",
+    "XOR2X2",
+    "XOR2X2",
+    "INVX32",
+    "XOR2X2",
+    "NOR2X4",
+    "XOR2X2",
+    "XOR2X2",
+    "XOR2X2",
+    "NOR2X4",
+    "XOR2X2",
+    "XOR2X2",
+    "XOR2X2",
+    "NOR2X4",
+    "AOI22X2",
+    "XOR2X2",
+    "INVX32",
+    "AOI22X2",
+    "INVX32",
+    "AOI22X2",
+    "INVX32",
+    "NAND2X4",
+    "AOI22X2",
+    "INVX32",
+    "MUX21X2",
+    "NAND4X1",
+    "NAND4X1",
+    "NAND4X1",
+    "NAND4X1",
+    "OR4X4",
+    "OAI21X2",
+    "INVX32",
+    "ISOLORX8",
+    "AND2X4",
+    "AND2X4",
+    "AND2X4",
+    "AOI22X2",
+    "OAI21X2",
+    "AOI22X2",
+    "MUX21X1",
+    "OAI21X2",
+    "AOI22X2",
+    "MUX21X1",
+    "OAI21X2",
+    "AOI22X2",
+    "AOI21X2",
+    "MUX21X1",
+    "AND2X4",
+    "OAI21X2",
+    "AOI22X2",
+    "MUX21X1",
+    "OAI21X2",
+    "AOI22X2",
+    "MUX21X1",
+    "OAI21X2",
+    "AOI22X2",
+    "MUX21X1",
+    "AOI21X2",
+    "OAI21X2",
+    "AOI22X2",
+    "MUX21X1",
+    "MUX21X1",
+    "MUX21X1",
+    "INVX32",
+    "AOI21X2",
+    "NOR2X4",
+    "INVX32",
+    "AOI22X2",
+    "INVX32",
+    "INVX32",
+    "AOI22X2",
+    "INVX32",
+    "AOI22X2",
+    "INVX32",
+    "AOI22X2",
+    "NOR2X4",
+    "NOR2X4",
+    "INVX32",
+    "INVX32",
+    "AOI22X2",
+    "MUX21X1",
+    "NAND3X4",
+    "NAND3X4",
+    "INVX32",
+    "INVX32",
+    "AOI22X2",
+    "MUX21X1",
+    "AOI21X2",
+    "MUX21X1",
+    "NAND3X4",
+    "INVX32",
+    "AOI21X2",
+    "MUX21X1",
+    "AOI21X2",
+    "AOI22X2",
+    "MUX21X1",
+    "OR4X4",
+    "MUX21X1",
+    "AND2X4",
+    "AND2X4",
+    "AND2X4",
+    "AOI22X2",
+    "AND2X4",
+    "OAI21X2",
+    "AOI22X2",
+    "INVX32",
+    "NOR2X4",
+    "NOR2X4",
+    "INVX32",
+    "NOR2X4",
+    "MUX21X1",
+    "INVX32",
+    "DFFASX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFASX1",
+    "DFFASX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFASX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1",
+    "DFFARX1"
+  ],
+  "node_ports": [
+    {
+      "IN1": "iRECEIVER_N20",
+      "IN2": "test_si",
+      "Q": "n163",
+      "S": "test_se"
+    },
+    {
+      "IN": "n11",
+      "QN": "n106"
+    },
+    {
+      "IN1": "n242",
+      "IN2": "n57",
+      "QN": "n62"
+    },
+    {
+      "IN1": "n254",
+      "IN2": "n75",
+      "QN": "n57"
+    },
+    {
+      "IN1": "iXMIT_bitCell_cntrH_2_",
+      "IN2": "iXMIT_bitCell_cntrH_1_",
+      "IN3": "iXMIT_bitCell_cntrH_3_",
+      "QN": "n75"
+    },
+    {
+      "IN1": "iXMIT_N28",
+      "IN2": "iXMIT_bitCell_cntrH_1_",
+      "Q": "n182",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iRECEIVER_rec_datSyncH_temp",
+      "IN2": "rec_dataH_rec[7]",
+      "Q": "n117",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iRECEIVER_rec_datSyncH",
+      "IN2": "rec_dataH_rec[7]",
+      "Q": "n118",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n238",
+      "IN2": "n245",
+      "IN3": "n77",
+      "QN": "iRECEIVER_rec_readyInH"
+    },
+    {
+      "IN1": "n241",
+      "IN2": "n238",
+      "IN3": "iRECEIVER_rec_datH",
+      "QN": "n77"
+    },
+    {
+      "IN1": "n79",
+      "IN2": "n80",
+      "Q": "iRECEIVER_next_state_2_"
+    },
+    {
+      "IN1": "n81",
+      "IN2": "n82",
+      "IN3": "n18",
+      "IN4": "n83",
+      "QN": "iRECEIVER_next_state_1_"
+    },
+    {
+      "IN1": "n243",
+      "IN2": "n8",
+      "IN3": "iRECEIVER_recd_bitCntrH_0_",
+      "IN4": "n9",
+      "QN": "n11"
+    },
+    {
+      "IN1": "uart_REC_dataH",
+      "IN2": "iRECEIVER_rec_datH",
+      "Q": "n119",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n238",
+      "IN2": "iRECEIVER_state_0_",
+      "QN": "n8"
+    },
+    {
+      "IN1": "n241",
+      "IN2": "n238",
+      "IN3": "n248",
+      "QN": "n82"
+    },
+    {
+      "D": "iRECEIVER_state_0_",
+      "ISO": "n84",
+      "Q": "n81"
+    },
+    {
+      "IN1": "iRECEIVER_state_1_",
+      "IN2": "n85",
+      "IN3": "n248",
+      "QN": "n84"
+    },
+    {
+      "IN1": "n190",
+      "IN2": "iXMIT_state_2_",
+      "Q": "n120",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n83",
+      "IN2": "n238",
+      "IN3": "n86",
+      "IN4": "n87",
+      "QN": "iRECEIVER_next_state_0_"
+    },
+    {
+      "IN1": "n88",
+      "IN2": "iRECEIVER_state_1_",
+      "IN3": "iRECEIVER_rec_datH",
+      "IN4": "n241",
+      "QN": "n87"
+    },
+    {
+      "IN1": "n80",
+      "IN2": "iRECEIVER_recd_bitCntrH_3_",
+      "IN3": "n89",
+      "IN4": "n243",
+      "QN": "n86"
+    },
+    {
+      "IN1": "iXMIT_N27",
+      "IN2": "iXMIT_bitCell_cntrH_0_",
+      "Q": "n121",
+      "S": "test_se"
+    },
+    {
+      "IN": "n12",
+      "QN": "n109"
+    },
+    {
+      "IN1": "iRECEIVER_recd_bitCntrH_2_",
+      "IN2": "iRECEIVER_recd_bitCntrH_1_",
+      "QN": "n89"
+    },
+    {
+      "IN1": "iXMIT_N26",
+      "IN2": "iRECEIVER_state_2_",
+      "Q": "n122",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iXMIT_N29",
+      "IN2": "iXMIT_bitCell_cntrH_2_",
+      "Q": "n124",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n241",
+      "IN2": "n245",
+      "QN": "n80"
+    },
+    {
+      "IN1": "iRECEIVER_N19",
+      "IN2": "n92",
+      "Q": "iRECEIVER_N23"
+    },
+    {
+      "IN1": "iRECEIVER_N18",
+      "IN2": "n92",
+      "Q": "iRECEIVER_N22"
+    },
+    {
+      "IN1": "iRECEIVER_N17",
+      "IN2": "n92",
+      "Q": "iRECEIVER_N21"
+    },
+    {
+      "IN1": "n255",
+      "IN2": "n92",
+      "Q": "iRECEIVER_N20"
+    },
+    {
+      "IN1": "n93",
+      "IN2": "n94",
+      "Q": "n92"
+    },
+    {
+      "IN1": "n88",
+      "IN2": "n245",
+      "IN3": "iRECEIVER_state_2_",
+      "QN": "n94"
+    },
+    {
+      "IN1": "iRECEIVER_N28",
+      "IN2": "n8",
+      "IN3": "iRECEIVER_recd_bitCntrH_3_",
+      "IN4": "n9",
+      "QN": "n12"
+    },
+    {
+      "IN1": "n100",
+      "IN2": "iRECEIVER_recd_bitCntrH_1_",
+      "Q": "n125",
+      "S": "test_se"
+    },
+    {
+      "IN": "n85",
+      "QN": "n88"
+    },
+    {
+      "IN1": "iRECEIVER_bitCell_cntrH_2_",
+      "IN2": "n255",
+      "IN3": "n244",
+      "IN4": "n256",
+      "QN": "n85"
+    },
+    {
+      "IN1": "n103",
+      "IN2": "iRECEIVER_recd_bitCntrH_0_",
+      "Q": "n126",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n106",
+      "IN2": "rec_readyH_temp",
+      "Q": "n127",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n79",
+      "IN2": "iRECEIVER_state_0_",
+      "IN3": "n241",
+      "QN": "n93"
+    },
+    {
+      "IN1": "n109",
+      "IN2": "iRECEIVER_recd_bitCntrH_2_",
+      "Q": "n128",
+      "S": "test_se"
+    },
+    {
+      "IN": "n91",
+      "QN": "n79"
+    },
+    {
+      "IN1": "iRECEIVER_bitCell_cntrH_3_",
+      "IN2": "iRECEIVER_bitCell_cntrH_2_",
+      "IN3": "iRECEIVER_bitCell_cntrH_1_",
+      "IN4": "n255",
+      "QN": "n91"
+    },
+    {
+      "IN1": "rec_dataH_temp[0]",
+      "IN2": "xmit_doneH_temp",
+      "Q": "n129",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n238",
+      "IN2": "n245",
+      "IN3": "n15",
+      "QN": "n9"
+    },
+    {
+      "IN1": "rec_dataH_rec[0]",
+      "IN2": "rec_dataH[7]",
+      "Q": "n131",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n116",
+      "IN2": "iRECEIVER_bitCell_cntrH_3_",
+      "Q": "n132",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_temp[1]",
+      "IN2": "rec_dataH[0]",
+      "Q": "n133",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_rec[1]",
+      "IN2": "rec_dataH_temp[0]",
+      "Q": "n134",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n123",
+      "IN2": "rec_dataH_rec[0]",
+      "Q": "n135",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_temp[2]",
+      "IN2": "rec_dataH[1]",
+      "Q": "n136",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_rec[2]",
+      "IN2": "rec_dataH_temp[1]",
+      "Q": "n138",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n130",
+      "IN2": "rec_dataH_rec[1]",
+      "Q": "n139",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_temp[3]",
+      "IN2": "rec_dataH[2]",
+      "Q": "n140",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_rec[3]",
+      "IN2": "rec_dataH_temp[2]",
+      "Q": "n141",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iRECEIVER_state_1_",
+      "IN2": "n248",
+      "IN3": "n238",
+      "QN": "n15"
+    },
+    {
+      "IN1": "n137",
+      "IN2": "rec_dataH_rec[2]",
+      "Q": "n142",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_temp[4]",
+      "IN2": "rec_dataH[3]",
+      "Q": "n143",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_rec[4]",
+      "IN2": "rec_dataH_temp[3]",
+      "Q": "n145",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n144",
+      "IN2": "rec_dataH_rec[3]",
+      "Q": "n146",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_temp[5]",
+      "IN2": "rec_dataH[4]",
+      "Q": "n147",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_rec[5]",
+      "IN2": "rec_dataH_temp[4]",
+      "Q": "n148",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n151",
+      "IN2": "rec_dataH_rec[4]",
+      "Q": "n149",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_temp[6]",
+      "IN2": "rec_dataH[5]",
+      "Q": "n150",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_rec[6]",
+      "IN2": "rec_dataH_temp[5]",
+      "Q": "n152",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n158",
+      "IN2": "rec_dataH_rec[5]",
+      "Q": "n153",
+      "S": "test_se"
+    },
+    {
+      "IN": "n17",
+      "QN": "n116"
+    },
+    {
+      "IN1": "rec_dataH_temp[7]",
+      "IN2": "rec_dataH[6]",
+      "Q": "n154",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_rec[7]",
+      "IN2": "rec_dataH_temp[6]",
+      "Q": "n155",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n165",
+      "IN2": "rec_dataH_rec[6]",
+      "Q": "n156",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iRECEIVER_rec_readyInH",
+      "IN2": "iRECEIVER_rec_datSyncH",
+      "Q": "n157",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iRECEIVER_next_state_2_",
+      "IN2": "iRECEIVER_state_1_",
+      "Q": "n159",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iRECEIVER_N23",
+      "IN2": "iRECEIVER_bitCell_cntrH_2_",
+      "Q": "n160",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iRECEIVER_N22",
+      "IN2": "iRECEIVER_bitCell_cntrH_1_",
+      "Q": "n161",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iRECEIVER_N21",
+      "IN2": "iRECEIVER_bitCell_cntrH_0_",
+      "Q": "n162",
+      "S": "test_se"
+    },
+    {
+      "IN1": "rec_dataH_rec[1]",
+      "IN2": "n8",
+      "IN3": "rec_dataH_rec[0]",
+      "IN4": "n18",
+      "QN": "n17"
+    },
+    {
+      "IN": "n19",
+      "QN": "n123"
+    },
+    {
+      "IN1": "rec_dataH_rec[2]",
+      "IN2": "n8",
+      "IN3": "rec_dataH_rec[1]",
+      "IN4": "n18",
+      "QN": "n19"
+    },
+    {
+      "IN1": "iRECEIVER_next_state_0_",
+      "IN2": "iRECEIVER_recd_bitCntrH_3_",
+      "Q": "n164",
+      "S": "test_se"
+    },
+    {
+      "IN": "n20",
+      "QN": "n130"
+    },
+    {
+      "IN1": "n80",
+      "IN2": "n91",
+      "QN": "n83"
+    },
+    {
+      "IN": "n8",
+      "QN": "n18"
+    },
+    {
+      "IN1": "n67",
+      "IN2": "n68",
+      "QN": "iXMIT_next_state_0_"
+    },
+    {
+      "IN1": "n42",
+      "IN2": "n43",
+      "QN": "n211"
+    },
+    {
+      "IN1": "xmit_dataH[7]",
+      "IN2": "n26",
+      "QN": "n43"
+    },
+    {
+      "IN1": "n63",
+      "IN2": "n44",
+      "QN": "iXMIT_next_state_1_"
+    },
+    {
+      "IN1": "iXMIT_bitCountH_1_",
+      "IN2": "iXMIT_bitCountH_0_",
+      "QN": "n270"
+    },
+    {
+      "IN1": "n61",
+      "IN2": "n69",
+      "QN": "n53"
+    },
+    {
+      "IN1": "rec_dataH_rec[3]",
+      "IN2": "n8",
+      "IN3": "rec_dataH_rec[2]",
+      "IN4": "n18",
+      "QN": "n20"
+    },
+    {
+      "IN1": "iRECEIVER_recd_bitCntrH_1_",
+      "IN2": "iRECEIVER_recd_bitCntrH_0_",
+      "QN": "n274"
+    },
+    {
+      "IN1": "iXMIT_bitCell_cntrH_1_",
+      "IN2": "iXMIT_bitCell_cntrH_0_",
+      "QN": "n268"
+    },
+    {
+      "IN1": "iRECEIVER_bitCell_cntrH_1_",
+      "IN2": "iRECEIVER_bitCell_cntrH_0_",
+      "QN": "n272"
+    },
+    {
+      "IN1": "n55",
+      "IN2": "n56",
+      "QN": "iXMIT_xmit_doneInH"
+    },
+    {
+      "IN": "n64",
+      "QN": "n28"
+    },
+    {
+      "IN1": "iXMIT_bitCell_cntrH_1_",
+      "IN2": "iXMIT_bitCell_cntrH_0_",
+      "Q": "iXMIT_N23"
+    },
+    {
+      "IN1": "n251",
+      "IN2": "n268",
+      "Q": "iXMIT_N24"
+    },
+    {
+      "IN1": "n268",
+      "IN2": "n251",
+      "QN": "n269"
+    },
+    {
+      "IN1": "iXMIT_bitCell_cntrH_3_",
+      "IN2": "n269",
+      "Q": "iXMIT_N25"
+    },
+    {
+      "IN1": "iXMIT_bitCountH_1_",
+      "IN2": "iXMIT_bitCountH_0_",
+      "Q": "iXMIT_N44"
+    },
+    {
+      "IN": "n21",
+      "QN": "n137"
+    },
+    {
+      "IN1": "n247",
+      "IN2": "n270",
+      "Q": "iXMIT_N45"
+    },
+    {
+      "IN1": "n270",
+      "IN2": "n247",
+      "QN": "n271"
+    },
+    {
+      "IN1": "iXMIT_bitCountH_3_",
+      "IN2": "n271",
+      "Q": "iXMIT_N46"
+    },
+    {
+      "IN1": "iRECEIVER_bitCell_cntrH_1_",
+      "IN2": "iRECEIVER_bitCell_cntrH_0_",
+      "Q": "iRECEIVER_N17"
+    },
+    {
+      "IN1": "n249",
+      "IN2": "n272",
+      "Q": "iRECEIVER_N18"
+    },
+    {
+      "IN1": "n272",
+      "IN2": "n249",
+      "QN": "n273"
+    },
+    {
+      "IN1": "iRECEIVER_bitCell_cntrH_3_",
+      "IN2": "n273",
+      "Q": "iRECEIVER_N19"
+    },
+    {
+      "IN1": "iRECEIVER_recd_bitCntrH_1_",
+      "IN2": "iRECEIVER_recd_bitCntrH_0_",
+      "Q": "iRECEIVER_N26"
+    },
+    {
+      "IN1": "n250",
+      "IN2": "n274",
+      "Q": "iRECEIVER_N27"
+    },
+    {
+      "IN1": "n274",
+      "IN2": "n250",
+      "QN": "n275"
+    },
+    {
+      "IN1": "rec_dataH_rec[4]",
+      "IN2": "n8",
+      "IN3": "rec_dataH_rec[3]",
+      "IN4": "n18",
+      "QN": "n21"
+    },
+    {
+      "IN1": "iRECEIVER_recd_bitCntrH_3_",
+      "IN2": "n275",
+      "Q": "iRECEIVER_N28"
+    },
+    {
+      "IN": "n22",
+      "QN": "n144"
+    },
+    {
+      "IN1": "rec_dataH_rec[5]",
+      "IN2": "n8",
+      "IN3": "rec_dataH_rec[4]",
+      "IN4": "n18",
+      "QN": "n22"
+    },
+    {
+      "IN": "n23",
+      "QN": "n151"
+    },
+    {
+      "IN1": "rec_dataH_rec[6]",
+      "IN2": "n8",
+      "IN3": "rec_dataH_rec[5]",
+      "IN4": "n18",
+      "QN": "n23"
+    },
+    {
+      "IN": "n24",
+      "QN": "n158"
+    },
+    {
+      "IN1": "1'h1",
+      "IN2": "test_mode",
+      "QN": "n370"
+    },
+    {
+      "IN1": "rec_dataH_rec[7]",
+      "IN2": "n8",
+      "IN3": "rec_dataH_rec[6]",
+      "IN4": "n18",
+      "QN": "n24"
+    },
+    {
+      "IN": "n370",
+      "QN": "n371"
+    },
+    {
+      "IN1": "rec_readyH_temp",
+      "IN2": "sys_clk",
+      "Q": "\\test_point/DOUT",
+      "S": "n371"
+    },
+    {
+      "IN1": "ena",
+      "IN2": "iXMIT_state_0_",
+      "IN3": "iXMIT_state_1_",
+      "IN4": "iXMIT_state_2_",
+      "QN": "iXMIT_state_CTRL"
+    },
+    {
+      "IN1": "ena",
+      "IN2": "iXMIT_N45",
+      "IN3": "iXMIT_N44",
+      "IN4": "iXMIT_N29",
+      "QN": "iXMIT_N_CTRL_1_"
+    },
+    {
+      "IN1": "ena",
+      "IN2": "iXMIT_N27",
+      "IN3": "iXMIT_N26",
+      "IN4": "iXMIT_N25",
+      "QN": "iXMIT_N_CTRL_2_"
+    },
+    {
+      "IN1": "ena",
+      "IN2": "iXMIT_xmit_ShiftRegH_7_",
+      "IN3": "iXMIT_xmit_ShiftRegH_6_",
+      "IN4": "iXMIT_xmit_ShiftRegH_5_",
+      "QN": "iXMIT_xmit_CTRL"
+    },
+    {
+      "IN1": "iXMIT_state_CTRL",
+      "IN2": "iXMIT_N_CTRL_1_",
+      "IN3": "iXMIT_N_CTRL_2_",
+      "IN4": "iXMIT_xmit_CTRL",
+      "Q": "iXMIT_CRTL"
+    },
+    {
+      "IN1": "iXMIT_state_2_",
+      "IN2": "iXMIT_state_1_",
+      "IN3": "n2",
+      "QN": "uart_XMIT_dataH"
+    },
+    {
+      "IN": "n25",
+      "QN": "n165"
+    },
+    {
+      "D": "iXMIT_CRTL",
+      "ISO": "n400",
+      "Q": "iCTRL"
+    },
+    {
+      "IN1": "iCTRL",
+      "IN2": "xmit_doneH_temp",
+      "Q": "xmit_doneH"
+    },
+    {
+      "IN1": "ena",
+      "IN2": "iRECEIVER_rec_datSyncH",
+      "Q": "iRECEIVER_rec_datSyncH_temp"
+    },
+    {
+      "IN1": "sys_clk",
+      "IN2": "ena",
+      "Q": "sys_clk_temp"
+    },
+    {
+      "IN1": "iRECEIVER_rec_datH",
+      "IN2": "n8",
+      "IN3": "rec_dataH_rec[7]",
+      "IN4": "n18",
+      "QN": "n25"
+    },
+    {
+      "IN1": "n257",
+      "IN2": "n26",
+      "IN3": "n27",
+      "QN": "n190"
+    },
+    {
+      "IN1": "xmit_dataH[0]",
+      "IN2": "n28",
+      "IN3": "iXMIT_xmit_ShiftRegH_1_",
+      "IN4": "n29",
+      "QN": "n27"
+    },
+    {
+      "IN1": "iRECEIVER_next_state_1_",
+      "IN2": "iRECEIVER_state_0_",
+      "Q": "n166",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n263",
+      "IN2": "n26",
+      "IN3": "n31",
+      "QN": "n193"
+    },
+    {
+      "IN1": "xmit_dataH[1]",
+      "IN2": "n28",
+      "IN3": "iXMIT_xmit_ShiftRegH_2_",
+      "IN4": "n29",
+      "QN": "n31"
+    },
+    {
+      "IN1": "iXMIT_xmit_doneInH",
+      "IN2": "iXMIT_xmit_ShiftRegH_7_",
+      "Q": "n167",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n26",
+      "IN2": "n262",
+      "IN3": "n33",
+      "QN": "n196"
+    },
+    {
+      "IN1": "xmit_dataH[2]",
+      "IN2": "n28",
+      "IN3": "iXMIT_xmit_ShiftRegH_3_",
+      "IN4": "n29",
+      "QN": "n33"
+    },
+    {
+      "IN1": "iXMIT_state_2_",
+      "IN2": "iXMIT_state_0_",
+      "IN3": "n3",
+      "QN": "n2"
+    },
+    {
+      "IN1": "n193",
+      "IN2": "n281",
+      "Q": "n168",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iCTRL",
+      "IN2": "rec_readyH_temp",
+      "Q": "rec_readyH"
+    },
+    {
+      "IN1": "n26",
+      "IN2": "n261",
+      "IN3": "n35",
+      "QN": "n199"
+    },
+    {
+      "IN1": "xmit_dataH[3]",
+      "IN2": "n28",
+      "IN3": "iXMIT_xmit_ShiftRegH_4_",
+      "IN4": "n29",
+      "QN": "n35"
+    },
+    {
+      "IN1": "n196",
+      "IN2": "iXMIT_xmit_ShiftRegH_1_",
+      "Q": "n169",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n26",
+      "IN2": "n260",
+      "IN3": "n37",
+      "QN": "n202"
+    },
+    {
+      "IN1": "xmit_dataH[4]",
+      "IN2": "n28",
+      "IN3": "iXMIT_xmit_ShiftRegH_5_",
+      "IN4": "n29",
+      "QN": "n37"
+    },
+    {
+      "IN1": "n199",
+      "IN2": "iXMIT_xmit_ShiftRegH_2_",
+      "Q": "n170",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n26",
+      "IN2": "n259",
+      "IN3": "n39",
+      "QN": "n205"
+    },
+    {
+      "IN1": "xmit_dataH[5]",
+      "IN2": "n28",
+      "IN3": "iXMIT_xmit_ShiftRegH_6_",
+      "IN4": "n29",
+      "QN": "n39"
+    },
+    {
+      "IN1": "n202",
+      "IN2": "iXMIT_xmit_ShiftRegH_3_",
+      "Q": "n171",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n242",
+      "IN2": "n239",
+      "IN3": "n257",
+      "QN": "n3"
+    },
+    {
+      "IN1": "n26",
+      "IN2": "n258",
+      "IN3": "n41",
+      "QN": "n208"
+    },
+    {
+      "IN1": "xmit_dataH[6]",
+      "IN2": "n28",
+      "IN3": "iXMIT_xmit_ShiftRegH_7_",
+      "IN4": "n29",
+      "QN": "n41"
+    },
+    {
+      "IN1": "n205",
+      "IN2": "iXMIT_xmit_ShiftRegH_4_",
+      "Q": "n172",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n208",
+      "IN2": "iXMIT_xmit_ShiftRegH_5_",
+      "Q": "n173",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n211",
+      "IN2": "iXMIT_xmit_ShiftRegH_6_",
+      "Q": "n174",
+      "S": "test_se"
+    },
+    {
+      "IN": "n44",
+      "QN": "n26"
+    },
+    {
+      "IN1": "iXMIT_xmit_ShiftRegH_7_",
+      "IN2": "n44",
+      "IN3": "n29",
+      "QN": "n42"
+    },
+    {
+      "IN1": "n44",
+      "IN2": "n28",
+      "QN": "n29"
+    },
+    {
+      "IN": "n45",
+      "QN": "n214"
+    },
+    {
+      "IN1": "n46",
+      "IN2": "iXMIT_bitCountH_3_",
+      "IN3": "iXMIT_N46",
+      "IN4": "n47",
+      "QN": "n45"
+    },
+    {
+      "IN": "n7",
+      "QN": "n100"
+    },
+    {
+      "IN": "n48",
+      "QN": "n217"
+    },
+    {
+      "IN1": "iXMIT_bitCountH_2_",
+      "IN2": "n46",
+      "IN3": "iXMIT_N45",
+      "IN4": "n47",
+      "QN": "n48"
+    },
+    {
+      "IN": "n49",
+      "QN": "n220"
+    },
+    {
+      "IN1": "iXMIT_bitCountH_1_",
+      "IN2": "n46",
+      "IN3": "iXMIT_N44",
+      "IN4": "n47",
+      "QN": "n49"
+    },
+    {
+      "IN": "n50",
+      "QN": "n223"
+    },
+    {
+      "IN1": "iXMIT_bitCountH_0_",
+      "IN2": "n46",
+      "IN3": "n252",
+      "IN4": "n47",
+      "QN": "n50"
+    },
+    {
+      "IN1": "n51",
+      "IN2": "n47",
+      "QN": "n46"
+    },
+    {
+      "IN1": "n52",
+      "IN2": "n53",
+      "QN": "n47"
+    },
+    {
+      "IN": "n54",
+      "QN": "n52"
+    },
+    {
+      "IN": "n55",
+      "QN": "n51"
+    },
+    {
+      "IN1": "iRECEIVER_N27",
+      "IN2": "n8",
+      "IN3": "iRECEIVER_recd_bitCntrH_2_",
+      "IN4": "n9",
+      "QN": "n7"
+    },
+    {
+      "IN1": "n214",
+      "IN2": "iXMIT_bitCountH_2_",
+      "Q": "n175",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iXMIT_state_2_",
+      "IN2": "iXMIT_state_0_",
+      "IN3": "n57",
+      "QN": "n56"
+    },
+    {
+      "IN1": "n242",
+      "IN2": "n58",
+      "IN3": "n246",
+      "QN": "n55"
+    },
+    {
+      "IN": "xmitH",
+      "QN": "n58"
+    },
+    {
+      "IN": "n60",
+      "QN": "iXMIT_next_state_2_"
+    },
+    {
+      "IN1": "n54",
+      "IN2": "n61",
+      "IN3": "n62",
+      "IN4": "iXMIT_state_0_",
+      "QN": "n60"
+    },
+    {
+      "IN1": "n217",
+      "IN2": "iXMIT_bitCountH_1_",
+      "Q": "n176",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n239",
+      "IN2": "iXMIT_state_2_",
+      "IN3": "n28",
+      "QN": "n44"
+    },
+    {
+      "IN1": "n220",
+      "IN2": "iXMIT_bitCountH_0_",
+      "Q": "n177",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n246",
+      "IN2": "n242",
+      "IN3": "xmitH",
+      "QN": "n64"
+    },
+    {
+      "IN": "n10",
+      "QN": "n103"
+    },
+    {
+      "IN1": "iXMIT_state_1_",
+      "IN2": "n65",
+      "IN3": "n66",
+      "QN": "n63"
+    },
+    {
+      "IN1": "n223",
+      "IN2": "iXMIT_bitCell_cntrH_3_",
+      "Q": "n178",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n66",
+      "IN2": "n57",
+      "IN3": "n62",
+      "QN": "n68"
+    },
+    {
+      "IN1": "n54",
+      "IN2": "n53",
+      "IN3": "iXMIT_state_2_",
+      "IN4": "n239",
+      "QN": "n67"
+    },
+    {
+      "IN1": "iXMIT_next_state_1_",
+      "IN2": "iXMIT_state_0_",
+      "Q": "n179",
+      "S": "test_se"
+    },
+    {
+      "IN1": "n253",
+      "IN2": "iXMIT_bitCountH_0_",
+      "IN3": "iXMIT_bitCountH_1_",
+      "IN4": "iXMIT_bitCountH_2_",
+      "Q": "n69"
+    },
+    {
+      "IN1": "iXMIT_next_state_2_",
+      "IN2": "iXMIT_state_1_",
+      "Q": "n180",
+      "S": "test_se"
+    },
+    {
+      "IN1": "iXMIT_N25",
+      "IN2": "n71",
+      "Q": "iXMIT_N29"
+    },
+    {
+      "IN1": "iXMIT_N24",
+      "IN2": "n71",
+      "Q": "iXMIT_N28"
+    },
+    {
+      "IN1": "iXMIT_N23",
+      "IN2": "n71",
+      "Q": "iXMIT_N27"
+    },
+    {
+      "IN1": "iRECEIVER_N26",
+      "IN2": "n8",
+      "IN3": "iRECEIVER_recd_bitCntrH_1_",
+      "IN4": "n9",
+      "QN": "n10"
+    },
+    {
+      "IN1": "n254",
+      "IN2": "n71",
+      "Q": "iXMIT_N26"
+    },
+    {
+      "IN1": "n239",
+      "IN2": "n72",
+      "IN3": "n73",
+      "QN": "n71"
+    },
+    {
+      "IN1": "n66",
+      "IN2": "n74",
+      "IN3": "n54",
+      "IN4": "n65",
+      "QN": "n73"
+    },
+    {
+      "IN": "n61",
+      "QN": "n65"
+    },
+    {
+      "IN1": "n75",
+      "IN2": "iXMIT_bitCell_cntrH_0_",
+      "QN": "n61"
+    },
+    {
+      "IN1": "n246",
+      "IN2": "n239",
+      "QN": "n54"
+    },
+    {
+      "IN": "n57",
+      "QN": "n74"
+    },
+    {
+      "IN1": "n246",
+      "IN2": "iXMIT_state_0_",
+      "QN": "n66"
+    },
+    {
+      "IN1": "iXMIT_next_state_0_",
+      "IN2": "iXMIT_bitCountH_3_",
+      "Q": "n181",
+      "S": "test_se"
+    },
+    {
+      "IN": "n62",
+      "QN": "n72"
+    },
+    {
+      "CLK": "sys_clk_temp",
+      "D": "n117",
+      "Q": "n400",
+      "SETB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n163",
+      "Q": "iRECEIVER_bitCell_cntrH_0_",
+      "QN": "n255",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n162",
+      "Q": "iRECEIVER_bitCell_cntrH_1_",
+      "QN": "n244",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n161",
+      "Q": "iRECEIVER_bitCell_cntrH_2_",
+      "QN": "n249",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n160",
+      "Q": "iRECEIVER_bitCell_cntrH_3_",
+      "QN": "n256",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n132",
+      "Q": "rec_dataH_rec[0]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n135",
+      "Q": "rec_dataH_rec[1]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n139",
+      "Q": "rec_dataH_rec[2]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n142",
+      "Q": "rec_dataH_rec[3]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n146",
+      "Q": "rec_dataH_rec[4]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n149",
+      "Q": "rec_dataH_rec[5]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n153",
+      "Q": "rec_dataH_rec[6]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n156",
+      "Q": "rec_dataH_rec[7]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n118",
+      "Q": "iRECEIVER_rec_datH",
+      "QN": "n248",
+      "SETB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n119",
+      "Q": "iRECEIVER_rec_datSyncH",
+      "SETB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n157",
+      "Q": "rec_readyH_temp",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n127",
+      "Q": "iRECEIVER_recd_bitCntrH_0_",
+      "QN": "n243",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n126",
+      "Q": "iRECEIVER_recd_bitCntrH_1_",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n125",
+      "Q": "iRECEIVER_recd_bitCntrH_2_",
+      "QN": "n250",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n128",
+      "Q": "iRECEIVER_recd_bitCntrH_3_",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n164",
+      "Q": "iRECEIVER_state_0_",
+      "QN": "n245",
+      "SETB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n166",
+      "Q": "iRECEIVER_state_1_",
+      "QN": "n241",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n159",
+      "Q": "iRECEIVER_state_2_",
+      "QN": "n238",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n122",
+      "Q": "iXMIT_bitCell_cntrH_0_",
+      "QN": "n254",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n121",
+      "Q": "iXMIT_bitCell_cntrH_1_",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n182",
+      "Q": "iXMIT_bitCell_cntrH_2_",
+      "QN": "n251",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n124",
+      "Q": "iXMIT_bitCell_cntrH_3_",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n178",
+      "Q": "iXMIT_bitCountH_0_",
+      "QN": "n252",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n177",
+      "Q": "iXMIT_bitCountH_1_",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n176",
+      "Q": "iXMIT_bitCountH_2_",
+      "QN": "n247",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n175",
+      "Q": "iXMIT_bitCountH_3_",
+      "QN": "n253",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n181",
+      "Q": "iXMIT_state_0_",
+      "QN": "n239",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n179",
+      "Q": "iXMIT_state_1_",
+      "QN": "n246",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n180",
+      "Q": "iXMIT_state_2_",
+      "QN": "n242",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n120",
+      "Q": "n281",
+      "QN": "n257",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n168",
+      "Q": "iXMIT_xmit_ShiftRegH_1_",
+      "QN": "n263",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n169",
+      "Q": "iXMIT_xmit_ShiftRegH_2_",
+      "QN": "n262",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n170",
+      "Q": "iXMIT_xmit_ShiftRegH_3_",
+      "QN": "n261",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n171",
+      "Q": "iXMIT_xmit_ShiftRegH_4_",
+      "QN": "n260",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n172",
+      "Q": "iXMIT_xmit_ShiftRegH_5_",
+      "QN": "n259",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n173",
+      "Q": "iXMIT_xmit_ShiftRegH_6_",
+      "QN": "n258",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n174",
+      "Q": "iXMIT_xmit_ShiftRegH_7_",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n167",
+      "Q": "xmit_doneH_temp",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n129",
+      "Q": "rec_dataH[0]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n133",
+      "Q": "rec_dataH[1]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n136",
+      "Q": "rec_dataH[2]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n140",
+      "Q": "rec_dataH[3]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n143",
+      "Q": "rec_dataH[4]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n147",
+      "Q": "rec_dataH[5]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n150",
+      "Q": "rec_dataH[6]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "sys_clk",
+      "D": "n154",
+      "Q": "rec_dataH[7]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "\\test_point/DOUT",
+      "D": "n131",
+      "Q": "rec_dataH_temp[0]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "\\test_point/DOUT",
+      "D": "n134",
+      "Q": "rec_dataH_temp[1]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "\\test_point/DOUT",
+      "D": "n138",
+      "Q": "rec_dataH_temp[2]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "\\test_point/DOUT",
+      "D": "n141",
+      "Q": "rec_dataH_temp[3]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "\\test_point/DOUT",
+      "D": "n145",
+      "Q": "rec_dataH_temp[4]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "\\test_point/DOUT",
+      "D": "n148",
+      "Q": "rec_dataH_temp[5]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "\\test_point/DOUT",
+      "D": "n152",
+      "Q": "rec_dataH_temp[6]",
+      "RSTB": "sys_rst_l"
+    },
+    {
+      "CLK": "\\test_point/DOUT",
+      "D": "n155",
+      "Q": "rec_dataH_temp[7]",
+      "RSTB": "sys_rst_l"
+    }
+  ],
+  "edge_signals": [
+    "n163",
+    "n106",
+    "n62",
+    "n62",
+    "n62",
+    "n57",
+    "n57",
+    "n57",
+    "n57",
+    "n75",
+    "n75",
+    "n182",
+    "n117",
+    "n118",
+    "iRECEIVER_rec_readyInH",
+    "n77",
+    "iRECEIVER_next_state_2_",
+    "iRECEIVER_next_state_1_",
+    "n11",
+    "n119",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n8",
+    "n82",
+    "n81",
+    "n84",
+    "n120",
+    "iRECEIVER_next_state_0_",
+    "n87",
+    "n86",
+    "n121",
+    "n109",
+    "n89",
+    "n122",
+    "n124",
+    "n80",
+    "n80",
+    "n80",
+    "iRECEIVER_N23",
+    "iRECEIVER_N22",
+    "iRECEIVER_N21",
+    "iRECEIVER_N20",
+    "n92",
+    "n92",
+    "n92",
+    "n92",
+    "n94",
+    "n12",
+    "n125",
+    "n88",
+    "n88",
+    "n85",
+    "n85",
+    "n126",
+    "n127",
+    "n93",
+    "n128",
+    "n79",
+    "n79",
+    "n91",
+    "n91",
+    "n129",
+    "n9",
+    "n9",
+    "n9",
+    "n9",
+    "n131",
+    "n132",
+    "n133",
+    "n134",
+    "n135",
+    "n136",
+    "n138",
+    "n139",
+    "n140",
+    "n141",
+    "n15",
+    "n142",
+    "n143",
+    "n145",
+    "n146",
+    "n147",
+    "n148",
+    "n149",
+    "n150",
+    "n152",
+    "n153",
+    "n116",
+    "n154",
+    "n155",
+    "n156",
+    "n157",
+    "n159",
+    "n160",
+    "n161",
+    "n162",
+    "n17",
+    "n123",
+    "n19",
+    "n164",
+    "n130",
+    "n83",
+    "n83",
+    "n18",
+    "n18",
+    "n18",
+    "n18",
+    "n18",
+    "n18",
+    "n18",
+    "n18",
+    "n18",
+    "iXMIT_next_state_0_",
+    "n211",
+    "n43",
+    "iXMIT_next_state_1_",
+    "n270",
+    "n270",
+    "n53",
+    "n53",
+    "n20",
+    "n274",
+    "n274",
+    "n268",
+    "n268",
+    "n272",
+    "n272",
+    "iXMIT_xmit_doneInH",
+    "n28",
+    "n28",
+    "n28",
+    "n28",
+    "n28",
+    "n28",
+    "n28",
+    "n28",
+    "n28",
+    "iXMIT_N23",
+    "iXMIT_N24",
+    "n269",
+    "iXMIT_N25",
+    "iXMIT_N25",
+    "iXMIT_N44",
+    "iXMIT_N44",
+    "n137",
+    "iXMIT_N45",
+    "iXMIT_N45",
+    "n271",
+    "iXMIT_N46",
+    "iRECEIVER_N17",
+    "iRECEIVER_N18",
+    "n273",
+    "iRECEIVER_N19",
+    "iRECEIVER_N26",
+    "iRECEIVER_N27",
+    "n275",
+    "n21",
+    "iRECEIVER_N28",
+    "n144",
+    "n22",
+    "n151",
+    "n23",
+    "n158",
+    "n370",
+    "n24",
+    "n371",
+    "\\test_point/DOUT",
+    "\\test_point/DOUT",
+    "\\test_point/DOUT",
+    "\\test_point/DOUT",
+    "\\test_point/DOUT",
+    "\\test_point/DOUT",
+    "\\test_point/DOUT",
+    "\\test_point/DOUT",
+    "iXMIT_state_CTRL",
+    "iXMIT_N_CTRL_1_",
+    "iXMIT_N_CTRL_2_",
+    "iXMIT_xmit_CTRL",
+    "iXMIT_CRTL",
+    "n165",
+    "iCTRL",
+    "iCTRL",
+    "iRECEIVER_rec_datSyncH_temp",
+    "sys_clk_temp",
+    "n25",
+    "n190",
+    "n27",
+    "n166",
+    "n193",
+    "n31",
+    "n167",
+    "n196",
+    "n33",
+    "n2",
+    "n168",
+    "n199",
+    "n35",
+    "n169",
+    "n202",
+    "n37",
+    "n170",
+    "n205",
+    "n39",
+    "n171",
+    "n3",
+    "n208",
+    "n41",
+    "n172",
+    "n173",
+    "n174",
+    "n26",
+    "n26",
+    "n26",
+    "n26",
+    "n26",
+    "n26",
+    "n26",
+    "n26",
+    "n42",
+    "n29",
+    "n29",
+    "n29",
+    "n29",
+    "n29",
+    "n29",
+    "n29",
+    "n29",
+    "n214",
+    "n45",
+    "n100",
+    "n217",
+    "n48",
+    "n220",
+    "n49",
+    "n223",
+    "n50",
+    "n46",
+    "n46",
+    "n46",
+    "n46",
+    "n47",
+    "n47",
+    "n47",
+    "n47",
+    "n47",
+    "n52",
+    "n51",
+    "n7",
+    "n175",
+    "n56",
+    "n55",
+    "n55",
+    "n58",
+    "iXMIT_next_state_2_",
+    "n60",
+    "n176",
+    "n44",
+    "n44",
+    "n44",
+    "n44",
+    "n177",
+    "n64",
+    "n103",
+    "n63",
+    "n178",
+    "n68",
+    "n67",
+    "n179",
+    "n69",
+    "n180",
+    "iXMIT_N29",
+    "iXMIT_N29",
+    "iXMIT_N28",
+    "iXMIT_N27",
+    "iXMIT_N27",
+    "n10",
+    "iXMIT_N26",
+    "iXMIT_N26",
+    "n71",
+    "n71",
+    "n71",
+    "n71",
+    "n73",
+    "n65",
+    "n65",
+    "n61",
+    "n61",
+    "n61",
+    "n54",
+    "n54",
+    "n54",
+    "n54",
+    "n74",
+    "n66",
+    "n66",
+    "n66",
+    "n181",
+    "n72",
+    "n400",
+    "n255",
+    "n255",
+    "n255",
+    "iRECEIVER_bitCell_cntrH_0_",
+    "iRECEIVER_bitCell_cntrH_0_",
+    "iRECEIVER_bitCell_cntrH_0_",
+    "n244",
+    "iRECEIVER_bitCell_cntrH_1_",
+    "iRECEIVER_bitCell_cntrH_1_",
+    "iRECEIVER_bitCell_cntrH_1_",
+    "iRECEIVER_bitCell_cntrH_1_",
+    "iRECEIVER_bitCell_cntrH_2_",
+    "iRECEIVER_bitCell_cntrH_2_",
+    "iRECEIVER_bitCell_cntrH_2_",
+    "n249",
+    "n249",
+    "n256",
+    "iRECEIVER_bitCell_cntrH_3_",
+    "iRECEIVER_bitCell_cntrH_3_",
+    "iRECEIVER_bitCell_cntrH_3_",
+    "rec_dataH_rec[0]",
+    "rec_dataH_rec[0]",
+    "rec_dataH_rec[0]",
+    "rec_dataH_rec[1]",
+    "rec_dataH_rec[1]",
+    "rec_dataH_rec[1]",
+    "rec_dataH_rec[1]",
+    "rec_dataH_rec[2]",
+    "rec_dataH_rec[2]",
+    "rec_dataH_rec[2]",
+    "rec_dataH_rec[2]",
+    "rec_dataH_rec[3]",
+    "rec_dataH_rec[3]",
+    "rec_dataH_rec[3]",
+    "rec_dataH_rec[3]",
+    "rec_dataH_rec[4]",
+    "rec_dataH_rec[4]",
+    "rec_dataH_rec[4]",
+    "rec_dataH_rec[4]",
+    "rec_dataH_rec[5]",
+    "rec_dataH_rec[5]",
+    "rec_dataH_rec[5]",
+    "rec_dataH_rec[5]",
+    "rec_dataH_rec[6]",
+    "rec_dataH_rec[6]",
+    "rec_dataH_rec[6]",
+    "rec_dataH_rec[6]",
+    "rec_dataH_rec[7]",
+    "rec_dataH_rec[7]",
+    "rec_dataH_rec[7]",
+    "rec_dataH_rec[7]",
+    "rec_dataH_rec[7]",
+    "iRECEIVER_rec_datH",
+    "iRECEIVER_rec_datH",
+    "n248",
+    "n248",
+    "iRECEIVER_rec_datH",
+    "n248",
+    "iRECEIVER_rec_datH",
+    "iRECEIVER_rec_datSyncH",
+    "iRECEIVER_rec_datSyncH",
+    "iRECEIVER_rec_datSyncH",
+    "rec_readyH_temp",
+    "rec_readyH_temp",
+    "rec_readyH_temp",
+    "iRECEIVER_recd_bitCntrH_0_",
+    "n243",
+    "iRECEIVER_recd_bitCntrH_0_",
+    "iRECEIVER_recd_bitCntrH_0_",
+    "iRECEIVER_recd_bitCntrH_0_",
+    "iRECEIVER_recd_bitCntrH_1_",
+    "iRECEIVER_recd_bitCntrH_1_",
+    "iRECEIVER_recd_bitCntrH_1_",
+    "iRECEIVER_recd_bitCntrH_1_",
+    "iRECEIVER_recd_bitCntrH_1_",
+    "iRECEIVER_recd_bitCntrH_2_",
+    "iRECEIVER_recd_bitCntrH_2_",
+    "n250",
+    "n250",
+    "iRECEIVER_recd_bitCntrH_2_",
+    "iRECEIVER_recd_bitCntrH_3_",
+    "iRECEIVER_recd_bitCntrH_3_",
+    "iRECEIVER_recd_bitCntrH_3_",
+    "iRECEIVER_recd_bitCntrH_3_",
+    "n245",
+    "iRECEIVER_state_0_",
+    "iRECEIVER_state_0_",
+    "n245",
+    "n245",
+    "iRECEIVER_state_0_",
+    "n245",
+    "iRECEIVER_state_0_",
+    "n241",
+    "n241",
+    "iRECEIVER_state_1_",
+    "n241",
+    "n241",
+    "n241",
+    "iRECEIVER_state_1_",
+    "iRECEIVER_state_1_",
+    "n238",
+    "n238",
+    "n238",
+    "n238",
+    "n238",
+    "iRECEIVER_state_2_",
+    "iRECEIVER_state_2_",
+    "n238",
+    "n238",
+    "n254",
+    "iXMIT_bitCell_cntrH_0_",
+    "iXMIT_bitCell_cntrH_0_",
+    "iXMIT_bitCell_cntrH_0_",
+    "n254",
+    "iXMIT_bitCell_cntrH_0_",
+    "iXMIT_bitCell_cntrH_1_",
+    "iXMIT_bitCell_cntrH_1_",
+    "iXMIT_bitCell_cntrH_1_",
+    "iXMIT_bitCell_cntrH_1_",
+    "iXMIT_bitCell_cntrH_2_",
+    "iXMIT_bitCell_cntrH_2_",
+    "n251",
+    "n251",
+    "iXMIT_bitCell_cntrH_3_",
+    "iXMIT_bitCell_cntrH_3_",
+    "iXMIT_bitCell_cntrH_3_",
+    "iXMIT_bitCountH_0_",
+    "iXMIT_bitCountH_0_",
+    "n252",
+    "iXMIT_bitCountH_0_",
+    "iXMIT_bitCountH_0_",
+    "iXMIT_bitCountH_1_",
+    "iXMIT_bitCountH_1_",
+    "iXMIT_bitCountH_1_",
+    "iXMIT_bitCountH_1_",
+    "iXMIT_bitCountH_1_",
+    "n247",
+    "n247",
+    "iXMIT_bitCountH_2_",
+    "iXMIT_bitCountH_2_",
+    "iXMIT_bitCountH_2_",
+    "iXMIT_bitCountH_3_",
+    "iXMIT_bitCountH_3_",
+    "n253",
+    "iXMIT_bitCountH_3_",
+    "iXMIT_state_0_",
+    "iXMIT_state_0_",
+    "n239",
+    "iXMIT_state_0_",
+    "iXMIT_state_0_",
+    "n239",
+    "n239",
+    "iXMIT_state_0_",
+    "n239",
+    "n239",
+    "iXMIT_state_0_",
+    "iXMIT_state_1_",
+    "iXMIT_state_1_",
+    "n246",
+    "n246",
+    "iXMIT_state_1_",
+    "iXMIT_state_1_",
+    "n246",
+    "n246",
+    "n242",
+    "iXMIT_state_2_",
+    "iXMIT_state_2_",
+    "iXMIT_state_2_",
+    "iXMIT_state_2_",
+    "n242",
+    "iXMIT_state_2_",
+    "n242",
+    "iXMIT_state_2_",
+    "n242",
+    "iXMIT_state_2_",
+    "n257",
+    "n281",
+    "n257",
+    "iXMIT_xmit_ShiftRegH_1_",
+    "n263",
+    "iXMIT_xmit_ShiftRegH_1_",
+    "iXMIT_xmit_ShiftRegH_2_",
+    "n262",
+    "iXMIT_xmit_ShiftRegH_2_",
+    "iXMIT_xmit_ShiftRegH_3_",
+    "n261",
+    "iXMIT_xmit_ShiftRegH_3_",
+    "iXMIT_xmit_ShiftRegH_4_",
+    "n260",
+    "iXMIT_xmit_ShiftRegH_4_",
+    "iXMIT_xmit_ShiftRegH_5_",
+    "iXMIT_xmit_ShiftRegH_5_",
+    "n259",
+    "iXMIT_xmit_ShiftRegH_5_",
+    "iXMIT_xmit_ShiftRegH_6_",
+    "iXMIT_xmit_ShiftRegH_6_",
+    "n258",
+    "iXMIT_xmit_ShiftRegH_6_",
+    "iXMIT_xmit_ShiftRegH_7_",
+    "iXMIT_xmit_ShiftRegH_7_",
+    "iXMIT_xmit_ShiftRegH_7_",
+    "iXMIT_xmit_ShiftRegH_7_",
+    "xmit_doneH_temp",
+    "xmit_doneH_temp",
+    "rec_dataH[0]",
+    "rec_dataH[1]",
+    "rec_dataH[2]",
+    "rec_dataH[3]",
+    "rec_dataH[4]",
+    "rec_dataH[5]",
+    "rec_dataH[6]",
+    "rec_dataH[7]",
+    "rec_dataH_temp[0]",
+    "rec_dataH_temp[0]",
+    "rec_dataH_temp[1]",
+    "rec_dataH_temp[1]",
+    "rec_dataH_temp[2]",
+    "rec_dataH_temp[2]",
+    "rec_dataH_temp[3]",
+    "rec_dataH_temp[3]",
+    "rec_dataH_temp[4]",
+    "rec_dataH_temp[4]",
+    "rec_dataH_temp[5]",
+    "rec_dataH_temp[5]",
+    "rec_dataH_temp[6]",
+    "rec_dataH_temp[6]",
+    "rec_dataH_temp[7]"
+  ]
+}

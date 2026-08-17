@@ -1,14 +1,9 @@
 {
     "module": "uart",
-    "source": "C:\\trusthub\\netlists\\RS232\\RS232-T1400\\180nm_netlist.v",
-    "label": -1,
-    "num_gates": 216,
+    "source": "C:\\HT_detection_GNN\\trusthub\\netlists\\RS232\\RS232-T1400\\180nm_netlist.v",
+    "label": 1,
+    "num_gates": 215,
     "gates": [
-        {
-            "type": "module",
-            "name": "uart",
-            "ports": {}
-        },
         {
             "type": "INVX1",
             "name": "U10",

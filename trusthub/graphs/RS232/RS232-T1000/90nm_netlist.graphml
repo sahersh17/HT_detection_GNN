@@ -4,10 +4,6 @@
   <key id="d1" for="node" attr.name="ports" attr.type="string" />
   <key id="d0" for="node" attr.name="gate_type" attr.type="string" />
   <graph edgedefault="directed">
-    <node id="uart">
-      <data key="d0">module</data>
-      <data key="d1">{}</data>
-    </node>
     <node id="U1">
       <data key="d0">MUX21X1</data>
       <data key="d1">{"IN1": "iRECEIVER_next_state_2_", "IN2": "iRECEIVER_state_1_", "Q": "n156", "S": "test_se"}</data>

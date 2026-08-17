@@ -1,0 +1,1817 @@
+{
+    "module": "uart",
+    "source": "C:\\HT_detection_GNN\\trusthub\\netlists\\RS232\\RS232-T300\\standard_netlist.v",
+    "label": 1,
+    "num_gates": 201,
+    "gates": [
+        {
+            "type": "\\$_NOT_",
+            "name": "_191_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [0]",
+                "Y": "_060_"
+            }
+        },
+        {
+            "type": "\\$_NOT_",
+            "name": "_192_",
+            "ports": {
+                "A": "\\iXMIT.count_in [0]",
+                "Y": "_017_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_193_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [2]",
+                "B": "\\iXMIT.bitCell_cntrH [1]",
+                "Y": "_061_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_194_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [3]",
+                "B": "\\iXMIT.bitCell_cntrH [0]",
+                "Y": "_062_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_195_",
+            "ports": {
+                "A": "_061_",
+                "B": "_062_",
+                "Y": "_063_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_196_",
+            "ports": {
+                "A": "\\iXMIT.state [1]",
+                "B": "\\iXMIT.state [2]",
+                "Y": "_064_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_197_",
+            "ports": {
+                "A": "\\iXMIT.state [0]",
+                "B": "_064_",
+                "Y": "_065_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_198_",
+            "ports": {
+                "A": "_063_",
+                "B": "_065_",
+                "Y": "_066_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_199_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [0]",
+                "B": "\\iXMIT.bitCell_cntrH [1]",
+                "Y": "_067_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_200_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [2]",
+                "B": "_067_",
+                "Y": "_068_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_201_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [3]",
+                "B": "_068_",
+                "Y": "_069_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_202_",
+            "ports": {
+                "A": "\\iXMIT.state [0]",
+                "B": "\\iXMIT.state [1]",
+                "Y": "_070_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_203_",
+            "ports": {
+                "A": "\\iXMIT.state [2]",
+                "B": "_070_",
+                "Y": "_071_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_204_",
+            "ports": {
+                "A": "_064_",
+                "B": "\\iXMIT.state [0]",
+                "Y": "_072_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_205_",
+            "ports": {
+                "A": "_071_",
+                "B": "_072_",
+                "Y": "_073_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_206_",
+            "ports": {
+                "A": "_069_",
+                "B": "_071_",
+                "Y": "_074_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_207_",
+            "ports": {
+                "A": "_069_",
+                "B": "_073_",
+                "Y": "_075_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_208_",
+            "ports": {
+                "A": "_066_",
+                "B": "_075_",
+                "Y": "_076_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_209_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [2]",
+                "B": "_067_",
+                "Y": "_077_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_210_",
+            "ports": {
+                "A": "_076_",
+                "B": "_077_",
+                "Y": "_011_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_211_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [0]",
+                "B": "\\iXMIT.bitCell_cntrH [1]",
+                "Y": "_078_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_212_",
+            "ports": {
+                "A": "_076_",
+                "B": "_078_",
+                "Y": "_010_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_213_",
+            "ports": {
+                "A": "_060_",
+                "B": "_076_",
+                "Y": "_009_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_214_",
+            "ports": {
+                "A": "\\iXMIT.state [0]",
+                "B": "\\iXMIT.state [1]",
+                "Y": "_079_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_215_",
+            "ports": {
+                "A": "\\iXMIT.state [2]",
+                "B": "_079_",
+                "Y": "_080_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_216_",
+            "ports": {
+                "A": "\\iXMIT.xmit_ShiftRegH [6]",
+                "B": "_080_",
+                "Y": "_081_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_217_",
+            "ports": {
+                "A": "\\iXMIT.state [2]",
+                "B": "_079_",
+                "Y": "_082_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_218_",
+            "ports": {
+                "A": "xmitH",
+                "B": "_082_",
+                "Y": "_083_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_219_",
+            "ports": {
+                "A": "xmit_dataH[5]",
+                "B": "_083_",
+                "Y": "_084_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_220_",
+            "ports": {
+                "A": "_081_",
+                "B": "_084_",
+                "Y": "_054_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_221_",
+            "ports": {
+                "A": "\\iXMIT.xmit_ShiftRegH [5]",
+                "B": "_080_",
+                "Y": "_085_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_222_",
+            "ports": {
+                "A": "xmit_dataH[4]",
+                "B": "_083_",
+                "Y": "_086_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_223_",
+            "ports": {
+                "A": "_085_",
+                "B": "_086_",
+                "Y": "_053_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_224_",
+            "ports": {
+                "A": "\\iXMIT.xmit_ShiftRegH [4]",
+                "B": "_080_",
+                "Y": "_087_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_225_",
+            "ports": {
+                "A": "xmit_dataH[3]",
+                "B": "_083_",
+                "Y": "_088_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_226_",
+            "ports": {
+                "A": "_087_",
+                "B": "_088_",
+                "Y": "_052_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_227_",
+            "ports": {
+                "A": "\\iXMIT.xmit_ShiftRegH [3]",
+                "B": "_080_",
+                "Y": "_089_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_228_",
+            "ports": {
+                "A": "xmit_dataH[2]",
+                "B": "_083_",
+                "Y": "_090_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_229_",
+            "ports": {
+                "A": "_089_",
+                "B": "_090_",
+                "Y": "_051_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_230_",
+            "ports": {
+                "A": "\\iXMIT.xmit_ShiftRegH [2]",
+                "B": "_080_",
+                "Y": "_091_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_231_",
+            "ports": {
+                "A": "xmit_dataH[1]",
+                "B": "_083_",
+                "Y": "_092_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_232_",
+            "ports": {
+                "A": "_091_",
+                "B": "_092_",
+                "Y": "_050_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_233_",
+            "ports": {
+                "A": "\\iXMIT.xmit_ShiftRegH [1]",
+                "B": "_080_",
+                "Y": "_093_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_234_",
+            "ports": {
+                "A": "xmit_dataH[0]",
+                "B": "_083_",
+                "Y": "_094_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_235_",
+            "ports": {
+                "A": "_093_",
+                "B": "_094_",
+                "Y": "_049_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_236_",
+            "ports": {
+                "A": "\\iXMIT.count_in [1]",
+                "B": "\\iXMIT.count_in [0]",
+                "Y": "_095_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_237_",
+            "ports": {
+                "A": "\\iXMIT.count_in [2]",
+                "B": "_095_",
+                "Y": "_096_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_238_",
+            "ports": {
+                "A": "\\iXMIT.count_in [3]",
+                "B": "_096_",
+                "Y": "_097_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_239_",
+            "ports": {
+                "A": "\\iXMIT.count_in [4]",
+                "B": "_097_",
+                "Y": "_098_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_240_",
+            "ports": {
+                "A": "\\iXMIT.count_in [5]",
+                "B": "_098_",
+                "Y": "_099_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_241_",
+            "ports": {
+                "A": "\\iXMIT.count_in [6]",
+                "B": "_099_",
+                "Y": "_100_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_242_",
+            "ports": {
+                "A": "\\iXMIT.count_in [7]",
+                "B": "_100_",
+                "Y": "_101_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_243_",
+            "ports": {
+                "A": "\\iXMIT.count_in [8]",
+                "B": "_101_",
+                "Y": "_102_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_244_",
+            "ports": {
+                "A": "\\iXMIT.count_in [9]",
+                "B": "_102_",
+                "Y": "_103_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_245_",
+            "ports": {
+                "A": "\\iXMIT.count_in [10]",
+                "B": "_103_",
+                "Y": "_104_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_246_",
+            "ports": {
+                "A": "\\iXMIT.count_in [11]",
+                "B": "_104_",
+                "Y": "_105_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_247_",
+            "ports": {
+                "A": "\\iXMIT.count_in [12]",
+                "B": "_105_",
+                "Y": "_106_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_248_",
+            "ports": {
+                "A": "\\iXMIT.count_in [13]",
+                "B": "_106_",
+                "Y": "_107_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_249_",
+            "ports": {
+                "A": "\\iXMIT.count_in [14]",
+                "B": "_107_",
+                "Y": "_108_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_250_",
+            "ports": {
+                "A": "\\iXMIT.count_in [15]",
+                "B": "_108_",
+                "Y": "_109_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_251_",
+            "ports": {
+                "A": "\\iXMIT.count_in [16]",
+                "B": "_109_",
+                "Y": "_110_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_252_",
+            "ports": {
+                "A": "\\iXMIT.count_in [17]",
+                "B": "_110_",
+                "Y": "_111_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_253_",
+            "ports": {
+                "A": "\\iXMIT.count_in [18]",
+                "B": "_111_",
+                "Y": "_112_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_254_",
+            "ports": {
+                "A": "\\iXMIT.count_in [19]",
+                "B": "_112_",
+                "Y": "_113_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_255_",
+            "ports": {
+                "A": "\\iXMIT.count_in [20]",
+                "B": "_113_",
+                "Y": "_114_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_256_",
+            "ports": {
+                "A": "\\iXMIT.count_in [21]",
+                "B": "_114_",
+                "Y": "_115_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_257_",
+            "ports": {
+                "A": "\\iXMIT.count_in [22]",
+                "B": "_115_",
+                "Y": "_116_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_258_",
+            "ports": {
+                "A": "\\iXMIT.count_in [23]",
+                "B": "_116_",
+                "Y": "_117_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_259_",
+            "ports": {
+                "A": "\\iXMIT.count_in [24]",
+                "B": "_117_",
+                "Y": "_118_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_260_",
+            "ports": {
+                "A": "\\iXMIT.count_in [25]",
+                "B": "_118_",
+                "Y": "_119_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_261_",
+            "ports": {
+                "A": "\\iXMIT.count_in [26]",
+                "B": "_119_",
+                "Y": "_120_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_262_",
+            "ports": {
+                "A": "\\iXMIT.count_in [27]",
+                "B": "_120_",
+                "Y": "_121_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_263_",
+            "ports": {
+                "A": "\\iXMIT.count_in [28]",
+                "B": "_121_",
+                "Y": "_122_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_264_",
+            "ports": {
+                "A": "\\iXMIT.count_in [29]",
+                "B": "_122_",
+                "Y": "_123_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_265_",
+            "ports": {
+                "A": "\\iXMIT.count_in [30]",
+                "B": "_123_",
+                "Y": "_124_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_266_",
+            "ports": {
+                "A": "\\iXMIT.count_in [30]",
+                "B": "_123_",
+                "Y": "_040_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_267_",
+            "ports": {
+                "A": "\\iXMIT.count_in [29]",
+                "B": "_122_",
+                "Y": "_038_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_268_",
+            "ports": {
+                "A": "\\iXMIT.count_in [28]",
+                "B": "_121_",
+                "Y": "_037_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_269_",
+            "ports": {
+                "A": "\\iXMIT.count_in [27]",
+                "B": "_120_",
+                "Y": "_036_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_270_",
+            "ports": {
+                "A": "\\iXMIT.count_in [26]",
+                "B": "_119_",
+                "Y": "_035_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_271_",
+            "ports": {
+                "A": "\\iXMIT.count_in [25]",
+                "B": "_118_",
+                "Y": "_034_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_272_",
+            "ports": {
+                "A": "\\iXMIT.count_in [24]",
+                "B": "_117_",
+                "Y": "_033_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_273_",
+            "ports": {
+                "A": "\\iXMIT.count_in [23]",
+                "B": "_116_",
+                "Y": "_032_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_274_",
+            "ports": {
+                "A": "\\iXMIT.count_in [22]",
+                "B": "_115_",
+                "Y": "_031_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_275_",
+            "ports": {
+                "A": "\\iXMIT.count_in [21]",
+                "B": "_114_",
+                "Y": "_030_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_276_",
+            "ports": {
+                "A": "\\iXMIT.count_in [20]",
+                "B": "_113_",
+                "Y": "_029_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_277_",
+            "ports": {
+                "A": "\\iXMIT.count_in [19]",
+                "B": "_112_",
+                "Y": "_027_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_278_",
+            "ports": {
+                "A": "\\iXMIT.count_in [18]",
+                "B": "_111_",
+                "Y": "_026_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_279_",
+            "ports": {
+                "A": "\\iXMIT.count_in [17]",
+                "B": "_110_",
+                "Y": "_025_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_280_",
+            "ports": {
+                "A": "\\iXMIT.count_in [16]",
+                "B": "_109_",
+                "Y": "_024_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_281_",
+            "ports": {
+                "A": "\\iXMIT.count_in [15]",
+                "B": "_108_",
+                "Y": "_023_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_282_",
+            "ports": {
+                "A": "\\iXMIT.count_in [14]",
+                "B": "_107_",
+                "Y": "_022_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_283_",
+            "ports": {
+                "A": "\\iXMIT.count_in [13]",
+                "B": "_106_",
+                "Y": "_021_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_284_",
+            "ports": {
+                "A": "\\iXMIT.count_in [12]",
+                "B": "_105_",
+                "Y": "_020_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_285_",
+            "ports": {
+                "A": "\\iXMIT.count_in [11]",
+                "B": "_104_",
+                "Y": "_019_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_286_",
+            "ports": {
+                "A": "\\iXMIT.count_in [10]",
+                "B": "_103_",
+                "Y": "_018_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_287_",
+            "ports": {
+                "A": "\\iXMIT.count_in [9]",
+                "B": "_102_",
+                "Y": "_048_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_288_",
+            "ports": {
+                "A": "\\iXMIT.count_in [8]",
+                "B": "_101_",
+                "Y": "_047_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_289_",
+            "ports": {
+                "A": "\\iXMIT.count_in [7]",
+                "B": "_100_",
+                "Y": "_046_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_290_",
+            "ports": {
+                "A": "\\iXMIT.count_in [6]",
+                "B": "_099_",
+                "Y": "_045_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_291_",
+            "ports": {
+                "A": "\\iXMIT.count_in [5]",
+                "B": "_098_",
+                "Y": "_044_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_292_",
+            "ports": {
+                "A": "\\iXMIT.count_in [4]",
+                "B": "_097_",
+                "Y": "_043_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_293_",
+            "ports": {
+                "A": "\\iXMIT.count_in [3]",
+                "B": "_096_",
+                "Y": "_042_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_294_",
+            "ports": {
+                "A": "\\iXMIT.count_in [2]",
+                "B": "_095_",
+                "Y": "_039_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_295_",
+            "ports": {
+                "A": "\\iXMIT.count_in [1]",
+                "B": "\\iXMIT.count_in [0]",
+                "Y": "_028_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_296_",
+            "ports": {
+                "A": "_080_",
+                "B": "_083_",
+                "Y": "_058_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_297_",
+            "ports": {
+                "A": "_072_",
+                "B": "_058_",
+                "Y": "_125_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_298_",
+            "ports": {
+                "A": "_066_",
+                "B": "_125_",
+                "Y": "\\iXMIT.next_state [1]"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_299_",
+            "ports": {
+                "A": "\\iXMIT.bitCountH [1]",
+                "B": "\\iXMIT.bitCountH [0]",
+                "Y": "_126_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_300_",
+            "ports": {
+                "A": "\\iXMIT.bitCountH [3]",
+                "B": "\\iXMIT.bitCountH [2]",
+                "Y": "_127_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_301_",
+            "ports": {
+                "A": "_126_",
+                "B": "_127_",
+                "Y": "_128_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_302_",
+            "ports": {
+                "A": "_065_",
+                "B": "_128_",
+                "Y": "_129_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_303_",
+            "ports": {
+                "A": "_066_",
+                "B": "_080_",
+                "Y": "_130_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_304_",
+            "ports": {
+                "A": "_129_",
+                "B": "_130_",
+                "Y": "_131_"
+            }
+        },
+        {
+            "type": "\\$_MUX_",
+            "name": "_305_",
+            "ports": {
+                "A": "_072_",
+                "B": "_071_",
+                "S": "_069_",
+                "Y": "_132_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_306_",
+            "ports": {
+                "A": "_131_",
+                "B": "_132_",
+                "Y": "\\iXMIT.next_state [0]"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_307_",
+            "ports": {
+                "A": "_063_",
+                "B": "_065_",
+                "Y": "_133_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_308_",
+            "ports": {
+                "A": "_128_",
+                "B": "_133_",
+                "Y": "_134_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_309_",
+            "ports": {
+                "A": "\\iXMIT.bitCountH [1]",
+                "B": "\\iXMIT.bitCountH [0]",
+                "Y": "_135_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_310_",
+            "ports": {
+                "A": "\\iXMIT.bitCountH [2]",
+                "B": "_135_",
+                "Y": "_136_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_311_",
+            "ports": {
+                "A": "\\iXMIT.bitCountH [2]",
+                "B": "_135_",
+                "Y": "_137_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_312_",
+            "ports": {
+                "A": "_134_",
+                "B": "_137_",
+                "Y": "_015_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_313_",
+            "ports": {
+                "A": "_126_",
+                "B": "_135_",
+                "Y": "_138_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_314_",
+            "ports": {
+                "A": "_133_",
+                "B": "_138_",
+                "Y": "_014_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_315_",
+            "ports": {
+                "A": "_134_",
+                "B": "\\iXMIT.bitCountH [0]",
+                "Y": "_013_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_316_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [1]",
+                "B": "\\iRECEIVER.bitCell_cntrH [0]",
+                "Y": "_139_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_317_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [2]",
+                "B": "\\iRECEIVER.bitCell_cntrH [3]",
+                "Y": "_140_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_318_",
+            "ports": {
+                "A": "_139_",
+                "B": "_140_",
+                "Y": "_141_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_319_",
+            "ports": {
+                "A": "\\iRECEIVER.state [1]",
+                "B": "\\iRECEIVER.state [2]",
+                "Y": "_142_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_320_",
+            "ports": {
+                "A": "_142_",
+                "B": "\\iRECEIVER.state [0]",
+                "Y": "_143_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_321_",
+            "ports": {
+                "A": "_141_",
+                "B": "_143_",
+                "Y": "_144_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_322_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [3]",
+                "B": "\\iRECEIVER.bitCell_cntrH [0]",
+                "Y": "_145_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_323_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [1]",
+                "B": "\\iRECEIVER.bitCell_cntrH [2]",
+                "Y": "_146_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_324_",
+            "ports": {
+                "A": "_145_",
+                "B": "_146_",
+                "Y": "_147_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_325_",
+            "ports": {
+                "A": "\\iRECEIVER.state [0]",
+                "B": "_142_",
+                "Y": "_148_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_326_",
+            "ports": {
+                "A": "_147_",
+                "B": "_148_",
+                "Y": "\\iRECEIVER.next_state [2]"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_327_",
+            "ports": {
+                "A": "\\iRECEIVER.state [2]",
+                "B": "\\iRECEIVER.state [1]",
+                "Y": "_149_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_328_",
+            "ports": {
+                "A": "_149_",
+                "B": "\\iRECEIVER.state [0]",
+                "Y": "\\iRECEIVER.countH"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_329_",
+            "ports": {
+                "A": "\\iRECEIVER.state [0]",
+                "B": "\\iRECEIVER.state [1]",
+                "Y": "_150_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_330_",
+            "ports": {
+                "A": "_144_",
+                "B": "\\iRECEIVER.countH",
+                "Y": "_151_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_331_",
+            "ports": {
+                "A": "\\iRECEIVER.next_state [2]",
+                "B": "_150_",
+                "Y": "_152_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_332_",
+            "ports": {
+                "A": "_151_",
+                "B": "_152_",
+                "Y": "_153_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_333_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [1]",
+                "B": "\\iRECEIVER.bitCell_cntrH [0]",
+                "Y": "_154_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_334_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [2]",
+                "B": "_154_",
+                "Y": "_155_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_335_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [2]",
+                "B": "_154_",
+                "Y": "_156_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_336_",
+            "ports": {
+                "A": "_153_",
+                "B": "_156_",
+                "Y": "_002_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_337_",
+            "ports": {
+                "A": "_139_",
+                "B": "_154_",
+                "Y": "_157_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_338_",
+            "ports": {
+                "A": "_153_",
+                "B": "_157_",
+                "Y": "_001_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_339_",
+            "ports": {
+                "A": "_153_",
+                "B": "\\iRECEIVER.bitCell_cntrH [0]",
+                "Y": "_000_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_340_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [0]",
+                "B": "\\iRECEIVER.recd_bitCntrH [1]",
+                "Y": "_158_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_341_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [2]",
+                "B": "_158_",
+                "Y": "_159_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_342_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [2]",
+                "B": "_158_",
+                "Y": "_160_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_343_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_160_",
+                "Y": "_161_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_344_",
+            "ports": {
+                "A": "_159_",
+                "B": "_161_",
+                "Y": "_006_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_345_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [0]",
+                "B": "\\iRECEIVER.recd_bitCntrH [1]",
+                "Y": "_162_"
+            }
+        },
+        {
+            "type": "\\$_NOR_",
+            "name": "_346_",
+            "ports": {
+                "A": "_158_",
+                "B": "_162_",
+                "Y": "_163_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_347_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_163_",
+                "Y": "_005_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_348_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "\\iRECEIVER.recd_bitCntrH [0]",
+                "Y": "_004_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_349_",
+            "ports": {
+                "A": "_147_",
+                "B": "_148_",
+                "Y": "_164_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_350_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_164_",
+                "Y": "_165_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_351_",
+            "ports": {
+                "A": "\\iRECEIVER.rec_datH",
+                "B": "_141_",
+                "Y": "_166_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_352_",
+            "ports": {
+                "A": "_143_",
+                "B": "_166_",
+                "Y": "_167_"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_353_",
+            "ports": {
+                "A": "_150_",
+                "B": "\\iRECEIVER.state [2]",
+                "Y": "_168_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_354_",
+            "ports": {
+                "A": "\\iRECEIVER.rec_datH",
+                "B": "_168_",
+                "Y": "_169_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_355_",
+            "ports": {
+                "A": "_167_",
+                "B": "_169_",
+                "Y": "_170_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_356_",
+            "ports": {
+                "A": "_165_",
+                "B": "_170_",
+                "Y": "\\iRECEIVER.next_state [1]"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_357_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [3]",
+                "B": "\\iRECEIVER.recd_bitCntrH [2]",
+                "Y": "_171_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_358_",
+            "ports": {
+                "A": "_162_",
+                "B": "_171_",
+                "Y": "_172_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_359_",
+            "ports": {
+                "A": "_148_",
+                "B": "_172_",
+                "Y": "_173_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_360_",
+            "ports": {
+                "A": "\\iRECEIVER.rec_datH",
+                "B": "\\iRECEIVER.state [2]",
+                "Y": "_174_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_361_",
+            "ports": {
+                "A": "_150_",
+                "B": "_174_",
+                "Y": "\\iRECEIVER.rec_readyInH"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_362_",
+            "ports": {
+                "A": "_173_",
+                "B": "\\iRECEIVER.rec_readyInH",
+                "Y": "_175_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_363_",
+            "ports": {
+                "A": "_164_",
+                "B": "_175_",
+                "Y": "_176_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_364_",
+            "ports": {
+                "A": "_151_",
+                "B": "_176_",
+                "Y": "\\iRECEIVER.next_state [0]"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_365_",
+            "ports": {
+                "A": "\\iRECEIVER.rec_datH",
+                "B": "_168_",
+                "Y": "_177_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_366_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_177_",
+                "Y": "_008_"
+            }
+        },
+        {
+            "type": "\\$_XNOR_",
+            "name": "_367_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [3]",
+                "B": "_159_",
+                "Y": "_178_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_368_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_178_",
+                "Y": "_007_"
+            }
+        },
+        {
+            "type": "\\$_XNOR_",
+            "name": "_369_",
+            "ports": {
+                "A": "\\iRECEIVER.bitCell_cntrH [3]",
+                "B": "_155_",
+                "Y": "_179_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_370_",
+            "ports": {
+                "A": "_153_",
+                "B": "_179_",
+                "Y": "_003_"
+            }
+        },
+        {
+            "type": "\\$_XNOR_",
+            "name": "_371_",
+            "ports": {
+                "A": "\\iXMIT.bitCountH [3]",
+                "B": "_136_",
+                "Y": "_180_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_372_",
+            "ports": {
+                "A": "_134_",
+                "B": "_180_",
+                "Y": "_016_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_373_",
+            "ports": {
+                "A": "\\iXMIT.count_in [31]",
+                "B": "_124_",
+                "Y": "_059_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_374_",
+            "ports": {
+                "A": "_074_",
+                "B": "_133_",
+                "Y": "\\iXMIT.next_state [2]"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_375_",
+            "ports": {
+                "A": "\\iXMIT.count_in [31]",
+                "B": "_124_",
+                "Y": "_041_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_376_",
+            "ports": {
+                "A": "xmitH",
+                "B": "_082_",
+                "Y": "_181_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_377_",
+            "ports": {
+                "A": "_134_",
+                "B": "_181_",
+                "Y": "_057_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_378_",
+            "ports": {
+                "A": "xmit_dataH[7]",
+                "B": "\\iXMIT.DataSend_ena",
+                "Y": "_182_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_379_",
+            "ports": {
+                "A": "_080_",
+                "B": "_182_",
+                "Y": "_183_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_380_",
+            "ports": {
+                "A": "_058_",
+                "B": "_183_",
+                "Y": "_056_"
+            }
+        },
+        {
+            "type": "\\$_ORNOT_",
+            "name": "_381_",
+            "ports": {
+                "A": "_069_",
+                "B": "_071_",
+                "Y": "_184_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_382_",
+            "ports": {
+                "A": "_181_",
+                "B": "_184_",
+                "Y": "\\iXMIT.xmit_doneInH"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_383_",
+            "ports": {
+                "A": "\\iXMIT.xmit_ShiftRegH [7]",
+                "B": "_080_",
+                "Y": "_185_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_384_",
+            "ports": {
+                "A": "xmit_dataH[6]",
+                "B": "_083_",
+                "Y": "_186_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_385_",
+            "ports": {
+                "A": "_185_",
+                "B": "_186_",
+                "Y": "_055_"
+            }
+        },
+        {
+            "type": "\\$_XOR_",
+            "name": "_386_",
+            "ports": {
+                "A": "\\iXMIT.bitCell_cntrH [3]",
+                "B": "_068_",
+                "Y": "_187_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_387_",
+            "ports": {
+                "A": "_076_",
+                "B": "_187_",
+                "Y": "_012_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_388_",
+            "ports": {
+                "A": "_065_",
+                "B": "_080_",
+                "Y": "_188_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_389_",
+            "ports": {
+                "A": "\\iXMIT.xmit_ShiftRegH [0]",
+                "B": "_188_",
+                "Y": "_189_"
+            }
+        },
+        {
+            "type": "\\$_MUX_",
+            "name": "_390_",
+            "ports": {
+                "A": "_079_",
+                "B": "_070_",
+                "S": "\\iXMIT.state [2]",
+                "Y": "_190_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
+            "name": "_391_",
+            "ports": {
+                "A": "_189_",
+                "B": "_190_",
+                "Y": "uart_XMIT_dataH"
+            }
+        }
+    ]
+}
