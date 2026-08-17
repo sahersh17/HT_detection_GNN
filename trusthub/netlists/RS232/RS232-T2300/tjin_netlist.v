@@ -2,54 +2,54 @@
 
 (* keep =  1  *)
 (* top =  1  *)
-(* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:3.1-78.10" *)
+(* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:3.1-78.10" *)
 module uart(sys_clk, sys_rst_l, uart_XMIT_dataH, xmitH, xmit_dataH, xmit_doneH, uart_REC_dataH, rec_dataH, rec_readyH);
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:17.9-17.16" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:17.9-17.16" *)
   input sys_clk;
   wire sys_clk;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:18.9-18.18" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:18.9-18.18" *)
   input sys_rst_l;
   wire sys_rst_l;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:19.10-19.25" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:19.10-19.25" *)
   output uart_XMIT_dataH;
   wire uart_XMIT_dataH;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:20.9-20.14" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:20.9-20.14" *)
   input xmitH;
   wire xmitH;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:21.13-21.23" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:21.13-21.23" *)
   input [7:0] xmit_dataH;
   wire [7:0] xmit_dataH;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:22.10-22.20" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:22.10-22.20" *)
   output xmit_doneH;
   wire xmit_doneH;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:24.9-24.23" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:24.9-24.23" *)
   input uart_REC_dataH;
   wire uart_REC_dataH;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:25.14-25.23" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:25.14-25.23" *)
   output [7:0] rec_dataH;
-  reg [7:0] rec_dataH;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:26.10-26.20" *)
+  wire [7:0] rec_dataH;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:26.10-26.20" *)
   output rec_readyH;
   wire rec_readyH;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:62.1-65.43" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:62.1-65.43" *)
   wire _000_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:62.1-65.43" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:62.1-65.43" *)
   wire _001_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:62.1-65.43" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:62.1-65.43" *)
   wire _002_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:62.1-65.43" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:62.1-65.43" *)
   wire _003_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:76.1-79.42" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:76.1-79.42" *)
   wire _004_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:76.1-79.42" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:76.1-79.42" *)
   wire _005_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:76.1-79.42" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:76.1-79.42" *)
   wire _006_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:76.1-79.42" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:76.1-79.42" *)
   wire _007_;
   wire _008_;
   wire _009_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:127.16-127.45" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:127.16-127.45" *)
   wire _010_;
   wire _011_;
   wire _012_;
@@ -100,349 +100,812 @@ module uart(sys_clk, sys_rst_l, uart_XMIT_dataH, xmitH, xmit_dataH, xmit_doneH, 
   wire _057_;
   wire _058_;
   (* hdlname = "iRECEIVER bitCell_cntrH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:32.12-32.25" *)
-  reg [3:0] \iRECEIVER.bitCell_cntrH ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:32.12-32.25" *)
+  wire [3:0] \iRECEIVER.bitCell_cntrH ;
   (* hdlname = "iRECEIVER countH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:37.8-37.14" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:37.8-37.14" *)
   wire \iRECEIVER.countH ;
   (* hdlname = "iRECEIVER ena" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:44.5-44.8" *)
-  reg \iRECEIVER.ena  = 1'h0;
+  (* init = 1'h0 *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:44.5-44.8" *)
+  wire \iRECEIVER.ena ;
   (* hdlname = "iRECEIVER next_state" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:30.12-30.22" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:30.12-30.22" *)
   wire [2:0] \iRECEIVER.next_state ;
   (* hdlname = "iRECEIVER par_dataH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:34.12-34.21" *)
-  reg [7:0] \iRECEIVER.par_dataH ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:34.12-34.21" *)
+  wire [7:0] \iRECEIVER.par_dataH ;
   (* hdlname = "iRECEIVER rec_datH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:31.8-31.16" *)
-  reg \iRECEIVER.rec_datH ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:31.8-31.16" *)
+  wire \iRECEIVER.rec_datH ;
   (* hdlname = "iRECEIVER rec_datSyncH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:31.18-31.30" *)
-  reg \iRECEIVER.rec_datSyncH ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:31.18-31.30" *)
+  wire \iRECEIVER.rec_datSyncH ;
   (* hdlname = "iRECEIVER rec_dataH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:25.14-25.23" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:25.14-25.23" *)
   wire [7:0] \iRECEIVER.rec_dataH ;
   (* hdlname = "iRECEIVER rec_readyH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:26.10-26.20" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:26.10-26.20" *)
   wire \iRECEIVER.rec_readyH ;
   (* hdlname = "iRECEIVER rec_readyH_temp" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:39.8-39.23" *)
-  reg \iRECEIVER.rec_readyH_temp ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:39.8-39.23" *)
+  wire \iRECEIVER.rec_readyH_temp ;
   (* hdlname = "iRECEIVER rec_readyInH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:40.8-40.20" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:40.8-40.20" *)
   wire \iRECEIVER.rec_readyInH ;
   (* hdlname = "iRECEIVER recd_bitCntrH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:36.12-36.25" *)
-  reg [3:0] \iRECEIVER.recd_bitCntrH ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:36.12-36.25" *)
+  wire [3:0] \iRECEIVER.recd_bitCntrH ;
   (* hdlname = "iRECEIVER shiftH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:35.8-35.14" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:35.8-35.14" *)
   wire \iRECEIVER.shiftH ;
   (* hdlname = "iRECEIVER state" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:30.24-30.29" *)
-  reg [2:0] \iRECEIVER.state ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:30.24-30.29" *)
+  wire [2:0] \iRECEIVER.state ;
   (* hdlname = "iRECEIVER sys_clk" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:21.9-21.16" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:21.9-21.16" *)
   wire \iRECEIVER.sys_clk ;
   (* hdlname = "iRECEIVER sys_rst_l" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:20.9-20.18" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:20.9-20.18" *)
   wire \iRECEIVER.sys_rst_l ;
   (* hdlname = "iRECEIVER uart_dataH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:23.9-23.19" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:23.9-23.19" *)
   wire \iRECEIVER.uart_dataH ;
   (* hdlname = "iXMIT bitCell_cntrH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:27.12-27.25" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:27.12-27.25" *)
   wire [3:0] \iXMIT.bitCell_cntrH ;
   (* hdlname = "iXMIT bitCountH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:30.12-30.21" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:30.12-30.21" *)
   wire [3:0] \iXMIT.bitCountH ;
   (* hdlname = "iXMIT next_state" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:24.12-24.22" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:24.12-24.22" *)
   wire [2:0] \iXMIT.next_state ;
   (* hdlname = "iXMIT state" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:24.24-24.29" *)
-  reg [2:0] \iXMIT.state ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:24.24-24.29" *)
+  wire [2:0] \iXMIT.state ;
   (* hdlname = "iXMIT sys_clk" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:15.9-15.16" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:15.9-15.16" *)
   wire \iXMIT.sys_clk ;
   (* hdlname = "iXMIT sys_rst_l" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:16.9-16.18" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:16.9-16.18" *)
   wire \iXMIT.sys_rst_l ;
   (* hdlname = "iXMIT uart_xmitH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:17.10-17.20" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:17.10-17.20" *)
   wire \iXMIT.uart_xmitH ;
   (* hdlname = "iXMIT xmitH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:18.9-18.14" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:18.9-18.14" *)
   wire \iXMIT.xmitH ;
   (* hdlname = "iXMIT xmit_ShiftRegH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:29.12-29.26" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:29.12-29.26" *)
   wire [7:0] \iXMIT.xmit_ShiftRegH ;
   (* hdlname = "iXMIT xmit_dataH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:19.13-19.23" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:19.13-19.23" *)
   (* unused_bits = "0 1 2 3 4 5 6 7" *)
   wire [7:0] \iXMIT.xmit_dataH ;
   (* hdlname = "iXMIT xmit_doneH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:20.10-20.20" *)
-  reg \iXMIT.xmit_doneH ;
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:20.10-20.20" *)
+  wire \iXMIT.xmit_doneH ;
   (* hdlname = "iXMIT xmit_doneInH" *)
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:35.8-35.20" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:35.8-35.20" *)
   wire \iXMIT.xmit_doneInH ;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:30.17-30.30" *)
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:30.17-30.30" *)
   wire [7:0] rec_dataH_rec;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:29.17-29.31" *)
-  reg [7:0] rec_dataH_temp;
-  assign _023_ = \iXMIT.state [2] | ~(\iXMIT.state [1]);
-  assign _024_ = ~(\iXMIT.state [1] | \iXMIT.state [0]);
-  assign _025_ = \iXMIT.state [2] | xmitH;
-  assign _026_ = ~(_024_ & _025_);
-  assign \iXMIT.next_state [1] = ~(_023_ & _026_);
-  assign _027_ = \iRECEIVER.state [1] & ~(\iRECEIVER.state [2]);
-  assign _028_ = _027_ & ~(\iRECEIVER.state [0]);
-  assign _029_ = \iRECEIVER.state [0] & ~(\iRECEIVER.state [1]);
-  assign _030_ = _029_ & ~(\iRECEIVER.state [2]);
-  assign _031_ = ~(_028_ | _030_);
-  assign _032_ = \iRECEIVER.rec_datH  | _031_;
-  assign _033_ = \iRECEIVER.bitCell_cntrH [2] & \iRECEIVER.bitCell_cntrH [1];
-  assign _034_ = \iRECEIVER.bitCell_cntrH [3] & ~(\iRECEIVER.bitCell_cntrH [0]);
-  assign _035_ = _033_ & _034_;
-  assign _036_ = \iRECEIVER.state [0] & _027_;
-  assign _037_ = _035_ | ~(_036_);
-  assign _038_ = \iRECEIVER.state [1] | ~(\iRECEIVER.state [2]);
-  assign \iRECEIVER.countH  = ~(\iRECEIVER.state [0] | _038_);
-  assign _039_ = ~(\iRECEIVER.bitCell_cntrH [1] | \iRECEIVER.bitCell_cntrH [0]);
-  assign _040_ = \iRECEIVER.bitCell_cntrH [2] & ~(\iRECEIVER.bitCell_cntrH [3]);
-  assign _041_ = _039_ & _040_;
-  assign _042_ = _028_ & ~(_041_);
-  assign _043_ = ~(\iRECEIVER.countH  | _042_);
-  assign _044_ = _032_ & _043_;
-  assign \iRECEIVER.next_state [1] = ~(_037_ & _044_);
-  assign \iRECEIVER.next_state [2] = _035_ & _036_;
-  assign _045_ = ~(\iRECEIVER.recd_bitCntrH [0] | \iRECEIVER.recd_bitCntrH [1]);
-  assign _046_ = \iRECEIVER.recd_bitCntrH [3] & ~(\iRECEIVER.recd_bitCntrH [2]);
-  assign _047_ = _045_ & _046_;
-  assign _048_ = ~(\iRECEIVER.next_state [2] & _047_);
-  assign _010_ = ~_048_;
-  assign _049_ = ~(_028_ & _041_);
-  assign _050_ = _038_ & _049_;
-  assign _051_ = ~(\iRECEIVER.rec_datH  & _030_);
-  assign _052_ = _037_ & _051_;
-  assign _053_ = _050_ & _052_;
-  assign \iRECEIVER.next_state [0] = ~(_048_ & _053_);
-  assign _054_ = ~(_029_ | \iRECEIVER.next_state [2]);
-  assign _055_ = _050_ & _054_;
-  assign _056_ = \iRECEIVER.bitCell_cntrH [1] & \iRECEIVER.bitCell_cntrH [0];
-  assign _057_ = ~(\iRECEIVER.bitCell_cntrH [2] & _056_);
-  assign _058_ = \iRECEIVER.bitCell_cntrH [2] ^ _056_;
-  assign _002_ = _055_ & _058_;
-  assign _011_ = ~(_039_ | _056_);
-  assign _001_ = _055_ & _011_;
-  assign _000_ = _055_ & ~(\iRECEIVER.bitCell_cntrH [0]);
-  assign _012_ = \iRECEIVER.recd_bitCntrH [0] & \iRECEIVER.recd_bitCntrH [1];
-  assign _013_ = ~(\iRECEIVER.recd_bitCntrH [2] & _012_);
-  assign _014_ = \iRECEIVER.recd_bitCntrH [2] | _012_;
-  assign _015_ = \iRECEIVER.countH  & _014_;
-  assign _006_ = _013_ & _015_;
-  assign _016_ = ~(_045_ | _012_);
-  assign _005_ = \iRECEIVER.countH  & _016_;
-  assign _004_ = \iRECEIVER.countH  & ~(\iRECEIVER.recd_bitCntrH [0]);
-  assign _017_ = \iXMIT.state [2] & ~(\iXMIT.state [1]);
-  assign _018_ = \iXMIT.state [0] & ~(_023_);
-  assign \iXMIT.next_state [0] = _017_ | _018_;
-  assign \iRECEIVER.rec_dataH [6] = \iRECEIVER.par_dataH [6] & ~(\iRECEIVER.ena );
-  assign \iRECEIVER.rec_dataH [5] = \iRECEIVER.par_dataH [5] & ~(\iRECEIVER.ena );
-  assign \iRECEIVER.rec_dataH [4] = \iRECEIVER.par_dataH [4] & ~(\iRECEIVER.ena );
-  assign \iRECEIVER.rec_dataH [3] = \iRECEIVER.par_dataH [3] & ~(\iRECEIVER.ena );
-  assign \iRECEIVER.rec_dataH [2] = \iRECEIVER.par_dataH [2] & ~(\iRECEIVER.ena );
-  assign \iRECEIVER.rec_dataH [1] = \iRECEIVER.par_dataH [1] & ~(\iRECEIVER.ena );
-  assign \iRECEIVER.rec_dataH [0] = \iRECEIVER.par_dataH [0] & ~(\iRECEIVER.ena );
-  assign rec_readyH = \iRECEIVER.rec_readyH_temp  & ~(\iRECEIVER.ena );
-  assign _008_ = \iRECEIVER.countH  | ~(_051_);
-  assign _009_ = \iRECEIVER.ena  | _048_;
-  assign _019_ = ~(\iRECEIVER.recd_bitCntrH [3] ^ _013_);
-  assign _007_ = \iRECEIVER.countH  & _019_;
-  assign _020_ = ~(\iRECEIVER.bitCell_cntrH [3] ^ _057_);
-  assign _003_ = _055_ & _020_;
-  assign _021_ = \iRECEIVER.state [2] | \iRECEIVER.rec_datH ;
-  assign \iRECEIVER.rec_readyInH  = _029_ & _021_;
-  assign \iXMIT.next_state [2] = \iXMIT.state [0] & _017_;
-  assign _022_ = _024_ & ~(\iXMIT.state [2]);
-  assign uart_XMIT_dataH = \iXMIT.next_state [2] | _022_;
-  assign \iXMIT.xmit_doneInH  = _024_ & ~(_025_);
-  assign \iRECEIVER.rec_dataH [7] = \iRECEIVER.par_dataH [7] & ~(\iRECEIVER.ena );
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:173.1-175.35" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iXMIT.xmit_doneH  <= 1'h0;
-    else \iXMIT.xmit_doneH  <= \iXMIT.xmit_doneInH ;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:73.1-75.28" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iXMIT.state [0] <= 1'h0;
-    else \iXMIT.state [0] <= \iXMIT.next_state [0];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:73.1-75.28" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iXMIT.state [1] <= 1'h0;
-    else \iXMIT.state [1] <= \iXMIT.next_state [1];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_xmit.v:73.1-75.28" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iXMIT.state [2] <= 1'h0;
-    else \iXMIT.state [2] <= \iXMIT.next_state [2];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:69.1-76.6" *)
-  always @(posedge rec_readyH, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH_temp[0] <= 1'h0;
-    else rec_dataH_temp[0] <= \iRECEIVER.rec_dataH [0];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:69.1-76.6" *)
-  always @(posedge rec_readyH, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH_temp[1] <= 1'h0;
-    else rec_dataH_temp[1] <= \iRECEIVER.rec_dataH [1];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:69.1-76.6" *)
-  always @(posedge rec_readyH, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH_temp[2] <= 1'h0;
-    else rec_dataH_temp[2] <= \iRECEIVER.rec_dataH [2];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:69.1-76.6" *)
-  always @(posedge rec_readyH, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH_temp[3] <= 1'h0;
-    else rec_dataH_temp[3] <= \iRECEIVER.rec_dataH [3];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:69.1-76.6" *)
-  always @(posedge rec_readyH, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH_temp[4] <= 1'h0;
-    else rec_dataH_temp[4] <= \iRECEIVER.rec_dataH [4];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:69.1-76.6" *)
-  always @(posedge rec_readyH, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH_temp[5] <= 1'h0;
-    else rec_dataH_temp[5] <= \iRECEIVER.rec_dataH [5];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:69.1-76.6" *)
-  always @(posedge rec_readyH, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH_temp[6] <= 1'h0;
-    else rec_dataH_temp[6] <= \iRECEIVER.rec_dataH [6];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:69.1-76.6" *)
-  always @(posedge rec_readyH, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH_temp[7] <= 1'h0;
-    else rec_dataH_temp[7] <= \iRECEIVER.rec_dataH [7];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:59.1-66.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH[0] <= 1'h0;
-    else rec_dataH[0] <= rec_dataH_temp[0];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:59.1-66.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH[1] <= 1'h0;
-    else rec_dataH[1] <= rec_dataH_temp[1];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:59.1-66.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH[2] <= 1'h0;
-    else rec_dataH[2] <= rec_dataH_temp[2];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:59.1-66.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH[3] <= 1'h0;
-    else rec_dataH[3] <= rec_dataH_temp[3];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:59.1-66.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH[4] <= 1'h0;
-    else rec_dataH[4] <= rec_dataH_temp[4];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:59.1-66.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH[5] <= 1'h0;
-    else rec_dataH[5] <= rec_dataH_temp[5];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:59.1-66.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH[6] <= 1'h0;
-    else rec_dataH[6] <= rec_dataH_temp[6];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\uart.v:59.1-66.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) rec_dataH[7] <= 1'h0;
-    else rec_dataH[7] <= rec_dataH_temp[7];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:166.1-168.40" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.rec_readyH_temp  <= 1'h0;
-    else \iRECEIVER.rec_readyH_temp  <= \iRECEIVER.rec_readyInH ;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:62.1-65.43" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.bitCell_cntrH [0] <= 1'h0;
-    else \iRECEIVER.bitCell_cntrH [0] <= _000_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:62.1-65.43" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.bitCell_cntrH [1] <= 1'h0;
-    else \iRECEIVER.bitCell_cntrH [1] <= _001_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:62.1-65.43" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.bitCell_cntrH [2] <= 1'h0;
-    else \iRECEIVER.bitCell_cntrH [2] <= _002_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:62.1-65.43" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.bitCell_cntrH [3] <= 1'h0;
-    else \iRECEIVER.bitCell_cntrH [3] <= _003_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:84.1-86.28" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.state [0] <= 1'h1;
-    else \iRECEIVER.state [0] <= \iRECEIVER.next_state [0];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:84.1-86.28" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.state [1] <= 1'h0;
-    else \iRECEIVER.state [1] <= \iRECEIVER.next_state [1];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:84.1-86.28" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.state [2] <= 1'h0;
-    else \iRECEIVER.state [2] <= \iRECEIVER.next_state [2];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:68.1-73.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.par_dataH [7] <= 1'h0;
-    else if (\iRECEIVER.countH ) \iRECEIVER.par_dataH [7] <= \iRECEIVER.rec_datH ;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:89.1-163.4" *)
-  always @*
-    if (!_009_) \iRECEIVER.ena  = 1'h1;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:68.1-73.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.par_dataH [0] <= 1'h0;
-    else if (\iRECEIVER.countH ) \iRECEIVER.par_dataH [0] <= \iRECEIVER.par_dataH [1];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:68.1-73.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.par_dataH [1] <= 1'h0;
-    else if (\iRECEIVER.countH ) \iRECEIVER.par_dataH [1] <= \iRECEIVER.par_dataH [2];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:68.1-73.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.par_dataH [2] <= 1'h0;
-    else if (\iRECEIVER.countH ) \iRECEIVER.par_dataH [2] <= \iRECEIVER.par_dataH [3];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:68.1-73.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.par_dataH [3] <= 1'h0;
-    else if (\iRECEIVER.countH ) \iRECEIVER.par_dataH [3] <= \iRECEIVER.par_dataH [4];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:68.1-73.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.par_dataH [4] <= 1'h0;
-    else if (\iRECEIVER.countH ) \iRECEIVER.par_dataH [4] <= \iRECEIVER.par_dataH [5];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:68.1-73.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.par_dataH [5] <= 1'h0;
-    else if (\iRECEIVER.countH ) \iRECEIVER.par_dataH [5] <= \iRECEIVER.par_dataH [6];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:68.1-73.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.par_dataH [6] <= 1'h0;
-    else if (\iRECEIVER.countH ) \iRECEIVER.par_dataH [6] <= \iRECEIVER.par_dataH [7];
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:52.1-59.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.rec_datH  <= 1'h1;
-    else \iRECEIVER.rec_datH  <= \iRECEIVER.rec_datSyncH ;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:76.1-79.42" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.recd_bitCntrH [0] <= 1'h0;
-    else if (_008_) \iRECEIVER.recd_bitCntrH [0] <= _004_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:76.1-79.42" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.recd_bitCntrH [1] <= 1'h0;
-    else if (_008_) \iRECEIVER.recd_bitCntrH [1] <= _005_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:76.1-79.42" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.recd_bitCntrH [2] <= 1'h0;
-    else if (_008_) \iRECEIVER.recd_bitCntrH [2] <= _006_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:76.1-79.42" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.recd_bitCntrH [3] <= 1'h0;
-    else if (_008_) \iRECEIVER.recd_bitCntrH [3] <= _007_;
-  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmpulx_4fln\\u_rec.v:52.1-59.6" *)
-  always @(posedge sys_clk, negedge sys_rst_l)
-    if (!sys_rst_l) \iRECEIVER.rec_datSyncH  <= 1'h1;
-    else \iRECEIVER.rec_datSyncH  <= uart_REC_dataH;
-  always @*
-    if (_010_)
-      $write("Trojan Activated\n");
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:29.17-29.31" *)
+  wire [7:0] rec_dataH_temp;
+  \$_ORNOT_  _059_ (
+    .A(\iXMIT.state [2]),
+    .B(\iXMIT.state [1]),
+    .Y(_023_)
+  );
+  \$_NOR_  _060_ (
+    .A(\iXMIT.state [1]),
+    .B(\iXMIT.state [0]),
+    .Y(_024_)
+  );
+  \$_OR_  _061_ (
+    .A(\iXMIT.state [2]),
+    .B(xmitH),
+    .Y(_025_)
+  );
+  \$_NAND_  _062_ (
+    .A(_024_),
+    .B(_025_),
+    .Y(_026_)
+  );
+  \$_NAND_  _063_ (
+    .A(_023_),
+    .B(_026_),
+    .Y(\iXMIT.next_state [1])
+  );
+  \$_ANDNOT_  _064_ (
+    .A(\iRECEIVER.state [1]),
+    .B(\iRECEIVER.state [2]),
+    .Y(_027_)
+  );
+  \$_ANDNOT_  _065_ (
+    .A(_027_),
+    .B(\iRECEIVER.state [0]),
+    .Y(_028_)
+  );
+  \$_ANDNOT_  _066_ (
+    .A(\iRECEIVER.state [0]),
+    .B(\iRECEIVER.state [1]),
+    .Y(_029_)
+  );
+  \$_ANDNOT_  _067_ (
+    .A(_029_),
+    .B(\iRECEIVER.state [2]),
+    .Y(_030_)
+  );
+  \$_NOR_  _068_ (
+    .A(_028_),
+    .B(_030_),
+    .Y(_031_)
+  );
+  \$_OR_  _069_ (
+    .A(\iRECEIVER.rec_datH ),
+    .B(_031_),
+    .Y(_032_)
+  );
+  \$_AND_  _070_ (
+    .A(\iRECEIVER.bitCell_cntrH [2]),
+    .B(\iRECEIVER.bitCell_cntrH [1]),
+    .Y(_033_)
+  );
+  \$_ANDNOT_  _071_ (
+    .A(\iRECEIVER.bitCell_cntrH [3]),
+    .B(\iRECEIVER.bitCell_cntrH [0]),
+    .Y(_034_)
+  );
+  \$_AND_  _072_ (
+    .A(_033_),
+    .B(_034_),
+    .Y(_035_)
+  );
+  \$_AND_  _073_ (
+    .A(\iRECEIVER.state [0]),
+    .B(_027_),
+    .Y(_036_)
+  );
+  \$_ORNOT_  _074_ (
+    .A(_035_),
+    .B(_036_),
+    .Y(_037_)
+  );
+  \$_ORNOT_  _075_ (
+    .A(\iRECEIVER.state [1]),
+    .B(\iRECEIVER.state [2]),
+    .Y(_038_)
+  );
+  \$_NOR_  _076_ (
+    .A(\iRECEIVER.state [0]),
+    .B(_038_),
+    .Y(\iRECEIVER.countH )
+  );
+  \$_NOR_  _077_ (
+    .A(\iRECEIVER.bitCell_cntrH [1]),
+    .B(\iRECEIVER.bitCell_cntrH [0]),
+    .Y(_039_)
+  );
+  \$_ANDNOT_  _078_ (
+    .A(\iRECEIVER.bitCell_cntrH [2]),
+    .B(\iRECEIVER.bitCell_cntrH [3]),
+    .Y(_040_)
+  );
+  \$_AND_  _079_ (
+    .A(_039_),
+    .B(_040_),
+    .Y(_041_)
+  );
+  \$_ANDNOT_  _080_ (
+    .A(_028_),
+    .B(_041_),
+    .Y(_042_)
+  );
+  \$_NOR_  _081_ (
+    .A(\iRECEIVER.countH ),
+    .B(_042_),
+    .Y(_043_)
+  );
+  \$_AND_  _082_ (
+    .A(_032_),
+    .B(_043_),
+    .Y(_044_)
+  );
+  \$_NAND_  _083_ (
+    .A(_037_),
+    .B(_044_),
+    .Y(\iRECEIVER.next_state [1])
+  );
+  \$_AND_  _084_ (
+    .A(_035_),
+    .B(_036_),
+    .Y(\iRECEIVER.next_state [2])
+  );
+  \$_NOR_  _085_ (
+    .A(\iRECEIVER.recd_bitCntrH [0]),
+    .B(\iRECEIVER.recd_bitCntrH [1]),
+    .Y(_045_)
+  );
+  \$_ANDNOT_  _086_ (
+    .A(\iRECEIVER.recd_bitCntrH [3]),
+    .B(\iRECEIVER.recd_bitCntrH [2]),
+    .Y(_046_)
+  );
+  \$_AND_  _087_ (
+    .A(_045_),
+    .B(_046_),
+    .Y(_047_)
+  );
+  \$_NAND_  _088_ (
+    .A(\iRECEIVER.next_state [2]),
+    .B(_047_),
+    .Y(_048_)
+  );
+  \$_NOT_  _089_ (
+    .A(_048_),
+    .Y(_010_)
+  );
+  \$_NAND_  _090_ (
+    .A(_028_),
+    .B(_041_),
+    .Y(_049_)
+  );
+  \$_AND_  _091_ (
+    .A(_038_),
+    .B(_049_),
+    .Y(_050_)
+  );
+  \$_NAND_  _092_ (
+    .A(\iRECEIVER.rec_datH ),
+    .B(_030_),
+    .Y(_051_)
+  );
+  \$_AND_  _093_ (
+    .A(_037_),
+    .B(_051_),
+    .Y(_052_)
+  );
+  \$_AND_  _094_ (
+    .A(_050_),
+    .B(_052_),
+    .Y(_053_)
+  );
+  \$_NAND_  _095_ (
+    .A(_048_),
+    .B(_053_),
+    .Y(\iRECEIVER.next_state [0])
+  );
+  \$_NOR_  _096_ (
+    .A(_029_),
+    .B(\iRECEIVER.next_state [2]),
+    .Y(_054_)
+  );
+  \$_AND_  _097_ (
+    .A(_050_),
+    .B(_054_),
+    .Y(_055_)
+  );
+  \$_AND_  _098_ (
+    .A(\iRECEIVER.bitCell_cntrH [1]),
+    .B(\iRECEIVER.bitCell_cntrH [0]),
+    .Y(_056_)
+  );
+  \$_NAND_  _099_ (
+    .A(\iRECEIVER.bitCell_cntrH [2]),
+    .B(_056_),
+    .Y(_057_)
+  );
+  \$_XOR_  _100_ (
+    .A(\iRECEIVER.bitCell_cntrH [2]),
+    .B(_056_),
+    .Y(_058_)
+  );
+  \$_AND_  _101_ (
+    .A(_055_),
+    .B(_058_),
+    .Y(_002_)
+  );
+  \$_NOR_  _102_ (
+    .A(_039_),
+    .B(_056_),
+    .Y(_011_)
+  );
+  \$_AND_  _103_ (
+    .A(_055_),
+    .B(_011_),
+    .Y(_001_)
+  );
+  \$_ANDNOT_  _104_ (
+    .A(_055_),
+    .B(\iRECEIVER.bitCell_cntrH [0]),
+    .Y(_000_)
+  );
+  \$_AND_  _105_ (
+    .A(\iRECEIVER.recd_bitCntrH [0]),
+    .B(\iRECEIVER.recd_bitCntrH [1]),
+    .Y(_012_)
+  );
+  \$_NAND_  _106_ (
+    .A(\iRECEIVER.recd_bitCntrH [2]),
+    .B(_012_),
+    .Y(_013_)
+  );
+  \$_OR_  _107_ (
+    .A(\iRECEIVER.recd_bitCntrH [2]),
+    .B(_012_),
+    .Y(_014_)
+  );
+  \$_AND_  _108_ (
+    .A(\iRECEIVER.countH ),
+    .B(_014_),
+    .Y(_015_)
+  );
+  \$_AND_  _109_ (
+    .A(_013_),
+    .B(_015_),
+    .Y(_006_)
+  );
+  \$_NOR_  _110_ (
+    .A(_045_),
+    .B(_012_),
+    .Y(_016_)
+  );
+  \$_AND_  _111_ (
+    .A(\iRECEIVER.countH ),
+    .B(_016_),
+    .Y(_005_)
+  );
+  \$_ANDNOT_  _112_ (
+    .A(\iRECEIVER.countH ),
+    .B(\iRECEIVER.recd_bitCntrH [0]),
+    .Y(_004_)
+  );
+  \$_ANDNOT_  _113_ (
+    .A(\iXMIT.state [2]),
+    .B(\iXMIT.state [1]),
+    .Y(_017_)
+  );
+  \$_ANDNOT_  _114_ (
+    .A(\iXMIT.state [0]),
+    .B(_023_),
+    .Y(_018_)
+  );
+  \$_OR_  _115_ (
+    .A(_017_),
+    .B(_018_),
+    .Y(\iXMIT.next_state [0])
+  );
+  \$_ANDNOT_  _116_ (
+    .A(\iRECEIVER.par_dataH [6]),
+    .B(\iRECEIVER.ena ),
+    .Y(\iRECEIVER.rec_dataH [6])
+  );
+  \$_ANDNOT_  _117_ (
+    .A(\iRECEIVER.par_dataH [5]),
+    .B(\iRECEIVER.ena ),
+    .Y(\iRECEIVER.rec_dataH [5])
+  );
+  \$_ANDNOT_  _118_ (
+    .A(\iRECEIVER.par_dataH [4]),
+    .B(\iRECEIVER.ena ),
+    .Y(\iRECEIVER.rec_dataH [4])
+  );
+  \$_ANDNOT_  _119_ (
+    .A(\iRECEIVER.par_dataH [3]),
+    .B(\iRECEIVER.ena ),
+    .Y(\iRECEIVER.rec_dataH [3])
+  );
+  \$_ANDNOT_  _120_ (
+    .A(\iRECEIVER.par_dataH [2]),
+    .B(\iRECEIVER.ena ),
+    .Y(\iRECEIVER.rec_dataH [2])
+  );
+  \$_ANDNOT_  _121_ (
+    .A(\iRECEIVER.par_dataH [1]),
+    .B(\iRECEIVER.ena ),
+    .Y(\iRECEIVER.rec_dataH [1])
+  );
+  \$_ANDNOT_  _122_ (
+    .A(\iRECEIVER.par_dataH [0]),
+    .B(\iRECEIVER.ena ),
+    .Y(\iRECEIVER.rec_dataH [0])
+  );
+  \$_ANDNOT_  _123_ (
+    .A(\iRECEIVER.rec_readyH_temp ),
+    .B(\iRECEIVER.ena ),
+    .Y(rec_readyH)
+  );
+  \$_ORNOT_  _124_ (
+    .A(\iRECEIVER.countH ),
+    .B(_051_),
+    .Y(_008_)
+  );
+  \$_OR_  _125_ (
+    .A(\iRECEIVER.ena ),
+    .B(_048_),
+    .Y(_009_)
+  );
+  \$_XNOR_  _126_ (
+    .A(\iRECEIVER.recd_bitCntrH [3]),
+    .B(_013_),
+    .Y(_019_)
+  );
+  \$_AND_  _127_ (
+    .A(\iRECEIVER.countH ),
+    .B(_019_),
+    .Y(_007_)
+  );
+  \$_XNOR_  _128_ (
+    .A(\iRECEIVER.bitCell_cntrH [3]),
+    .B(_057_),
+    .Y(_020_)
+  );
+  \$_AND_  _129_ (
+    .A(_055_),
+    .B(_020_),
+    .Y(_003_)
+  );
+  \$_OR_  _130_ (
+    .A(\iRECEIVER.state [2]),
+    .B(\iRECEIVER.rec_datH ),
+    .Y(_021_)
+  );
+  \$_AND_  _131_ (
+    .A(_029_),
+    .B(_021_),
+    .Y(\iRECEIVER.rec_readyInH )
+  );
+  \$_AND_  _132_ (
+    .A(\iXMIT.state [0]),
+    .B(_017_),
+    .Y(\iXMIT.next_state [2])
+  );
+  \$_ANDNOT_  _133_ (
+    .A(_024_),
+    .B(\iXMIT.state [2]),
+    .Y(_022_)
+  );
+  \$_OR_  _134_ (
+    .A(\iXMIT.next_state [2]),
+    .B(_022_),
+    .Y(uart_XMIT_dataH)
+  );
+  \$_ANDNOT_  _135_ (
+    .A(_024_),
+    .B(_025_),
+    .Y(\iXMIT.xmit_doneInH )
+  );
+  \$_ANDNOT_  _136_ (
+    .A(\iRECEIVER.par_dataH [7]),
+    .B(\iRECEIVER.ena ),
+    .Y(\iRECEIVER.rec_dataH [7])
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:173.1-175.35" *)
+  \$_DFF_PN0_  \iXMIT.xmit_doneH_reg  /* _137_ */ (
+    .C(sys_clk),
+    .D(\iXMIT.xmit_doneInH ),
+    .Q(\iXMIT.xmit_doneH ),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:73.1-75.28" *)
+  \$_DFF_PN0_  \iXMIT.state_reg[0]  /* _138_ */ (
+    .C(sys_clk),
+    .D(\iXMIT.next_state [0]),
+    .Q(\iXMIT.state [0]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:73.1-75.28" *)
+  \$_DFF_PN0_  \iXMIT.state_reg[1]  /* _139_ */ (
+    .C(sys_clk),
+    .D(\iXMIT.next_state [1]),
+    .Q(\iXMIT.state [1]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_xmit.v:73.1-75.28" *)
+  \$_DFF_PN0_  \iXMIT.state_reg[2]  /* _140_ */ (
+    .C(sys_clk),
+    .D(\iXMIT.next_state [2]),
+    .Q(\iXMIT.state [2]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:69.1-76.6" *)
+  \$_DFF_PN0_  \rec_dataH_temp_reg[0]  /* _141_ */ (
+    .C(rec_readyH),
+    .D(\iRECEIVER.rec_dataH [0]),
+    .Q(rec_dataH_temp[0]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:69.1-76.6" *)
+  \$_DFF_PN0_  \rec_dataH_temp_reg[1]  /* _142_ */ (
+    .C(rec_readyH),
+    .D(\iRECEIVER.rec_dataH [1]),
+    .Q(rec_dataH_temp[1]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:69.1-76.6" *)
+  \$_DFF_PN0_  \rec_dataH_temp_reg[2]  /* _143_ */ (
+    .C(rec_readyH),
+    .D(\iRECEIVER.rec_dataH [2]),
+    .Q(rec_dataH_temp[2]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:69.1-76.6" *)
+  \$_DFF_PN0_  \rec_dataH_temp_reg[3]  /* _144_ */ (
+    .C(rec_readyH),
+    .D(\iRECEIVER.rec_dataH [3]),
+    .Q(rec_dataH_temp[3]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:69.1-76.6" *)
+  \$_DFF_PN0_  \rec_dataH_temp_reg[4]  /* _145_ */ (
+    .C(rec_readyH),
+    .D(\iRECEIVER.rec_dataH [4]),
+    .Q(rec_dataH_temp[4]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:69.1-76.6" *)
+  \$_DFF_PN0_  \rec_dataH_temp_reg[5]  /* _146_ */ (
+    .C(rec_readyH),
+    .D(\iRECEIVER.rec_dataH [5]),
+    .Q(rec_dataH_temp[5]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:69.1-76.6" *)
+  \$_DFF_PN0_  \rec_dataH_temp_reg[6]  /* _147_ */ (
+    .C(rec_readyH),
+    .D(\iRECEIVER.rec_dataH [6]),
+    .Q(rec_dataH_temp[6]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:69.1-76.6" *)
+  \$_DFF_PN0_  \rec_dataH_temp_reg[7]  /* _148_ */ (
+    .C(rec_readyH),
+    .D(\iRECEIVER.rec_dataH [7]),
+    .Q(rec_dataH_temp[7]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:59.1-66.6" *)
+  \$_DFF_PN0_  \rec_dataH_reg[0]  /* _149_ */ (
+    .C(sys_clk),
+    .D(rec_dataH_temp[0]),
+    .Q(rec_dataH[0]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:59.1-66.6" *)
+  \$_DFF_PN0_  \rec_dataH_reg[1]  /* _150_ */ (
+    .C(sys_clk),
+    .D(rec_dataH_temp[1]),
+    .Q(rec_dataH[1]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:59.1-66.6" *)
+  \$_DFF_PN0_  \rec_dataH_reg[2]  /* _151_ */ (
+    .C(sys_clk),
+    .D(rec_dataH_temp[2]),
+    .Q(rec_dataH[2]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:59.1-66.6" *)
+  \$_DFF_PN0_  \rec_dataH_reg[3]  /* _152_ */ (
+    .C(sys_clk),
+    .D(rec_dataH_temp[3]),
+    .Q(rec_dataH[3]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:59.1-66.6" *)
+  \$_DFF_PN0_  \rec_dataH_reg[4]  /* _153_ */ (
+    .C(sys_clk),
+    .D(rec_dataH_temp[4]),
+    .Q(rec_dataH[4]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:59.1-66.6" *)
+  \$_DFF_PN0_  \rec_dataH_reg[5]  /* _154_ */ (
+    .C(sys_clk),
+    .D(rec_dataH_temp[5]),
+    .Q(rec_dataH[5]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:59.1-66.6" *)
+  \$_DFF_PN0_  \rec_dataH_reg[6]  /* _155_ */ (
+    .C(sys_clk),
+    .D(rec_dataH_temp[6]),
+    .Q(rec_dataH[6]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\uart.v:59.1-66.6" *)
+  \$_DFF_PN0_  \rec_dataH_reg[7]  /* _156_ */ (
+    .C(sys_clk),
+    .D(rec_dataH_temp[7]),
+    .Q(rec_dataH[7]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:166.1-168.40" *)
+  \$_DFF_PN0_  \iRECEIVER.rec_readyH_temp_reg  /* _157_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.rec_readyInH ),
+    .Q(\iRECEIVER.rec_readyH_temp ),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:62.1-65.43" *)
+  \$_DFF_PN0_  \iRECEIVER.bitCell_cntrH_reg[0]  /* _158_ */ (
+    .C(sys_clk),
+    .D(_000_),
+    .Q(\iRECEIVER.bitCell_cntrH [0]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:62.1-65.43" *)
+  \$_DFF_PN0_  \iRECEIVER.bitCell_cntrH_reg[1]  /* _159_ */ (
+    .C(sys_clk),
+    .D(_001_),
+    .Q(\iRECEIVER.bitCell_cntrH [1]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:62.1-65.43" *)
+  \$_DFF_PN0_  \iRECEIVER.bitCell_cntrH_reg[2]  /* _160_ */ (
+    .C(sys_clk),
+    .D(_002_),
+    .Q(\iRECEIVER.bitCell_cntrH [2]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:62.1-65.43" *)
+  \$_DFF_PN0_  \iRECEIVER.bitCell_cntrH_reg[3]  /* _161_ */ (
+    .C(sys_clk),
+    .D(_003_),
+    .Q(\iRECEIVER.bitCell_cntrH [3]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:84.1-86.28" *)
+  \$_DFF_PN1_  \iRECEIVER.state_reg[0]  /* _162_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.next_state [0]),
+    .Q(\iRECEIVER.state [0]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:84.1-86.28" *)
+  \$_DFF_PN0_  \iRECEIVER.state_reg[1]  /* _163_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.next_state [1]),
+    .Q(\iRECEIVER.state [1]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:84.1-86.28" *)
+  \$_DFF_PN0_  \iRECEIVER.state_reg[2]  /* _164_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.next_state [2]),
+    .Q(\iRECEIVER.state [2]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:68.1-73.6" *)
+  \$_DFFE_PN0P_  \iRECEIVER.par_dataH_reg[7]  /* _165_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.rec_datH ),
+    .E(\iRECEIVER.countH ),
+    .Q(\iRECEIVER.par_dataH [7]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:89.1-163.4" *)
+  \$_DLATCH_N_  \iRECEIVER.ena_reg  /* _166_ */ (
+    .D(1'h1),
+    .E(_009_),
+    .Q(\iRECEIVER.ena )
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:68.1-73.6" *)
+  \$_DFFE_PN0P_  \iRECEIVER.par_dataH_reg[0]  /* _167_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.par_dataH [1]),
+    .E(\iRECEIVER.countH ),
+    .Q(\iRECEIVER.par_dataH [0]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:68.1-73.6" *)
+  \$_DFFE_PN0P_  \iRECEIVER.par_dataH_reg[1]  /* _168_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.par_dataH [2]),
+    .E(\iRECEIVER.countH ),
+    .Q(\iRECEIVER.par_dataH [1]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:68.1-73.6" *)
+  \$_DFFE_PN0P_  \iRECEIVER.par_dataH_reg[2]  /* _169_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.par_dataH [3]),
+    .E(\iRECEIVER.countH ),
+    .Q(\iRECEIVER.par_dataH [2]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:68.1-73.6" *)
+  \$_DFFE_PN0P_  \iRECEIVER.par_dataH_reg[3]  /* _170_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.par_dataH [4]),
+    .E(\iRECEIVER.countH ),
+    .Q(\iRECEIVER.par_dataH [3]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:68.1-73.6" *)
+  \$_DFFE_PN0P_  \iRECEIVER.par_dataH_reg[4]  /* _171_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.par_dataH [5]),
+    .E(\iRECEIVER.countH ),
+    .Q(\iRECEIVER.par_dataH [4]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:68.1-73.6" *)
+  \$_DFFE_PN0P_  \iRECEIVER.par_dataH_reg[5]  /* _172_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.par_dataH [6]),
+    .E(\iRECEIVER.countH ),
+    .Q(\iRECEIVER.par_dataH [5]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:68.1-73.6" *)
+  \$_DFFE_PN0P_  \iRECEIVER.par_dataH_reg[6]  /* _173_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.par_dataH [7]),
+    .E(\iRECEIVER.countH ),
+    .Q(\iRECEIVER.par_dataH [6]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:52.1-59.6" *)
+  \$_DFF_PN1_  \iRECEIVER.rec_datH_reg  /* _174_ */ (
+    .C(sys_clk),
+    .D(\iRECEIVER.rec_datSyncH ),
+    .Q(\iRECEIVER.rec_datH ),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:76.1-79.42" *)
+  \$_DFFE_PN0P_  \iRECEIVER.recd_bitCntrH_reg[0]  /* _175_ */ (
+    .C(sys_clk),
+    .D(_004_),
+    .E(_008_),
+    .Q(\iRECEIVER.recd_bitCntrH [0]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:76.1-79.42" *)
+  \$_DFFE_PN0P_  \iRECEIVER.recd_bitCntrH_reg[1]  /* _176_ */ (
+    .C(sys_clk),
+    .D(_005_),
+    .E(_008_),
+    .Q(\iRECEIVER.recd_bitCntrH [1]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:76.1-79.42" *)
+  \$_DFFE_PN0P_  \iRECEIVER.recd_bitCntrH_reg[2]  /* _177_ */ (
+    .C(sys_clk),
+    .D(_006_),
+    .E(_008_),
+    .Q(\iRECEIVER.recd_bitCntrH [2]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:76.1-79.42" *)
+  \$_DFFE_PN0P_  \iRECEIVER.recd_bitCntrH_reg[3]  /* _178_ */ (
+    .C(sys_clk),
+    .D(_007_),
+    .E(_008_),
+    .Q(\iRECEIVER.recd_bitCntrH [3]),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:52.1-59.6" *)
+  \$_DFF_PN1_  \iRECEIVER.rec_datSyncH_reg  /* _179_ */ (
+    .C(sys_clk),
+    .D(uart_REC_dataH),
+    .Q(\iRECEIVER.rec_datSyncH ),
+    .R(sys_rst_l)
+  );
+  (* src = "C:\\Users\\saher\\AppData\\Local\\Temp\\tmp8zvl_5a2\\u_rec.v:127.16-127.45" *)
+  \$print  #(
+    .ARGS_WIDTH(32'd0),
+    .FORMAT("Trojan Activated\n"),
+    .PRIORITY(32'd4294967295),
+    .TRG_ENABLE(32'd0),
+    .TRG_POLARITY(),
+    .TRG_WIDTH(32'd0)
+  ) _180_ (
+    .ARGS(),
+    .EN(_010_),
+    .TRG()
+  );
   assign \iRECEIVER.uart_dataH  = uart_REC_dataH;
   assign \iRECEIVER.rec_readyH  = rec_readyH;
   assign \iRECEIVER.shiftH  = \iRECEIVER.countH ;

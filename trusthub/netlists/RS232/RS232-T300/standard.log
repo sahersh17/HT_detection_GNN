@@ -6,9 +6,779 @@
  \----------------------------------------------------------------------------/
  Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 
--- Executing script file `C:\trusthub\netlists\RS232\RS232-T300\standard.ys' --
+-- Executing script file `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T300\standard.ys' --
 
-1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmpsi1wovf2\u_rec.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmpsi1wovf2\u_rec.v' to AST representation.
+1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v
+Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v' to AST representation.
+Generating RTLIL representation for module `\u_rec'.
+Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83.1-153.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
 
-ERROR: Can't open include file `/home/salmani_h/Trust_HUB/Trojan_Inserted/inc.h'!
+2. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v
+Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v' to AST representation.
+Generating RTLIL representation for module `\u_xmit'.
+Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:42.1-49.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82.1-168.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v
+Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v' to AST representation.
+Generating RTLIL representation for module `\uart'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \uart
+Used module:     \u_rec
+Used module:     \u_xmit
+
+4.2. Analyzing design hierarchy..
+Top module:  \uart
+Used module:     \u_rec
+Used module:     \u_xmit
+Removed 0 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:70$45 in module uart.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:60$43 in module uart.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:184$41 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:172$37 in module u_xmit.
+Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:77$30 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:71$27 in module u_xmit.
+Marked 4 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:57$25 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:52$22 in module u_xmit.
+Removed 1 dead cases from process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:42$21 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:42$21 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:156$19 in module u_rec.
+Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:78$11 in module u_rec.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:70$8 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:62$6 in module u_rec.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:56$3 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:46$1 in module u_rec.
+Removed a total of 1 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 11 redundant assignments.
+Promoted 16 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \sys_rst_l in `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:70$45'.
+Found async reset \sys_rst_l in `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:60$43'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:184$41'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:172$37'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:77$30'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:71$27'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:57$25'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:52$22'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:156$19'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:78$11'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:70$8'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:62$6'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:56$3'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:46$1'.
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~24 debug messages>
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:70$45'.
+     1/1: $0\rec_dataH_temp[7:0]
+Creating decoders for process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:60$43'.
+     1/1: $1\rec_dataH[7:0]
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:184$41'.
+     1/1: $0\xmit_doneH[0:0]
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:172$37'.
+     1/2: $0\count_in[31:0]
+     2/2: $0\DataSend_ena[0:0]
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+     1/22: $3\xmit_doneInH[0:0]
+     2/22: $6\next_state[2:0]
+     3/22: $4\countEnaH[0:0]
+     4/22: $5\next_state[2:0]
+     5/22: $3\ena_bitCountH[0:0]
+     6/22: $2\ena_bitCountH[0:0]
+     7/22: $4\next_state[2:0]
+     8/22: $3\countEnaH[0:0]
+     9/22: $3\next_state[2:0]
+    10/22: $2\countEnaH[0:0]
+    11/22: $2\load_shiftRegH[0:0]
+    12/22: $2\next_state[2:0]
+    13/22: $2\xmit_doneInH[0:0]
+    14/22: $2\rst_bitCountH[0:0]
+    15/22: $1\xmit_doneInH[0:0]
+    16/22: $1\rst_bitCountH[0:0]
+    17/22: $1\load_shiftRegH[0:0]
+    18/22: $1\next_state[2:0]
+    19/22: $1\xmitDataSelH[1:0]
+    20/22: $1\ena_bitCountH[0:0]
+    21/22: $1\countEnaH[0:0]
+    22/22: $1\shiftEnaH[0:0]
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:77$30'.
+     1/1: $0\state[2:0]
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:71$27'.
+     1/1: $0\bitCountH[3:0]
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:57$25'.
+     1/2: $0\xmit_ShiftRegH[7:0] [7]
+     2/2: $0\xmit_ShiftRegH[7:0] [6:0]
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:52$22'.
+     1/1: $0\bitCell_cntrH[3:0]
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:42$21'.
+     1/1: $1\uart_xmitH[0:0]
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:156$19'.
+     1/1: $0\rec_readyH[0:0]
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+     1/15: $6\next_state[2:0]
+     2/15: $5\next_state[2:0]
+     3/15: $3\cntr_resetH[0:0]
+     4/15: $4\next_state[2:0]
+     5/15: $3\next_state[2:0]
+     6/15: $2\cntr_resetH[0:0]
+     7/15: $2\next_state[2:0]
+     8/15: $2\rec_readyInH[0:0]
+     9/15: $2\rstCountH[0:0]
+    10/15: $1\rec_readyInH[0:0]
+    11/15: $1\rstCountH[0:0]
+    12/15: $1\next_state[2:0]
+    13/15: $1\countH[0:0]
+    14/15: $1\shiftH[0:0]
+    15/15: $1\cntr_resetH[0:0]
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:78$11'.
+     1/1: $0\state[2:0]
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:70$8'.
+     1/1: $0\recd_bitCntrH[3:0]
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:62$6'.
+     1/2: $0\par_dataH[7:0] [7]
+     2/2: $0\par_dataH[7:0] [6:0]
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:56$3'.
+     1/1: $0\bitCell_cntrH[3:0]
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:46$1'.
+     1/2: $0\rec_datH[0:0]
+     2/2: $0\rec_datSyncH[0:0]
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\u_xmit.\next_state' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+No latch inferred for signal `\u_xmit.\load_shiftRegH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+No latch inferred for signal `\u_xmit.\shiftEnaH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+No latch inferred for signal `\u_xmit.\countEnaH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+No latch inferred for signal `\u_xmit.\rst_bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+No latch inferred for signal `\u_xmit.\ena_bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+No latch inferred for signal `\u_xmit.\xmitDataSelH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+No latch inferred for signal `\u_xmit.\xmit_doneInH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+No latch inferred for signal `\u_xmit.\uart_xmitH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:42$21'.
+No latch inferred for signal `\u_rec.\next_state' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+No latch inferred for signal `\u_rec.\cntr_resetH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+No latch inferred for signal `\u_rec.\shiftH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+No latch inferred for signal `\u_rec.\countH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+No latch inferred for signal `\u_rec.\rstCountH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+No latch inferred for signal `\u_rec.\rec_readyInH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\uart.\rec_dataH_temp' using process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:70$45'.
+  created $adff cell `$procdff$406' with positive edge clock and positive level reset.
+Creating register for signal `\uart.\rec_dataH' using process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:60$43'.
+  created $adff cell `$procdff$411' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\xmit_doneH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:184$41'.
+  created $adff cell `$procdff$416' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\DataSend_ena' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:172$37'.
+  created $adff cell `$procdff$421' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\count_in' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:172$37'.
+  created $adff cell `$procdff$426' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\state' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:77$30'.
+  created $adff cell `$procdff$431' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\bitCountH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:71$27'.
+  created $adff cell `$procdff$436' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\xmit_ShiftRegH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:57$25'.
+  created $adff cell `$procdff$441' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\bitCell_cntrH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:52$22'.
+  created $adff cell `$procdff$446' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\rec_readyH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:156$19'.
+  created $adff cell `$procdff$451' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\state' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:78$11'.
+  created $adff cell `$procdff$456' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\recd_bitCntrH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:70$8'.
+  created $adff cell `$procdff$461' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\par_dataH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:62$6'.
+  created $adff cell `$procdff$466' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\bitCell_cntrH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:56$3'.
+  created $adff cell `$procdff$471' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\rec_datH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:46$1'.
+  created $adff cell `$procdff$476' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\rec_datSyncH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:46$1'.
+  created $adff cell `$procdff$481' with positive edge clock and positive level reset.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `uart.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:70$45'.
+Removing empty process `uart.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\uart.v:60$43'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:184$41'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:172$37'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:172$37'.
+Found and cleaned up 6 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:82$32'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:77$30'.
+Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:71$27'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:71$27'.
+Found and cleaned up 3 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:57$25'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:57$25'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:52$22'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:52$22'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:42$21'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_xmit.v:42$21'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:156$19'.
+Found and cleaned up 6 empty switches in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:83$13'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:78$11'.
+Found and cleaned up 2 empty switches in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:70$8'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:70$8'.
+Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:62$6'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:62$6'.
+Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:56$3'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:56$3'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmpnkfkhrpr\u_rec.v:46$1'.
+Cleaned up 24 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+<suppressed ~4 debug messages>
+Optimizing module u_xmit.
+<suppressed ~27 debug messages>
+Optimizing module u_rec.
+<suppressed ~18 debug messages>
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+Optimizing module u_xmit.
+Optimizing module u_rec.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 8 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Computing hashes of 5 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\u_xmit'.
+Computing hashes of 135 cells of `\u_xmit'.
+Finding duplicate cells in `\u_xmit'.
+Computing hashes of 73 cells of `\u_xmit'.
+Finding duplicate cells in `\u_xmit'.
+<suppressed ~186 debug messages>
+Finding identical cells in module `\u_rec'.
+Computing hashes of 97 cells of `\u_rec'.
+Finding duplicate cells in `\u_rec'.
+Computing hashes of 50 cells of `\u_rec'.
+Finding duplicate cells in `\u_rec'.
+<suppressed ~141 debug messages>
+Removed a total of 112 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \uart..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \u_xmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$173.
+    dead port 2/2 on $mux $procmux$163.
+    dead port 2/2 on $mux $procmux$153.
+    dead port 2/2 on $mux $procmux$143.
+    dead port 2/2 on $mux $procmux$133.
+    dead port 2/2 on $mux $procmux$124.
+    dead port 2/2 on $mux $procmux$115.
+    dead port 2/2 on $mux $procmux$107.
+    dead port 2/2 on $mux $procmux$99.
+    dead port 2/2 on $mux $procmux$91.
+    dead port 2/2 on $mux $procmux$89.
+    dead port 2/2 on $mux $procmux$80.
+    dead port 2/2 on $mux $procmux$78.
+    dead port 2/2 on $mux $procmux$69.
+    dead port 2/2 on $mux $procmux$63.
+    dead port 2/2 on $mux $procmux$57.
+Running muxtree optimizer on module \u_rec..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$346.
+    dead port 2/2 on $mux $procmux$336.
+    dead port 2/2 on $mux $procmux$326.
+    dead port 2/2 on $mux $procmux$316.
+    dead port 2/2 on $mux $procmux$307.
+    dead port 2/2 on $mux $procmux$298.
+    dead port 2/2 on $mux $procmux$296.
+    dead port 2/2 on $mux $procmux$286.
+    dead port 2/2 on $mux $procmux$278.
+    dead port 2/2 on $mux $procmux$270.
+    dead port 2/2 on $mux $procmux$268.
+Removed 27 multiplexer ports.
+<suppressed ~105 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \uart.
+  Optimizing cells in module \u_xmit.
+    New ctrl vector for $pmux cell $procmux$225: { $auto$opt_reduce.cc:135:opt_pmux$483 $procmux$227_CMP }
+    New ctrl vector for $pmux cell $procmux$211: { $auto$opt_reduce.cc:135:opt_pmux$485 $procmux$228_CMP }
+    New ctrl vector for $pmux cell $procmux$183: { $auto$opt_reduce.cc:135:opt_pmux$487 $procmux$230_CMP }
+    New ctrl vector for $pmux cell $procmux$256: { $procmux$257_CMP $auto$opt_reduce.cc:135:opt_pmux$489 $procmux$259_CMP }
+    New ctrl vector for $pmux cell $procmux$218: { $procmux$226_CMP $auto$opt_reduce.cc:135:opt_pmux$491 $procmux$228_CMP $procmux$229_CMP }
+    New ctrl vector for $pmux cell $procmux$204: { $auto$opt_reduce.cc:135:opt_pmux$495 $auto$opt_reduce.cc:135:opt_pmux$493 $procmux$229_CMP }
+    New ctrl vector for $pmux cell $procmux$176: { $procmux$226_CMP $auto$opt_reduce.cc:135:opt_pmux$497 $procmux$230_CMP }
+    New ctrl vector for $pmux cell $procmux$190: { $auto$opt_reduce.cc:135:opt_pmux$499 $procmux$230_CMP }
+  Optimizing cells in module \u_xmit.
+  Optimizing cells in module \u_rec.
+    New ctrl vector for $pmux cell $procmux$370: { $auto$opt_reduce.cc:135:opt_pmux$501 $procmux$386_CMP }
+    New ctrl vector for $pmux cell $procmux$377: { $auto$opt_reduce.cc:135:opt_pmux$503 $procmux$386_CMP }
+    New ctrl vector for $pmux cell $procmux$349: { $procmux$385_CMP $auto$opt_reduce.cc:135:opt_pmux$505 $procmux$389_CMP }
+    New ctrl vector for $pmux cell $procmux$356: { $auto$opt_reduce.cc:135:opt_pmux$507 $procmux$389_CMP }
+    New ctrl vector for $pmux cell $procmux$384: { $auto$opt_reduce.cc:135:opt_pmux$509 $procmux$387_CMP $procmux$388_CMP }
+  Optimizing cells in module \u_rec.
+Performed a total of 13 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 5 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Finding identical cells in module `\u_xmit'.
+Computing hashes of 66 cells of `\u_xmit'.
+Finding duplicate cells in `\u_xmit'.
+Computing hashes of 63 cells of `\u_xmit'.
+Finding duplicate cells in `\u_xmit'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\u_rec'.
+Computing hashes of 44 cells of `\u_rec'.
+Finding duplicate cells in `\u_rec'.
+Computing hashes of 42 cells of `\u_rec'.
+Finding duplicate cells in `\u_rec'.
+Computing hashes of 41 cells of `\u_rec'.
+Finding duplicate cells in `\u_rec'.
+<suppressed ~9 debug messages>
+Removed a total of 6 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$436 ($adff) from module u_xmit (D = $procmux$234_Y, Q = \bitCountH).
+Adding EN signal on $procdff$441 ($adff) from module u_xmit (D = { $procmux$243_Y $procmux$251_Y }, Q = \xmit_ShiftRegH).
+Adding EN signal on $procdff$421 ($adff) from module u_xmit (D = 1'1, Q = \DataSend_ena).
+Adding EN signal on $procdff$461 ($adff) from module u_rec (D = $procmux$393_Y, Q = \recd_bitCntrH).
+Adding EN signal on $procdff$466 ($adff) from module u_rec (D = \rec_datH, Q = \par_dataH [7]).
+Adding EN signal on $procdff$466 ($adff) from module u_rec (D = \par_dataH [7:1], Q = \par_dataH [6:0]).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \uart..
+Finding unused cells or wires in module \u_xmit..
+Finding unused cells or wires in module \u_rec..
+Removed 7 unused cells and 297 unused wires.
+<suppressed ~12 debug messages>
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+Optimizing module u_xmit.
+<suppressed ~2 debug messages>
+Optimizing module u_rec.
+<suppressed ~1 debug messages>
+
+6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \uart..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \u_xmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \u_rec..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~74 debug messages>
+
+6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \uart.
+  Optimizing cells in module \u_xmit.
+    New ctrl vector for $pmux cell $procmux$218: { $auto$opt_reduce.cc:135:opt_pmux$523 $procmux$100_CMP $auto$opt_reduce.cc:135:opt_pmux$491 }
+  Optimizing cells in module \u_xmit.
+  Optimizing cells in module \u_rec.
+Performed a total of 1 changes.
+
+6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 4 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Finding identical cells in module `\u_xmit'.
+Computing hashes of 64 cells of `\u_xmit'.
+Finding duplicate cells in `\u_xmit'.
+Finding identical cells in module `\u_rec'.
+Computing hashes of 39 cells of `\u_rec'.
+Finding duplicate cells in `\u_rec'.
+Removed a total of 0 cells.
+
+6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \uart..
+Finding unused cells or wires in module \u_xmit..
+Finding unused cells or wires in module \u_rec..
+
+6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+Optimizing module u_xmit.
+Optimizing module u_rec.
+
+6.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \uart..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \u_xmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \u_rec..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~73 debug messages>
+
+6.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \uart.
+  Optimizing cells in module \u_xmit.
+  Optimizing cells in module \u_rec.
+Performed a total of 0 changes.
+
+6.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 4 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Finding identical cells in module `\u_xmit'.
+Computing hashes of 64 cells of `\u_xmit'.
+Finding duplicate cells in `\u_xmit'.
+Finding identical cells in module `\u_rec'.
+Computing hashes of 39 cells of `\u_rec'.
+Finding duplicate cells in `\u_rec'.
+Removed a total of 0 cells.
+
+6.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \uart..
+Finding unused cells or wires in module \u_xmit..
+Finding unused cells or wires in module \u_rec..
+
+6.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+Optimizing module u_xmit.
+Optimizing module u_rec.
+
+6.23. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing FLATTEN pass (flatten design).
+Deleting now unused module u_xmit.
+Deleting now unused module u_rec.
+<suppressed ~2 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 107 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \uart..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~73 debug messages>
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \uart.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 107 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \uart..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+
+8.9. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: C:\Users\saher\DOWNLO~1\OSS-CA~1\bin\../share/yosys/techmap.v
+Parsing Verilog input from `C:\Users\saher\DOWNLO~1\OSS-CA~1\bin\../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $pmux.
+Running "alumacc" on wrapper $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=4:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=4:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=4:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $logic_not.
+Running "alumacc" on wrapper $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=1:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=1:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=1:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $paramod$6a42b6fefed750f8a1c58eab59479d960557103c\_90_alu for cells of type $alu.
+Using template $paramod$a7817265ef3ab2ee43da53bbd8a90f6450d412d9\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~1175 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+<suppressed ~2081 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 611 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Computing hashes of 533 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Computing hashes of 528 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Computing hashes of 527 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+<suppressed ~252 debug messages>
+Removed a total of 84 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \uart..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \uart.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 527 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \uart..
+Removed 13 unused cells and 903 unused wires.
+<suppressed ~14 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \uart..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \uart.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 514 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \uart..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `\uart' to `<abc-temp-dir>/input.blif'..
+Replacing 32 occurrences of constant undef bits with constant zero bits
+
+11.1.1. Executed ABC.
+Extracted 421 gates and 497 wires to a netlist network with 73 inputs and 70 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+11.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:       69
+ABC RESULTS:            ANDNOT cells:       23
+ABC RESULTS:               MUX cells:        2
+ABC RESULTS:              NAND cells:       36
+ABC RESULTS:               NOR cells:        8
+ABC RESULTS:               NOT cells:        2
+ABC RESULTS:                OR cells:       14
+ABC RESULTS:             ORNOT cells:        8
+ABC RESULTS:              XNOR cells:        3
+ABC RESULTS:               XOR cells:       36
+ABC RESULTS:        internal signals:      354
+ABC RESULTS:           input signals:       73
+ABC RESULTS:          output signals:       70
+Removing temp directory.
+Removing global temp directory.
+
+12. Executing OPT pass (performing simple optimizations).
+
+12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+
+12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 294 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Removed a total of 0 cells.
+
+12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \uart..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \uart.
+Performed a total of 0 changes.
+
+12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 294 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Removed a total of 0 cells.
+
+12.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \uart..
+Removed 0 unused cells and 326 unused wires.
+<suppressed ~9 debug messages>
+
+12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+
+12.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+12.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \uart..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \uart.
+Performed a total of 0 changes.
+
+12.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\uart'.
+Computing hashes of 294 cells of `\uart'.
+Finding duplicate cells in `\uart'.
+Removed a total of 0 cells.
+
+12.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \uart..
+
+12.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module uart.
+
+12.16. Finished fast OPT passes. (There is nothing left to do.)
+
+13. Executing Verilog backend.
+Dumping module `\uart'.
+
+End of script. Logfile hash: 7624e54e89
+Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
+Time spent: 3% 15x opt_expr (0 sec), 3% 13x opt_merge (0 sec), ...
+

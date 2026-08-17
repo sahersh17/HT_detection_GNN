@@ -6,22 +6,22 @@
  \----------------------------------------------------------------------------/
  Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 
--- Executing script file `C:\trusthub\netlists\AES\AES-T2000\trojan.ys' --
+-- Executing script file `C:\HT_detection_GNN\trusthub\netlists\AES\AES-T2000\trojan.ys' --
 
-1. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v' to AST representation.
+1. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v' to AST representation.
 Generating RTLIL representation for module `\aes_128'.
 Generating RTLIL representation for module `\expand_key_128'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v' to AST representation.
+2. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v' to AST representation.
 Generating RTLIL representation for module `\one_round'.
 Generating RTLIL representation for module `\final_round'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v' to AST representation.
+3. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v' to AST representation.
 Generating RTLIL representation for module `\table_lookup'.
 Generating RTLIL representation for module `\S4'.
 Generating RTLIL representation for module `\T'.
@@ -29,30 +29,30 @@ Generating RTLIL representation for module `\S'.
 Generating RTLIL representation for module `\xS'.
 Successfully finished Verilog frontend.
 
-4. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\top.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\top.v' to AST representation.
+4. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\top.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\top.v' to AST representation.
 Generating RTLIL representation for module `\top'.
-C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\top.v:27: Warning: Identifier `\Tj_Trig' is implicitly declared.
+C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\top.v:27: Warning: Identifier `\Tj_Trig' is implicitly declared.
 Successfully finished Verilog frontend.
 
-5. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v' to AST representation.
+5. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v' to AST representation.
 Generating RTLIL representation for module `\Trojan_Trigger'.
-Note: Assuming pure combinatorial block at C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30.2-46.5 in
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30.2-46.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:48.2-51.5 in
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:48.2-51.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
 
-6. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v' to AST representation.
+6. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v' to AST representation.
 Generating RTLIL representation for module `\TSC'.
-Note: Assuming pure combinatorial block at C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33.3-39.6 in
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33.3-39.6 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:49.3-52.6 in
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:49.3-52.6 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -136,11 +136,11 @@ Mapping positional arguments of cell aes_128.a1 (expand_key_128).
 Cleaned up 0 empty switches.
 
 8.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57 in module TSC.
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54 in module TSC.
-Marked 4 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38 in module Trojan_Trigger.
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37 in module xS.
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36 in module S.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57 in module TSC.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54 in module TSC.
+Marked 4 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38 in module Trojan_Trigger.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37 in module xS.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36 in module S.
 Removed a total of 0 dead cases.
 
 8.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -150,89 +150,89 @@ Promoted 8 assignments to connections.
 8.4. Executing PROC_INIT pass (extract init attributes).
 
 8.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \Tj_Trig in `\TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57'.
+Found async reset \Tj_Trig in `\TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57'.
 
 8.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 2 switches.
 <suppressed ~6 debug messages>
 
 8.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:49$60'.
-Creating decoders for process `\TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57'.
+Creating decoders for process `\TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:49$60'.
+Creating decoders for process `\TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57'.
      1/1: $0\SECRETKey[127:0]
-Creating decoders for process `\TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54'.
+Creating decoders for process `\TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54'.
      1/1: $0\COUNTER[127:0]
-Creating decoders for process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:48$50'.
-Creating decoders for process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38'.
+Creating decoders for process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:48$50'.
+Creating decoders for process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38'.
      1/4: $0\State3[0:0]
      2/4: $0\State2[0:0]
      3/4: $0\State1[0:0]
      4/4: $0\State0[0:0]
-Creating decoders for process `\xS.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37'.
+Creating decoders for process `\xS.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37'.
      1/1: $0\out[7:0]
-Creating decoders for process `\S.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36'.
+Creating decoders for process `\S.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36'.
      1/1: $0\out[7:0]
-Creating decoders for process `\final_round.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:78$34'.
-Creating decoders for process `\one_round.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:45$29'.
-Creating decoders for process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:88$12'.
-Creating decoders for process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
-Creating decoders for process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:26$1'.
+Creating decoders for process `\final_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:78$34'.
+Creating decoders for process `\one_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:45$29'.
+Creating decoders for process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:88$12'.
+Creating decoders for process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
+Creating decoders for process `\aes_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:26$1'.
 
 8.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\TSC.\LEAKBit' from process `\TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:49$60'.
-No latch inferred for signal `\TSC.\COUNTER' from process `\TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54'.
-No latch inferred for signal `\Trojan_Trigger.\Tj_Trig' from process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:48$50'.
-Latch inferred for signal `\Trojan_Trigger.\State0' from process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38': $auto$proc_dlatch.cc:439:proc_dlatch$144
-Latch inferred for signal `\Trojan_Trigger.\State1' from process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38': $auto$proc_dlatch.cc:439:proc_dlatch$175
-Latch inferred for signal `\Trojan_Trigger.\State2' from process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38': $auto$proc_dlatch.cc:439:proc_dlatch$214
-Latch inferred for signal `\Trojan_Trigger.\State3' from process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38': $auto$proc_dlatch.cc:439:proc_dlatch$261
+No latch inferred for signal `\TSC.\LEAKBit' from process `\TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:49$60'.
+No latch inferred for signal `\TSC.\COUNTER' from process `\TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54'.
+No latch inferred for signal `\Trojan_Trigger.\Tj_Trig' from process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:48$50'.
+Latch inferred for signal `\Trojan_Trigger.\State0' from process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38': $auto$proc_dlatch.cc:439:proc_dlatch$144
+Latch inferred for signal `\Trojan_Trigger.\State1' from process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38': $auto$proc_dlatch.cc:439:proc_dlatch$175
+Latch inferred for signal `\Trojan_Trigger.\State2' from process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38': $auto$proc_dlatch.cc:439:proc_dlatch$214
+Latch inferred for signal `\Trojan_Trigger.\State3' from process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38': $auto$proc_dlatch.cc:439:proc_dlatch$261
 
 8.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\TSC.\SECRETKey' using process `\TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57'.
+Creating register for signal `\TSC.\SECRETKey' using process `\TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57'.
 Warning: Async reset value `\key' is not constant!
   created $aldff cell `$procdff$264' with positive edge clock and positive level non-const reset.
-Creating register for signal `\xS.\out' using process `\xS.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37'.
+Creating register for signal `\xS.\out' using process `\xS.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37'.
   created $dff cell `$procdff$265' with positive edge clock.
-Creating register for signal `\S.\out' using process `\S.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36'.
+Creating register for signal `\S.\out' using process `\S.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36'.
   created $dff cell `$procdff$266' with positive edge clock.
-Creating register for signal `\final_round.\state_out' using process `\final_round.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:78$34'.
+Creating register for signal `\final_round.\state_out' using process `\final_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:78$34'.
   created $dff cell `$procdff$267' with positive edge clock.
-Creating register for signal `\one_round.\state_out' using process `\one_round.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:45$29'.
+Creating register for signal `\one_round.\state_out' using process `\one_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:45$29'.
   created $dff cell `$procdff$268' with positive edge clock.
-Creating register for signal `\expand_key_128.\out_1' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:88$12'.
+Creating register for signal `\expand_key_128.\out_1' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:88$12'.
   created $dff cell `$procdff$269' with positive edge clock.
-Creating register for signal `\expand_key_128.\k0a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
+Creating register for signal `\expand_key_128.\k0a' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
   created $dff cell `$procdff$270' with positive edge clock.
-Creating register for signal `\expand_key_128.\k1a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
+Creating register for signal `\expand_key_128.\k1a' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
   created $dff cell `$procdff$271' with positive edge clock.
-Creating register for signal `\expand_key_128.\k2a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
+Creating register for signal `\expand_key_128.\k2a' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
   created $dff cell `$procdff$272' with positive edge clock.
-Creating register for signal `\expand_key_128.\k3a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
+Creating register for signal `\expand_key_128.\k3a' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
   created $dff cell `$procdff$273' with positive edge clock.
-Creating register for signal `\aes_128.\s0' using process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:26$1'.
+Creating register for signal `\aes_128.\s0' using process `\aes_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:26$1'.
   created $dff cell `$procdff$274' with positive edge clock.
-Creating register for signal `\aes_128.\k0' using process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:26$1'.
+Creating register for signal `\aes_128.\k0' using process `\aes_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:26$1'.
   created $dff cell `$procdff$275' with positive edge clock.
 
 8.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 8.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:49$60'.
-Removing empty process `TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57'.
-Found and cleaned up 1 empty switch in `\TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54'.
-Removing empty process `TSC.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54'.
-Removing empty process `Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:48$50'.
-Found and cleaned up 5 empty switches in `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38'.
-Removing empty process `Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38'.
-Found and cleaned up 1 empty switch in `\xS.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37'.
-Removing empty process `xS.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37'.
-Found and cleaned up 1 empty switch in `\S.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36'.
-Removing empty process `S.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36'.
-Removing empty process `final_round.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:78$34'.
-Removing empty process `one_round.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:45$29'.
-Removing empty process `expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:88$12'.
-Removing empty process `expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
-Removing empty process `aes_128.$proc$C:\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:26$1'.
+Removing empty process `TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:49$60'.
+Removing empty process `TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:41$57'.
+Found and cleaned up 1 empty switch in `\TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54'.
+Removing empty process `TSC.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\TSC.v:33$54'.
+Removing empty process `Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:48$50'.
+Found and cleaned up 5 empty switches in `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38'.
+Removing empty process `Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\Trojan_Trigger.v:30$38'.
+Found and cleaned up 1 empty switch in `\xS.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37'.
+Removing empty process `xS.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:331$37'.
+Found and cleaned up 1 empty switch in `\S.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36'.
+Removing empty process `S.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\table.v:64$36'.
+Removing empty process `final_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:78$34'.
+Removing empty process `one_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\round.v:45$29'.
+Removing empty process `expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:88$12'.
+Removing empty process `expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:77$7'.
+Removing empty process `aes_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T2000\AES-T2000\src\TjIn\aes_128.v:26$1'.
 Cleaned up 8 empty switches.
 
 8.12. Executing OPT_EXPR pass (perform const folding).
@@ -829,14 +829,10 @@ Optimizing module top.
 15.16. Finished fast OPT passes. (There is nothing left to do.)
 
 16. Executing Verilog backend.
-
-16.1. Executing BMUXMAP pass.
-
-16.2. Executing DEMUXMAP pass.
 Dumping module `\top'.
 
 Warnings: 2 unique messages, 2 total
-End of script. Logfile hash: 02d9b71c57
+End of script. Logfile hash: 9cb2dd5564
 Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 Time spent: 3% 13x read_verilog (0 sec), 3% 12x opt_expr (0 sec), ...
 

@@ -1,9 +1,9 @@
-read_verilog "C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\top.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\top.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v"
 
 hierarchy -top top
 
@@ -15,4 +15,4 @@ techmap
 opt
 abc
 opt
-write_verilog "C:\trusthub\netlists\AES\AES-T400\trojan_netlist.v"
+write_verilog -noexpr "C:\HT_detection_GNN\trusthub\netlists\AES\AES-T400\trojan_netlist.v"

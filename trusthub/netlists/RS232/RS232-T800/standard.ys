@@ -1,6 +1,6 @@
-read_verilog "C:\Users\saher\AppData\Local\Temp\tmp59bjmixb\u_rec.v"
-read_verilog "C:\Users\saher\AppData\Local\Temp\tmp59bjmixb\u_xmit.v"
-read_verilog "C:\Users\saher\AppData\Local\Temp\tmp59bjmixb\uart.v"
+read_verilog "C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v"
+read_verilog "C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v"
+read_verilog "C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v"
 
 hierarchy -top uart
 
@@ -12,4 +12,4 @@ techmap
 opt
 abc
 opt
-write_verilog "C:\trusthub\netlists\RS232\RS232-T800\standard_netlist.v"
+write_verilog -noexpr "C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_netlist.v"

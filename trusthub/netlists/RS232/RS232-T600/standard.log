@@ -6,29 +6,29 @@
  \----------------------------------------------------------------------------/
  Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 
--- Executing script file `C:\trusthub\netlists\RS232\RS232-T600\standard.ys' --
+-- Executing script file `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T600\standard.ys' --
 
-1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v' to AST representation.
+1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v
+Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v' to AST representation.
 Generating RTLIL representation for module `\u_rec'.
-Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85.1-155.4 in
+Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85.1-155.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v' to AST representation.
+2. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v
+Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v' to AST representation.
 Generating RTLIL representation for module `\u_xmit'.
-Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:44.1-51.10 in
+Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:44.1-51.10 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89.1-178.4 in
+Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89.1-178.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v' to AST representation.
+3. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v
+Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v' to AST representation.
 Generating RTLIL representation for module `\uart'.
 Successfully finished Verilog frontend.
 
@@ -51,25 +51,25 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:69$51 in module uart.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:59$49 in module uart.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:224$47 in module u_xmit.
-Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:185$40 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:180$37 in module u_xmit.
-Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:84$30 in module u_xmit.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:77$27 in module u_xmit.
-Marked 4 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:63$25 in module u_xmit.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:54$22 in module u_xmit.
-Removed 1 dead cases from process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:44$21 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:44$21 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:158$19 in module u_rec.
-Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:80$11 in module u_rec.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:72$8 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:64$6 in module u_rec.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:58$3 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:48$1 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:69$51 in module uart.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:59$49 in module uart.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:224$47 in module u_xmit.
+Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:185$40 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:180$37 in module u_xmit.
+Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:84$30 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:77$27 in module u_xmit.
+Marked 4 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:63$25 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:54$22 in module u_xmit.
+Removed 1 dead cases from process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:44$21 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:44$21 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:158$19 in module u_rec.
+Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:80$11 in module u_rec.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:72$8 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:64$6 in module u_rec.
+Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:58$3 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:48$1 in module u_rec.
 Removed a total of 1 dead cases.
 
 5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -79,38 +79,38 @@ Promoted 16 assignments to connections.
 5.4. Executing PROC_INIT pass (extract init attributes).
 
 5.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \sys_rst_l in `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:69$51'.
-Found async reset \sys_rst_l in `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:59$49'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:224$47'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:185$40'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:180$37'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:84$30'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:77$27'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:63$25'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:54$22'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:158$19'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:80$11'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:72$8'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:64$6'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:58$3'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:48$1'.
+Found async reset \sys_rst_l in `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:69$51'.
+Found async reset \sys_rst_l in `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:59$49'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:224$47'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:185$40'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:180$37'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:84$30'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:77$27'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:63$25'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:54$22'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:158$19'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:80$11'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:72$8'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:64$6'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:58$3'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:48$1'.
 
 5.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~31 debug messages>
 
 5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:69$51'.
+Creating decoders for process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:69$51'.
      1/1: $0\rec_dataH_temp[7:0]
-Creating decoders for process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:59$49'.
+Creating decoders for process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:59$49'.
      1/1: $1\rec_dataH[7:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:224$47'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:224$47'.
      1/1: $0\xmit_doneH[0:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:185$40'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:185$40'.
      1/1: $0\state_DataSend[2:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:180$37'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:180$37'.
      1/1: $0\DataSend_ena[0:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
      1/25: $3\xmit_doneInH[0:0]
      2/25: $6\next_state[2:0]
      3/25: $4\countEnaH[0:0]
@@ -136,20 +136,20 @@ Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\t
     23/25: $1\bitCountH[3:0]
     24/25: $1\xmit_ShiftRegH[7:0]
     25/25: $1\bitCell_cntrH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:84$30'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:84$30'.
      1/1: $0\state[2:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:77$27'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:77$27'.
      1/1: $0\bitCountH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:63$25'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:63$25'.
      1/2: $0\xmit_ShiftRegH[7:0] [7]
      2/2: $0\xmit_ShiftRegH[7:0] [6:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:54$22'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:54$22'.
      1/1: $0\bitCell_cntrH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:44$21'.
+Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:44$21'.
      1/1: $1\uart_xmitH[0:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:158$19'.
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:158$19'.
      1/1: $0\rec_readyH[0:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
      1/15: $6\next_state[2:0]
      2/15: $5\next_state[2:0]
      3/15: $3\cntr_resetH[0:0]
@@ -165,106 +165,106 @@ Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tm
     13/15: $1\countH[0:0]
     14/15: $1\shiftH[0:0]
     15/15: $1\cntr_resetH[0:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:80$11'.
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:80$11'.
      1/1: $0\state[2:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:72$8'.
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:72$8'.
      1/1: $0\recd_bitCntrH[3:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:64$6'.
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:64$6'.
      1/2: $0\par_dataH[7:0] [7]
      2/2: $0\par_dataH[7:0] [6:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:58$3'.
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:58$3'.
      1/1: $0\bitCell_cntrH[3:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:48$1'.
+Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:48$1'.
      1/2: $0\rec_datH[0:0]
      2/2: $0\rec_datSyncH[0:0]
 
 5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\u_xmit.\next_state' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-No latch inferred for signal `\u_xmit.\load_shiftRegH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-No latch inferred for signal `\u_xmit.\shiftEnaH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-No latch inferred for signal `\u_xmit.\countEnaH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-No latch inferred for signal `\u_xmit.\rst_bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-No latch inferred for signal `\u_xmit.\ena_bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-No latch inferred for signal `\u_xmit.\xmitDataSelH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-No latch inferred for signal `\u_xmit.\xmit_doneInH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-Latch inferred for signal `\u_xmit.\bitCell_cntrH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32': $auto$proc_dlatch.cc:439:proc_dlatch$480
-Latch inferred for signal `\u_xmit.\xmit_ShiftRegH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32': $auto$proc_dlatch.cc:439:proc_dlatch$495
-Latch inferred for signal `\u_xmit.\bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32': $auto$proc_dlatch.cc:439:proc_dlatch$510
-No latch inferred for signal `\u_xmit.\uart_xmitH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:44$21'.
-No latch inferred for signal `\u_rec.\next_state' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\cntr_resetH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\shiftH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\countH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\rstCountH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\rec_readyInH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
+No latch inferred for signal `\u_xmit.\next_state' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+No latch inferred for signal `\u_xmit.\load_shiftRegH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+No latch inferred for signal `\u_xmit.\shiftEnaH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+No latch inferred for signal `\u_xmit.\countEnaH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+No latch inferred for signal `\u_xmit.\rst_bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+No latch inferred for signal `\u_xmit.\ena_bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+No latch inferred for signal `\u_xmit.\xmitDataSelH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+No latch inferred for signal `\u_xmit.\xmit_doneInH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+Latch inferred for signal `\u_xmit.\bitCell_cntrH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32': $auto$proc_dlatch.cc:439:proc_dlatch$480
+Latch inferred for signal `\u_xmit.\xmit_ShiftRegH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32': $auto$proc_dlatch.cc:439:proc_dlatch$495
+Latch inferred for signal `\u_xmit.\bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32': $auto$proc_dlatch.cc:439:proc_dlatch$510
+No latch inferred for signal `\u_xmit.\uart_xmitH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:44$21'.
+No latch inferred for signal `\u_rec.\next_state' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\cntr_resetH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\shiftH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\countH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\rstCountH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\rec_readyInH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
 
 5.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\uart.\rec_dataH_temp' using process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:69$51'.
+Creating register for signal `\uart.\rec_dataH_temp' using process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:69$51'.
   created $adff cell `$procdff$515' with positive edge clock and positive level reset.
-Creating register for signal `\uart.\rec_dataH' using process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:59$49'.
+Creating register for signal `\uart.\rec_dataH' using process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:59$49'.
   created $adff cell `$procdff$520' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\xmit_doneH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:224$47'.
+Creating register for signal `\u_xmit.\xmit_doneH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:224$47'.
   created $adff cell `$procdff$525' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\state_DataSend' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:185$40'.
+Creating register for signal `\u_xmit.\state_DataSend' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:185$40'.
   created $adff cell `$procdff$530' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\DataSend_ena' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:180$37'.
+Creating register for signal `\u_xmit.\DataSend_ena' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:180$37'.
   created $adff cell `$procdff$535' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\state' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:84$30'.
+Creating register for signal `\u_xmit.\state' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:84$30'.
   created $adff cell `$procdff$540' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\bitCountH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:77$27'.
+Creating register for signal `\u_xmit.\bitCountH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:77$27'.
   created $adff cell `$procdff$545' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\xmit_ShiftRegH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:63$25'.
+Creating register for signal `\u_xmit.\xmit_ShiftRegH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:63$25'.
   created $adff cell `$procdff$550' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\bitCell_cntrH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:54$22'.
+Creating register for signal `\u_xmit.\bitCell_cntrH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:54$22'.
   created $adff cell `$procdff$555' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_readyH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:158$19'.
+Creating register for signal `\u_rec.\rec_readyH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:158$19'.
   created $adff cell `$procdff$560' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\state' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:80$11'.
+Creating register for signal `\u_rec.\state' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:80$11'.
   created $adff cell `$procdff$565' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\recd_bitCntrH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:72$8'.
+Creating register for signal `\u_rec.\recd_bitCntrH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:72$8'.
   created $adff cell `$procdff$570' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\par_dataH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:64$6'.
+Creating register for signal `\u_rec.\par_dataH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:64$6'.
   created $adff cell `$procdff$575' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\bitCell_cntrH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:58$3'.
+Creating register for signal `\u_rec.\bitCell_cntrH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:58$3'.
   created $adff cell `$procdff$580' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_datH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:48$1'.
+Creating register for signal `\u_rec.\rec_datH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:48$1'.
   created $adff cell `$procdff$585' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_datSyncH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:48$1'.
+Creating register for signal `\u_rec.\rec_datSyncH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:48$1'.
   created $adff cell `$procdff$590' with positive edge clock and positive level reset.
 
 5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:69$51'.
-Removing empty process `uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\uart.v:59$49'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:224$47'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:224$47'.
-Found and cleaned up 6 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:185$40'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:185$40'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:180$37'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:180$37'.
-Found and cleaned up 6 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:89$32'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:84$30'.
-Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:77$27'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:77$27'.
-Found and cleaned up 3 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:63$25'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:63$25'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:54$22'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:54$22'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:44$21'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_xmit.v:44$21'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:158$19'.
-Found and cleaned up 6 empty switches in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:85$13'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:80$11'.
-Found and cleaned up 2 empty switches in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:72$8'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:72$8'.
-Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:64$6'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:64$6'.
-Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:58$3'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:58$3'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp_r3fd037\u_rec.v:48$1'.
+Removing empty process `uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:69$51'.
+Removing empty process `uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\uart.v:59$49'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:224$47'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:224$47'.
+Found and cleaned up 6 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:185$40'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:185$40'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:180$37'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:180$37'.
+Found and cleaned up 6 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:89$32'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:84$30'.
+Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:77$27'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:77$27'.
+Found and cleaned up 3 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:63$25'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:63$25'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:54$22'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:54$22'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:44$21'.
+Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_xmit.v:44$21'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:158$19'.
+Found and cleaned up 6 empty switches in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:85$13'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:80$11'.
+Found and cleaned up 2 empty switches in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:72$8'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:72$8'.
+Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:64$6'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:64$6'.
+Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:58$3'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:58$3'.
+Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp6nvdmqk7\u_rec.v:48$1'.
 Cleaned up 31 empty switches.
 
 5.12. Executing OPT_EXPR pass (perform const folding).
@@ -822,14 +822,10 @@ Optimizing module uart.
 12.16. Finished fast OPT passes. (There is nothing left to do.)
 
 13. Executing Verilog backend.
-
-13.1. Executing BMUXMAP pass.
-
-13.2. Executing DEMUXMAP pass.
 Dumping module `\uart'.
 
 Warnings: 9 unique messages, 9 total
-End of script. Logfile hash: 18f3fc4856
+End of script. Logfile hash: 8184305c04
 Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 Time spent: 3% 15x opt_expr (0 sec), 3% 13x opt_merge (0 sec), ...
 

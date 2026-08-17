@@ -6,10 +6,10 @@
  \----------------------------------------------------------------------------/
  Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 
--- Executing script file `C:\trusthub\netlists\RS232\RS232-T1800\90nm.ys' --
+-- Executing script file `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1800\90nm.ys' --
 
-1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp6znfbbae\uart_scan_route.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp6znfbbae\uart_scan_route.v' to AST representation.
+1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp6v8tax3u\uart_scan_route.v
+Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp6v8tax3u\uart_scan_route.v' to AST representation.
 Generating RTLIL representation for module `\uart'.
 Successfully finished Verilog frontend.
 
@@ -251,13 +251,9 @@ Optimizing module uart.
 10.9. Finished fast OPT passes. (There is nothing left to do.)
 
 11. Executing Verilog backend.
-
-11.1. Executing BMUXMAP pass.
-
-11.2. Executing DEMUXMAP pass.
 Dumping module `\uart'.
 
-End of script. Logfile hash: a92b25b7b5
+End of script. Logfile hash: 42482780b4
 Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 Time spent: 3% 9x opt_expr (0 sec), 3% 8x opt_merge (0 sec), ...
 

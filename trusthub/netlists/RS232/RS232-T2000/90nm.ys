@@ -1,4 +1,4 @@
-read_verilog "C:\Users\saher\AppData\Local\Temp\tmpz4u8n048\uart_scan_route.v"
+read_verilog "C:\Users\saher\AppData\Local\Temp\tmpgqx_5_kh\uart_scan_route.v"
 
 hierarchy -top uart
 
@@ -10,4 +10,4 @@ techmap
 opt
 abc
 opt
-write_verilog "C:\trusthub\netlists\RS232\RS232-T2000\90nm_netlist.v"
+write_verilog -noexpr "C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T2000\90nm_netlist.v"

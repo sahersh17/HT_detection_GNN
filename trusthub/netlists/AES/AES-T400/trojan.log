@@ -6,31 +6,31 @@
  \----------------------------------------------------------------------------/
  Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 
--- Executing script file `C:\trusthub\netlists\AES\AES-T400\trojan.ys' --
+-- Executing script file `C:\HT_detection_GNN\trusthub\netlists\AES\AES-T400\trojan.ys' --
 
-1. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v' to AST representation.
+1. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v' to AST representation.
 Generating RTLIL representation for module `\aes_128'.
 Generating RTLIL representation for module `\expand_key_128'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v' to AST representation.
+2. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v' to AST representation.
 Generating RTLIL representation for module `\AM_Transmission'.
-C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:60: Warning: Identifier `\beep1' is implicitly declared.
-C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:61: Warning: Identifier `\beep2' is implicitly declared.
-C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:62: Warning: Identifier `\beeps' is implicitly declared.
-C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:63: Warning: Identifier `\MUX_Sel' is implicitly declared.
+C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:60: Warning: Identifier `\beep1' is implicitly declared.
+C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:61: Warning: Identifier `\beep2' is implicitly declared.
+C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:62: Warning: Identifier `\beeps' is implicitly declared.
+C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:63: Warning: Identifier `\MUX_Sel' is implicitly declared.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v' to AST representation.
+3. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v' to AST representation.
 Generating RTLIL representation for module `\one_round'.
 Generating RTLIL representation for module `\final_round'.
 Successfully finished Verilog frontend.
 
-4. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v' to AST representation.
+4. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v' to AST representation.
 Generating RTLIL representation for module `\table_lookup'.
 Generating RTLIL representation for module `\S4'.
 Generating RTLIL representation for module `\T'.
@@ -38,18 +38,18 @@ Generating RTLIL representation for module `\S'.
 Generating RTLIL representation for module `\xS'.
 Successfully finished Verilog frontend.
 
-5. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\top.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\top.v' to AST representation.
+5. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\top.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\top.v' to AST representation.
 Generating RTLIL representation for module `\top'.
 Successfully finished Verilog frontend.
 
-6. Executing Verilog-2005 frontend: C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v
-Parsing Verilog input from `C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v' to AST representation.
+6. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v' to AST representation.
 Generating RTLIL representation for module `\Trojan_Trigger'.
-Note: Assuming pure combinatorial block at C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:32.2-35.5 in
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:32.2-35.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46.2-52.5 in
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46.2-52.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -133,12 +133,12 @@ Mapping positional arguments of cell aes_128.a1 (expand_key_128).
 Cleaned up 0 empty switches.
 
 8.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69 in module Trojan_Trigger.
-Marked 3 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61 in module Trojan_Trigger.
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58 in module xS.
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57 in module S.
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18 in module AM_Transmission.
-Marked 1 switch rules as full_case in process $proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13 in module AM_Transmission.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69 in module Trojan_Trigger.
+Marked 3 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61 in module Trojan_Trigger.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58 in module xS.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57 in module S.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18 in module AM_Transmission.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13 in module AM_Transmission.
 Removed a total of 0 dead cases.
 
 8.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -148,90 +148,90 @@ Promoted 7 assignments to connections.
 8.4. Executing PROC_INIT pass (extract init attributes).
 
 8.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \Tj_Trig in `\AM_Transmission.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18'.
+Found async reset \Tj_Trig in `\AM_Transmission.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18'.
 
 8.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 2 switches.
 <suppressed ~5 debug messages>
 
 8.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69'.
+Creating decoders for process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69'.
      1/1: $0\Detected[0:0]
-Creating decoders for process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
+Creating decoders for process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
      1/2: $0\tempClk2[0:0]
      2/2: $0\tempClk1[0:0]
-Creating decoders for process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:32$59'.
-Creating decoders for process `\xS.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58'.
+Creating decoders for process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:32$59'.
+Creating decoders for process `\xS.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58'.
      1/1: $0\out[7:0]
-Creating decoders for process `\S.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57'.
+Creating decoders for process `\S.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57'.
      1/1: $0\out[7:0]
-Creating decoders for process `\final_round.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:78$55'.
-Creating decoders for process `\one_round.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:45$50'.
-Creating decoders for process `\AM_Transmission.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18'.
+Creating decoders for process `\final_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:78$55'.
+Creating decoders for process `\one_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:45$50'.
+Creating decoders for process `\AM_Transmission.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18'.
      1/1: $0\SHIFTReg[127:0]
-Creating decoders for process `\AM_Transmission.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13'.
+Creating decoders for process `\AM_Transmission.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13'.
      1/1: $0\Baud8GeneratorACC[25:0]
-Creating decoders for process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:88$12'.
-Creating decoders for process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
-Creating decoders for process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:26$1'.
+Creating decoders for process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:88$12'.
+Creating decoders for process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
+Creating decoders for process `\aes_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:26$1'.
 
 8.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\Trojan_Trigger.\Detected' from process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69'.
-No latch inferred for signal `\Trojan_Trigger.\Tj_Trig' from process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:32$59'.
+No latch inferred for signal `\Trojan_Trigger.\Detected' from process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69'.
+No latch inferred for signal `\Trojan_Trigger.\Tj_Trig' from process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:32$59'.
 
 8.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\Trojan_Trigger.\tempClk1' using process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
+Creating register for signal `\Trojan_Trigger.\tempClk1' using process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
   created $dff cell `$procdff$104' with positive edge clock.
-Creating register for signal `\Trojan_Trigger.\tempClk2' using process `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
+Creating register for signal `\Trojan_Trigger.\tempClk2' using process `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
   created $dff cell `$procdff$105' with positive edge clock.
-Creating register for signal `\xS.\out' using process `\xS.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58'.
+Creating register for signal `\xS.\out' using process `\xS.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58'.
   created $dff cell `$procdff$106' with positive edge clock.
-Creating register for signal `\S.\out' using process `\S.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57'.
+Creating register for signal `\S.\out' using process `\S.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57'.
   created $dff cell `$procdff$107' with positive edge clock.
-Creating register for signal `\final_round.\state_out' using process `\final_round.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:78$55'.
+Creating register for signal `\final_round.\state_out' using process `\final_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:78$55'.
   created $dff cell `$procdff$108' with positive edge clock.
-Creating register for signal `\one_round.\state_out' using process `\one_round.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:45$50'.
+Creating register for signal `\one_round.\state_out' using process `\one_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:45$50'.
   created $dff cell `$procdff$109' with positive edge clock.
-Creating register for signal `\AM_Transmission.\SHIFTReg' using process `\AM_Transmission.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18'.
+Creating register for signal `\AM_Transmission.\SHIFTReg' using process `\AM_Transmission.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18'.
 Warning: Async reset value `\key' is not constant!
   created $aldff cell `$procdff$112' with positive edge clock and positive level non-const reset.
-Creating register for signal `\AM_Transmission.\Baud8GeneratorACC' using process `\AM_Transmission.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13'.
+Creating register for signal `\AM_Transmission.\Baud8GeneratorACC' using process `\AM_Transmission.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13'.
   created $dff cell `$procdff$113' with positive edge clock.
-Creating register for signal `\expand_key_128.\out_1' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:88$12'.
+Creating register for signal `\expand_key_128.\out_1' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:88$12'.
   created $dff cell `$procdff$114' with positive edge clock.
-Creating register for signal `\expand_key_128.\k0a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
+Creating register for signal `\expand_key_128.\k0a' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
   created $dff cell `$procdff$115' with positive edge clock.
-Creating register for signal `\expand_key_128.\k1a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
+Creating register for signal `\expand_key_128.\k1a' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
   created $dff cell `$procdff$116' with positive edge clock.
-Creating register for signal `\expand_key_128.\k2a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
+Creating register for signal `\expand_key_128.\k2a' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
   created $dff cell `$procdff$117' with positive edge clock.
-Creating register for signal `\expand_key_128.\k3a' using process `\expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
+Creating register for signal `\expand_key_128.\k3a' using process `\expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
   created $dff cell `$procdff$118' with positive edge clock.
-Creating register for signal `\aes_128.\s0' using process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:26$1'.
+Creating register for signal `\aes_128.\s0' using process `\aes_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:26$1'.
   created $dff cell `$procdff$119' with positive edge clock.
-Creating register for signal `\aes_128.\k0' using process `\aes_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:26$1'.
+Creating register for signal `\aes_128.\k0' using process `\aes_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:26$1'.
   created $dff cell `$procdff$120' with positive edge clock.
 
 8.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 8.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69'.
-Removing empty process `Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69'.
-Found and cleaned up 3 empty switches in `\Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
-Removing empty process `Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
-Removing empty process `Trojan_Trigger.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:32$59'.
-Found and cleaned up 1 empty switch in `\xS.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58'.
-Removing empty process `xS.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58'.
-Found and cleaned up 1 empty switch in `\S.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57'.
-Removing empty process `S.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57'.
-Removing empty process `final_round.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:78$55'.
-Removing empty process `one_round.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:45$50'.
-Removing empty process `AM_Transmission.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18'.
-Found and cleaned up 1 empty switch in `\AM_Transmission.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13'.
-Removing empty process `AM_Transmission.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13'.
-Removing empty process `expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:88$12'.
-Removing empty process `expand_key_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
-Removing empty process `aes_128.$proc$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:26$1'.
+Found and cleaned up 1 empty switch in `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69'.
+Removing empty process `Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:46$69'.
+Found and cleaned up 3 empty switches in `\Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
+Removing empty process `Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:38$61'.
+Removing empty process `Trojan_Trigger.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\Trojan_Trigger.v:32$59'.
+Found and cleaned up 1 empty switch in `\xS.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58'.
+Removing empty process `xS.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:331$58'.
+Found and cleaned up 1 empty switch in `\S.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57'.
+Removing empty process `S.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\table.v:64$57'.
+Removing empty process `final_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:78$55'.
+Removing empty process `one_round.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\round.v:45$50'.
+Removing empty process `AM_Transmission.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:42$18'.
+Found and cleaned up 1 empty switch in `\AM_Transmission.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13'.
+Removing empty process `AM_Transmission.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:33$13'.
+Removing empty process `expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:88$12'.
+Removing empty process `expand_key_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:77$7'.
+Removing empty process `aes_128.$proc$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\aes_128.v:26$1'.
 Cleaned up 7 empty switches.
 
 8.12. Executing OPT_EXPR pass (perform const folding).
@@ -405,7 +405,7 @@ Removed a total of 0 cells.
 Adding SRST signal on $procdff$105 ($dff) from module Trojan_Trigger (D = $procmux$85_Y, Q = \tempClk2, rval = 1'0).
 Adding SRST signal on $procdff$104 ($dff) from module Trojan_Trigger (D = $procmux$94_Y, Q = \tempClk1, rval = 1'1).
 Adding EN signal on $auto$ff.cc:337:slice$122 ($sdff) from module Trojan_Trigger (D = $procmux$94_Y, Q = \tempClk1).
-Adding SRST signal on $procdff$113 ($dff) from module AM_Transmission (D = $add$C:\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:38$17_Y [25:0], Q = \Baud8GeneratorACC, rval = 26'00000000000000000000000000).
+Adding SRST signal on $procdff$113 ($dff) from module AM_Transmission (D = $add$C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T400\AES-T400\src\TjIn\AM_Transmission.v:38$17_Y [25:0], Q = \Baud8GeneratorACC, rval = 26'00000000000000000000000000).
 
 9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \Trojan_Trigger..
@@ -883,14 +883,10 @@ Optimizing module top.
 15.16. Finished fast OPT passes. (There is nothing left to do.)
 
 16. Executing Verilog backend.
-
-16.1. Executing BMUXMAP pass.
-
-16.2. Executing DEMUXMAP pass.
 Dumping module `\top'.
 
 Warnings: 5 unique messages, 5 total
-End of script. Logfile hash: 6dceefa661
+End of script. Logfile hash: 2291f07611
 Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 Time spent: 3% 15x opt_expr (0 sec), 3% 13x read_verilog (0 sec), ...
 

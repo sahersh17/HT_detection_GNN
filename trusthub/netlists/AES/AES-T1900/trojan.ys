@@ -1,8 +1,8 @@
-read_verilog "C:\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\aes_128.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\round.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\table.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\top.v"
-read_verilog "C:\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\TSC.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\aes_128.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\round.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\table.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\top.v"
+read_verilog "C:\HT_detection_GNN\trusthub\AES_unzipped\AES-T1900\AES-T1900\src\TjIn\TSC.v"
 
 hierarchy -top top
 
@@ -14,4 +14,4 @@ techmap
 opt
 abc
 opt
-write_verilog "C:\trusthub\netlists\AES\AES-T1900\trojan_netlist.v"
+write_verilog -noexpr "C:\HT_detection_GNN\trusthub\netlists\AES\AES-T1900\trojan_netlist.v"
