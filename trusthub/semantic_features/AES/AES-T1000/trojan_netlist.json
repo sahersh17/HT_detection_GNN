@@ -1,0 +1,31 @@
+{
+  "graph_id": "AES/AES-T1000/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1000\\AES-T1000\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1000\\AES-T1000\\src\\TjIn\\lfsr.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1000\\AES-T1000\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1000\\AES-T1000\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1000\\AES-T1000\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1000\\AES-T1000\\src\\TjIn\\Trojan_Trigger.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1000\\AES-T1000\\src\\TjIn\\TSC.v"
+  ],
+  "content_hash": "df4dc3916ad62da0d21744ffe7f3ce74a6eb4e4d5dff5ceafa5df67ae182bcac",
+  "findings": [
+    {
+      "signal_or_instance": "Trigger",
+      "reason": "This instance of Trojan_Trigger compares a 128-bit input state against a specific, hardcoded constant to activate a trigger signal.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "This signal is asserted when a rare 128-bit state pattern is matched, serving as the activation signal for the Trojan payload.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trojan",
+      "reason": "This instance of TSC acts as the Trojan payload, modulating capacitance to leak key bits when the trigger signal is active.",
+      "suspicion_score": 0.9
+    }
+  ]
+}

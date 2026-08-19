@@ -1,0 +1,30 @@
+{
+  "graph_id": "AES/AES-T1400/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1400\\AES-T1400\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1400\\AES-T1400\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1400\\AES-T1400\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1400\\AES-T1400\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1400\\AES-T1400\\src\\TjIn\\Trojan_Trigger.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1400\\AES-T1400\\src\\TjIn\\TSC.v"
+  ],
+  "content_hash": "ea3f18d0ef35c24d73da2113770eb39fdd46babaa46bb51dcc56fab4b814fe06",
+  "findings": [
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "This signal is the trigger output of a sequence detector checking for specific 128-bit values and is used to enable a side-channel leakage payload.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trigger",
+      "reason": "This instance of Trojan_Trigger implements a multi-stage state machine that triggers only when a highly specific sequence of 128-bit state values is observed.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trojan",
+      "reason": "This instance of TSC acts as a Trojan payload that leaks internal round keys via power/timing side-channels when activated by Tj_Trig.",
+      "suspicion_score": 0.95
+    }
+  ]
+}

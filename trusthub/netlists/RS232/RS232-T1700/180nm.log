@@ -8,8 +8,8 @@
 
 -- Executing script file `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1700\180nm.ys' --
 
-1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmppwpeq8h8\uart_scan_route.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmppwpeq8h8\uart_scan_route.v' to AST representation.
+1. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1700\180nm_patched_src\uart_scan_route.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1700\180nm_patched_src\uart_scan_route.v' to AST representation.
 Generating RTLIL representation for module `\uart'.
 Successfully finished Verilog frontend.
 
@@ -281,7 +281,7 @@ Optimizing module uart.
 11. Executing Verilog backend.
 Dumping module `\uart'.
 
-End of script. Logfile hash: 893b1ba76a
+End of script. Logfile hash: de9020a639
 Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 Time spent: 3% 10x opt_expr (0 sec), 3% 9x opt_merge (0 sec), ...
 

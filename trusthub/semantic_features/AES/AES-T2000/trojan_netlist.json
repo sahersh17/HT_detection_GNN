@@ -1,0 +1,35 @@
+{
+  "graph_id": "AES/AES-T2000/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2000\\AES-T2000\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2000\\AES-T2000\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2000\\AES-T2000\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2000\\AES-T2000\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2000\\AES-T2000\\src\\TjIn\\Trojan_Trigger.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2000\\AES-T2000\\src\\TjIn\\TSC.v"
+  ],
+  "content_hash": "b113dd6d2061bba06b927dee18dd6f687ec5ae04ce22b592eab10175ecd3b441",
+  "findings": [
+    {
+      "signal_or_instance": "Trigger",
+      "reason": "Instance of a Trojan trigger module that monitors the 128-bit state input for a specific sequence of rare values to activate a trigger signal.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "Trigger signal activated only when a specific sequence of four 128-bit state values is detected, used to capture and leak the secret key.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trojan",
+      "reason": "Trojan side-channel module that captures the secret key upon trigger activation and leaks it bit-by-bit through a power/delay-based inverter chain.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "State0",
+      "reason": "State register used to track the sequential detection of rare 128-bit input patterns to activate the Trojan trigger.",
+      "suspicion_score": 0.95
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "graph_id": "AES/AES-T1100/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1100\\AES-T1100\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1100\\AES-T1100\\src\\TjIn\\lfsr.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1100\\AES-T1100\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1100\\AES-T1100\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1100\\AES-T1100\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1100\\AES-T1100\\src\\TjIn\\Trojan_Trigger.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1100\\AES-T1100\\src\\TjIn\\TSC.v"
+  ],
+  "content_hash": "0eb2a763d2350ff45f257133ac71ecdc5fd6b6c6b468729b2d667191005a3c83",
+  "findings": [
+    {
+      "signal_or_instance": "Trojan_Trigger",
+      "reason": "This module implements a state machine that triggers only when a highly specific sequence of four 128-bit values is observed on the state input.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "This signal is the trigger output that activates when a rare sequence of 128-bit state values is detected, enabling the Trojan payload.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "State0",
+      "reason": "This register tracks the first step of a rare 4-step sequence of 128-bit values required to activate the Trojan trigger.",
+      "suspicion_score": 0.95
+    },
+    {
+      "signal_or_instance": "Trigger",
+      "reason": "This is the instance of the Trojan_Trigger module which monitors the AES state for a rare sequence of inputs to activate the payload.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trojan",
+      "reason": "This is the instance of the TSC module which leaks key bits via capacitance/power side-channel modulation when activated by the trigger.",
+      "suspicion_score": 0.95
+    }
+  ]
+}

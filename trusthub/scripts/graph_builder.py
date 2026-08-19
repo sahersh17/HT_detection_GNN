@@ -6,8 +6,15 @@ import pickle
 
 class GraphBuilder:
 
+    # Non-hardware cells that Yosys/synthesis can leave behind — these have
+    # no circuit function and would otherwise become spurious graph nodes.
+    DEBUG_CELL_TYPES = {"$print", "$display"}
+
     def __init__(self):
         pass
+
+    def _is_debug_cell(self, gate_type):
+        return gate_type.lstrip("\\") in self.DEBUG_CELL_TYPES
 
     # ----------------------------------------------------
     # Build graph from parsed JSON
@@ -21,10 +28,12 @@ class GraphBuilder:
 
         G = nx.DiGraph()
 
-        gates = data["gates"]
+        # Filter out debug/simulation-only cells before anything else touches
+        # them — they must never become nodes, drivers, or edge endpoints.
+        gates = [g for g in data["gates"] if not self._is_debug_cell(g["type"])]
 
         # ---------------------------------------------
-        # Step 1 : Add every gate as a node
+        # Step 1 : Add every real gate as a node
         # ---------------------------------------------
 
         for gate in gates:
@@ -38,10 +47,6 @@ class GraphBuilder:
         # ---------------------------------------------
         # Step 2 : Find drivers
         # ---------------------------------------------
-
-        #
-        # net -> gate
-        #
 
         drivers = {}
 

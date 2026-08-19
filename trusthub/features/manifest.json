@@ -234,8 +234,8 @@
   {
     "graph_id": "AES/AES-T2300/trojan_netlist",
     "label": 1,
-    "num_nodes": 7906,
-    "num_edges": 6521,
+    "num_nodes": 7905,
+    "num_edges": 6520,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2300\\trojan_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2300\\trojan_netlist.json"
   },
@@ -250,8 +250,8 @@
   {
     "graph_id": "AES/AES-T2400/trojan_netlist",
     "label": 1,
-    "num_nodes": 7906,
-    "num_edges": 6521,
+    "num_nodes": 7905,
+    "num_edges": 6520,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2400\\trojan_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2400\\trojan_netlist.json"
   },
@@ -266,7 +266,7 @@
   {
     "graph_id": "AES/AES-T2500/trojan_netlist",
     "label": 1,
-    "num_nodes": 7917,
+    "num_nodes": 7916,
     "num_edges": 6530,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2500\\trojan_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2500\\trojan_netlist.json"
@@ -282,7 +282,7 @@
   {
     "graph_id": "AES/AES-T2600/trojan_netlist",
     "label": 1,
-    "num_nodes": 7918,
+    "num_nodes": 7917,
     "num_edges": 6532,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2600\\trojan_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2600\\trojan_netlist.json"
@@ -298,7 +298,7 @@
   {
     "graph_id": "AES/AES-T2700/trojan_netlist",
     "label": 1,
-    "num_nodes": 7867,
+    "num_nodes": 7866,
     "num_edges": 6482,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2700\\trojan_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2700\\trojan_netlist.json"
@@ -314,7 +314,7 @@
   {
     "graph_id": "AES/AES-T2800/trojan_netlist",
     "label": 1,
-    "num_nodes": 7932,
+    "num_nodes": 7931,
     "num_edges": 6546,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\AES\\AES-T2800\\trojan_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\AES\\AES-T2800\\trojan_netlist.json"
@@ -626,8 +626,8 @@
   {
     "graph_id": "RS232/RS232-T2100/tjin_netlist",
     "label": 1,
-    "num_nodes": 82,
-    "num_edges": 88,
+    "num_nodes": 81,
+    "num_edges": 87,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2100\\tjin_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2100\\tjin_netlist.json"
   },
@@ -642,8 +642,8 @@
   {
     "graph_id": "RS232/RS232-T2200/tjin_netlist",
     "label": 1,
-    "num_nodes": 80,
-    "num_edges": 86,
+    "num_nodes": 79,
+    "num_edges": 85,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2200\\tjin_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2200\\tjin_netlist.json"
   },
@@ -658,8 +658,8 @@
   {
     "graph_id": "RS232/RS232-T2300/tjin_netlist",
     "label": 1,
-    "num_nodes": 79,
-    "num_edges": 88,
+    "num_nodes": 78,
+    "num_edges": 87,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2300\\tjin_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2300\\tjin_netlist.json"
   },
@@ -674,8 +674,8 @@
   {
     "graph_id": "RS232/RS232-T2400/tjin_netlist",
     "label": 1,
-    "num_nodes": 84,
-    "num_edges": 89,
+    "num_nodes": 83,
+    "num_edges": 88,
     "data_path": "C:\\HT_detection_GNN\\trusthub\\features\\data\\RS232\\RS232-T2400\\tjin_netlist.pt",
     "metadata_path": "C:\\HT_detection_GNN\\trusthub\\features\\metadata\\RS232\\RS232-T2400\\tjin_netlist.json"
   },

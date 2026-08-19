@@ -1,0 +1,14 @@
+{
+  "graph_id": "AES/AES-T100/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T100\\AES-T100\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T100\\AES-T100\\src\\TjIn\\lfsr.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T100\\AES-T100\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T100\\AES-T100\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T100\\AES-T100\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T100\\AES-T100\\src\\TjIn\\TSC.v"
+  ],
+  "content_hash": "62cd01c5dfeb43a1a278009e272a1b8a21560ef47a56335002ff155ef552993a",
+  "findings": []
+}

@@ -1,0 +1,35 @@
+{
+  "graph_id": "AES/AES-T1300/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjIn\\Trojan_Trigger.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjIn\\TSC.v"
+  ],
+  "content_hash": "8e14a8b79f5136ff35c3a401ff6c3ac91b69331349cb09e589c171d7c29f78dd",
+  "findings": [
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "This signal is asserted when the 128-bit state matches a specific hardcoded value, acting as a hardware Trojan trigger.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trigger",
+      "reason": "This instance of Trojan_Trigger compares the 128-bit state input against a specific rare pattern to activate a trigger signal.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trojan_Trigger",
+      "reason": "This module implements a hardware Trojan trigger by checking if the 128-bit state matches a specific hardcoded pattern.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trojan",
+      "reason": "This instance of TSC (Trojan Side Channel) is activated by the trigger signal to modulate shift registers and leak internal key information.",
+      "suspicion_score": 0.9
+    }
+  ]
+}

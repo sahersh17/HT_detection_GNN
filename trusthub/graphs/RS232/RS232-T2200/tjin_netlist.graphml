@@ -320,10 +320,6 @@
       <data key="d0">\$_ANDNOT_</data>
       <data key="d1">{"A": "\\iRECEIVER.par_dataH [7]", "B": "\\iRECEIVER.ena", "Y": "\\iRECEIVER.rec_dataH [7]"}</data>
     </node>
-    <node id="#">
-      <data key="d0">\$print</data>
-      <data key="d1">{"ARGS_WIDTH": "32'd0", "FORMAT": "\"Trojan Activated\\n\"", "PRIORITY": "32'd4294967295", "TRG_ENABLE": "32'd0", "TRG_POLARITY": "", "TRG_WIDTH": "32'd0", "ARGS": "", "EN": "_010_", "TRG": ""}</data>
-    </node>
     <edge source="_060_" target="_064_">
       <data key="d2">_027_</data>
     </edge>
@@ -568,9 +564,6 @@
       <data key="d2">_025_</data>
     </edge>
     <edge source="_132_" target="_133_">
-      <data key="d2">_010_</data>
-    </edge>
-    <edge source="_132_" target="#">
       <data key="d2">_010_</data>
     </edge>
     <edge source="_134_" target="_136_">

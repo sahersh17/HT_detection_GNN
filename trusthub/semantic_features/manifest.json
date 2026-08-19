@@ -1,0 +1,320 @@
+[
+  {
+    "graph_id": "AES/AES-T100/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T100\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T100/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T100\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T1000/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1000\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1000/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1000\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T1100/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1100\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1100/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1100\\trojan_netlist.json",
+    "num_findings": 5
+  },
+  {
+    "graph_id": "AES/AES-T1200/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1200\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1200/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1200\\trojan_netlist.json",
+    "num_findings": 4
+  },
+  {
+    "graph_id": "AES/AES-T1300/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1300\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1300/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1300\\trojan_netlist.json",
+    "num_findings": 4
+  },
+  {
+    "graph_id": "AES/AES-T1400/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1400\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1400/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1400\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T1500/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1500\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1500/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1500\\trojan_netlist.json",
+    "num_findings": 4
+  },
+  {
+    "graph_id": "AES/AES-T1600/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1600\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1600/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1600\\trojan_netlist.json",
+    "num_findings": 5
+  },
+  {
+    "graph_id": "AES/AES-T1700/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1700\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1700/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1700\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T1800/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1800\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1800/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1800\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T1900/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1900\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T1900/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T1900\\trojan_netlist.json",
+    "num_findings": 4
+  },
+  {
+    "graph_id": "AES/AES-T200/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T200\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T200/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T200\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T2000/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2000\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T2000/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2000\\trojan_netlist.json",
+    "num_findings": 4
+  },
+  {
+    "graph_id": "AES/AES-T2100/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2100\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T2100/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2100\\trojan_netlist.json",
+    "num_findings": 4
+  },
+  {
+    "graph_id": "AES/AES-T2300/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2300\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T2300/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2300\\trojan_netlist.json",
+    "num_findings": 2
+  },
+  {
+    "graph_id": "AES/AES-T2400/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2400\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T2400/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2400\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T2500/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2500\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T2500/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2500\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T2600/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2600\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T2600/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2600\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T2700/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2700\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T2700/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2700\\trojan_netlist.json",
+    "num_findings": 3
+  },
+  {
+    "graph_id": "AES/AES-T2800/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2800\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T2800/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T2800\\trojan_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T300/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T300\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T300/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T300\\trojan_netlist.json",
+    "num_findings": 4
+  },
+  {
+    "graph_id": "AES/AES-T400/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T400\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T400/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T400\\trojan_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T500/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T500\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T500/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T500\\trojan_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T600/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T600\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T700/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T700\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T700/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T700\\trojan_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T800/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T800\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T800/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T800\\trojan_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T900/clean_netlist",
+    "label": 0,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T900\\clean_netlist.json",
+    "num_findings": 0
+  },
+  {
+    "graph_id": "AES/AES-T900/trojan_netlist",
+    "label": 1,
+    "semantic_path": "C:\\HT_detection_GNN\\trusthub\\semantic_features\\AES\\AES-T900\\trojan_netlist.json",
+    "num_findings": 0
+  }
+]

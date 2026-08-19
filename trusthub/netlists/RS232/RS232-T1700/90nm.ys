@@ -1,4 +1,4 @@
-read_verilog "C:\Users\saher\AppData\Local\Temp\tmpakht3f7g\uart_scan_route.v"
+read_verilog "C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1700\90nm_patched_src\uart_scan_route.v"
 
 hierarchy -top uart
 

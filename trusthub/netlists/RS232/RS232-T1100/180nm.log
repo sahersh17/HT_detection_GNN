@@ -8,11 +8,11 @@
 
 -- Executing script file `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1100\180nm.ys' --
 
-1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmpc6jlyooh\uart.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmpc6jlyooh\uart.v' to AST representation.
+1. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1100\180nm_patched_src\uart.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1100\180nm_patched_src\uart.v' to AST representation.
 Generating RTLIL representation for module `\uart'.
-C:\Users\saher\AppData\Local\Temp\tmpc6jlyooh\uart.v:137: Warning: Identifier `\iXMIT_state_1_temp' is implicitly declared.
-C:\Users\saher\AppData\Local\Temp\tmpc6jlyooh\uart.v:367: Warning: Identifier `\n401' is implicitly declared.
+C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1100\180nm_patched_src\uart.v:137: Warning: Identifier `\iXMIT_state_1_temp' is implicitly declared.
+C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T1100\180nm_patched_src\uart.v:367: Warning: Identifier `\n401' is implicitly declared.
 Successfully finished Verilog frontend.
 
 2. Executing HIERARCHY pass (managing design hierarchy).
@@ -284,7 +284,7 @@ Optimizing module uart.
 Dumping module `\uart'.
 
 Warnings: 2 unique messages, 2 total
-End of script. Logfile hash: 1100048f76
+End of script. Logfile hash: ce03d6be68
 Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 Time spent: 3% 10x opt_expr (0 sec), 3% 9x opt_merge (0 sec), ...
 

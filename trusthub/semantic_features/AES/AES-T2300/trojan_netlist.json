@@ -1,0 +1,23 @@
+{
+  "graph_id": "AES/AES-T2300/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2300\\AES-T2300\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2300\\AES-T2300\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2300\\AES-T2300\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2300\\AES-T2300\\src\\TjIn\\TSC_and.v"
+  ],
+  "content_hash": "89737965ca3bdde0a9bce4f87246227ee6a67c89e5a0b6420473ecadcbbc75ed",
+  "findings": [
+    {
+      "signal_or_instance": "Trojan",
+      "reason": "Instance of TSC module that monitors internal state bits s2[89] and s5[121] to activate a Trojan trigger.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "Wire carrying the Trojan trigger signal which is XORed with the output bit out[0] to corrupt the ciphertext.",
+      "suspicion_score": 1.0
+    }
+  ]
+}

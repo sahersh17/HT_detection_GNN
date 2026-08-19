@@ -17,11 +17,11 @@ FEATURES_ROOT.mkdir(parents=True, exist_ok=True)
 (FEATURES_ROOT / "metadata").mkdir(exist_ok=True)
 
 # ==========================================================
-# Locate every (json, gpickle) pair, same relative-path logic as 04
+# Locate every (json, gpickle) pair
 # ==========================================================
 
 json_files = sorted(PARSED_ROOT.rglob("*.json"))
-pairs = []  # (json_file, gpickle_path, relative, graph_id)
+pairs = []
 
 for json_file in json_files:
     relative = json_file.relative_to(PARSED_ROOT)
@@ -37,15 +37,16 @@ for json_file in json_files:
 print(f"\nFound {len(pairs)} graphs with matching parsed netlists\n")
 
 # ==========================================================
-# PASS 1 — fit gate-type vocabulary across the WHOLE dataset
+# PASS 1 — fit gate-class vocabulary across the WHOLE dataset
 # ==========================================================
 
-print("Fitting gate-type vocabulary...")
+print("Fitting gate-class vocabulary...")
 extractor = FeatureExtractor()
 extractor.fit_vocab([gp for _, gp, _, _ in pairs])
 extractor.save_vocab(FEATURES_ROOT / "gate_vocab.json")
 print(f"Vocabulary size (incl. UNK): {extractor.vocab_size}")
-print(f"Gate types found: {extractor.gate_types}\n")
+print(f"Gate classes found: {extractor.gate_classes}")
+print("Node feature layout: [one-hot gate class] + [in_deg, out_deg, controllability, observability]\n")
 
 # ==========================================================
 # PASS 2 — extract features for every graph
@@ -92,10 +93,6 @@ for json_file, gpickle_path, relative, graph_id in pairs:
         print("FAILED")
         print(e)
         failed += 1
-
-# ==========================================================
-# Manifest — the single index tying everything together
-# ==========================================================
 
 with open(FEATURES_ROOT / "manifest.json", "w") as f:
     json.dump(manifest, f, indent=2)

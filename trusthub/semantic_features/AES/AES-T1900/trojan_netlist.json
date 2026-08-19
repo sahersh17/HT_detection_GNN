@@ -1,0 +1,34 @@
+{
+  "graph_id": "AES/AES-T1900/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1900\\AES-T1900\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1900\\AES-T1900\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1900\\AES-T1900\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1900\\AES-T1900\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1900\\AES-T1900\\src\\TjIn\\TSC.v"
+  ],
+  "content_hash": "8c276e64a18a62e05801ab5e66fffd944688ec771a8c454234e63fad9b097154",
+  "findings": [
+    {
+      "signal_or_instance": "Trojan",
+      "reason": "Instance of the TSC module which implements a hardware Trojan trigger and power-based side-channel payload.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "Trojan trigger signal that activates when a 128-bit counter reaches its maximum value.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Counter",
+      "reason": "A 128-bit counter that increments on changes of the AES output, used to trigger the Trojan after an extremely rare number of operations.",
+      "suspicion_score": 0.95
+    },
+    {
+      "signal_or_instance": "DynamicPower",
+      "reason": "A 128-bit register that acts as a Trojan payload, rotating its bits to cause power leakage when triggered.",
+      "suspicion_score": 0.95
+    }
+  ]
+}

@@ -10,7 +10,7 @@ import re
 
 ROOT = Path(r"C:\HT_detection_GNN\trusthub\AES_unzipped")
 OUTROOT = Path(r"C:\HT_detection_GNN\trusthub\netlists\RS232")
-
+REQUEST_DELAY_SECONDS = 4   # spacing between actual (non-cached) API calls
 YOSYS = shutil.which("yosys") or "yosys"
 
 OUTROOT.mkdir(parents=True, exist_ok=True)
@@ -60,14 +60,15 @@ def patch_file(src, dst):
 
 
   
-
 def synthesize(folder, top_module, outdir, tag):
 
-    temp = Path(tempfile.mkdtemp())
+    # Persistent location instead of a deleted tempfile.mkdtemp() —
+    # so 06_llm_semantic_features.py can still find these files later.
+    patched_src = outdir / f"{tag}_patched_src"
+    patched_src.mkdir(parents=True, exist_ok=True)
 
     verilog_files = []
 
-    # copy files into temp directory
     for f in folder.glob("*"):
 
         if not f.is_file():
@@ -79,7 +80,7 @@ def synthesize(folder, top_module, outdir, tag):
         if is_testbench(f.name):
             continue
 
-        dst = temp / f.name
+        dst = patched_src / f.name
         patch_file(f, dst)
 
         if dst.suffix == ".v":
@@ -87,7 +88,6 @@ def synthesize(folder, top_module, outdir, tag):
 
     if len(verilog_files) == 0:
         print("      No Verilog files.")
-        shutil.rmtree(temp)
         return False
 
     ys = outdir / f"{tag}.ys"
@@ -95,17 +95,13 @@ def synthesize(folder, top_module, outdir, tag):
     netlist = outdir / f"{tag}_netlist.v"
 
     with open(ys, "w") as f:
-
         for vf in sorted(verilog_files):
             f.write(f'read_verilog "{vf}"\n')
-
         f.write("\n")
-
         if top_module is None:
             f.write("hierarchy -auto-top\n")
         else:
             f.write(f"hierarchy -top {top_module}\n")
-
         f.write("""
 proc
 opt
@@ -116,7 +112,6 @@ opt
 abc
 opt
 """)
-
         f.write(f'write_verilog -noexpr "{netlist}"\n')
 
     result = subprocess.run(
@@ -130,11 +125,11 @@ opt
         f.write("\n")
         f.write(result.stderr)
 
-    shutil.rmtree(temp)
-
     return result.returncode == 0 and netlist.exists()
 
-
+def _extract_retry_delay(error, default=RETRY_DELAY_SECONDS):
+    match = re.search(r"retryDelay['\"]?\s*:\s*['\"]?(\d+)", str(error))
+    return int(match.group(1)) + 1 if match else default
 # =====================================================
 # MAIN
 # =====================================================
@@ -247,6 +242,7 @@ for bench in benchmarks:
                 failed += 1
 
         continue
+
 
 print("\n" + "=" * 70)
 print("RS232 synthesis complete")

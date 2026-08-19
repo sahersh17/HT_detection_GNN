@@ -1,0 +1,11 @@
+{
+  "graph_id": "AES/AES-T2700/clean_netlist",
+  "label": 0,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2700\\AES-T2700\\src\\TjFree\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2700\\AES-T2700\\src\\TjFree\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2700\\AES-T2700\\src\\TjFree\\table.v"
+  ],
+  "content_hash": "a83fc5541c8efe11da8d3440c3a5c1c35b0edb31a9b00872b2d26f319271ecc3",
+  "findings": []
+}

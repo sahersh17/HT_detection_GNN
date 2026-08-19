@@ -31728,10 +31728,6 @@
       <data key="d0">\$_XOR_</data>
       <data key="d1">{"A": "state[127]", "B": "key[127]", "Y": "_00000_[127]"}</data>
     </node>
-    <node id="#">
-      <data key="d0">\$print</data>
-      <data key="d1">{"ARGS_WIDTH": "32'd0", "FORMAT": "\"Trojan Activated\\n\"", "PRIORITY": "32'd4294967295", "TRG_ENABLE": "32'd1", "TRG_POLARITY": "1'h1", "TRG_WIDTH": "32'd1", "ARGS": "", "EN": "1'h1", "TRG": "\\Trojan.counter2 [3]"}</data>
-    </node>
     <edge source="_04737_" target="_04776_">
       <data key="d2">_03867_</data>
     </edge>

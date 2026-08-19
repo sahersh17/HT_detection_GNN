@@ -1,0 +1,30 @@
+{
+  "graph_id": "AES/AES-T1700/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1700\\AES-T1700\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1700\\AES-T1700\\src\\TjIn\\AM_Transmission.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1700\\AES-T1700\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1700\\AES-T1700\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1700\\AES-T1700\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1700\\AES-T1700\\src\\TjIn\\Trojan_Trigger.v"
+  ],
+  "content_hash": "348add1dbdbba98a4baa410eed0950dede592b8a3290ae311108a4720ec979ab",
+  "findings": [
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "A trigger signal activated when a 128-bit counter reaches its maximum value, used to initiate unauthorized AM transmission of the secret key.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Counter",
+      "reason": "A 128-bit counter in Trojan_Trigger that increments on changes to the AES output and triggers a payload upon reaching a maximum value.",
+      "suspicion_score": 0.95
+    },
+    {
+      "signal_or_instance": "Tj_Trigger",
+      "reason": "An instance of Trojan_Trigger designed to detect a rare counter state and assert a trigger signal.",
+      "suspicion_score": 0.9
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "graph_id": "AES/AES-T1300/clean_netlist",
+  "label": 0,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjFree\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjFree\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1300\\AES-T1300\\src\\TjFree\\table.v"
+  ],
+  "content_hash": "b770d877a7e7c61f3ed183219bc32aabb64207a523497ebbfc90dfca046a8ed8",
+  "findings": []
+}

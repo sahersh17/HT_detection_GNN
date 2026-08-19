@@ -1,0 +1,40 @@
+{
+  "graph_id": "AES/AES-T1600/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1600\\AES-T1600\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1600\\AES-T1600\\src\\TjIn\\AM_Transmission.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1600\\AES-T1600\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1600\\AES-T1600\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1600\\AES-T1600\\src\\TjIn\\top.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T1600\\AES-T1600\\src\\TjIn\\Trojan_Trigger.v"
+  ],
+  "content_hash": "fe89875cea82e95c2c2de904ab4ef6a74f52ffa1067032d2bf0a13aa0a735c89",
+  "findings": [
+    {
+      "signal_or_instance": "Tj_Trigger",
+      "reason": "This instance of Trojan_Trigger monitors the 128-bit state input for a highly specific sequence of four 128-bit values to activate a trigger signal.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "This signal is the trigger output that activates the AM transmission module to leak the secret key when the rare state sequence is detected.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Detected",
+      "reason": "This register in Trojan_Trigger is asserted only when a specific sequence of four 128-bit values is sequentially matched on the state input.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "TSC",
+      "reason": "This instance of AM_Transmission acts as the Trojan payload, leaking the secret key via an antenna output when triggered by Tj_Trig.",
+      "suspicion_score": 0.95
+    },
+    {
+      "signal_or_instance": "State0",
+      "reason": "This state register tracks the first step of a rare 128-bit input pattern sequence matching trigger condition.",
+      "suspicion_score": 0.9
+    }
+  ]
+}

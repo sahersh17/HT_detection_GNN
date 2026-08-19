@@ -1,6 +1,6 @@
-read_verilog "C:\Users\saher\AppData\Local\Temp\tmpn4cz5hl5\u_rec.v"
-read_verilog "C:\Users\saher\AppData\Local\Temp\tmpn4cz5hl5\u_xmit.v"
-read_verilog "C:\Users\saher\AppData\Local\Temp\tmpn4cz5hl5\uart.v"
+read_verilog "C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T900\standard_patched_src\u_rec.v"
+read_verilog "C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T900\standard_patched_src\u_xmit.v"
+read_verilog "C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T900\standard_patched_src\uart.v"
 
 hierarchy -top uart
 

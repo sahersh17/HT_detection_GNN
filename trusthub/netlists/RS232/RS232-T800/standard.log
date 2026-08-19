@@ -8,30 +8,30 @@
 
 -- Executing script file `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard.ys' --
 
-1. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v' to AST representation.
+1. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v' to AST representation.
 Generating RTLIL representation for module `\u_rec'.
-Warning: reg '\rec_data_cntrH_1' is assigned in a continuous assignment at C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:50.8-50.128.
-Warning: reg '\rec_data_cntrH_2' is assigned in a continuous assignment at C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:51.8-51.173.
-Warning: reg '\rec_data_cntrH_3' is assigned in a continuous assignment at C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:52.8-52.59.
-Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93.1-163.4 in
+Warning: reg '\rec_data_cntrH_1' is assigned in a continuous assignment at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:50.8-50.128.
+Warning: reg '\rec_data_cntrH_2' is assigned in a continuous assignment at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:51.8-51.173.
+Warning: reg '\rec_data_cntrH_3' is assigned in a continuous assignment at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:52.8-52.59.
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93.1-163.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v' to AST representation.
+2. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v' to AST representation.
 Generating RTLIL representation for module `\u_xmit'.
-Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:39.1-45.10 in
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:39.1-45.10 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78.1-169.4 in
+Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78.1-169.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v
-Parsing Verilog input from `C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v' to AST representation.
+3. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v
+Parsing Verilog input from `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v' to AST representation.
 Generating RTLIL representation for module `\uart'.
 Successfully finished Verilog frontend.
 
@@ -54,22 +54,22 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:73$64 in module uart.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:63$62 in module uart.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:172$60 in module u_xmit.
-Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:73$53 in module u_xmit.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:66$50 in module u_xmit.
-Marked 3 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:55$48 in module u_xmit.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:48$45 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:39$44 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:166$42 in module u_rec.
-Marked 6 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:88$34 in module u_rec.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:80$31 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:72$29 in module u_rec.
-Marked 2 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:66$26 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:56$24 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:73$64 in module uart.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:63$62 in module uart.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:172$60 in module u_xmit.
+Marked 6 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:73$53 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:66$50 in module u_xmit.
+Marked 3 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:55$48 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:48$45 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:39$44 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:166$42 in module u_rec.
+Marked 6 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:88$34 in module u_rec.
+Marked 2 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:80$31 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:72$29 in module u_rec.
+Marked 2 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:66$26 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:56$24 in module u_rec.
 Removed a total of 0 dead cases.
 
 5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -79,32 +79,32 @@ Promoted 16 assignments to connections.
 5.4. Executing PROC_INIT pass (extract init attributes).
 
 5.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \sys_rst_l in `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:73$64'.
-Found async reset \sys_rst_l in `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:63$62'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:172$60'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:73$53'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:66$50'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:55$48'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:48$45'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:166$42'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:88$34'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:80$31'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:72$29'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:66$26'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:56$24'.
+Found async reset \sys_rst_l in `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:73$64'.
+Found async reset \sys_rst_l in `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:63$62'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:172$60'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:73$53'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:66$50'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:55$48'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:48$45'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:166$42'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:88$34'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:80$31'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:72$29'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:66$26'.
+Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:56$24'.
 
 5.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~22 debug messages>
 
 5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:73$64'.
+Creating decoders for process `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:73$64'.
      1/1: $0\rec_dataH_temp[7:0]
-Creating decoders for process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:63$62'.
+Creating decoders for process `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:63$62'.
      1/1: $1\rec_dataH[7:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:172$60'.
+Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:172$60'.
      1/1: $0\xmit_doneH[0:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
+Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
      1/25: $3\xmit_doneInH[0:0]
      2/25: $6\next_state[2:0]
      3/25: $4\countEnaH[0:0]
@@ -130,20 +130,20 @@ Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\t
     23/25: $1\bitCountH[3:0]
     24/25: $1\xmit_ShiftRegH[7:0]
     25/25: $1\bitCell_cntrH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:73$53'.
+Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:73$53'.
      1/1: $0\state[2:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:66$50'.
+Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:66$50'.
      1/1: $0\bitCountH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:55$48'.
+Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:55$48'.
      1/2: $0\xmit_ShiftRegH[7:0] [7]
      2/2: $0\xmit_ShiftRegH[7:0] [6:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:48$45'.
+Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:48$45'.
      1/1: $0\bitCell_cntrH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:39$44'.
+Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:39$44'.
      1/1: $1\uart_xmitH[0:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:166$42'.
+Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:166$42'.
      1/1: $0\rec_readyH_temp[0:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
+Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
      1/15: $6\next_state[2:0]
      2/15: $5\next_state[2:0]
      3/15: $3\cntr_resetH[0:0]
@@ -159,97 +159,97 @@ Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tm
     13/15: $1\countH[0:0]
     14/15: $1\shiftH[0:0]
     15/15: $1\cntr_resetH[0:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:88$34'.
+Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:88$34'.
      1/1: $0\state[2:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:80$31'.
+Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:80$31'.
      1/1: $0\recd_bitCntrH[3:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:72$29'.
+Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:72$29'.
      1/2: $0\par_dataH[7:0] [7]
      2/2: $0\par_dataH[7:0] [6:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:66$26'.
+Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:66$26'.
      1/1: $0\bitCell_cntrH[3:0]
-Creating decoders for process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:56$24'.
+Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:56$24'.
      1/2: $0\rec_datH[0:0]
      2/2: $0\rec_datSyncH[0:0]
 
 5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\u_xmit.\next_state' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-No latch inferred for signal `\u_xmit.\load_shiftRegH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-No latch inferred for signal `\u_xmit.\shiftEnaH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-No latch inferred for signal `\u_xmit.\countEnaH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-No latch inferred for signal `\u_xmit.\rst_bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-No latch inferred for signal `\u_xmit.\ena_bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-No latch inferred for signal `\u_xmit.\xmitDataSelH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-No latch inferred for signal `\u_xmit.\xmit_doneInH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-Latch inferred for signal `\u_xmit.\bitCell_cntrH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55': $auto$proc_dlatch.cc:439:proc_dlatch$462
-Latch inferred for signal `\u_xmit.\xmit_ShiftRegH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55': $auto$proc_dlatch.cc:439:proc_dlatch$477
-Latch inferred for signal `\u_xmit.\bitCountH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55': $auto$proc_dlatch.cc:439:proc_dlatch$492
-No latch inferred for signal `\u_xmit.\uart_xmitH' from process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:39$44'.
-No latch inferred for signal `\u_rec.\next_state' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
-No latch inferred for signal `\u_rec.\cntr_resetH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
-No latch inferred for signal `\u_rec.\shiftH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
-No latch inferred for signal `\u_rec.\countH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
-No latch inferred for signal `\u_rec.\rstCountH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
-No latch inferred for signal `\u_rec.\rec_readyInH' from process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
+No latch inferred for signal `\u_xmit.\next_state' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+No latch inferred for signal `\u_xmit.\load_shiftRegH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+No latch inferred for signal `\u_xmit.\shiftEnaH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+No latch inferred for signal `\u_xmit.\countEnaH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+No latch inferred for signal `\u_xmit.\rst_bitCountH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+No latch inferred for signal `\u_xmit.\ena_bitCountH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+No latch inferred for signal `\u_xmit.\xmitDataSelH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+No latch inferred for signal `\u_xmit.\xmit_doneInH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+Latch inferred for signal `\u_xmit.\bitCell_cntrH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55': $auto$proc_dlatch.cc:439:proc_dlatch$462
+Latch inferred for signal `\u_xmit.\xmit_ShiftRegH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55': $auto$proc_dlatch.cc:439:proc_dlatch$477
+Latch inferred for signal `\u_xmit.\bitCountH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55': $auto$proc_dlatch.cc:439:proc_dlatch$492
+No latch inferred for signal `\u_xmit.\uart_xmitH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:39$44'.
+No latch inferred for signal `\u_rec.\next_state' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
+No latch inferred for signal `\u_rec.\cntr_resetH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
+No latch inferred for signal `\u_rec.\shiftH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
+No latch inferred for signal `\u_rec.\countH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
+No latch inferred for signal `\u_rec.\rstCountH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
+No latch inferred for signal `\u_rec.\rec_readyInH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
 
 5.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\uart.\rec_dataH_temp' using process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:73$64'.
+Creating register for signal `\uart.\rec_dataH_temp' using process `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:73$64'.
   created $adff cell `$procdff$497' with positive edge clock and positive level reset.
-Creating register for signal `\uart.\rec_dataH' using process `\uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:63$62'.
+Creating register for signal `\uart.\rec_dataH' using process `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:63$62'.
   created $adff cell `$procdff$502' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\xmit_doneH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:172$60'.
+Creating register for signal `\u_xmit.\xmit_doneH' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:172$60'.
   created $adff cell `$procdff$507' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\state' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:73$53'.
+Creating register for signal `\u_xmit.\state' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:73$53'.
   created $adff cell `$procdff$512' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\bitCountH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:66$50'.
+Creating register for signal `\u_xmit.\bitCountH' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:66$50'.
   created $adff cell `$procdff$517' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\xmit_ShiftRegH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:55$48'.
+Creating register for signal `\u_xmit.\xmit_ShiftRegH' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:55$48'.
   created $adff cell `$procdff$522' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\bitCell_cntrH' using process `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:48$45'.
+Creating register for signal `\u_xmit.\bitCell_cntrH' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:48$45'.
   created $adff cell `$procdff$527' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_readyH_temp' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:166$42'.
+Creating register for signal `\u_rec.\rec_readyH_temp' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:166$42'.
   created $adff cell `$procdff$532' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\state' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:88$34'.
+Creating register for signal `\u_rec.\state' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:88$34'.
   created $adff cell `$procdff$537' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\recd_bitCntrH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:80$31'.
+Creating register for signal `\u_rec.\recd_bitCntrH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:80$31'.
   created $adff cell `$procdff$542' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\par_dataH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:72$29'.
+Creating register for signal `\u_rec.\par_dataH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:72$29'.
   created $adff cell `$procdff$547' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\bitCell_cntrH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:66$26'.
+Creating register for signal `\u_rec.\bitCell_cntrH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:66$26'.
   created $adff cell `$procdff$552' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_datH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:56$24'.
+Creating register for signal `\u_rec.\rec_datH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:56$24'.
   created $adff cell `$procdff$557' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_datSyncH' using process `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:56$24'.
+Creating register for signal `\u_rec.\rec_datSyncH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:56$24'.
   created $adff cell `$procdff$562' with positive edge clock and positive level reset.
 
 5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:73$64'.
-Removing empty process `uart.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\uart.v:63$62'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:172$60'.
-Found and cleaned up 6 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:78$55'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:73$53'.
-Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:66$50'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:66$50'.
-Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:55$48'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:55$48'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:48$45'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:48$45'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:39$44'.
-Removing empty process `u_xmit.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_xmit.v:39$44'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:166$42'.
-Found and cleaned up 6 empty switches in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:93$36'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:88$34'.
-Found and cleaned up 2 empty switches in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:80$31'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:80$31'.
-Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:72$29'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:72$29'.
-Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:66$26'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:66$26'.
-Removing empty process `u_rec.$proc$C:\Users\saher\AppData\Local\Temp\tmp3yhlie2i\u_rec.v:56$24'.
+Removing empty process `uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:73$64'.
+Removing empty process `uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\uart.v:63$62'.
+Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:172$60'.
+Found and cleaned up 6 empty switches in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:78$55'.
+Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:73$53'.
+Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:66$50'.
+Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:66$50'.
+Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:55$48'.
+Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:55$48'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:48$45'.
+Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:48$45'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:39$44'.
+Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_xmit.v:39$44'.
+Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:166$42'.
+Found and cleaned up 6 empty switches in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
+Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:93$36'.
+Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:88$34'.
+Found and cleaned up 2 empty switches in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:80$31'.
+Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:80$31'.
+Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:72$29'.
+Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:72$29'.
+Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:66$26'.
+Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:66$26'.
+Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T800\standard_patched_src\u_rec.v:56$24'.
 Cleaned up 22 empty switches.
 
 5.12. Executing OPT_EXPR pass (perform const folding).
@@ -806,7 +806,7 @@ Optimizing module uart.
 Dumping module `\uart'.
 
 Warnings: 12 unique messages, 12 total
-End of script. Logfile hash: f1a0ff789d
+End of script. Logfile hash: 0a9fd41f6e
 Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
 Time spent: 3% 15x opt_expr (0 sec), 3% 13x opt_merge (0 sec), ...
 

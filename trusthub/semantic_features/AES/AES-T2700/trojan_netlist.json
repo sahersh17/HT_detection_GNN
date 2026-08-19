@@ -1,0 +1,28 @@
+{
+  "graph_id": "AES/AES-T2700/trojan_netlist",
+  "label": 1,
+  "source_files": [
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2700\\AES-T2700\\src\\TjIn\\aes_128.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2700\\AES-T2700\\src\\TjIn\\round.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2700\\AES-T2700\\src\\TjIn\\table.v",
+    "C:\\HT_detection_GNN\\trusthub\\AES_unzipped\\AES-T2700\\AES-T2700\\src\\TjIn\\TSC_sync_and_async_ctr.v"
+  ],
+  "content_hash": "7eea4499accd508629c2f9b7f08d3cb9d0e0ff37b39db36f720bda450bfb9b00",
+  "findings": [
+    {
+      "signal_or_instance": "Tj_Trig",
+      "reason": "This wire carries the Trojan trigger signal which is XORed with the least significant bit of the AES output to corrupt the ciphertext.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "Trojan",
+      "reason": "This is an instance of the TSC module, which implements a counter-based hardware Trojan trigger.",
+      "suspicion_score": 1.0
+    },
+    {
+      "signal_or_instance": "trigger",
+      "reason": "This output signal of the TSC module acts as the activation trigger for the Trojan, displaying a message and driving the corruption logic.",
+      "suspicion_score": 0.95
+    }
+  ]
+}
