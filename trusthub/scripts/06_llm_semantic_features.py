@@ -2,254 +2,795 @@ from pathlib import Path
 import json
 import re
 import hashlib
-import os
 import time
+
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
 
 # ==========================================================
 # CONFIG
 # ==========================================================
 
-NETLIST_ROOT = Path(r"C:\HT_detection_GNN\trusthub\netlists")   # where the .ys scripts live
-FEATURES_ROOT = Path(r"C:\HT_detection_GNN\trusthub\features")   # has manifest.json from 05
-OUTPUT_ROOT = Path(r"C:\HT_detection_GNN\trusthub\semantic_features")
+NETLIST_ROOT = Path(
+    r"C:\HT_detection_GNN\trusthub\netlists"
+)
+
+FEATURES_ROOT = Path(
+    r"C:\HT_detection_GNN\trusthub\features"
+)
+
+OUTPUT_ROOT = Path(
+    r"C:\HT_detection_GNN\trusthub\semantic_features"
+)
 
 OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
 
-MODEL = "gemini-2.5-flash"    # swap to "gemini-2.5-pro" for higher quality, slower/costlier
-MAX_RTL_CHARS = 60000         # rough safety cap per LLM call; large files get truncated with a note
-LIMIT = 5                  # set to an int (e.g. 5) to test on a few benchmarks before a full run
-RETRY_COUNT = 1
-RETRY_DELAY_SECONDS = 5
-REQUEST_DELAY_SECONDS = 4   # spacing between actual (non-cached) API calls
 
 # ==========================================================
-# LLM client setup
+# QWEN3 CONFIG
 # ==========================================================
-#
-# Requires: pip install google-genai
-# Requires: GEMINI_API_KEY environment variable set
-#
-try:
-    from google import genai
-    from google.genai import types
-except ImportError:
-    raise SystemExit(
-        "The 'google-genai' package is required for this script.\n"
-        "Install it with: pip install google-genai"
+
+MODEL = "Qwen/Qwen3-8B"
+
+MAX_RTL_CHARS = 60000
+
+# Set to an integer such as 5 for testing.
+# Set to None for the full dataset.
+LIMIT = 5
+
+MAX_NEW_TOKENS = 1024
+
+# Qwen3 non-thinking mode settings
+TEMPERATURE = 0.7
+TOP_P = 0.8
+TOP_K = 20
+
+# Small delay between uncached model calls
+REQUEST_DELAY_SECONDS = 1
+
+
+# ==========================================================
+# LOAD QWEN3-8B
+# ==========================================================
+
+print("=" * 70)
+print("Loading Qwen3-8B")
+print("=" * 70)
+
+print(f"Model: {MODEL}")
+print(f"CUDA available: {torch.cuda.is_available()}")
+
+if torch.cuda.is_available():
+    print(f"GPU: {torch.cuda.get_device_name(0)}")
+    print(
+        f"GPU memory: "
+        f"{torch.cuda.get_device_properties(0).total_memory / 1024**3:.2f} GB"
+    )
+else:
+    print(
+        "WARNING: CUDA is not available. "
+        "Qwen3-8B will run on CPU and may be very slow."
     )
 
-if "GEMINI_API_KEY" not in os.environ:
-    raise SystemExit(
-        "GEMINI_API_KEY environment variable is not set.\n"
-        "Set it before running this script."
+print("\nLoading tokenizer...")
+
+tokenizer = AutoTokenizer.from_pretrained(
+    MODEL,
+    trust_remote_code=True,
+)
+
+print("Loading model...")
+
+model = AutoModelForCausalLM.from_pretrained(
+    MODEL,
+    torch_dtype="auto",
+    device_map="auto",
+    trust_remote_code=True,
+)
+
+model.eval()
+
+print("Qwen3-8B loaded successfully.")
+
+if torch.cuda.is_available():
+    print(
+        f"Allocated GPU memory: "
+        f"{torch.cuda.memory_allocated() / 1024**3:.2f} GB"
     )
 
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+print("=" * 70)
+print()
+
 
 # ==========================================================
-# Extract RTL source file list from a .ys script
+# EXTRACT RTL SOURCE FILE LIST FROM .YS SCRIPT
 # ==========================================================
 
-READ_VERILOG_RE = re.compile(r'read_verilog\s+"([^"]+)"')
+READ_VERILOG_RE = re.compile(
+    r'read_verilog\s+"([^"]+)"'
+)
+
 
 def get_source_files_from_ys(ys_path):
     """
-    Your synthesis scripts (02_synthesize_*.py) wrote every RTL file they
-    fed into Yosys as a `read_verilog "path"` line in the .ys script. This
-    reconstructs the exact non-testbench source file list used for a given
-    netlist, without needing a separate path-mapping step.
+    The synthesis scripts contain lines such as:
+
+        read_verilog "path/to/file.v"
+
+    Reconstruct the exact RTL source files used by Yosys.
     """
+
     text = ys_path.read_text(errors="ignore")
-    return [Path(p) for p in READ_VERILOG_RE.findall(text)]
+
+    return [
+        Path(p)
+        for p in READ_VERILOG_RE.findall(text)
+    ]
 
 
 def locate_ys_file(graph_id):
     """
-    graph_id looks like 'AES/AES-T100/clean_netlist' (from 05's manifest).
-    The matching .ys script sits at netlists/AES/AES-T100/clean.ys —
-    same relative folder, tag name before '_netlist' + '.ys'.
+    graph_id example:
+
+        AES/AES-T100/clean_netlist
+
+    Matching synthesis script:
+
+        netlists/AES/AES-T100/clean.ys
     """
+
     parts = graph_id.split("/")
-    family, bench, tag = parts[0], parts[1], parts[2]
+
+    family = parts[0]
+    bench = parts[1]
+    tag = parts[2]
+
     tag = tag.replace("_netlist", "")
-    return NETLIST_ROOT / family / bench / f"{tag}.ys"
+
+    return (
+        NETLIST_ROOT
+        / family
+        / bench
+        / f"{tag}.ys"
+    )
 
 
 # ==========================================================
-# LLM prompt
+# SYSTEM PROMPT
 # ==========================================================
 
-SYSTEM_PROMPT = """You are assisting a hardware security researcher in \
-analyzing Verilog RTL for signs of a hardware Trojan trigger. A hardware \
-Trojan trigger is logic that activates only under a rare, specific \
-condition (e.g. a wide comparator checking many signal bits against a \
-fixed pattern, a counter that must reach an unusual value, or a rarely-hit \
-state in a state machine), and produces some effect when triggered.
+SYSTEM_PROMPT = """
+You are assisting a hardware security researcher analyzing
+Verilog RTL for signs of a Hardware Trojan trigger.
 
-You will be given Verilog source code. Identify signals, wires, or \
-instances that plausibly relate to rare-condition trigger logic. Only \
-reference names that literally appear in the provided code — never invent \
-or guess a signal name. If nothing suspicious is present, return an empty \
-list; do not force a finding.
+A Hardware Trojan trigger is logic that activates only under
+a rare or specific condition, for example:
 
-Respond with ONLY a JSON array (no other text, no markdown fences), where \
-each entry has:
-{
-  "signal_or_instance": "<exact name from the code>",
-  "reason": "<one sentence, grounded in what the code actually does>",
-  "suspicion_score": <float 0.0-1.0>
-}
+- a wide comparator checking many signal bits against a
+  fixed or unusual pattern
+- a counter reaching an unusual value
+- a rarely activated state-machine state
+- a combination of internal signals that is unlikely during
+  normal operation
+- logic that detects a particular sequence of events
+- unusual enable conditions
+- dormant control logic that appears unrelated to the
+  normal function of the circuit
+
+Analyze ONLY the Verilog source code provided.
+
+IMPORTANT RULES:
+
+1. Only reference signal, wire, register, module, or instance
+   names that literally appear in the provided code.
+
+2. NEVER invent signal names.
+
+3. Ground every finding in the actual RTL.
+
+4. Do not assume that unusual logic is automatically a Trojan.
+
+5. If nothing suspicious is present, return an empty JSON array.
+
+6. Do not report normal datapath logic merely because it is
+   complicated.
+
+7. Focus specifically on logic that plausibly represents a
+   rare-condition trigger.
+
+8. Return ONLY valid JSON.
+
+9. Do NOT use markdown.
+
+10. Do NOT include explanations outside the JSON.
+
+Required JSON format:
+
+[
+  {
+    "signal_or_instance": "exact_signal_name",
+    "reason": "one sentence explaining why this logic may represent a rare trigger",
+    "suspicion_score": 0.85
+  }
+]
+
+The suspicion_score must be a floating point value between
+0.0 and 1.0.
 """
 
-RESPONSE_SCHEMA = types.Schema(
-    type=types.Type.ARRAY,
-    items=types.Schema(
-        type=types.Type.OBJECT,
-        properties={
-            "signal_or_instance": types.Schema(type=types.Type.STRING),
-            "reason": types.Schema(type=types.Type.STRING),
-            "suspicion_score": types.Schema(type=types.Type.NUMBER),
-        },
-        required=["signal_or_instance", "reason", "suspicion_score"],
-    ),
-)
 
-def _extract_retry_delay(error, default=RETRY_DELAY_SECONDS):
-    match = re.search(r"retryDelay['\"]?\s*:\s*['\"]?(\d+)", str(error))
-    return int(match.group(1)) + 1 if match else default
+# ==========================================================
+# JSON EXTRACTION
+# ==========================================================
+
+def extract_json_array(text):
+    """
+    Qwen can occasionally produce a small amount of text
+    around the JSON despite the instruction.
+
+    This function extracts the first valid JSON array.
+    """
+
+    text = text.strip()
+
+    # Remove possible markdown fences
+    text = re.sub(
+        r"```(?:json)?",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    text = text.replace("```", "").strip()
+
+    # First try the entire response
+    try:
+        parsed = json.loads(text)
+
+        if isinstance(parsed, list):
+            return parsed
+
+    except json.JSONDecodeError:
+        pass
+
+    # Otherwise locate the first JSON array
+    start = text.find("[")
+
+    if start == -1:
+        raise ValueError(
+            "No JSON array found in model response."
+        )
+
+    # Find matching closing bracket
+    depth = 0
+    in_string = False
+    escape = False
+
+    for i in range(start, len(text)):
+
+        char = text[i]
+
+        if escape:
+            escape = False
+            continue
+
+        if char == "\\":
+            escape = True
+            continue
+
+        if char == '"':
+            in_string = not in_string
+            continue
+
+        if in_string:
+            continue
+
+        if char == "[":
+            depth += 1
+
+        elif char == "]":
+            depth -= 1
+
+            if depth == 0:
+
+                candidate = text[start:i + 1]
+
+                parsed = json.loads(candidate)
+
+                if not isinstance(parsed, list):
+                    raise ValueError(
+                        "Extracted JSON is not a list."
+                    )
+
+                return parsed
+
+    raise ValueError(
+        "Could not locate a complete JSON array."
+    )
+
+
+# ==========================================================
+# VALIDATE FINDINGS
+# ==========================================================
+
+def validate_findings(findings):
+
+    if not isinstance(findings, list):
+        raise ValueError(
+            "Model response is not a JSON array."
+        )
+
+    validated = []
+
+    for item in findings:
+
+        if not isinstance(item, dict):
+            continue
+
+        signal = item.get(
+            "signal_or_instance"
+        )
+
+        reason = item.get(
+            "reason"
+        )
+
+        score = item.get(
+            "suspicion_score"
+        )
+
+        if not isinstance(signal, str):
+            continue
+
+        if not isinstance(reason, str):
+            continue
+
+        try:
+            score = float(score)
+        except (TypeError, ValueError):
+            continue
+
+        score = max(
+            0.0,
+            min(1.0, score)
+        )
+
+        validated.append(
+            {
+                "signal_or_instance": signal,
+                "reason": reason,
+                "suspicion_score": score,
+            }
+        )
+
+    return validated
+
+
+# ==========================================================
+# QWEN RTL ANALYSIS
+# ==========================================================
 
 def analyze_rtl(rtl_text):
+
     if len(rtl_text) > MAX_RTL_CHARS:
-        rtl_text = rtl_text[:MAX_RTL_CHARS] + "\n\n/* ... truncated ... */"
 
-    last_error = None
+        rtl_text = (
+            rtl_text[:MAX_RTL_CHARS]
+            + "\n\n"
+            "/* ... RTL truncated because it exceeded "
+            "MAX_RTL_CHARS ... */"
+        )
 
-    for attempt in range(1, RETRY_COUNT + 1):
-        try:
-            response = client.models.generate_content( #use send_message
-                model=MODEL,
-                contents=rtl_text,
-                config=types.GenerateContentConfig(
-                    system_instruction=SYSTEM_PROMPT,
-                    response_mime_type="application/json",
-                    response_schema=RESPONSE_SCHEMA,
-                    temperature=0.0,
-                ),
-            )
+    user_prompt = f"""
+Analyze the following Verilog RTL for possible
+Hardware Trojan trigger logic.
 
-            raw = response.text.strip()
-            findings = json.loads(raw)
+Return ONLY the required JSON array.
 
-            if not isinstance(findings, list):
-                raise ValueError("Response was not a JSON array")
+{rtl_text}
+"""
 
-            return findings
+    messages = [
+        {
+            "role": "system",
+            "content": SYSTEM_PROMPT,
+        },
+        {
+            "role": "user",
+            "content": user_prompt,
+        },
+    ]
 
-        except Exception as e:
-            last_error = e
-            print(f"      WARNING: attempt {attempt}/{RETRY_COUNT} failed ({e})")
-            if attempt < RETRY_COUNT:
-                time.sleep(_extract_retry_delay(e))
+    # ------------------------------------------------------
+    # IMPORTANT:
+    # Qwen3 normally enables thinking.
+    #
+    # For this structured extraction task we explicitly
+    # disable thinking to reduce unnecessary output and
+    # generation time.
+    # ------------------------------------------------------
 
-    print(f"      GIVING UP after {RETRY_COUNT} attempts: {last_error}")
-    return []
+    text = tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True,
+        enable_thinking=False,
+    )
+
+    inputs = tokenizer(
+        [text],
+        return_tensors="pt",
+        padding=True,
+    )
+
+    inputs = {
+        key: value.to(model.device)
+        for key, value in inputs.items()
+    }
+
+    input_length = inputs["input_ids"].shape[-1]
+
+    with torch.inference_mode():
+
+        outputs = model.generate(
+            **inputs,
+            max_new_tokens=MAX_NEW_TOKENS,
+            temperature=TEMPERATURE,
+            top_p=TOP_P,
+            top_k=TOP_K,
+            do_sample=True,
+            pad_token_id=tokenizer.eos_token_id,
+        )
+
+    generated_tokens = outputs[0][
+        input_length:
+    ]
+
+    response_text = tokenizer.decode(
+        generated_tokens,
+        skip_special_tokens=True,
+    ).strip()
+
+    findings = extract_json_array(
+        response_text
+    )
+
+    findings = validate_findings(
+        findings
+    )
+
+    return findings
 
 
 # ==========================================================
-# MAIN
+# LOAD MANIFEST
 # ==========================================================
 
-with open(FEATURES_ROOT / "manifest.json", "r") as f:
+manifest_path = (
+    FEATURES_ROOT / "manifest.json"
+)
+
+with open(
+    manifest_path,
+    "r",
+    encoding="utf-8",
+) as f:
+
     manifest = json.load(f)
 
+
 if LIMIT is not None:
+
     manifest = manifest[:LIMIT]
 
-print(f"Processing {len(manifest)} graphs\n")
 
-# Cache: identical concatenated RTL source (e.g. the same clean aes_128.v
-# reused across many T-variants) is only sent to the LLM once.
-source_cache = {}  # content_hash -> findings
+print(
+    f"Processing {len(manifest)} graphs\n"
+)
+
+
+# ==========================================================
+# CACHE
+# ==========================================================
+
+# Identical RTL source is only analyzed once.
+
+source_cache = {}
+
+
+# ==========================================================
+# STATISTICS
+# ==========================================================
 
 semantic_manifest = []
+
 success = 0
 skipped_missing_ys = 0
 failed = 0
 
+
+# ==========================================================
+# MAIN LOOP
+# ==========================================================
+
 for entry in manifest:
+
     graph_id = entry["graph_id"]
     label = entry["label"]
 
     print("-" * 70)
     print(graph_id)
 
-    ys_path = locate_ys_file(graph_id)
+    # ------------------------------------------------------
+    # Locate synthesis script
+    # ------------------------------------------------------
+
+    ys_path = locate_ys_file(
+        graph_id
+    )
+
     if not ys_path.exists():
-        print(f"      SKIP: no .ys file found at {ys_path}")
+
+        print(
+            f"      SKIP: no .ys file found at {ys_path}"
+        )
+
         skipped_missing_ys += 1
+
         continue
 
     try:
-        source_files = get_source_files_from_ys(ys_path)
-        source_files = [p for p in source_files if p.exists()]
 
-        if not source_files:
-            print("      SKIP: no readable source files listed in .ys")
-            skipped_missing_ys += 1
-            continue
+        # --------------------------------------------------
+        # Get RTL source files
+        # --------------------------------------------------
 
-        combined = "\n\n".join(
-            f"// ---- {p.name} ----\n{p.read_text(errors='ignore')}"
-            for p in source_files
+        source_files = (
+            get_source_files_from_ys(
+                ys_path
+            )
         )
 
-        content_hash = hashlib.sha256(combined.encode("utf-8", errors="ignore")).hexdigest()
+        source_files = [
+            p
+            for p in source_files
+            if p.exists()
+        ]
+
+        if not source_files:
+
+            print(
+                "      SKIP: no readable source files "
+                "listed in .ys"
+            )
+
+            skipped_missing_ys += 1
+
+            continue
+
+        print(
+            f"      RTL files: {len(source_files)}"
+        )
+
+        # --------------------------------------------------
+        # Combine RTL
+        # --------------------------------------------------
+
+        combined_parts = []
+
+        for p in source_files:
+
+            combined_parts.append(
+                f"// ---- {p.name} ----\n"
+                f"{p.read_text(errors='ignore')}"
+            )
+
+        combined = "\n\n".join(
+            combined_parts
+        )
+
+        # --------------------------------------------------
+        # Hash source
+        # --------------------------------------------------
+
+        content_hash = hashlib.sha256(
+            combined.encode(
+                "utf-8",
+                errors="ignore",
+            )
+        ).hexdigest()
+
+        # --------------------------------------------------
+        # Cache check
+        # --------------------------------------------------
 
         if content_hash in source_cache:
-            print("      (cache hit — identical source already analyzed)")
-            findings = source_cache[content_hash]
-        else:
-            findings = analyze_rtl(combined)
-            source_cache[content_hash] = findings
-            time.sleep(REQUEST_DELAY_SECONDS)
 
-        out_path = (OUTPUT_ROOT / graph_id).with_suffix(".json")
-        out_path.parent.mkdir(parents=True, exist_ok=True)
+            print(
+                "      Cache hit — "
+                "identical RTL already analyzed"
+            )
+
+            findings = source_cache[
+                content_hash
+            ]
+
+        else:
+
+            print(
+                "      Running Qwen3-8B..."
+            )
+
+            start_time = time.time()
+
+            findings = analyze_rtl(
+                combined
+            )
+
+            elapsed = (
+                time.time() - start_time
+            )
+
+            print(
+                f"      Inference time: "
+                f"{elapsed:.2f}s"
+            )
+
+            source_cache[
+                content_hash
+            ] = findings
+
+            time.sleep(
+                REQUEST_DELAY_SECONDS
+            )
+
+        # --------------------------------------------------
+        # Output path
+        # --------------------------------------------------
+
+        out_path = (
+            OUTPUT_ROOT / graph_id
+        ).with_suffix(".json")
+
+        out_path.parent.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        # --------------------------------------------------
+        # Save result
+        # --------------------------------------------------
 
         result = {
             "graph_id": graph_id,
             "label": label,
-            "source_files": [str(p) for p in source_files],
+            "model": MODEL,
+            "source_files": [
+                str(p)
+                for p in source_files
+            ],
             "content_hash": content_hash,
             "findings": findings,
         }
 
-        with open(out_path, "w") as f:
-            json.dump(result, f, indent=2)
+        with open(
+            out_path,
+            "w",
+            encoding="utf-8",
+        ) as f:
 
-        semantic_manifest.append({
-            "graph_id": graph_id,
-            "label": label,
-            "semantic_path": str(out_path),
-            "num_findings": len(findings),
-        })
+            json.dump(
+                result,
+                f,
+                indent=2,
+            )
 
-        print(f"      Findings: {len(findings)}")
+        # --------------------------------------------------
+        # Manifest entry
+        # --------------------------------------------------
+
+        semantic_manifest.append(
+            {
+                "graph_id": graph_id,
+                "label": label,
+                "semantic_path": str(
+                    out_path
+                ),
+                "num_findings": len(
+                    findings
+                ),
+            }
+        )
+
+        print(
+            f"      Findings: {len(findings)}"
+        )
+
+        # Print findings for quick inspection
+        for finding in findings:
+
+            print(
+                f"        - "
+                f"{finding['signal_or_instance']} "
+                f""
+                f"(score="
+                f"{finding['suspicion_score']:.2f})"
+            )
+
         success += 1
 
     except Exception as e:
-        print(f"      FAILED: {e}")
+
+        print(
+            f"      FAILED: {e}"
+        )
+
         failed += 1
 
-with open(OUTPUT_ROOT / "manifest.json", "w") as f:
-    json.dump(semantic_manifest, f, indent=2)
+
+# ==========================================================
+# WRITE SEMANTIC MANIFEST
+# ==========================================================
+
+semantic_manifest_path = (
+    OUTPUT_ROOT / "manifest.json"
+)
+
+with open(
+    semantic_manifest_path,
+    "w",
+    encoding="utf-8",
+) as f:
+
+    json.dump(
+        semantic_manifest,
+        f,
+        indent=2,
+    )
+
+
+# ==========================================================
+# FINAL SUMMARY
+# ==========================================================
 
 print("\n" + "=" * 70)
-print("Semantic feature extraction complete")
-print(f"Successful          : {success}")
-print(f"Skipped (no .ys)     : {skipped_missing_ys}")
-print(f"Failed               : {failed}")
-print(f"Unique source sets   : {len(source_cache)}  (of {len(manifest)} graphs — caching saved "
-      f"{len(manifest) - len(source_cache)} API calls)")
-print(f"Manifest             : {OUTPUT_ROOT / 'manifest.json'}")
+
+print(
+    "Semantic feature extraction complete"
+)
+
+print(
+    f"Successful          : {success}"
+)
+
+print(
+    f"Skipped (no .ys)    : "
+    f"{skipped_missing_ys}"
+)
+
+print(
+    f"Failed              : {failed}"
+)
+
+print(
+    f"Unique source sets  : "
+    f"{len(source_cache)} "
+    f"(of {len(manifest)} graphs)"
+)
+
+print(
+    f"Cached analyses     : "
+    f"{len(manifest) - len(source_cache)}"
+)
+
+print(
+    f"Model               : {MODEL}"
+)
+
+print(
+    f"Manifest             : "
+    f"{semantic_manifest_path}"
+)
+
 print("=" * 70)
