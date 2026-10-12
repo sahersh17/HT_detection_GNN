@@ -83,7 +83,11 @@ Because the data is imbalanced (2:1 Trojan to clean) and small, report precision
 
 ## Contributors
 
-*Add team members here.*
+| Contributor | GitHub |
+|---|---|
+| Saher | [@sahersh17](https://github.com/sahersh17) |
+| Shreya Save | [@shreyaasave](https://github.com/shreyaasave) |
+| Rohit Patil | [@rohitpatil-27-08](https://github.com/rohitpatil-27-08) |
 
 ## Acknowledgements
 
