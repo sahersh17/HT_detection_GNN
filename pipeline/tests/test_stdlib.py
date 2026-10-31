@@ -15,6 +15,7 @@ import rtl_diff
 import label_nodes
 import eval_loc
 import score_localization
+import build_legacy_gate_candidates
 from validate import validate as validate_explanation
 
 
@@ -62,6 +63,13 @@ class LabelTest(unittest.TestCase):
 
     def test_multi_range_src(self):
         self.assertEqual(label_nodes.src_ranges("a/b.v:12.3-14.5|c.v:7.1-7.9"), [("b.v", 12, 14), ("c.v", 7, 7)])
+        self.assertEqual(label_nodes.src_ranges(r"C:\src\u_rec.v:113.1-115.9"), [("u_rec.v", 113, 115)])
+
+    def test_legacy_wire_source_parser(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d, "netlist.v")
+            p.write_text('(* src = "rtl.v:12.1-13.9" *)\nwire [7:0] \\out ;\nwire _unused_;\n')
+            self.assertEqual(build_legacy_gate_candidates.wire_sources(p), {"out": "rtl.v:12.1-13.9"})
 
 
 class LocEvalTest(unittest.TestCase):

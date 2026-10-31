@@ -1,0 +1,149 @@
+[
+  {
+    "benchmark": "AES-T100",
+    "nodes": 7716,
+    "known": 3545,
+    "candidate_trojan": 9,
+    "unknown": 4171
+  },
+  {
+    "benchmark": "AES-T1000",
+    "nodes": 7907,
+    "known": 3565,
+    "candidate_trojan": 29,
+    "unknown": 4342
+  },
+  {
+    "benchmark": "AES-T1100",
+    "nodes": 8076,
+    "known": 3565,
+    "candidate_trojan": 29,
+    "unknown": 4511
+  },
+  {
+    "benchmark": "AES-T1200",
+    "nodes": 8289,
+    "known": 3693,
+    "candidate_trojan": 157,
+    "unknown": 4596
+  },
+  {
+    "benchmark": "AES-T1600",
+    "nodes": 8057,
+    "known": 3540,
+    "candidate_trojan": 4,
+    "unknown": 4517
+  },
+  {
+    "benchmark": "AES-T1700",
+    "nodes": 8276,
+    "known": 3666,
+    "candidate_trojan": 130,
+    "unknown": 4610
+  },
+  {
+    "benchmark": "AES-T200",
+    "nodes": 7736,
+    "known": 3564,
+    "candidate_trojan": 28,
+    "unknown": 4172
+  },
+  {
+    "benchmark": "AES-T2300",
+    "nodes": 7905,
+    "known": 3409,
+    "candidate_trojan": 1,
+    "unknown": 4496
+  },
+  {
+    "benchmark": "AES-T2400",
+    "nodes": 7905,
+    "known": 3409,
+    "candidate_trojan": 1,
+    "unknown": 4496
+  },
+  {
+    "benchmark": "AES-T2500",
+    "nodes": 7916,
+    "known": 3408,
+    "candidate_trojan": 0,
+    "unknown": 4508
+  },
+  {
+    "benchmark": "AES-T2600",
+    "nodes": 7917,
+    "known": 3412,
+    "candidate_trojan": 4,
+    "unknown": 4505
+  },
+  {
+    "benchmark": "AES-T2700",
+    "nodes": 7866,
+    "known": 3412,
+    "candidate_trojan": 4,
+    "unknown": 4454
+  },
+  {
+    "benchmark": "AES-T2800",
+    "nodes": 7931,
+    "known": 3412,
+    "candidate_trojan": 4,
+    "unknown": 4519
+  },
+  {
+    "benchmark": "AES-T400",
+    "nodes": 7892,
+    "known": 3538,
+    "candidate_trojan": 2,
+    "unknown": 4354
+  },
+  {
+    "benchmark": "AES-T700",
+    "nodes": 7845,
+    "known": 3546,
+    "candidate_trojan": 10,
+    "unknown": 4299
+  },
+  {
+    "benchmark": "AES-T800",
+    "nodes": 8017,
+    "known": 3547,
+    "candidate_trojan": 11,
+    "unknown": 4470
+  },
+  {
+    "benchmark": "AES-T900",
+    "nodes": 8229,
+    "known": 3674,
+    "candidate_trojan": 138,
+    "unknown": 4555
+  },
+  {
+    "benchmark": "RS232-T2100",
+    "nodes": 81,
+    "known": 26,
+    "candidate_trojan": 1,
+    "unknown": 55
+  },
+  {
+    "benchmark": "RS232-T2200",
+    "nodes": 79,
+    "known": 26,
+    "candidate_trojan": 1,
+    "unknown": 53
+  },
+  {
+    "benchmark": "RS232-T2300",
+    "nodes": 78,
+    "known": 26,
+    "candidate_trojan": 1,
+    "unknown": 52
+  },
+  {
+    "benchmark": "RS232-T2400",
+    "nodes": 83,
+    "known": 26,
+    "candidate_trojan": 1,
+    "unknown": 57
+  }
+]

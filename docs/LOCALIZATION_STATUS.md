@@ -17,6 +17,14 @@ The 94-graph archive contains PyTorch Geometric objects with features, edges, a 
 
 The linked `Hardware-Trojan-Detection/main/results/gnn/features/metadata` is also the older export: its `AES-T100/clean_netlist.json` has 7,903 nodes, compared with 240,258 in the supplied ZIP; its `RS232-T2100/tjin_netlist.json` has 78 nodes, compared with 121 in the ZIP. The linked `main/src/llm` generates RTL embeddings and does not establish node order or source locations for these newer graphs.
 
+## Earlier-graph fallback
+
+The original netlists under `trusthub/netlists/` preserve some Yosys `src` attributes on wires, and `trusthub/features/metadata/` provides the ordered gate names for their **earlier** graph version. `pipeline/localization/build_legacy_gate_candidates.py` maps each gate's output wire to an RTL source range and intersects it with the original RTL diff. Across the 21 Trojan-side graphs it found source ranges for 60,009 of 135,801 nodes (44.2%) and at least one candidate Trojan gate in 20 designs. AES-T2500 has none. The remaining nodes are unknown, not clean.
+
+The 21 candidate files were checked against their corresponding earlier `.pt` graph tensors: graph IDs, node counts, and edge counts matched the metadata. This validates file alignment, not the correctness of the candidate labels.
+
+These are review candidates only. A wire's source attribute can cover a declaration or broad expression rather than the Trojan operation, and some synthesis stages drop provenance. They cannot be transferred to the newer ZIP's graphs. Before using this fallback for scientific metrics, manually review candidate positives and a sample of negatives, check source line alignment, and define an exclusion rule for insufficiently covered variants.
+
 ## Required next input
 
 For each new `.pt` graph, provide an ordered `node_names` list aligned exactly to `Data.x` rows, plus the RTL file and source line range for each node. The graph-generation script and any source-attributed Yosys JSON would allow the mapping to be regenerated and verified. If no such artifact exists, regenerate the graph tensors and mappings together from the original RTL using one fixed Yosys flow, then rerun graph, embedding, and pair audits.

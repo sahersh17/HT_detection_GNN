@@ -16,7 +16,7 @@ SRC = re.compile(r"([^\s|:]+):(\d+)\.\d+-(\d+)\.\d+")
 
 def src_ranges(src):
     """'a.v:12.3-14.5|b.v:7.1-7.9' -> [(basename, 12, 14), (basename, 7, 7)]"""
-    return [(Path(f).name, int(a), int(b)) for f, a, b in SRC.findall(src or "")]
+    return [(Path(f.replace("\\", "/")).name, int(a), int(b)) for f, a, b in SRC.findall(src or "")]
 
 
 def overlaps(ranges, trojan_lines_by_file):
