@@ -15,6 +15,8 @@ Generated from the packaged 2026-10-31 data and the original Trust-Hub source fo
 
 The 94-graph archive contains PyTorch Geometric objects with features, edges, a graph label, and a graph ID. It does not contain ordered gate names or source locations. Its `manifest.json` mentions metadata paths on another machine, but no metadata files are packaged. The older repo's graph node counts do not match any of the 42 paired samples in this archive, so assigning old metadata by node index would be invalid.
 
+The linked `Hardware-Trojan-Detection/main/results/gnn/features/metadata` is also the older export: its `AES-T100/clean_netlist.json` has 7,903 nodes, compared with 240,258 in the supplied ZIP; its `RS232-T2100/tjin_netlist.json` has 78 nodes, compared with 121 in the ZIP. The linked `main/src/llm` generates RTL embeddings and does not establish node order or source locations for these newer graphs.
+
 ## Required next input
 
 For each new `.pt` graph, provide an ordered `node_names` list aligned exactly to `Data.x` rows, plus the RTL file and source line range for each node. The graph-generation script and any source-attributed Yosys JSON would allow the mapping to be regenerated and verified. If no such artifact exists, regenerate the graph tensors and mappings together from the original RTL using one fixed Yosys flow, then rerun graph, embedding, and pair audits.
