@@ -19,11 +19,20 @@ The graph pipeline synthesizes Verilog with Yosys, parses each netlist, connects
 - `trusthub/` contains Trust-Hub sources, synthesis and feature extraction scripts, and the earlier 93-graph dataset (31 clean, 62 Trojan). Its features should not be mixed with the newer data.
 - `research/capstone.ipynb` preserves an earlier Colab experiment. Its reported 52-sample fusion result is separate from the current integrated dataset.
 - `pipeline/` contains the data adapter, audit, RTL-only/GNN-only/fusion comparison, metrics, reporting, and preliminary localization tools.
-- `data/HT_data_2026-10-31_b40cc08.zip` is the newer package with 94 graph tensors and 94 CodeBERT embeddings. Keep this large archive locally at that path; it is excluded from Git. Its portable manifest marks 60 pairs usable. The integrated comparison selects 42 samples from 21 benchmarks that have both clean and Trojan sides. It omits 18 usable but unpaired samples.
+- `data/HT_data_2026-10-31_b40cc08.zip` is the newer package with 94 graph tensors and 94 CodeBERT embeddings. Keep this large archive locally at that path; it is excluded from Git. Its portable manifest marks 60 samples usable. The integrated comparison selects 42 samples from 21 benchmarks that have both clean and Trojan sides. It omits 18 usable but unpaired samples.
 
 The new AES graphs are much larger than the earlier graphs, at roughly 240,000 nodes each. Full GNN and fusion training needs substantial memory and is best run with a GPU.
 
 ## Run the integrated comparison
+
+The completed, smaller-graph pilot can be checked without rerunning training:
+
+```powershell
+& .\trusthub\venv\Scripts\python.exe pipeline\verify_artifact.py
+& .\trusthub\venv\Scripts\python.exe -m unittest discover -s pipeline\tests
+```
+
+The verifier checks manifest membership, clean-source grouping, saved predictions and metrics, and hashes of the recorded inputs. It requires the local data ZIP. It verifies artifact integrity, not scientific accuracy or localization. To reproduce the pilot training, use `--dataset legacy` with each model; the large-graph commands below target the newer data and have not been completed on this machine.
 
 Use the Python environment in `trusthub/venv` with PyTorch and PyTorch Geometric. From the repository root on Windows:
 
@@ -42,11 +51,13 @@ Use the Python environment in `trusthub/venv` with PyTorch and PyTorch Geometric
 
 `trusthub/scripts/check_leakage.py` checks for label clues in graph metadata. The integrated audit additionally checks graph/embedding shapes, labels, and fold overlap. The supplied newer archive does not include source-attributed node mappings needed to establish Trojan-gate ground truth. The `pipeline/localization/` utilities can compare original clean and Trojan RTL and evaluate node rankings once source-attributed synthesis and node alignment are available. Attention scores alone are candidate explanations, not verified Trojan locations.
 
-An obfuscated held-out evaluation set and full three-model comparison remain research work.
+An obfuscated held-out evaluation set and full three-model comparison on the newer graphs remain research work.
 
 The current localization evidence audit and exact missing inputs are documented in [`docs/LOCALIZATION_STATUS.md`](docs/LOCALIZATION_STATUS.md). The candidate RTL changes and source descriptions for all 21 paired benchmarks are in `data/localization_reference/`; they are not yet reviewed ground truth.
 
 An exploratory comparison on the earlier graphs is recorded in [`docs/BASELINE_RESULTS.md`](docs/BASELINE_RESULTS.md). Fusion did not outperform the RTL-only baseline on those held-out source groups.
+
+For the publication strategy, explicit completion gates, and external inputs still needed, see [`docs/PUBLICATION_ROADMAP.md`](docs/PUBLICATION_ROADMAP.md). The protocol in [`docs/EVALUATION_PROTOCOL.md`](docs/EVALUATION_PROTOCOL.md) is prospective; the existing pilot folds have already been inspected and cannot serve as an untouched final test.
 
 ## Contributors
 

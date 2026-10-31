@@ -37,7 +37,7 @@ class MetricsTest(unittest.TestCase):
 
 class DiffTest(unittest.TestCase):
     def test_finds_inserted_trojan_lines_and_new_identifiers(self):
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(dir=ROOT.parent) as d:
             c, t = Path(d, "clean"), Path(d, "troj")
             c.mkdir(); t.mkdir()
             (c / "aes.v").write_text("module aes(clk);\n  reg [3:0] round;\n  // note\nendmodule\n")
@@ -66,7 +66,7 @@ class LabelTest(unittest.TestCase):
         self.assertEqual(label_nodes.src_ranges(r"C:\src\u_rec.v:113.1-115.9"), [("u_rec.v", 113, 115)])
 
     def test_legacy_wire_source_parser(self):
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(dir=ROOT.parent) as d:
             p = Path(d, "netlist.v")
             p.write_text('(* src = "rtl.v:12.1-13.9" *)\nwire [7:0] \\out ;\nwire _unused_;\n')
             self.assertEqual(build_legacy_gate_candidates.wire_sources(p), {"out": "rtl.v:12.1-13.9"})
@@ -105,7 +105,7 @@ class LocEvalTest(unittest.TestCase):
 
 class ExplanationTest(unittest.TestCase):
     def test_citations_must_match_original_rtl(self):
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(dir=ROOT.parent) as d:
             Path(d, "uart.v").write_text("assign rec_readyH = 1'b0;\n")
             claim = {"kind": "payload", "text": "The output is forced low.",
                      "evidence": [{"file": "uart.v", "line": 1, "quote": "rec_readyH = 1'b0"}]}

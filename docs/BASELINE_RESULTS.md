@@ -11,6 +11,7 @@ All three models used the 42 samples from 21 paired benchmarks, the same three c
 The full per-fold outputs, predictions, summaries, checkpoints, and node attention arrays are in the local `runs/legacy_*` folders (excluded from Git). All 42 fusion attention arrays include node names and graph IDs; their node dimensions were checked against the saved name lists and earlier metadata.
 
 Portable prediction and summary JSONs, along with hashes of the exact input manifests and data ZIP, are in `results/legacy_baselines/` so the table can be recomputed without the model checkpoints.
+`python pipeline/verify_artifact.py` checks those hashes, fold membership, every prediction, and the recomputed metrics. The subsequent training-code fix to preserve per-sample class weights does not change this pilot's weighting: each training fold has equal clean and Trojan samples, so both class weights are 1.
 
 ## Interpretation
 

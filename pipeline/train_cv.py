@@ -1,6 +1,8 @@
-"""Group-held-out CV for rtl | gnn | fusion with identical folds, seeds, loss and schedule.
-Usage: python train_cv.py --model {rtl,gnn,fusion} [--epochs 25] [--pool meanmax] [--tag name]
-Test folds are used once, after training; nothing is selected on test data.
+"""Exploratory group-held-out CV for RTL, GNN, and fusion detection.
+
+Usage: python train_cv.py --model {rtl,gnn,fusion} [--dataset legacy] [--epochs 25]
+The published folds have already been inspected; they are development evidence,
+not a fresh final test set for later model selection.
 """
 import argparse
 import io
@@ -122,7 +124,10 @@ def main():
                     _, g, r = load(s)
                     opt.zero_grad(set_to_none=True)
                     o = model(g.to(dev), r.to(dev))
-                    loss = F.cross_entropy(o["logits"], torch.tensor([s["label"]], device=dev), weight=w)
+                    # With one item, weighted cross entropy's default mean reduction
+                    # divides by that same item's weight and cancels it. Sum retains it.
+                    loss = F.cross_entropy(o["logits"], torch.tensor([s["label"]], device=dev),
+                                           weight=w, reduction="sum")
                     loss.backward()
                     torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                     opt.step()
@@ -159,7 +164,8 @@ def main():
 
     (out / "predictions.json").write_text(json.dumps(preds, indent=2))
     summary = summarize_predictions(preds)
-    (out / "summary.json").write_text(json.dumps({"args": vars(a), "seed": C.SEED, **summary}, indent=2))
+    (out / "summary.json").write_text(json.dumps({"evaluation_status": "exploratory_pilot",
+                                                   "args": vars(a), "seed": C.SEED, **summary}, indent=2))
     for k, v in summary.items():
         print(k, {m: (round(x, 4) if isinstance(x, float) else x) for m, x in v.items()})
 

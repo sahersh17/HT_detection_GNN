@@ -1,8 +1,10 @@
-# Preregistered evaluation protocol (no results yet)
+# Prospective evaluation protocol
+
+This protocol was written after the first 42-sample pilot results were inspected. It is **not preregistered** and the existing three folds are development evidence, not an untouched final test. Record any future changes to models, prompts, thresholds, and exclusions before obtaining new held-out designs. Freeze the final test set and scoring script before running a final comparison.
 
 ## Dataset and splits
 
-Use the 21 paired variants in `data/integrated/paired_manifest.json` for comparisons requiring clean and Trojan sides. Keep all variants sharing identical clean RTL in one fold, as in `group_folds.json`. Report both sample count and number of independent source groups. Do not tune hyperparameters, thresholds, prompts, or localization top-k values on held-out folds. Keep the benchmark descriptions hidden from model inputs.
+Use the 21 paired variants in `data/integrated/paired_manifest.json` for pilot comparisons requiring clean and Trojan sides. Keep all variants sharing identical clean RTL in one fold, as in `group_folds.json`. Report both sample count and number of independent source groups. Develop on the current data, then acquire genuinely new host designs and reserve some as an untouched external test. Do not tune hyperparameters, thresholds, prompts, or localization top-k values on that external test. Keep the benchmark descriptions hidden from model inputs.
 
 ## Detection prerequisite
 
