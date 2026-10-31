@@ -33,10 +33,10 @@ def _same_metrics(saved, calculated):
     return True
 
 
-def verify(root):
+def verify(root, pilot_name="legacy_baselines"):
     root = Path(root)
     errors = []
-    pilot = root / "results" / "legacy_baselines"
+    pilot = root / "results" / pilot_name
     provenance = json.loads((pilot / "provenance.json").read_text(encoding="utf-8"))
     samples = json.loads((root / "data" / "integrated" / "paired_manifest.json").read_text(encoding="utf-8"))["samples"]
     folds = json.loads((root / "data" / "integrated" / "group_folds.json").read_text(encoding="utf-8"))["folds"]
@@ -68,7 +68,8 @@ def verify(root):
         errors.append("test folds do not cover every benchmark exactly once")
 
     model_metrics = {}
-    for model in ("rtl", "gnn", "fusion"):
+    models = ("rtl", "gnn", "fusion", "length", "graph_size") if pilot_name == "provenance_clean_pilot" else ("rtl", "gnn", "fusion")
+    for model in models:
         folder = pilot / model
         rows = json.loads((folder / "predictions.json").read_text(encoding="utf-8"))
         saved = json.loads((folder / "summary.json").read_text(encoding="utf-8"))
@@ -89,7 +90,7 @@ def verify(root):
             if split not in saved or not _same_metrics(saved[split], value):
                 errors.append(f"{model}: saved {split} metrics disagree with predictions")
         model_metrics[model] = calculated["pooled"]
-    return {"status": "verified" if not errors else "failed", "evaluation_status": "exploratory_pilot",
+    return {"status": "verified" if not errors else "failed", "evaluation_status": provenance.get("evaluation_status", "exploratory_pilot"),
             "samples": len(samples), "benchmarks": len(test_fold),
             "independent_clean_source_groups": len({s["source_text_sha256"] for s in samples if s["label"] == 0}),
             "models": {name: {"balanced_accuracy": metrics["balanced_accuracy"], "macro_f1": metrics["macro_f1"]}
@@ -99,8 +100,9 @@ def verify(root):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument("--pilot", choices=["legacy_baselines", "provenance_pilot", "provenance_clean_pilot"], default="legacy_baselines")
     args = parser.parse_args()
-    result = verify(args.root)
+    result = verify(args.root, args.pilot)
     print(json.dumps(result, indent=2))
     raise SystemExit(0 if result["status"] == "verified" else 1)
 

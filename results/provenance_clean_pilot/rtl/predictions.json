@@ -1,0 +1,296 @@
+[
+  {
+    "fold": 1,
+    "benchmark": "AES-T100",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T100",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1000",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1000",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1100",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1100",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1200",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1200",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1600",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1600",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.999963641166687
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1700",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1700",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.9999958276748657
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T200",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T200",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T400",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T400",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.9273194670677185
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T700",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T700",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T800",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T800",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T900",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 3.355425803874823e-08
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T900",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2300",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 2.4354492325073807e-06
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2300",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.15166233479976654
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2400",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 2.4354492325073807e-06
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2400",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.15045297145843506
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2500",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 2.4354492325073807e-06
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2500",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.8334550857543945
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2600",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 2.4354492325073807e-06
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2600",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.9001339077949524
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2700",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 2.4354492325073807e-06
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2700",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.8891802430152893
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2800",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 2.4354492325073807e-06
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2800",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.9246732592582703
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2100",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2100",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2200",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2200",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2300",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2300",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2400",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2400",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 1.0
+  }
+]

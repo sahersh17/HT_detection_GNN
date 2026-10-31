@@ -1,0 +1,296 @@
+[
+  {
+    "fold": 1,
+    "benchmark": "AES-T100",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T100",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.49995267391204834
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1000",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1000",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4980796277523041
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1100",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1100",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5010635256767273
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1200",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1200",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5078128576278687
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1600",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1600",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5161851048469543
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1700",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T1700",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.552532434463501
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T200",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T200",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5000666379928589
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T400",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T400",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5175296664237976
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T700",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T700",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4992470145225525
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T800",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T800",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5082731246948242
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T900",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49936550855636597
+  },
+  {
+    "fold": 1,
+    "benchmark": "AES-T900",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5089333653450012
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2300",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5275495648384094
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2300",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5877231359481812
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2400",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5275495648384094
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2400",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5944044589996338
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2500",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5275495648384094
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2500",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5278882384300232
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2600",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5275495648384094
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2600",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5530709028244019
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2700",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5275495648384094
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2700",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5282947421073914
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2800",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5275495648384094
+  },
+  {
+    "fold": 2,
+    "benchmark": "AES-T2800",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5566129684448242
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2100",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.9489133954048157
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2100",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.9589756727218628
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2200",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.9489133954048157
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2200",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.945006251335144
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2300",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.9489133954048157
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2300",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.9446800947189331
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2400",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.9489133954048157
+  },
+  {
+    "fold": 3,
+    "benchmark": "RS232-T2400",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.9600511193275452
+  }
+]

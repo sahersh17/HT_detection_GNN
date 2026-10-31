@@ -1,0 +1,9 @@
+# Held-out-family diagnostic protocol, frozen before model evaluation
+
+Status as of 2026-10-31: graph sources and extraction were inspected, but no model predictions on these families have yet been inspected. This is a **small diagnostic**, not an adequately powered final external test.
+
+Train on the original 21 paired variants (17 AES, four RS232), using the new `provenance_v1` graphs and testbench-free CodeBERT embeddings. Test on all five separate paired variants: `memctrl-T100` and `PIC16F84-T100/T200/T300/T400`. The five variants represent only two new clean source designs. Neither clean nor Trojan side of those designs may enter training or preprocessing fit for a model. The shared gate-class vocabulary is the fixed, label-free 15-class mapping from `trusthub/features/gate_vocab.json`.
+
+Run four fixed models with seed 42: (1) RTL-only masked-mean CodeBERT chunks followed by mean/max pooling, train-set standardization, and a linear classifier; (2) two-layer GCN graph classifier with 64 hidden units; (3) the same 64-unit cross-attention fusion architecture; (4) a shortcut control using only log character count and log line count of synthesizable RTL with a linear classifier. GNN and fusion use AdamW, learning rate 3e-4, weight decay 1e-3, 25 epochs, fixed 0.5 threshold, and no external-design tuning. Evaluate all ten test samples once. Report pooled and per-family confusion matrices, balanced accuracy, macro F1, AUROC, and every prediction. Do not choose a model or threshold after seeing this diagnostic and then call it an untouched test.
+
+The external source families have no reviewed gate labels, so this diagnostic supports **detection only**. The source-to-gate candidates remain unreviewed. A publication claim of localization or explanation usefulness requires a separate validated benchmark and, for usefulness, blinded hardware-engineer assessment.

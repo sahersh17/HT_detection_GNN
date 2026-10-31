@@ -1,0 +1,70 @@
+{
+  "evaluation_status": "exploratory_pilot",
+  "args": {
+    "model": "rtl",
+    "epochs": 25,
+    "lr": 0.0003,
+    "wd": 0.001,
+    "hidden": 64,
+    "pool": "meanmax",
+    "tag": null,
+    "dataset": "provenance_clean"
+  },
+  "seed": 42,
+  "pooled": {
+    "n": 42,
+    "tn": 17,
+    "fp": 4,
+    "fn": 2,
+    "tp": 19,
+    "accuracy": 0.8571428571428571,
+    "balanced_accuracy": 0.8571428571428572,
+    "precision": 0.8260869565217391,
+    "recall": 0.9047619047619048,
+    "fpr": 0.19047619047619047,
+    "macro_f1": 0.8568181818181819,
+    "auroc": 0.8639455782312925
+  },
+  "fold_1": {
+    "n": 22,
+    "tn": 11,
+    "fp": 0,
+    "fn": 0,
+    "tp": 11,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fpr": 0.0,
+    "macro_f1": 1.0,
+    "auroc": 1.0
+  },
+  "fold_2": {
+    "n": 12,
+    "tn": 6,
+    "fp": 0,
+    "fn": 2,
+    "tp": 4,
+    "accuracy": 0.8333333333333334,
+    "balanced_accuracy": 0.8333333333333333,
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "fpr": 0.0,
+    "macro_f1": 0.8285714285714285,
+    "auroc": 1.0
+  },
+  "fold_3": {
+    "n": 8,
+    "tn": 0,
+    "fp": 4,
+    "fn": 0,
+    "tp": 4,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.5,
+    "recall": 1.0,
+    "fpr": 1.0,
+    "macro_f1": 0.3333333333333333,
+    "auroc": 0.5
+  }
+}

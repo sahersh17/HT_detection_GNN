@@ -1,6 +1,6 @@
-# Hardware Trojan Detection with GNN–LLM Fusion
+# Hardware Trojan Detection and Source-Traced Graph Research
 
-This research project combines circuit structure from gate-level netlists with RTL source-code embeddings to classify hardware designs as clean or Trojan-inserted. The intended next step is to evaluate whether the model can also identify suspicious gates. That localization result has not yet been validated.
+This research project combines gate graphs with RTL embeddings to classify hardware designs as clean or Trojan-inserted. It also rebuilds graphs with an ordered gate-to-RTL source map for future localization research. **The detection results are exploratory; gate localization and explanation accuracy have no reviewed ground truth.** The held-out-family diagnostic currently provides no evidence that the model generalizes to new host designs. See [current results](docs/CURRENT_RESULTS.md).
 
 ## Why combine the two views?
 
@@ -23,16 +23,30 @@ The graph pipeline synthesizes Verilog with Yosys, parses each netlist, connects
 
 The new AES graphs are much larger than the earlier graphs, at roughly 240,000 nodes each. Full GNN and fusion training needs substantial memory and is best run with a GPU.
 
-## Run the integrated comparison
+## Source-traced graph rebuild
 
-The completed, smaller-graph pilot can be checked without rerunning training:
+The separate `provenance_v1` graph version can be rebuilt on Windows with the pinned YoWASP Yosys package:
+
+```powershell
+& .\trusthub\venv\Scripts\python.exe pipeline\provenance\build.py --all-paired
+& .\trusthub\venv\Scripts\python.exe pipeline\provenance\verify.py runs\provenance_v1
+& .\trusthub\venv\Scripts\python.exe pipeline\provenance\export_review.py runs\provenance_v1\AES-T100\trojan
+```
+
+The rebuilt graphs, Yosys JSON, and reviewer sheets are stored in gitignored `runs/provenance_v1/`. All 42 rebuilt graphs passed reconstruction and row-alignment checks. Their source spans are automatic and their Trojan candidates are unreviewed; see [`docs/ANNOTATION_GUIDE.md`](docs/ANNOTATION_GUIDE.md). This graph version uses a different synthesis flow from both earlier datasets, so its metadata cannot be transferred to either of them.
+
+## Reproduce and check the research artifacts
+
+The saved exploratory results can be checked without rerunning training:
 
 ```powershell
 & .\trusthub\venv\Scripts\python.exe pipeline\verify_artifact.py
+& .\trusthub\venv\Scripts\python.exe pipeline\verify_artifact.py --pilot provenance_clean_pilot
+& .\trusthub\venv\Scripts\python.exe pipeline\provenance\publish_external.py --verify
 & .\trusthub\venv\Scripts\python.exe -m unittest discover -s pipeline\tests
 ```
 
-The verifier checks manifest membership, clean-source grouping, saved predictions and metrics, and hashes of the recorded inputs. It requires the local data ZIP. It verifies artifact integrity, not scientific accuracy or localization. To reproduce the pilot training, use `--dataset legacy` with each model; the large-graph commands below target the newer data and have not been completed on this machine.
+The verifiers check sample membership, saved metrics, and hashes of local inputs. They establish artifact integrity, not scientific validity. The source-traced pilot uses `--dataset provenance_clean` for each model. Its CodeBERT embeddings exclude testbenches and save chunk-to-line spans. To rebuild them, run `pipeline/provenance/embed_rtl.py` and `pipeline/provenance/verify_rtl.py` in the project Python environment.
 
 Use the Python environment in `trusthub/venv` with PyTorch and PyTorch Geometric. From the repository root on Windows:
 
@@ -45,19 +59,19 @@ Use the Python environment in `trusthub/venv` with PyTorch and PyTorch Geometric
 & .\trusthub\venv\Scripts\python.exe pipeline\report.py rtl=runs\rtl\predictions.json gnn=runs\gnn\predictions.json fusion=runs\fusion\predictions.json
 ```
 
-`prepare_data.py` extracts the small embedding files and leaves the graphs compressed. All three models use the same evaluation folds. Folds group benchmarks that share identical clean RTL text, preventing those repeated clean sources from appearing in both training and test sets. The integrated data audit, packaged tests, RTL-only training, and small-graph model forward passes have been run locally. Full GNN and fusion cross-validation remains unverified.
+`prepare_data.py` extracts the small embedding files and leaves the graphs compressed. All three models use the same evaluation folds. Folds group benchmarks that share identical clean RTL text, preventing those repeated clean sources from appearing in both training and test sets. Full cross-validation on the supplied ~240,000-node graph tensors remains unverified. The new source-traced graphs are a separate version with different node order and topology.
 
 ## Robustness and localization
 
 `trusthub/scripts/check_leakage.py` checks for label clues in graph metadata. The integrated audit additionally checks graph/embedding shapes, labels, and fold overlap. The supplied newer archive does not include source-attributed node mappings needed to establish Trojan-gate ground truth. The `pipeline/localization/` utilities can compare original clean and Trojan RTL and evaluate node rankings once source-attributed synthesis and node alignment are available. Attention scores alone are candidate explanations, not verified Trojan locations.
 
-An obfuscated held-out evaluation set and full three-model comparison on the newer graphs remain research work.
+The separate source-traced development comparison and a ten-sample diagnostic on memory-controller and PIC16F84 hosts have been run. The development set has only three clean-source groups; the diagnostic has only two new clean host designs. [Current results](docs/CURRENT_RESULTS.md) include an RTL-length control that scores strongly on development folds, so apparent detection accuracy can reflect dataset shortcuts. An obfuscated held-out evaluation set and full comparison on the supplied newer graphs remain research work.
 
 The current localization evidence audit and exact missing inputs are documented in [`docs/LOCALIZATION_STATUS.md`](docs/LOCALIZATION_STATUS.md). The candidate RTL changes and source descriptions for all 21 paired benchmarks are in `data/localization_reference/`; they are not yet reviewed ground truth.
 
-An exploratory comparison on the earlier graphs is recorded in [`docs/BASELINE_RESULTS.md`](docs/BASELINE_RESULTS.md). Fusion did not outperform the RTL-only baseline on those held-out source groups.
+An exploratory comparison on the earlier graphs is recorded in [`docs/BASELINE_RESULTS.md`](docs/BASELINE_RESULTS.md); keep its graph and embedding versions separate from the source-traced experiment.
 
-For the publication strategy, explicit completion gates, and external inputs still needed, see [`docs/PUBLICATION_ROADMAP.md`](docs/PUBLICATION_ROADMAP.md). The protocol in [`docs/EVALUATION_PROTOCOL.md`](docs/EVALUATION_PROTOCOL.md) is prospective; the existing pilot folds have already been inspected and cannot serve as an untouched final test.
+For the publication strategy, explicit completion gates, and external inputs still needed, see [`docs/PUBLICATION_ROADMAP.md`](docs/PUBLICATION_ROADMAP.md). The protocol in [`docs/EVALUATION_PROTOCOL.md`](docs/EVALUATION_PROTOCOL.md) is prospective; the existing pilot folds and the two-host diagnostic have already been inspected. An evidence-bounded [working paper draft](paper/WORKING_DRAFT.md) records the negative transfer result and the missing validation needed before submission.
 
 ## Contributors
 

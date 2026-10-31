@@ -1,0 +1,64 @@
+{
+  "evaluation_status": "exploratory_sanity_check",
+  "features": [
+    "log1p graph nodes",
+    "log1p graph edges"
+  ],
+  "seed": 42,
+  "pooled": {
+    "n": 42,
+    "tn": 4,
+    "fp": 17,
+    "fn": 10,
+    "tp": 11,
+    "accuracy": 0.35714285714285715,
+    "balanced_accuracy": 0.35714285714285715,
+    "precision": 0.39285714285714285,
+    "recall": 0.5238095238095238,
+    "fpr": 0.8095238095238095,
+    "macro_f1": 0.3387755102040816,
+    "auroc": 0.5555555555555556
+  },
+  "fold_1": {
+    "n": 22,
+    "tn": 0,
+    "fp": 11,
+    "fn": 6,
+    "tp": 5,
+    "accuracy": 0.22727272727272727,
+    "balanced_accuracy": 0.22727272727272727,
+    "precision": 0.3125,
+    "recall": 0.45454545454545453,
+    "fpr": 1.0,
+    "macro_f1": 0.18518518518518515,
+    "auroc": 0.45454545454545453
+  },
+  "fold_2": {
+    "n": 12,
+    "tn": 0,
+    "fp": 6,
+    "fn": 0,
+    "tp": 6,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.5,
+    "recall": 1.0,
+    "fpr": 1.0,
+    "macro_f1": 0.3333333333333333,
+    "auroc": 0.5
+  },
+  "fold_3": {
+    "n": 8,
+    "tn": 4,
+    "fp": 0,
+    "fn": 4,
+    "tp": 0,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "fpr": 0.0,
+    "macro_f1": 0.3333333333333333,
+    "auroc": 0.5
+  }
+}

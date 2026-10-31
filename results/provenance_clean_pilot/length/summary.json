@@ -1,0 +1,64 @@
+{
+  "evaluation_status": "exploratory_sanity_check",
+  "features": [
+    "log1p RTL characters",
+    "log1p RTL lines"
+  ],
+  "seed": 42,
+  "pooled": {
+    "n": 42,
+    "tn": 21,
+    "fp": 0,
+    "fn": 9,
+    "tp": 12,
+    "accuracy": 0.7857142857142857,
+    "balanced_accuracy": 0.7857142857142857,
+    "precision": 1.0,
+    "recall": 0.5714285714285714,
+    "fpr": 0.0,
+    "macro_f1": 0.7754010695187166,
+    "auroc": 0.8276643990929705
+  },
+  "fold_1": {
+    "n": 22,
+    "tn": 11,
+    "fp": 0,
+    "fn": 0,
+    "tp": 11,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fpr": 0.0,
+    "macro_f1": 1.0,
+    "auroc": 1.0
+  },
+  "fold_2": {
+    "n": 12,
+    "tn": 6,
+    "fp": 0,
+    "fn": 5,
+    "tp": 1,
+    "accuracy": 0.5833333333333334,
+    "balanced_accuracy": 0.5833333333333334,
+    "precision": 1.0,
+    "recall": 0.16666666666666666,
+    "fpr": 0.0,
+    "macro_f1": 0.49579831932773105,
+    "auroc": 1.0
+  },
+  "fold_3": {
+    "n": 8,
+    "tn": 4,
+    "fp": 0,
+    "fn": 4,
+    "tp": 0,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "fpr": 0.0,
+    "macro_f1": 0.3333333333333333,
+    "auroc": 0.5
+  }
+}

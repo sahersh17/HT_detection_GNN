@@ -1,0 +1,70 @@
+{
+  "evaluation_status": "exploratory_pilot",
+  "args": {
+    "model": "fusion",
+    "epochs": 25,
+    "lr": 0.0003,
+    "wd": 0.001,
+    "hidden": 64,
+    "pool": "meanmax",
+    "tag": null,
+    "dataset": "provenance_clean"
+  },
+  "seed": 42,
+  "pooled": {
+    "n": 42,
+    "tn": 21,
+    "fp": 0,
+    "fn": 0,
+    "tp": 21,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fpr": 0.0,
+    "macro_f1": 1.0,
+    "auroc": 1.0
+  },
+  "fold_1": {
+    "n": 22,
+    "tn": 11,
+    "fp": 0,
+    "fn": 0,
+    "tp": 11,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fpr": 0.0,
+    "macro_f1": 1.0,
+    "auroc": 1.0
+  },
+  "fold_2": {
+    "n": 12,
+    "tn": 6,
+    "fp": 0,
+    "fn": 0,
+    "tp": 6,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fpr": 0.0,
+    "macro_f1": 1.0,
+    "auroc": 1.0
+  },
+  "fold_3": {
+    "n": 8,
+    "tn": 4,
+    "fp": 0,
+    "fn": 0,
+    "tp": 4,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fpr": 0.0,
+    "macro_f1": 1.0,
+    "auroc": 1.0
+  }
+}
