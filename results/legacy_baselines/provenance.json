@@ -1,0 +1,12 @@
+{
+  "dataset": "legacy graph tensors + 2026-10-31 CodeBERT embeddings",
+  "seed": 42,
+  "folds": 3,
+  "paired_samples": 42,
+  "hashes": {
+    "data/integrated/paired_manifest.json": "daa9cf4fae79bbd13ead0fbce20cbcb20b732f9c54f2d3a843578acd1fe8033b",
+    "data/integrated/group_folds.json": "028035c37a1210332d4263b3886836036a0ad4ab3399e25805b502518ceb6605",
+    "trusthub/features/manifest.json": "3faa9342a51adfcb7df81417d7e57a8603311c518c2bbfa25725b30e8e63ee26",
+    "data/HT_data_2026-10-31_b40cc08.zip": "aebdc5e90fc2f70ed2168b554ed54fb2b5501ca3ec09dabc2ef6b9405ba0044c"
+  }
+}

@@ -35,8 +35,9 @@ The explanation citation validator in `pipeline/explanations/validate.py` reject
 
 ## Claim gate
 
-- Detection: RTL-only training and data audits have run; complete GNN/fusion cross-validation on the large AES graphs is outstanding.
+- Detection: a three-model comparison has now run on the earlier, smaller graphs with the new CodeBERT embeddings; see `docs/BASELINE_RESULTS.md`. Fusion did not improve on the RTL-only baseline. Full cross-validation on the newer ~240,000-node AES graphs remains outstanding.
 - RTL localization: changed-line candidates exist, but have not been manually validated against Trojan behavior.
 - Gate localization: no valid metrics can be reported until node mappings and reviewed labels exist.
 - Explanations: benchmark descriptions can serve as held-out references, not as inference input. Trigger, payload, location, and fix claims need evidence-linked evaluation; no explanation accuracy or engineer-study result exists yet.
+- RTL chunk alignment: the packaged CodeBERT tensors contain chunk embeddings but no token-to-line offsets. Cross-attention can rank chunks, but it cannot identify exact RTL lines from those tensors alone. Regenerate and save tokenizer overflow offsets alongside embeddings before claiming attention-based line localization.
 - Robustness: no obfuscated test set is present in this repository. It must be supplied or generated under a documented, held-out protocol.

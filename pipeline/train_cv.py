@@ -17,14 +17,18 @@ from metrics import summarize_predictions
 _SAFE = None
 
 
-def load_graph(z, names, key):
+def _safe_classes():
     global _SAFE
     if _SAFE is None:
         from torch_geometric.data import Data
         from torch_geometric.data.data import DataEdgeAttr, DataTensorAttr
         from torch_geometric.data.storage import GlobalStorage
         _SAFE = [Data, DataEdgeAttr, DataTensorAttr, GlobalStorage]
-    with torch.serialization.safe_globals(_SAFE):
+    return _SAFE
+
+
+def load_graph(z, names, key):
+    with torch.serialization.safe_globals(_safe_classes()):
         g = torch.load(io.BytesIO(z.read(names[key.replace("\\", "/")])), map_location="cpu", weights_only=True)
     g.x, g.edge_index = g.x.float(), g.edge_index.long()
     return g
@@ -49,20 +53,31 @@ def main():
     ap.add_argument("--hidden", type=int, default=64)
     ap.add_argument("--pool", default="meanmax", choices=["mean", "max", "meanmax"])
     ap.add_argument("--tag", default=None)
+    ap.add_argument("--dataset", default="new", choices=["new", "legacy"],
+                    help="legacy uses the smaller trusthub/features graphs with ordered metadata")
     a = ap.parse_args()
 
     dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    tag = a.tag or a.model
+    tag = a.tag or (a.model if a.dataset == "new" else f"legacy_{a.model}")
     out = C.RUNS / tag
     out.mkdir(parents=True, exist_ok=True)
     samples = json.loads(C.PAIRED_MANIFEST.read_text(encoding="utf-8"))["samples"]
     folds = json.loads(C.FOLDS.read_text(encoding="utf-8"))["folds"]
-    z = zipfile.ZipFile(C.GRAPH_ZIP)
-    names = {n.replace("\\", "/"): n for n in z.namelist()}
+    z = zipfile.ZipFile(C.GRAPH_ZIP) if a.dataset == "new" else None
+    names = {n.replace("\\", "/"): n for n in z.namelist()} if z else None
 
     def load(s):
         rtl = torch.load(C.EMB_ROOT / s["rtl_embedding_path"], map_location="cpu", weights_only=True).float()
-        g = load_graph(z, names, s["graph_archive_path"]) if a.model != "rtl" else None
+        g = None
+        if a.model != "rtl":
+            if a.dataset == "new":
+                g = load_graph(z, names, s["graph_archive_path"])
+            else:
+                side = s["class_name"] if s["family"] == "AES" else ("tjfree" if s["label"] == 0 else "tjin")
+                path = C.ROOT / "trusthub" / "features" / "data" / s["family"] / s["benchmark"] / f"{side}_netlist.pt"
+                with torch.serialization.safe_globals(_safe_classes()):
+                    g = torch.load(path, map_location="cpu", weights_only=True)
+                g.x, g.edge_index = g.x.float(), g.edge_index.long()
         return s, g, rtl
 
     preds = []
@@ -125,6 +140,15 @@ def main():
                     o = model(g.to(dev), r.to(dev))
                     probs.append(float(torch.softmax(o["logits"], -1)[0, 1]))
                     arrays = {"node_embeddings": o["node_embeddings"].cpu().numpy()}
+                    if a.dataset == "legacy":
+                        side = s["class_name"] if s["family"] == "AES" else ("tjfree" if s["label"] == 0 else "tjin")
+                        metadata_path = (C.ROOT / "trusthub" / "features" / "metadata" / s["family"] /
+                                         s["benchmark"] / f"{side}_netlist.json")
+                        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+                        if metadata["num_nodes"] != g.num_nodes or metadata["graph_id"] != g.graph_id:
+                            raise ValueError(f"Node metadata does not match graph: {s['benchmark']}")
+                        arrays["node_names"] = np.asarray(metadata["node_names"])
+                        arrays["graph_id"] = np.asarray(g.graph_id)
                     if "rtl_to_graph_attention" in o:
                         arrays["rtl_to_graph_attention"] = o["rtl_to_graph_attention"].cpu().numpy()
                         arrays["graph_to_rtl_attention"] = o["graph_to_rtl_attention"].cpu().numpy()

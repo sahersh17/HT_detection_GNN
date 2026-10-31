@@ -46,6 +46,8 @@ An obfuscated held-out evaluation set and full three-model comparison remain res
 
 The current localization evidence audit and exact missing inputs are documented in [`docs/LOCALIZATION_STATUS.md`](docs/LOCALIZATION_STATUS.md). The candidate RTL changes and source descriptions for all 21 paired benchmarks are in `data/localization_reference/`; they are not yet reviewed ground truth.
 
+An exploratory comparison on the earlier graphs is recorded in [`docs/BASELINE_RESULTS.md`](docs/BASELINE_RESULTS.md). Fusion did not outperform the RTL-only baseline on those held-out source groups.
+
 ## Contributors
 
 | Contributor | GitHub |

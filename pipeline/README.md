@@ -6,4 +6,6 @@ Run the commands in the [repository README](../README.md) from the repository ro
 
 The graph and fusion models are computationally demanding because the AES graphs have roughly 240,000 nodes. Run full training on a machine with enough memory and preferably a GPU. The RTL-only baseline and small-graph forward passes have been exercised locally; the full graph/fusion cross-validation is still unverified.
 
+For an exploratory comparison on the earlier, smaller graphs with ordered node metadata, add `--dataset legacy` to each `train_cv.py` command. This writes separate `runs/legacy_*` outputs. The completed three-model comparison and its limitations are in `docs/BASELINE_RESULTS.md`.
+
 The localization utilities require original RTL and source-attributed synthesis output. The supplied data archive does not provide verified node-level ground truth.

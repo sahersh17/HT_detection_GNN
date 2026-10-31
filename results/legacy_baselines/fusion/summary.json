@@ -1,0 +1,69 @@
+{
+  "args": {
+    "model": "fusion",
+    "epochs": 25,
+    "lr": 0.0003,
+    "wd": 0.001,
+    "hidden": 64,
+    "pool": "meanmax",
+    "tag": null,
+    "dataset": "legacy"
+  },
+  "seed": 42,
+  "pooled": {
+    "n": 42,
+    "tn": 17,
+    "fp": 4,
+    "fn": 17,
+    "tp": 4,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.5,
+    "recall": 0.19047619047619047,
+    "fpr": 0.19047619047619047,
+    "macro_f1": 0.4470219435736677,
+    "auroc": 0.3854875283446712
+  },
+  "fold_1": {
+    "n": 22,
+    "tn": 11,
+    "fp": 0,
+    "fn": 11,
+    "tp": 0,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "fpr": 0.0,
+    "macro_f1": 0.3333333333333333,
+    "auroc": 0.0
+  },
+  "fold_2": {
+    "n": 12,
+    "tn": 6,
+    "fp": 0,
+    "fn": 6,
+    "tp": 0,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "fpr": 0.0,
+    "macro_f1": 0.3333333333333333,
+    "auroc": 0.6666666666666666
+  },
+  "fold_3": {
+    "n": 8,
+    "tn": 0,
+    "fp": 4,
+    "fn": 0,
+    "tp": 4,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.5,
+    "recall": 1.0,
+    "fpr": 1.0,
+    "macro_f1": 0.3333333333333333,
+    "auroc": 0.75
+  }
+}
