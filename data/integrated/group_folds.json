@@ -1,0 +1,88 @@
+{
+  "folds": [
+    {
+      "fold": 1,
+      "train_benchmarks": [
+        "AES-T2300",
+        "AES-T2400",
+        "AES-T2500",
+        "AES-T2600",
+        "AES-T2700",
+        "AES-T2800",
+        "RS232-T2100",
+        "RS232-T2200",
+        "RS232-T2300",
+        "RS232-T2400"
+      ],
+      "test_benchmarks": [
+        "AES-T100",
+        "AES-T1000",
+        "AES-T1100",
+        "AES-T1200",
+        "AES-T1600",
+        "AES-T1700",
+        "AES-T200",
+        "AES-T400",
+        "AES-T700",
+        "AES-T800",
+        "AES-T900"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_benchmarks": [
+        "AES-T100",
+        "AES-T1000",
+        "AES-T1100",
+        "AES-T1200",
+        "AES-T1600",
+        "AES-T1700",
+        "AES-T200",
+        "AES-T400",
+        "AES-T700",
+        "AES-T800",
+        "AES-T900",
+        "RS232-T2100",
+        "RS232-T2200",
+        "RS232-T2300",
+        "RS232-T2400"
+      ],
+      "test_benchmarks": [
+        "AES-T2300",
+        "AES-T2400",
+        "AES-T2500",
+        "AES-T2600",
+        "AES-T2700",
+        "AES-T2800"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_benchmarks": [
+        "AES-T100",
+        "AES-T1000",
+        "AES-T1100",
+        "AES-T1200",
+        "AES-T1600",
+        "AES-T1700",
+        "AES-T200",
+        "AES-T2300",
+        "AES-T2400",
+        "AES-T2500",
+        "AES-T2600",
+        "AES-T2700",
+        "AES-T2800",
+        "AES-T400",
+        "AES-T700",
+        "AES-T800",
+        "AES-T900"
+      ],
+      "test_benchmarks": [
+        "RS232-T2100",
+        "RS232-T2200",
+        "RS232-T2300",
+        "RS232-T2400"
+      ]
+    }
+  ]
+}
