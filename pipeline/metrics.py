@@ -17,12 +17,24 @@ def _div(a, b):
 
 
 def auroc(y, score):
-    pos = [s for t, s in zip(y, score) if t == 1]
-    neg = [s for t, s in zip(y, score) if t == 0]
-    if not pos or not neg:
+    if len(y) != len(score):
+        raise ValueError("labels and scores must have equal length")
+    n_pos = sum(t == 1 for t in y)
+    n_neg = sum(t == 0 for t in y)
+    if not n_pos or not n_neg:
         return None
-    wins = sum((a > b) + 0.5 * (a == b) for a in pos for b in neg)
-    return wins / (len(pos) * len(neg))
+    # Rank-based Mann–Whitney statistic: O(N log N), including tied scores.
+    pairs = sorted(zip(score, y), key=lambda pair: pair[0])
+    rank_sum = 0.0
+    i = 0
+    while i < len(pairs):
+        j = i + 1
+        while j < len(pairs) and pairs[j][0] == pairs[i][0]:
+            j += 1
+        average_rank = (i + 1 + j) / 2
+        rank_sum += average_rank * sum(label == 1 for _, label in pairs[i:j])
+        i = j
+    return (rank_sum - n_pos * (n_pos + 1) / 2) / (n_pos * n_neg)
 
 
 def summarize(y, p, prob=None):

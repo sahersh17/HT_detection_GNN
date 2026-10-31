@@ -8,11 +8,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "localization"))
+sys.path.insert(0, str(ROOT / "explanations"))
 
 import metrics
 import rtl_diff
 import label_nodes
 import eval_loc
+import score_localization
+from validate import validate as validate_explanation
 
 
 class MetricsTest(unittest.TestCase):
@@ -54,8 +57,8 @@ class LabelTest(unittest.TestCase):
         }}}}
         diff = {"lines": {"aes.v": [3]}, "new_identifiers": ["trojan_counter"]}
         out = label_nodes.label(j, diff)
-        self.assertEqual(out["nodes"], {"c1": 1, "c2": 0, "trojan_counter_reg": 1})
-        self.assertEqual(out["coverage"]["trojan_by_name_only"], 1)
+        self.assertEqual(out["nodes"], {"c1": 1, "c2": 0, "trojan_counter_reg": -1})
+        self.assertEqual(out["coverage"]["name_candidates_only"], 1)
 
     def test_multi_range_src(self):
         self.assertEqual(label_nodes.src_ranges("a/b.v:12.3-14.5|c.v:7.1-7.9"), [("b.v", 12, 14), ("c.v", 7, 7)])
@@ -70,6 +73,37 @@ class LocEvalTest(unittest.TestCase):
         self.assertEqual(r["first_trojan_rank"], 1)
         self.assertAlmostEqual(r["random_precision"], 0.2)
         self.assertIsNone(eval_loc.evaluate([0.5] * 3, [0, 0, 0]))
+
+    def test_unknown_nodes_are_excluded(self):
+        r = eval_loc.evaluate([0.99, 0.1, 0.8], [-1, 0, 1], ks=(5,))
+        self.assertEqual(r["n_nodes"], 2)
+        self.assertEqual(r["n_unknown"], 1)
+        self.assertEqual(r["hit@5"], 1)
+        self.assertEqual(r["precision@5"], 0.5)
+        self.assertEqual(r["recall@5"], 1.0)
+        with self.assertRaises(ValueError):
+            eval_loc.evaluate([0.1], [0, 1])
+
+    def test_rejects_unreviewed_or_misaligned_gate_labels(self):
+        labels = {"graph_id": "g", "node_names": ["a", "b"], "labels": [0, 1],
+                  "reviewed": True, "source": "manual review"}
+        scores = {"graph_id": "g", "node_names": ["a", "b"], "scores": [0.1, 0.9]}
+        self.assertEqual(score_localization.score_one(labels, scores)["hit@1"], 1)
+        with self.assertRaises(ValueError):
+            score_localization.score_one({**labels, "reviewed": False}, scores)
+        with self.assertRaises(ValueError):
+            score_localization.score_one(labels, {**scores, "node_names": ["b", "a"]})
+
+
+class ExplanationTest(unittest.TestCase):
+    def test_citations_must_match_original_rtl(self):
+        with tempfile.TemporaryDirectory() as d:
+            Path(d, "uart.v").write_text("assign rec_readyH = 1'b0;\n")
+            claim = {"kind": "payload", "text": "The output is forced low.",
+                     "evidence": [{"file": "uart.v", "line": 1, "quote": "rec_readyH = 1'b0"}]}
+            self.assertTrue(validate_explanation({"claims": [claim]}, d)["valid_citations"])
+            bad = {**claim, "evidence": [{"file": "../outside.v", "line": 1, "quote": "x"}]}
+            self.assertFalse(validate_explanation({"claims": [bad]}, d)["valid_citations"])
 
 
 if __name__ == "__main__":

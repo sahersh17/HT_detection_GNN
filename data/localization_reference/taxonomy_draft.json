@@ -1,0 +1,193 @@
+{
+  "annotations": [
+    {
+      "benchmark": "AES-T100",
+      "trigger_type": "always_on",
+      "payload_type": "key_leakage_power_cdma",
+      "evidence_document": "trusthub/AES_unzipped/AES-T100/AES-T100/Readme.txt",
+      "evidence_sha256": "7f66cc140525aac05ab4f184aadd4e87da3ff67aeb38ff741ff2fe17b0ec538b",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T1000",
+      "trigger_type": "predefined_plaintext",
+      "payload_type": "key_leakage_power_cdma",
+      "evidence_document": "trusthub/AES_unzipped/AES-T1000/AES-T1000/Readme.txt",
+      "evidence_sha256": "f4532de66dc77212be236e4050f4544d08f85cc6b049ae3d6058fbdc0458e904",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T1100",
+      "trigger_type": "plaintext_sequence",
+      "payload_type": "key_leakage_power_cdma",
+      "evidence_document": "trusthub/AES_unzipped/AES-T1100/AES-T1100/Readme.txt",
+      "evidence_sha256": "1a63d94208f7481f2d45878058b03688e0e9f233afac5d5522cda212b618f9a5",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T1200",
+      "trigger_type": "encryption_count",
+      "payload_type": "key_leakage_power_cdma",
+      "evidence_document": "trusthub/AES_unzipped/AES-T1200/AES-T1200/Readme.txt",
+      "evidence_sha256": "b6170903e8af55b69f18177a3a8fa667b8c9e8142da1ca95c9fce6427f0d78eb",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T1600",
+      "trigger_type": "plaintext_sequence",
+      "payload_type": "key_leakage_rf",
+      "evidence_document": "trusthub/AES_unzipped/AES-T1600/AES-T1600/Readme.txt",
+      "evidence_sha256": "12b0002ba773829a618d31f67dc1668dd2d7696467d949f8992108ac87a821ca",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T1700",
+      "trigger_type": "encryption_count",
+      "payload_type": "key_leakage_rf",
+      "evidence_document": "trusthub/AES_unzipped/AES-T1700/AES-T1700/Readme.txt",
+      "evidence_sha256": "03dd843f0820ca3c5be937082347a3fb7b6fae852a2cda0e20851165e7824faf",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T200",
+      "trigger_type": "always_on",
+      "payload_type": "key_leakage_power_cdma",
+      "evidence_document": "trusthub/AES_unzipped/AES-T200/AES-T200/Readme.txt",
+      "evidence_sha256": "484a232928473e7d05d11ce44c80949f8c6cda8510393fbed09852c7be52e39d",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T2300",
+      "trigger_type": "two_signal_condition",
+      "payload_type": "ciphertext_bit_flip",
+      "evidence_document": "trusthub/AES_unzipped/AES-T2300/AES-T2300/Readme.txt",
+      "evidence_sha256": "2fa2c5ba6964c33da9531c66228a23ca0f7d3b0d1c1e87c9945b9c27f49681ff",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T2400",
+      "trigger_type": "two_signal_condition",
+      "payload_type": "ciphertext_bit_flip",
+      "evidence_document": "trusthub/AES_unzipped/AES-T2400/AES-T2400/Readme.txt",
+      "evidence_sha256": "5834ff297d1e623adf6e7113dca2fa2b43d5fdcd184a7fee60914b4b1d6689ab",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T2500",
+      "trigger_type": "synchronous_counter",
+      "payload_type": "ciphertext_bit_flip",
+      "evidence_document": "trusthub/AES_unzipped/AES-T2500/AES-T2500/Readme.txt",
+      "evidence_sha256": "09d81e658d1edb01f3528104e462a06f86b6986ec88e9f85d47c83baee9b22a7",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T2600",
+      "trigger_type": "asynchronous_counter",
+      "payload_type": "ciphertext_bit_flip",
+      "evidence_document": "trusthub/AES_unzipped/AES-T2600/AES-T2600/Readme.txt",
+      "evidence_sha256": "9947c5c3851e2193b05f1b0c5a85280b14dc684787da5fca4e92a955e1f0e5a3",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T2700",
+      "trigger_type": "cascaded_counters",
+      "payload_type": "ciphertext_bit_flip",
+      "evidence_document": "trusthub/AES_unzipped/AES-T2700/AES-T2700/Readme.txt",
+      "evidence_sha256": "af16abfaf0e70a7e5155cdd03a816509ee12277f9f457ab398076302f7f7ad87",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T2800",
+      "trigger_type": "counters_and_signals",
+      "payload_type": "ciphertext_bit_flip",
+      "evidence_document": "trusthub/AES_unzipped/AES-T2800/AES-T2800/Readme.txt",
+      "evidence_sha256": "7ad372f094fed7b6310f59d97099fe8bec024dc5b3e2b80f9499dbf15a2a4e2a",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T400",
+      "trigger_type": "predefined_plaintext",
+      "payload_type": "key_leakage_rf",
+      "evidence_document": "trusthub/AES_unzipped/AES-T400/AES-T400/Readme.txt",
+      "evidence_sha256": "40245b64b64ca605c8d056a5c02e958c495395d8467cb6d4be455cd69a3496f0",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T700",
+      "trigger_type": "predefined_plaintext",
+      "payload_type": "key_leakage_power_cdma",
+      "evidence_document": "trusthub/AES_unzipped/AES-T700/AES-T700/Readme.txt",
+      "evidence_sha256": "a8358a94152736363be517dfb66e43ee96e67983e9a203c03baa3f5771fa7fae",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T800",
+      "trigger_type": "plaintext_sequence",
+      "payload_type": "key_leakage_power_cdma",
+      "evidence_document": "trusthub/AES_unzipped/AES-T800/AES-T800/Readme.txt",
+      "evidence_sha256": "959aabbcbcba3440aa04cae4cf3154ca4e4e83f4ad25187d8bc8719fd1cc96cf",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "AES-T900",
+      "trigger_type": "encryption_count",
+      "payload_type": "key_leakage_power_cdma",
+      "evidence_document": "trusthub/AES_unzipped/AES-T900/AES-T900/Readme.txt",
+      "evidence_sha256": "5c83a882dc4d157c04815eb09395959688fb502b483fd71eaaa8d6a75dfee0d7",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "RS232-T2100",
+      "trigger_type": "rare_branch",
+      "payload_type": "ready_signal_suppressed",
+      "evidence_document": "trusthub/AES_unzipped/RS232-T2100/RS232-T2100/Readme.txt",
+      "evidence_sha256": "15260531f5f1bf85e829843efa34d705c11e720fef9a7ba016c864351400e41a",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "RS232-T2200",
+      "trigger_type": "state_machine_state",
+      "payload_type": "ready_signal_suppressed",
+      "evidence_document": "trusthub/AES_unzipped/RS232-T2200/RS232-T2200/Readme.txt",
+      "evidence_sha256": "26feff5438d3cef10e4ea6fd720a73bc039279767f2da4c60fa87d0b197bd221",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "RS232-T2300",
+      "trigger_type": "state_transition",
+      "payload_type": "ready_signal_suppressed",
+      "evidence_document": "trusthub/AES_unzipped/RS232-T2300/RS232-T2300/Readme.txt",
+      "evidence_sha256": "14bf9f172261c583f68f420189d224b37d039d39e047b81286733f5cfad1079e",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    },
+    {
+      "benchmark": "RS232-T2400",
+      "trigger_type": "branch_count",
+      "payload_type": "ready_signal_suppressed",
+      "evidence_document": "trusthub/AES_unzipped/RS232-T2400/RS232-T2400/Readme.txt",
+      "evidence_sha256": "24b42b9d3e8a4fe46e8cf3aaf880a109014cf5952f111d9900a43370c96aee3b",
+      "review_status": "draft_requires_hardware_expert_review",
+      "fix_reference": null
+    }
+  ]
+}

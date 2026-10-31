@@ -1,0 +1,16 @@
+{
+  "paired_benchmarks": 21,
+  "paired_samples": 42,
+  "families": {
+    "AES": 17,
+    "RS232": 4
+  },
+  "original_rtl_pairs": 21,
+  "rtl_diff_candidates": 21,
+  "benchmark_descriptions": 21,
+  "new_archive_node_metadata_files": 0,
+  "old_new_matching_node_counts": 0,
+  "gate_labels_verified": 0,
+  "gate_localization_evaluation_ready": false,
+  "reason": "The packaged PyG graphs have no node-name/source-location metadata; old metadata cannot be mapped to them by index."
+}

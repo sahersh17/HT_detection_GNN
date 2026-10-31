@@ -1,12 +1,10 @@
-"""Turn Trojan RTL lines into per-node ground truth for a netlist graph.
+"""Propose gate labels from RTL change lines and synthesis source attributes.
 
-Two evidence sources, reported separately so you can see what was actually covered:
-  1. src   - Yosys write_json cells carry attributes.src = "file.v:12.3-14.5" (kept only if synthesis does not strip
-             attributes and the cell survived techmap/abc with its provenance).
-  2. name  - node/cell/wire names that contain an identifier that exists only in the Trojan (e.g. trojan_counter).
+Cells without source attributes are unknown (-1). Matching a new identifier
+in a cell name is recorded as a review hint, never treated as ground truth.
 
 Usage: python label_nodes.py <yosys.json> <rtl_diff.json> <out.json> [--top MODULE]
-Output: {"nodes": {cell_name: 0/1}, "coverage": {...}}. Check coverage before trusting any localization number.
+Output: {"nodes": {cell_name: -1/0/1}, "coverage": {...}}.
 """
 import json
 import re
@@ -32,19 +30,24 @@ def label(yosys_json, diff, top=None):
     cells = mods[top]["cells"]
     idents = [i.lower() for i in diff["new_identifiers"]]
     nodes, by_src, by_name, with_src = {}, 0, 0, 0
+    name_candidates = []
     for name, cell in cells.items():
         ranges = src_ranges(cell.get("attributes", {}).get("src", ""))
         with_src += bool(ranges)
         hit_src = overlaps(ranges, diff["lines"])
         hit_name = any(i in name.lower() for i in idents)
         by_src += hit_src
-        by_name += (hit_name and not hit_src)
-        nodes[name] = int(hit_src or hit_name)
+        if hit_name and not hit_src:
+            by_name += 1
+            name_candidates.append(name)
+        nodes[name] = int(hit_src) if ranges else -1
     n = len(cells)
     return {"top": top, "nodes": nodes,
+            "name_candidates_for_review": name_candidates,
             "coverage": {"cells": n, "cells_with_src": with_src, "src_coverage": with_src / n if n else 0,
-                         "trojan_by_src": by_src, "trojan_by_name_only": by_name,
-                         "trojan_total": sum(nodes.values())}}
+                         "trojan_by_src": by_src, "name_candidates_only": by_name,
+                         "trojan_total": sum(v == 1 for v in nodes.values()),
+                         "unknown_cells": sum(v == -1 for v in nodes.values())}}
 
 
 def main(argv):

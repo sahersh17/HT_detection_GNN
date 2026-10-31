@@ -44,6 +44,8 @@ Use the Python environment in `trusthub/venv` with PyTorch and PyTorch Geometric
 
 An obfuscated held-out evaluation set and full three-model comparison remain research work.
 
+The current localization evidence audit and exact missing inputs are documented in [`docs/LOCALIZATION_STATUS.md`](docs/LOCALIZATION_STATUS.md). The candidate RTL changes and source descriptions for all 21 paired benchmarks are in `data/localization_reference/`; they are not yet reviewed ground truth.
+
 ## Contributors
 
 | Contributor | GitHub |
