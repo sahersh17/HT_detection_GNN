@@ -47,7 +47,9 @@ def cell_models(r):
     lib.write_text("\n".join(parts),encoding="utf-8")
     return [lib]
 def command(args,timeout=40):
-    p=subprocess.run(args,cwd=ROOT,text=True,errors="replace",capture_output=True,timeout=timeout)
+    # Keep any upstream simulation waveform in the run folder.
+    cwd=Path(args[-1]).parent if args[0]=="vvp" else ROOT
+    p=subprocess.run(args,cwd=cwd,text=True,errors="replace",capture_output=True,timeout=timeout)
     if p.returncode:raise ValueError((p.stderr or p.stdout)[-1200:])
     return p.stdout
 

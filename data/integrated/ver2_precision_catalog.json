@@ -1,0 +1,15 @@
+{
+  "previous_catalog": "data/integrated/ver2_overlap_six_catalog.json",
+  "planning": "data/precision_v1/planning.json",
+  "intake": "data/precision_v1/intake.json",
+  "manifest": "data/precision_v1/manifest.json",
+  "decision": "data/precision_v1/admission.json",
+  "attempted_new": 79,
+  "verified_new": 67,
+  "total_verified_families": 73,
+  "status": "hold",
+  "admitted_records": 0,
+  "trained": false,
+  "source_bundle": "data/precision_v1/triplet_edits.zip",
+  "source_bundle_sha256": "2f6e52bcb00340db105b12d9dcae9baabed25b25491109a0332a799628cbd74f"
+}

@@ -6,8 +6,12 @@ from planning import RUN,DATA,PREV,read,report
 from preflight import raw,folder,sha,gitsh,net
 
 def fingerprints(r):
+    return source_fingerprints(raw(r))
+
+
+def source_fingerprints(files):
     parts=[]; shingles=set()
-    for f in raw(r):
+    for f in files:
         text=re.sub(r"/\*.*?\*/|//[^\n]*","",f.read_text(errors="replace"),flags=re.S)
         for module in re.findall(r"\bmodule\b.*?\bendmodule\b",text,re.S):
             tokens=re.findall(r"[A-Za-z_$][\w$]*|\d+|[^\s]",module)
