@@ -26,19 +26,20 @@ def rank(a,b):
     return float(a>b)+0.5*(a==b)
 
 
-def main():
+def main(out=OUT, run_dir=RUN, catalog_name="ver2_catalog.json", graph_review=None):
     torch.set_num_threads(1)
     builder=load_module("graph_builder",ROOT/"pipeline/provenance/build.py")
     probes=load_module("matched_probes",ROOT/"experiments/matched_insertion_v3/controls.py")
-    probes.OUT=RUN
+    probes.OUT=run_dir
     tokenizer=AutoTokenizer.from_pretrained("microsoft/codebert-base",
             revision="3b0952feddeffad0063f274080e3c23d75e7eb39",local_files_only=True)
-    manifest=OUT/"manifest.json"
-    rows=json.loads(manifest.read_text())["records"]
+    manifest=out/"manifest.json"
+    cohort=json.loads(manifest.read_text())
+    rows=cohort["records"]
     features=[]
     scalars=[]
     for row in rows:
-        folder=RUN/row["host"]/row["variant"]
+        folder=run_dir/row["host"]/row["variant"]
         src=ROOT/row["source"]
         if digest(src)!=row["sha256"] or digest(folder/"yosys.json")!=row["mapped_json_sha256"]:
             raise ValueError(f"Artifact integrity check failed for {src}")
@@ -82,17 +83,26 @@ def main():
             record(name,scores)
         results[negative]=pairs
     decision="no_go_shortcuts" if blockers else "pending_independent_generator_and_review"
-    report(OUT/"decision.json",dict(status=decision,controls=results,blockers=blockers,
+    supplementary = {}
+    if graph_review is not None:
+        comparisons = graph_review(out, run_dir)
+        graph_report = out/"gate_graph_comparisons.json"
+        report(graph_report, comparisons)
+        collisions = [r for r in comparisons if r["isomorphic"] is True]
+        supplementary = dict(gate_graph_comparisons=rel(graph_report), gate_graph_collisions=collisions)
+        if collisions and not blockers:
+            decision = "hold_for_gate_graph_collisions_and_independent_generator"
+    report(out/"decision.json",dict(status=decision,controls=results,blockers=blockers,**supplementary,
            scalar_features=[dict(host=r["host"],variant=r["variant"],**s) for r,s in zip(rows,scalars)],
            constant_factors=["one language","one synthesis flow","one generator; generator-ID probe inapplicable"]))
     base=ROOT/"data/integrated/paired_manifest.json"
     catalogs=[dict(source="existing_paired",path=rel(base),sha256_lf_text=hashlib.sha256(base.read_text().encode()).hexdigest(),
                    records=len(json.loads(base.read_text())["samples"])),
-              dict(source="tier12_rtl_v1",path=rel(manifest),sha256=digest(manifest),records=len(rows),
+              dict(source=cohort["generator"],path=rel(manifest),sha256=digest(manifest),records=len(rows),
                    status=decision,admitted_training_records=0)]
-    report(ROOT/"data/integrated/ver2_catalog.json",dict(cohorts=catalogs,
+    report(ROOT/"data/integrated"/catalog_name,dict(cohorts=catalogs,
            evaluation="Separate cohorts. Group synthetic rows by clean host. Existing folds apply only to existing data.",
-           decision=rel(OUT/"decision.json")))
+           decision=rel(out/"decision.json")))
     print(decision,blockers)
 
 

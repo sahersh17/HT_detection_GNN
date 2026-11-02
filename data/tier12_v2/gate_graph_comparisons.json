@@ -1,0 +1,92 @@
+[
+  {
+    "host": "alu",
+    "negative": "clean",
+    "isomorphic": true
+  },
+  {
+    "host": "alu",
+    "negative": "benign",
+    "isomorphic": false
+  },
+  {
+    "host": "crc32",
+    "negative": "clean",
+    "isomorphic": false
+  },
+  {
+    "host": "crc32",
+    "negative": "benign",
+    "isomorphic": true
+  },
+  {
+    "host": "fifo",
+    "negative": "clean",
+    "isomorphic": true
+  },
+  {
+    "host": "fifo",
+    "negative": "benign",
+    "isomorphic": false
+  },
+  {
+    "host": "fir",
+    "negative": "clean",
+    "isomorphic": false
+  },
+  {
+    "host": "fir",
+    "negative": "benign",
+    "isomorphic": false
+  },
+  {
+    "host": "i2c",
+    "negative": "clean",
+    "isomorphic": false
+  },
+  {
+    "host": "i2c",
+    "negative": "benign",
+    "isomorphic": false
+  },
+  {
+    "host": "mac",
+    "negative": "clean",
+    "isomorphic": false
+  },
+  {
+    "host": "mac",
+    "negative": "benign",
+    "isomorphic": false
+  },
+  {
+    "host": "pwm",
+    "negative": "clean",
+    "isomorphic": false
+  },
+  {
+    "host": "pwm",
+    "negative": "benign",
+    "isomorphic": false
+  },
+  {
+    "host": "spi",
+    "negative": "clean",
+    "isomorphic": false
+  },
+  {
+    "host": "spi",
+    "negative": "benign",
+    "isomorphic": false
+  },
+  {
+    "host": "sram_ctrl",
+    "negative": "clean",
+    "isomorphic": false
+  },
+  {
+    "host": "sram_ctrl",
+    "negative": "benign",
+    "isomorphic": false
+  }
+]

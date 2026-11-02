@@ -1,0 +1,34 @@
+{
+  "description": "Unsigned 16-bit multiply-accumulate, wrapping; op=1 accumulate, op=2 clear.",
+  "columns": [
+    "reset",
+    "op",
+    "a",
+    "b"
+  ],
+  "vectors": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      15,
+      17
+    ],
+    [
+      0,
+      1,
+      0,
+      42
+    ]
+  ],
+  "expected_clean": [
+    0,
+    255,
+    255
+  ]
+}

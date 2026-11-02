@@ -1,0 +1,48 @@
+{
+  "description": "Four-byte single-port scratchpad controller. op=1 writes b, op=2 reads; ready pulses the next cycle.",
+  "columns": [
+    "reset",
+    "op",
+    "a",
+    "b"
+  ],
+  "vectors": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      3,
+      206
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      3,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "expected_clean": [
+    0,
+    0,
+    256,
+    0,
+    462
+  ]
+}

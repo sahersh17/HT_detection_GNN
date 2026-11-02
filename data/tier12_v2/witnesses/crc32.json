@@ -1,0 +1,27 @@
+{
+  "description": "Reflected IEEE CRC32 accumulator, one byte per op=1. Reset and final XOR are all ones.",
+  "columns": [
+    "reset",
+    "op",
+    "a",
+    "b"
+  ],
+  "vectors": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      210,
+      0
+    ]
+  ],
+  "expected_clean": [
+    0,
+    3135200373
+  ]
+}

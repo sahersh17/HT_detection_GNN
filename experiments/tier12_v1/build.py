@@ -84,29 +84,34 @@ def simulate(source, folder):
     return [int(line,16) for line in run(["vvp","-n",str(image)]).splitlines() if re.fullmatch("[0-9a-fA-FxXzZ]{8}",line.strip())]
 
 
-def main():
+def main(hosts=HOSTS, out=OUT, run_dir=RUN, generator="tier12_rtl_v1",
+         original_dir=None, edit_kinds=None):
     yosys=shutil.which("yosys") or str(ROOT/"trusthub/venv/Scripts/yowasp-yosys.exe")
     script=[]
-    for host in HOSTS:
+    for host in hosts:
         for side,edit in zip(SIDES,host.edits):
-            src=OUT/"rtl"/host.name/f"{side}.v"
-            folder=RUN/host.name/side
+            src=out/"rtl"/host.name/f"{side}.v"
+            folder=run_dir/host.name/side
             folder.mkdir(parents=True,exist_ok=True)
             save(src,normalized(host,edit))
             script.extend(["design -reset",f"read_verilog {rel(src)}","hierarchy -check -top top",FLOW,
                            "check -assert",f"write_json {rel(folder/'yosys.json')}",
                            f"write_verilog -noattr {rel(folder/'mapped.v')}"])
-        # Elaboration in separate scopes, matching state names across designs.
-        script += ["design -reset"]
-        for side,mod in (("clean","gold"),("benign","gate")):
-            src=OUT/"rtl"/host.name/f"{side}.v"
-            script += [f"read_verilog {rel(src)}","proc; opt",f"rename top {mod}"]
-        script += ["equiv_make gold gate equiv","hierarchy -top equiv","opt_clean",
-                   "equiv_simple","equiv_induct -seq 2","equiv_status -assert"]
-    save(RUN/"build.ys","\n".join(script)+"\n")
-    run([yosys,"-Q","-T","-q","-l",rel(RUN/"yosys.log"),"-s",rel(RUN/"build.ys")])
+        clean = out/"rtl"/host.name/"clean.v"
+        benign = clean.with_name("benign.v")
+        comparisons = [(clean, benign)]
+        if original_dir is not None:
+            comparisons.append((original_dir/host.name/"clean.v", clean))
+        for gold, gate in comparisons:
+            script += ["design -reset"]
+            for src, mod in ((gold, "gold"), (gate, "gate")):
+                script += [f"read_verilog {rel(src)}", "proc; opt", f"rename top {mod}"]
+            script += ["equiv_make gold gate equiv", "hierarchy -top equiv", "opt_clean",
+                       "equiv_simple", "equiv_induct -seq 2", "equiv_status -assert"]
+    save(run_dir/"build.ys","\n".join(script)+"\n")
+    run([yosys,"-Q","-T","-q","-l",rel(run_dir/"yosys.log"),"-s",rel(run_dir/"build.ys")])
     records=[]
-    for host in HOSTS:
+    for host in hosts:
         normal,witness=stimuli(host)
         # Additional full-byte workload. Activation is permitted and measured here.
         rng = random.Random(5191 + sum(map(ord,host.name)))
@@ -114,10 +119,10 @@ def main():
                                   for _ in range(1536)]
         trace=normal+witness+stress
         oracle=reference(host.name,trace)
-        folder=RUN/host.name
+        folder=run_dir/host.name
         emit_tb(folder,trace)
         for side in SIDES:
-            src=OUT/"rtl"/host.name/f"{side}.v"
+            src=out/"rtl"/host.name/f"{side}.v"
             net=folder/side/"mapped.v"
             rtl=simulate(src,folder)
             mapped=simulate(net,folder)
@@ -136,14 +141,17 @@ def main():
                      rtl_mapped_replay_equal=True,stress_cycles=len(stress),
                      stress_different_output_cycles=sum(i>=stress_start for i in differences),
                      mapped_json_sha256=digest(folder/side/"yosys.json"))
+            if edit_kinds is not None:
+                row["edit_kind"] = "original" if side == "clean" else edit_kinds[host.name]
+                row["baseline_equivalent_to_v1"] = True
             if diff:
                 i=diff[0]
                 row.update(effect=host.effect,first_witness_cycle=i-len(normal),expected=oracle[i],observed=rtl[i])
             records.append(row)
-        report(OUT/"witnesses"/f"{host.name}.json",dict(description=host.description,columns=["reset","op","a","b"],
+        report(out/"witnesses"/f"{host.name}.json",dict(description=host.description,columns=["reset","op","a","b"],
                vectors=witness,expected_clean=oracle[len(normal):stress_start]))
-    report(OUT/"manifest.json",dict(generator="tier12_rtl_v1",scope="inspected development",records=records))
-    print(f"{len(records)} verified records across {len(HOSTS)} hosts")
+    report(out/"manifest.json",dict(generator=generator,scope="inspected development",records=records))
+    print(f"{len(records)} verified records across {len(hosts)} hosts")
 
 
 if __name__=="__main__":

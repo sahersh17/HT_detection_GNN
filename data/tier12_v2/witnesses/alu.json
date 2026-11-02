@@ -1,0 +1,27 @@
+{
+  "description": "Registered byte-input ALU. op selects add, subtract, xor, or shift. 32-bit unsigned result.",
+  "columns": [
+    "reset",
+    "op",
+    "a",
+    "b"
+  ],
+  "vectors": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      182,
+      77
+    ]
+  ],
+  "expected_clean": [
+    0,
+    251
+  ]
+}
