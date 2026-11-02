@@ -1,7 +1,6 @@
 """Apply the precommitted controls without fitting a detector."""
 from collections import Counter, defaultdict
 from functools import lru_cache
-from itertools import product
 import json
 import re
 import sys
@@ -50,17 +49,21 @@ def rank(a,b):
 
 def summary(by_host):
     values=list(by_host.values())
-    draws=[np.mean(s) for s in product(values,repeat=len(values))]
+    # Same exact ordered host bootstrap, vectorized for the six-family intake.
+    draws=np.array([0.0])
+    for _ in values:
+        draws=(draws[:,None]+np.asarray(values)).ravel()
+    draws=draws/len(values)
     lo,hi=np.quantile(draws,[0.025,0.975],method="inverted_cdf")
     return dict(mean=float(np.mean(values)),ci95=[lo,hi],by_host=by_host)
 
 
-def collect(row):
+def collect(row,run_dir=RUN):
     h,s=row["host"],row["variant"]
     paths=tuple(ROOT/p for p in row["sources"])
     if any(digest(p)!=row["sources"][relative(p)] for p in paths):
         raise ValueError("Source hash mismatch")
-    path=RUN/h/s/"yosys.json"
+    path=run_dir/h/s/"yosys.json"
     if digest(path)!=row["mapped_json_sha256"]: raise ValueError("Mapped hash mismatch")
     doc=read(path)
     graph,meta=provenance.graph_from_json(doc,row["top"],h,row["label"])
@@ -75,7 +78,7 @@ def collect(row):
     return scalar,hist,features
 
 
-def typed_check(h,neg,items):
+def typed_check(h,neg,items,run_dir=RUN,families=FAMILIES):
     a,b=items[h,neg],items[h,"trojan"]
     if not torch.equal(a[2]["gate_hist"],b[2]["gate_hist"]):
         return "distinct_gate_feature_histograms"
@@ -83,7 +86,7 @@ def typed_check(h,neg,items):
     # Its forward degree counts every input-pin use, including multiplicity.
     degrees=[]
     for s in (neg,"trojan"):
-        module=read(RUN/h/s/"yosys.json")["modules"][FAMILIES[h]]
+        module=read(run_dir/h/s/"yosys.json")["modules"][families[h]]
         degrees.append(Counter(bit for cell in module["cells"].values()
                                if cell["type"].lower() not in provenance.CELL_EXCLUDE
                                for pin,bits in cell["connections"].items()
@@ -93,9 +96,9 @@ def typed_check(h,neg,items):
         return "distinct_typed_constant_vertex_degrees"
     graphs=[]
     for s in (neg,"trojan"):
-        doc=read(RUN/h/s/"yosys.json")
-        graph,meta=provenance.graph_from_json(doc,FAMILIES[h],h,0)
-        graphs.append(graph_view(doc,dict(meta,top=FAMILIES[h]),graph))
+        doc=read(run_dir/h/s/"yosys.json")
+        graph,meta=provenance.graph_from_json(doc,families[h],h,0)
+        graphs.append(graph_view(doc,dict(meta,top=families[h]),graph))
     return "distinct_typed_features_or_edges" if distinguish(*graphs)["distinguished"] else "inconclusive"
 
 

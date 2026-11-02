@@ -1,0 +1,14 @@
+{
+  "previous_catalog": "data/integrated/ver2_tier3_catalog.json",
+  "original_screen": "data/overlap_six_v1/overlap.json",
+  "manifest": "data/overlap_six_v1/manifest.json",
+  "sha256": "b6b10ae29a7ce13af2d1f5443feca9d33df77781e5df7963c6e70100a1780bc5",
+  "admission": "data/overlap_six_v1/admission.json",
+  "families": 6,
+  "records": 18,
+  "admitted_records": 0,
+  "status": "hold",
+  "trained": false,
+  "source_bundle": "data/overlap_six_v1/sources.zip",
+  "source_bundle_sha256": "c8e14efa575be4c6bc2d88243a729b81cd80f01ec6402214682b274a01a2f174"
+}

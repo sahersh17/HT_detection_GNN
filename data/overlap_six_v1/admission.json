@@ -1,0 +1,1850 @@
+{
+  "status": "hold",
+  "families": [
+    "divider",
+    "i2c_controller",
+    "jpeg_huffman",
+    "logic_scope",
+    "picorv32",
+    "sha2"
+  ],
+  "semantic_failures": [],
+  "overlap": {
+    "divider": {
+      "clean": {
+        "relative_L1": 0.0009120758847136082,
+        "passed": true,
+        "delta": {
+          "$_AND_": 2,
+          "$_OR_": 3
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.0001822821728034998,
+        "passed": true,
+        "delta": {
+          "$_OR_": 1
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      }
+    },
+    "i2c_controller": {
+      "clean": {
+        "relative_L1": 0.005244755244755245,
+        "passed": true,
+        "delta": {
+          "$_AND_": -1,
+          "$_MUX_": 5,
+          "$_OR_": -3
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.0029205607476635513,
+        "passed": true,
+        "delta": {
+          "$_MUX_": 5
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      }
+    },
+    "jpeg_huffman": {
+      "clean": {
+        "relative_L1": 0.0011504170261719873,
+        "passed": true,
+        "delta": {
+          "$_MUX_": 4
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.0011504170261719873,
+        "passed": true,
+        "delta": {
+          "$_MUX_": 4
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      }
+    },
+    "logic_scope": {
+      "clean": {
+        "relative_L1": 0.00949367088607595,
+        "passed": true,
+        "delta": {
+          "$_AND_": -1,
+          "$_DFFE_PP_": -1,
+          "$_DFF_P_": -1,
+          "$_MUX_": -1,
+          "$_SDFF_PN0_": 1,
+          "$_XOR_": -1
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.00949367088607595,
+        "passed": true,
+        "delta": {
+          "$_AND_": -1,
+          "$_DFFE_PP_": -1,
+          "$_DFF_P_": -1,
+          "$_MUX_": -1,
+          "$_SDFF_PN0_": 1,
+          "$_XOR_": -1
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      }
+    },
+    "picorv32": {
+      "clean": {
+        "relative_L1": 0.010502283105022832,
+        "passed": true,
+        "delta": {
+          "$_AND_": -34,
+          "$_OR_": -35
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.010200974421437272,
+        "passed": true,
+        "delta": {
+          "$_AND_": -32,
+          "$_OR_": -35
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      }
+    },
+    "sha2": {
+      "clean": {
+        "relative_L1": 0.0,
+        "passed": true,
+        "delta": {},
+        "typed_view": "distinct_typed_constant_vertex_degrees"
+      },
+      "benign": {
+        "relative_L1": 0.0,
+        "passed": true,
+        "delta": {},
+        "typed_view": "distinct_typed_constant_vertex_degrees"
+      }
+    }
+  },
+  "hard_stops": [],
+  "outside_equivalence_margin": [
+    [
+      "class",
+      "clean",
+      "characters",
+      [
+        0.25,
+        0.75
+      ]
+    ],
+    [
+      "class",
+      "clean",
+      "comment_fraction",
+      [
+        0.25,
+        0.75
+      ]
+    ],
+    [
+      "class",
+      "clean",
+      "normalized_tokens",
+      [
+        0.5,
+        0.75
+      ]
+    ],
+    [
+      "class",
+      "clean",
+      "normalized_characters",
+      [
+        0.25,
+        0.75
+      ]
+    ],
+    [
+      "class",
+      "clean",
+      "cells",
+      [
+        0.25,
+        0.9166666666666666
+      ]
+    ],
+    [
+      "class",
+      "clean",
+      "edges",
+      [
+        0.08333333333333333,
+        0.75
+      ]
+    ],
+    [
+      "class",
+      "benign",
+      "characters",
+      [
+        0.16666666666666666,
+        0.6666666666666666
+      ]
+    ],
+    [
+      "class",
+      "benign",
+      "comment_fraction",
+      [
+        0.3333333333333333,
+        0.8333333333333334
+      ]
+    ],
+    [
+      "class",
+      "benign",
+      "normalized_tokens",
+      [
+        0.25,
+        0.75
+      ]
+    ],
+    [
+      "class",
+      "benign",
+      "normalized_characters",
+      [
+        0.16666666666666666,
+        0.6666666666666666
+      ]
+    ],
+    [
+      "class",
+      "benign",
+      "cells",
+      [
+        0.25,
+        0.9166666666666666
+      ]
+    ],
+    [
+      "class",
+      "benign",
+      "edges",
+      [
+        0.16666666666666666,
+        0.8333333333333334
+      ]
+    ],
+    [
+      "origin",
+      "clean",
+      "characters",
+      [
+        0.25,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "clean",
+      "lines",
+      [
+        0.25,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "clean",
+      "windows",
+      [
+        0.3125,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "clean",
+      "comment_fraction",
+      [
+        0.3333333333333333,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "clean",
+      "normalized_windows",
+      [
+        0.2916666666666667,
+        0.625
+      ]
+    ],
+    [
+      "origin",
+      "benign",
+      "characters",
+      [
+        0.25,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "benign",
+      "lines",
+      [
+        0.25,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "benign",
+      "windows",
+      [
+        0.3125,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "benign",
+      "comment_fraction",
+      [
+        0.3333333333333333,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "benign",
+      "normalized_windows",
+      [
+        0.2916666666666667,
+        0.625
+      ]
+    ],
+    [
+      "origin",
+      "trojan",
+      "characters",
+      [
+        0.25,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "trojan",
+      "lines",
+      [
+        0.23039215686274508,
+        0.6887254901960785
+      ]
+    ],
+    [
+      "origin",
+      "trojan",
+      "windows",
+      [
+        0.29044117647058826,
+        0.6862745098039215
+      ]
+    ],
+    [
+      "origin",
+      "trojan",
+      "comment_fraction",
+      [
+        0.32598039215686275,
+        0.7083333333333334
+      ]
+    ],
+    [
+      "origin",
+      "trojan",
+      "normalized_tokens",
+      [
+        0.2916666666666667,
+        0.65625
+      ]
+    ],
+    [
+      "origin",
+      "trojan",
+      "normalized_characters",
+      [
+        0.20833333333333334,
+        0.6397058823529412
+      ]
+    ],
+    [
+      "origin",
+      "trojan",
+      "normalized_windows",
+      [
+        0.25,
+        0.625
+      ]
+    ]
+  ],
+  "paired_controls": {
+    "clean": {
+      "characters": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.75
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 1.0,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "lines": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "windows": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "neutral_names": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "comment_fraction": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.75
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 1.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.0,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "normalized_tokens": {
+        "mean": 0.5833333333333334,
+        "ci95": [
+          0.5,
+          0.75
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 1.0,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "normalized_characters": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.75
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 1.0,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "normalized_windows": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "cells": {
+        "mean": 0.5833333333333334,
+        "ci95": [
+          0.25,
+          0.9166666666666666
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 1.0,
+          "jpeg_huffman": 1.0,
+          "logic_scope": 0.0,
+          "picorv32": 0.0,
+          "sha2": 0.5
+        }
+      },
+      "edges": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.08333333333333333,
+          0.75
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 1.0,
+          "logic_scope": 0.0,
+          "picorv32": 0.0,
+          "sha2": 0.5
+        }
+      },
+      "metadata": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.25,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.0,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "gate_hist": {
+        "mean": 0.5833333333333334,
+        "ci95": [
+          0.25,
+          0.9166666666666666
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 1.0,
+          "jpeg_huffman": 1.0,
+          "logic_scope": 0.0,
+          "picorv32": 1.0,
+          "sha2": 0.5
+        }
+      },
+      "graph_stats": {
+        "mean": 0.5,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.0,
+          "sha2": 1.0
+        }
+      },
+      "wl2": {
+        "mean": 0.5,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.0,
+          "logic_scope": 1.0,
+          "picorv32": 0.0,
+          "sha2": 1.0
+        }
+      },
+      "wl8": {
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.0,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.0,
+          "logic_scope": 0.0,
+          "picorv32": 1.0,
+          "sha2": 0.0
+        }
+      },
+      "input_fanout": {
+        "mean": 0.5833333333333334,
+        "ci95": [
+          0.5,
+          0.75
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 1.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "output_xor": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "output_cone": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      }
+    },
+    "benign": {
+      "characters": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.16666666666666666,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 1.0,
+          "picorv32": 0.5,
+          "sha2": 0.0
+        }
+      },
+      "lines": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "windows": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "neutral_names": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "comment_fraction": {
+        "mean": 0.5833333333333334,
+        "ci95": [
+          0.3333333333333333,
+          0.8333333333333334
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 1.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.0,
+          "picorv32": 0.5,
+          "sha2": 1.0
+        }
+      },
+      "normalized_tokens": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.75
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 1.0,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "normalized_characters": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.16666666666666666,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 1.0,
+          "picorv32": 0.5,
+          "sha2": 0.0
+        }
+      },
+      "normalized_windows": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "cells": {
+        "mean": 0.5833333333333334,
+        "ci95": [
+          0.25,
+          0.9166666666666666
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 1.0,
+          "jpeg_huffman": 1.0,
+          "logic_scope": 0.0,
+          "picorv32": 0.0,
+          "sha2": 0.5
+        }
+      },
+      "edges": {
+        "mean": 0.5,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 1.0,
+          "logic_scope": 0.0,
+          "picorv32": 0.0,
+          "sha2": 0.5
+        }
+      },
+      "metadata": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.25,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.0,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "gate_hist": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.08333333333333333,
+          0.75
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 1.0,
+          "jpeg_huffman": 1.0,
+          "logic_scope": 0.0,
+          "picorv32": 0.0,
+          "sha2": 0.5
+        }
+      },
+      "graph_stats": {
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.08333333333333333,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.0,
+          "sha2": 1.0
+        }
+      },
+      "wl2": {
+        "mean": 0.5,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 1.0,
+          "logic_scope": 0.5,
+          "picorv32": 0.0,
+          "sha2": 0.5
+        }
+      },
+      "wl8": {
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.5
+        ],
+        "by_host": {
+          "divider": 1.0,
+          "i2c_controller": 0.0,
+          "jpeg_huffman": 0.0,
+          "logic_scope": 0.0,
+          "picorv32": 0.0,
+          "sha2": 0.0
+        }
+      },
+      "input_fanout": {
+        "mean": 0.5833333333333334,
+        "ci95": [
+          0.5,
+          0.75
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 1.0,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "output_xor": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      },
+      "output_cone": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.5,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      }
+    }
+  },
+  "origin_controls": {
+    "clean": {
+      "characters": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.5
+        }
+      },
+      "lines": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.5
+        }
+      },
+      "windows": {
+        "mean": 0.5208333333333334,
+        "ci95": [
+          0.3125,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.125,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.5
+        }
+      },
+      "neutral_names": {
+        "mean": 0.375,
+        "ci95": [
+          0.375,
+          0.375
+        ],
+        "by_host": {
+          "divider": 0.375,
+          "i2c_controller": 0.375,
+          "jpeg_huffman": 0.375,
+          "logic_scope": 0.375,
+          "picorv32": 0.375,
+          "sha2": 0.375
+        }
+      },
+      "comment_fraction": {
+        "mean": 0.5,
+        "ci95": [
+          0.3333333333333333,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 1.0,
+          "picorv32": 0.25,
+          "sha2": 0.5
+        }
+      },
+      "normalized_tokens": {
+        "mean": 0.5,
+        "ci95": [
+          0.3333333333333333,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "normalized_characters": {
+        "mean": 0.5,
+        "ci95": [
+          0.3333333333333333,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "normalized_windows": {
+        "mean": 0.4583333333333333,
+        "ci95": [
+          0.2916666666666667,
+          0.625
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "cells": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.3333333333333333,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.25,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.25,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      }
+    },
+    "benign": {
+      "characters": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.5
+        }
+      },
+      "lines": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.5
+        }
+      },
+      "windows": {
+        "mean": 0.5208333333333334,
+        "ci95": [
+          0.3125,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.125,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.5
+        }
+      },
+      "neutral_names": {
+        "mean": 0.375,
+        "ci95": [
+          0.375,
+          0.375
+        ],
+        "by_host": {
+          "divider": 0.375,
+          "i2c_controller": 0.375,
+          "jpeg_huffman": 0.375,
+          "logic_scope": 0.375,
+          "picorv32": 0.375,
+          "sha2": 0.375
+        }
+      },
+      "comment_fraction": {
+        "mean": 0.5,
+        "ci95": [
+          0.3333333333333333,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 1.0,
+          "picorv32": 0.25,
+          "sha2": 0.5
+        }
+      },
+      "normalized_tokens": {
+        "mean": 0.5,
+        "ci95": [
+          0.3333333333333333,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "normalized_characters": {
+        "mean": 0.5,
+        "ci95": [
+          0.3333333333333333,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "normalized_windows": {
+        "mean": 0.4583333333333333,
+        "ci95": [
+          0.2916666666666667,
+          0.625
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "cells": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.3333333333333333,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.25,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.25,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      }
+    },
+    "trojan": {
+      "characters": {
+        "mean": 0.5,
+        "ci95": [
+          0.25,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.5
+        }
+      },
+      "lines": {
+        "mean": 0.4803921568627451,
+        "ci95": [
+          0.23039215686274508,
+          0.6887254901960785
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.38235294117647056
+        }
+      },
+      "windows": {
+        "mean": 0.4987745098039216,
+        "ci95": [
+          0.29044117647058826,
+          0.6862745098039215
+        ],
+        "by_host": {
+          "divider": 0.125,
+          "i2c_controller": 0.75,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.36764705882352944
+        }
+      },
+      "neutral_names": {
+        "mean": 0.375,
+        "ci95": [
+          0.375,
+          0.375
+        ],
+        "by_host": {
+          "divider": 0.375,
+          "i2c_controller": 0.375,
+          "jpeg_huffman": 0.375,
+          "logic_scope": 0.375,
+          "picorv32": 0.375,
+          "sha2": 0.375
+        }
+      },
+      "comment_fraction": {
+        "mean": 0.49264705882352944,
+        "ci95": [
+          0.32598039215686275,
+          0.7083333333333334
+        ],
+        "by_host": {
+          "divider": 0.25,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.45588235294117646,
+          "logic_scope": 1.0,
+          "picorv32": 0.25,
+          "sha2": 0.5
+        }
+      },
+      "normalized_tokens": {
+        "mean": 0.4699754901960784,
+        "ci95": [
+          0.2916666666666667,
+          0.65625
+        ],
+        "by_host": {
+          "divider": 0.1875,
+          "i2c_controller": 0.6323529411764706,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "normalized_characters": {
+        "mean": 0.43137254901960786,
+        "ci95": [
+          0.20833333333333334,
+          0.6397058823529412
+        ],
+        "by_host": {
+          "divider": 0.0,
+          "i2c_controller": 0.5882352941176471,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "normalized_windows": {
+        "mean": 0.4375,
+        "ci95": [
+          0.25,
+          0.625
+        ],
+        "by_host": {
+          "divider": 0.125,
+          "i2c_controller": 0.5,
+          "jpeg_huffman": 0.75,
+          "logic_scope": 0.25,
+          "picorv32": 0.75,
+          "sha2": 0.25
+        }
+      },
+      "cells": {
+        "mean": 0.4166666666666667,
+        "ci95": [
+          0.3333333333333333,
+          0.5
+        ],
+        "by_host": {
+          "divider": 0.5,
+          "i2c_controller": 0.25,
+          "jpeg_huffman": 0.5,
+          "logic_scope": 0.25,
+          "picorv32": 0.5,
+          "sha2": 0.5
+        }
+      }
+    }
+  },
+  "coverage": {
+    "input_fanout": 18,
+    "output_xor": 0,
+    "output_cone": 0
+  },
+  "measurements": [
+    {
+      "host": "divider",
+      "variant": "clean",
+      "characters": 7506,
+      "lines": 316,
+      "windows": 10,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.05315747402078341,
+      "normalized_tokens": 1407,
+      "normalized_characters": 4016,
+      "normalized_windows": 4,
+      "cells": 5482,
+      "edges": 10582,
+      "gates": {
+        "$_DFFE_PP_": 738,
+        "$_SDFFE_PP0P_": 7,
+        "$_NOT_": 230,
+        "$_OR_": 1344,
+        "$_XOR_": 320,
+        "$_AND_": 1726,
+        "$_MUX_": 1117
+      }
+    },
+    {
+      "host": "divider",
+      "variant": "benign",
+      "characters": 7506,
+      "lines": 316,
+      "windows": 10,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.05315747402078341,
+      "normalized_tokens": 1407,
+      "normalized_characters": 4016,
+      "normalized_windows": 4,
+      "cells": 5486,
+      "edges": 10590,
+      "gates": {
+        "$_DFFE_PP_": 738,
+        "$_SDFFE_PP0P_": 7,
+        "$_NOT_": 230,
+        "$_OR_": 1346,
+        "$_XOR_": 320,
+        "$_AND_": 1728,
+        "$_MUX_": 1117
+      }
+    },
+    {
+      "host": "divider",
+      "variant": "trojan",
+      "characters": 7506,
+      "lines": 316,
+      "windows": 10,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.05315747402078341,
+      "normalized_tokens": 1407,
+      "normalized_characters": 4016,
+      "normalized_windows": 4,
+      "cells": 5487,
+      "edges": 10592,
+      "gates": {
+        "$_DFFE_PP_": 738,
+        "$_SDFFE_PP0P_": 7,
+        "$_NOT_": 230,
+        "$_OR_": 1347,
+        "$_XOR_": 320,
+        "$_AND_": 1728,
+        "$_MUX_": 1117
+      }
+    },
+    {
+      "host": "logic_scope",
+      "variant": "clean",
+      "characters": 17403,
+      "lines": 594,
+      "windows": 15,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.4866402344423375,
+      "normalized_tokens": 1853,
+      "normalized_characters": 5454,
+      "normalized_windows": 5,
+      "cells": 632,
+      "edges": 1177,
+      "gates": {
+        "$_DFF_P_": 72,
+        "$_SDFF_PN0_": 4,
+        "$_SDFF_PN1_": 3,
+        "$_DFFE_PP_": 54,
+        "$_SDFFE_PP0P_": 10,
+        "$_SDFFE_PN0P_": 32,
+        "$_SDFF_PP0_": 1,
+        "$_NOT_": 36,
+        "$memwr_v2": 1,
+        "$_OR_": 46,
+        "$_XOR_": 85,
+        "$_AND_": 174,
+        "$_MUX_": 113,
+        "$memrd": 1
+      }
+    },
+    {
+      "host": "logic_scope",
+      "variant": "benign",
+      "characters": 17408,
+      "lines": 594,
+      "windows": 15,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.4865004595588235,
+      "normalized_tokens": 1853,
+      "normalized_characters": 5457,
+      "normalized_windows": 5,
+      "cells": 632,
+      "edges": 1177,
+      "gates": {
+        "$_DFF_P_": 72,
+        "$_SDFF_PN0_": 4,
+        "$_SDFF_PN1_": 3,
+        "$_DFFE_PP_": 54,
+        "$_SDFFE_PN0P_": 32,
+        "$_SDFF_PP0_": 1,
+        "$_SDFFE_PP0P_": 10,
+        "$_NOT_": 36,
+        "$memwr_v2": 1,
+        "$_OR_": 46,
+        "$_XOR_": 85,
+        "$_AND_": 174,
+        "$_MUX_": 113,
+        "$memrd": 1
+      }
+    },
+    {
+      "host": "logic_scope",
+      "variant": "trojan",
+      "characters": 17415,
+      "lines": 594,
+      "windows": 15,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.4863049095607235,
+      "normalized_tokens": 1857,
+      "normalized_characters": 5466,
+      "normalized_windows": 5,
+      "cells": 628,
+      "edges": 1170,
+      "gates": {
+        "$_DFF_P_": 71,
+        "$_SDFF_PN0_": 5,
+        "$_DFFE_PP_": 53,
+        "$_SDFF_PN1_": 3,
+        "$_SDFFE_PN0P_": 32,
+        "$_SDFF_PP0_": 1,
+        "$_SDFFE_PP0P_": 10,
+        "$_NOT_": 36,
+        "$memwr_v2": 1,
+        "$_OR_": 46,
+        "$_XOR_": 84,
+        "$_AND_": 173,
+        "$_MUX_": 112,
+        "$memrd": 1
+      }
+    },
+    {
+      "host": "sha2",
+      "variant": "clean",
+      "characters": 28194,
+      "lines": 931,
+      "windows": 31,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.35053557494502374,
+      "normalized_tokens": 3056,
+      "normalized_characters": 9189,
+      "normalized_windows": 9,
+      "cells": 8755,
+      "edges": 17994,
+      "gates": {
+        "$_DFFE_PN0P_": 1033,
+        "$_NOT_": 63,
+        "$_XOR_": 1478,
+        "$_AND_": 2576,
+        "$_OR_": 1473,
+        "$_MUX_": 2130,
+        "$memrd_v2": 1,
+        "$meminit": 1
+      }
+    },
+    {
+      "host": "sha2",
+      "variant": "benign",
+      "characters": 28195,
+      "lines": 931,
+      "windows": 31,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.3505231424011349,
+      "normalized_tokens": 3056,
+      "normalized_characters": 9190,
+      "normalized_windows": 9,
+      "cells": 8755,
+      "edges": 17994,
+      "gates": {
+        "$_DFFE_PN0P_": 1033,
+        "$_NOT_": 63,
+        "$_XOR_": 1478,
+        "$_AND_": 2576,
+        "$_OR_": 1473,
+        "$_MUX_": 2130,
+        "$memrd_v2": 1,
+        "$meminit": 1
+      }
+    },
+    {
+      "host": "sha2",
+      "variant": "trojan",
+      "characters": 28194,
+      "lines": 931,
+      "windows": 31,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.35053557494502374,
+      "normalized_tokens": 3056,
+      "normalized_characters": 9189,
+      "normalized_windows": 9,
+      "cells": 8755,
+      "edges": 17994,
+      "gates": {
+        "$_DFFE_PN0P_": 1033,
+        "$_NOT_": 63,
+        "$_XOR_": 1478,
+        "$_AND_": 2576,
+        "$_OR_": 1473,
+        "$_MUX_": 2130,
+        "$memrd_v2": 1,
+        "$meminit": 1
+      }
+    },
+    {
+      "host": "i2c_controller",
+      "variant": "clean",
+      "characters": 68517,
+      "lines": 1928,
+      "windows": 80,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.32910080709896816,
+      "normalized_tokens": 5738,
+      "normalized_characters": 16754,
+      "normalized_windows": 15,
+      "cells": 1716,
+      "edges": 3344,
+      "gates": {
+        "$_DFFE_PP_": 130,
+        "$_SDFF_PP0_": 14,
+        "$_SDFFE_PP0P_": 82,
+        "$_SDFFE_PP1P_": 3,
+        "$_SDFFE_PP0N_": 5,
+        "$_DFF_P_": 3,
+        "$_NOT_": 125,
+        "$_XOR_": 80,
+        "$_AND_": 372,
+        "$_OR_": 473,
+        "$_MUX_": 423,
+        "$memwr_v2": 3,
+        "$memrd": 3
+      }
+    },
+    {
+      "host": "i2c_controller",
+      "variant": "benign",
+      "characters": 68519,
+      "lines": 1928,
+      "windows": 80,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.32909120098074984,
+      "normalized_tokens": 5739,
+      "normalized_characters": 16755,
+      "normalized_windows": 15,
+      "cells": 1712,
+      "edges": 3336,
+      "gates": {
+        "$_DFFE_PP_": 130,
+        "$_SDFF_PP0_": 14,
+        "$_SDFFE_PP0P_": 82,
+        "$_SDFFE_PP1P_": 3,
+        "$_DFF_P_": 3,
+        "$_SDFFE_PP0N_": 5,
+        "$_NOT_": 125,
+        "$_XOR_": 80,
+        "$_AND_": 371,
+        "$_OR_": 470,
+        "$_MUX_": 423,
+        "$memwr_v2": 3,
+        "$memrd": 3
+      }
+    },
+    {
+      "host": "i2c_controller",
+      "variant": "trojan",
+      "characters": 68516,
+      "lines": 1928,
+      "windows": 80,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.32910561036838115,
+      "normalized_tokens": 5738,
+      "normalized_characters": 16753,
+      "normalized_windows": 15,
+      "cells": 1717,
+      "edges": 3336,
+      "gates": {
+        "$_DFFE_PP_": 130,
+        "$_SDFF_PP0_": 14,
+        "$_SDFFE_PP0P_": 82,
+        "$_SDFFE_PP1P_": 3,
+        "$_DFF_P_": 3,
+        "$_SDFFE_PP0N_": 5,
+        "$_NOT_": 125,
+        "$_XOR_": 80,
+        "$_AND_": 371,
+        "$_OR_": 470,
+        "$_MUX_": 428,
+        "$memwr_v2": 3,
+        "$memrd": 3
+      }
+    },
+    {
+      "host": "jpeg_huffman",
+      "variant": "clean",
+      "characters": 81445,
+      "lines": 2796,
+      "windows": 101,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.1357480508318497,
+      "normalized_tokens": 12516,
+      "normalized_characters": 39374,
+      "normalized_windows": 37,
+      "cells": 3477,
+      "edges": 6828,
+      "gates": {
+        "$_SDFF_PP0_": 14,
+        "$_NOT_": 31,
+        "$_OR_": 509,
+        "$_MUX_": 2883,
+        "$_AND_": 40
+      }
+    },
+    {
+      "host": "jpeg_huffman",
+      "variant": "benign",
+      "characters": 81445,
+      "lines": 2796,
+      "windows": 101,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.1357480508318497,
+      "normalized_tokens": 12516,
+      "normalized_characters": 39374,
+      "normalized_windows": 37,
+      "cells": 3477,
+      "edges": 6828,
+      "gates": {
+        "$_SDFF_PP0_": 14,
+        "$_NOT_": 31,
+        "$_OR_": 509,
+        "$_MUX_": 2883,
+        "$_AND_": 40
+      }
+    },
+    {
+      "host": "jpeg_huffman",
+      "variant": "trojan",
+      "characters": 81445,
+      "lines": 2796,
+      "windows": 101,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.1357480508318497,
+      "normalized_tokens": 12516,
+      "normalized_characters": 39374,
+      "normalized_windows": 37,
+      "cells": 3481,
+      "edges": 6836,
+      "gates": {
+        "$_SDFF_PP0_": 14,
+        "$_NOT_": 31,
+        "$_OR_": 509,
+        "$_MUX_": 2887,
+        "$_AND_": 40
+      }
+    },
+    {
+      "host": "picorv32",
+      "variant": "clean",
+      "characters": 94657,
+      "lines": 3049,
+      "windows": 112,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.04156058189040435,
+      "normalized_tokens": 17780,
+      "normalized_characters": 49787,
+      "normalized_windows": 41,
+      "cells": 6570,
+      "edges": 13098,
+      "gates": {
+        "$_DFFE_PP_": 220,
+        "$_SDFFE_PN0P_": 157,
+        "$_SDFFE_PP0P_": 1,
+        "$_SDFF_PN0_": 66,
+        "$_SDFF_PP0_": 9,
+        "$_SDFF_PP1_": 1,
+        "$_SDFFE_PP1P_": 3,
+        "$_DFFE_PN_": 4,
+        "$_SDFFCE_PP0P_": 1,
+        "$_DFF_P_": 74,
+        "$_SDFFCE_PN0P_": 31,
+        "$_NOT_": 148,
+        "$memwr_v2": 1,
+        "$_AND_": 2215,
+        "$_OR_": 1616,
+        "$_XOR_": 505,
+        "$_MUX_": 1516,
+        "$memrd": 2
+      }
+    },
+    {
+      "host": "picorv32",
+      "variant": "benign",
+      "characters": 94657,
+      "lines": 3049,
+      "windows": 112,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.04156058189040435,
+      "normalized_tokens": 17780,
+      "normalized_characters": 49787,
+      "normalized_windows": 41,
+      "cells": 6568,
+      "edges": 13094,
+      "gates": {
+        "$_DFFE_PP_": 220,
+        "$_SDFF_PN0_": 66,
+        "$_SDFF_PP0_": 9,
+        "$_SDFF_PP1_": 1,
+        "$_SDFFE_PN0P_": 157,
+        "$_SDFFE_PP0P_": 1,
+        "$_SDFFE_PP1P_": 3,
+        "$_DFFE_PN_": 4,
+        "$_SDFFCE_PP0P_": 1,
+        "$_DFF_P_": 74,
+        "$_SDFFCE_PN0P_": 31,
+        "$_NOT_": 148,
+        "$memwr_v2": 1,
+        "$_OR_": 1616,
+        "$_AND_": 2213,
+        "$_XOR_": 505,
+        "$_MUX_": 1516,
+        "$memrd": 2
+      }
+    },
+    {
+      "host": "picorv32",
+      "variant": "trojan",
+      "characters": 94657,
+      "lines": 3049,
+      "windows": 112,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.04156058189040435,
+      "normalized_tokens": 17780,
+      "normalized_characters": 49787,
+      "normalized_windows": 41,
+      "cells": 6501,
+      "edges": 12960,
+      "gates": {
+        "$_DFFE_PP_": 220,
+        "$_SDFF_PP0_": 9,
+        "$_SDFF_PP1_": 1,
+        "$_SDFFE_PP0P_": 1,
+        "$_SDFFE_PN0P_": 157,
+        "$_SDFF_PN0_": 66,
+        "$_SDFFE_PP1P_": 3,
+        "$_DFFE_PN_": 4,
+        "$_SDFFCE_PP0P_": 1,
+        "$_DFF_P_": 74,
+        "$_SDFFCE_PN0P_": 31,
+        "$_NOT_": 148,
+        "$memwr_v2": 1,
+        "$_OR_": 1581,
+        "$_AND_": 2181,
+        "$_XOR_": 505,
+        "$_MUX_": 1516,
+        "$memrd": 2
+      }
+    }
+  ],
+  "same_family_native_comparison": "inapplicable: no selected host comes from the TrustHub reference panel",
+  "uncertainty": "Exact ordered six-host bootstrap on held-out scores conditional on the inspected reference panel; original token screen was used for host selection.",
+  "manifest_sha256": "b6b10ae29a7ce13af2d1f5443feca9d33df77781e5df7963c6e70100a1780bc5",
+  "protocol_sha256": "c8bd80b2e7d0640a7b070261e4b29a391a1106bcd8ea8bf8836d395f6d4664be"
+}
