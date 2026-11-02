@@ -1,0 +1,130 @@
+{
+  "protocol_sha256": "c8bd80b2e7d0640a7b070261e4b29a391a1106bcd8ea8bf8836d395f6d4664be",
+  "reference_clean": {
+    "AES": [
+      4677,
+      4677,
+      4677,
+      4677,
+      4677,
+      4677,
+      4677,
+      4682,
+      4682,
+      4682,
+      4682,
+      4682,
+      4682,
+      4677,
+      4677,
+      4677,
+      4677
+    ],
+    "RS232": [
+      1343,
+      1343,
+      1343,
+      1343
+    ],
+    "memctrl": [
+      20907
+    ],
+    "PIC16F84": [
+      4875,
+      4875,
+      4875,
+      4875
+    ]
+  },
+  "reference_range": [
+    1343,
+    20907
+  ],
+  "original_families": {
+    "divider": {
+      "top": "double_divider",
+      "upstream": "https://github.com/dawsonjon/fpu/tree/c45d5e0a9f1b7e945e2be6770dbc1203825a05c4",
+      "sources": {
+        "runs/overlap_v1/upstream/fpu/double_divider/double_divider.v": "f8550187ea0f0d47c28de554d3782a50d1722c1b7dfb0b35811a806eb10eca98"
+      },
+      "normalized_tokens": 1407,
+      "in_reference_range": true,
+      "reference_rank": 0.25
+    },
+    "logic_scope": {
+      "top": "wbscope",
+      "upstream": "https://github.com/ZipCPU/wbscope/tree/999f35f445817f69be3cd826cc66287f4cc760f7",
+      "sources": {
+        "runs/overlap_v1/upstream/wbscope/rtl/wbscope.v": "7e2366383f8a3437d57c4005d0ef260725921989dc47af1ebec213a34739ce43"
+      },
+      "normalized_tokens": 1853,
+      "in_reference_range": true,
+      "reference_rank": 0.25
+    },
+    "sha2": {
+      "top": "sha256_core",
+      "upstream": "https://github.com/secworks/sha256/tree/837c5cc396f001d18f2c765721c585716eb439ae",
+      "sources": {
+        "runs/overlap_v1/upstream/sha256/src/rtl/sha256_core.v": "81ea4b865b09ab42034ada6acfeaa2ea2880d39918878aaaa816852677840192",
+        "runs/overlap_v1/upstream/sha256/src/rtl/sha256_k_constants.v": "78a9600a6968eb0dc04a3a9fdc6329d3b503044b5a2561263b1cdab18f657007",
+        "runs/overlap_v1/upstream/sha256/src/rtl/sha256_w_mem.v": "0b4de636364625e34e771bb26363d24f4a4bcae6579d0f8cd3e86d7e5c14354a"
+      },
+      "normalized_tokens": 3056,
+      "in_reference_range": true,
+      "reference_rank": 0.25
+    },
+    "i2c_controller": {
+      "top": "i2c_master_axil",
+      "upstream": "https://github.com/alexforencich/verilog-i2c/tree/a65be4045e898a52e791c6ee71f8f79a7cd2e129",
+      "sources": {
+        "runs/overlap_v1/upstream/verilog-i2c/rtl/i2c_master_axil.v": "e913a758b804116b2365911ec636153b26fd452dce8875ffd54bdafa8be9278e",
+        "runs/overlap_v1/upstream/verilog-i2c/rtl/i2c_master.v": "9c4e05759f356e9ddd91af6981a1fcc10466cad0af6e5afb6553787fe9ea0328",
+        "runs/overlap_v1/upstream/verilog-i2c/rtl/axis_fifo.v": "58ee6fd1d5c670c4db9bb9740fcc806dc75c2ac407996e364aebd870649461d1"
+      },
+      "normalized_tokens": 5738,
+      "in_reference_range": true,
+      "reference_rank": 0.75
+    },
+    "jpeg_huffman": {
+      "top": "jpeg_dht",
+      "upstream": "https://github.com/ultraembedded/core_jpeg/tree/bb03cce45d0b7459d395486e9e1db3de1b416bd2",
+      "sources": {
+        "runs/overlap_v1/upstream/core_jpeg/src_v/jpeg_dht_std_y_dc.v": "3ef8f599f039f92e4f512c9106e0c96e5b900bce9d5205c946e8a5221f19519d",
+        "runs/overlap_v1/upstream/core_jpeg/src_v/jpeg_dht.v": "0de67a4994b9abd0bb52cb9fefad5d4f35972f70e5df9100eaa035e949bdcee6",
+        "runs/overlap_v1/upstream/core_jpeg/src_v/jpeg_dht_std_y_ac.v": "f9c205ff409136741299ba86239a63135aca32f87f82c3c8d826cb886e3d8b48",
+        "runs/overlap_v1/upstream/core_jpeg/src_v/jpeg_dht_std_cx_ac.v": "dbcea9dfc5ad2987f5e14b07e26272c29fe896dc0fa8a0930d6102b6d53af62b",
+        "runs/overlap_v1/upstream/core_jpeg/src_v/jpeg_dht_std_cx_dc.v": "178ab97ecb21096f5b9f094d4272473ab597549157fd40eecdc5f92f6799cd1e"
+      },
+      "normalized_tokens": 12516,
+      "in_reference_range": true,
+      "reference_rank": 0.75
+    },
+    "picorv32": {
+      "top": "picorv32",
+      "upstream": "https://github.com/YosysHQ/picorv32/tree/ef203c2b0a3fb793280f5114941416c425c5b461",
+      "sources": {
+        "runs/overlap_v1/upstream/picorv32/picorv32.v": "0836050971b3c6cdd28ac3b1e5719a67fb645161912bef1e472e63995ceb0622"
+      },
+      "normalized_tokens": 17780,
+      "in_reference_range": true,
+      "reference_rank": 0.75
+    }
+  },
+  "origin_token_check": {
+    "mean": 0.5,
+    "ci95": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "by_host": {
+      "divider": 0.25,
+      "logic_scope": 0.25,
+      "sha2": 0.25,
+      "i2c_controller": 0.75,
+      "jpeg_huffman": 0.75,
+      "picorv32": 0.75
+    }
+  },
+  "passed": true,
+  "scope": "purposive development intake on original RTL length, not a blind transfer test"
+}
