@@ -69,9 +69,11 @@ def main():
     names = {n.replace("\\", "/"): n for n in z.namelist()} if z else None
 
     def load(s):
-        rtl_path = (C.CLEAN_EMB_ROOT / f"{s['benchmark']}_{s['class_name']}.pt"
-                    if a.dataset == "provenance_clean" else C.EMB_ROOT / s["rtl_embedding_path"])
-        rtl = torch.load(rtl_path, map_location="cpu", weights_only=True).float()
+        rtl = None
+        if a.model != "gnn":
+            rtl_path = (C.CLEAN_EMB_ROOT / f"{s['benchmark']}_{s['class_name']}.pt"
+                        if a.dataset == "provenance_clean" else C.EMB_ROOT / s["rtl_embedding_path"])
+            rtl = torch.load(rtl_path, map_location="cpu", weights_only=True).float()
         g = None
         if a.model != "rtl":
             if a.dataset == "new":
@@ -130,7 +132,7 @@ def main():
                     s = train[i]
                     _, g, r = load(s)
                     opt.zero_grad(set_to_none=True)
-                    o = model(g.to(dev), r.to(dev))
+                    o = model(g.to(dev), r.to(dev) if r is not None else None)
                     # With one item, weighted cross entropy's default mean reduction
                     # divides by that same item's weight and cancels it. Sum retains it.
                     loss = F.cross_entropy(o["logits"], torch.tensor([s["label"]], device=dev),
@@ -149,7 +151,7 @@ def main():
             with torch.no_grad():
                 for s in test:
                     _, g, r = load(s)
-                    o = model(g.to(dev), r.to(dev))
+                    o = model(g.to(dev), r.to(dev) if r is not None else None)
                     probs.append(float(torch.softmax(o["logits"], -1)[0, 1]))
                     arrays = {"node_embeddings": o["node_embeddings"].cpu().numpy()}
                     if a.dataset in ("legacy", "provenance", "provenance_clean"):

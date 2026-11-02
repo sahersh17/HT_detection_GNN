@@ -1,5 +1,7 @@
 # Current evidence and claim boundary (2026-10-31)
 
+The latest reproduction of the retained baseline achieved **97.62% fusion accuracy (41/42)** on the same 42 development samples, with **50%** on the separate ten-sample host-transfer diagnostic. See the [checked stepwise results](../experiments/stepwise_rebuild/RESULTS.txt) and [pinned environment](../experiments/stepwise_rebuild/requirements-lock.txt). The tables below preserve the earlier pilot run and its different environment; its 100% development result is not the current reproduction.
+
 This page reports **observed exploratory results**, including failures. It is the primary results record for the source-traced graph version. The older pilot in `docs/BASELINE_RESULTS.md`, the supplied 2026-10-31 ZIP, and this rebuild have different graph or embedding versions and must not be pooled. `results/provenance_pilot/` preserves a superseded run using the testbench-inclusive packaged embeddings; its metadata marks that limitation. All tables below use the corrected `provenance_clean_pilot` and the new-host diagnostic.
 
 ## Data and provenance

@@ -1,0 +1,42 @@
+Stepwise graph rebuild study — 2026-11-02
+Branch: codex/gnn-graph-rebuild
+
+Original 42 samples / unchanged 3 development folds:
+Model                    Balanced accuracy     Change vs legacy GNN
+legacy GNN                 50.00%              +0.00 pp
+rebuilt_gnn                69.05%              +19.05 pp
+rtl                        90.48%              +40.48 pp
+fusion                     97.62%              +47.62 pp
+length_control             78.57%              +28.57 pp
+graph_size_control         35.71%              -14.29 pp
+
+Transfer: train on 42 AES/RS232 samples, test 10 memctrl/PIC samples (fixed 0.5 threshold):
+gnn                      BA=50.00%   AUROC=0.3200
+rtl                      BA=50.00%   AUROC=0.9600
+fusion                   BA=50.00%   AUROC=0.7800
+length                   BA=50.00%   AUROC=0.8200
+
+Host diversity control: same 42 AES/RS232 family holdouts; same per-family seeds:
+two_hosts: 50.00%
+four_hosts: 50.00%
+Four-host full LOFO mean family BA: 50.00%
+
+Training-only OOF threshold selection, applied to external samples:
+gnn: threshold=0.49966, BA=50.00%
+rtl: threshold=0.5, BA=50.00%
+fusion: threshold=0.233915, BA=50.00%
+
+Interpretation: corrected graphs improve development performance; use the separate transfer results to assess host generalization. Source length is a strong control, so high development fusion accuracy alone does not establish semantic detection.
+
+All results exploratory, single seed, previously inspected cohorts
+New graph build changes synthesis flow as well as parsing
+PIC has an undriven c_in bit in supplied RTL
+Graph cell coverage is not proof of RTL functional correctness
+Different model/runtime versions from historical reports; this run has its own lockfile
+
+Reproduce stages:
+  runs/stepwise/.venv/bin/python experiments/stepwise_rebuild/run.py --stage <stage>
+  stages: download, build, audit, gnn, embed, compare, hosts, external, report
+  --stage all repeats the full study and overwrites its outputs.
+  requirements-lock.txt records exact installed dependencies.
+  Large graphs, embeddings, checkpoints and logs remain gitignored in runs/.

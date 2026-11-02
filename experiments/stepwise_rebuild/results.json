@@ -1,0 +1,818 @@
+{
+  "status": "verified_complete",
+  "baseline": {
+    "n": 42,
+    "tn": 17,
+    "fp": 4,
+    "fn": 17,
+    "tp": 4,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.5,
+    "recall": 0.19047619047619047,
+    "fpr": 0.19047619047619047,
+    "macro_f1": 0.4470219435736677,
+    "auroc": 0.48072562358276644
+  },
+  "development": {
+    "rebuilt_gnn": {
+      "pooled": {
+        "n": 42,
+        "tn": 11,
+        "fp": 10,
+        "fn": 3,
+        "tp": 18,
+        "accuracy": 0.6904761904761905,
+        "balanced_accuracy": 0.6904761904761905,
+        "precision": 0.6428571428571429,
+        "recall": 0.8571428571428571,
+        "fpr": 0.47619047619047616,
+        "macro_f1": 0.6816326530612244,
+        "auroc": 0.6417233560090703
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 3,
+        "tp": 8,
+        "accuracy": 0.8636363636363636,
+        "balanced_accuracy": 0.8636363636363636,
+        "precision": 1.0,
+        "recall": 0.7272727272727273,
+        "fpr": 0.0,
+        "macro_f1": 0.8610526315789474,
+        "auroc": 0.8181818181818182
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 0,
+        "fp": 6,
+        "fn": 0,
+        "tp": 6,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 0,
+        "fp": 4,
+        "fn": 0,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      }
+    },
+    "rtl": {
+      "pooled": {
+        "n": 42,
+        "tn": 17,
+        "fp": 4,
+        "fn": 0,
+        "tp": 21,
+        "accuracy": 0.9047619047619048,
+        "balanced_accuracy": 0.9047619047619048,
+        "precision": 0.84,
+        "recall": 1.0,
+        "fpr": 0.19047619047619047,
+        "macro_f1": 0.9038901601830664,
+        "auroc": 0.854875283446712
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 0,
+        "tp": 6,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 0,
+        "fp": 4,
+        "fn": 0,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      }
+    },
+    "fusion": {
+      "pooled": {
+        "n": 42,
+        "tn": 21,
+        "fp": 0,
+        "fn": 1,
+        "tp": 20,
+        "accuracy": 0.9761904761904762,
+        "balanced_accuracy": 0.9761904761904762,
+        "precision": 1.0,
+        "recall": 0.9523809523809523,
+        "fpr": 0.0,
+        "macro_f1": 0.9761769710720363,
+        "auroc": 1.0
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 0,
+        "tp": 6,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 4,
+        "fp": 0,
+        "fn": 1,
+        "tp": 3,
+        "accuracy": 0.875,
+        "balanced_accuracy": 0.875,
+        "precision": 1.0,
+        "recall": 0.75,
+        "fpr": 0.0,
+        "macro_f1": 0.873015873015873,
+        "auroc": 1.0
+      }
+    },
+    "length_control": {
+      "pooled": {
+        "n": 42,
+        "tn": 21,
+        "fp": 0,
+        "fn": 9,
+        "tp": 12,
+        "accuracy": 0.7857142857142857,
+        "balanced_accuracy": 0.7857142857142857,
+        "precision": 1.0,
+        "recall": 0.5714285714285714,
+        "fpr": 0.0,
+        "macro_f1": 0.7754010695187166,
+        "auroc": 0.8276643990929705
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 5,
+        "tp": 1,
+        "accuracy": 0.5833333333333334,
+        "balanced_accuracy": 0.5833333333333334,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "fpr": 0.0,
+        "macro_f1": 0.49579831932773105,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 4,
+        "fp": 0,
+        "fn": 4,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      }
+    },
+    "graph_size_control": {
+      "pooled": {
+        "n": 42,
+        "tn": 4,
+        "fp": 17,
+        "fn": 10,
+        "tp": 11,
+        "accuracy": 0.35714285714285715,
+        "balanced_accuracy": 0.35714285714285715,
+        "precision": 0.39285714285714285,
+        "recall": 0.5238095238095238,
+        "fpr": 0.8095238095238095,
+        "macro_f1": 0.3387755102040816,
+        "auroc": 0.5555555555555556
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 0,
+        "fp": 11,
+        "fn": 6,
+        "tp": 5,
+        "accuracy": 0.22727272727272727,
+        "balanced_accuracy": 0.22727272727272727,
+        "precision": 0.3125,
+        "recall": 0.45454545454545453,
+        "fpr": 1.0,
+        "macro_f1": 0.18518518518518515,
+        "auroc": 0.45454545454545453
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 0,
+        "fp": 6,
+        "fn": 0,
+        "tp": 6,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 4,
+        "fp": 0,
+        "fn": 4,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      }
+    }
+  },
+  "external": {
+    "gnn": {
+      "pooled": {
+        "n": 10,
+        "tn": 0,
+        "fp": 5,
+        "fn": 0,
+        "tp": 5,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.32
+      },
+      "by_family": {
+        "memctrl": {
+          "n": 2,
+          "tn": 0,
+          "fp": 1,
+          "fn": 0,
+          "tp": 1,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.0
+        },
+        "PIC16F84": {
+          "n": 8,
+          "tn": 0,
+          "fp": 4,
+          "fn": 0,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.25
+        }
+      }
+    },
+    "rtl": {
+      "pooled": {
+        "n": 10,
+        "tn": 5,
+        "fp": 0,
+        "fn": 5,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.96
+      },
+      "by_family": {
+        "memctrl": {
+          "n": 2,
+          "tn": 1,
+          "fp": 0,
+          "fn": 1,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 1.0
+        },
+        "PIC16F84": {
+          "n": 8,
+          "tn": 4,
+          "fp": 0,
+          "fn": 4,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 1.0
+        }
+      }
+    },
+    "fusion": {
+      "pooled": {
+        "n": 10,
+        "tn": 0,
+        "fp": 5,
+        "fn": 0,
+        "tp": 5,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.78
+      },
+      "by_family": {
+        "memctrl": {
+          "n": 2,
+          "tn": 0,
+          "fp": 1,
+          "fn": 0,
+          "tp": 1,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.5
+        },
+        "PIC16F84": {
+          "n": 8,
+          "tn": 0,
+          "fp": 4,
+          "fn": 0,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.75
+        }
+      }
+    },
+    "length": {
+      "pooled": {
+        "n": 10,
+        "tn": 4,
+        "fp": 1,
+        "fn": 4,
+        "tp": 1,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.2,
+        "fpr": 0.2,
+        "macro_f1": 0.4505494505494506,
+        "auroc": 0.82
+      },
+      "by_family": {
+        "memctrl": {
+          "n": 2,
+          "tn": 0,
+          "fp": 1,
+          "fn": 0,
+          "tp": 1,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.5
+        },
+        "PIC16F84": {
+          "n": 8,
+          "tn": 4,
+          "fp": 0,
+          "fn": 4,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 1.0
+        }
+      }
+    }
+  },
+  "host_diversity": {
+    "two_hosts": {
+      "original_42_holdout_metrics": {
+        "pooled": {
+          "n": 42,
+          "tn": 17,
+          "fp": 4,
+          "fn": 17,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.19047619047619047,
+          "fpr": 0.19047619047619047,
+          "macro_f1": 0.4470219435736677,
+          "auroc": 0.8276643990929705
+        },
+        "fold_0": {
+          "n": 34,
+          "tn": 17,
+          "fp": 0,
+          "fn": 17,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 1.0
+        },
+        "fold_1": {
+          "n": 8,
+          "tn": 0,
+          "fp": 4,
+          "fn": 0,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.5
+        }
+      },
+      "full_metrics": {
+        "pooled": {
+          "n": 42,
+          "tn": 17,
+          "fp": 4,
+          "fn": 17,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.19047619047619047,
+          "fpr": 0.19047619047619047,
+          "macro_f1": 0.4470219435736677,
+          "auroc": 0.8276643990929705
+        },
+        "fold_0": {
+          "n": 34,
+          "tn": 17,
+          "fp": 0,
+          "fn": 17,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 1.0
+        },
+        "fold_1": {
+          "n": 8,
+          "tn": 0,
+          "fp": 4,
+          "fn": 0,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.5
+        }
+      },
+      "mean_family_balanced_accuracy": 0.5
+    },
+    "four_hosts": {
+      "original_42_holdout_metrics": {
+        "pooled": {
+          "n": 42,
+          "tn": 0,
+          "fp": 21,
+          "fn": 0,
+          "tp": 21,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.81859410430839
+        },
+        "fold_0": {
+          "n": 34,
+          "tn": 0,
+          "fp": 17,
+          "fn": 0,
+          "tp": 17,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 1.0
+        },
+        "fold_1": {
+          "n": 8,
+          "tn": 0,
+          "fp": 4,
+          "fn": 0,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.25
+        }
+      },
+      "full_metrics": {
+        "pooled": {
+          "n": 52,
+          "tn": 0,
+          "fp": 26,
+          "fn": 0,
+          "tp": 26,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.6730769230769231
+        },
+        "fold_0": {
+          "n": 34,
+          "tn": 0,
+          "fp": 17,
+          "fn": 0,
+          "tp": 17,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 1.0
+        },
+        "fold_1": {
+          "n": 8,
+          "tn": 0,
+          "fp": 4,
+          "fn": 0,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.25
+        },
+        "fold_2": {
+          "n": 2,
+          "tn": 0,
+          "fp": 1,
+          "fn": 0,
+          "tp": 1,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.0
+        },
+        "fold_3": {
+          "n": 8,
+          "tn": 0,
+          "fp": 4,
+          "fn": 0,
+          "tp": 4,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "fpr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.0
+        }
+      },
+      "mean_family_balanced_accuracy": 0.5
+    },
+    "matched_42_balanced_accuracy_delta": 0.0
+  },
+  "calibration": {
+    "gnn": {
+      "threshold": 0.49965953826904297,
+      "fixed": {
+        "n": 10,
+        "tn": 0,
+        "fp": 5,
+        "fn": 0,
+        "tp": 5,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.32
+      },
+      "calibrated": {
+        "n": 10,
+        "tn": 0,
+        "fp": 5,
+        "fn": 0,
+        "tp": 5,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.32
+      }
+    },
+    "rtl": {
+      "threshold": 0.5,
+      "fixed": {
+        "n": 10,
+        "tn": 5,
+        "fp": 0,
+        "fn": 5,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.96
+      },
+      "calibrated": {
+        "n": 10,
+        "tn": 5,
+        "fp": 0,
+        "fn": 5,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.96
+      }
+    },
+    "fusion": {
+      "threshold": 0.23391497693955898,
+      "fixed": {
+        "n": 10,
+        "tn": 0,
+        "fp": 5,
+        "fn": 0,
+        "tp": 5,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.78
+      },
+      "calibrated": {
+        "n": 10,
+        "tn": 0,
+        "fp": 5,
+        "fn": 0,
+        "tp": 5,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.78
+      }
+    }
+  },
+  "verification": {
+    "prediction_metrics_recomputed": true,
+    "development_checkpoints": 6,
+    "node_output_files": 84,
+    "graphs": 52,
+    "sequential_cells": 234000,
+    "tests_passed": 22
+  },
+  "limits": [
+    "All results exploratory, single seed, previously inspected cohorts",
+    "New graph build changes synthesis flow as well as parsing",
+    "PIC has an undriven c_in bit in supplied RTL",
+    "Graph cell coverage is not proof of RTL functional correctness",
+    "Different model/runtime versions from historical reports; this run has its own lockfile"
+  ]
+}

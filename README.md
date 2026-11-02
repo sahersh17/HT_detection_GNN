@@ -2,6 +2,18 @@
 
 This research project combines gate graphs with RTL embeddings to classify hardware designs as clean or Trojan-inserted. It also rebuilds graphs with an ordered gate-to-RTL source map for future localization research. **The detection results are exploratory; gate localization and explanation accuracy have no reviewed ground truth.** The held-out-family diagnostic currently provides no evidence that the model generalizes to new host designs. See [current results](docs/CURRENT_RESULTS.md).
 
+## Reproduce the 97.62% fusion baseline
+
+The retained baseline achieved **97.62% accuracy and balanced accuracy (41/42 correct)** on the original AES/RS232 dataset using three-fold cross-validation. The separate ten-sample PIC/memctrl diagnostic remains at 50%; the development result is not an unseen-host accuracy claim. This baseline uses the original gate GCN and RTL cross-attention, without the later pin-role or internet-data experiments.
+
+The exact environment, runner, and checked results are in [`experiments/stepwise_rebuild/`](experiments/stepwise_rebuild/), including [`RESULTS.txt`](experiments/stepwise_rebuild/RESULTS.txt) and [`requirements-lock.txt`](experiments/stepwise_rebuild/requirements-lock.txt). With the regenerated graphs and RTL embeddings available, run:
+
+```sh
+python experiments/stepwise_rebuild/run.py --stage compare
+```
+
+The runner also provides `download`, `build`, `audit`, `gnn`, `embed`, `hosts`, `external`, and `report` stages. The local generated data, model checkpoints, and archived follow-up experiments stay in gitignored `runs/`.
+
 ## Why combine the two views?
 
 A graph neural network (GNN) sees gates and their signal connections. CodeBERT captures information from the original Verilog RTL. Cross-attention combines those representations before classification and produces node-level attention scores for later localization analysis.
