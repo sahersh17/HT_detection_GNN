@@ -1,0 +1,12 @@
+{
+  "previous_catalog": "data/integrated/ver2_tier12_v3_catalog.json",
+  "previous_matched_pilot": "data/trusthub_matched_v1/validation.json",
+  "manifest": "data/tier3_v1/manifest.json",
+  "sha256": "1112ae8b959db57b505de34bd2b608f68a012a34287eda4387ce3acc4525d5c8",
+  "admission": "data/tier3_v1/admission.json",
+  "status": "hold",
+  "tier3_rows": 6,
+  "shared_host_rows": 6,
+  "admitted_records": 0,
+  "trained": false
+}

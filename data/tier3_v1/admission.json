@@ -1,0 +1,2789 @@
+{
+  "status": "hold",
+  "source_manifest_sha256": "1112ae8b959db57b505de34bd2b608f68a012a34287eda4387ce3acc4525d5c8",
+  "frozen_protocol_sha256": "c8bd80b2e7d0640a7b070261e4b29a391a1106bcd8ea8bf8836d395f6d4664be",
+  "overlap": {
+    "rv32_pipe": {
+      "clean": {
+        "relative_L1": 0.0014760147601476014,
+        "passed": true,
+        "delta": {
+          "$_OR_": -1,
+          "$_XOR_": 2,
+          "$_NOT_": -1
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.060984060984060985,
+        "passed": false,
+        "delta": {
+          "$_OR_": -28,
+          "$_XOR_": -30,
+          "$_NOT_": -34,
+          "$_AND_": -84
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      }
+    },
+    "wishbone_xbar": {
+      "clean": {
+        "relative_L1": 0.005434782608695652,
+        "passed": true,
+        "delta": {
+          "$_NOT_": -1
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.005434782608695652,
+        "passed": true,
+        "delta": {
+          "$_NOT_": -1
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      }
+    },
+    "AES": {
+      "clean": {
+        "relative_L1": 0.0011479591836734695,
+        "passed": true,
+        "delta": {
+          "$_OR_": 7,
+          "$_MUX_": 8,
+          "$_NOT_": 3
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.0,
+        "passed": true,
+        "delta": {},
+        "typed_view": "distinct_typed_constant_vertex_degrees"
+      }
+    },
+    "PIC16F84": {
+      "clean": {
+        "relative_L1": 0.015356820234869015,
+        "passed": true,
+        "delta": {
+          "$_MUX_": 13,
+          "$_NOT_": 2,
+          "$_AND_": 5,
+          "$_OR_": 14
+        },
+        "typed_view": "distinct_gate_feature_histograms"
+      },
+      "benign": {
+        "relative_L1": 0.0,
+        "passed": true,
+        "delta": {},
+        "typed_view": "distinct_typed_constant_vertex_degrees"
+      }
+    }
+  },
+  "paired_controls": {
+    "tier3": {
+      "clean": {
+        "characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 1.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "lines": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "neutral_names": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 1.0
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 1.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 1.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "cells": {
+          "mean": 0.25,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "edges": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 1.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "metadata": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "gate_hist": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "graph_stats": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "wl2": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "wl8": {
+          "mean": 0.75,
+          "ci95": [
+            0.5,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 1.0
+          }
+        },
+        "input_fanout": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "output_xor": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "output_cone": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        }
+      },
+      "benign": {
+        "characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 1.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "lines": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "neutral_names": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 1.0
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 1.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 1.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "cells": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "edges": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "metadata": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "gate_hist": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "graph_stats": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "wl2": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "wl8": {
+          "mean": 0.75,
+          "ci95": [
+            0.5,
+            1.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 1.0
+          }
+        },
+        "input_fanout": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "output_xor": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        },
+        "output_cone": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.5
+          }
+        }
+      }
+    },
+    "shared": {
+      "clean": {
+        "characters": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        },
+        "lines": {
+          "mean": 0.75,
+          "ci95": [
+            0.5,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.5
+          }
+        },
+        "windows": {
+          "mean": 0.75,
+          "ci95": [
+            0.5,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.5
+          }
+        },
+        "neutral_names": {
+          "mean": 0.25,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.5
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.0
+          }
+        },
+        "normalized_tokens": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        },
+        "normalized_characters": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "cells": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        },
+        "edges": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        },
+        "metadata": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "gate_hist": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "graph_stats": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "wl2": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "wl8": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "input_fanout": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "output_xor": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "output_cone": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        }
+      },
+      "benign": {
+        "characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "lines": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "neutral_names": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "cells": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "edges": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "metadata": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "gate_hist": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "graph_stats": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "wl2": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "wl8": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "input_fanout": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "output_xor": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "output_cone": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        }
+      }
+    }
+  },
+  "origin_controls": {
+    "tier3_other_families": {
+      "clean": {
+        "characters": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "lines": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "windows": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "neutral_names": {
+          "mean": 0.375,
+          "ci95": [
+            0.375,
+            0.375
+          ],
+          "by_host": {
+            "rv32_pipe": 0.375,
+            "wishbone_xbar": 0.375
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.25,
+          "ci95": [
+            0.25,
+            0.25
+          ],
+          "by_host": {
+            "rv32_pipe": 0.25,
+            "wishbone_xbar": 0.25
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "cells": {
+          "mean": 0.25,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.0
+          }
+        }
+      },
+      "benign": {
+        "characters": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "lines": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "windows": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "neutral_names": {
+          "mean": 0.375,
+          "ci95": [
+            0.375,
+            0.375
+          ],
+          "by_host": {
+            "rv32_pipe": 0.375,
+            "wishbone_xbar": 0.375
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.25,
+          "ci95": [
+            0.25,
+            0.25
+          ],
+          "by_host": {
+            "rv32_pipe": 0.25,
+            "wishbone_xbar": 0.25
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "cells": {
+          "mean": 0.25,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.0
+          }
+        }
+      },
+      "trojan": {
+        "characters": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "lines": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "windows": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "neutral_names": {
+          "mean": 0.375,
+          "ci95": [
+            0.375,
+            0.375
+          ],
+          "by_host": {
+            "rv32_pipe": 0.375,
+            "wishbone_xbar": 0.375
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.25,
+          "ci95": [
+            0.25,
+            0.25
+          ],
+          "by_host": {
+            "rv32_pipe": 0.25,
+            "wishbone_xbar": 0.25
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "rv32_pipe": 0.0,
+            "wishbone_xbar": 0.0
+          }
+        },
+        "cells": {
+          "mean": 0.25,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "by_host": {
+            "rv32_pipe": 0.5,
+            "wishbone_xbar": 0.0
+          }
+        }
+      }
+    },
+    "shared_same_family": {
+      "clean": {
+        "characters": {
+          "mean": 0.4117647058823529,
+          "ci95": [
+            0.3235294117647059,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.3235294117647059,
+            "PIC16F84": 0.5
+          }
+        },
+        "lines": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "windows": {
+          "mean": 0.4117647058823529,
+          "ci95": [
+            0.3235294117647059,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.3235294117647059,
+            "PIC16F84": 0.5
+          }
+        },
+        "neutral_names": {
+          "mean": 0.5882352941176471,
+          "ci95": [
+            0.5,
+            0.6764705882352942
+          ],
+          "by_host": {
+            "AES": 0.6764705882352942,
+            "PIC16F84": 0.5
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.5882352941176471,
+          "ci95": [
+            0.5,
+            0.6764705882352942
+          ],
+          "by_host": {
+            "AES": 0.6764705882352942,
+            "PIC16F84": 0.5
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.4117647058823529,
+          "ci95": [
+            0.3235294117647059,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.3235294117647059,
+            "PIC16F84": 0.5
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.4117647058823529,
+          "ci95": [
+            0.3235294117647059,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.3235294117647059,
+            "PIC16F84": 0.5
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "cells": {
+          "mean": 0.25,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.0
+          }
+        }
+      },
+      "benign": {
+        "characters": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        },
+        "lines": {
+          "mean": 0.75,
+          "ci95": [
+            0.5,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.5
+          }
+        },
+        "windows": {
+          "mean": 0.6617647058823529,
+          "ci95": [
+            0.5,
+            0.8235294117647058
+          ],
+          "by_host": {
+            "AES": 0.8235294117647058,
+            "PIC16F84": 0.5
+          }
+        },
+        "neutral_names": {
+          "mean": 0.25,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.5
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.0
+          }
+        },
+        "normalized_tokens": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        },
+        "normalized_characters": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.5,
+            "PIC16F84": 0.5
+          }
+        },
+        "cells": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 1.0
+          }
+        }
+      },
+      "trojan": {
+        "characters": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.0
+          }
+        },
+        "lines": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.0
+          }
+        },
+        "windows": {
+          "mean": 0.08823529411764706,
+          "ci95": [
+            0.0,
+            0.17647058823529413
+          ],
+          "by_host": {
+            "AES": 0.17647058823529413,
+            "PIC16F84": 0.0
+          }
+        },
+        "neutral_names": {
+          "mean": 0.75,
+          "ci95": [
+            0.5,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.5
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.125,
+          "ci95": [
+            0.0,
+            0.25
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.25
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.0
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "AES": 0.0,
+            "PIC16F84": 0.0
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.3382352941176471,
+          "ci95": [
+            0.17647058823529413,
+            0.5
+          ],
+          "by_host": {
+            "AES": 0.17647058823529413,
+            "PIC16F84": 0.5
+          }
+        },
+        "cells": {
+          "mean": 0.08823529411764706,
+          "ci95": [
+            0.0,
+            0.17647058823529413
+          ],
+          "by_host": {
+            "AES": 0.17647058823529413,
+            "PIC16F84": 0.0
+          }
+        }
+      }
+    },
+    "shared_other_families": {
+      "clean": {
+        "characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "lines": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "neutral_names": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.6666666666666666,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.6666666666666666,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "cells": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.3333333333333333
+          }
+        }
+      },
+      "benign": {
+        "characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "lines": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "neutral_names": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.6666666666666666,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.6666666666666666,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "cells": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.3333333333333333
+          }
+        }
+      },
+      "trojan": {
+        "characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "lines": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "neutral_names": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "comment_fraction": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.6666666666666666
+          }
+        },
+        "normalized_tokens": {
+          "mean": 0.39215686274509803,
+          "ci95": [
+            0.3333333333333333,
+            0.45098039215686275
+          ],
+          "by_host": {
+            "AES": 0.3333333333333333,
+            "PIC16F84": 0.45098039215686275
+          }
+        },
+        "normalized_characters": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.6666666666666666,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "normalized_windows": {
+          "mean": 0.5,
+          "ci95": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "by_host": {
+            "AES": 0.6666666666666666,
+            "PIC16F84": 0.3333333333333333
+          }
+        },
+        "cells": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3333333333333333,
+            1.0
+          ],
+          "by_host": {
+            "AES": 1.0,
+            "PIC16F84": 0.3333333333333333
+          }
+        }
+      }
+    }
+  },
+  "coverage": {
+    "tier3": {
+      "input_fanout": 6,
+      "output_xor": 3,
+      "output_cone": 0
+    },
+    "shared": {
+      "input_fanout": 6,
+      "output_xor": 0,
+      "output_cone": 0
+    }
+  },
+  "semantic_failures": [
+    "PIC16F84/clean",
+    "PIC16F84/benign",
+    "PIC16F84/trojan"
+  ],
+  "hard_stops": [
+    [
+      "class",
+      "tier3",
+      "benign",
+      "cells"
+    ],
+    [
+      "class",
+      "tier3",
+      "benign",
+      "edges"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "characters"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "comment_fraction"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "normalized_tokens"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "normalized_characters"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "cells"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "edges"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "lines"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "normalized_windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "lines"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "normalized_windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "lines"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "normalized_windows"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "characters"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "comment_fraction"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "cells"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "characters"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "lines"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "windows"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "cells"
+    ]
+  ],
+  "outside_equivalence_margin": [
+    [
+      "class",
+      "tier3",
+      "clean",
+      "characters"
+    ],
+    [
+      "class",
+      "tier3",
+      "clean",
+      "comment_fraction"
+    ],
+    [
+      "class",
+      "tier3",
+      "clean",
+      "normalized_tokens"
+    ],
+    [
+      "class",
+      "tier3",
+      "clean",
+      "normalized_characters"
+    ],
+    [
+      "class",
+      "tier3",
+      "clean",
+      "cells"
+    ],
+    [
+      "class",
+      "tier3",
+      "clean",
+      "edges"
+    ],
+    [
+      "class",
+      "tier3",
+      "benign",
+      "characters"
+    ],
+    [
+      "class",
+      "tier3",
+      "benign",
+      "comment_fraction"
+    ],
+    [
+      "class",
+      "tier3",
+      "benign",
+      "normalized_tokens"
+    ],
+    [
+      "class",
+      "tier3",
+      "benign",
+      "normalized_characters"
+    ],
+    [
+      "class",
+      "tier3",
+      "benign",
+      "cells"
+    ],
+    [
+      "class",
+      "tier3",
+      "benign",
+      "edges"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "characters"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "lines"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "windows"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "neutral_names"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "comment_fraction"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "normalized_tokens"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "normalized_characters"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "cells"
+    ],
+    [
+      "class",
+      "shared",
+      "clean",
+      "edges"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "lines"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "comment_fraction"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "normalized_windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "clean",
+      "cells"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "lines"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "comment_fraction"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "normalized_windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "benign",
+      "cells"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "lines"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "comment_fraction"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "normalized_windows"
+    ],
+    [
+      "origin",
+      "tier3_other_families",
+      "trojan",
+      "cells"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "clean",
+      "cells"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "characters"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "lines"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "windows"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "neutral_names"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "comment_fraction"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "benign",
+      "cells"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "characters"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "lines"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "windows"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "neutral_names"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "comment_fraction"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "normalized_tokens"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "normalized_characters"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "normalized_windows"
+    ],
+    [
+      "origin",
+      "shared_same_family",
+      "trojan",
+      "cells"
+    ],
+    [
+      "origin",
+      "shared_other_families",
+      "clean",
+      "neutral_names"
+    ],
+    [
+      "origin",
+      "shared_other_families",
+      "clean",
+      "cells"
+    ],
+    [
+      "origin",
+      "shared_other_families",
+      "benign",
+      "neutral_names"
+    ],
+    [
+      "origin",
+      "shared_other_families",
+      "benign",
+      "cells"
+    ],
+    [
+      "origin",
+      "shared_other_families",
+      "trojan",
+      "neutral_names"
+    ],
+    [
+      "origin",
+      "shared_other_families",
+      "trojan",
+      "cells"
+    ]
+  ],
+  "independent_families": 4,
+  "minimum_families": 6,
+  "measurements": [
+    {
+      "host": "rv32_pipe",
+      "variant": "clean",
+      "characters": 3618,
+      "lines": 85,
+      "windows": 4,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.04449972360420118,
+      "normalized_tokens": 756,
+      "normalized_characters": 2082,
+      "normalized_windows": 2,
+      "cells": 2710,
+      "edges": 5363,
+      "gates": {
+        "$_DFFE_PP_": 128,
+        "$_SDFF_PP0_": 32,
+        "$_SDFFE_PP0P_": 2,
+        "$_NOT_": 63,
+        "$memwr_v2": 1,
+        "$_XOR_": 387,
+        "$_AND_": 1053,
+        "$_OR_": 698,
+        "$_MUX_": 344,
+        "$memrd": 2
+      }
+    },
+    {
+      "host": "rv32_pipe",
+      "variant": "benign",
+      "characters": 3618,
+      "lines": 85,
+      "windows": 4,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.04449972360420118,
+      "normalized_tokens": 756,
+      "normalized_characters": 2082,
+      "normalized_windows": 2,
+      "cells": 2886,
+      "edges": 5682,
+      "gates": {
+        "$_SDFFE_PP0P_": 2,
+        "$_DFFE_PP_": 128,
+        "$_SDFF_PP0_": 32,
+        "$_NOT_": 96,
+        "$memwr_v2": 1,
+        "$_XOR_": 419,
+        "$_OR_": 725,
+        "$_AND_": 1137,
+        "$_MUX_": 344,
+        "$memrd": 2
+      }
+    },
+    {
+      "host": "rv32_pipe",
+      "variant": "trojan",
+      "characters": 3636,
+      "lines": 85,
+      "windows": 4,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.04427942794279427,
+      "normalized_tokens": 762,
+      "normalized_characters": 2096,
+      "normalized_windows": 2,
+      "cells": 2710,
+      "edges": 5364,
+      "gates": {
+        "$_DFFE_PP_": 128,
+        "$_SDFF_PP0_": 32,
+        "$_SDFFE_PP0P_": 2,
+        "$_NOT_": 62,
+        "$memwr_v2": 1,
+        "$_OR_": 697,
+        "$_XOR_": 389,
+        "$_AND_": 1053,
+        "$_MUX_": 344,
+        "$memrd": 2
+      }
+    },
+    {
+      "host": "wishbone_xbar",
+      "variant": "clean",
+      "characters": 1602,
+      "lines": 34,
+      "windows": 2,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.08801498127340823,
+      "normalized_tokens": 360,
+      "normalized_characters": 1043,
+      "normalized_windows": 1,
+      "cells": 184,
+      "edges": 269,
+      "gates": {
+        "$_SDFFE_PP0P_": 2,
+        "$_SDFFE_PP1P_": 1,
+        "$_NOT_": 9,
+        "$_AND_": 10,
+        "$_OR_": 4,
+        "$_MUX_": 158
+      }
+    },
+    {
+      "host": "wishbone_xbar",
+      "variant": "benign",
+      "characters": 1610,
+      "lines": 34,
+      "windows": 2,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.08757763975155275,
+      "normalized_tokens": 363,
+      "normalized_characters": 1052,
+      "normalized_windows": 1,
+      "cells": 184,
+      "edges": 269,
+      "gates": {
+        "$_SDFFE_PP0P_": 2,
+        "$_SDFFE_PP1P_": 1,
+        "$_NOT_": 9,
+        "$_AND_": 10,
+        "$_OR_": 4,
+        "$_MUX_": 158
+      }
+    },
+    {
+      "host": "wishbone_xbar",
+      "variant": "trojan",
+      "characters": 1601,
+      "lines": 34,
+      "windows": 2,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.08806995627732672,
+      "normalized_tokens": 359,
+      "normalized_characters": 1041,
+      "normalized_windows": 1,
+      "cells": 183,
+      "edges": 268,
+      "gates": {
+        "$_SDFFE_PP0P_": 2,
+        "$_SDFFE_PP1P_": 1,
+        "$_NOT_": 8,
+        "$_AND_": 10,
+        "$_OR_": 4,
+        "$_MUX_": 158
+      }
+    },
+    {
+      "host": "AES",
+      "variant": "clean",
+      "characters": 20065,
+      "lines": 766,
+      "windows": 27,
+      "neutral_names": 0.006811989100817439,
+      "comment_fraction": 0.1017194119112883,
+      "normalized_tokens": 4677,
+      "normalized_characters": 15638,
+      "normalized_windows": 18,
+      "cells": 15680,
+      "edges": 25616,
+      "gates": {
+        "$_DFF_P_": 6720,
+        "$_XOR_": 8256,
+        "$_NOT_": 16,
+        "$memrd_v2": 344,
+        "$meminit": 344
+      }
+    },
+    {
+      "host": "AES",
+      "variant": "benign",
+      "characters": 20173,
+      "lines": 768,
+      "windows": 28,
+      "neutral_names": 0.0067842605156037995,
+      "comment_fraction": 0.10117483765429036,
+      "normalized_tokens": 4717,
+      "normalized_characters": 15744,
+      "normalized_windows": 18,
+      "cells": 15698,
+      "edges": 25649,
+      "gates": {
+        "$_DFF_P_": 6720,
+        "$_NOT_": 19,
+        "$_XOR_": 8256,
+        "$_OR_": 7,
+        "$_MUX_": 8,
+        "$memrd_v2": 344,
+        "$meminit": 344
+      }
+    },
+    {
+      "host": "AES",
+      "variant": "trojan",
+      "characters": 20173,
+      "lines": 768,
+      "windows": 28,
+      "neutral_names": 0.0067842605156037995,
+      "comment_fraction": 0.10117483765429036,
+      "normalized_tokens": 4717,
+      "normalized_characters": 15744,
+      "normalized_windows": 18,
+      "cells": 15698,
+      "edges": 25649,
+      "gates": {
+        "$_DFF_P_": 6720,
+        "$_NOT_": 19,
+        "$_XOR_": 8256,
+        "$_OR_": 7,
+        "$_MUX_": 8,
+        "$memrd_v2": 344,
+        "$meminit": 344
+      }
+    },
+    {
+      "host": "PIC16F84",
+      "variant": "clean",
+      "characters": 51322,
+      "lines": 1292,
+      "windows": 55,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.41872881025680997,
+      "normalized_tokens": 4875,
+      "normalized_characters": 14067,
+      "normalized_windows": 12,
+      "cells": 2214,
+      "edges": 4431,
+      "gates": {
+        "$_DFFE_PP_": 184,
+        "$_SDFF_PP0_": 7,
+        "$_DFFE_PP0P_": 1,
+        "$_DFFE_PN_": 1,
+        "$_SDFFCE_PP1P_": 8,
+        "$_DFF_P_": 44,
+        "$_DFF_PN0_": 9,
+        "$_DFF_PP0_": 17,
+        "$_DFF_NP0_": 4,
+        "$_SDFFCE_PN1P_": 1,
+        "$_SDFFCE_PN0P_": 2,
+        "$memrd_v2": 1,
+        "$meminit": 1,
+        "$_NOT_": 166,
+        "$memwr_v2": 1,
+        "$_XOR_": 69,
+        "$_AND_": 401,
+        "$_OR_": 464,
+        "$_MUX_": 832,
+        "$memrd": 1
+      }
+    },
+    {
+      "host": "PIC16F84",
+      "variant": "benign",
+      "characters": 51352,
+      "lines": 1292,
+      "windows": 55,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.4184841875681571,
+      "normalized_tokens": 4883,
+      "normalized_characters": 14095,
+      "normalized_windows": 12,
+      "cells": 2248,
+      "edges": 4497,
+      "gates": {
+        "$_SDFFCE_PN1P_": 1,
+        "$_SDFFCE_PN0P_": 2,
+        "$_DFFE_PP_": 184,
+        "$_SDFF_PP0_": 7,
+        "$_DFFE_PP0P_": 1,
+        "$_DFFE_PN_": 1,
+        "$_SDFFCE_PP1P_": 8,
+        "$_DFF_P_": 44,
+        "$_DFF_PN0_": 9,
+        "$_DFF_PP0_": 17,
+        "$_DFF_NP0_": 4,
+        "$memrd_v2": 1,
+        "$meminit": 1,
+        "$_NOT_": 168,
+        "$memwr_v2": 1,
+        "$_AND_": 406,
+        "$_OR_": 478,
+        "$_XOR_": 69,
+        "$_MUX_": 845,
+        "$memrd": 1
+      }
+    },
+    {
+      "host": "PIC16F84",
+      "variant": "trojan",
+      "characters": 51352,
+      "lines": 1292,
+      "windows": 55,
+      "neutral_names": 0.0,
+      "comment_fraction": 0.4184841875681571,
+      "normalized_tokens": 4883,
+      "normalized_characters": 14095,
+      "normalized_windows": 12,
+      "cells": 2248,
+      "edges": 4497,
+      "gates": {
+        "$_DFFE_PP_": 184,
+        "$_SDFF_PP0_": 7,
+        "$_DFFE_PP0P_": 1,
+        "$_DFFE_PN_": 1,
+        "$_SDFFCE_PP1P_": 8,
+        "$_DFF_P_": 44,
+        "$_DFF_PN0_": 9,
+        "$_DFF_PP0_": 17,
+        "$_DFF_NP0_": 4,
+        "$_SDFFCE_PN1P_": 1,
+        "$_SDFFCE_PN0P_": 2,
+        "$memrd_v2": 1,
+        "$meminit": 1,
+        "$_NOT_": 168,
+        "$memwr_v2": 1,
+        "$_XOR_": 69,
+        "$_AND_": 406,
+        "$_OR_": 478,
+        "$_MUX_": 845,
+        "$memrd": 1
+      }
+    }
+  ],
+  "uncertainty": "Percentile host bootstrap conditional on the fixed reference panel and held-out predictions. Two families per cohort."
+}

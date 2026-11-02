@@ -1,0 +1,266 @@
+{
+  "generator": "tier3_admission_v1",
+  "protocol_sha256": "c8bd80b2e7d0640a7b070261e4b29a391a1106bcd8ea8bf8836d395f6d4664be",
+  "records": [
+    {
+      "host": "rv32_pipe",
+      "top": "rv32_pipe",
+      "variant": "clean",
+      "label": 0,
+      "cohort": "tier3",
+      "sources": {
+        "data/tier3_v1/rtl/rv32_pipe/clean.v": "49f382411575f22cbbb891e4134619d8d892101312adb40a863d38857f2b3a37"
+      },
+      "mapped_json_sha256": "aa36c1b074e487a7c8253d961b84a9a3e773c44e0fa3f6afef8a4dd420144ef1",
+      "checked_outputs": 38,
+      "source_and_mapped_match": true,
+      "group": "rv32_pipe",
+      "verification_failure": null,
+      "bench_sha256": "0f9f9816499ff8bfae6fb57ae4621ed3b241b75f806a558bd4a79405b72ef077"
+    },
+    {
+      "host": "rv32_pipe",
+      "top": "rv32_pipe",
+      "variant": "benign",
+      "label": 0,
+      "cohort": "tier3",
+      "sources": {
+        "data/tier3_v1/rtl/rv32_pipe/benign.v": "546ac476b9e1d5d9d2489fcd12874232754f10fd4498fe87777d5ba7d41e6fdc"
+      },
+      "mapped_json_sha256": "20f0bb880e4f1c17ed287f87bbfd509e837d3f2741dc2f8214bbe867641f987f",
+      "checked_outputs": 38,
+      "source_and_mapped_match": true,
+      "group": "rv32_pipe",
+      "verification_failure": null,
+      "equivalence_proof": "whole-module Yosys equivalence",
+      "bench_sha256": "0f9f9816499ff8bfae6fb57ae4621ed3b241b75f806a558bd4a79405b72ef077"
+    },
+    {
+      "host": "rv32_pipe",
+      "top": "rv32_pipe",
+      "variant": "trojan",
+      "label": 1,
+      "cohort": "tier3",
+      "sources": {
+        "data/tier3_v1/rtl/rv32_pipe/trojan.v": "bfd0a56659e109601bbeac1774a67d2fbee7305d4ce92a6beee32bfdf9e61c6c"
+      },
+      "mapped_json_sha256": "b1527f5e5f65eb53cabdca09aa9896228afd77b02a3a1b8b3cfc1b3bbd8efbce",
+      "checked_outputs": 36,
+      "source_and_mapped_match": true,
+      "group": "rv32_pipe",
+      "verification_failure": null,
+      "witness": {
+        "observation": 9,
+        "expected": [
+          40,
+          6,
+          11,
+          0,
+          0,
+          0
+        ],
+        "observed": [
+          44,
+          7,
+          48,
+          0,
+          0,
+          0
+        ],
+        "view": "source_and_mapped"
+      },
+      "bench_sha256": "0f9f9816499ff8bfae6fb57ae4621ed3b241b75f806a558bd4a79405b72ef077"
+    },
+    {
+      "host": "wishbone_xbar",
+      "top": "wishbone_xbar",
+      "variant": "clean",
+      "label": 0,
+      "cohort": "tier3",
+      "sources": {
+        "data/tier3_v1/rtl/wishbone_xbar/clean.v": "bc7529998c7e7547bc2977e1b927d252246e3962e656e1169e4c148f1d1abd48"
+      },
+      "mapped_json_sha256": "de0ad961d484e0114ea839931a73d73f8c0245cef16d5cb66d18cf69d1ef9be8",
+      "checked_outputs": 37,
+      "source_and_mapped_match": true,
+      "group": "wishbone_xbar",
+      "verification_failure": null,
+      "bench_sha256": "bcdb72e9fa338d1c0a4d4a85a39dcbf48cedacde2f3aece7c1577affa8936e0b"
+    },
+    {
+      "host": "wishbone_xbar",
+      "top": "wishbone_xbar",
+      "variant": "benign",
+      "label": 0,
+      "cohort": "tier3",
+      "sources": {
+        "data/tier3_v1/rtl/wishbone_xbar/benign.v": "c5fae5acd7d125572bf25a18857f081aac07a5344cad60e2568905ec11113da2"
+      },
+      "mapped_json_sha256": "895c9a12fa4967ebc41d4a87c0a17e71208e4f5f4c83ace2bc09063b6b114be8",
+      "checked_outputs": 37,
+      "source_and_mapped_match": true,
+      "group": "wishbone_xbar",
+      "verification_failure": null,
+      "equivalence_proof": "whole-module Yosys equivalence",
+      "bench_sha256": "bcdb72e9fa338d1c0a4d4a85a39dcbf48cedacde2f3aece7c1577affa8936e0b"
+    },
+    {
+      "host": "wishbone_xbar",
+      "top": "wishbone_xbar",
+      "variant": "trojan",
+      "label": 1,
+      "cohort": "tier3",
+      "sources": {
+        "data/tier3_v1/rtl/wishbone_xbar/trojan.v": "28eca51af16d6b8cf8a8ad8509eede875e313cd2f3499c4087d727c115516463"
+      },
+      "mapped_json_sha256": "f0f8bb0a6a97952b46dd0c497b97e8bd2f7df4d12be0f5f3704b5df480f25ed4",
+      "checked_outputs": 37,
+      "source_and_mapped_match": true,
+      "group": "wishbone_xbar",
+      "verification_failure": null,
+      "witness": {
+        "observation": 10,
+        "expected": [
+          1,
+          1,
+          0,
+          0,
+          4,
+          15,
+          17,
+          51,
+          0
+        ],
+        "observed": [
+          2,
+          2,
+          0,
+          1,
+          32772,
+          3,
+          34,
+          0,
+          68
+        ],
+        "view": "source_and_mapped"
+      },
+      "bench_sha256": "bcdb72e9fa338d1c0a4d4a85a39dcbf48cedacde2f3aece7c1577affa8936e0b"
+    },
+    {
+      "host": "AES",
+      "top": "aes_128",
+      "variant": "clean",
+      "label": 0,
+      "cohort": "shared",
+      "sources": {
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/aes_128.v": "53599f6bd706619001582894a8133f649c6bae3ad3b547df105297914f57cfde",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/round.v": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/table.v": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157"
+      },
+      "mapped_json_sha256": "dbd9215aab43806499fa31e2bfd46f67f4f4e410685309ced198688607b0c516",
+      "checked_outputs": 5,
+      "source_and_mapped_match": true,
+      "group": "AES",
+      "verification_failure": null,
+      "bench_sha256": "5f080b6d59a755a5de864df013c7e121aab3fb9e1aecb2a970e735b0e582f8f9"
+    },
+    {
+      "host": "AES",
+      "top": "aes_128",
+      "variant": "benign",
+      "label": 0,
+      "cohort": "shared",
+      "sources": {
+        "runs/tier3_admission_v1/AES/benign/aes_128.v": "7e6dc93c0b025b59f3b2c97f9a13ef58e9fb5f1d3c662268694a6256d45e3610",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/round.v": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/table.v": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157"
+      },
+      "mapped_json_sha256": "1d94a27dea1856e9b7d545e0d1460b20144e9f739848f04cddcaafa366b9db16",
+      "checked_outputs": 5,
+      "source_and_mapped_match": true,
+      "group": "AES",
+      "verification_failure": null,
+      "equivalence_proof": "output expression SAT with unchanged upstream",
+      "bench_sha256": "5f080b6d59a755a5de864df013c7e121aab3fb9e1aecb2a970e735b0e582f8f9"
+    },
+    {
+      "host": "AES",
+      "top": "aes_128",
+      "variant": "trojan",
+      "label": 1,
+      "cohort": "shared",
+      "sources": {
+        "runs/tier3_admission_v1/AES/trojan/aes_128.v": "692eb76dce7318469dcbc908eda52d5e6af836610a1c1710edc3874d83b54759",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/round.v": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/table.v": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157"
+      },
+      "mapped_json_sha256": "1848ea451709311ec500797a13d1eaac9169cbd2f3429acb86f1c880d05d33c8",
+      "checked_outputs": 5,
+      "source_and_mapped_match": true,
+      "group": "AES",
+      "verification_failure": null,
+      "witness": {
+        "observation": 0,
+        "expected": "3925841d02dc09fbdc118597196a0b32",
+        "observed": "3925841d02dc09fbdc118597196a0b33",
+        "view": "source_and_mapped"
+      },
+      "bench_sha256": "2b7603f92bc8abfbdaa4ad78beb899391bd8c8f7d94b1d64863a8a462bc78d83"
+    },
+    {
+      "host": "PIC16F84",
+      "top": "pic_16f84_core",
+      "variant": "clean",
+      "label": 0,
+      "cohort": "shared",
+      "sources": {
+        "runs/expansion/PIC16F84-T100/clean/risc16f84.v": "b82fa55d005efcfc1bf0dedfcce7b1bce9727f508479e6ee0b563cc727156bcb"
+      },
+      "mapped_json_sha256": "9e610140f2b38e7c7f2414da76afeac4f15cbb8eca855b4fe9819e59497f5d80",
+      "checked_outputs": 160,
+      "source_and_mapped_match": false,
+      "group": "PIC16F84",
+      "verification_failure": "Unknown program address in 160/160 mapped reset-trace samples",
+      "bench_sha256": "1b6934674285d542a549810237346eb7fa37b2c831cf699365053fc72ee35c55"
+    },
+    {
+      "host": "PIC16F84",
+      "top": "pic_16f84_core",
+      "variant": "benign",
+      "label": 0,
+      "cohort": "shared",
+      "sources": {
+        "runs/tier3_admission_v1/PIC16F84/benign/risc16f84.v": "df5fb00531098ed481049c04721cf05e0b29696b814a5fc1193d620dc311d532"
+      },
+      "mapped_json_sha256": "c148d81188963bd56046899dc2824d7694c33312a2996c84526f8f5f34e8a180",
+      "checked_outputs": 160,
+      "source_and_mapped_match": false,
+      "group": "PIC16F84",
+      "verification_failure": "Unknown program address in 160/160 mapped reset-trace samples",
+      "equivalence_proof": "output expression SAT with unchanged upstream",
+      "bench_sha256": "1b6934674285d542a549810237346eb7fa37b2c831cf699365053fc72ee35c55"
+    },
+    {
+      "host": "PIC16F84",
+      "top": "pic_16f84_core",
+      "variant": "trojan",
+      "label": 1,
+      "cohort": "shared",
+      "sources": {
+        "runs/tier3_admission_v1/PIC16F84/trojan/risc16f84.v": "3c92de4601bd7070057b8a397b6fd1a10727db6f6cb315f0f33a3100f439b86b"
+      },
+      "mapped_json_sha256": "9733444ea31760d18c2ce20d0fcadb52e41e9155b10ddee3fd7105ee2c3f8ddb",
+      "checked_outputs": 160,
+      "source_and_mapped_match": false,
+      "group": "PIC16F84",
+      "verification_failure": "Unknown program address in 160/160 mapped reset-trace samples",
+      "witness": {
+        "observation": 54,
+        "expected": 13,
+        "observed": 12,
+        "view": "source_only"
+      },
+      "bench_sha256": "1b6934674285d542a549810237346eb7fa37b2c831cf699365053fc72ee35c55"
+    }
+  ]
+}
