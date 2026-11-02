@@ -1,0 +1,655 @@
+{
+  "status": "no_go_shortcuts",
+  "controls": {
+    "clean": {
+      "characters": {
+        "mean": 0.0,
+        "by_host": {
+          "alu": 0.0,
+          "crc32": 0.0,
+          "fifo": 0.0,
+          "fir": 0.0,
+          "i2c": 0.0,
+          "mac": 0.0,
+          "pwm": 0.0,
+          "spi": 0.0,
+          "sram_ctrl": 0.0
+        }
+      },
+      "lines": {
+        "mean": 0.0,
+        "by_host": {
+          "alu": 0.0,
+          "crc32": 0.0,
+          "fifo": 0.0,
+          "fir": 0.0,
+          "i2c": 0.0,
+          "mac": 0.0,
+          "pwm": 0.0,
+          "spi": 0.0,
+          "sram_ctrl": 0.0
+        }
+      },
+      "windows": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      },
+      "nodes": {
+        "mean": 0.0,
+        "by_host": {
+          "alu": 0.0,
+          "crc32": 0.0,
+          "fifo": 0.0,
+          "fir": 0.0,
+          "i2c": 0.0,
+          "mac": 0.0,
+          "pwm": 0.0,
+          "spi": 0.0,
+          "sram_ctrl": 0.0
+        }
+      },
+      "edges": {
+        "mean": 0.0,
+        "by_host": {
+          "alu": 0.0,
+          "crc32": 0.0,
+          "fifo": 0.0,
+          "fir": 0.0,
+          "i2c": 0.0,
+          "mac": 0.0,
+          "pwm": 0.0,
+          "spi": 0.0,
+          "sram_ctrl": 0.0
+        }
+      },
+      "source_metadata": {
+        "mean": 1.0,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 1.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 1.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "graph_stats": {
+        "mean": 0.8888888888888888,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 1.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 1.0,
+          "mac": 1.0,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 1.0
+        }
+      },
+      "gates": {
+        "mean": 0.5555555555555556,
+        "by_host": {
+          "alu": 0.0,
+          "crc32": 1.0,
+          "fifo": 1.0,
+          "fir": 0.0,
+          "i2c": 1.0,
+          "mac": 0.0,
+          "pwm": 1.0,
+          "spi": 0.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "wl2": {
+        "mean": 1.0,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 1.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 1.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "wl8": {
+        "mean": 0.8888888888888888,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 1.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "input_fanout": {
+        "mean": 0.6111111111111112,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 1.0,
+          "spi": 0.5,
+          "sram_ctrl": 1.0
+        }
+      },
+      "output_xor": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      },
+      "output_cone": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      }
+    },
+    "benign": {
+      "characters": {
+        "mean": 0.7777777777777778,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "lines": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      },
+      "windows": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      },
+      "nodes": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      },
+      "edges": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      },
+      "source_metadata": {
+        "mean": 0.7777777777777778,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "graph_stats": {
+        "mean": 0.7222222222222222,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 0.5,
+          "sram_ctrl": 1.0
+        }
+      },
+      "gates": {
+        "mean": 0.7777777777777778,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "wl2": {
+        "mean": 0.7777777777777778,
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 1.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 0.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "wl8": {
+        "mean": 0.5555555555555556,
+        "by_host": {
+          "alu": 0.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 0.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "input_fanout": {
+        "mean": 0.7222222222222222,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 1.0,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 1.0,
+          "mac": 0.5,
+          "pwm": 1.0,
+          "spi": 0.5,
+          "sram_ctrl": 1.0
+        }
+      },
+      "output_xor": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      },
+      "output_cone": {
+        "mean": 0.5,
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 0.5
+        }
+      }
+    }
+  },
+  "blockers": [
+    [
+      "clean",
+      "characters",
+      0.0
+    ],
+    [
+      "clean",
+      "lines",
+      0.0
+    ],
+    [
+      "clean",
+      "nodes",
+      0.0
+    ],
+    [
+      "clean",
+      "edges",
+      0.0
+    ],
+    [
+      "clean",
+      "source_metadata",
+      1.0
+    ],
+    [
+      "clean",
+      "wl2",
+      1.0
+    ]
+  ],
+  "scalar_features": [
+    {
+      "host": "spi",
+      "variant": "clean",
+      "characters": 2578,
+      "lines": 110,
+      "windows": 3,
+      "nodes": 101,
+      "edges": 167
+    },
+    {
+      "host": "spi",
+      "variant": "benign",
+      "characters": 2446,
+      "lines": 104,
+      "windows": 3,
+      "nodes": 99,
+      "edges": 163
+    },
+    {
+      "host": "spi",
+      "variant": "trojan",
+      "characters": 2447,
+      "lines": 104,
+      "windows": 3,
+      "nodes": 99,
+      "edges": 163
+    },
+    {
+      "host": "i2c",
+      "variant": "clean",
+      "characters": 2886,
+      "lines": 121,
+      "windows": 4,
+      "nodes": 162,
+      "edges": 276
+    },
+    {
+      "host": "i2c",
+      "variant": "benign",
+      "characters": 2755,
+      "lines": 115,
+      "windows": 4,
+      "nodes": 160,
+      "edges": 272
+    },
+    {
+      "host": "i2c",
+      "variant": "trojan",
+      "characters": 2754,
+      "lines": 115,
+      "windows": 4,
+      "nodes": 160,
+      "edges": 272
+    },
+    {
+      "host": "fifo",
+      "variant": "clean",
+      "characters": 2396,
+      "lines": 95,
+      "windows": 3,
+      "nodes": 461,
+      "edges": 902
+    },
+    {
+      "host": "fifo",
+      "variant": "benign",
+      "characters": 2264,
+      "lines": 89,
+      "windows": 3,
+      "nodes": 459,
+      "edges": 898
+    },
+    {
+      "host": "fifo",
+      "variant": "trojan",
+      "characters": 2265,
+      "lines": 89,
+      "windows": 3,
+      "nodes": 459,
+      "edges": 898
+    },
+    {
+      "host": "sram_ctrl",
+      "variant": "clean",
+      "characters": 2521,
+      "lines": 104,
+      "windows": 3,
+      "nodes": 405,
+      "edges": 783
+    },
+    {
+      "host": "sram_ctrl",
+      "variant": "benign",
+      "characters": 2389,
+      "lines": 98,
+      "windows": 3,
+      "nodes": 403,
+      "edges": 779
+    },
+    {
+      "host": "sram_ctrl",
+      "variant": "trojan",
+      "characters": 2390,
+      "lines": 98,
+      "windows": 3,
+      "nodes": 403,
+      "edges": 779
+    },
+    {
+      "host": "crc32",
+      "variant": "clean",
+      "characters": 3001,
+      "lines": 105,
+      "windows": 4,
+      "nodes": 211,
+      "edges": 350
+    },
+    {
+      "host": "crc32",
+      "variant": "benign",
+      "characters": 2870,
+      "lines": 99,
+      "windows": 4,
+      "nodes": 209,
+      "edges": 346
+    },
+    {
+      "host": "crc32",
+      "variant": "trojan",
+      "characters": 2869,
+      "lines": 99,
+      "windows": 4,
+      "nodes": 209,
+      "edges": 346
+    },
+    {
+      "host": "alu",
+      "variant": "clean",
+      "characters": 1715,
+      "lines": 76,
+      "windows": 2,
+      "nodes": 259,
+      "edges": 390
+    },
+    {
+      "host": "alu",
+      "variant": "benign",
+      "characters": 1583,
+      "lines": 70,
+      "windows": 2,
+      "nodes": 257,
+      "edges": 386
+    },
+    {
+      "host": "alu",
+      "variant": "trojan",
+      "characters": 1584,
+      "lines": 70,
+      "windows": 2,
+      "nodes": 257,
+      "edges": 386
+    },
+    {
+      "host": "mac",
+      "variant": "clean",
+      "characters": 1276,
+      "lines": 55,
+      "windows": 2,
+      "nodes": 523,
+      "edges": 901
+    },
+    {
+      "host": "mac",
+      "variant": "benign",
+      "characters": 1144,
+      "lines": 49,
+      "windows": 2,
+      "nodes": 521,
+      "edges": 897
+    },
+    {
+      "host": "mac",
+      "variant": "trojan",
+      "characters": 1145,
+      "lines": 49,
+      "windows": 2,
+      "nodes": 521,
+      "edges": 897
+    },
+    {
+      "host": "fir",
+      "variant": "clean",
+      "characters": 1397,
+      "lines": 59,
+      "windows": 2,
+      "nodes": 159,
+      "edges": 263
+    },
+    {
+      "host": "fir",
+      "variant": "benign",
+      "characters": 1265,
+      "lines": 53,
+      "windows": 2,
+      "nodes": 157,
+      "edges": 259
+    },
+    {
+      "host": "fir",
+      "variant": "trojan",
+      "characters": 1266,
+      "lines": 53,
+      "windows": 2,
+      "nodes": 157,
+      "edges": 259
+    },
+    {
+      "host": "pwm",
+      "variant": "clean",
+      "characters": 1486,
+      "lines": 64,
+      "windows": 2,
+      "nodes": 131,
+      "edges": 191
+    },
+    {
+      "host": "pwm",
+      "variant": "benign",
+      "characters": 1354,
+      "lines": 58,
+      "windows": 2,
+      "nodes": 129,
+      "edges": 187
+    },
+    {
+      "host": "pwm",
+      "variant": "trojan",
+      "characters": 1355,
+      "lines": 58,
+      "windows": 2,
+      "nodes": 129,
+      "edges": 187
+    }
+  ],
+  "constant_factors": [
+    "one language",
+    "one synthesis flow",
+    "one generator; generator-ID probe inapplicable"
+  ]
+}

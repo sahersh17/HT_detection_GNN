@@ -100,10 +100,12 @@ def main(out=OUT, run_dir=RUN, catalog_name="ver2_catalog.json", graph_review=No
                    records=len(json.loads(base.read_text())["samples"])),
               dict(source=cohort["generator"],path=rel(manifest),sha256=digest(manifest),records=len(rows),
                    status=decision,admitted_training_records=0)]
-    report(ROOT/"data/integrated"/catalog_name,dict(cohorts=catalogs,
-           evaluation="Separate cohorts. Group synthetic rows by clean host. Existing folds apply only to existing data.",
-           decision=rel(out/"decision.json")))
+    if catalog_name is not None:
+        report(ROOT/"data/integrated"/catalog_name,dict(cohorts=catalogs,
+               evaluation="Separate cohorts. Group synthetic rows by clean host. Existing folds apply only to existing data.",
+               decision=rel(out/"decision.json")))
     print(decision,blockers)
+    return features, scalars
 
 
 if __name__=="__main__":

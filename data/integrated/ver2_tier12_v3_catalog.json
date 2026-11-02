@@ -1,0 +1,27 @@
+{
+  "previous_catalog": "data/integrated/ver2_tier12_v2_catalog.json",
+  "cohorts": [
+    {
+      "edit_kind": "addition",
+      "path": "data/tier12_v3/addition/manifest.json",
+      "sha256": "883ea7b8597f313da9b42408a4dac56a99cb7ea1992d2181929d5118a39dee1a",
+      "records": 27
+    },
+    {
+      "edit_kind": "replacement",
+      "path": "data/tier12_v3/replacement/manifest.json",
+      "sha256": "c33328ba9f3d214bf34f55263c4c1d5a38101b9e72c242045bf65000f3fba1f4",
+      "records": 27
+    },
+    {
+      "edit_kind": "removal",
+      "path": "data/tier12_v3/removal/manifest.json",
+      "sha256": "b667f63d09abe9b3c1f6039bef25d34cbfd6de774ad9efa308eb41ff52a2be30",
+      "records": 27
+    }
+  ],
+  "decision": "data/tier12_v3/decision.json",
+  "status": "no_go_shortcuts",
+  "admitted_development_records": 0,
+  "split_unit": "original host across all generators, edits and reference arms"
+}

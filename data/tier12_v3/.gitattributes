@@ -1,0 +1,2 @@
+*.v text eol=lf whitespace=-blank-at-eof
+*.json text eol=lf

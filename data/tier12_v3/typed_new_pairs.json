@@ -1,0 +1,380 @@
+[
+  {
+    "host": "spi",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "spi",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "i2c",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "i2c",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fifo",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fifo",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "sram_ctrl",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "sram_ctrl",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "crc32",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "crc32",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "alu",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "alu",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "mac",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "mac",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fir",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fir",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "pwm",
+    "edit_kind": "addition",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "pwm",
+    "edit_kind": "addition",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "spi",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "spi",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "i2c",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "i2c",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fifo",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fifo",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "sram_ctrl",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "sram_ctrl",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "crc32",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "crc32",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "alu",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "alu",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "mac",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "mac",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fir",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fir",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "pwm",
+    "edit_kind": "replacement",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "pwm",
+    "edit_kind": "replacement",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "spi",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "spi",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "i2c",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "i2c",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fifo",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fifo",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "sram_ctrl",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "sram_ctrl",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "crc32",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "crc32",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "alu",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "alu",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "mac",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "mac",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fir",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "fir",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "pwm",
+    "edit_kind": "removal",
+    "negative": "clean",
+    "distinguished": true,
+    "first_different_round": 0
+  },
+  {
+    "host": "pwm",
+    "edit_kind": "removal",
+    "negative": "benign",
+    "distinguished": true,
+    "first_different_round": 0
+  }
+]

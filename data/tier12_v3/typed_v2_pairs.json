@@ -1,0 +1,53 @@
+[
+  {
+    "host": "alu",
+    "negative": "clean",
+    "gate_only_isomorphic": true,
+    "typed": {
+      "distinguished": true,
+      "first_different_round": 0
+    },
+    "nodes": [
+      314,
+      314
+    ],
+    "directed_edges": [
+      1204,
+      1204
+    ]
+  },
+  {
+    "host": "crc32",
+    "negative": "benign",
+    "gate_only_isomorphic": true,
+    "typed": {
+      "distinguished": true,
+      "first_different_round": 0
+    },
+    "nodes": [
+      310,
+      310
+    ],
+    "directed_edges": [
+      1200,
+      1200
+    ]
+  },
+  {
+    "host": "fifo",
+    "negative": "clean",
+    "gate_only_isomorphic": true,
+    "typed": {
+      "distinguished": true,
+      "first_different_round": 0
+    },
+    "nodes": [
+      376,
+      376
+    ],
+    "directed_edges": [
+      1840,
+      1840
+    ]
+  }
+]

@@ -1,0 +1,317 @@
+{
+  "spi": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 5 -ctrlbit 3 -src runs/tier12_v3/spi/input.v:3.1-15.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 5 -ctrlbit 7 -src runs/tier12_v3/spi/input.v:3.1-15.4"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const1 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 2 -src runs/tier12_v3/spi/input.v:3.1-15.4"
+      ],
+      [
+        "mutate -mode const0 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 2 -src runs/tier12_v3/spi/input.v:3.1-15.4"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 0 -ctrlbit 7 -src runs/tier12_v3/spi/input.v:3.1-15.4",
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 0 -ctrlbit 7 -src runs/tier12_v3/spi/input.v:3.1-15.4",
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 0 -ctrlbit 7 -src runs/tier12_v3/spi/input.v:3.1-15.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 0 -ctrlbit 7 -src runs/tier12_v3/spi/input.v:3.1-15.4",
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 0 -ctrlbit 7 -src runs/tier12_v3/spi/input.v:3.1-15.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 0 -ctrlbit 7 -src runs/tier12_v3/spi/input.v:3.1-15.4",
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$81 -port D -portbit 0 -ctrlbit 7 -src runs/tier12_v3/spi/input.v:3.1-15.4"
+      ]
+    ]
+  },
+  "i2c": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 2 -ctrlbit 7 -src runs/tier12_v3/i2c/input.v:3.1-13.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 2 -ctrlbit 6 -src runs/tier12_v3/i2c/input.v:3.1-13.4"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const1 -module top -cell $auto$ff.cc:337:slice$173 -port D -portbit 0 -src runs/tier12_v3/i2c/input.v:3.1-13.4"
+      ],
+      [
+        "mutate -mode const0 -module top -cell $auto$ff.cc:337:slice$173 -port D -portbit 0 -src runs/tier12_v3/i2c/input.v:3.1-13.4"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 6 -ctrlbit 4 -src runs/tier12_v3/i2c/input.v:3.1-13.4",
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 6 -ctrlbit 4 -src runs/tier12_v3/i2c/input.v:3.1-13.4",
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 6 -ctrlbit 2 -src runs/tier12_v3/i2c/input.v:3.1-13.4"
+      ],
+      [
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 6 -ctrlbit 4 -src runs/tier12_v3/i2c/input.v:3.1-13.4",
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 6 -ctrlbit 4 -src runs/tier12_v3/i2c/input.v:3.1-13.4"
+      ],
+      [
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 6 -ctrlbit 4 -src runs/tier12_v3/i2c/input.v:3.1-13.4",
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$163 -port D -portbit 6 -ctrlbit 2 -src runs/tier12_v3/i2c/input.v:3.1-13.4"
+      ]
+    ]
+  },
+  "fifo": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot0 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const1 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 7 -src runs/tier12_v3/fifo/input.v:7.30-7.46"
+      ],
+      [
+        "mutate -mode const0 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 7 -src runs/tier12_v3/fifo/input.v:7.30-7.46"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot1 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46",
+        "mutate -mode cnot1 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46",
+        "mutate -mode cnot0 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46",
+        "mutate -mode cnot1 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46",
+        "mutate -mode cnot0 -module top -cell $shift$runs/tier12_v3/fifo/input.v:7$197 -port A -portbit 4 -ctrlbit 0 -src runs/tier12_v3/fifo/input.v:7.30-7.46"
+      ]
+    ]
+  },
+  "sram_ctrl": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$414 -port D -portbit 0 -ctrlbit 1 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4"
+      ],
+      [
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$414 -port D -portbit 0 -ctrlbit 1 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const0 -module top -cell $auto$ff.cc:337:slice$414 -port D -portbit 1 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4"
+      ],
+      [
+        "mutate -mode const1 -module top -cell $auto$ff.cc:337:slice$414 -port D -portbit 1 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$395 -port D -portbit 3 -ctrlbit 5 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4",
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$395 -port D -portbit 3 -ctrlbit 5 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4",
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$395 -port D -portbit 3 -ctrlbit 6 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$395 -port D -portbit 3 -ctrlbit 5 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4",
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$395 -port D -portbit 3 -ctrlbit 5 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$395 -port D -portbit 3 -ctrlbit 5 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4",
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$395 -port D -portbit 3 -ctrlbit 6 -src runs/tier12_v3/sram_ctrl/input.v:3.1-13.4"
+      ]
+    ]
+  },
+  "crc32": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot0 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 2 -ctrlbit 7 -src runs/tier12_v3/crc32/input.v:8.6-8.10"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 2 -ctrlbit 7 -src runs/tier12_v3/crc32/input.v:8.6-8.10"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const1 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 7 -src runs/tier12_v3/crc32/input.v:8.6-8.10"
+      ],
+      [
+        "mutate -mode const0 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 7 -src runs/tier12_v3/crc32/input.v:8.6-8.10"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot0 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 0 -ctrlbit 4 -src runs/tier12_v3/crc32/input.v:8.6-8.10",
+        "mutate -mode cnot0 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 0 -ctrlbit 4 -src runs/tier12_v3/crc32/input.v:8.6-8.10",
+        "mutate -mode cnot1 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 0 -ctrlbit 6 -src runs/tier12_v3/crc32/input.v:8.6-8.10"
+      ],
+      [
+        "mutate -mode cnot0 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 0 -ctrlbit 4 -src runs/tier12_v3/crc32/input.v:8.6-8.10",
+        "mutate -mode cnot0 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 0 -ctrlbit 4 -src runs/tier12_v3/crc32/input.v:8.6-8.10"
+      ],
+      [
+        "mutate -mode cnot0 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 0 -ctrlbit 4 -src runs/tier12_v3/crc32/input.v:8.6-8.10",
+        "mutate -mode cnot1 -module top -cell $xor$runs/tier12_v3/crc32/input.v:8$429 -port B -portbit 0 -ctrlbit 6 -src runs/tier12_v3/crc32/input.v:8.6-8.10"
+      ]
+    ]
+  },
+  "alu": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot0 -module top -cell $shl$runs/tier12_v3/alu/input.v:11$493 -port A -portbit 6 -ctrlbit 7 -src runs/tier12_v3/alu/input.v:11.14-11.23"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $shl$runs/tier12_v3/alu/input.v:11$493 -port A -portbit 6 -ctrlbit 5 -src runs/tier12_v3/alu/input.v:11.14-11.23"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const1 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port B -portbit 7 -src runs/tier12_v3/alu/input.v:8.8-8.11"
+      ],
+      [
+        "mutate -mode const0 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port B -portbit 7 -src runs/tier12_v3/alu/input.v:8.8-8.11"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port A -portbit 2 -ctrlbit 0 -src runs/tier12_v3/alu/input.v:8.8-8.11",
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port A -portbit 2 -ctrlbit 0 -src runs/tier12_v3/alu/input.v:8.8-8.11",
+        "mutate -mode cnot0 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port A -portbit 2 -ctrlbit 3 -src runs/tier12_v3/alu/input.v:8.8-8.11"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port A -portbit 2 -ctrlbit 0 -src runs/tier12_v3/alu/input.v:8.8-8.11",
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port A -portbit 2 -ctrlbit 0 -src runs/tier12_v3/alu/input.v:8.8-8.11"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port A -portbit 2 -ctrlbit 0 -src runs/tier12_v3/alu/input.v:8.8-8.11",
+        "mutate -mode cnot0 -module top -cell $add$runs/tier12_v3/alu/input.v:8$490 -port A -portbit 2 -ctrlbit 3 -src runs/tier12_v3/alu/input.v:8.8-8.11"
+      ]
+    ]
+  },
+  "mac": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot0 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 7 -ctrlbit 6 -src runs/tier12_v3/mac/input.v:8.24-8.27"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 7 -ctrlbit 6 -src runs/tier12_v3/mac/input.v:8.24-8.27"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const0 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 5 -src runs/tier12_v3/mac/input.v:8.24-8.27"
+      ],
+      [
+        "mutate -mode const1 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 5 -src runs/tier12_v3/mac/input.v:8.24-8.27"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot1 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 4 -ctrlbit 2 -src runs/tier12_v3/mac/input.v:8.24-8.27",
+        "mutate -mode cnot1 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 4 -ctrlbit 2 -src runs/tier12_v3/mac/input.v:8.24-8.27",
+        "mutate -mode cnot0 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 4 -ctrlbit 7 -src runs/tier12_v3/mac/input.v:8.24-8.27"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 4 -ctrlbit 2 -src runs/tier12_v3/mac/input.v:8.24-8.27",
+        "mutate -mode cnot1 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 4 -ctrlbit 2 -src runs/tier12_v3/mac/input.v:8.24-8.27"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 4 -ctrlbit 2 -src runs/tier12_v3/mac/input.v:8.24-8.27",
+        "mutate -mode cnot0 -module top -cell $mul$runs/tier12_v3/mac/input.v:8$510 -port B -portbit 4 -ctrlbit 7 -src runs/tier12_v3/mac/input.v:8.24-8.27"
+      ]
+    ]
+  },
+  "fir": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot0 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 7 -ctrlbit 0 -src runs/tier12_v3/fir/input.v:7.26-7.32"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 7 -ctrlbit 1 -src runs/tier12_v3/fir/input.v:7.26-7.32"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const0 -module top -cell $auto$ff.cc:337:slice$557 -port D -portbit 5 -src runs/tier12_v3/fir/input.v:3.1-9.4"
+      ],
+      [
+        "mutate -mode const1 -module top -cell $auto$ff.cc:337:slice$557 -port D -portbit 5 -src runs/tier12_v3/fir/input.v:3.1-9.4"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 0 -ctrlbit 7 -src runs/tier12_v3/fir/input.v:7.26-7.32",
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 0 -ctrlbit 7 -src runs/tier12_v3/fir/input.v:7.26-7.32",
+        "mutate -mode cnot0 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 0 -ctrlbit 7 -src runs/tier12_v3/fir/input.v:7.26-7.32"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 0 -ctrlbit 7 -src runs/tier12_v3/fir/input.v:7.26-7.32",
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 0 -ctrlbit 7 -src runs/tier12_v3/fir/input.v:7.26-7.32"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 0 -ctrlbit 7 -src runs/tier12_v3/fir/input.v:7.26-7.32",
+        "mutate -mode cnot0 -module top -cell $add$runs/tier12_v3/fir/input.v:7$531 -port A -portbit 0 -ctrlbit 7 -src runs/tier12_v3/fir/input.v:7.26-7.32"
+      ]
+    ]
+  },
+  "pwm": {
+    "addition": [
+      [],
+      [
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 1 -ctrlbit 4 -src runs/tier12_v3/pwm/input.v:3.1-11.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 1 -ctrlbit 2 -src runs/tier12_v3/pwm/input.v:3.1-11.4"
+      ]
+    ],
+    "replacement": [
+      [],
+      [
+        "mutate -mode const1 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 7 -src runs/tier12_v3/pwm/input.v:3.1-11.4"
+      ],
+      [
+        "mutate -mode const0 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 7 -src runs/tier12_v3/pwm/input.v:3.1-11.4"
+      ]
+    ],
+    "removal": [
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 2 -ctrlbit 0 -src runs/tier12_v3/pwm/input.v:3.1-11.4",
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 2 -ctrlbit 0 -src runs/tier12_v3/pwm/input.v:3.1-11.4",
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 2 -ctrlbit 5 -src runs/tier12_v3/pwm/input.v:3.1-11.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 2 -ctrlbit 0 -src runs/tier12_v3/pwm/input.v:3.1-11.4",
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 2 -ctrlbit 0 -src runs/tier12_v3/pwm/input.v:3.1-11.4"
+      ],
+      [
+        "mutate -mode cnot1 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 2 -ctrlbit 0 -src runs/tier12_v3/pwm/input.v:3.1-11.4",
+        "mutate -mode cnot0 -module top -cell $auto$ff.cc:337:slice$594 -port D -portbit 2 -ctrlbit 5 -src runs/tier12_v3/pwm/input.v:3.1-11.4"
+      ]
+    ]
+  }
+}
