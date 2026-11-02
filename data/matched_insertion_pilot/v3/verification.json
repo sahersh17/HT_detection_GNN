@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "host": "AES",
+      "variant": "clean_matched",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "AES",
+      "variant": "decoy",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "AES",
+      "variant": "trojan",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "RS232",
+      "variant": "clean_matched",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "RS232",
+      "variant": "decoy",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "RS232",
+      "variant": "trojan",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "memctrl",
+      "variant": "clean_matched",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "memctrl",
+      "variant": "decoy",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "memctrl",
+      "variant": "trojan",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "PIC16F84",
+      "variant": "clean_matched",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "PIC16F84",
+      "variant": "decoy",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    },
+    {
+      "host": "PIC16F84",
+      "variant": "trojan",
+      "passed": true,
+      "returncode": 0,
+      "diagnostic_tail": ""
+    }
+  ],
+  "all_passed": true
+}

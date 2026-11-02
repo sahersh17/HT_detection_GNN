@@ -1,0 +1,112 @@
+{
+  "repository": "gkaggarwal/HT_Benchmark_HT_Insertion_Framework_DATE_2025",
+  "commit": "c7a1269c2c6fd4ebfaec2245c7613dba84fd0228",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha1": "16e23fdd90619a80a049970d362ea28b3bd62a6e",
+      "bytes": 1069
+    },
+    {
+      "path": "ht_framework/__init__.py",
+      "git_blob_sha1": "5e32aa1af04569bda342233edd89883da308e514",
+      "bytes": 104
+    },
+    {
+      "path": "ht_framework/compatibility_graph.py",
+      "git_blob_sha1": "97c06719ad26c4afe31405f7a656157a7d16098f",
+      "bytes": 11638
+    },
+    {
+      "path": "ht_framework/mero_detection.py",
+      "git_blob_sha1": "97d68eed80e9a61bbf7449c91d0327c4e04f61fc",
+      "bytes": 4626
+    },
+    {
+      "path": "ht_framework/nangate_converter.py",
+      "git_blob_sha1": "3b853f73c84348a175925efb2d6ad5545ae234e7",
+      "bytes": 14851
+    },
+    {
+      "path": "ht_framework/netlist_converter.py",
+      "git_blob_sha1": "dde71ac1f39536e442323ec3806ebd8a8005a615",
+      "bytes": 12563
+    },
+    {
+      "path": "ht_framework/netlist_simulation.py",
+      "git_blob_sha1": "8b9781d4b769d11eb5eaa056c3299d4c3c9ed329",
+      "bytes": 7934
+    },
+    {
+      "path": "ht_framework/pipeline.py",
+      "git_blob_sha1": "321e6554065f73f3ed155634951f1c6043463a47",
+      "bytes": 10746
+    },
+    {
+      "path": "ht_framework/podem_atpg.py",
+      "git_blob_sha1": "4671a7e9a7e45fab66cd6aa12088f8b0d862dc78",
+      "bytes": 19429
+    },
+    {
+      "path": "ht_framework/rare_nodes.py",
+      "git_blob_sha1": "b69ed0aa7a33ea22f06b64f947cd4e5be7b02a11",
+      "bytes": 4529
+    },
+    {
+      "path": "ht_framework/trojan_insertion.py",
+      "git_blob_sha1": "3b1202b41ba61b8b9018368da57f16ad19f52708",
+      "bytes": 23084
+    },
+    {
+      "path": "ht_framework/trojan_validation.py",
+      "git_blob_sha1": "8582f1a53f1bd51f6efad061aaf1b342311e5175",
+      "bytes": 11122
+    },
+    {
+      "path": "ht_framework/trojan_visualize.py",
+      "git_blob_sha1": "6f3c4e0ef2c788fdd8321130b70a05083eb1fb9e",
+      "bytes": 16720
+    },
+    {
+      "path": "main.py",
+      "git_blob_sha1": "d85bd467789de429162ca95bcc0718c560be0bbe",
+      "bytes": 5720
+    },
+    {
+      "path": "netlists/c2670.v",
+      "git_blob_sha1": "460f19ac75b05edffbdddf4319d082671e9ec257",
+      "bytes": 48630
+    },
+    {
+      "path": "netlists/c3540.v",
+      "git_blob_sha1": "fd1e49325546e8f180f7cf6928815d34744a0683",
+      "bytes": 71849
+    },
+    {
+      "path": "netlists/c5315.v",
+      "git_blob_sha1": "e884120704e687e316f7f1dd5c3bb313156a0b26",
+      "bytes": 136796
+    },
+    {
+      "path": "netlists/c6288.v",
+      "git_blob_sha1": "e0106331e780056e8eb990dfd471323fb001e778",
+      "bytes": 145163
+    },
+    {
+      "path": "netlists/s13207scan.v",
+      "git_blob_sha1": "137d9f1ac36f6b2d2593eed956aceb551b781dd8",
+      "bytes": 188448
+    },
+    {
+      "path": "netlists/s1423scan.v",
+      "git_blob_sha1": "ceddb89c4762d56e14dec8322886dfc5eab2c603",
+      "bytes": 33499
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha1": "42106b74d2b62e63056e5b90f79c65eac031869a",
+      "bytes": 63
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "seed": 42,
+  "summary": {
+    "statistics": {
+      "AES": {
+        "n": 34,
+        "auroc": 0.4411764705882353,
+        "average_precision": 0.6577481873080742,
+        "pairs": 17,
+        "pairwise_accuracy": 0.4411764705882353
+      },
+      "MC8051": {
+        "n": 14,
+        "auroc": 0.14285714285714285,
+        "average_precision": 0.4662948162948163,
+        "pairs": 7,
+        "pairwise_accuracy": 0.14285714285714285
+      },
+      "PIC16F84": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "RS232": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "b15": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "memctrl": {
+        "n": 2,
+        "auroc": 0.0,
+        "average_precision": 0.5,
+        "pairs": 1,
+        "pairwise_accuracy": 0.0
+      },
+      "s38584": {
+        "n": 6,
+        "auroc": 0.6666666666666666,
+        "average_precision": 0.8333333333333333,
+        "pairs": 3,
+        "pairwise_accuracy": 0.6666666666666666
+      }
+    },
+    "wl2": {
+      "AES": {
+        "n": 34,
+        "auroc": 0.4117647058823529,
+        "average_precision": 0.6577481873080742,
+        "pairs": 17,
+        "pairwise_accuracy": 0.4117647058823529
+      },
+      "MC8051": {
+        "n": 14,
+        "auroc": 0.7142857142857143,
+        "average_precision": 0.8516483516483515,
+        "pairs": 7,
+        "pairwise_accuracy": 0.7142857142857143
+      },
+      "PIC16F84": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "RS232": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "b15": {
+        "n": 8,
+        "auroc": 0.0,
+        "average_precision": 0.41666666666666663,
+        "pairs": 4,
+        "pairwise_accuracy": 0.0
+      },
+      "memctrl": {
+        "n": 2,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 1,
+        "pairwise_accuracy": 1.0
+      },
+      "s38584": {
+        "n": 6,
+        "auroc": 0.5,
+        "average_precision": 0.5,
+        "pairs": 3,
+        "pairwise_accuracy": 0.5
+      }
+    }
+  }
+}

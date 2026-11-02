@@ -1,0 +1,11 @@
+{
+  "status": "hash_feature_label_verified",
+  "manifest_sha256": "06b8fbb2e74f16a9c04e9db9be6443b648a3a8086c3f56f738c3f10c016c5987",
+  "graphs": 12,
+  "hosts": 4,
+  "limits": [
+    "Constructed labels only",
+    "Local inserted-cone semantics checked in source pilot",
+    "Not a real Trust-Hub gate-label validation"
+  ]
+}

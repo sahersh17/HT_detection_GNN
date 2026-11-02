@@ -1,0 +1,1828 @@
+{
+  "status": "exploratory_untrained_controls_on_unreviewed_candidate_labels",
+  "summary_by_behavior_tier": {
+    "top_level_sat_witness": {
+      "variants": 4,
+      "positive_candidates": 27,
+      "mean_ap_by_method": {
+        "fanin": 0.008744025516186138,
+        "fanout": 0.004712124824221503,
+        "near_output": 0.012839762072211037,
+        "gate_class_rarity": 0.15504033990774357,
+        "fanout_over_output_distance": 0.01012924302771614
+      }
+    },
+    "simplified_sequential_trace": {
+      "variants": 6,
+      "positive_candidates": 136,
+      "mean_ap_by_method": {
+        "fanin": 0.022112238286412008,
+        "fanout": 0.01978748246623917,
+        "near_output": 0.00925743855730504,
+        "gate_class_rarity": 0.41034802132671505,
+        "fanout_over_output_distance": 0.010703788977629039
+      }
+    },
+    "failed_top_level_sat": {
+      "variants": 2,
+      "positive_candidates": 13,
+      "mean_ap_by_method": {
+        "fanin": 0.004058968530160155,
+        "fanout": 0.0028067506002941696,
+        "near_output": 0.0021583358162655104,
+        "gate_class_rarity": 0.1652009652583893,
+        "fanout_over_output_distance": 0.0022105967615762556
+      }
+    },
+    "unverified": {
+      "variants": 2,
+      "positive_candidates": 14,
+      "mean_ap_by_method": {
+        "fanin": 0.010574168157132257,
+        "fanout": 0.013211787581001805,
+        "near_output": 0.04278104984354979,
+        "gate_class_rarity": 0.014972222218257964,
+        "fanout_over_output_distance": 0.02845776294875399
+      }
+    },
+    "no_independent_sequential_witness": {
+      "variants": 2,
+      "positive_candidates": 46,
+      "mean_ap_by_method": {
+        "fanin": 0.033105333228361636,
+        "fanout": 0.03054973350522986,
+        "near_output": 0.016929148463830136,
+        "gate_class_rarity": 0.0685614412052388,
+        "fanout_over_output_distance": 0.020274885224758843
+      }
+    }
+  },
+  "variants": [
+    {
+      "variant": "c2670_combinational_s11/c2670_TI/c2670_T0.v",
+      "host": "c2670",
+      "mechanism": "combinational",
+      "behavior_tier": "top_level_sat_witness",
+      "behavior_evidence": "independent_combinational_output_difference_witness",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.7099938687921521,
+          "ap": 0.011541367752298992,
+          "first_positive_rank_bounds": [
+            1,
+            363
+          ],
+          "expected_hit@10": 0.12968491372281699,
+          "expected_recall@10": 0.01946282600233554,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 0.5212785784703048,
+          "expected_recall@50": 0.09731413001167769,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 0.798279319531563,
+          "expected_recall@100": 0.19462826002335537,
+          "random_hit@100": 0.4652614587445625
+        },
+        "fanout": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.4476394849785408,
+          "ap": 0.006076388888888889,
+          "first_positive_rank_bounds": [
+            143,
+            1146
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.4652614587445625
+        },
+        "near_output": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.8182709993868792,
+          "ap": 0.01651659628386106,
+          "first_positive_rank_bounds": [
+            94,
+            131
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 0.18421052631578927,
+          "expected_recall@100": 0.02631578947368421,
+          "random_hit@100": 0.4652614587445625
+        },
+        "gate_class_rarity": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.6660944206008583,
+          "ap": 0.15099261236689385,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.1546526867627785,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.20707732634338138,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.272608125819135,
+          "random_hit@100": 0.4652614587445625
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.7639484978540773,
+          "ap": 0.013159453532568968,
+          "first_positive_rank_bounds": [
+            138,
+            172
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.4652614587445625
+        }
+      }
+    },
+    {
+      "variant": "c2670_combinational_s11/c2670_TI/c2670_T1.v",
+      "host": "c2670",
+      "mechanism": "combinational",
+      "behavior_tier": "top_level_sat_witness",
+      "behavior_evidence": "independent_combinational_output_difference_witness",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.7099938687921521,
+          "ap": 0.011541367752298992,
+          "first_positive_rank_bounds": [
+            1,
+            363
+          ],
+          "expected_hit@10": 0.12968491372281699,
+          "expected_recall@10": 0.01946282600233554,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 0.5212785784703048,
+          "expected_recall@50": 0.09731413001167769,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 0.798279319531563,
+          "expected_recall@100": 0.19462826002335537,
+          "random_hit@100": 0.4652614587445625
+        },
+        "fanout": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.44849785407725323,
+          "ap": 0.006076388888888889,
+          "first_positive_rank_bounds": [
+            141,
+            1146
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.4652614587445625
+        },
+        "near_output": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.8891477621091355,
+          "ap": 0.026222055822700464,
+          "first_positive_rank_bounds": [
+            40,
+            67
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 0.3928571428571429,
+          "expected_recall@50": 0.05612244897959184,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.3113553113553113,
+          "random_hit@100": 0.4652614587445625
+        },
+        "gate_class_rarity": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.6660944206008583,
+          "ap": 0.15099261236689385,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.1546526867627785,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.20707732634338138,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.272608125819135,
+          "random_hit@100": 0.4652614587445625
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 1172,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.8484365419987737,
+          "ap": 0.0199432684239426,
+          "first_positive_rank_bounds": [
+            60,
+            84
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.05836542516800092,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.26360874726007866,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.17972350230414746,
+          "random_hit@100": 0.4652614587445625
+        }
+      }
+    },
+    {
+      "variant": "c2670_sequential_s11/c2670_TI/c2670_T0.v",
+      "host": "c2670",
+      "mechanism": "sequential",
+      "behavior_tier": "simplified_sequential_trace",
+      "behavior_evidence": "independent_simplified_scan_trace_pass",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.7012129128568763,
+          "ap": 0.03569001928386018,
+          "first_positive_rank_bounds": [
+            1,
+            363
+          ],
+          "expected_hit@10": 0.3545796618408277,
+          "expected_recall@10": 0.018403496664366227,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 0.9017220289756649,
+          "expected_recall@50": 0.09201748332183114,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 0.9934898116550279,
+          "expected_recall@100": 0.18403496664366228,
+          "random_hit@100": 0.8702606542817062
+        },
+        "fanout": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.6137898861727934,
+          "ap": 0.029947997494596323,
+          "first_positive_rank_bounds": [
+            47,
+            69
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 0.4217391304347826,
+          "expected_recall@50": 0.020869565217391303,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.21023665382498624,
+          "random_hit@100": 0.8702606542817062
+        },
+        "near_output": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.23465198731106549,
+          "ap": 0.012786842666759796,
+          "first_positive_rank_bounds": [
+            515,
+            571
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.8702606542817062
+        },
+        "gate_class_rarity": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.7643776824034335,
+          "ap": 0.41146717232860636,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.39170323095333065,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.4076585560430793,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.42760271240526526,
+          "random_hit@100": 0.8702606542817062
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.3976301548796417,
+          "ap": 0.015981997621932156,
+          "first_positive_rank_bounds": [
+            177,
+            181
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.8702606542817062
+        }
+      }
+    },
+    {
+      "variant": "c2670_sequential_s11/c2670_TI/c2670_T1.v",
+      "host": "c2670",
+      "mechanism": "sequential",
+      "behavior_tier": "simplified_sequential_trace",
+      "behavior_evidence": "independent_simplified_scan_trace_pass",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.7007837283075201,
+          "ap": 0.03561232642195257,
+          "first_positive_rank_bounds": [
+            1,
+            364
+          ],
+          "expected_hit@10": 0.3538077837502398,
+          "expected_recall@10": 0.018354938625673972,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 0.9010592593126079,
+          "expected_recall@50": 0.09177469312836985,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 0.9933853111047309,
+          "expected_recall@100": 0.1835493862567397,
+          "random_hit@100": 0.8702606542817062
+        },
+        "fanout": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.6143870125023325,
+          "ap": 0.030028129678219016,
+          "first_positive_rank_bounds": [
+            47,
+            70
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 0.4076923076923078,
+          "expected_recall@50": 0.020066889632107024,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.21052631578947367,
+          "random_hit@100": 0.8702606542817062
+        },
+        "near_output": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.0228960626982646,
+          "ap": 0.010971368161122602,
+          "first_positive_rank_bounds": [
+            1117,
+            1121
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.8702606542817062
+        },
+        "gate_class_rarity": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.7643776824034335,
+          "ap": 0.41146717232860636,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.39170323095333065,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.4076585560430793,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.42760271240526526,
+          "random_hit@100": 0.8702606542817062
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 1188,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.18356036573987683,
+          "ap": 0.011741685922396633,
+          "first_positive_rank_bounds": [
+            415,
+            415
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.17819588177768064,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.6315512942936501,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.8702606542817062
+        }
+      }
+    },
+    {
+      "variant": "c3540_combinational_s11/c3540_TI/c3540_T0.v",
+      "host": "c3540",
+      "mechanism": "combinational",
+      "behavior_tier": "top_level_sat_witness",
+      "behavior_evidence": "independent_combinational_output_difference_witness",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 1955,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.6696611909650924,
+          "ap": 0.005812324929971989,
+          "first_positive_rank_bounds": [
+            1,
+            746
+          ],
+          "expected_hit@10": 0.06508158547540632,
+          "expected_recall@10": 0.009523809523809523,
+          "random_hit@10": 0.03531423692217717,
+          "expected_hit@50": 0.2924314065023227,
+          "expected_recall@50": 0.047619047619047616,
+          "random_hit@50": 0.16609839465951126,
+          "expected_hit@100": 0.512060755145776,
+          "expected_recall@100": 0.09523809523809523,
+          "random_hit@100": 0.3079650853000563
+        },
+        "fanout": {
+          "known_nodes": 1955,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.4353182751540041,
+          "ap": 0.003604531410916581,
+          "first_positive_rank_bounds": [
+            266,
+            1936
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.03531423692217717,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.16609839465951126,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.3079650853000563
+        },
+        "near_output": {
+          "known_nodes": 1955,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.007663537694338515,
+          "ap": 0.0021996340246280815,
+          "first_positive_rank_bounds": [
+            1909,
+            1917
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.03531423692217717,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.16609839465951126,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.3079650853000563
+        },
+        "gate_class_rarity": {
+          "known_nodes": 1955,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.6457905544147844,
+          "ap": 0.1471630839090041,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.14833993298812062,
+          "random_hit@10": 0.03531423692217717,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.17270788912579957,
+          "random_hit@50": 0.16609839465951126,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.20316783429789825,
+          "random_hit@100": 0.3079650853000563
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 1955,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.014337048987973012,
+          "ap": 0.002214409500548145,
+          "first_positive_rank_bounds": [
+            1896,
+            1904
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.03531423692217717,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.16609839465951126,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.3079650853000563
+        }
+      }
+    },
+    {
+      "variant": "c3540_combinational_s11/c3540_TI/c3540_T1.v",
+      "host": "c3540",
+      "mechanism": "combinational",
+      "behavior_tier": "top_level_sat_witness",
+      "behavior_evidence": "independent_combinational_output_difference_witness",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 1954,
+          "positives": 6,
+          "unknown": 2,
+          "auroc": 0.7276266255989049,
+          "ap": 0.006081041630174578,
+          "first_positive_rank_bounds": [
+            1,
+            746
+          ],
+          "expected_hit@10": 0.06508158547540632,
+          "expected_recall@10": 0.011111111111111112,
+          "random_hit@10": 0.030354412947483866,
+          "expected_hit@50": 0.2924314065023227,
+          "expected_recall@50": 0.05555555555555555,
+          "random_hit@50": 0.14421121341697907,
+          "expected_hit@100": 0.512060755145776,
+          "expected_recall@100": 0.1111111111111111,
+          "random_hit@100": 0.270658620895747
+        },
+        "fanout": {
+          "known_nodes": 1954,
+          "positives": 6,
+          "unknown": 2,
+          "auroc": 0.4355749486652977,
+          "ap": 0.0030911901081916537,
+          "first_positive_rank_bounds": [
+            265,
+            1936
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.030354412947483866,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.14421121341697907,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.270658620895747
+        },
+        "near_output": {
+          "known_nodes": 1954,
+          "positives": 6,
+          "unknown": 2,
+          "auroc": 0.7547912388774812,
+          "ap": 0.00642076215765454,
+          "first_positive_rank_bounds": [
+            236,
+            315
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.030354412947483866,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.14421121341697907,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.270658620895747
+        },
+        "gate_class_rarity": {
+          "known_nodes": 1954,
+          "positives": 6,
+          "unknown": 2,
+          "auroc": 0.7119267624914443,
+          "ap": 0.1710130509881825,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.1730769230769231,
+          "random_hit@10": 0.030354412947483866,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.20156695156695156,
+          "random_hit@50": 0.14421121341697907,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.2371794871794872,
+          "random_hit@100": 0.270658620895747
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 1954,
+          "positives": 6,
+          "unknown": 2,
+          "auroc": 0.686131074606434,
+          "ap": 0.005199840653804848,
+          "first_positive_rank_bounds": [
+            381,
+            455
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.030354412947483866,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.14421121341697907,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.270658620895747
+        }
+      }
+    },
+    {
+      "variant": "c3540_sequential_s11/c3540_TI/c3540_T0.v",
+      "host": "c3540",
+      "mechanism": "sequential",
+      "behavior_tier": "simplified_sequential_trace",
+      "behavior_evidence": "independent_simplified_scan_trace_pass",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 1971,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.6605883403267565,
+          "ap": 0.01827189743662991,
+          "first_positive_rank_bounds": [
+            1,
+            746
+          ],
+          "expected_hit@10": 0.1924676346379094,
+          "expected_recall@10": 0.00914129006456036,
+          "random_hit@10": 0.11099166673475513,
+          "expected_hit@50": 0.6666700175925716,
+          "expected_recall@50": 0.04570645032280181,
+          "random_hit@50": 0.4480817291732073,
+          "expected_hit@100": 0.8975399605112024,
+          "expected_recall@100": 0.09141290064560362,
+          "random_hit@100": 0.7001515836769108
+        },
+        "fanout": {
+          "known_nodes": 1971,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.5999687527899294,
+          "ap": 0.01649235323457148,
+          "first_positive_rank_bounds": [
+            92,
+            157
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.11099166673475513,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.4480817291732073,
+          "expected_hit@100": 0.35132492617128275,
+          "expected_recall@100": 0.017263427109974423,
+          "random_hit@100": 0.7001515836769108
+        },
+        "near_output": {
+          "known_nodes": 1971,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.0030242835461119543,
+          "ap": 0.006488873255353673,
+          "first_positive_rank_bounds": [
+            1909,
+            1917
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.11099166673475513,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.4480817291732073,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.7001515836769108
+        },
+        "gate_class_rarity": {
+          "known_nodes": 1971,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.7470203553254173,
+          "ap": 0.40270083626379455,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.3914897561880041,
+          "random_hit@10": 0.11099166673475513,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.39890609066468896,
+          "random_hit@50": 0.4480817291732073,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.40817650876054506,
+          "random_hit@100": 0.7001515836769108
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 1971,
+          "positives": 23,
+          "unknown": 2,
+          "auroc": 0.18866619051870367,
+          "ap": 0.007093086955338825,
+          "first_positive_rank_bounds": [
+            553,
+            553
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.11099166673475513,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.4480817291732073,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.7001515836769108
+        }
+      }
+    },
+    {
+      "variant": "c3540_sequential_s11/c3540_TI/c3540_T1.v",
+      "host": "c3540",
+      "mechanism": "sequential",
+      "behavior_tier": "simplified_sequential_trace",
+      "behavior_evidence": "independent_simplified_scan_trace_pass",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 1970,
+          "positives": 22,
+          "unknown": 2,
+          "auroc": 0.6759846929251446,
+          "ap": 0.018417513651219884,
+          "first_positive_rank_bounds": [
+            1,
+            746
+          ],
+          "expected_hit@10": 0.1924676346379094,
+          "expected_recall@10": 0.009556803249313104,
+          "random_hit@10": 0.10645822291392282,
+          "expected_hit@50": 0.6666700175925716,
+          "expected_recall@50": 0.047784016246565524,
+          "random_hit@50": 0.4337163395108754,
+          "expected_hit@100": 0.8975399605112024,
+          "expected_recall@100": 0.09556803249313105,
+          "random_hit@100": 0.6841254791166174
+        },
+        "fanout": {
+          "known_nodes": 1970,
+          "positives": 22,
+          "unknown": 2,
+          "auroc": 0.60773287287661,
+          "ap": 0.016427481794754555,
+          "first_positive_rank_bounds": [
+            93,
+            156
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.10645822291392282,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.4337163395108754,
+          "expected_hit@100": 0.32569930069930064,
+          "expected_recall@100": 0.01652892561983471,
+          "random_hit@100": 0.6841254791166174
+        },
+        "near_output": {
+          "known_nodes": 1970,
+          "positives": 22,
+          "unknown": 2,
+          "auroc": 0.5907224192645137,
+          "ap": 0.013012341483517341,
+          "first_positive_rank_bounds": [
+            236,
+            315
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.10645822291392282,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.4337163395108754,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.6841254791166174
+        },
+        "gate_class_rarity": {
+          "known_nodes": 1970,
+          "positives": 22,
+          "unknown": 2,
+          "auroc": 0.7697405264140377,
+          "ap": 0.4204337789903092,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.4092851592851593,
+          "random_hit@10": 0.10645822291392282,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.41705516705516704,
+          "random_hit@50": 0.4337163395108754,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.4267676767676768,
+          "random_hit@100": 0.6841254791166174
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 1970,
+          "positives": 22,
+          "unknown": 2,
+          "auroc": 0.6412170991226432,
+          "ap": 0.0159929830946519,
+          "first_positive_rank_bounds": [
+            171,
+            174
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.10645822291392282,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.4337163395108754,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.6841254791166174
+        }
+      }
+    },
+    {
+      "variant": "c5315_combinational_s11/c5315_TI/c5315_T0.v",
+      "host": "c5315",
+      "mechanism": "combinational",
+      "behavior_tier": "failed_top_level_sat",
+      "behavior_evidence": "sat_unsat_no_defined_input_output_difference",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 2418,
+          "positives": 5,
+          "unknown": 0,
+          "auroc": 0.7523829258184832,
+          "ap": 0.004166666666666667,
+          "first_positive_rank_bounds": [
+            1,
+            1196
+          ],
+          "expected_hit@10": 0.04104531030106906,
+          "expected_recall@10": 0.008333333333333333,
+          "random_hit@10": 0.020524759623395172,
+          "expected_hit@50": 0.19197422325513225,
+          "expected_recall@50": 0.04166666666666667,
+          "random_hit@50": 0.09928159758905597,
+          "expected_hit@100": 0.35326357422735477,
+          "expected_recall@100": 0.08333333333333334,
+          "random_hit@100": 0.1905163286756637
+        },
+        "fanout": {
+          "known_nodes": 2418,
+          "positives": 5,
+          "unknown": 0,
+          "auroc": 0.4372150849564857,
+          "ap": 0.00216076058772688,
+          "first_positive_rank_bounds": [
+            408,
+            2310
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.020524759623395172,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.09928159758905597,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.1905163286756637
+        },
+        "near_output": {
+          "known_nodes": 2418,
+          "positives": 5,
+          "unknown": 0,
+          "auroc": 0.2924989639452963,
+          "ap": 0.00178851323710602,
+          "first_positive_rank_bounds": [
+            1446,
+            1612
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.020524759623395172,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.09928159758905597,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.1905163286756637
+        },
+        "gate_class_rarity": {
+          "known_nodes": 2418,
+          "positives": 5,
+          "unknown": 0,
+          "auroc": 0.43207625362619145,
+          "ap": 0.20165425971877585,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.2,
+          "random_hit@10": 0.020524759623395172,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.2,
+          "random_hit@50": 0.09928159758905597,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.2,
+          "random_hit@100": 0.1905163286756637
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 2418,
+          "positives": 5,
+          "unknown": 0,
+          "auroc": 0.3016991297140489,
+          "ap": 0.0018279919492061201,
+          "first_positive_rank_bounds": [
+            1481,
+            1620
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.020524759623395172,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.09928159758905597,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.1905163286756637
+        }
+      }
+    },
+    {
+      "variant": "c5315_combinational_s11/c5315_TI/c5315_T1.v",
+      "host": "c5315",
+      "mechanism": "combinational",
+      "behavior_tier": "failed_top_level_sat",
+      "behavior_evidence": "sat_unsat_no_defined_input_output_difference",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 2421,
+          "positives": 8,
+          "unknown": 0,
+          "auroc": 0.5799575217571488,
+          "ap": 0.003951270393653644,
+          "first_positive_rank_bounds": [
+            1,
+            1196
+          ],
+          "expected_hit@10": 0.04104531030106906,
+          "expected_recall@10": 0.005208333333333333,
+          "random_hit@10": 0.03261691054645288,
+          "expected_hit@50": 0.19197422325513225,
+          "expected_recall@50": 0.026041666666666668,
+          "random_hit@50": 0.1539656958135922,
+          "expected_hit@100": 0.35326357422735477,
+          "expected_recall@100": 0.052083333333333336,
+          "random_hit@100": 0.28677600961216476
+        },
+        "fanout": {
+          "known_nodes": 2421,
+          "positives": 8,
+          "unknown": 0,
+          "auroc": 0.4372150849564857,
+          "ap": 0.0034527406128614588,
+          "first_positive_rank_bounds": [
+            408,
+            2310
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.03261691054645288,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.1539656958135922,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.28677600961216476
+        },
+        "near_output": {
+          "known_nodes": 2421,
+          "positives": 8,
+          "unknown": 0,
+          "auroc": 0.2584438458350601,
+          "ap": 0.002528158395425001,
+          "first_positive_rank_bounds": [
+            1446,
+            1611
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.03261691054645288,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.1539656958135922,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.28677600961216476
+        },
+        "gate_class_rarity": {
+          "known_nodes": 2421,
+          "positives": 8,
+          "unknown": 0,
+          "auroc": 0.6164266473269788,
+          "ap": 0.12874767079800276,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.12800802139037434,
+          "random_hit@10": 0.03261691054645288,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.1413770053475936,
+          "random_hit@50": 0.1539656958135922,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.15808823529411764,
+          "random_hit@100": 0.28677600961216476
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 2421,
+          "positives": 8,
+          "unknown": 0,
+          "auroc": 0.27222337339411523,
+          "ap": 0.0025932015739463916,
+          "first_positive_rank_bounds": [
+            1478,
+            1620
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.03261691054645288,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.1539656958135922,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.28677600961216476
+        }
+      }
+    },
+    {
+      "variant": "c5315_sequential_s11/c5315_TI/c5315_T0.v",
+      "host": "c5315",
+      "mechanism": "sequential",
+      "behavior_tier": "simplified_sequential_trace",
+      "behavior_evidence": "independent_simplified_scan_trace_pass",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 2433,
+          "positives": 21,
+          "unknown": 1,
+          "auroc": 0.6428077864645029,
+          "ap": 0.012299594121946835,
+          "first_positive_rank_bounds": [
+            1,
+            1196
+          ],
+          "expected_hit@10": 0.1249751195409945,
+          "expected_recall@10": 0.006291533954622311,
+          "random_hit@10": 0.08318475409975767,
+          "expected_hit@50": 0.4928463528235032,
+          "expected_recall@50": 0.03145766977311156,
+          "random_hit@50": 0.3545990611078158,
+          "expected_hit@100": 0.7504197422614322,
+          "expected_recall@100": 0.06291533954622312,
+          "random_hit@100": 0.5873240078163262
+        },
+        "fanout": {
+          "known_nodes": 2433,
+          "positives": 21,
+          "unknown": 1,
+          "auroc": 0.6148029692805812,
+          "ap": 0.01272260289218141,
+          "first_positive_rank_bounds": [
+            125,
+            166
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.08318475409975767,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.3545990611078158,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.5873240078163262
+        },
+        "near_output": {
+          "known_nodes": 2433,
+          "positives": 21,
+          "unknown": 1,
+          "auroc": 0.2486180210060807,
+          "ap": 0.0061278715761633115,
+          "first_positive_rank_bounds": [
+            1287,
+            1445
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.08318475409975767,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.3545990611078158,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.5873240078163262
+        },
+        "gate_class_rarity": {
+          "known_nodes": 2433,
+          "positives": 21,
+          "unknown": 1,
+          "auroc": 0.6144179894179894,
+          "ap": 0.4335580801910701,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.42857142857142855,
+          "random_hit@10": 0.08318475409975767,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.42857142857142855,
+          "random_hit@50": 0.3545990611078158,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.42857142857142855,
+          "random_hit@100": 0.5873240078163262
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 2433,
+          "positives": 21,
+          "unknown": 1,
+          "auroc": 0.3986515833530759,
+          "ap": 0.0068832079913719755,
+          "first_positive_rank_bounds": [
+            508,
+            510
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.08318475409975767,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.3545990611078158,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.5873240078163262
+        }
+      }
+    },
+    {
+      "variant": "c5315_sequential_s11/c5315_TI/c5315_T1.v",
+      "host": "c5315",
+      "mechanism": "sequential",
+      "behavior_tier": "simplified_sequential_trace",
+      "behavior_evidence": "independent_simplified_scan_trace_pass",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 2437,
+          "positives": 24,
+          "unknown": 2,
+          "auroc": 0.5993231109269236,
+          "ap": 0.012382078802862654,
+          "first_positive_rank_bounds": [
+            1,
+            1195
+          ],
+          "expected_hit@10": 0.12507267003474143,
+          "expected_recall@10": 0.005509641873278237,
+          "random_hit@10": 0.09439678329727186,
+          "expected_hit@50": 0.4931387878674103,
+          "expected_recall@50": 0.027548209366391185,
+          "random_hit@50": 0.3934196556262676,
+          "expected_hit@100": 0.7507205217713024,
+          "expected_recall@100": 0.05509641873278237,
+          "random_hit@100": 0.6359526885085462
+        },
+        "fanout": {
+          "known_nodes": 2437,
+          "positives": 24,
+          "unknown": 2,
+          "auroc": 0.5926319242989363,
+          "ap": 0.013106329703112247,
+          "first_positive_rank_bounds": [
+            125,
+            166
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.09439678329727186,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.3934196556262676,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.6359526885085462
+        },
+        "near_output": {
+          "known_nodes": 2437,
+          "positives": 24,
+          "unknown": 2,
+          "auroc": 0.14488361652161902,
+          "ap": 0.006157334200913521,
+          "first_positive_rank_bounds": [
+            1846,
+            1890
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.09439678329727186,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.3934196556262676,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.6359526885085462
+        },
+        "gate_class_rarity": {
+          "known_nodes": 2437,
+          "positives": 24,
+          "unknown": 2,
+          "auroc": 0.6529993783671778,
+          "ap": 0.3824610878579037,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.37511140819964345,
+          "random_hit@10": 0.09439678329727186,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.37956773618538325,
+          "random_hit@50": 0.3934196556262676,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.385138146167558,
+          "random_hit@100": 0.6359526885085462
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 2437,
+          "positives": 24,
+          "unknown": 2,
+          "auroc": 0.2593676612791822,
+          "ap": 0.00652977228008275,
+          "first_positive_rank_bounds": [
+            1022,
+            1022
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.09439678329727186,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.3934196556262676,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.6359526885085462
+        }
+      }
+    },
+    {
+      "variant": "s1423_combinational_s11/s1423scan_TI/s1423scan_T0.v",
+      "host": "s1423",
+      "mechanism": "combinational",
+      "behavior_tier": "unverified",
+      "behavior_evidence": "upstream_self_validation_only",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 807,
+          "positives": 7,
+          "unknown": 0,
+          "auroc": 0.5846428571428571,
+          "ap": 0.010561915511125444,
+          "first_positive_rank_bounds": [
+            1,
+            439
+          ],
+          "expected_hit@10": 0.10835315064645834,
+          "expected_recall@10": 0.016123831022250887,
+          "random_hit@10": 0.08388301034818002,
+          "expected_hit@50": 0.4521170299642817,
+          "expected_recall@50": 0.08061915511125443,
+          "random_hit@50": 0.36202187041223677,
+          "expected_hit@100": 0.7235787423547416,
+          "expected_recall@100": 0.16123831022250887,
+          "random_hit@100": 0.6053488153365988
+        },
+        "fanout": {
+          "known_nodes": 807,
+          "positives": 7,
+          "unknown": 0,
+          "auroc": 0.4617857142857143,
+          "ap": 0.010013706975327444,
+          "first_positive_rank_bounds": [
+            16,
+            56
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.08388301034818002,
+          "expected_hit@50": 0.853658536585366,
+          "expected_recall@50": 0.12195121951219512,
+          "random_hit@50": 0.36202187041223677,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.14285714285714285,
+          "random_hit@100": 0.6053488153365988
+        },
+        "near_output": {
+          "known_nodes": 807,
+          "positives": 7,
+          "unknown": 0,
+          "auroc": 0.9480357142857143,
+          "ap": 0.07702759396315959,
+          "first_positive_rank_bounds": [
+            9,
+            16
+          ],
+          "expected_hit@10": 0.25,
+          "expected_recall@10": 0.03571428571428571,
+          "random_hit@10": 0.08388301034818002,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.6071428571428571,
+          "random_hit@50": 0.36202187041223677,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.9755102040816326,
+          "random_hit@100": 0.6053488153365988
+        },
+        "gate_class_rarity": {
+          "known_nodes": 807,
+          "positives": 7,
+          "unknown": 0,
+          "auroc": 0.6171428571428571,
+          "ap": 0.016126701751383372,
+          "first_positive_rank_bounds": [
+            1,
+            31
+          ],
+          "expected_hit@10": 0.32258064516129026,
+          "expected_recall@10": 0.04608294930875576,
+          "random_hit@10": 0.08388301034818002,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.14285714285714285,
+          "random_hit@50": 0.36202187041223677,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.14285714285714285,
+          "random_hit@100": 0.6053488153365988
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 807,
+          "positives": 7,
+          "unknown": 0,
+          "auroc": 0.818125,
+          "ap": 0.04559389262384486,
+          "first_positive_rank_bounds": [
+            5,
+            6
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.14285714285714285,
+          "random_hit@10": 0.08388301034818002,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.14285714285714285,
+          "random_hit@50": 0.36202187041223677,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.14285714285714285,
+          "random_hit@100": 0.6053488153365988
+        }
+      }
+    },
+    {
+      "variant": "s1423_combinational_s11/s1423scan_TI/s1423scan_T1.v",
+      "host": "s1423",
+      "mechanism": "combinational",
+      "behavior_tier": "unverified",
+      "behavior_evidence": "upstream_self_validation_only",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 805,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.5845864661654135,
+          "ap": 0.01058642080313907,
+          "first_positive_rank_bounds": [
+            1,
+            438
+          ],
+          "expected_hit@10": 0.10858822263264212,
+          "expected_recall@10": 0.01616031027795734,
+          "random_hit@10": 0.08408440659175842,
+          "expected_hit@50": 0.45291275156785205,
+          "expected_recall@50": 0.08080155138978669,
+          "random_hit@50": 0.3627600317457027,
+          "expected_hit@100": 0.7244987113951894,
+          "expected_recall@100": 0.16160310277957338,
+          "random_hit@100": 0.6063263725923859
+        },
+        "fanout": {
+          "known_nodes": 805,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.4658968850698174,
+          "ap": 0.016409868186676165,
+          "first_positive_rank_bounds": [
+            7,
+            16
+          ],
+          "expected_hit@10": 0.4,
+          "expected_recall@10": 0.05714285714285715,
+          "random_hit@10": 0.08408440659175842,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.14285714285714285,
+          "random_hit@50": 0.3627600317457027,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.14285714285714285,
+          "random_hit@100": 0.6063263725923859
+        },
+        "near_output": {
+          "known_nodes": 805,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.45640887934121016,
+          "ap": 0.008534505723939994,
+          "first_positive_rank_bounds": [
+            254,
+            311
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.08408440659175842,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.3627600317457027,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.6063263725923859
+        },
+        "gate_class_rarity": {
+          "known_nodes": 805,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.5827067669172933,
+          "ap": 0.013817742685132558,
+          "first_positive_rank_bounds": [
+            1,
+            31
+          ],
+          "expected_hit@10": 0.32258064516129026,
+          "expected_recall@10": 0.04608294930875576,
+          "random_hit@10": 0.08408440659175842,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.14285714285714285,
+          "random_hit@50": 0.3627600317457027,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.14285714285714285,
+          "random_hit@100": 0.6063263725923859
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 805,
+          "positives": 7,
+          "unknown": 2,
+          "auroc": 0.42848191908342287,
+          "ap": 0.011321633273663114,
+          "first_positive_rank_bounds": [
+            34,
+            35
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.08408440659175842,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.14285714285714285,
+          "random_hit@50": 0.3627600317457027,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.14285714285714285,
+          "random_hit@100": 0.6063263725923859
+        }
+      }
+    },
+    {
+      "variant": "s1423_sequential_s11/s1423scan_TI/s1423scan_T0.v",
+      "host": "s1423",
+      "mechanism": "sequential",
+      "behavior_tier": "no_independent_sequential_witness",
+      "behavior_evidence": "independent_simplified_scan_trace_failed",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.5750666594112206,
+          "ap": 0.033105333228361636,
+          "first_positive_rank_bounds": [
+            1,
+            439
+          ],
+          "expected_hit@10": 0.304035013457281,
+          "expected_recall@10": 0.015322735108216818,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 0.8504975381296067,
+          "expected_recall@50": 0.07661367554108409,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 0.982707262495862,
+          "expected_recall@100": 0.15322735108216817,
+          "random_hit@100": 0.9515358541653672
+        },
+        "fanout": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.5347445176035261,
+          "ap": 0.029696403620648026,
+          "first_positive_rank_bounds": [
+            57,
+            135
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 0.9089310829817159,
+          "expected_recall@100": 0.07085346215780998,
+          "random_hit@100": 0.9515358541653672
+        },
+        "near_output": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.18653751972574414,
+          "ap": 0.01764275926754797,
+          "first_positive_rank_bounds": [
+            374,
+            444
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.9515358541653672
+        },
+        "gate_class_rarity": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.6957337976818849,
+          "ap": 0.06899404688541662,
+          "first_positive_rank_bounds": [
+            1,
+            31
+          ],
+          "expected_hit@10": 0.836337760910816,
+          "expected_recall@10": 0.062111801242236024,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.2508361204013378,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.36231884057971014,
+          "random_hit@100": 0.9515358541653672
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.3353920661696686,
+          "ap": 0.021041040937517005,
+          "first_positive_rank_bounds": [
+            163,
+            166
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.9515358541653672
+        }
+      }
+    },
+    {
+      "variant": "s1423_sequential_s11/s1423scan_TI/s1423scan_T1.v",
+      "host": "s1423",
+      "mechanism": "sequential",
+      "behavior_tier": "no_independent_sequential_witness",
+      "behavior_evidence": "independent_simplified_scan_trace_failed",
+      "label_status": "construction_derived_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.5750666594112206,
+          "ap": 0.033105333228361636,
+          "first_positive_rank_bounds": [
+            1,
+            439
+          ],
+          "expected_hit@10": 0.304035013457281,
+          "expected_recall@10": 0.015322735108216818,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 0.8504975381296067,
+          "expected_recall@50": 0.07661367554108409,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 0.982707262495862,
+          "expected_recall@100": 0.15322735108216817,
+          "random_hit@100": 0.9515358541653672
+        },
+        "fanout": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.552837786363389,
+          "ap": 0.03140306338981169,
+          "first_positive_rank_bounds": [
+            56,
+            135
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 0.9122628726287263,
+          "expected_recall@100": 0.07158006362672321,
+          "random_hit@100": 0.9515358541653672
+        },
+        "near_output": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.07778745170593677,
+          "ap": 0.0162155376601123,
+          "first_positive_rank_bounds": [
+            564,
+            612
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.9515358541653672
+        },
+        "gate_class_rarity": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.685340371116069,
+          "ap": 0.06812883552506097,
+          "first_positive_rank_bounds": [
+            1,
+            31
+          ],
+          "expected_hit@10": 0.836337760910816,
+          "expected_recall@10": 0.062111801242236024,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.2508361204013378,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.36231884057971014,
+          "random_hit@100": 0.9515358541653672
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 822,
+          "positives": 23,
+          "unknown": 1,
+          "auroc": 0.2825270718833324,
+          "ap": 0.019508729512000684,
+          "first_positive_rank_bounds": [
+            195,
+            198
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.24827355669022677,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.7686219768199216,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.9515358541653672
+        }
+      }
+    }
+  ],
+  "limits": [
+    "No benign decoys; size and gate-count shortcuts fail the benchmark gate",
+    "Candidate labels are construction-derived and have not been independently reviewed",
+    "Sequential traces use a simplified scan FF evaluator, not full RTL equivalence",
+    "Do not use these numbers for a learned localization superiority claim"
+  ]
+}

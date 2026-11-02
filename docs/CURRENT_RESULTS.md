@@ -25,6 +25,13 @@ All rows use the same three clean-source-grouped folds, 42 samples, seed 42. Bal
 
 The length-only control reaches 0.786 without seeing circuit semantics. This is evidence that superficial source differences can predict labels in these folds. Attention values exported from the fusion model are aligned to exact graph rows and RTL chunks, but they are **rankings, not validated Trojan locations**.
 
+The later [RTL lexical ablation](RTL_LEXICAL_ABLATION.md) compiles all 126
+comment-stripped and/or renamed source variants. Retraining on renamed RTL
+raises development BA to 0.905, while stripping comments lowers it to 0.762.
+All retrained variants keep the same 17 pairwise wins and four RS232 ties as
+the original. The original head transfers poorly to transformed RTL. These
+are lexical-sensitivity results on inspected folds, not improved host transfer.
+
 ## Detection: previously reserved host families
 
 Models were fit on all 21 original pairs and evaluated once at a frozen 0.5 threshold on ten samples from the two new hosts. Values below come from saved per-sample probabilities. No threshold adjustment was made after inspection.
@@ -41,6 +48,20 @@ At the fixed decision threshold, **none of the four approaches improves on chanc
 ## Research claims supported today
 
 The project can demonstrate a reproducible, checked gate-to-RTL *source provenance* pipeline and a controlled analysis of dataset shortcuts and cross-host transfer failure. It cannot support claims of accurate gate/RTL Trojan localization, grounded trigger or payload explanations, fix usefulness, fusion superiority on unseen hosts, or a publishable method improvement. The source-span checks do not assess semantic correctness, and no expert ratings exist.
+
+The [matched synthetic insertion pilot](MATCHED_INSERTION_PILOT.md) adds
+four-host constructed gate labels and verified benign decoys. Its strongest
+simple controls rank the Trojan higher on every held-out host, and one variant's gate-only
+graphs are provably isomorphic across classes. It is a no-go for model training
+under the planned publication protocol.
+The [port-aware graph diagnostic](PORT_AWARE_DIAGNOSTIC.md) restores some
+structural signal but does not produce consistent held-out-host ranking.
+
+The separate [pinned DATE framework intake](INDEPENDENT_BENCHMARK_V2.md)
+produced 16 byte-reproducible development variants and verified graph/source
+lineage, but it failed behavior and shortcut gates. A simple gate count and
+mapped graph size each rank the Trojan higher in all 16 clean/Trojan pairs.
+No detector was trained on this cohort; its two reserved hosts remain unused.
 
 ## Reproduce the saved evidence
 

@@ -1,0 +1,754 @@
+{
+  "status": "exploratory_unreviewed_candidates",
+  "designs": [
+    {
+      "graph_id": "new_gate_v1/s35932-T100/trojan",
+      "family": "s35932",
+      "label_status": "mechanical_candidate_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 5433,
+          "positives": 15,
+          "unknown": 8,
+          "auroc": 0.49931093884582256,
+          "ap": 0.002805246909410191,
+          "first_positive_rank_bounds": [
+            288,
+            546
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.027290883687197898,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.12965383363847727,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.24347982929507406
+        },
+        "fanout": {
+          "known_nodes": 5433,
+          "positives": 15,
+          "unknown": 8,
+          "auroc": 0.28088470530330995,
+          "ap": 0.0028397297292995843,
+          "first_positive_rank_bounds": [
+            123,
+            124
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.027290883687197898,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.12965383363847727,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.24347982929507406
+        },
+        "near_output": {
+          "known_nodes": 5433,
+          "positives": 15,
+          "unknown": 8,
+          "auroc": 0.19976005906238464,
+          "ap": 0.0040198585809062245,
+          "first_positive_rank_bounds": [
+            1,
+            33
+          ],
+          "expected_hit@10": 0.303030303030303,
+          "expected_recall@10": 0.020202020202020204,
+          "random_hit@10": 0.027290883687197898,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.06666666666666667,
+          "random_hit@50": 0.12965383363847727,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.06666666666666667,
+          "random_hit@100": 0.24347982929507406
+        },
+        "gate_class_rarity": {
+          "known_nodes": 5433,
+          "positives": 15,
+          "unknown": 8,
+          "auroc": 0.896911529469669,
+          "ap": 0.6938771488924765,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.6133333333333333,
+          "random_hit@10": 0.027290883687197898,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.7433333333333334,
+          "random_hit@50": 0.12965383363847727,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.8,
+          "random_hit@100": 0.24347982929507406
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 5433,
+          "positives": 15,
+          "unknown": 8,
+          "auroc": 0.14414913252122555,
+          "ap": 0.0019848169913130797,
+          "first_positive_rank_bounds": [
+            627,
+            627
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.027290883687197898,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.12965383363847727,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.24347982929507406
+        }
+      }
+    },
+    {
+      "graph_id": "new_gate_v1/s35932-T200/trojan",
+      "family": "s35932",
+      "label_status": "mechanical_candidate_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 5434,
+          "positives": 12,
+          "unknown": 4,
+          "auroc": 0.539976023607525,
+          "ap": 0.0024104533474604293,
+          "first_positive_rank_bounds": [
+            288,
+            546
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.021882965246917685,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.1050970290396791,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.19997880031137594
+        },
+        "fanout": {
+          "known_nodes": 5434,
+          "positives": 12,
+          "unknown": 4,
+          "auroc": 0.2643627812615271,
+          "ap": 0.002089056863485889,
+          "first_positive_rank_bounds": [
+            256,
+            401
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.021882965246917685,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.1050970290396791,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.19997880031137594
+        },
+        "near_output": {
+          "known_nodes": 5434,
+          "positives": 12,
+          "unknown": 4,
+          "auroc": 0.3822620804131317,
+          "ap": 0.00475660231962742,
+          "first_positive_rank_bounds": [
+            1,
+            33
+          ],
+          "expected_hit@10": 0.303030303030303,
+          "expected_recall@10": 0.025252525252525252,
+          "random_hit@10": 0.021882965246917685,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.08333333333333333,
+          "random_hit@50": 0.1050970290396791,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.08333333333333333,
+          "random_hit@100": 0.19997880031137594
+        },
+        "gate_class_rarity": {
+          "known_nodes": 5434,
+          "positives": 12,
+          "unknown": 4,
+          "auroc": 0.7680745112504611,
+          "ap": 0.1954782415175793,
+          "first_positive_rank_bounds": [
+            1,
+            2
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.25,
+          "random_hit@10": 0.021882965246917685,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.2791666666666667,
+          "random_hit@50": 0.1050970290396791,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.3333333333333333,
+          "random_hit@100": 0.19997880031137594
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 5434,
+          "positives": 12,
+          "unknown": 4,
+          "auroc": 0.19106571990655355,
+          "ap": 0.0018479398615129537,
+          "first_positive_rank_bounds": [
+            1526,
+            1587
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.021882965246917685,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.1050970290396791,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.19997880031137594
+        }
+      }
+    },
+    {
+      "graph_id": "new_gate_v1/s38417-T100/trojan",
+      "family": "s38417",
+      "label_status": "mechanical_candidate_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 5340,
+          "positives": 12,
+          "unknown": 1,
+          "auroc": 0.4532892267267267,
+          "ap": 0.0023840237925465556,
+          "first_positive_rank_bounds": [
+            433,
+            1491
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.022264601817789997,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.10685458619662447,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.20314780364436325
+        },
+        "fanout": {
+          "known_nodes": 5340,
+          "positives": 12,
+          "unknown": 1,
+          "auroc": 0.20569006506506507,
+          "ap": 0.0020801387040368866,
+          "first_positive_rank_bounds": [
+            2951,
+            5317
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.022264601817789997,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.10685458619662447,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.20314780364436325
+        },
+        "near_output": {
+          "known_nodes": 5340,
+          "positives": 12,
+          "unknown": 1,
+          "auroc": 0.8893346471471472,
+          "ap": 0.016798640184276903,
+          "first_positive_rank_bounds": [
+            1,
+            13
+          ],
+          "expected_hit@10": 0.7692307692307692,
+          "expected_recall@10": 0.06410256410256411,
+          "random_hit@10": 0.022264601817789997,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.08333333333333333,
+          "random_hit@50": 0.10685458619662447,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.08333333333333333,
+          "random_hit@100": 0.20314780364436325
+        },
+        "gate_class_rarity": {
+          "known_nodes": 5340,
+          "positives": 12,
+          "unknown": 1,
+          "auroc": 0.8646458958958959,
+          "ap": 0.01008134413185564,
+          "first_positive_rank_bounds": [
+            78,
+            136
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.022264601817789997,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.10685458619662447,
+          "expected_hit@100": 0.38983050847457645,
+          "expected_recall@100": 0.03248587570621469,
+          "random_hit@100": 0.20314780364436325
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 5340,
+          "positives": 12,
+          "unknown": 1,
+          "auroc": 0.42648116866866864,
+          "ap": 0.002600772942694645,
+          "first_positive_rank_bounds": [
+            2057,
+            2248
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.022264601817789997,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.10685458619662447,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.20314780364436325
+        }
+      }
+    },
+    {
+      "graph_id": "new_gate_v1/s38417-T200/trojan",
+      "family": "s38417",
+      "label_status": "mechanical_candidate_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 5340,
+          "positives": 15,
+          "unknown": 4,
+          "auroc": 0.4418716744913928,
+          "ap": 0.003029937878201775,
+          "first_positive_rank_bounds": [
+            433,
+            1491
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.02776057217342376,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.13176884759574747,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.24718687304498288
+        },
+        "fanout": {
+          "known_nodes": 5340,
+          "positives": 15,
+          "unknown": 4,
+          "auroc": 0.25222535211267605,
+          "ap": 0.0025436798616408803,
+          "first_positive_rank_bounds": [
+            568,
+            847
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.02776057217342376,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.13176884759574747,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.24718687304498288
+        },
+        "near_output": {
+          "known_nodes": 5340,
+          "positives": 15,
+          "unknown": 4,
+          "auroc": 0.6744913928012519,
+          "ap": 0.009901861692214606,
+          "first_positive_rank_bounds": [
+            1,
+            13
+          ],
+          "expected_hit@10": 0.7692307692307692,
+          "expected_recall@10": 0.05128205128205129,
+          "random_hit@10": 0.02776057217342376,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.06666666666666667,
+          "random_hit@50": 0.13176884759574747,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.06666666666666667,
+          "random_hit@100": 0.24718687304498288
+        },
+        "gate_class_rarity": {
+          "known_nodes": 5340,
+          "positives": 15,
+          "unknown": 4,
+          "auroc": 0.9224287949921752,
+          "ap": 0.029345673584135108,
+          "first_positive_rank_bounds": [
+            139,
+            197
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.02776057217342376,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.13176884759574747,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.24718687304498288
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 5340,
+          "positives": 15,
+          "unknown": 4,
+          "auroc": 0.32796870109546167,
+          "ap": 0.0026150861213495684,
+          "first_positive_rank_bounds": [
+            740,
+            762
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.02776057217342376,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.13176884759574747,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.24718687304498288
+        }
+      }
+    },
+    {
+      "graph_id": "new_gate_v1/s38417-T300/trojan",
+      "family": "s38417",
+      "label_status": "mechanical_candidate_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 5373,
+          "positives": 44,
+          "unknown": 0,
+          "auroc": 0.20409764752042853,
+          "ap": 0.0065225673743180826,
+          "first_positive_rank_bounds": [
+            433,
+            1491
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.07900191126953926,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.338360593191832,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.5639433698671825
+        },
+        "fanout": {
+          "known_nodes": 5373,
+          "positives": 44,
+          "unknown": 0,
+          "auroc": 0.23075495999590576,
+          "ap": 0.00785456517824301,
+          "first_positive_rank_bounds": [
+            844,
+            2121
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.07900191126953926,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.338360593191832,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.5639433698671825
+        },
+        "near_output": {
+          "known_nodes": 5373,
+          "positives": 44,
+          "unknown": 0,
+          "auroc": 0.022701683754414097,
+          "ap": 0.009751229600475832,
+          "first_positive_rank_bounds": [
+            1,
+            13
+          ],
+          "expected_hit@10": 0.7692307692307692,
+          "expected_recall@10": 0.017482517482517484,
+          "random_hit@10": 0.07900191126953926,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.022727272727272728,
+          "random_hit@50": 0.338360593191832,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.022727272727272728,
+          "random_hit@100": 0.5639433698671825
+        },
+        "gate_class_rarity": {
+          "known_nodes": 5373,
+          "positives": 44,
+          "unknown": 0,
+          "auroc": 0.7309809959228236,
+          "ap": 0.019278524248054128,
+          "first_positive_rank_bounds": [
+            339,
+            447
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.07900191126953926,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.338360593191832,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.5639433698671825
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 5373,
+          "positives": 44,
+          "unknown": 0,
+          "auroc": 0.010278237431549498,
+          "ap": 0.00785047584802719,
+          "first_positive_rank_bounds": [
+            3430,
+            3430
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.07900191126953926,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.338360593191832,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.5639433698671825
+        }
+      }
+    },
+    {
+      "graph_id": "new_gate_v1/s38584-T100/trojan",
+      "family": "s38584",
+      "label_status": "mechanical_candidate_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 6471,
+          "positives": 9,
+          "unknown": 11,
+          "auroc": 0.4325630179854878,
+          "ap": 0.0013735591167061412,
+          "first_positive_rank_bounds": [
+            1511,
+            2401
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.013831041549557388,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.06747045515552741,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.13086369696689304
+        },
+        "fanout": {
+          "known_nodes": 6471,
+          "positives": 9,
+          "unknown": 11,
+          "auroc": 0.2155077547370955,
+          "ap": 0.0012609789238853038,
+          "first_positive_rank_bounds": [
+            3378,
+            6420
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.013831041549557388,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.06747045515552741,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.13086369696689304
+        },
+        "near_output": {
+          "known_nodes": 6471,
+          "positives": 9,
+          "unknown": 11,
+          "auroc": 0.33502699542625264,
+          "ap": 0.003534463785549764,
+          "first_positive_rank_bounds": [
+            1,
+            44
+          ],
+          "expected_hit@10": 0.22727272727272718,
+          "expected_recall@10": 0.025252525252525252,
+          "random_hit@10": 0.013831041549557388,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.1111111111111111,
+          "random_hit@50": 0.06747045515552741,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.1111111111111111,
+          "random_hit@100": 0.13086369696689304
+        },
+        "gate_class_rarity": {
+          "known_nodes": 6471,
+          "positives": 9,
+          "unknown": 11,
+          "auroc": 0.8940816396712404,
+          "ap": 0.015048299629310697,
+          "first_positive_rank_bounds": [
+            156,
+            243
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.013831041549557388,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.06747045515552741,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.13086369696689304
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 6471,
+          "positives": 9,
+          "unknown": 11,
+          "auroc": 0.1472798239279205,
+          "ap": 0.0009551232209723837,
+          "first_positive_rank_bounds": [
+            4080,
+            4579
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.013831041549557388,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.06747045515552741,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.13086369696689304
+        }
+      }
+    },
+    {
+      "graph_id": "new_gate_v1/s38584-T200/trojan",
+      "family": "s38584",
+      "label_status": "mechanical_candidate_unreviewed",
+      "methods": {
+        "fanin": {
+          "known_nodes": 6552,
+          "positives": 83,
+          "unknown": 4,
+          "auroc": 0.5897878110059654,
+          "ap": 0.016153665376274683,
+          "first_positive_rank_bounds": [
+            605,
+            1511
+          ],
+          "expected_hit@10": 0.0,
+          "expected_recall@10": 0.0,
+          "random_hit@10": 0.11977374952240616,
+          "expected_hit@50": 0.0,
+          "expected_recall@50": 0.0,
+          "random_hit@50": 0.47262929575130375,
+          "expected_hit@100": 0.0,
+          "expected_recall@100": 0.0,
+          "random_hit@100": 0.7232592618224204
+        },
+        "fanout": {
+          "known_nodes": 6552,
+          "positives": 83,
+          "unknown": 4,
+          "auroc": 0.4992447762917492,
+          "ap": 0.04050159767240815,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.024096385542168676,
+          "random_hit@10": 0.11977374952240616,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.024096385542168676,
+          "random_hit@50": 0.47262929575130375,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.024096385542168676,
+          "random_hit@100": 0.7232592618224204
+        },
+        "near_output": {
+          "known_nodes": 6552,
+          "positives": 83,
+          "unknown": 4,
+          "auroc": 0.8367785564890572,
+          "ap": 0.03797670528332102,
+          "first_positive_rank_bounds": [
+            1,
+            44
+          ],
+          "expected_hit@10": 0.22727272727272718,
+          "expected_recall@10": 0.002738225629791895,
+          "random_hit@10": 0.11977374952240616,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.013038455190625515,
+          "random_hit@50": 0.47262929575130375,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.021290642020135336,
+          "random_hit@100": 0.7232592618224204
+        },
+        "gate_class_rarity": {
+          "known_nodes": 6552,
+          "positives": 83,
+          "unknown": 4,
+          "auroc": 0.36345350485261496,
+          "ap": 0.02345156495766359,
+          "first_positive_rank_bounds": [
+            1,
+            3
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.02677376171352075,
+          "random_hit@10": 0.11977374952240616,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.03614457831325301,
+          "random_hit@50": 0.47262929575130375,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.03614457831325301,
+          "random_hit@100": 0.7232592618224204
+        },
+        "fanout_over_output_distance": {
+          "known_nodes": 6552,
+          "positives": 83,
+          "unknown": 4,
+          "auroc": 0.633186634309692,
+          "ap": 0.04287833758805418,
+          "first_positive_rank_bounds": [
+            1,
+            1
+          ],
+          "expected_hit@10": 1.0,
+          "expected_recall@10": 0.024096385542168676,
+          "random_hit@10": 0.11977374952240616,
+          "expected_hit@50": 1.0,
+          "expected_recall@50": 0.024096385542168676,
+          "random_hit@50": 0.47262929575130375,
+          "expected_hit@100": 1.0,
+          "expected_recall@100": 0.024096385542168676,
+          "random_hit@100": 0.7232592618224204
+        }
+      }
+    }
+  ]
+}

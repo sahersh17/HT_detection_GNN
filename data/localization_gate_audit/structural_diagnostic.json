@@ -1,0 +1,50 @@
+[
+  {
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "label_status": "mechanical_candidate_unreviewed",
+    "known_positives": 9,
+    "known_negatives": 6462,
+    "unknown": 11,
+    "methods": {
+      "degree": {
+        "node_auroc": 0.15189655765328933
+      },
+      "gate_class_rarity": {
+        "node_auroc": 0.8940816396712404
+      }
+    },
+    "note": "Discrete baseline scores have large ties; top-k and first-rank depend on arbitrary node order and are omitted."
+  },
+  {
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "label_status": "mechanical_candidate_unreviewed",
+    "known_positives": 83,
+    "known_negatives": 6469,
+    "unknown": 4,
+    "methods": {
+      "degree": {
+        "node_auroc": 0.44899865344823414
+      },
+      "gate_class_rarity": {
+        "node_auroc": 0.36345350485261496
+      }
+    },
+    "note": "Discrete baseline scores have large ties; top-k and first-rank depend on arbitrary node order and are omitted."
+  },
+  {
+    "graph_id": "new_gate_v1/s38584-T300/trojan",
+    "label_status": "mechanical_candidate_unreviewed",
+    "known_positives": 731,
+    "known_negatives": 6469,
+    "unknown": 4,
+    "methods": {
+      "degree": {
+        "node_auroc": 0.41694472998552073
+      },
+      "gate_class_rarity": {
+        "node_auroc": 0.3599410975928764
+      }
+    },
+    "note": "Discrete baseline scores have large ties; top-k and first-rank depend on arbitrary node order and are omitted."
+  }
+]

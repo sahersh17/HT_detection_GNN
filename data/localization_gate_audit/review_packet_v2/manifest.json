@@ -1,0 +1,13 @@
+{
+  "status": "awaiting_independent_review_candidate_label_blind",
+  "rows": 162,
+  "graphs": 7,
+  "source_packet_sha256": "118a6786f72932d5189e3f080cf4c2c165430a47751c480970665ab94849e4a4",
+  "csv_sha256": "e2908711adc0b9ef40a1b24a456ffa9694be0ea0b750a6ffa596f157a06283af",
+  "locator_key_sha256": "c442e94540e412b8fbfec33896914b13271ee91791ca88dc747b8666305db1fa",
+  "limitations": [
+    "Source context can still reveal insertion style; no claim of fully blind hardware review",
+    "Source paths and overt Trojan markers masked in reviewer CSV",
+    "Candidate labels and model scores excluded from reviewer CSV"
+  ]
+}

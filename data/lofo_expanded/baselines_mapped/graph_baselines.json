@@ -1,0 +1,117 @@
+{
+  "seed": 42,
+  "cohort": "mapped",
+  "summary": {
+    "statistics": {
+      "b15": {
+        "n": 8,
+        "auroc": 0.5,
+        "average_precision": 0.5,
+        "pairs": 4,
+        "pairwise_accuracy": 0.5
+      },
+      "s15850": {
+        "n": 2,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 1,
+        "pairwise_accuracy": 1.0
+      },
+      "s35932": {
+        "n": 6,
+        "auroc": 0.3333333333333333,
+        "average_precision": 0.43333333333333335,
+        "pairs": 3,
+        "pairwise_accuracy": 0.3333333333333333
+      },
+      "s38417": {
+        "n": 6,
+        "auroc": 0.0,
+        "average_precision": 0.3833333333333333,
+        "pairs": 3,
+        "pairwise_accuracy": 0.0
+      },
+      "s38584": {
+        "n": 6,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 3,
+        "pairwise_accuracy": 1.0
+      }
+    },
+    "wl2": {
+      "b15": {
+        "n": 8,
+        "auroc": 0.5,
+        "average_precision": 0.5,
+        "pairs": 4,
+        "pairwise_accuracy": 0.5
+      },
+      "s15850": {
+        "n": 2,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 1,
+        "pairwise_accuracy": 1.0
+      },
+      "s35932": {
+        "n": 6,
+        "auroc": 0.5,
+        "average_precision": 0.5,
+        "pairs": 3,
+        "pairwise_accuracy": 0.5
+      },
+      "s38417": {
+        "n": 6,
+        "auroc": 0.3333333333333333,
+        "average_precision": 0.6333333333333333,
+        "pairs": 3,
+        "pairwise_accuracy": 0.3333333333333333
+      },
+      "s38584": {
+        "n": 6,
+        "auroc": 0.5,
+        "average_precision": 0.5,
+        "pairs": 3,
+        "pairwise_accuracy": 0.5
+      }
+    },
+    "size": {
+      "b15": {
+        "n": 8,
+        "auroc": 0.0,
+        "average_precision": 0.41666666666666663,
+        "pairs": 4,
+        "pairwise_accuracy": 0.0
+      },
+      "s15850": {
+        "n": 2,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 1,
+        "pairwise_accuracy": 1.0
+      },
+      "s35932": {
+        "n": 6,
+        "auroc": 0.6666666666666666,
+        "average_precision": 0.8333333333333333,
+        "pairs": 3,
+        "pairwise_accuracy": 0.6666666666666666
+      },
+      "s38417": {
+        "n": 6,
+        "auroc": 0.0,
+        "average_precision": 0.3833333333333333,
+        "pairs": 3,
+        "pairwise_accuracy": 0.0
+      },
+      "s38584": {
+        "n": 6,
+        "auroc": 0.0,
+        "average_precision": 0.3833333333333333,
+        "pairs": 3,
+        "pairwise_accuracy": 0.0
+      }
+    }
+  }
+}

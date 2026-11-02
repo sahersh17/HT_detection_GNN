@@ -1,0 +1,10 @@
+{
+  "status": "verified_construction_lineage_not_reviewed_ground_truth",
+  "variants": 16,
+  "clean_graphs": 8,
+  "infected_graphs": 16,
+  "positive_candidate_nodes": 236,
+  "negative_candidate_nodes": 25299,
+  "unknown_nodes": 23,
+  "scope": "Development hosts only; no final-candidate host was generated"
+}

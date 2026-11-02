@@ -1,0 +1,255 @@
+[
+  {
+    "archive": "trusthub/AES_zipped/RS232-T100.zip",
+    "sha256": "136df3ac02e5b612734b406897e32c4d14ab8b7f36cfda7a766bb02905f12915",
+    "benchmark": "RS232-T100",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1000.zip",
+    "sha256": "4da6721fc7eb3b04f26ff5a8ec82464387c6fe663bd6815c0d48bf3480927eb2",
+    "benchmark": "RS232-T1000",
+    "mapped_sources": [
+      "RS232-T1000/src/180nm/uart.v",
+      "RS232-T1000/src/90nm/uart.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1100.zip",
+    "sha256": "59ecbf4e8cd2ce9bbc91753cb96d58a0684b16df1418745220eff81e76170c6b",
+    "benchmark": "RS232-T1100",
+    "mapped_sources": [
+      "RS232-T1100/src/180nm/uart.v",
+      "RS232-T1100/src/90nm/uart.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1200.zip",
+    "sha256": "44616ab4b775a4427b5bb408d21dbf87765d78e4fcfd8d2724d518ee27db46e5",
+    "benchmark": "RS232-T1200",
+    "mapped_sources": [
+      "RS232-T1200/src/180nm/uart.v",
+      "RS232-T1200/src/90nm/uart.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1300.zip",
+    "sha256": "d9f5da8f25006c65c8b535d004ce256f2ea688b3ab9806f4021b104ed7209b0d",
+    "benchmark": "RS232-T1300",
+    "mapped_sources": [
+      "RS232-T1300/src/180nm/uart.v",
+      "RS232-T1300/src/90nm/uart.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1400.zip",
+    "sha256": "bab8048c114195b65474b3fb81160b28c2c315042f3e02867377a1a6d8cbb9b9",
+    "benchmark": "RS232-T1400",
+    "mapped_sources": [
+      "RS232-T1400/src/180nm/uart.v",
+      "RS232-T1400/src/90nm/uart.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1500.zip",
+    "sha256": "2dd50914736e063af22942fed9d5ac3b2de0bc69e08a20d2977f76aea680fd96",
+    "benchmark": "RS232-T1500",
+    "mapped_sources": [
+      "RS232-T1500/src/180nm/uart.v",
+      "RS232-T1500/src/90nm/uart.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1600.zip",
+    "sha256": "f4a6ad248ab0cb63eef2a9d0f9aa2fea592afe012ffc2896d273fc759155f35a",
+    "benchmark": "RS232-T1600",
+    "mapped_sources": [
+      "RS232-T1600/src/180nm/uart.v",
+      "RS232-T1600/src/90nm/uart.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1700.zip",
+    "sha256": "683039829e288e9286262f9c738627acb6a20ded4db5368c130e0c735661965d",
+    "benchmark": "RS232-T1700",
+    "mapped_sources": [
+      "RS232-T1700/src/180nm/uart_scan_route.v",
+      "RS232-T1700/src/90nm/uart_scan_route.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1800.zip",
+    "sha256": "51130222cbcd7b7f5d2a9eceb780b9a138944051da791c423e5f532071c5a135",
+    "benchmark": "RS232-T1800",
+    "mapped_sources": [
+      "RS232-T1800/src/180nm/uart_scan_route.v",
+      "RS232-T1800/src/90nm/uart_scan_route.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T1900.zip",
+    "sha256": "f420252b0a7f63b9a7511e37f30259cfde4075a49df496c30084fbe5d61d800d",
+    "benchmark": "RS232-T1900",
+    "mapped_sources": [
+      "RS232-T1900/src/180nm/uart_scan_route.v",
+      "RS232-T1900/src/90nm/uart_scan_route.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T200.zip",
+    "sha256": "b71ad77944b4f4e7df929c5611272a868497b505cadd672baf6af2292085daf4",
+    "benchmark": "RS232-T200",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T2000.zip",
+    "sha256": "da743271a176930e595598bc9479d7e00270707003d7eea6e5799d2dcbda40f7",
+    "benchmark": "RS232-T2000",
+    "mapped_sources": [
+      "RS232-T2000/src/180nm/uart_scan_route.v",
+      "RS232-T2000/src/90nm/uart_scan_route.v"
+    ],
+    "clean_sources": [],
+    "status": "mapped_trojan_only_no_paired_clean"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T2100.zip",
+    "sha256": "df09e8000967c9916e1ab4f208313e24acee0865487add8ffa5da3edadb38705",
+    "benchmark": "RS232-T2100",
+    "mapped_sources": [],
+    "clean_sources": [
+      "RS232-T2100/src/TjFree/test_uart.v",
+      "RS232-T2100/src/TjFree/u_rec.v",
+      "RS232-T2100/src/TjFree/u_xmit.v",
+      "RS232-T2100/src/TjFree/uart.v"
+    ],
+    "status": "paired_rtl_or_other"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T2200.zip",
+    "sha256": "220c56a77f3cc7d93e7728c1295af9cd27ab62f2e8f11da40c7c65bbda35f1fa",
+    "benchmark": "RS232-T2200",
+    "mapped_sources": [],
+    "clean_sources": [
+      "RS232-T2200/src/TjFree/test_uart.v",
+      "RS232-T2200/src/TjFree/u_rec.v",
+      "RS232-T2200/src/TjFree/u_xmit.v",
+      "RS232-T2200/src/TjFree/uart.v"
+    ],
+    "status": "paired_rtl_or_other"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T2300.zip",
+    "sha256": "522d40aa0b0ab077dd4e56199e0a8f15f04818e5f19f8ffdd0ee0cb831b66ecf",
+    "benchmark": "RS232-T2300",
+    "mapped_sources": [],
+    "clean_sources": [
+      "RS232-T2300/src/TjFree/test_uart.v",
+      "RS232-T2300/src/TjFree/u_rec.v",
+      "RS232-T2300/src/TjFree/u_xmit.v",
+      "RS232-T2300/src/TjFree/uart.v"
+    ],
+    "status": "paired_rtl_or_other"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T2400.zip",
+    "sha256": "5239d6197585197a366059125a06ee5f33f8782ee07e5b528830fa2d858aaa9c",
+    "benchmark": "RS232-T2400",
+    "mapped_sources": [],
+    "clean_sources": [
+      "RS232-T2400/src/TjFree/test_uart.v",
+      "RS232-T2400/src/TjFree/u_rec.v",
+      "RS232-T2400/src/TjFree/u_xmit.v",
+      "RS232-T2400/src/TjFree/uart.v"
+    ],
+    "status": "paired_rtl_or_other"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T300.zip",
+    "sha256": "3f86d5d22b2779369ddb75bb4c53ad4aa4c2779d5f6e237e34979f75d245ece2",
+    "benchmark": "RS232-T300",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T400.zip",
+    "sha256": "27ff92bcb4ff23dcdb718f76a94d52de0e6f61274b5132d7d13ae91894cfe96d",
+    "benchmark": "RS232-T400",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T500.zip",
+    "sha256": "bd33ac68bab69d98841fe934f64a87231f8c9410455bd5bfb88e77563f61f35f",
+    "benchmark": "RS232-T500",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T600.zip",
+    "sha256": "05f3e87903e00e402ddf106cef687018ae89cb5b2375c786422e71124937c310",
+    "benchmark": "RS232-T600",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T700.zip",
+    "sha256": "e6ce5b5c08c697f48b2178bab3d87258c577ba68830a97db78e9a9a959cb2dd5",
+    "benchmark": "RS232-T700",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T800.zip",
+    "sha256": "024049efdde3d987598f899b5531efdebdfe2c2d2b1bf663ee7000742e6f44e2",
+    "benchmark": "RS232-T800",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T900.zip",
+    "sha256": "e0ed112cc4c0c63202517ba1088e898a9b9da9ace311377851a81f2057fb3a17",
+    "benchmark": "RS232-T900",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  },
+  {
+    "archive": "trusthub/AES_zipped/RS232-T901.zip",
+    "sha256": "4d66d0d4a5dabb427d4c1e05d93682f07a2a080577cbec483ed5c1e91c8ef83d",
+    "benchmark": "RS232-T901",
+    "mapped_sources": [],
+    "clean_sources": [],
+    "status": "needs_manual_layout_review"
+  }
+]

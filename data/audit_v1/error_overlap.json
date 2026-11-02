@@ -1,0 +1,174 @@
+{
+  "status": "retrospective_inspected_folds",
+  "input_sha256": {
+    "rtl_predictions": "bb07293db226db1e3e0f89a4c6450f9ede971d7a807f6841eae6b87e09141498",
+    "metadata_predictions": "b3e1e8a96f9f1c0167ce852f03ddb2ff6850c3d34ccdaa4cfb18d4bf9f71260d",
+    "folds": "028035c37a1210332d4263b3886836036a0ad4ab3399e25805b502518ceb6605"
+  },
+  "design_sides": 42,
+  "independent_clean_source_groups": 3,
+  "rtl_errors": 6,
+  "metadata_errors": 6,
+  "shared_errors": 2,
+  "rtl_only_errors": [
+    [
+      "RS232-T2100",
+      0
+    ],
+    [
+      "RS232-T2200",
+      0
+    ],
+    [
+      "RS232-T2300",
+      0
+    ],
+    [
+      "RS232-T2400",
+      0
+    ]
+  ],
+  "metadata_only_errors": [
+    [
+      "RS232-T2100",
+      1
+    ],
+    [
+      "RS232-T2200",
+      1
+    ],
+    [
+      "RS232-T2300",
+      1
+    ],
+    [
+      "RS232-T2400",
+      1
+    ]
+  ],
+  "per_group": [
+    {
+      "fold": 1,
+      "pairs": 11,
+      "rtl": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "metadata": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "balanced_accuracy_difference": 0.0,
+      "auroc_difference": 0.0
+    },
+    {
+      "fold": 2,
+      "pairs": 6,
+      "rtl": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 2,
+        "tp": 4,
+        "accuracy": 0.8333333333333334,
+        "balanced_accuracy": 0.8333333333333333,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "fpr": 0.0,
+        "macro_f1": 0.8285714285714285,
+        "auroc": 1.0
+      },
+      "metadata": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 2,
+        "tp": 4,
+        "accuracy": 0.8333333333333334,
+        "balanced_accuracy": 0.8333333333333333,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "fpr": 0.0,
+        "macro_f1": 0.8285714285714285,
+        "auroc": 1.0
+      },
+      "balanced_accuracy_difference": 0.0,
+      "auroc_difference": 0.0
+    },
+    {
+      "fold": 3,
+      "pairs": 4,
+      "rtl": {
+        "n": 8,
+        "tn": 0,
+        "fp": 4,
+        "fn": 0,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "metadata": {
+        "n": 8,
+        "tn": 4,
+        "fp": 0,
+        "fn": 4,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "balanced_accuracy_difference": 0.0,
+      "auroc_difference": 0.0
+    }
+  ],
+  "exact_group_sign_flip": {
+    "balanced_accuracy": {
+      "groups": 3,
+      "permutations": 8,
+      "observed_mean_difference": 0.0,
+      "one_sided_p": 1.0,
+      "two_sided_p": 1.0,
+      "minimum_possible_one_sided_p": 0.125,
+      "minimum_possible_two_sided_p_for_nonzero_symmetric_statistic": 0.25
+    },
+    "auroc": {
+      "groups": 3,
+      "permutations": 8,
+      "observed_mean_difference": 0.0,
+      "one_sided_p": 1.0,
+      "two_sided_p": 1.0,
+      "minimum_possible_one_sided_p": 0.125,
+      "minimum_possible_two_sided_p_for_nonzero_symmetric_statistic": 0.25
+    }
+  },
+  "interpretation": "Equal per-group metrics do not imply equal decisions; no evidence of RTL superiority over metadata in these three groups."
+}

@@ -3,3 +3,8 @@ __pycache__/
 runs/
 data/integrated/embeddings/
 data/*.zip
+trusthub/B15_zipped/
+trusthub/BASICRSA_zipped/
+trusthub/MC8051_zipped/
+trusthub/PIC1648_zipped/
+trusthub/S_zipped/

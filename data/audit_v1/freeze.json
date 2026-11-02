@@ -1,0 +1,22 @@
+{
+  "status": "local_snapshot_for_future_work_not_external_preregistration",
+  "protocol_version": "audit_v1_2026-11-02",
+  "sha256": {
+    "experiments/audit_v1/protocol.json": "e435948ffa11cb6cc47fb952ed564b65b660e82827875c9a1ddbb05d34dc7ed9",
+    "experiments/matched_insertion_v3/generate.py": "a8057f26305e5ba5aad0bbc0245c16c5b3309edc1051618fdc2a15e761f9b76b",
+    "experiments/matched_insertion_v3/verify.py": "5bafbd0dbfb793e801d1ff1144fd86a34393df86248c4f7f7f3d66fcfc0024a6",
+    "experiments/matched_insertion_v3/controls.py": "4aab735e8f8673f5f9445555c70a0a5436fba8303053dd9a74227b0b2938f58d",
+    "experiments/matched_insertion_v3/prove_isomorphism.py": "1c633113fbec102303e59e5ee4017e348b87dce290495af93344b44fbc066a4b",
+    "experiments/port_aware_v1/build.py": "9d0562a87df35e4abc4c53a3d785f5de1cb87adc6e47bb521fba62c982b35522",
+    "experiments/port_aware_v1/probe.py": "3ce2a12f06f0896173b357d4925eab0f2b75940cb93b77a26fa7fce0353b2ed3",
+    "experiments/rtl_lexical_v1/metadata_controls.py": "42e356a5ada529821c22aaf9f491d9982f1c3328d46bfcbd8a8995ae33df2122",
+    "data/rtl_lexical_v1/metadata_controls.json": "bd8aa0f8c3fefb9336620068588e9241b78be39b44cf8d47abdaf5f8281029ad",
+    "data/lofo_expanded_b19/protocol.json": "30cda23d836d9de35beedf509be6d23f951d17e606f9caed62204eb3c5235b02",
+    "data/audit_v1/host_inventory.json": "4bfc8180010e968720ae7b2d094a1ec74ebf23b8bcc977cdcfea7abaa4848a17",
+    "data/audit_v1/b19_embedding_audit.json": "1c8b59f5a9216715b21dfcc42abf0da425445167f9ba25b0295ab03e48e41d53",
+    "runs/matched_insertion_v3/manifest.json": "340b51a3fa90585fdba201308bab0b4508dcaa717ded5df81ae26b8b8eabee67",
+    "runs/matched_insertion_v3/verification.json": "3c1dbc44caef49ff5156ab445ccb50f79e91991ccad0e58231111432e0e8528a",
+    "runs/matched_insertion_v3/controls.json": "1eaf81f59018c09869c2d2e2734b04ee6d4f7d312eb4734257e7ff1f373c6823",
+    "runs/matched_insertion_v3/isomorphism.json": "8376714c7089dad9654f59830f61fd161cbd3b9ae7dec82a514cefc512b8000c"
+  }
+}

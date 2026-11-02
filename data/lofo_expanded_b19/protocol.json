@@ -1,0 +1,826 @@
+{
+  "status": "exploratory_expansion_inspected_hosts",
+  "parent": "data/lofo_detection/protocol.json",
+  "split": "leave one entire host family out",
+  "groups": [
+    "AES",
+    "MC8051",
+    "PIC16F84",
+    "RS232",
+    "b15",
+    "b19",
+    "memctrl",
+    "s15850",
+    "s35932",
+    "s38417",
+    "s38584"
+  ],
+  "limitations": [
+    "All included host families have been inspected",
+    "Mixed synthesis domains",
+    "Repeated clean designs",
+    "Unreviewed gate labels are not detection inputs"
+  ],
+  "samples": [
+    {
+      "benchmark": "AES-T100",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T100/clean/graph.pt",
+      "sha256": "e27bd2ed08da32e2c87fdaee37d9ceb237f93be7be552174a3a0e9b591111801"
+    },
+    {
+      "benchmark": "AES-T100",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T100/trojan/graph.pt",
+      "sha256": "3e4300938e23891dc2ec173770d5f49569da57f0e73186b5d4c7282dd1307c45"
+    },
+    {
+      "benchmark": "AES-T1000",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T1000/clean/graph.pt",
+      "sha256": "df5a453c81aef4135ccbaf5611340ea26d35fec659832dbc5fea73abadee9425"
+    },
+    {
+      "benchmark": "AES-T1000",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T1000/trojan/graph.pt",
+      "sha256": "29f93c8e605a7f110afdfe313806c0a325b4c9991bd30f88944495e9c94e7340"
+    },
+    {
+      "benchmark": "AES-T1100",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T1100/clean/graph.pt",
+      "sha256": "519bd60d6cf6cb38d59b26b079e572a59bf5c7aa8871b639bd7a3a6b4d37c915"
+    },
+    {
+      "benchmark": "AES-T1100",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T1100/trojan/graph.pt",
+      "sha256": "e9e7e8fd62d065307cb983281ee0223d22d5f270235e5a1e06a58bf64e74e4b8"
+    },
+    {
+      "benchmark": "AES-T1200",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T1200/clean/graph.pt",
+      "sha256": "deae1495588cb23ff18b95667de6c419416b3c3eaf963f702193cb7aab68bb51"
+    },
+    {
+      "benchmark": "AES-T1200",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T1200/trojan/graph.pt",
+      "sha256": "e16b9d8e193212b4d7d23b75067f84b13c310e4d43702d9b00e8bf0183026f22"
+    },
+    {
+      "benchmark": "AES-T1600",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T1600/clean/graph.pt",
+      "sha256": "86ca53ab078a4cae8c24c87298e1e1c5eea40efd53b34eb907b73c850b91dce0"
+    },
+    {
+      "benchmark": "AES-T1600",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T1600/trojan/graph.pt",
+      "sha256": "c86cf81c11d548761f657c75be1e6b5e77fa1b9d04197352b7b234008d51b5d7"
+    },
+    {
+      "benchmark": "AES-T1700",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T1700/clean/graph.pt",
+      "sha256": "7168cc50b05c842ad0c3b51148a5ea91716662f64efee0f8dfe8c385e540bcc6"
+    },
+    {
+      "benchmark": "AES-T1700",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T1700/trojan/graph.pt",
+      "sha256": "f6bd12f0ce7a561fdb6d70c9b54ee3b7a66f81693a1ad99993dc6901df602520"
+    },
+    {
+      "benchmark": "AES-T200",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T200/clean/graph.pt",
+      "sha256": "623ef1a82b790b433447cb1d805b632439b6661ead989df3d1aa0402e40296c8"
+    },
+    {
+      "benchmark": "AES-T200",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T200/trojan/graph.pt",
+      "sha256": "faeefb2a21744d535116f4c60435059a3909afdf45f9c6ec53de0a69a79dd745"
+    },
+    {
+      "benchmark": "AES-T2300",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T2300/clean/graph.pt",
+      "sha256": "70668642285b9372fa586fd0460b5592df6b933e9777e214d8a00434b648ac6f"
+    },
+    {
+      "benchmark": "AES-T2300",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T2300/trojan/graph.pt",
+      "sha256": "c03af2ef13b2af642c0075c6c35fe88a6636722359ffc722e26573de519c0f18"
+    },
+    {
+      "benchmark": "AES-T2400",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T2400/clean/graph.pt",
+      "sha256": "233730d62907c35370c008315577b7d8fcbf4641dd373870b8fd35c89aea61f2"
+    },
+    {
+      "benchmark": "AES-T2400",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T2400/trojan/graph.pt",
+      "sha256": "4de1f2a3c19597f93857de2ce28327c68fc9af1897605b4a637eddfd181f5880"
+    },
+    {
+      "benchmark": "AES-T2500",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T2500/clean/graph.pt",
+      "sha256": "e9937be13ab7afa4991cf2a78461071332ae77dcf086e0e710b586e620d10ee3"
+    },
+    {
+      "benchmark": "AES-T2500",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T2500/trojan/graph.pt",
+      "sha256": "9f5ac964a3d345796e9fc0fe6cff3c7f140fdca24cc055f5b5b75c2b454a52c2"
+    },
+    {
+      "benchmark": "AES-T2600",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T2600/clean/graph.pt",
+      "sha256": "a30cef44062823402bb71d0972cc9ae84ae7e5a7e1c2ede4bd2ff9d25dc93884"
+    },
+    {
+      "benchmark": "AES-T2600",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T2600/trojan/graph.pt",
+      "sha256": "a8f6bc1d343f72217f079e0580707bdb6ea9da8de96a75a853c3c2d232d88831"
+    },
+    {
+      "benchmark": "AES-T2700",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T2700/clean/graph.pt",
+      "sha256": "45ebd44c864b98cbd0e48bfe9499e0984d66929d74f9be14e85ea99ca9dcb002"
+    },
+    {
+      "benchmark": "AES-T2700",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T2700/trojan/graph.pt",
+      "sha256": "856dcc270f0ffd9330f52d16125444c864582f7d2bc6ee7d4888b08961792c6b"
+    },
+    {
+      "benchmark": "AES-T2800",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T2800/clean/graph.pt",
+      "sha256": "cb0db9991fef07fe28ef120d42cf0de8938af405be467133e6ff2233a2f9292d"
+    },
+    {
+      "benchmark": "AES-T2800",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T2800/trojan/graph.pt",
+      "sha256": "ba9b152e883d72c1f1fb9e91797423e4def22289ec96e7f20143f60f53128000"
+    },
+    {
+      "benchmark": "AES-T400",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T400/clean/graph.pt",
+      "sha256": "55e3a9ff54af6bdce343528c7753d821d18834c28b3286a78341d0f44451fb53"
+    },
+    {
+      "benchmark": "AES-T400",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T400/trojan/graph.pt",
+      "sha256": "528fcaec6f8aea3a149ffe9f664bef8737533daf19f19f908c04b73a6c6875df"
+    },
+    {
+      "benchmark": "AES-T700",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T700/clean/graph.pt",
+      "sha256": "878afaf4dc2d8bf08c58123768667467a03bf447446dae026a63a28bcbe21a93"
+    },
+    {
+      "benchmark": "AES-T700",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T700/trojan/graph.pt",
+      "sha256": "00b10e7bfd826e2c321483a58ce16078a361c8151876e162c45cb24e15a03081"
+    },
+    {
+      "benchmark": "AES-T800",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T800/clean/graph.pt",
+      "sha256": "f70046f91633dfeaa6fb2c5edb64a6c88ebc5473f1575cbd2d6564e2c91635e8"
+    },
+    {
+      "benchmark": "AES-T800",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T800/trojan/graph.pt",
+      "sha256": "0afe43c66ff6dcd76459e5c4639202f46423f2659754652aedf164eb3fecd23a"
+    },
+    {
+      "benchmark": "AES-T900",
+      "side": "clean",
+      "family": "AES",
+      "label": 0,
+      "path": "runs/provenance_v1/AES-T900/clean/graph.pt",
+      "sha256": "fb4becb2a2ae762f45f3eefcaa40c49aa9872ee3ae092c893da4a61fea16e3ee"
+    },
+    {
+      "benchmark": "AES-T900",
+      "side": "trojan",
+      "family": "AES",
+      "label": 1,
+      "path": "runs/provenance_v1/AES-T900/trojan/graph.pt",
+      "sha256": "e8e5c7d1b64d5f341fc85c14f18d6c8190375cccc2a942d4d4637318b1ccb4df"
+    },
+    {
+      "benchmark": "RS232-T2100",
+      "side": "clean",
+      "family": "RS232",
+      "label": 0,
+      "path": "runs/provenance_v1/RS232-T2100/clean/graph.pt",
+      "sha256": "60ba0fcd712810ff72e166760ae384edee38ede11094c9aef2354411ebfb864b"
+    },
+    {
+      "benchmark": "RS232-T2100",
+      "side": "trojan",
+      "family": "RS232",
+      "label": 1,
+      "path": "runs/provenance_v1/RS232-T2100/trojan/graph.pt",
+      "sha256": "28d2a73ef7d44ef5514ff22a6dab157caddbd3ea560bc42ed0b3aa21e5af3cb1"
+    },
+    {
+      "benchmark": "RS232-T2200",
+      "side": "clean",
+      "family": "RS232",
+      "label": 0,
+      "path": "runs/provenance_v1/RS232-T2200/clean/graph.pt",
+      "sha256": "1424d1769a6a43cba1fcc5478d9d8888f7cf65901f42ba71e0360b1ae445e659"
+    },
+    {
+      "benchmark": "RS232-T2200",
+      "side": "trojan",
+      "family": "RS232",
+      "label": 1,
+      "path": "runs/provenance_v1/RS232-T2200/trojan/graph.pt",
+      "sha256": "9c2f1739c7bd3d18fd9482435168d5176c1f3c7c8fb99dfae5f192674c028c76"
+    },
+    {
+      "benchmark": "RS232-T2300",
+      "side": "clean",
+      "family": "RS232",
+      "label": 0,
+      "path": "runs/provenance_v1/RS232-T2300/clean/graph.pt",
+      "sha256": "44e4f0cb6389f0df7f8ea7b9186f0666229ec80185b9091e7bb52b03ebf564b9"
+    },
+    {
+      "benchmark": "RS232-T2300",
+      "side": "trojan",
+      "family": "RS232",
+      "label": 1,
+      "path": "runs/provenance_v1/RS232-T2300/trojan/graph.pt",
+      "sha256": "f374adfd0e56c0ad21b45a83719f8e86edeebaeb5f9ed52148b1d5a8fa4832ac"
+    },
+    {
+      "benchmark": "RS232-T2400",
+      "side": "clean",
+      "family": "RS232",
+      "label": 0,
+      "path": "runs/provenance_v1/RS232-T2400/clean/graph.pt",
+      "sha256": "51597a955ad2b83340d2a4f720a92b556c7835c4c81d833b9e0e4409b97c416a"
+    },
+    {
+      "benchmark": "RS232-T2400",
+      "side": "trojan",
+      "family": "RS232",
+      "label": 1,
+      "path": "runs/provenance_v1/RS232-T2400/trojan/graph.pt",
+      "sha256": "6060b302014b33a2cbc6a8035001a20b6715bd20990aa113fd5bf89772584995"
+    },
+    {
+      "benchmark": "memctrl-T100",
+      "side": "clean",
+      "family": "memctrl",
+      "label": 0,
+      "path": "runs/expansion_graphs/memctrl-T100/clean/graph.pt",
+      "sha256": "43cafda5195995754e3ecd801498d753e973ce54a65153ff622bef3ae079f547"
+    },
+    {
+      "benchmark": "memctrl-T100",
+      "side": "trojan",
+      "family": "memctrl",
+      "label": 1,
+      "path": "runs/expansion_graphs/memctrl-T100/trojan/graph.pt",
+      "sha256": "185c3a254289155db469bce949d0ecbcb2fc9aa9cd9fdc85b60e315505e74bac"
+    },
+    {
+      "benchmark": "PIC16F84-T100",
+      "side": "clean",
+      "family": "PIC16F84",
+      "label": 0,
+      "path": "runs/expansion_pic_graphs/PIC16F84-T100/clean/graph.pt",
+      "sha256": "7cea34dc87e540c020705ed2f16dcfe63f602de7c8119639bb69c612680eb2fe"
+    },
+    {
+      "benchmark": "PIC16F84-T100",
+      "side": "trojan",
+      "family": "PIC16F84",
+      "label": 1,
+      "path": "runs/expansion_pic_graphs/PIC16F84-T100/trojan/graph.pt",
+      "sha256": "12be145ad296f0937c497f8d26b94048046a6988aec4a7dd6193f7468e187344"
+    },
+    {
+      "benchmark": "PIC16F84-T200",
+      "side": "clean",
+      "family": "PIC16F84",
+      "label": 0,
+      "path": "runs/expansion_pic_graphs/PIC16F84-T200/clean/graph.pt",
+      "sha256": "a60291ebb8a306622456fd942308dda8e0d19ecd010b81270a5926a1ecf19f0a"
+    },
+    {
+      "benchmark": "PIC16F84-T200",
+      "side": "trojan",
+      "family": "PIC16F84",
+      "label": 1,
+      "path": "runs/expansion_pic_graphs/PIC16F84-T200/trojan/graph.pt",
+      "sha256": "570ed557e5910917e5468691c542a5dad73d809b88e22e976bcb2dd7a16b741b"
+    },
+    {
+      "benchmark": "PIC16F84-T300",
+      "side": "clean",
+      "family": "PIC16F84",
+      "label": 0,
+      "path": "runs/expansion_pic_graphs/PIC16F84-T300/clean/graph.pt",
+      "sha256": "cc8dbea3abcad7b61026c134440670b93e31582991285bbd2c4527207d6af871"
+    },
+    {
+      "benchmark": "PIC16F84-T300",
+      "side": "trojan",
+      "family": "PIC16F84",
+      "label": 1,
+      "path": "runs/expansion_pic_graphs/PIC16F84-T300/trojan/graph.pt",
+      "sha256": "b6fef4f09a3441030421f3ad222ba60845bdba343f982ca6d3439240fff147f3"
+    },
+    {
+      "benchmark": "PIC16F84-T400",
+      "side": "clean",
+      "family": "PIC16F84",
+      "label": 0,
+      "path": "runs/expansion_pic_graphs/PIC16F84-T400/clean/graph.pt",
+      "sha256": "09dcd30c3ab7f680c275dab0183fcd914e04656b2b874430982154a448afc89c"
+    },
+    {
+      "benchmark": "PIC16F84-T400",
+      "side": "trojan",
+      "family": "PIC16F84",
+      "label": 1,
+      "path": "runs/expansion_pic_graphs/PIC16F84-T400/trojan/graph.pt",
+      "sha256": "1fb8ca4d15ddc5dc8ac4602a574c8c78cfaf698f5319f3b0b6042fc9054e1eec"
+    },
+    {
+      "benchmark": "b15-T100",
+      "side": "clean",
+      "family": "b15",
+      "label": 0,
+      "path": "runs/new_gate_v1/b15-T100/clean/graph.pt",
+      "sha256": "f79ec15818d161eb74c9a9e2894aeb95e5a6597e31cb136739e58b6249de635d"
+    },
+    {
+      "benchmark": "b15-T100",
+      "side": "trojan",
+      "family": "b15",
+      "label": 1,
+      "path": "runs/new_gate_v1/b15-T100/trojan/graph.pt",
+      "sha256": "d376e07f43e42894a9a8c7503fff707a954b5376c8877aca03294e280d163b0d"
+    },
+    {
+      "benchmark": "b15-T200",
+      "side": "clean",
+      "family": "b15",
+      "label": 0,
+      "path": "runs/new_gate_v1/b15-T200/clean/graph.pt",
+      "sha256": "5f6ccfd51af844135728cc245fbe2dae0fd2c38b222de0e67f187cfdaac1d555"
+    },
+    {
+      "benchmark": "b15-T200",
+      "side": "trojan",
+      "family": "b15",
+      "label": 1,
+      "path": "runs/new_gate_v1/b15-T200/trojan/graph.pt",
+      "sha256": "e89a852fb883546a3e207392bd51d0d7e9b4583d35f43f0e4493b7d2b0fc8f5f"
+    },
+    {
+      "benchmark": "b15-T300",
+      "side": "clean",
+      "family": "b15",
+      "label": 0,
+      "path": "runs/new_gate_v1/b15-T300/clean/graph.pt",
+      "sha256": "9b9610ec9f9a6c5822fb0cc5e5d2013535977a045b935b7629ba90a8aa9b6859"
+    },
+    {
+      "benchmark": "b15-T300",
+      "side": "trojan",
+      "family": "b15",
+      "label": 1,
+      "path": "runs/new_gate_v1/b15-T300/trojan/graph.pt",
+      "sha256": "c85cf0380503096063e6980e7c7128a2940b81e899571746cd4a53056535bbde"
+    },
+    {
+      "benchmark": "b15-T400",
+      "side": "clean",
+      "family": "b15",
+      "label": 0,
+      "path": "runs/new_gate_v1/b15-T400/clean/graph.pt",
+      "sha256": "499d18f2d28e35df1244d259a2fa9a4fdbebac45bdf2ca80aa5098e923c24244"
+    },
+    {
+      "benchmark": "b15-T400",
+      "side": "trojan",
+      "family": "b15",
+      "label": 1,
+      "path": "runs/new_gate_v1/b15-T400/trojan/graph.pt",
+      "sha256": "4d852166f225dfe069ed6d181b503f8a7542a87983bc95c3e8847a8fc37b012c"
+    },
+    {
+      "benchmark": "s38584-T100",
+      "side": "clean",
+      "family": "s38584",
+      "label": 0,
+      "path": "runs/new_gate_v1/s38584-T100/clean/graph.pt",
+      "sha256": "6c14bee58213f80c2fa4fc42fb4f145f16b7d22d970d52fac64a053744151198"
+    },
+    {
+      "benchmark": "s38584-T100",
+      "side": "trojan",
+      "family": "s38584",
+      "label": 1,
+      "path": "runs/new_gate_v1/s38584-T100/trojan/graph.pt",
+      "sha256": "d491d068edc41f5f4b8ce5ea103af8e321f6db1ddb1f442043a4c029597ee10f"
+    },
+    {
+      "benchmark": "s38584-T200",
+      "side": "clean",
+      "family": "s38584",
+      "label": 0,
+      "path": "runs/new_gate_v1/s38584-T200/clean/graph.pt",
+      "sha256": "f78f2f03f209fb32c9bf0cfc36f28c10a99574086a122c7e0cba1d9788861920"
+    },
+    {
+      "benchmark": "s38584-T200",
+      "side": "trojan",
+      "family": "s38584",
+      "label": 1,
+      "path": "runs/new_gate_v1/s38584-T200/trojan/graph.pt",
+      "sha256": "a593d881b7de55384b13ad8eda99cbc7e97d72f197c1bba956c45521c4213d66"
+    },
+    {
+      "benchmark": "s38584-T300",
+      "side": "clean",
+      "family": "s38584",
+      "label": 0,
+      "path": "runs/new_gate_v1/s38584-T300/clean/graph.pt",
+      "sha256": "0db62b8f9181706e298780eb71a0aad6f4dcb32fcf1eb50dca0391963fcc3be4"
+    },
+    {
+      "benchmark": "s38584-T300",
+      "side": "trojan",
+      "family": "s38584",
+      "label": 1,
+      "path": "runs/new_gate_v1/s38584-T300/trojan/graph.pt",
+      "sha256": "faef1212d682f111d2f10688d08b2441eb8c6473fce85be97193779aaf2518b8"
+    },
+    {
+      "benchmark": "MC8051-T200",
+      "side": "clean",
+      "family": "MC8051",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/MC8051-T200/clean/graph.pt",
+      "sha256": "45dee5c125b77fc9ef6cfe5e614150e9bba55084e32e5bf5205833f3452b962e"
+    },
+    {
+      "benchmark": "MC8051-T200",
+      "side": "trojan",
+      "family": "MC8051",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/MC8051-T200/trojan/graph.pt",
+      "sha256": "2f3ffdb9bf47236c7ac73de30e2cbc9aaeb5678a0bfab6d8b034a0901013cdbf"
+    },
+    {
+      "benchmark": "MC8051-T300",
+      "side": "clean",
+      "family": "MC8051",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/MC8051-T300/clean/graph.pt",
+      "sha256": "f1583532111d0f961c2c69c08e61898b3b9a322bca6e1e94aba972602ac00255"
+    },
+    {
+      "benchmark": "MC8051-T300",
+      "side": "trojan",
+      "family": "MC8051",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/MC8051-T300/trojan/graph.pt",
+      "sha256": "b8d2006fff4bce0c0a8d727662d8dbe8bf82e2887e5e4cc969707624c3c33f1a"
+    },
+    {
+      "benchmark": "MC8051-T400",
+      "side": "clean",
+      "family": "MC8051",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/MC8051-T400/clean/graph.pt",
+      "sha256": "efb9f404cd895aa502f6c274012af9e7de02207b169f994f49617ede6bdd74af"
+    },
+    {
+      "benchmark": "MC8051-T400",
+      "side": "trojan",
+      "family": "MC8051",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/MC8051-T400/trojan/graph.pt",
+      "sha256": "a61fe17191c607105cee35d0bd860811537c5c52787b42ae20f8b933c590cdd1"
+    },
+    {
+      "benchmark": "MC8051-T500",
+      "side": "clean",
+      "family": "MC8051",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/MC8051-T500/clean/graph.pt",
+      "sha256": "4e7b8b38d72daabdc86433128d5034dec663e2a4f9cb87a3a01737d337defe48"
+    },
+    {
+      "benchmark": "MC8051-T500",
+      "side": "trojan",
+      "family": "MC8051",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/MC8051-T500/trojan/graph.pt",
+      "sha256": "f9e87afb8eaf3993c69904dc6e288b4ee8b469b0cb989e31ca164868e4049de9"
+    },
+    {
+      "benchmark": "MC8051-T600",
+      "side": "clean",
+      "family": "MC8051",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/MC8051-T600/clean/graph.pt",
+      "sha256": "c9976ec0cfc297e9e59fd6cd6a8ac3dee62b3afc8f5c8a6c6d6c7a6b9de690b0"
+    },
+    {
+      "benchmark": "MC8051-T600",
+      "side": "trojan",
+      "family": "MC8051",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/MC8051-T600/trojan/graph.pt",
+      "sha256": "62ddd2ca29ec2fd1437e3f21ccddbb61280474b669e200ab77fced9468386668"
+    },
+    {
+      "benchmark": "MC8051-T700",
+      "side": "clean",
+      "family": "MC8051",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/MC8051-T700/clean/graph.pt",
+      "sha256": "98200fca56fcb3a2bf3e3050a895f78b91ca243c55bd2842aabed6e05eeace37"
+    },
+    {
+      "benchmark": "MC8051-T700",
+      "side": "trojan",
+      "family": "MC8051",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/MC8051-T700/trojan/graph.pt",
+      "sha256": "25ed09456ff8f220fe9f2f03fce79795b62f0d1830705b36fb7d29e7a0c84997"
+    },
+    {
+      "benchmark": "MC8051-T800",
+      "side": "clean",
+      "family": "MC8051",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/MC8051-T800/clean/graph.pt",
+      "sha256": "c1b306de9b69091b9bcc6e264dd43ae9dd4f47465046ed73256a96883058ee36"
+    },
+    {
+      "benchmark": "MC8051-T800",
+      "side": "trojan",
+      "family": "MC8051",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/MC8051-T800/trojan/graph.pt",
+      "sha256": "fe60b402d24dee7b58c1d62be81a240bd095c3e3038cba41ccb8dacdd12e2b08"
+    },
+    {
+      "benchmark": "s15850-T100",
+      "side": "clean",
+      "family": "s15850",
+      "label": 0,
+      "path": "runs/new_gate_v1/s15850-T100/clean/graph.pt",
+      "sha256": "4a7698426eab7651213a57103a779d1fe640b99cb6c731f27b2dccea47a8966e"
+    },
+    {
+      "benchmark": "s15850-T100",
+      "side": "trojan",
+      "family": "s15850",
+      "label": 1,
+      "path": "runs/new_gate_v1/s15850-T100/trojan/graph.pt",
+      "sha256": "1c459e6fa792cf08c6fd822aa8fd1fad0d0c41914f4f6eeeb7feb056b30c4a2d"
+    },
+    {
+      "benchmark": "s35932-T100",
+      "side": "clean",
+      "family": "s35932",
+      "label": 0,
+      "path": "runs/new_gate_v1/s35932-T100/clean/graph.pt",
+      "sha256": "5a19dc9b19b608def280891260183a18220a10ae5c543143d36a441a223d8fb6"
+    },
+    {
+      "benchmark": "s35932-T100",
+      "side": "trojan",
+      "family": "s35932",
+      "label": 1,
+      "path": "runs/new_gate_v1/s35932-T100/trojan/graph.pt",
+      "sha256": "abeb6838559ae6b6b3317b31ed6eec35efea1a3f541b531651f49aaf6bf841cf"
+    },
+    {
+      "benchmark": "s35932-T200",
+      "side": "clean",
+      "family": "s35932",
+      "label": 0,
+      "path": "runs/new_gate_v1/s35932-T200/clean/graph.pt",
+      "sha256": "9896524f25034d27e6100ce7a2d6212592a34c6a89fb09f9eeaa547f5e615331"
+    },
+    {
+      "benchmark": "s35932-T200",
+      "side": "trojan",
+      "family": "s35932",
+      "label": 1,
+      "path": "runs/new_gate_v1/s35932-T200/trojan/graph.pt",
+      "sha256": "d6a93bf2479ba2a3840ecc4c9d391fdd62b34c841647938eea0d1aebe359d474"
+    },
+    {
+      "benchmark": "s35932-T300",
+      "side": "clean",
+      "family": "s35932",
+      "label": 0,
+      "path": "runs/new_gate_v1/s35932-T300/clean/graph.pt",
+      "sha256": "af193df2726097d59f8ce4b3c2d70db68ef2952d28b95bb3967ff821520ded64"
+    },
+    {
+      "benchmark": "s35932-T300",
+      "side": "trojan",
+      "family": "s35932",
+      "label": 1,
+      "path": "runs/new_gate_v1/s35932-T300/trojan/graph.pt",
+      "sha256": "9054b57c6c54526327181a52df0931592dc73e2273b38e900ffdcf2c190a3e33"
+    },
+    {
+      "benchmark": "s38417-T100",
+      "side": "clean",
+      "family": "s38417",
+      "label": 0,
+      "path": "runs/new_gate_v1/s38417-T100/clean/graph.pt",
+      "sha256": "4d6dcfc3cb32c17e9da46c7edc0b3bc04ec4edf97ca3e62c0b5abb06b2161465"
+    },
+    {
+      "benchmark": "s38417-T100",
+      "side": "trojan",
+      "family": "s38417",
+      "label": 1,
+      "path": "runs/new_gate_v1/s38417-T100/trojan/graph.pt",
+      "sha256": "ecbe336adf019d9ee188e47c095ab840b55f38e7c86de3214bd6e37d1b53b4f1"
+    },
+    {
+      "benchmark": "s38417-T200",
+      "side": "clean",
+      "family": "s38417",
+      "label": 0,
+      "path": "runs/new_gate_v1/s38417-T200/clean/graph.pt",
+      "sha256": "91c07a9a40e6d28c9cef6cd24688272ef69540e9b160bd33b48337f763c5f253"
+    },
+    {
+      "benchmark": "s38417-T200",
+      "side": "trojan",
+      "family": "s38417",
+      "label": 1,
+      "path": "runs/new_gate_v1/s38417-T200/trojan/graph.pt",
+      "sha256": "b0caa8f85806d92def093d514809baf6c03eef16cf68c5996f20511759c4b822"
+    },
+    {
+      "benchmark": "s38417-T300",
+      "side": "clean",
+      "family": "s38417",
+      "label": 0,
+      "path": "runs/new_gate_v1/s38417-T300/clean/graph.pt",
+      "sha256": "b377d0a1078bfe7ba8efb7793de0beaf9dd55abd7eaf884680f6615482eb0aa4"
+    },
+    {
+      "benchmark": "s38417-T300",
+      "side": "trojan",
+      "family": "s38417",
+      "label": 1,
+      "path": "runs/new_gate_v1/s38417-T300/trojan/graph.pt",
+      "sha256": "acad241c7e8bc3a9aa43f9fc9bb4f630d31f72c760dcb0b8c4c87d941351c6dd"
+    },
+    {
+      "benchmark": "b19-T300",
+      "side": "clean",
+      "family": "b19",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/b19-T300/clean/graph.pt",
+      "sha256": "cce63443cbf380932f38739b6cbcc9b65af9760300ac95aa320f43ed6b5bddf6"
+    },
+    {
+      "benchmark": "b19-T300",
+      "side": "trojan",
+      "family": "b19",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/b19-T300/trojan/graph.pt",
+      "sha256": "cfb96f8a1465aff497b732d8e7d15a6f52f977799317643d6674a2589bad5b74"
+    },
+    {
+      "benchmark": "b19-T400",
+      "side": "clean",
+      "family": "b19",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/b19-T400/clean/graph.pt",
+      "sha256": "204074fd79c83a7bd590bf026d9bb58bfe7c343a317d08aaac61616c9df979a6"
+    },
+    {
+      "benchmark": "b19-T400",
+      "side": "trojan",
+      "family": "b19",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/b19-T400/trojan/graph.pt",
+      "sha256": "564b303a920a32e4e0e5147b9d974e80968392a86364c7187833f1b9ea4aee38"
+    },
+    {
+      "benchmark": "b19-T500",
+      "side": "clean",
+      "family": "b19",
+      "label": 0,
+      "path": "runs/new_vhdl_v1/b19-T500/clean/graph.pt",
+      "sha256": "9e3a799b3fc2ff9aad8977765bcca67b0a4b28dea3e2cb121662a25a200b911d"
+    },
+    {
+      "benchmark": "b19-T500",
+      "side": "trojan",
+      "family": "b19",
+      "label": 1,
+      "path": "runs/new_vhdl_v1/b19-T500/trojan/graph.pt",
+      "sha256": "5b1669a390222118701639ccabf19c61262376d75ba3a17fd59314a88eb2077e"
+    }
+  ]
+}

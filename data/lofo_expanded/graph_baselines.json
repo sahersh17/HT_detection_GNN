@@ -1,0 +1,149 @@
+{
+  "seed": 42,
+  "summary": {
+    "statistics": {
+      "AES": {
+        "n": 34,
+        "auroc": 0.6470588235294118,
+        "average_precision": 0.8089610485209355,
+        "pairs": 17,
+        "pairwise_accuracy": 0.6470588235294118
+      },
+      "MC8051": {
+        "n": 14,
+        "auroc": 0.07142857142857142,
+        "average_precision": 0.34678932178932176,
+        "pairs": 7,
+        "pairwise_accuracy": 0.07142857142857142
+      },
+      "PIC16F84": {
+        "n": 8,
+        "auroc": 0.25,
+        "average_precision": 0.5654761904761905,
+        "pairs": 4,
+        "pairwise_accuracy": 0.25
+      },
+      "RS232": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "b15": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "memctrl": {
+        "n": 2,
+        "auroc": 0.0,
+        "average_precision": 0.5,
+        "pairs": 1,
+        "pairwise_accuracy": 0.0
+      },
+      "s15850": {
+        "n": 2,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 1,
+        "pairwise_accuracy": 1.0
+      },
+      "s35932": {
+        "n": 6,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 3,
+        "pairwise_accuracy": 1.0
+      },
+      "s38417": {
+        "n": 6,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 3,
+        "pairwise_accuracy": 1.0
+      },
+      "s38584": {
+        "n": 6,
+        "auroc": 0.6666666666666666,
+        "average_precision": 0.8333333333333333,
+        "pairs": 3,
+        "pairwise_accuracy": 0.6666666666666666
+      }
+    },
+    "wl2": {
+      "AES": {
+        "n": 34,
+        "auroc": 0.6470588235294118,
+        "average_precision": 0.8089610485209355,
+        "pairs": 17,
+        "pairwise_accuracy": 0.6470588235294118
+      },
+      "MC8051": {
+        "n": 14,
+        "auroc": 0.5,
+        "average_precision": 0.5,
+        "pairs": 7,
+        "pairwise_accuracy": 0.5
+      },
+      "PIC16F84": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "RS232": {
+        "n": 8,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 4,
+        "pairwise_accuracy": 1.0
+      },
+      "b15": {
+        "n": 8,
+        "auroc": 0.0,
+        "average_precision": 0.41666666666666663,
+        "pairs": 4,
+        "pairwise_accuracy": 0.0
+      },
+      "memctrl": {
+        "n": 2,
+        "auroc": 0.0,
+        "average_precision": 0.5,
+        "pairs": 1,
+        "pairwise_accuracy": 0.0
+      },
+      "s15850": {
+        "n": 2,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "pairs": 1,
+        "pairwise_accuracy": 1.0
+      },
+      "s35932": {
+        "n": 6,
+        "auroc": 0.5,
+        "average_precision": 0.5,
+        "pairs": 3,
+        "pairwise_accuracy": 0.5
+      },
+      "s38417": {
+        "n": 6,
+        "auroc": 0.6666666666666666,
+        "average_precision": 0.8333333333333333,
+        "pairs": 3,
+        "pairwise_accuracy": 0.6666666666666666
+      },
+      "s38584": {
+        "n": 6,
+        "auroc": 0.5,
+        "average_precision": 0.5,
+        "pairs": 3,
+        "pairwise_accuracy": 0.5
+      }
+    }
+  }
+}

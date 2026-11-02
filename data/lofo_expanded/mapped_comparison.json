@@ -1,0 +1,121 @@
+{
+  "status": "development_inspected_hosts",
+  "cohort": "data/lofo_expanded/protocol.json",
+  "families": [
+    "b15",
+    "s15850",
+    "s35932",
+    "s38417",
+    "s38584"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "models": {
+    "statistics": {
+      "equal_host_mean_auroc": 0.5666666666666667,
+      "host_bootstrap_95_percentile": [
+        0.2,
+        0.9
+      ],
+      "per_host": {
+        "b15": 0.5,
+        "s15850": 1.0,
+        "s35932": 0.3333333333333333,
+        "s38417": 0.0,
+        "s38584": 1.0
+      }
+    },
+    "wl2": {
+      "equal_host_mean_auroc": 0.5666666666666667,
+      "host_bootstrap_95_percentile": [
+        0.4,
+        0.8
+      ],
+      "per_host": {
+        "b15": 0.5,
+        "s15850": 1.0,
+        "s35932": 0.5,
+        "s38417": 0.3333333333333333,
+        "s38584": 0.5
+      }
+    },
+    "size": {
+      "equal_host_mean_auroc": 0.3333333333333333,
+      "host_bootstrap_95_percentile": [
+        0.0,
+        0.7333333333333333
+      ],
+      "per_host": {
+        "b15": 0.0,
+        "s15850": 1.0,
+        "s35932": 0.6666666666666666,
+        "s38417": 0.0,
+        "s38584": 0.0
+      }
+    },
+    "gnn_scaled": {
+      "equal_host_mean_auroc": 0.7866666666666666,
+      "seed_std": 0.1591644851508443,
+      "host_bootstrap_95_percentile": [
+        0.6666666666666666,
+        0.9066666666666666
+      ],
+      "per_host_mean": {
+        "b15": 0.8,
+        "s15850": 0.6,
+        "s35932": 0.6666666666666666,
+        "s38417": 0.9333333333333333,
+        "s38584": 0.9333333333333333
+      },
+      "per_seed_equal_host_mean": [
+        0.6,
+        1.0,
+        0.6666666666666666,
+        0.8,
+        0.8666666666666667
+      ],
+      "per_seed_pooled_auroc": [
+        0.44387755102040816,
+        0.6428571428571429,
+        0.576530612244898,
+        0.6224489795918368,
+        0.5969387755102041
+      ]
+    }
+  },
+  "gnn_minus_controls": {
+    "statistics": {
+      "mean_difference": 0.22,
+      "host_seed_bootstrap_95_percentile": [
+        -0.20000000000000007,
+        0.6533333333333333
+      ]
+    },
+    "wl2": {
+      "mean_difference": 0.22000000000000003,
+      "host_seed_bootstrap_95_percentile": [
+        -0.1399999999999999,
+        0.52
+      ]
+    },
+    "size": {
+      "mean_difference": 0.45333333333333337,
+      "host_seed_bootstrap_95_percentile": [
+        -0.07999999999999996,
+        0.9333333333333333
+      ]
+    }
+  },
+  "limitations": [
+    "Five host families; s15850 has one pair",
+    "All families inspected before this report",
+    "B15 synthesis differs from the other mapped netlists",
+    "s38584-T300 has a documented trigger/payload disconnection",
+    "Host bootstrap intervals are descriptive at n=5"
+  ]
+}

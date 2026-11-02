@@ -1,0 +1,69 @@
+{
+  "checks": [
+    {
+      "host": "AES",
+      "comparison": "clean_matched_to_trojan",
+      "nodes": 15728,
+      "features_equal": true,
+      "directed_edges_equal": true,
+      "isomorphic": true
+    },
+    {
+      "host": "AES",
+      "comparison": "clean_matched_to_decoy",
+      "nodes": 15728,
+      "features_equal": true,
+      "directed_edges_equal": true,
+      "isomorphic": true
+    },
+    {
+      "host": "RS232",
+      "comparison": "clean_matched_to_trojan",
+      "nodes": 238,
+      "features_equal": true,
+      "directed_edges_equal": true,
+      "isomorphic": true
+    },
+    {
+      "host": "RS232",
+      "comparison": "clean_matched_to_decoy",
+      "nodes": 238,
+      "features_equal": true,
+      "directed_edges_equal": true,
+      "isomorphic": true
+    },
+    {
+      "host": "memctrl",
+      "comparison": "clean_matched_to_trojan",
+      "nodes": 9210,
+      "features_equal": true,
+      "directed_edges_equal": true,
+      "isomorphic": true
+    },
+    {
+      "host": "memctrl",
+      "comparison": "clean_matched_to_decoy",
+      "nodes": 9210,
+      "features_equal": true,
+      "directed_edges_equal": true,
+      "isomorphic": true
+    },
+    {
+      "host": "PIC16F84",
+      "comparison": "clean_matched_to_trojan",
+      "nodes": 2271,
+      "features_equal": true,
+      "directed_edges_equal": true,
+      "isomorphic": true
+    },
+    {
+      "host": "PIC16F84",
+      "comparison": "clean_matched_to_decoy",
+      "nodes": 2271,
+      "features_equal": true,
+      "directed_edges_equal": true,
+      "isomorphic": true
+    }
+  ],
+  "all_isomorphic": true
+}

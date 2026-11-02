@@ -1,0 +1,503 @@
+{
+  "status": "upstream_self_validation_only",
+  "protocol_sha256": "a599b369b90f5f17ef70a8e0f709e4b01f06f4dae9898d28e94700c07349d578",
+  "upstream_tree_sha256": "6346a9c713d4c0c89ee4bcb7d86035447d4491c42a4c303905526cc0795f7a54",
+  "records": [
+    {
+      "run_id": "c2670_combinational_s11",
+      "host": "c2670",
+      "mechanism": "combinational",
+      "seed": 11,
+      "source_sha256": "2a994880951891d7ea020e62189bcd7ee536a706defddd1bfe4f47e9ef5684a5",
+      "command": [
+        "main.py",
+        "netlists/c2670.v",
+        "-o",
+        "C:\\HT_detection_GNN\\runs\\independent_benchmark_v1\\c2670_combinational_s11",
+        "-q",
+        "5",
+        "-n",
+        "2",
+        "--vectors",
+        "1000",
+        "--max-rare",
+        "100",
+        "--detect",
+        "1000",
+        "--trojan-type",
+        "combinational",
+        "--counter-width",
+        "4",
+        "--seed",
+        "11",
+        "--no-visualize"
+      ],
+      "exit_code": 0,
+      "log_sha256": "807d1bfc76c02aaf7ca8e0b0ec974e9e32a07437cbc90f8100c49111ee1176ee",
+      "summary_sha256": "864fb6c46e2da096bb04879373d64fd0bc503489200081e78fda9816eacd656f",
+      "variants": [
+        {
+          "file": "c2670_combinational_s11/c2670_TI/c2670_T0.v",
+          "sha256": "265daa5e3406be79cf45ca8ad94da89541c6c0382c534d5150257e54de71f37b",
+          "trigger_nodes": [
+            "n526",
+            "n386",
+            "n439",
+            "n876",
+            "n580"
+          ],
+          "payload": "n690",
+          "trigger_signal": "troj_and_5"
+        },
+        {
+          "file": "c2670_combinational_s11/c2670_TI/c2670_T1.v",
+          "sha256": "605387cb47d2aa8e6c38bf5bfc927e6a2f3cb95606db899d9623e79e6c60131b",
+          "trigger_nodes": [
+            "n514",
+            "n589",
+            "n392",
+            "n386",
+            "n530"
+          ],
+          "payload": "n702",
+          "trigger_signal": "troj_and_5"
+        }
+      ],
+      "status": "upstream_self_validated"
+    },
+    {
+      "run_id": "c2670_sequential_s11",
+      "host": "c2670",
+      "mechanism": "sequential",
+      "seed": 11,
+      "source_sha256": "2a994880951891d7ea020e62189bcd7ee536a706defddd1bfe4f47e9ef5684a5",
+      "command": [
+        "main.py",
+        "netlists/c2670.v",
+        "-o",
+        "C:\\HT_detection_GNN\\runs\\independent_benchmark_v1\\c2670_sequential_s11",
+        "-q",
+        "5",
+        "-n",
+        "2",
+        "--vectors",
+        "1000",
+        "--max-rare",
+        "100",
+        "--detect",
+        "1000",
+        "--trojan-type",
+        "sequential",
+        "--counter-width",
+        "4",
+        "--seed",
+        "11",
+        "--no-visualize"
+      ],
+      "exit_code": 0,
+      "log_sha256": "aa585750718a6be1ee9271d455163b6293fdd1d6e4cabf9ff4aedff94ab8502f",
+      "summary_sha256": "1bcfd5808d8caa159376555277da66a0b552aeac2c8257245f824121eb211a28",
+      "variants": [
+        {
+          "file": "c2670_sequential_s11/c2670_TI/c2670_T0.v",
+          "sha256": "8064db369bccc0a55c5ad455b83aa4b80cfad8f0836add23ede67d1aa77f8de7",
+          "trigger_nodes": [
+            "n594",
+            "n387",
+            "n837",
+            "n582",
+            "n532"
+          ],
+          "payload": "n553",
+          "trigger_signal": "troj_inv_6"
+        },
+        {
+          "file": "c2670_sequential_s11/c2670_TI/c2670_T1.v",
+          "sha256": "6b907b050f42f422c30f039f292e36830abce0873fa5294bda8408e35b05ddb0",
+          "trigger_nodes": [
+            "n570",
+            "n439",
+            "n511",
+            "n387",
+            "n519"
+          ],
+          "payload": "n487",
+          "trigger_signal": "troj_and_5"
+        }
+      ],
+      "status": "upstream_self_validated"
+    },
+    {
+      "run_id": "c3540_combinational_s11",
+      "host": "c3540",
+      "mechanism": "combinational",
+      "seed": 11,
+      "source_sha256": "22c7abf90406fb06a9d1d835912195b8948703d3bb4120ae7823cc3eb13a2b94",
+      "command": [
+        "main.py",
+        "netlists/c3540.v",
+        "-o",
+        "C:\\HT_detection_GNN\\runs\\independent_benchmark_v1\\c3540_combinational_s11",
+        "-q",
+        "5",
+        "-n",
+        "2",
+        "--vectors",
+        "1000",
+        "--max-rare",
+        "100",
+        "--detect",
+        "1000",
+        "--trojan-type",
+        "combinational",
+        "--counter-width",
+        "4",
+        "--seed",
+        "11",
+        "--no-visualize"
+      ],
+      "exit_code": 0,
+      "log_sha256": "d4a80295ec79d43256f295573991d281a49ace9909ac880c8e9214e5b3cbfa14",
+      "summary_sha256": "f7e416ca3b969223bdc2becb0b6d3c19d1d4e9e8bac3361759b44ea7e33709fd",
+      "variants": [
+        {
+          "file": "c3540_combinational_s11/c3540_TI/c3540_T0.v",
+          "sha256": "5e226d713789191fac1da3d175323979e22a21ddc00a3469bceba926848b8912",
+          "trigger_nodes": [
+            "n1072",
+            "n1036",
+            "n615",
+            "n685",
+            "n1052"
+          ],
+          "payload": "n1156",
+          "trigger_signal": "troj_inv_7"
+        },
+        {
+          "file": "c3540_combinational_s11/c3540_TI/c3540_T1.v",
+          "sha256": "fa9b9144bad6a3802da7371618c1ca4fb8977632b9bca6b2ba1b98cce0868e5c",
+          "trigger_nodes": [
+            "n1037",
+            "n1186",
+            "n629",
+            "n1265",
+            "n667"
+          ],
+          "payload": "n700",
+          "trigger_signal": "troj_and_5"
+        }
+      ],
+      "status": "upstream_self_validated"
+    },
+    {
+      "run_id": "c3540_sequential_s11",
+      "host": "c3540",
+      "mechanism": "sequential",
+      "seed": 11,
+      "source_sha256": "22c7abf90406fb06a9d1d835912195b8948703d3bb4120ae7823cc3eb13a2b94",
+      "command": [
+        "main.py",
+        "netlists/c3540.v",
+        "-o",
+        "C:\\HT_detection_GNN\\runs\\independent_benchmark_v1\\c3540_sequential_s11",
+        "-q",
+        "5",
+        "-n",
+        "2",
+        "--vectors",
+        "1000",
+        "--max-rare",
+        "100",
+        "--detect",
+        "1000",
+        "--trojan-type",
+        "sequential",
+        "--counter-width",
+        "4",
+        "--seed",
+        "11",
+        "--no-visualize"
+      ],
+      "exit_code": 0,
+      "log_sha256": "94159c574cd38b85c77afa99c9655dd3e5e48e149527eefdd07481f4e7ed2754",
+      "summary_sha256": "246b8b8b41939b349f1f72a85631d60684aceabf46e6d924c24f6d6cd8f91103",
+      "variants": [
+        {
+          "file": "c3540_sequential_s11/c3540_TI/c3540_T0.v",
+          "sha256": "c1abd95c2060260888607d9ab53901868adbba15998b3252908de0c393a58352",
+          "trigger_nodes": [
+            "n976",
+            "n1040",
+            "n793",
+            "n1075",
+            "n1072"
+          ],
+          "payload": "n1156",
+          "trigger_signal": "troj_and_5"
+        },
+        {
+          "file": "c3540_sequential_s11/c3540_TI/c3540_T1.v",
+          "sha256": "95b7342f12b5865d55af55dc65bb2f058417096e401f70d037a63cdee4424470",
+          "trigger_nodes": [
+            "n793",
+            "n1040",
+            "n1547",
+            "n825",
+            "n1562"
+          ],
+          "payload": "n700",
+          "trigger_signal": "troj_inv_6"
+        }
+      ],
+      "status": "upstream_self_validated"
+    },
+    {
+      "run_id": "c5315_combinational_s11",
+      "host": "c5315",
+      "mechanism": "combinational",
+      "seed": 11,
+      "source_sha256": "2b9fc2d4db5b397853218b84367cb575e9d06cc66fbf1a1132751ab5a073ac54",
+      "command": [
+        "main.py",
+        "netlists/c5315.v",
+        "-o",
+        "C:\\HT_detection_GNN\\runs\\independent_benchmark_v1\\c5315_combinational_s11",
+        "-q",
+        "5",
+        "-n",
+        "2",
+        "--vectors",
+        "1000",
+        "--max-rare",
+        "100",
+        "--detect",
+        "1000",
+        "--trojan-type",
+        "combinational",
+        "--counter-width",
+        "4",
+        "--seed",
+        "11",
+        "--no-visualize"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0fe97a628130cd11b530fb1ac1680e8c7f7736f6184c26ee85aa65a8441f6fb3",
+      "summary_sha256": "4ebc21f4381d4e5a891b4e61dac2e7c4b09be1fb5421f91bf8627fa90ef36d6d",
+      "variants": [
+        {
+          "file": "c5315_combinational_s11/c5315_TI/c5315_T0.v",
+          "sha256": "0637950aa76e3979d580224c46dd16446a6fa93f57cded00b0a73410e2e30285",
+          "trigger_nodes": [
+            "N3643",
+            "N2599",
+            "N2586",
+            "N2619",
+            "N2626"
+          ],
+          "payload": "N1636",
+          "trigger_signal": "troj_and_5"
+        },
+        {
+          "file": "c5315_combinational_s11/c5315_TI/c5315_T1.v",
+          "sha256": "b689c72fa6a9f34996c211600291705ad644250cd69e0e37eeca5a564450cb4b",
+          "trigger_nodes": [
+            "N2598",
+            "N3026",
+            "N2626",
+            "N3786",
+            "N2995"
+          ],
+          "payload": "N2711",
+          "trigger_signal": "troj_and_5"
+        }
+      ],
+      "status": "upstream_self_validated"
+    },
+    {
+      "run_id": "c5315_sequential_s11",
+      "host": "c5315",
+      "mechanism": "sequential",
+      "seed": 11,
+      "source_sha256": "2b9fc2d4db5b397853218b84367cb575e9d06cc66fbf1a1132751ab5a073ac54",
+      "command": [
+        "main.py",
+        "netlists/c5315.v",
+        "-o",
+        "C:\\HT_detection_GNN\\runs\\independent_benchmark_v1\\c5315_sequential_s11",
+        "-q",
+        "5",
+        "-n",
+        "2",
+        "--vectors",
+        "1000",
+        "--max-rare",
+        "100",
+        "--detect",
+        "1000",
+        "--trojan-type",
+        "sequential",
+        "--counter-width",
+        "4",
+        "--seed",
+        "11",
+        "--no-visualize"
+      ],
+      "exit_code": 0,
+      "log_sha256": "4f484f62d50e24b864fbd205a46ad3f3240895ece3caf625e2905afadcd614eb",
+      "summary_sha256": "770928b5a1a4dcd6a79522a6b2a71678e170abc74c73aeb8bbf41297958a752a",
+      "variants": [
+        {
+          "file": "c5315_sequential_s11/c5315_TI/c5315_T0.v",
+          "sha256": "c5a8fcec084b18f6ccf92b6f15d37029c2f977bfb60f58853b9f7cc1adca7b8e",
+          "trigger_nodes": [
+            "N2778",
+            "N2600",
+            "N2982",
+            "N3802",
+            "N2934"
+          ],
+          "payload": "N3681",
+          "trigger_signal": "troj_and_5"
+        },
+        {
+          "file": "c5315_sequential_s11/c5315_TI/c5315_T1.v",
+          "sha256": "8475a8fdcb654c5bb27ee9d25f1fe55ac8ce79d0ba11789ae0088c19eea35f7b",
+          "trigger_nodes": [
+            "N2603",
+            "N2703",
+            "N2607",
+            "N2621",
+            "N2597"
+          ],
+          "payload": "N8039",
+          "trigger_signal": "troj_and_5"
+        }
+      ],
+      "status": "upstream_self_validated"
+    },
+    {
+      "run_id": "s1423_combinational_s11",
+      "host": "s1423",
+      "mechanism": "combinational",
+      "seed": 11,
+      "source_sha256": "015e52d56c886b4d333adc4c23b84318a0a6d33b45f7c874a6f15aad762de030",
+      "command": [
+        "main.py",
+        "netlists/s1423scan.v",
+        "-o",
+        "C:\\HT_detection_GNN\\runs\\independent_benchmark_v1\\s1423_combinational_s11",
+        "-q",
+        "5",
+        "-n",
+        "2",
+        "--vectors",
+        "1000",
+        "--max-rare",
+        "100",
+        "--detect",
+        "1000",
+        "--trojan-type",
+        "combinational",
+        "--counter-width",
+        "4",
+        "--seed",
+        "11",
+        "--no-visualize"
+      ],
+      "exit_code": 0,
+      "log_sha256": "669e85a0aa1c44cb46a14a36d296a530d775294f4c523733f60281ebf75eb73f",
+      "summary_sha256": "5c9214e58147e1da5d48ae5568e55a85e985f053f1a89c102902db7d803bbf7d",
+      "variants": [
+        {
+          "file": "s1423_combinational_s11/s1423scan_TI/s1423scan_T0.v",
+          "sha256": "cccf7e772fbb0db4c5f2d8c831dcd0a320ebb1ab34553337255ee8047c9e4c23",
+          "trigger_nodes": [
+            "n188",
+            "n190",
+            "n112",
+            "G705",
+            "n258"
+          ],
+          "payload": "n379",
+          "trigger_signal": "troj_and_5"
+        },
+        {
+          "file": "s1423_combinational_s11/s1423scan_TI/s1423scan_T1.v",
+          "sha256": "2984842f92c68c854c799f63712515771fa8d01bdfffca80bcd6a92c6dc305f2",
+          "trigger_nodes": [
+            "n192",
+            "n322",
+            "n185",
+            "n320",
+            "n326"
+          ],
+          "payload": "n145",
+          "trigger_signal": "troj_inv_6"
+        }
+      ],
+      "status": "upstream_self_validated"
+    },
+    {
+      "run_id": "s1423_sequential_s11",
+      "host": "s1423",
+      "mechanism": "sequential",
+      "seed": 11,
+      "source_sha256": "015e52d56c886b4d333adc4c23b84318a0a6d33b45f7c874a6f15aad762de030",
+      "command": [
+        "main.py",
+        "netlists/s1423scan.v",
+        "-o",
+        "C:\\HT_detection_GNN\\runs\\independent_benchmark_v1\\s1423_sequential_s11",
+        "-q",
+        "5",
+        "-n",
+        "2",
+        "--vectors",
+        "1000",
+        "--max-rare",
+        "100",
+        "--detect",
+        "1000",
+        "--trojan-type",
+        "sequential",
+        "--counter-width",
+        "4",
+        "--seed",
+        "11",
+        "--no-visualize"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e93227fe862d2bf374fd3d2e6753f1e75237c7f8c91dc6af3f40a799d0b6333c",
+      "summary_sha256": "44b8de768862a736e3665113a18e70a323a625659517e69548436a35f6fe774e",
+      "variants": [
+        {
+          "file": "s1423_sequential_s11/s1423scan_TI/s1423scan_T0.v",
+          "sha256": "f96cc24b32494ffdfc3f54ba2ae11829475b0ae42552e0f7804461eb7359a386",
+          "trigger_nodes": [
+            "n188",
+            "n402",
+            "n398",
+            "n183",
+            "n333"
+          ],
+          "payload": "n136",
+          "trigger_signal": "troj_and_5"
+        },
+        {
+          "file": "s1423_sequential_s11/s1423scan_TI/s1423scan_T1.v",
+          "sha256": "7e5b391896e5665e337761a3371c554514215356766ae4811502d7c34f722065",
+          "trigger_nodes": [
+            "n146",
+            "n226",
+            "n227",
+            "n262",
+            "n383"
+          ],
+          "payload": "n132",
+          "trigger_signal": "troj_inv_6"
+        }
+      ],
+      "status": "upstream_self_validated"
+    }
+  ]
+}

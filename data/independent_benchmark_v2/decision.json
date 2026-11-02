@@ -1,0 +1,176 @@
+{
+  "status": "no_go_for_model_claim_or_final_host_opening",
+  "protocol_version": "independent_benchmark_v2_2026-11-02",
+  "development_hosts": [
+    "c2670",
+    "c3540",
+    "c5315",
+    "s1423"
+  ],
+  "sealed_final_candidates": [
+    "c6288",
+    "s13207"
+  ],
+  "variants": 16,
+  "behavior_counts": {
+    "top_level_output_witness": 4,
+    "simplified_sequential_output_witness": 6,
+    "no_defined_input_top_level_difference_in_sat_miter": 2,
+    "upstream_only_unverified": 2,
+    "sequential_trace_failed": 2
+  },
+  "behavior_by_host": {
+    "c2670": {
+      "top_level_output_witness": 2,
+      "simplified_sequential_output_witness": 2
+    },
+    "c3540": {
+      "top_level_output_witness": 2,
+      "simplified_sequential_output_witness": 2
+    },
+    "c5315": {
+      "no_defined_input_top_level_difference_in_sat_miter": 2,
+      "simplified_sequential_output_witness": 2
+    },
+    "s1423": {
+      "upstream_only_unverified": 2,
+      "sequential_trace_failed": 2
+    }
+  },
+  "gates": {
+    "independent_rerun_byte_identical": true,
+    "graph_and_candidate_label_lineage_verified": true,
+    "every_variant_has_independent_top_output_witness": false,
+    "benign_decoys_equivalent_and_matched": false,
+    "simple_gate_count_not_perfect": false,
+    "simple_graph_size_not_perfect": false,
+    "independent_second_insertion_source": false,
+    "reviewed_node_labels": false,
+    "paired_original_RTL": false
+  },
+  "transparent_controls": {
+    "gate_instance_count_trojan_higher": [
+      16,
+      16
+    ],
+    "graph_node_count_trojan_higher": [
+      16,
+      16
+    ]
+  },
+  "interpretation": "Reproducibility and graph lineage pass, but benchmark validity and shortcut controls fail. No trained detection or localization result on this cohort supports a method claim.",
+  "records": [
+    {
+      "host": "c2670",
+      "mechanism": "combinational",
+      "variant": "c2670_combinational_s11/c2670_TI/c2670_T0.v",
+      "behavior": "top_level_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c2670",
+      "mechanism": "combinational",
+      "variant": "c2670_combinational_s11/c2670_TI/c2670_T1.v",
+      "behavior": "top_level_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c2670",
+      "mechanism": "sequential",
+      "variant": "c2670_sequential_s11/c2670_TI/c2670_T0.v",
+      "behavior": "simplified_sequential_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c2670",
+      "mechanism": "sequential",
+      "variant": "c2670_sequential_s11/c2670_TI/c2670_T1.v",
+      "behavior": "simplified_sequential_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c3540",
+      "mechanism": "combinational",
+      "variant": "c3540_combinational_s11/c3540_TI/c3540_T0.v",
+      "behavior": "top_level_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c3540",
+      "mechanism": "combinational",
+      "variant": "c3540_combinational_s11/c3540_TI/c3540_T1.v",
+      "behavior": "top_level_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c3540",
+      "mechanism": "sequential",
+      "variant": "c3540_sequential_s11/c3540_TI/c3540_T0.v",
+      "behavior": "simplified_sequential_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c3540",
+      "mechanism": "sequential",
+      "variant": "c3540_sequential_s11/c3540_TI/c3540_T1.v",
+      "behavior": "simplified_sequential_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c5315",
+      "mechanism": "combinational",
+      "variant": "c5315_combinational_s11/c5315_TI/c5315_T0.v",
+      "behavior": "no_defined_input_top_level_difference_in_sat_miter",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c5315",
+      "mechanism": "combinational",
+      "variant": "c5315_combinational_s11/c5315_TI/c5315_T1.v",
+      "behavior": "no_defined_input_top_level_difference_in_sat_miter",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c5315",
+      "mechanism": "sequential",
+      "variant": "c5315_sequential_s11/c5315_TI/c5315_T0.v",
+      "behavior": "simplified_sequential_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "c5315",
+      "mechanism": "sequential",
+      "variant": "c5315_sequential_s11/c5315_TI/c5315_T1.v",
+      "behavior": "simplified_sequential_output_witness",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "s1423",
+      "mechanism": "combinational",
+      "variant": "s1423_combinational_s11/s1423scan_TI/s1423scan_T0.v",
+      "behavior": "upstream_only_unverified",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "s1423",
+      "mechanism": "combinational",
+      "variant": "s1423_combinational_s11/s1423scan_TI/s1423scan_T1.v",
+      "behavior": "upstream_only_unverified",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "s1423",
+      "mechanism": "sequential",
+      "variant": "s1423_sequential_s11/s1423scan_TI/s1423scan_T0.v",
+      "behavior": "sequential_trace_failed",
+      "deterministic_repeat_match": true
+    },
+    {
+      "host": "s1423",
+      "mechanism": "sequential",
+      "variant": "s1423_sequential_s11/s1423scan_TI/s1423scan_T1.v",
+      "behavior": "sequential_trace_failed",
+      "deterministic_repeat_match": true
+    }
+  ]
+}

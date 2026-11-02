@@ -25,6 +25,8 @@ The new AES graphs are much larger than the earlier graphs, at roughly 240,000 n
 
 ## Source-traced graph rebuild
 
+The additional B15, s38584, MC8051, BasicRSA and duplicate PIC downloads have specialized processing paths. See [new Trust-Hub data engineering](docs/NEW_TRUSTHUB_DATA.md) for formats, commands, validation and exclusions.
+
 The separate `provenance_v1` graph version can be rebuilt on Windows with the pinned YoWASP Yosys package:
 
 ```powershell
@@ -63,11 +65,23 @@ Use the Python environment in `trusthub/venv` with PyTorch and PyTorch Geometric
 
 ## Robustness and localization
 
+A seven-family leave-one-host-family-out GNN diagnostic on 80 graphs achieved 57.5% pooled accuracy and 61.9% mean family balanced accuracy, versus 50.0% for the size baseline. Five family holdouts remained at 50%; threshold-free AUROC/AP and clean/Trojan pair ranking are in [the extended metrics](data/lofo_detection/extended_metrics.json). The new B15, s38584 and MC8051 graphs are in the hash-pinned LOFO cohort; use [the pipeline guide](docs/NEW_TRUSTHUB_DATA.md) for dataset scope and [the publication assessment](docs/LOFO_RESULTS.md) for limitations.
+
 `trusthub/scripts/check_leakage.py` checks for label clues in graph metadata. The integrated audit additionally checks graph/embedding shapes, labels, and fold overlap. The supplied newer archive does not include source-attributed node mappings needed to establish Trojan-gate ground truth. The `pipeline/localization/` utilities can compare original clean and Trojan RTL and evaluate node rankings once source-attributed synthesis and node alignment are available. Attention scores alone are candidate explanations, not verified Trojan locations.
 
 The separate source-traced development comparison and a ten-sample diagnostic on memory-controller and PIC16F84 hosts have been run. The development set has only three clean-source groups; the diagnostic has only two new clean host designs. [Current results](docs/CURRENT_RESULTS.md) include an RTL-length control that scores strongly on development folds, so apparent detection accuracy can reflect dataset shortcuts. An obfuscated held-out evaluation set and full comparison on the supplied newer graphs remain research work.
 
 The current localization evidence audit and exact missing inputs are documented in [`docs/LOCALIZATION_STATUS.md`](docs/LOCALIZATION_STATUS.md). The candidate RTL changes and source descriptions for all 21 paired benchmarks are in `data/localization_reference/`; they are not yet reviewed ground truth.
+
+The mapped-netlist gate-label feasibility audit and first structural ranking controls are in [`docs/LOCALIZATION_LABEL_AUDIT.md`](docs/LOCALIZATION_LABEL_AUDIT.md). Its s38584 node labels are hash-aligned mechanical candidates; B15 has no automatic node labels because the netlist correspondence is unstable.
+
+The expanded ten-host development cohort, five-seed mapped-netlist detection comparison, and additional archive inventory are documented in [`docs/EXPANDED_HOST_STUDY.md`](docs/EXPANDED_HOST_STUDY.md). The GNN's ranking gain over simple controls is uncertain and its fixed-threshold accuracy remains 50%.
+
+The newly integrated TrustHub graphs are frozen in a hash-verified 80-record cohort. Per-family ranking metrics, graph-statistics/WL controls, and a publication-readiness assessment are in [`docs/PUBLICATION_PLAN_VALIDATION.md`](docs/PUBLICATION_PLAN_VALIDATION.md). The five-seed evaluator and flow-matched cohort are available, but the complete runs are compute-intensive and must finish before their results can be reported.
+
+The versioned [matched-insertion pilot](docs/MATCHED_INSERTION_PILOT.md) checks four synthetic hosts with benign decoys and constructed gate labels. Its strongest simple baselines solve the current trigger template, so it is a no-go for a new model claim. A [port-aware graph diagnostic](docs/PORT_AWARE_DIAGNOSTIC.md) tests one missing representation capability without claiming a model gain. The separate [RTL lexical ablation](docs/RTL_LEXICAL_ABLATION.md) measures sensitivity to comments and identifier names on the earlier development folds.
+
+The latest [shortcut audit](docs/SHORTCUT_AUDIT_2026-11-02.md) compares RTL embeddings with source-length and tokenizer-window controls across six inspected host families. A [length intervention preflight](docs/LENGTH_DECOUPLE_PREFLIGHT.md) failed its shortcut gate, so no semantic RTL gain is claimed from it. The [pinned external insertion intake](docs/INDEPENDENT_BENCHMARK_V2.md) reproduced 16 gate-level variants but failed behavior and simple-count gates; no model was trained on that cohort. The [execution record](docs/AUDIT_EXECUTION.md), [claim ledger](docs/CLAIM_AUDIT_2026-11-02.md), [external benchmark route](docs/EXTERNAL_GENERATOR_ROUTE.md), and [audit-paper draft](paper/SHORTCUT_AUDIT_DRAFT.md) separate reproduced results from the validation still required for submission.
 
 An exploratory comparison on the earlier graphs is recorded in [`docs/BASELINE_RESULTS.md`](docs/BASELINE_RESULTS.md); keep its graph and embedding versions separate from the source-traced experiment.
 

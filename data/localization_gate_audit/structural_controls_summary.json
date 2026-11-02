@@ -1,0 +1,69 @@
+{
+  "status": "exploratory_unreviewed_candidates",
+  "hosts": 3,
+  "designs": 7,
+  "known_positive_nodes": 190,
+  "limitations": "Only three inspected hosts; intervals are descriptive and labels are unreviewed.",
+  "methods": {
+    "fanin": {
+      "equal_host_mean_auroc": 0.46574613732286096,
+      "host_bootstrap_95_percentile": [
+        0.3664195162461827,
+        0.5196434812266737
+      ],
+      "per_host": {
+        "s35932": 0.5196434812266737,
+        "s38417": 0.3664195162461827,
+        "s38584": 0.5111754144957266
+      }
+    },
+    "fanout": {
+      "equal_host_mean_auroc": 0.28651893372935217,
+      "host_bootstrap_95_percentile": [
+        0.22955679239121562,
+        0.35737626551442236
+      ],
+      "per_host": {
+        "s35932": 0.27262374328241856,
+        "s38417": 0.22955679239121562,
+        "s38584": 0.35737626551442236
+      }
+    },
+    "near_output": {
+      "equal_host_mean_auroc": 0.4685854734210058,
+      "host_bootstrap_95_percentile": [
+        0.29101106973775814,
+        0.5859027759576549
+      ],
+      "per_host": {
+        "s35932": 0.29101106973775814,
+        "s38417": 0.5288425745676044,
+        "s38584": 0.5859027759576549
+      }
+    },
+    "gate_class_rarity": {
+      "equal_host_mean_auroc": 0.7668708294085415,
+      "host_bootstrap_95_percentile": [
+        0.6287675722619277,
+        0.8393518956036315
+      ],
+      "per_host": {
+        "s35932": 0.8324930203600651,
+        "s38417": 0.8393518956036315,
+        "s38584": 0.6287675722619277
+      }
+    },
+    "fanout_over_output_distance": {
+      "equal_host_mean_auroc": 0.2709166747993075,
+      "host_bootstrap_95_percentile": [
+        0.16760742621388955,
+        0.39023322911880626
+      ],
+      "per_host": {
+        "s35932": 0.16760742621388955,
+        "s38417": 0.2549093690652266,
+        "s38584": 0.39023322911880626
+      }
+    }
+  }
+}

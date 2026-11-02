@@ -1,0 +1,16 @@
+[
+  {
+    "cohort": "lofo_expanded",
+    "graphs": 94,
+    "pairs": 47,
+    "hosts": 10,
+    "status": "hash_and_pair_verified"
+  },
+  {
+    "cohort": "lofo_expanded_b19",
+    "graphs": 100,
+    "pairs": 50,
+    "hosts": 11,
+    "status": "hash_and_pair_verified"
+  }
+]

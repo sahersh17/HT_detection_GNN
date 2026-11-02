@@ -12,10 +12,15 @@ import torch
 from build import ROOT
 
 
-def verify(root=ROOT / "runs" / "rtl_clean_v1", expansion=False):
+def verify(root=ROOT / "runs" / "rtl_clean_v1", expansion=False, new_vhdl=False):
     root = Path(root)
     manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
-    if expansion:
+    if new_vhdl:
+        expected = {(f"MC8051-T{n}", side) for n in (200, 300, 400, 500, 600, 700, 800)
+                    for side in ("clean", "trojan")}
+        expected |= {(f"BasicRSA-T{n}", "trojan") for n in (100, 300, 400)}
+        folds = []
+    elif expansion:
         benchmarks = ["memctrl-T100", *(f"PIC16F84-T{n}" for n in (100, 200, 300, 400))]
         expected = {(benchmark, side) for benchmark in benchmarks for side in ("clean", "trojan")}
         folds = []
@@ -70,7 +75,10 @@ def verify(root=ROOT / "runs" / "rtl_clean_v1", expansion=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--expansion", action="store_true")
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("--expansion", action="store_true")
+    group.add_argument("--new-vhdl", action="store_true")
     args = parser.parse_args()
-    folder = ROOT / "runs" / ("rtl_expansion_v1" if args.expansion else "rtl_clean_v1")
-    print(json.dumps(verify(folder, args.expansion), indent=2))
+    folder = ROOT / "runs" / ("new_rtl_v1" if args.new_vhdl else
+                             "rtl_expansion_v1" if args.expansion else "rtl_clean_v1")
+    print(json.dumps(verify(folder, args.expansion, args.new_vhdl), indent=2))

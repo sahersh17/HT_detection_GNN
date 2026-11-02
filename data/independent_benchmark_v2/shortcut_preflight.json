@@ -1,0 +1,811 @@
+{
+  "status": "development_transparent_preflight_no_decoys_or_model",
+  "evaluation": "within-host clean/Trojan pair ranking; each score is a standalone source or graph count",
+  "controls": {
+    "characters": {
+      "pairs": 16,
+      "trojan_higher": 16,
+      "ties": 0,
+      "trojan_lower": 0,
+      "paired_win_rate_half_ties": 1.0,
+      "host_win_rate": {
+        "c2670": 1.0,
+        "c3540": 1.0,
+        "c5315": 1.0,
+        "s1423": 1.0
+      }
+    },
+    "lines": {
+      "pairs": 16,
+      "trojan_higher": 16,
+      "ties": 0,
+      "trojan_lower": 0,
+      "paired_win_rate_half_ties": 1.0,
+      "host_win_rate": {
+        "c2670": 1.0,
+        "c3540": 1.0,
+        "c5315": 1.0,
+        "s1423": 1.0
+      }
+    },
+    "gate_instances": {
+      "pairs": 16,
+      "trojan_higher": 16,
+      "ties": 0,
+      "trojan_lower": 0,
+      "paired_win_rate_half_ties": 1.0,
+      "host_win_rate": {
+        "c2670": 1.0,
+        "c3540": 1.0,
+        "c5315": 1.0,
+        "s1423": 1.0
+      }
+    },
+    "xor_instances": {
+      "pairs": 16,
+      "trojan_higher": 16,
+      "ties": 0,
+      "trojan_lower": 0,
+      "paired_win_rate_half_ties": 1.0,
+      "host_win_rate": {
+        "c2670": 1.0,
+        "c3540": 1.0,
+        "c5315": 1.0,
+        "s1423": 1.0
+      }
+    },
+    "flip_flops": {
+      "pairs": 16,
+      "trojan_higher": 8,
+      "ties": 8,
+      "trojan_lower": 0,
+      "paired_win_rate_half_ties": 0.75,
+      "host_win_rate": {
+        "c2670": 0.75,
+        "c3540": 0.75,
+        "c5315": 0.75,
+        "s1423": 0.75
+      }
+    },
+    "synthesized_graph_nodes": {
+      "pairs": 16,
+      "trojan_higher": 16,
+      "ties": 0,
+      "trojan_lower": 0,
+      "paired_win_rate_half_ties": 1.0,
+      "host_win_rate": {
+        "c2670": 1.0,
+        "c3540": 1.0,
+        "c5315": 1.0,
+        "s1423": 1.0
+      }
+    }
+  },
+  "records": [
+    {
+      "host": "c2670",
+      "mechanism": "combinational",
+      "run_id": "c2670_combinational_s11",
+      "variant": "c2670_TI/c2670_T0.v",
+      "clean": {
+        "characters": 32217,
+        "lines": 781,
+        "gate_instances": 776,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 90,
+          "nor": 216,
+          "not": 122,
+          "nand": 348
+        }
+      },
+      "infected": {
+        "characters": 32638,
+        "lines": 788,
+        "gate_instances": 783,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 90,
+          "nor": 217,
+          "not": 124,
+          "nand": 349,
+          "or": 1,
+          "and": 1,
+          "xor": 1
+        }
+      },
+      "delta": {
+        "characters": 421,
+        "lines": 7,
+        "gate_instances": 7,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "synthesized_graph_nodes": 7
+      }
+    },
+    {
+      "host": "c2670",
+      "mechanism": "combinational",
+      "run_id": "c2670_combinational_s11",
+      "variant": "c2670_TI/c2670_T1.v",
+      "clean": {
+        "characters": 32217,
+        "lines": 781,
+        "gate_instances": 776,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 90,
+          "nor": 216,
+          "not": 122,
+          "nand": 348
+        }
+      },
+      "infected": {
+        "characters": 32582,
+        "lines": 787,
+        "gate_instances": 782,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 90,
+          "nor": 218,
+          "not": 123,
+          "nand": 348,
+          "and": 2,
+          "xor": 1
+        }
+      },
+      "delta": {
+        "characters": 365,
+        "lines": 6,
+        "gate_instances": 6,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "synthesized_graph_nodes": 7
+      }
+    },
+    {
+      "host": "c2670",
+      "mechanism": "sequential",
+      "run_id": "c2670_sequential_s11",
+      "variant": "c2670_TI/c2670_T0.v",
+      "clean": {
+        "characters": 32217,
+        "lines": 781,
+        "gate_instances": 776,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 90,
+          "nor": 216,
+          "not": 122,
+          "nand": 348
+        }
+      },
+      "infected": {
+        "characters": 33728,
+        "lines": 802,
+        "gate_instances": 797,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "gate_types": {
+          "buf": 90,
+          "nor": 217,
+          "not": 125,
+          "nand": 349,
+          "or": 1,
+          "and": 6,
+          "xor": 5,
+          "sdff": 4
+        }
+      },
+      "delta": {
+        "characters": 1511,
+        "lines": 21,
+        "gate_instances": 21,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "synthesized_graph_nodes": 23
+      }
+    },
+    {
+      "host": "c2670",
+      "mechanism": "sequential",
+      "run_id": "c2670_sequential_s11",
+      "variant": "c2670_TI/c2670_T1.v",
+      "clean": {
+        "characters": 32217,
+        "lines": 781,
+        "gate_instances": 776,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 90,
+          "nor": 216,
+          "not": 122,
+          "nand": 348
+        }
+      },
+      "infected": {
+        "characters": 33672,
+        "lines": 801,
+        "gate_instances": 796,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "gate_types": {
+          "buf": 90,
+          "nor": 218,
+          "not": 124,
+          "nand": 348,
+          "and": 7,
+          "xor": 5,
+          "sdff": 4
+        }
+      },
+      "delta": {
+        "characters": 1455,
+        "lines": 20,
+        "gate_instances": 20,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "synthesized_graph_nodes": 23
+      }
+    },
+    {
+      "host": "c3540",
+      "mechanism": "combinational",
+      "run_id": "c3540_combinational_s11",
+      "variant": "c3540_TI/c3540_T0.v",
+      "clean": {
+        "characters": 44604,
+        "lines": 1139,
+        "gate_instances": 1134,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "nand": 508,
+          "nor": 467,
+          "not": 159
+        }
+      },
+      "infected": {
+        "characters": 45030,
+        "lines": 1146,
+        "gate_instances": 1141,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "gate_types": {
+          "nand": 509,
+          "nor": 468,
+          "not": 161,
+          "or": 1,
+          "and": 1,
+          "xor": 1
+        }
+      },
+      "delta": {
+        "characters": 426,
+        "lines": 7,
+        "gate_instances": 7,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "synthesized_graph_nodes": 7
+      }
+    },
+    {
+      "host": "c3540",
+      "mechanism": "combinational",
+      "run_id": "c3540_combinational_s11",
+      "variant": "c3540_TI/c3540_T1.v",
+      "clean": {
+        "characters": 44604,
+        "lines": 1139,
+        "gate_instances": 1134,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "nand": 508,
+          "nor": 467,
+          "not": 159
+        }
+      },
+      "infected": {
+        "characters": 45033,
+        "lines": 1146,
+        "gate_instances": 1141,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "gate_types": {
+          "nand": 510,
+          "nor": 468,
+          "not": 161,
+          "or": 1,
+          "xor": 1
+        }
+      },
+      "delta": {
+        "characters": 429,
+        "lines": 7,
+        "gate_instances": 7,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "synthesized_graph_nodes": 6
+      }
+    },
+    {
+      "host": "c3540",
+      "mechanism": "sequential",
+      "run_id": "c3540_sequential_s11",
+      "variant": "c3540_TI/c3540_T0.v",
+      "clean": {
+        "characters": 44604,
+        "lines": 1139,
+        "gate_instances": 1134,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "nand": 508,
+          "nor": 467,
+          "not": 159
+        }
+      },
+      "infected": {
+        "characters": 46120,
+        "lines": 1160,
+        "gate_instances": 1155,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "gate_types": {
+          "nand": 509,
+          "nor": 468,
+          "not": 162,
+          "or": 1,
+          "and": 6,
+          "xor": 5,
+          "sdff": 4
+        }
+      },
+      "delta": {
+        "characters": 1516,
+        "lines": 21,
+        "gate_instances": 21,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "synthesized_graph_nodes": 23
+      }
+    },
+    {
+      "host": "c3540",
+      "mechanism": "sequential",
+      "run_id": "c3540_sequential_s11",
+      "variant": "c3540_TI/c3540_T1.v",
+      "clean": {
+        "characters": 44604,
+        "lines": 1139,
+        "gate_instances": 1134,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "nand": 508,
+          "nor": 467,
+          "not": 159
+        }
+      },
+      "infected": {
+        "characters": 46123,
+        "lines": 1160,
+        "gate_instances": 1155,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "gate_types": {
+          "nand": 510,
+          "nor": 468,
+          "not": 162,
+          "or": 1,
+          "and": 5,
+          "xor": 5,
+          "sdff": 4
+        }
+      },
+      "delta": {
+        "characters": 1519,
+        "lines": 21,
+        "gate_instances": 21,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "synthesized_graph_nodes": 22
+      }
+    },
+    {
+      "host": "c5315",
+      "mechanism": "combinational",
+      "run_id": "c5315_combinational_s11",
+      "variant": "c5315_TI/c5315_T0.v",
+      "clean": {
+        "characters": 95259,
+        "lines": 2312,
+        "gate_instances": 2307,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 313,
+          "and": 718,
+          "not": 581,
+          "nand": 454,
+          "or": 214,
+          "nor": 27
+        }
+      },
+      "infected": {
+        "characters": 95638,
+        "lines": 2318,
+        "gate_instances": 2313,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 313,
+          "and": 721,
+          "not": 582,
+          "nand": 455,
+          "or": 214,
+          "nor": 27,
+          "xor": 1
+        }
+      },
+      "delta": {
+        "characters": 379,
+        "lines": 6,
+        "gate_instances": 6,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "synthesized_graph_nodes": 5
+      }
+    },
+    {
+      "host": "c5315",
+      "mechanism": "combinational",
+      "run_id": "c5315_combinational_s11",
+      "variant": "c5315_TI/c5315_T1.v",
+      "clean": {
+        "characters": 95259,
+        "lines": 2312,
+        "gate_instances": 2307,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 313,
+          "and": 718,
+          "not": 581,
+          "nand": 454,
+          "or": 214,
+          "nor": 27
+        }
+      },
+      "infected": {
+        "characters": 95638,
+        "lines": 2318,
+        "gate_instances": 2313,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 313,
+          "and": 719,
+          "not": 582,
+          "nand": 456,
+          "or": 215,
+          "nor": 27,
+          "xor": 1
+        }
+      },
+      "delta": {
+        "characters": 379,
+        "lines": 6,
+        "gate_instances": 6,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "synthesized_graph_nodes": 8
+      }
+    },
+    {
+      "host": "c5315",
+      "mechanism": "sequential",
+      "run_id": "c5315_sequential_s11",
+      "variant": "c5315_TI/c5315_T0.v",
+      "clean": {
+        "characters": 95259,
+        "lines": 2312,
+        "gate_instances": 2307,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 313,
+          "and": 718,
+          "not": 581,
+          "nand": 454,
+          "or": 214,
+          "nor": 27
+        }
+      },
+      "infected": {
+        "characters": 96728,
+        "lines": 2332,
+        "gate_instances": 2327,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "gate_types": {
+          "buf": 313,
+          "and": 726,
+          "not": 583,
+          "nand": 455,
+          "or": 214,
+          "nor": 27,
+          "xor": 5,
+          "sdff": 4
+        }
+      },
+      "delta": {
+        "characters": 1469,
+        "lines": 20,
+        "gate_instances": 20,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "synthesized_graph_nodes": 21
+      }
+    },
+    {
+      "host": "c5315",
+      "mechanism": "sequential",
+      "run_id": "c5315_sequential_s11",
+      "variant": "c5315_TI/c5315_T1.v",
+      "clean": {
+        "characters": 95259,
+        "lines": 2312,
+        "gate_instances": 2307,
+        "xor_instances": 0,
+        "flip_flops": 0,
+        "gate_types": {
+          "buf": 313,
+          "and": 718,
+          "not": 581,
+          "nand": 454,
+          "or": 214,
+          "nor": 27
+        }
+      },
+      "infected": {
+        "characters": 96728,
+        "lines": 2332,
+        "gate_instances": 2327,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "gate_types": {
+          "buf": 313,
+          "and": 724,
+          "not": 583,
+          "nand": 456,
+          "or": 215,
+          "nor": 27,
+          "xor": 5,
+          "sdff": 4
+        }
+      },
+      "delta": {
+        "characters": 1469,
+        "lines": 20,
+        "gate_instances": 20,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "synthesized_graph_nodes": 26
+      }
+    },
+    {
+      "host": "s1423",
+      "mechanism": "combinational",
+      "run_id": "s1423_combinational_s11",
+      "variant": "s1423scan_TI/s1423scan_T0.v",
+      "clean": {
+        "characters": 19101,
+        "lines": 485,
+        "gate_instances": 480,
+        "xor_instances": 1,
+        "flip_flops": 74,
+        "gate_types": {
+          "buf": 1,
+          "nor": 65,
+          "nand": 176,
+          "and": 31,
+          "or": 35,
+          "xnor": 29,
+          "xor": 1,
+          "not": 68,
+          "sdff": 74
+        }
+      },
+      "infected": {
+        "characters": 19454,
+        "lines": 491,
+        "gate_instances": 486,
+        "xor_instances": 2,
+        "flip_flops": 74,
+        "gate_types": {
+          "buf": 1,
+          "nor": 66,
+          "nand": 176,
+          "and": 32,
+          "or": 37,
+          "xnor": 29,
+          "xor": 2,
+          "not": 69,
+          "sdff": 74
+        }
+      },
+      "delta": {
+        "characters": 353,
+        "lines": 6,
+        "gate_instances": 6,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "synthesized_graph_nodes": 7
+      }
+    },
+    {
+      "host": "s1423",
+      "mechanism": "combinational",
+      "run_id": "s1423_combinational_s11",
+      "variant": "s1423scan_TI/s1423scan_T1.v",
+      "clean": {
+        "characters": 19101,
+        "lines": 485,
+        "gate_instances": 480,
+        "xor_instances": 1,
+        "flip_flops": 74,
+        "gate_types": {
+          "buf": 1,
+          "nor": 65,
+          "nand": 176,
+          "and": 31,
+          "or": 35,
+          "xnor": 29,
+          "xor": 1,
+          "not": 68,
+          "sdff": 74
+        }
+      },
+      "infected": {
+        "characters": 19522,
+        "lines": 492,
+        "gate_instances": 487,
+        "xor_instances": 2,
+        "flip_flops": 74,
+        "gate_types": {
+          "buf": 1,
+          "nor": 66,
+          "nand": 177,
+          "and": 32,
+          "or": 36,
+          "xnor": 29,
+          "xor": 2,
+          "not": 70,
+          "sdff": 74
+        }
+      },
+      "delta": {
+        "characters": 421,
+        "lines": 7,
+        "gate_instances": 7,
+        "xor_instances": 1,
+        "flip_flops": 0,
+        "synthesized_graph_nodes": 7
+      }
+    },
+    {
+      "host": "s1423",
+      "mechanism": "sequential",
+      "run_id": "s1423_sequential_s11",
+      "variant": "s1423scan_TI/s1423scan_T0.v",
+      "clean": {
+        "characters": 19101,
+        "lines": 485,
+        "gate_instances": 480,
+        "xor_instances": 1,
+        "flip_flops": 74,
+        "gate_types": {
+          "buf": 1,
+          "nor": 65,
+          "nand": 176,
+          "and": 31,
+          "or": 35,
+          "xnor": 29,
+          "xor": 1,
+          "not": 68,
+          "sdff": 74
+        }
+      },
+      "infected": {
+        "characters": 20544,
+        "lines": 505,
+        "gate_instances": 500,
+        "xor_instances": 6,
+        "flip_flops": 78,
+        "gate_types": {
+          "buf": 1,
+          "nor": 66,
+          "nand": 176,
+          "and": 37,
+          "or": 37,
+          "xnor": 29,
+          "xor": 6,
+          "not": 70,
+          "sdff": 78
+        }
+      },
+      "delta": {
+        "characters": 1443,
+        "lines": 20,
+        "gate_instances": 20,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "synthesized_graph_nodes": 23
+      }
+    },
+    {
+      "host": "s1423",
+      "mechanism": "sequential",
+      "run_id": "s1423_sequential_s11",
+      "variant": "s1423scan_TI/s1423scan_T1.v",
+      "clean": {
+        "characters": 19101,
+        "lines": 485,
+        "gate_instances": 480,
+        "xor_instances": 1,
+        "flip_flops": 74,
+        "gate_types": {
+          "buf": 1,
+          "nor": 65,
+          "nand": 176,
+          "and": 31,
+          "or": 35,
+          "xnor": 29,
+          "xor": 1,
+          "not": 68,
+          "sdff": 74
+        }
+      },
+      "infected": {
+        "characters": 20612,
+        "lines": 506,
+        "gate_instances": 501,
+        "xor_instances": 6,
+        "flip_flops": 78,
+        "gate_types": {
+          "buf": 1,
+          "nor": 66,
+          "nand": 177,
+          "and": 37,
+          "or": 36,
+          "xnor": 29,
+          "xor": 6,
+          "not": 71,
+          "sdff": 78
+        }
+      },
+      "delta": {
+        "characters": 1511,
+        "lines": 21,
+        "gate_instances": 21,
+        "xor_instances": 5,
+        "flip_flops": 4,
+        "synthesized_graph_nodes": 23
+      }
+    }
+  ],
+  "limits": [
+    "This is gate-level Verilog, not original paired RTL",
+    "Paired rank is a diagnostic; deployment has no clean twin",
+    "No benign decoys or second generator",
+    "Four development hosts only; two sealed hosts ungenerated"
+  ]
+}

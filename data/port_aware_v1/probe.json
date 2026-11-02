@@ -1,0 +1,231 @@
+{
+  "status": "diagnostic_only",
+  "hosts": [
+    "AES",
+    "PIC16F84",
+    "RS232",
+    "memctrl"
+  ],
+  "cohorts": {
+    "clean_matched_versus_trojan": {
+      "statistics": {
+        "pairwise_by_host": {
+          "AES": {
+            "scores": {
+              "clean_matched": 0.5023560523986816,
+              "trojan": 0.5023560523986816
+            },
+            "pairwise_auc": 0.5
+          },
+          "PIC16F84": {
+            "scores": {
+              "clean_matched": 0.4497736096382141,
+              "trojan": 0.4497736096382141
+            },
+            "pairwise_auc": 0.5
+          },
+          "RS232": {
+            "scores": {
+              "clean_matched": 0.49996212124824524,
+              "trojan": 0.49996212124824524
+            },
+            "pairwise_auc": 0.5
+          },
+          "memctrl": {
+            "scores": {
+              "clean_matched": 0.03083227202296257,
+              "trojan": 0.03083227202296257
+            },
+            "pairwise_auc": 0.5
+          }
+        },
+        "equal_host_pairwise_auc": 0.5
+      },
+      "directed_wl2": {
+        "pairwise_by_host": {
+          "AES": {
+            "scores": {
+              "clean_matched": 0.4465310275554657,
+              "trojan": 0.4465310275554657
+            },
+            "pairwise_auc": 0.5
+          },
+          "PIC16F84": {
+            "scores": {
+              "clean_matched": 0.49791020154953003,
+              "trojan": 0.49791020154953003
+            },
+            "pairwise_auc": 0.5
+          },
+          "RS232": {
+            "scores": {
+              "clean_matched": 0.4996439814567566,
+              "trojan": 0.4996439814567566
+            },
+            "pairwise_auc": 0.5
+          },
+          "memctrl": {
+            "scores": {
+              "clean_matched": 0.4739418029785156,
+              "trojan": 0.4739418029785156
+            },
+            "pairwise_auc": 0.5
+          }
+        },
+        "equal_host_pairwise_auc": 0.5
+      },
+      "directed_wl8": {
+        "pairwise_by_host": {
+          "AES": {
+            "scores": {
+              "clean_matched": 0.8716877102851868,
+              "trojan": 0.8716877102851868
+            },
+            "pairwise_auc": 0.5
+          },
+          "PIC16F84": {
+            "scores": {
+              "clean_matched": 0.9924335479736328,
+              "trojan": 0.9839295148849487
+            },
+            "pairwise_auc": 0.0
+          },
+          "RS232": {
+            "scores": {
+              "clean_matched": 1.0,
+              "trojan": 1.0
+            },
+            "pairwise_auc": 0.5
+          },
+          "memctrl": {
+            "scores": {
+              "clean_matched": 0.11198503524065018,
+              "trojan": 0.1107359379529953
+            },
+            "pairwise_auc": 0.0
+          }
+        },
+        "equal_host_pairwise_auc": 0.25
+      }
+    },
+    "decoy_versus_trojan": {
+      "statistics": {
+        "pairwise_by_host": {
+          "AES": {
+            "scores": {
+              "decoy": 0.5023560523986816,
+              "trojan": 0.5023560523986816
+            },
+            "pairwise_auc": 0.5
+          },
+          "PIC16F84": {
+            "scores": {
+              "decoy": 0.4497736096382141,
+              "trojan": 0.4497736096382141
+            },
+            "pairwise_auc": 0.5
+          },
+          "RS232": {
+            "scores": {
+              "decoy": 0.49996212124824524,
+              "trojan": 0.49996212124824524
+            },
+            "pairwise_auc": 0.5
+          },
+          "memctrl": {
+            "scores": {
+              "decoy": 0.03083227202296257,
+              "trojan": 0.03083227202296257
+            },
+            "pairwise_auc": 0.5
+          }
+        },
+        "equal_host_pairwise_auc": 0.5
+      },
+      "directed_wl2": {
+        "pairwise_by_host": {
+          "AES": {
+            "scores": {
+              "decoy": 0.4465310275554657,
+              "trojan": 0.4465310275554657
+            },
+            "pairwise_auc": 0.5
+          },
+          "PIC16F84": {
+            "scores": {
+              "decoy": 0.49791020154953003,
+              "trojan": 0.49791020154953003
+            },
+            "pairwise_auc": 0.5
+          },
+          "RS232": {
+            "scores": {
+              "decoy": 0.4996439814567566,
+              "trojan": 0.4996439814567566
+            },
+            "pairwise_auc": 0.5
+          },
+          "memctrl": {
+            "scores": {
+              "decoy": 0.4739418029785156,
+              "trojan": 0.4739418029785156
+            },
+            "pairwise_auc": 0.5
+          }
+        },
+        "equal_host_pairwise_auc": 0.5
+      },
+      "directed_wl8": {
+        "pairwise_by_host": {
+          "AES": {
+            "scores": {
+              "decoy": 0.045711517333984375,
+              "trojan": 0.045711517333984375
+            },
+            "pairwise_auc": 0.5
+          },
+          "PIC16F84": {
+            "scores": {
+              "decoy": 0.9924315214157104,
+              "trojan": 0.9934729933738708
+            },
+            "pairwise_auc": 1.0
+          },
+          "RS232": {
+            "scores": {
+              "decoy": 0.9999977350234985,
+              "trojan": 0.9999977350234985
+            },
+            "pairwise_auc": 0.5
+          },
+          "memctrl": {
+            "scores": {
+              "decoy": 0.7129148244857788,
+              "trojan": 0.7247825264930725
+            },
+            "pairwise_auc": 1.0
+          }
+        },
+        "equal_host_pairwise_auc": 0.75
+      }
+    }
+  },
+  "wl8_first_differing_round": {
+    "AES": {
+      "clean_matched": null,
+      "decoy": null
+    },
+    "PIC16F84": {
+      "clean_matched": 6,
+      "decoy": 6
+    },
+    "RS232": {
+      "clean_matched": null,
+      "decoy": null
+    },
+    "memctrl": {
+      "clean_matched": 5,
+      "decoy": 5
+    }
+  }
+}

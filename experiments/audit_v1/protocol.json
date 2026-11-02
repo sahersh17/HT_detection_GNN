@@ -1,0 +1,65 @@
+{
+  "protocol_version": "audit_v1_2026-11-02",
+  "status": "prospective_for_future_generator_revisions_only",
+  "inspected_development_material": [
+    "Trust-Hub AES, RS232, memctrl, PIC16F84, MC8051, b19, B15, and ISCAS host families",
+    "matched insertion G1, G1b, and G1c on AES, RS232, memctrl, and PIC16F84",
+    "port-aware G1c diagnostic and all RTL lexical ablation folds"
+  ],
+  "research_question": "Can a model rank functionally divergent Trojan variants above clean and verified benign decoys on held-out hosts and insertion mechanisms after transparent shortcut controls?",
+  "evaluation_unit": "independent clean host design; variants and augmentations remain in the same group",
+  "splits": {
+    "development": "inspected hosts and generators may be used for design and debugging, always marked exploratory",
+    "held_out_host": "all variants of one independent clean host, with no source, derivative, or template leakage",
+    "held_out_generator": "all outputs of one independently implemented insertion generator; report overlap of trigger and payload templates",
+    "final_test": "requires new, previously uninspected hosts and generators; none currently exists"
+  },
+  "semantic_checks": [
+    "archive and source SHA256 verification",
+    "same clean host and declared synthesis recipe for matched variants",
+    "graph and label row-order hash verification",
+    "benign decoy output equivalence for the declared input and state domain",
+    "Trojan-on output divergence with an explicit witness or bounded sequential trace",
+    "trigger reachability and no undriven trigger or payload nets",
+    "ambiguous or merged gate labels set to -1"
+  ],
+  "transparent_controls": [
+    "RTL character and line counts",
+    "RTL tokenizer window count and length-plus-window count",
+    "graph node and edge counts",
+    "gate-type and degree histograms",
+    "directed WL histograms at fixed rounds 2 and 8",
+    "primary-input fanout motifs",
+    "real-output XOR and output-cone equivalence rules",
+    "source language, synthesis flow, and generator-ID probes"
+  ],
+  "primary_metrics": [
+    "equal-host mean paired win rate with half credit for ties",
+    "equal-host AUROC and average precision",
+    "fixed-threshold balanced accuracy using train-only calibration"
+  ],
+  "uncertainty": "host-level bootstrap is descriptive when fewer than 10 independent hosts are present; report each host and positive count",
+  "model_arms_after_audit_gate": [
+    "graph-only",
+    "RTL-only",
+    "one fixed cross-modal fusion model",
+    "late fusion"
+  ],
+  "exploratory_arms": [
+    "aligned top-k and mean readouts",
+    "shuffled alignment",
+    "mismatched RTL",
+    "augmentation and flow variants"
+  ],
+  "go_no_go": {
+    "generator": "Do not train a claimed method on a pilot if a transparent control perfectly solves its held-out hosts, if the graph view is label-blind by construction, or if semantic checks fail.",
+    "method": "A superiority claim requires held-out-host and held-out-generator gains over the strongest legitimate control and both unimodal models, with host-level uncertainty and all failures reported.",
+    "real_data": "Trust-Hub transfer is descriptive until independent ground truth and a prospective test are available.",
+    "localization": "Constructed labels support synthetic localization only; real gate labels require independent validation."
+  },
+  "claim_limits": [
+    "Current four-host G1c pilot fails the generator gate because output-cone equivalence ranks every Trojan correctly.",
+    "Current Trust-Hub folds and b19 are inspected development data, not a final test.",
+    "No hardware-design reviewers are available, so engineer-usefulness and expert-validated real localization claims are excluded."
+  ]
+}

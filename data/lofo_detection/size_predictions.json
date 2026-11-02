@@ -1,0 +1,722 @@
+[
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T100",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4477726221084595
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1000",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1000",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.44702696800231934
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1100",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1100",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.44645798206329346
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1200",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1200",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.44770127534866333
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1600",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1600",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4477089047431946
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1700",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T1700",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4488990902900696
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T200",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4476873576641083
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2300",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2300",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479247033596039
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2400",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2400",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479247033596039
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2500",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2500",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.44789379835128784
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2600",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2600",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.44792649149894714
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2700",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2700",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4478974938392639
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2800",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T2800",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.44790157675743103
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T400",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T400",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4480103552341461
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T700",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T700",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.44707563519477844
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T800",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T800",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.44650453329086304
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T900",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4479208290576935
+  },
+  {
+    "fold": 0,
+    "family": "AES",
+    "benchmark": "AES-T900",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4477502107620239
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T200",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49196532368659973
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.49196550250053406
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T300",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49196532368659973
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T300",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.49191057682037354
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T400",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49196532368659973
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T400",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4918750524520874
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T500",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49196532368659973
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T500",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.49216070771217346
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T600",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49196532368659973
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T600",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4920201897621155
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T700",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49196532368659973
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T700",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.49212270975112915
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T800",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.49196532368659973
+  },
+  {
+    "fold": 1,
+    "family": "MC8051",
+    "benchmark": "MC8051-T800",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4919692873954773
+  },
+  {
+    "fold": 2,
+    "family": "PIC16F84",
+    "benchmark": "PIC16F84-T100",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4956166446208954
+  },
+  {
+    "fold": 2,
+    "family": "PIC16F84",
+    "benchmark": "PIC16F84-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4954703748226166
+  },
+  {
+    "fold": 2,
+    "family": "PIC16F84",
+    "benchmark": "PIC16F84-T200",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4956166446208954
+  },
+  {
+    "fold": 2,
+    "family": "PIC16F84",
+    "benchmark": "PIC16F84-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.49554064869880676
+  },
+  {
+    "fold": 2,
+    "family": "PIC16F84",
+    "benchmark": "PIC16F84-T300",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4956166446208954
+  },
+  {
+    "fold": 2,
+    "family": "PIC16F84",
+    "benchmark": "PIC16F84-T300",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4951571524143219
+  },
+  {
+    "fold": 2,
+    "family": "PIC16F84",
+    "benchmark": "PIC16F84-T400",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4956166446208954
+  },
+  {
+    "fold": 2,
+    "family": "PIC16F84",
+    "benchmark": "PIC16F84-T400",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.4953644871711731
+  },
+  {
+    "fold": 3,
+    "family": "RS232",
+    "benchmark": "RS232-T2100",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.3291134238243103
+  },
+  {
+    "fold": 3,
+    "family": "RS232",
+    "benchmark": "RS232-T2100",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.33503642678260803
+  },
+  {
+    "fold": 3,
+    "family": "RS232",
+    "benchmark": "RS232-T2200",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.3291134238243103
+  },
+  {
+    "fold": 3,
+    "family": "RS232",
+    "benchmark": "RS232-T2200",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.33055195212364197
+  },
+  {
+    "fold": 3,
+    "family": "RS232",
+    "benchmark": "RS232-T2300",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.3291134238243103
+  },
+  {
+    "fold": 3,
+    "family": "RS232",
+    "benchmark": "RS232-T2300",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.3347310721874237
+  },
+  {
+    "fold": 3,
+    "family": "RS232",
+    "benchmark": "RS232-T2400",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.3291134238243103
+  },
+  {
+    "fold": 3,
+    "family": "RS232",
+    "benchmark": "RS232-T2400",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.3388054072856903
+  },
+  {
+    "fold": 4,
+    "family": "b15",
+    "benchmark": "b15-T100",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.50128173828125
+  },
+  {
+    "fold": 4,
+    "family": "b15",
+    "benchmark": "b15-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5017154812812805
+  },
+  {
+    "fold": 4,
+    "family": "b15",
+    "benchmark": "b15-T200",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.50128173828125
+  },
+  {
+    "fold": 4,
+    "family": "b15",
+    "benchmark": "b15-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5017154812812805
+  },
+  {
+    "fold": 4,
+    "family": "b15",
+    "benchmark": "b15-T300",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.50128173828125
+  },
+  {
+    "fold": 4,
+    "family": "b15",
+    "benchmark": "b15-T300",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5017160177230835
+  },
+  {
+    "fold": 4,
+    "family": "b15",
+    "benchmark": "b15-T400",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.50128173828125
+  },
+  {
+    "fold": 4,
+    "family": "b15",
+    "benchmark": "b15-T400",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5017160177230835
+  },
+  {
+    "fold": 5,
+    "family": "memctrl",
+    "benchmark": "memctrl-T100",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 0,
+    "prob_trojan": 0.4888419508934021
+  },
+  {
+    "fold": 5,
+    "family": "memctrl",
+    "benchmark": "memctrl-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 0,
+    "prob_trojan": 0.48873987793922424
+  },
+  {
+    "fold": 6,
+    "family": "s38584",
+    "benchmark": "s38584-T100",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5379989147186279
+  },
+  {
+    "fold": 6,
+    "family": "s38584",
+    "benchmark": "s38584-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5379533171653748
+  },
+  {
+    "fold": 6,
+    "family": "s38584",
+    "benchmark": "s38584-T200",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5379989147186279
+  },
+  {
+    "fold": 6,
+    "family": "s38584",
+    "benchmark": "s38584-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5381119847297668
+  },
+  {
+    "fold": 6,
+    "family": "s38584",
+    "benchmark": "s38584-T300",
+    "side": "clean",
+    "true_label": 0,
+    "predicted_label": 1,
+    "prob_trojan": 0.5379989147186279
+  },
+  {
+    "fold": 6,
+    "family": "s38584",
+    "benchmark": "s38584-T300",
+    "side": "trojan",
+    "true_label": 1,
+    "predicted_label": 1,
+    "prob_trojan": 0.5382546186447144
+  }
+]

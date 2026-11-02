@@ -1,0 +1,49 @@
+{
+  "archives": {
+    "status": "verified",
+    "archives": 44,
+    "statuses": {
+      "extracted_unreviewed": 14,
+      "excluded_nonbenchmark_or_incomplete_volume": 23,
+      "trojan_only_no_clean_pair": 3,
+      "duplicate_archive_existing_pic_pipeline": 4
+    },
+    "extracted_families": {
+      "b15": 4,
+      "BasicRSA": 3,
+      "MC8051": 7,
+      "s38584": 3
+    },
+    "reviewed_gate_labels": 0
+  },
+  "mapped_graphs": {
+    "status": "verified",
+    "graphs": 14,
+    "benchmarks": 7,
+    "nodes": 68363,
+    "source_covered_nodes": 68363,
+    "trojan_candidate_nodes": 0,
+    "reviewed_gate_labels": 0,
+    "graph_versions": [
+      "new_gate_v1"
+    ],
+    "source_levels": [
+      "gate_netlist_lines_not_RTL"
+    ]
+  },
+  "vhdl_graphs": {
+    "status": "verified",
+    "graphs": 14,
+    "benchmarks": 7,
+    "nodes": 229999,
+    "source_covered_nodes": 199269,
+    "trojan_candidate_nodes": 0,
+    "reviewed_gate_labels": 0,
+    "graph_versions": [
+      "new_vhdl_v1"
+    ],
+    "source_levels": [
+      "generated_verilog_lines_not_original_VHDL"
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "status": "inspected_development_hosts",
+  "graph_protocol": "data/lofo_expanded_b19/protocol.json",
+  "input_manifest_sha256": {
+    "graph": "30cda23d836d9de35beedf509be6d23f951d17e606f9caed62204eb3c5235b02",
+    "Verilog_early": "2e660f4c0318c7d4a4e0e9000ca4afe35333acabae9b60dcdfc61ae026366245",
+    "Verilog_expansion": "5c1b9556812bffe838f001418f49ca6fdfd0a38112415490e17dd0959e1bb12d",
+    "VHDL_MC8051": "df458f29529bd11ad6d0fa688ea96729005e99a56112010cbf37918d17db5d1f",
+    "VHDL_b19": "ee88421145149f24b0bbc10a3ee523f3178a750f9db7f5ff1054c874a1c52a74"
+  },
+  "paired_graph_host_families": 11,
+  "paired_graph_and_rtl_host_families": 6,
+  "independent_clean_rtl_sources": 7,
+  "limitations": [
+    "All listed Trust-Hub hosts have already been inspected",
+    "RTL modalities mix Verilog and VHDL and different window boundaries",
+    "Graph modalities mix synthesis and mapped-netlist domains",
+    "No reviewed real Trojan gate labels"
+  ],
+  "families": [
+    {
+      "family": "AES",
+      "paired_variants": 17,
+      "paired_graphs": 34,
+      "paired_with_rtl": 17,
+      "independent_clean_rtl_sources": 2,
+      "graph_versions": [
+        "provenance_v1"
+      ],
+      "rtl_versions": [
+        "Verilog_early"
+      ],
+      "rtl_complete_benchmarks": [
+        "AES-T100",
+        "AES-T1000",
+        "AES-T1100",
+        "AES-T1200",
+        "AES-T1600",
+        "AES-T1700",
+        "AES-T200",
+        "AES-T2300",
+        "AES-T2400",
+        "AES-T2500",
+        "AES-T2600",
+        "AES-T2700",
+        "AES-T2800",
+        "AES-T400",
+        "AES-T700",
+        "AES-T800",
+        "AES-T900"
+      ],
+      "not_rtl_complete": []
+    },
+    {
+      "family": "MC8051",
+      "paired_variants": 7,
+      "paired_graphs": 14,
+      "paired_with_rtl": 7,
+      "independent_clean_rtl_sources": 1,
+      "graph_versions": [
+        "new_vhdl_v1"
+      ],
+      "rtl_versions": [
+        "VHDL_MC8051"
+      ],
+      "rtl_complete_benchmarks": [
+        "MC8051-T200",
+        "MC8051-T300",
+        "MC8051-T400",
+        "MC8051-T500",
+        "MC8051-T600",
+        "MC8051-T700",
+        "MC8051-T800"
+      ],
+      "not_rtl_complete": []
+    },
+    {
+      "family": "PIC16F84",
+      "paired_variants": 4,
+      "paired_graphs": 8,
+      "paired_with_rtl": 4,
+      "independent_clean_rtl_sources": 1,
+      "graph_versions": [
+        "expansion_pic_graphs"
+      ],
+      "rtl_versions": [
+        "Verilog_expansion"
+      ],
+      "rtl_complete_benchmarks": [
+        "PIC16F84-T100",
+        "PIC16F84-T200",
+        "PIC16F84-T300",
+        "PIC16F84-T400"
+      ],
+      "not_rtl_complete": []
+    },
+    {
+      "family": "RS232",
+      "paired_variants": 4,
+      "paired_graphs": 8,
+      "paired_with_rtl": 4,
+      "independent_clean_rtl_sources": 1,
+      "graph_versions": [
+        "provenance_v1"
+      ],
+      "rtl_versions": [
+        "Verilog_early"
+      ],
+      "rtl_complete_benchmarks": [
+        "RS232-T2100",
+        "RS232-T2200",
+        "RS232-T2300",
+        "RS232-T2400"
+      ],
+      "not_rtl_complete": []
+    },
+    {
+      "family": "b15",
+      "paired_variants": 4,
+      "paired_graphs": 8,
+      "paired_with_rtl": 0,
+      "independent_clean_rtl_sources": 0,
+      "graph_versions": [
+        "new_gate_v1"
+      ],
+      "rtl_versions": [],
+      "rtl_complete_benchmarks": [],
+      "not_rtl_complete": [
+        "b15-T100",
+        "b15-T200",
+        "b15-T300",
+        "b15-T400"
+      ]
+    },
+    {
+      "family": "b19",
+      "paired_variants": 3,
+      "paired_graphs": 6,
+      "paired_with_rtl": 3,
+      "independent_clean_rtl_sources": 1,
+      "graph_versions": [
+        "new_vhdl_v1"
+      ],
+      "rtl_versions": [
+        "VHDL_b19"
+      ],
+      "rtl_complete_benchmarks": [
+        "b19-T300",
+        "b19-T400",
+        "b19-T500"
+      ],
+      "not_rtl_complete": []
+    },
+    {
+      "family": "memctrl",
+      "paired_variants": 1,
+      "paired_graphs": 2,
+      "paired_with_rtl": 1,
+      "independent_clean_rtl_sources": 1,
+      "graph_versions": [
+        "expansion_graphs"
+      ],
+      "rtl_versions": [
+        "Verilog_expansion"
+      ],
+      "rtl_complete_benchmarks": [
+        "memctrl-T100"
+      ],
+      "not_rtl_complete": []
+    },
+    {
+      "family": "s15850",
+      "paired_variants": 1,
+      "paired_graphs": 2,
+      "paired_with_rtl": 0,
+      "independent_clean_rtl_sources": 0,
+      "graph_versions": [
+        "new_gate_v1"
+      ],
+      "rtl_versions": [],
+      "rtl_complete_benchmarks": [],
+      "not_rtl_complete": [
+        "s15850-T100"
+      ]
+    },
+    {
+      "family": "s35932",
+      "paired_variants": 3,
+      "paired_graphs": 6,
+      "paired_with_rtl": 0,
+      "independent_clean_rtl_sources": 0,
+      "graph_versions": [
+        "new_gate_v1"
+      ],
+      "rtl_versions": [],
+      "rtl_complete_benchmarks": [],
+      "not_rtl_complete": [
+        "s35932-T100",
+        "s35932-T200",
+        "s35932-T300"
+      ]
+    },
+    {
+      "family": "s38417",
+      "paired_variants": 3,
+      "paired_graphs": 6,
+      "paired_with_rtl": 0,
+      "independent_clean_rtl_sources": 0,
+      "graph_versions": [
+        "new_gate_v1"
+      ],
+      "rtl_versions": [],
+      "rtl_complete_benchmarks": [],
+      "not_rtl_complete": [
+        "s38417-T100",
+        "s38417-T200",
+        "s38417-T300"
+      ]
+    },
+    {
+      "family": "s38584",
+      "paired_variants": 3,
+      "paired_graphs": 6,
+      "paired_with_rtl": 0,
+      "independent_clean_rtl_sources": 0,
+      "graph_versions": [
+        "new_gate_v1"
+      ],
+      "rtl_versions": [],
+      "rtl_complete_benchmarks": [],
+      "not_rtl_complete": [
+        "s38584-T100",
+        "s38584-T200",
+        "s38584-T300"
+      ]
+    }
+  ]
+}

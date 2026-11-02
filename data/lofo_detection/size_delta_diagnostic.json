@@ -1,0 +1,890 @@
+{
+  "protocol": "data/lofo_detection/protocol.json",
+  "seed": 42,
+  "pairs": [
+    {
+      "benchmark": "AES-T100",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15719,
+      "node_delta": 39,
+      "edge_delta": 42,
+      "cell_type_additions": {
+        "$_DFF_P_": 8,
+        "$_SDFF_PP1_": 5,
+        "$_SDFF_PP0_": 15,
+        "$_XOR_": 11
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.00011757481843233109,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T1000",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15954,
+      "node_delta": 274,
+      "edge_delta": 317,
+      "cell_type_additions": {
+        "$_DFF_P_": 8,
+        "$_DLATCH_N_": 1,
+        "$_DFFE_PP_": 20,
+        "$_NOT_": 65,
+        "$_XOR_": 11,
+        "$_AND_": 1,
+        "$_OR_": 128,
+        "$_MUX_": 40
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.007812085561454296,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T1100",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 16217,
+      "node_delta": 537,
+      "edge_delta": 665,
+      "cell_type_additions": {
+        "$_DFF_P_": 8,
+        "$_DLATCH_N_": 4,
+        "$_DFFE_PP_": 20,
+        "$_NOT_": 99,
+        "$_XOR_": 11,
+        "$_AND_": 16,
+        "$_OR_": 339,
+        "$_MUX_": 40
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.009208831004798412,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T1200",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 16512,
+      "node_delta": 832,
+      "edge_delta": 1369,
+      "cell_type_additions": {
+        "$_DFF_P_": 8,
+        "$_DFFE_PP_": 20,
+        "$_NOT_": 129,
+        "$_XOR_": 138,
+        "$_AND_": 240,
+        "$_OR_": 128,
+        "$_MUX_": 169
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.0015678703784942627,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T1600",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 16381,
+      "node_delta": 701,
+      "edge_delta": 1149,
+      "cell_type_additions": {
+        "$_DLATCH_N_": 4,
+        "$_SDFFE_PP1P_": 1,
+        "$_SDFFE_PP0P_": 1,
+        "$_SDFF_PP0_": 26,
+        "$_ALDFF_PP_": 128,
+        "$_NOT_": 104,
+        "$_XOR_": 25,
+        "$_AND_": 63,
+        "$_OR_": 346,
+        "$_MUX_": 3
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.044505235739052296,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T1700",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 16668,
+      "node_delta": 988,
+      "edge_delta": 1838,
+      "cell_type_additions": {
+        "$_SDFF_PP0_": 26,
+        "$_ALDFF_PP_": 128,
+        "$_NOT_": 134,
+        "$_XOR_": 152,
+        "$_AND_": 285,
+        "$_OR_": 133,
+        "$_MUX_": 130
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.0006909826770424843,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T200",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15739,
+      "node_delta": 59,
+      "edge_delta": 62,
+      "cell_type_additions": {
+        "$_DFF_P_": 28,
+        "$_XOR_": 11,
+        "$_MUX_": 20
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.00014432240277528763,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T2300",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15682,
+      "node_delta": 2,
+      "edge_delta": 4,
+      "cell_type_additions": {
+        "$_XOR_": 1,
+        "$_AND_": 1
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": -0.0008071400225162506,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "AES-T2400",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15682,
+      "node_delta": 2,
+      "edge_delta": 4,
+      "cell_type_additions": {
+        "$_XOR_": 1,
+        "$_AND_": 1
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.0009583411738276482,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T2500",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15695,
+      "node_delta": 15,
+      "edge_delta": 21,
+      "cell_type_additions": {
+        "$_DFF_P_": 4,
+        "$_XOR_": 4,
+        "$_AND_": 2,
+        "$_MUX_": 4,
+        "$_NOT_": 1
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 6.554648280143738e-05,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T2600",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15699,
+      "node_delta": 19,
+      "edge_delta": 33,
+      "cell_type_additions": {
+        "$_DFF_P_": 4,
+        "$_XOR_": 4,
+        "$_AND_": 2,
+        "$_MUX_": 8,
+        "$_NOT_": 1
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": -0.0009727068245410919,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "AES-T2700",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15713,
+      "node_delta": 33,
+      "edge_delta": 52,
+      "cell_type_additions": {
+        "$_DFF_P_": 8,
+        "$_NOT_": 2,
+        "$_XOR_": 7,
+        "$_AND_": 4,
+        "$_MUX_": 12
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.00011900253593921661,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T2800",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15715,
+      "node_delta": 35,
+      "edge_delta": 56,
+      "cell_type_additions": {
+        "$_DFF_P_": 8,
+        "$_NOT_": 2,
+        "$_XOR_": 7,
+        "$_AND_": 6,
+        "$_MUX_": 12
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.0003923596814274788,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T400",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 16182,
+      "node_delta": 502,
+      "edge_delta": 863,
+      "cell_type_additions": {
+        "$_SDFFE_PP1P_": 1,
+        "$_SDFF_PP0_": 27,
+        "$_ALDFF_PP_": 128,
+        "$_NOT_": 136,
+        "$_XOR_": 25,
+        "$_OR_": 135,
+        "$_AND_": 47,
+        "$_MUX_": 3
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.009536380879580975,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T700",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 15913,
+      "node_delta": 233,
+      "edge_delta": 256,
+      "cell_type_additions": {
+        "$_DLATCH_N_": 1,
+        "$_SDFFE_PP1P_": 10,
+        "$_SDFFE_PP0P_": 10,
+        "$_SDFF_PP0_": 8,
+        "$_NOT_": 65,
+        "$_XOR_": 11,
+        "$_AND_": 1,
+        "$_OR_": 127
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 8.303672075271606e-06,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T800",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 16176,
+      "node_delta": 496,
+      "edge_delta": 604,
+      "cell_type_additions": {
+        "$_DLATCH_N_": 4,
+        "$_SDFFE_PP1P_": 5,
+        "$_SDFFE_PP0P_": 15,
+        "$_SDFF_PP0_": 8,
+        "$_NOT_": 99,
+        "$_XOR_": 11,
+        "$_AND_": 16,
+        "$_OR_": 338
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.00480057206004858,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "AES-T900",
+      "family": "AES",
+      "clean_nodes": 15680,
+      "trojan_nodes": 16471,
+      "node_delta": 791,
+      "edge_delta": 1308,
+      "cell_type_additions": {
+        "$_SDFFE_PP1P_": 5,
+        "$_SDFFE_PP0P_": 15,
+        "$_SDFF_PP0_": 8,
+        "$_NOT_": 129,
+        "$_XOR_": 138,
+        "$_AND_": 240,
+        "$_OR_": 127,
+        "$_MUX_": 129
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.001460750587284565,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "MC8051-T200",
+      "family": "MC8051",
+      "clean_nodes": 16428,
+      "trojan_nodes": 16432,
+      "node_delta": 4,
+      "edge_delta": 8,
+      "cell_type_additions": {
+        "$_OR_": 2,
+        "$_AND_": 2
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": -0.005076050758361816,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "MC8051-T300",
+      "family": "MC8051",
+      "clean_nodes": 16428,
+      "trojan_nodes": 16494,
+      "node_delta": 66,
+      "edge_delta": 118,
+      "cell_type_additions": {
+        "$_NOT_": 14,
+        "$_OR_": 39,
+        "$_MUX_": 15
+      },
+      "cell_type_removals": {
+        "$_AND_": 2
+      },
+      "gnn_score_delta": -0.005083680152893066,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "MC8051-T400",
+      "family": "MC8051",
+      "clean_nodes": 16428,
+      "trojan_nodes": 16211,
+      "node_delta": -217,
+      "edge_delta": -453,
+      "cell_type_additions": {},
+      "cell_type_removals": {
+        "$_DFFE_PP0P_": 5,
+        "$_DFF_PP0_": 1,
+        "$_NOT_": 9,
+        "$_OR_": 15,
+        "$_AND_": 8,
+        "$_MUX_": 179
+      },
+      "gnn_score_delta": 0.01662534475326538,
+      "larger_is_trojan": 0,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "MC8051-T500",
+      "family": "MC8051",
+      "clean_nodes": 16428,
+      "trojan_nodes": 16452,
+      "node_delta": 24,
+      "edge_delta": 95,
+      "cell_type_additions": {
+        "$_NOT_": 5,
+        "$_OR_": 2,
+        "$_AND_": 1,
+        "$_MUX_": 16
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": -0.0016115307807922363,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "MC8051-T600",
+      "family": "MC8051",
+      "clean_nodes": 16428,
+      "trojan_nodes": 16451,
+      "node_delta": 23,
+      "edge_delta": 59,
+      "cell_type_additions": {
+        "$_NOT_": 1,
+        "$_AND_": 5,
+        "$_MUX_": 17
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": -0.012104272842407227,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "MC8051-T700",
+      "family": "MC8051",
+      "clean_nodes": 16428,
+      "trojan_nodes": 16539,
+      "node_delta": 111,
+      "edge_delta": 259,
+      "cell_type_additions": {
+        "$_NOT_": 24,
+        "$_OR_": 60,
+        "$_AND_": 3,
+        "$_MUX_": 24
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": -0.002921462059020996,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "MC8051-T800",
+      "family": "MC8051",
+      "clean_nodes": 16428,
+      "trojan_nodes": 16424,
+      "node_delta": -4,
+      "edge_delta": -7,
+      "cell_type_additions": {
+        "$_XOR_": 6,
+        "$_OR_": 5,
+        "$_MUX_": 10
+      },
+      "cell_type_removals": {
+        "$_AND_": 25
+      },
+      "gnn_score_delta": -0.00496673583984375,
+      "larger_is_trojan": 0,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "PIC16F84-T100",
+      "family": "PIC16F84",
+      "clean_nodes": 2223,
+      "trojan_nodes": 2372,
+      "node_delta": 149,
+      "edge_delta": 295,
+      "cell_type_additions": {
+        "$_DLATCH_NP0_": 13,
+        "$_NOT_": 17,
+        "$_AND_": 57,
+        "$_OR_": 27,
+        "$_XOR_": 23,
+        "$_MUX_": 12
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.002950131893157959,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "PIC16F84-T200",
+      "family": "PIC16F84",
+      "clean_nodes": 2223,
+      "trojan_nodes": 2339,
+      "node_delta": 116,
+      "edge_delta": 231,
+      "cell_type_additions": {
+        "$_SDFFCE_PP1P_": 4,
+        "$_SDFFCE_PP0P_": 10,
+        "$_DLATCH_NP0_": 13,
+        "$_NOT_": 17,
+        "$_AND_": 47,
+        "$_OR_": 27,
+        "$_XOR_": 12
+      },
+      "cell_type_removals": {
+        "$_DFFE_PP_": 14
+      },
+      "gnn_score_delta": -0.019204914569854736,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "PIC16F84-T300",
+      "family": "PIC16F84",
+      "clean_nodes": 2223,
+      "trojan_nodes": 2346,
+      "node_delta": 123,
+      "edge_delta": 232,
+      "cell_type_additions": {
+        "$_DLATCH_NP0_": 13,
+        "$_NOT_": 16,
+        "$_AND_": 47,
+        "$_OR_": 27,
+        "$_XOR_": 12,
+        "$_MUX_": 8
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": -0.01008528470993042,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "PIC16F84-T400",
+      "family": "PIC16F84",
+      "clean_nodes": 2223,
+      "trojan_nodes": 2339,
+      "node_delta": 116,
+      "edge_delta": 225,
+      "cell_type_additions": {
+        "$_SDFFCE_PP0P_": 8,
+        "$_DLATCH_NP0_": 13,
+        "$_NOT_": 17,
+        "$_AND_": 47,
+        "$_OR_": 27,
+        "$_XOR_": 12
+      },
+      "cell_type_removals": {
+        "$_DFFE_PP_": 8
+      },
+      "gnn_score_delta": -0.00958782434463501,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "RS232-T2100",
+      "family": "RS232",
+      "clean_nodes": 190,
+      "trojan_nodes": 212,
+      "node_delta": 22,
+      "edge_delta": 42,
+      "cell_type_additions": {
+        "$_DLATCH_P_": 1,
+        "$_NOT_": 1,
+        "$_AND_": 9,
+        "$_MUX_": 12
+      },
+      "cell_type_removals": {
+        "$_OR_": 1
+      },
+      "gnn_score_delta": -0.020417332649230957,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "RS232-T2200",
+      "family": "RS232",
+      "clean_nodes": 190,
+      "trojan_nodes": 198,
+      "node_delta": 8,
+      "edge_delta": 14,
+      "cell_type_additions": {
+        "$_DLATCH_P_": 1,
+        "$_NOT_": 1,
+        "$_AND_": 2,
+        "$_MUX_": 10
+      },
+      "cell_type_removals": {
+        "$_OR_": 6
+      },
+      "gnn_score_delta": -0.012822896242141724,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "RS232-T2300",
+      "family": "RS232",
+      "clean_nodes": 190,
+      "trojan_nodes": 211,
+      "node_delta": 21,
+      "edge_delta": 40,
+      "cell_type_additions": {
+        "$_DLATCH_P_": 1,
+        "$_NOT_": 1,
+        "$_AND_": 9,
+        "$_MUX_": 11
+      },
+      "cell_type_removals": {
+        "$_OR_": 1
+      },
+      "gnn_score_delta": -0.021054387092590332,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "RS232-T2400",
+      "family": "RS232",
+      "clean_nodes": 190,
+      "trojan_nodes": 229,
+      "node_delta": 39,
+      "edge_delta": 74,
+      "cell_type_additions": {
+        "$_DLATCH_P_": 3,
+        "$_NOT_": 1,
+        "$_AND_": 28,
+        "$_MUX_": 13
+      },
+      "cell_type_removals": {
+        "$_OR_": 6
+      },
+      "gnn_score_delta": -0.012520641088485718,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 0
+    },
+    {
+      "benchmark": "b15-T100",
+      "family": "b15",
+      "clean_nodes": 3873,
+      "trojan_nodes": 3302,
+      "node_delta": -571,
+      "edge_delta": 288,
+      "cell_type_additions": {
+        "AND2X1": 1,
+        "AND4X1": 2,
+        "MUX21X1": 1,
+        "DFFARX1": 1
+      },
+      "cell_type_removals": {
+        "INVX0": 133,
+        "NBUFFX2": 443
+      },
+      "gnn_score_delta": 0.07519158720970154,
+      "larger_is_trojan": 0,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "b15-T200",
+      "family": "b15",
+      "clean_nodes": 3873,
+      "trojan_nodes": 3302,
+      "node_delta": -571,
+      "edge_delta": 288,
+      "cell_type_additions": {
+        "AND2X1": 1,
+        "AND4X1": 2,
+        "MUX21X1": 1,
+        "DFFARX1": 1
+      },
+      "cell_type_removals": {
+        "INVX0": 133,
+        "NBUFFX2": 443
+      },
+      "gnn_score_delta": 0.07519158720970154,
+      "larger_is_trojan": 0,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "b15-T300",
+      "family": "b15",
+      "clean_nodes": 3873,
+      "trojan_nodes": 3303,
+      "node_delta": -570,
+      "edge_delta": 290,
+      "cell_type_additions": {
+        "AND2X1": 1,
+        "OR2X1": 1,
+        "AND4X1": 2,
+        "XOR2X1": 1,
+        "LARX1": 1
+      },
+      "cell_type_removals": {
+        "INVX0": 133,
+        "NBUFFX2": 443
+      },
+      "gnn_score_delta": 0.07541033625602722,
+      "larger_is_trojan": 0,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "b15-T400",
+      "family": "b15",
+      "clean_nodes": 3873,
+      "trojan_nodes": 3303,
+      "node_delta": -570,
+      "edge_delta": 290,
+      "cell_type_additions": {
+        "AND2X1": 1,
+        "OR2X1": 1,
+        "AND4X1": 2,
+        "XOR2X1": 1,
+        "LARX1": 1
+      },
+      "cell_type_removals": {
+        "INVX0": 133,
+        "NBUFFX2": 443
+      },
+      "gnn_score_delta": 0.07541033625602722,
+      "larger_is_trojan": 0,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "memctrl-T100",
+      "family": "memctrl",
+      "clean_nodes": 9162,
+      "trojan_nodes": 9198,
+      "node_delta": 36,
+      "edge_delta": 57,
+      "cell_type_additions": {
+        "$_DFFE_PP0P_": 8,
+        "$_NOT_": 7,
+        "$_OR_": 21
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 5.6803226470947266e-05,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "s38584-T100",
+      "family": "s38584",
+      "clean_nodes": 6473,
+      "trojan_nodes": 6482,
+      "node_delta": 9,
+      "edge_delta": 18,
+      "cell_type_additions": {
+        "INVX0": 1,
+        "AND2X1": 5,
+        "NOR4X0": 1,
+        "OR2X1": 1,
+        "AND3X1": 1
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.006508737802505493,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "s38584-T200",
+      "family": "s38584",
+      "clean_nodes": 6473,
+      "trojan_nodes": 6556,
+      "node_delta": 83,
+      "edge_delta": 223,
+      "cell_type_additions": {
+        "NAND4X0": 6,
+        "INVX0": 2,
+        "NOR4X0": 5,
+        "NAND3X0": 1,
+        "AND3X1": 1,
+        "MUX21X1": 2,
+        "OA21X1": 1,
+        "NAND2X0": 1,
+        "NOR2X0": 1,
+        "DFFARX1": 32,
+        "HADDX1": 30,
+        "XOR2X1": 1
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.04555293917655945,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    },
+    {
+      "benchmark": "s38584-T300",
+      "family": "s38584",
+      "clean_nodes": 6473,
+      "trojan_nodes": 7204,
+      "node_delta": 731,
+      "edge_delta": 1887,
+      "cell_type_additions": {
+        "DFFARX1": 288,
+        "NAND3X0": 36,
+        "NAND2X0": 9,
+        "NOR4X0": 37,
+        "NAND4X0": 29,
+        "OAI21X1": 1,
+        "OA21X1": 3,
+        "AND3X1": 1,
+        "ISOLANDX1": 32,
+        "AND4X1": 1,
+        "NOR2X0": 1,
+        "AND2X1": 1,
+        "INVX0": 10,
+        "OR4X1": 2,
+        "HADDX1": 270,
+        "XOR2X1": 9,
+        "MUX21X1": 1
+      },
+      "cell_type_removals": {},
+      "gnn_score_delta": 0.2498554289340973,
+      "larger_is_trojan": 1,
+      "gnn_ranks_trojan_higher": 1
+    }
+  ],
+  "summary": {
+    "n_pairs": 40,
+    "n_families": 7,
+    "larger_correct": 34,
+    "gnn_correct": 25,
+    "rule_agreement": 21,
+    "equal_family_gnn_pair_mean": 0.6107442977190877,
+    "family_bootstrap_95_percentile": [
+      0.2944177671068427,
+      0.8775510204081634
+    ],
+    "bootstrap_note": "Only seven heterogeneous host families; interval is descriptive, not proof of generalization."
+  },
+  "by_family": {
+    "AES": {
+      "pairs": 17,
+      "larger_correct": 17,
+      "gnn_correct": 15,
+      "signs": [
+        1
+      ]
+    },
+    "MC8051": {
+      "pairs": 7,
+      "larger_correct": 5,
+      "gnn_correct": 1,
+      "signs": [
+        -1,
+        1
+      ]
+    },
+    "PIC16F84": {
+      "pairs": 4,
+      "larger_correct": 4,
+      "gnn_correct": 1,
+      "signs": [
+        1
+      ]
+    },
+    "RS232": {
+      "pairs": 4,
+      "larger_correct": 4,
+      "gnn_correct": 0,
+      "signs": [
+        1
+      ]
+    },
+    "b15": {
+      "pairs": 4,
+      "larger_correct": 0,
+      "gnn_correct": 4,
+      "signs": [
+        -1
+      ]
+    },
+    "memctrl": {
+      "pairs": 1,
+      "larger_correct": 1,
+      "gnn_correct": 1,
+      "signs": [
+        1
+      ]
+    },
+    "s38584": {
+      "pairs": 3,
+      "larger_correct": 3,
+      "gnn_correct": 3,
+      "signs": [
+        1
+      ]
+    }
+  }
+}

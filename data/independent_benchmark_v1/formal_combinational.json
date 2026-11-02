@@ -1,0 +1,124 @@
+{
+  "records": [
+    {
+      "run_id": "c2670_combinational_s11",
+      "host": "c2670",
+      "variant": "c2670_combinational_s11/c2670_TI/c2670_T0.v",
+      "gold_sha256": "31f06a4c27f368c47fec1376f439a48a6eb12c52a6cbcfa2b55fb180ebad58b8",
+      "infected_sha256": "265daa5e3406be79cf45ca8ad94da89541c6c0382c534d5150257e54de71f37b",
+      "yosys_exit_code": 0,
+      "log_sha256": "e0752bacb29d4f8df7d7ccf3b1cd4db612a845dc4af0da617f657e331a7393a3",
+      "witness": {
+        "inputs": 233,
+        "output_ports": 140,
+        "different_outputs": [
+          "N3038",
+          "N3079"
+        ],
+        "input_assignment_sha256": "5ad558539810cf16305ea9eefd11f36abe78484a8e640403338e66ccf7e656b3"
+      },
+      "witness_sha256": "8f1fa0e984927f8f4f65bba7ede48da32d58cd928ceecc49982246300bd67f86",
+      "status": "independent_combinational_output_difference_witness"
+    },
+    {
+      "run_id": "c2670_combinational_s11",
+      "host": "c2670",
+      "variant": "c2670_combinational_s11/c2670_TI/c2670_T1.v",
+      "gold_sha256": "31f06a4c27f368c47fec1376f439a48a6eb12c52a6cbcfa2b55fb180ebad58b8",
+      "infected_sha256": "605387cb47d2aa8e6c38bf5bfc927e6a2f3cb95606db899d9623e79e6c60131b",
+      "yosys_exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "witness": {
+        "inputs": 233,
+        "output_ports": 140,
+        "different_outputs": [
+          "N3038",
+          "N3079"
+        ],
+        "input_assignment_sha256": "326319cc3e34897282190d15117810397014e468821635be3d99b43a3a9e00fd"
+      },
+      "witness_sha256": "d9b87637d35595a2a986d79ff5447f5c54200fd8484b7fa5d610fe15975bb270",
+      "status": "independent_combinational_output_difference_witness"
+    },
+    {
+      "run_id": "c3540_combinational_s11",
+      "host": "c3540",
+      "variant": "c3540_combinational_s11/c3540_TI/c3540_T0.v",
+      "gold_sha256": "1c58203c5cf7ffdeb03a8984aae1c601a3b3c95c824d2168397439f6ee291983",
+      "infected_sha256": "5e226d713789191fac1da3d175323979e22a21ddc00a3469bceba926848b8912",
+      "yosys_exit_code": 0,
+      "log_sha256": "e0752bacb29d4f8df7d7ccf3b1cd4db612a845dc4af0da617f657e331a7393a3",
+      "witness": {
+        "inputs": 50,
+        "output_ports": 22,
+        "different_outputs": [
+          "N5120",
+          "N5361"
+        ],
+        "input_assignment_sha256": "6e2475ba3afdb5a246d732026335a1adf5a1de46ff129415aa7ecafb1193787d"
+      },
+      "witness_sha256": "4edcae5cae8fe25f6bbcc402c42239a4cb796ea362075534dfa341f2a7f71ece",
+      "status": "independent_combinational_output_difference_witness"
+    },
+    {
+      "run_id": "c3540_combinational_s11",
+      "host": "c3540",
+      "variant": "c3540_combinational_s11/c3540_TI/c3540_T1.v",
+      "gold_sha256": "1c58203c5cf7ffdeb03a8984aae1c601a3b3c95c824d2168397439f6ee291983",
+      "infected_sha256": "fa9b9144bad6a3802da7371618c1ca4fb8977632b9bca6b2ba1b98cce0868e5c",
+      "yosys_exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "witness": {
+        "inputs": 50,
+        "output_ports": 22,
+        "different_outputs": [
+          "N4145"
+        ],
+        "input_assignment_sha256": "3ae45d03f41e5afaa85b134131769c77a7bfe3d968df645e1d888da6129788e2"
+      },
+      "witness_sha256": "72a4c2fe2448b7cb18b494443b32977e35c320767ccb3ca66d670bf9bbbb6bbe",
+      "status": "independent_combinational_output_difference_witness"
+    },
+    {
+      "run_id": "c5315_combinational_s11",
+      "host": "c5315",
+      "variant": "c5315_combinational_s11/c5315_TI/c5315_T0.v",
+      "gold_sha256": "6857700b86705fa62a990528da1910cd53942c442a2a6802cd05c5790590ecd3",
+      "infected_sha256": "0637950aa76e3979d580224c46dd16446a6fa93f57cded00b0a73410e2e30285",
+      "yosys_exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "witness": {
+        "inputs": 178,
+        "output_ports": 123,
+        "different_outputs": [
+          "N8076"
+        ],
+        "input_assignment_sha256": "66cdbae01d4fdfe54da6476a762dba8936d208bfed4fd860d7e540d9fd11b67f"
+      },
+      "witness_sha256": "f29362bab6db3e2c759490061c7e6fafcce3550c8a04885fb008234222eaf724",
+      "status": "independent_combinational_output_difference_witness"
+    },
+    {
+      "run_id": "c5315_combinational_s11",
+      "host": "c5315",
+      "variant": "c5315_combinational_s11/c5315_TI/c5315_T1.v",
+      "gold_sha256": "6857700b86705fa62a990528da1910cd53942c442a2a6802cd05c5790590ecd3",
+      "infected_sha256": "b689c72fa6a9f34996c211600291705ad644250cd69e0e37eeca5a564450cb4b",
+      "yosys_exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "witness": {
+        "inputs": 178,
+        "output_ports": 123,
+        "different_outputs": [
+          "N6925",
+          "N7432",
+          "N7698"
+        ],
+        "input_assignment_sha256": "ff3bd0e1fa74e8cbc9f8b05ac46af440f93274315df590a03392190cc3286047"
+      },
+      "witness_sha256": "f1e980805fc334a4859a47fa31b41a863ee9a321337f69880f084cf26276e04b",
+      "status": "independent_combinational_output_difference_witness"
+    }
+  ],
+  "status": "combinational_witnesses_only_not_full_benchmark_gate"
+}

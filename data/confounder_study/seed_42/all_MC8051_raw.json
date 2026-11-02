@@ -1,0 +1,218 @@
+{
+  "seed": 42,
+  "cohort": "all",
+  "family": "MC8051",
+  "arm": "raw",
+  "scaler": {
+    "mean": [
+      1.0873913764953613,
+      0.9624384045600891,
+      2.1415321826934814,
+      2.4350128173828125
+    ],
+    "std": [
+      0.3209252655506134,
+      0.48454323410987854,
+      0.6806821227073669,
+      0.7329179048538208
+    ],
+    "fitted_paths": [
+      "runs/provenance_v1/AES-T100/clean/graph.pt",
+      "runs/provenance_v1/AES-T100/trojan/graph.pt",
+      "runs/provenance_v1/AES-T1000/clean/graph.pt",
+      "runs/provenance_v1/AES-T1000/trojan/graph.pt",
+      "runs/provenance_v1/AES-T1100/clean/graph.pt",
+      "runs/provenance_v1/AES-T1100/trojan/graph.pt",
+      "runs/provenance_v1/AES-T1200/clean/graph.pt",
+      "runs/provenance_v1/AES-T1200/trojan/graph.pt",
+      "runs/provenance_v1/AES-T1600/clean/graph.pt",
+      "runs/provenance_v1/AES-T1600/trojan/graph.pt",
+      "runs/provenance_v1/AES-T1700/clean/graph.pt",
+      "runs/provenance_v1/AES-T1700/trojan/graph.pt",
+      "runs/provenance_v1/AES-T200/clean/graph.pt",
+      "runs/provenance_v1/AES-T200/trojan/graph.pt",
+      "runs/provenance_v1/AES-T2300/clean/graph.pt",
+      "runs/provenance_v1/AES-T2300/trojan/graph.pt",
+      "runs/provenance_v1/AES-T2400/clean/graph.pt",
+      "runs/provenance_v1/AES-T2400/trojan/graph.pt",
+      "runs/provenance_v1/AES-T2500/clean/graph.pt",
+      "runs/provenance_v1/AES-T2500/trojan/graph.pt",
+      "runs/provenance_v1/AES-T2600/clean/graph.pt",
+      "runs/provenance_v1/AES-T2600/trojan/graph.pt",
+      "runs/provenance_v1/AES-T2700/clean/graph.pt",
+      "runs/provenance_v1/AES-T2700/trojan/graph.pt",
+      "runs/provenance_v1/AES-T2800/clean/graph.pt",
+      "runs/provenance_v1/AES-T2800/trojan/graph.pt",
+      "runs/provenance_v1/AES-T400/clean/graph.pt",
+      "runs/provenance_v1/AES-T400/trojan/graph.pt",
+      "runs/provenance_v1/AES-T700/clean/graph.pt",
+      "runs/provenance_v1/AES-T700/trojan/graph.pt",
+      "runs/provenance_v1/AES-T800/clean/graph.pt",
+      "runs/provenance_v1/AES-T800/trojan/graph.pt",
+      "runs/provenance_v1/AES-T900/clean/graph.pt",
+      "runs/provenance_v1/AES-T900/trojan/graph.pt",
+      "runs/provenance_v1/RS232-T2100/clean/graph.pt",
+      "runs/provenance_v1/RS232-T2100/trojan/graph.pt",
+      "runs/provenance_v1/RS232-T2200/clean/graph.pt",
+      "runs/provenance_v1/RS232-T2200/trojan/graph.pt",
+      "runs/provenance_v1/RS232-T2300/clean/graph.pt",
+      "runs/provenance_v1/RS232-T2300/trojan/graph.pt",
+      "runs/provenance_v1/RS232-T2400/clean/graph.pt",
+      "runs/provenance_v1/RS232-T2400/trojan/graph.pt",
+      "runs/expansion_graphs/memctrl-T100/clean/graph.pt",
+      "runs/expansion_graphs/memctrl-T100/trojan/graph.pt",
+      "runs/expansion_pic_graphs/PIC16F84-T100/clean/graph.pt",
+      "runs/expansion_pic_graphs/PIC16F84-T100/trojan/graph.pt",
+      "runs/expansion_pic_graphs/PIC16F84-T200/clean/graph.pt",
+      "runs/expansion_pic_graphs/PIC16F84-T200/trojan/graph.pt",
+      "runs/expansion_pic_graphs/PIC16F84-T300/clean/graph.pt",
+      "runs/expansion_pic_graphs/PIC16F84-T300/trojan/graph.pt",
+      "runs/expansion_pic_graphs/PIC16F84-T400/clean/graph.pt",
+      "runs/expansion_pic_graphs/PIC16F84-T400/trojan/graph.pt",
+      "runs/new_gate_v1/b15-T100/clean/graph.pt",
+      "runs/new_gate_v1/b15-T100/trojan/graph.pt",
+      "runs/new_gate_v1/b15-T200/clean/graph.pt",
+      "runs/new_gate_v1/b15-T200/trojan/graph.pt",
+      "runs/new_gate_v1/b15-T300/clean/graph.pt",
+      "runs/new_gate_v1/b15-T300/trojan/graph.pt",
+      "runs/new_gate_v1/b15-T400/clean/graph.pt",
+      "runs/new_gate_v1/b15-T400/trojan/graph.pt",
+      "runs/new_gate_v1/s38584-T100/clean/graph.pt",
+      "runs/new_gate_v1/s38584-T100/trojan/graph.pt",
+      "runs/new_gate_v1/s38584-T200/clean/graph.pt",
+      "runs/new_gate_v1/s38584-T200/trojan/graph.pt",
+      "runs/new_gate_v1/s38584-T300/clean/graph.pt",
+      "runs/new_gate_v1/s38584-T300/trojan/graph.pt"
+    ]
+  },
+  "predictions": [
+    {
+      "benchmark": "MC8051-T200",
+      "side": "clean",
+      "label": 0,
+      "source_id": "ab21028815608852759e599bc6f5bf74e0f243d10034ebf135459e51a30f16f3",
+      "probability": 0.934683620929718
+    },
+    {
+      "benchmark": "MC8051-T200",
+      "side": "trojan",
+      "label": 1,
+      "source_id": "dbb0caf153d5641334ee1b2f960d26eac767fcdee0e0f9e647722820d6dfa655",
+      "probability": 0.929622232913971
+    },
+    {
+      "benchmark": "MC8051-T300",
+      "side": "clean",
+      "label": 0,
+      "source_id": "ab21028815608852759e599bc6f5bf74e0f243d10034ebf135459e51a30f16f3",
+      "probability": 0.934683620929718
+    },
+    {
+      "benchmark": "MC8051-T300",
+      "side": "trojan",
+      "label": 1,
+      "source_id": "af44fd7845a5ae52a55e17d3598d6de5fe555933e689c3d46faed2114ff53550",
+      "probability": 0.9296132922172546
+    },
+    {
+      "benchmark": "MC8051-T400",
+      "side": "clean",
+      "label": 0,
+      "source_id": "ab21028815608852759e599bc6f5bf74e0f243d10034ebf135459e51a30f16f3",
+      "probability": 0.934683620929718
+    },
+    {
+      "benchmark": "MC8051-T400",
+      "side": "trojan",
+      "label": 1,
+      "source_id": "41f5220c06bb5342e5780afbc9b0f964dd466c3623babc642410b729364924b9",
+      "probability": 0.9511792659759521
+    },
+    {
+      "benchmark": "MC8051-T500",
+      "side": "clean",
+      "label": 0,
+      "source_id": "ab21028815608852759e599bc6f5bf74e0f243d10034ebf135459e51a30f16f3",
+      "probability": 0.934683620929718
+    },
+    {
+      "benchmark": "MC8051-T500",
+      "side": "trojan",
+      "label": 1,
+      "source_id": "3b1175db74348d3305c96bb5a0c3b61385eddae7e0bb7d633f48287e9a864ace",
+      "probability": 0.9330866932868958
+    },
+    {
+      "benchmark": "MC8051-T600",
+      "side": "clean",
+      "label": 0,
+      "source_id": "ab21028815608852759e599bc6f5bf74e0f243d10034ebf135459e51a30f16f3",
+      "probability": 0.934683620929718
+    },
+    {
+      "benchmark": "MC8051-T600",
+      "side": "trojan",
+      "label": 1,
+      "source_id": "3e1ef1937a20355779dbac093d2172e686b7b0519b4ba81cd34ed9837f9ef83f",
+      "probability": 0.9226008653640747
+    },
+    {
+      "benchmark": "MC8051-T700",
+      "side": "clean",
+      "label": 0,
+      "source_id": "ab21028815608852759e599bc6f5bf74e0f243d10034ebf135459e51a30f16f3",
+      "probability": 0.934683620929718
+    },
+    {
+      "benchmark": "MC8051-T700",
+      "side": "trojan",
+      "label": 1,
+      "source_id": "c8022a89330f56cdd267525e9e97fb0ad462f4db31d008008223592bd268e490",
+      "probability": 0.9317818284034729
+    },
+    {
+      "benchmark": "MC8051-T800",
+      "side": "clean",
+      "label": 0,
+      "source_id": "ab21028815608852759e599bc6f5bf74e0f243d10034ebf135459e51a30f16f3",
+      "probability": 0.934683620929718
+    },
+    {
+      "benchmark": "MC8051-T800",
+      "side": "trojan",
+      "label": 1,
+      "source_id": "c5320667a1b9228afd76a106021df83f75af9f87759b63a253ed63df43458cd1",
+      "probability": 0.9296567440032959
+    }
+  ],
+  "metrics": {
+    "all_records": {
+      "n": 14,
+      "tn": 0,
+      "fp": 7,
+      "fn": 0,
+      "tp": 7,
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "fpr": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "auroc": 0.14285714285714285
+    },
+    "unique_sources": {
+      "n": 8,
+      "tn": 0,
+      "fp": 1,
+      "fn": 0,
+      "tp": 7,
+      "accuracy": 0.875,
+      "balanced_accuracy": 0.5,
+      "precision": 0.875,
+      "recall": 1.0,
+      "fpr": 1.0,
+      "macro_f1": 0.4666666666666667,
+      "auroc": 0.14285714285714285
+    }
+  }
+}

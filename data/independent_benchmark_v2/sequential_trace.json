@@ -1,0 +1,1289 @@
+{
+  "records": [
+    {
+      "run_id": "c2670_sequential_s11",
+      "host": "c2670",
+      "source_path": "c2670_TI/c2670_T0.v",
+      "source_sha256": "9abb74bcac873a5ff33fb578e737d8c7099c279ce93c28e258b15c7dcf5d93af",
+      "clean_sha256": "31f06a4c27f368c47fec1376f439a48a6eb12c52a6cbcfa2b55fb180ebad58b8",
+      "input_assignment_sha256": "ab63e1c12b4be7e3b4007ebaf785225e051b73c6ba06859f6f8022127ee6bc5b",
+      "input_count": 233,
+      "clean_ff_count": 0,
+      "infected_ff_count": 4,
+      "expected_fire_cycle": 15,
+      "trigger_held": true,
+      "no_early_fire_or_output_difference": true,
+      "fired_at_expected_cycle": true,
+      "top_output_difference_at_fire": false,
+      "postfire_output_witness": {
+        "attempt": 4,
+        "different_outputs": [
+          "N3671"
+        ],
+        "input_assignment_sha256": "4743c1d5a75d10088211aac56c0d86c696d11dc8fe640fdf2dcd4ccad720eec1"
+      },
+      "trace": [
+        {
+          "cycle": 0,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 1,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 2,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 3,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 4,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 5,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 6,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 7,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 8,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 9,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 10,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 11,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 12,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 13,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 14,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 15,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 16,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        }
+      ],
+      "status": "independent_simplified_scan_trace_pass"
+    },
+    {
+      "run_id": "c2670_sequential_s11",
+      "host": "c2670",
+      "source_path": "c2670_TI/c2670_T1.v",
+      "source_sha256": "4c9c85897075ac1a7dda96f709a0281ad3fdd569d073a70e366caa8e1cafac3e",
+      "clean_sha256": "31f06a4c27f368c47fec1376f439a48a6eb12c52a6cbcfa2b55fb180ebad58b8",
+      "input_assignment_sha256": "b2d17063c0f782b2936e116bd5c29a2a879203483a31bc73733ee63fdced3b88",
+      "input_count": 233,
+      "clean_ff_count": 0,
+      "infected_ff_count": 4,
+      "expected_fire_cycle": 15,
+      "trigger_held": true,
+      "no_early_fire_or_output_difference": true,
+      "fired_at_expected_cycle": true,
+      "top_output_difference_at_fire": false,
+      "postfire_output_witness": {
+        "attempt": 37,
+        "different_outputs": [
+          "N3851"
+        ],
+        "input_assignment_sha256": "eb880739a6f567003ede2cfe1d6e4eb1607c9440a024f3dcfe77766f5dbda3c5"
+      },
+      "trace": [
+        {
+          "cycle": 0,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 1,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 2,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 3,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 4,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 5,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 6,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 7,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 8,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 9,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 10,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 11,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 12,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 13,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 14,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 15,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 16,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        }
+      ],
+      "status": "independent_simplified_scan_trace_pass"
+    },
+    {
+      "run_id": "c3540_sequential_s11",
+      "host": "c3540",
+      "source_path": "c3540_TI/c3540_T0.v",
+      "source_sha256": "c8f4c5ab0c29419afa97acdf8297582f0c84fe2c2bd01fddcb04b38d1c7b85d0",
+      "clean_sha256": "1c58203c5cf7ffdeb03a8984aae1c601a3b3c95c824d2168397439f6ee291983",
+      "input_assignment_sha256": "72a3d2e5110836e08afb81d3595c9085f7bda51bea08553734dd9598c6df261b",
+      "input_count": 50,
+      "clean_ff_count": 0,
+      "infected_ff_count": 4,
+      "expected_fire_cycle": 15,
+      "trigger_held": true,
+      "no_early_fire_or_output_difference": true,
+      "fired_at_expected_cycle": true,
+      "top_output_difference_at_fire": false,
+      "postfire_output_witness": {
+        "attempt": 16,
+        "different_outputs": [
+          "N5120",
+          "N5361"
+        ],
+        "input_assignment_sha256": "c733319164636fda21895b23b24d7bdd81f6e91303dbd76c4eb5fd9a61c1cbc2"
+      },
+      "trace": [
+        {
+          "cycle": 0,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 1,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 2,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 3,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 4,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 5,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 6,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 7,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 8,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 9,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 10,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 11,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 12,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 13,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 14,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 15,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 16,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        }
+      ],
+      "status": "independent_simplified_scan_trace_pass"
+    },
+    {
+      "run_id": "c3540_sequential_s11",
+      "host": "c3540",
+      "source_path": "c3540_TI/c3540_T1.v",
+      "source_sha256": "56fc9ba89a36f5eaa700370a51040037b383d79855bec0e64735ae844a34cde5",
+      "clean_sha256": "1c58203c5cf7ffdeb03a8984aae1c601a3b3c95c824d2168397439f6ee291983",
+      "input_assignment_sha256": "a7f3bb0e838e1ab36508b65b8a88d0755627bdcd11ef04777199fffbc71826f8",
+      "input_count": 50,
+      "clean_ff_count": 0,
+      "infected_ff_count": 4,
+      "expected_fire_cycle": 15,
+      "trigger_held": true,
+      "no_early_fire_or_output_difference": true,
+      "fired_at_expected_cycle": true,
+      "top_output_difference_at_fire": false,
+      "postfire_output_witness": {
+        "attempt": 1,
+        "different_outputs": [
+          "N4145",
+          "N5002"
+        ],
+        "input_assignment_sha256": "4922a71d77d4df0d14d373a3008490e159f75e880b06a25d9dcf2af2aa5c3e12"
+      },
+      "trace": [
+        {
+          "cycle": 0,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 1,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 2,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 3,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 4,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 5,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 6,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 7,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 8,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 9,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 10,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 11,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 12,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 13,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 14,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 15,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 16,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        }
+      ],
+      "status": "independent_simplified_scan_trace_pass"
+    },
+    {
+      "run_id": "c5315_sequential_s11",
+      "host": "c5315",
+      "source_path": "c5315_TI/c5315_T0.v",
+      "source_sha256": "eb5379b3b3c35ad04dd89033dcaea55b523311ec5e746e3c650af9f0203d7343",
+      "clean_sha256": "6857700b86705fa62a990528da1910cd53942c442a2a6802cd05c5790590ecd3",
+      "input_assignment_sha256": "a09e3e2d0a1354de039c60c1c9bda6d281f1d3c6674c2c148b6afe2930bf33af",
+      "input_count": 178,
+      "clean_ff_count": 0,
+      "infected_ff_count": 4,
+      "expected_fire_cycle": 15,
+      "trigger_held": true,
+      "no_early_fire_or_output_difference": true,
+      "fired_at_expected_cycle": true,
+      "top_output_difference_at_fire": true,
+      "postfire_output_witness": null,
+      "trace": [
+        {
+          "cycle": 0,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 1,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 2,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 3,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 4,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 5,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 6,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 7,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 8,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 9,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 10,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 11,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 12,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 13,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 14,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 15,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 1,
+          "different_outputs": [
+            "N7476"
+          ]
+        },
+        {
+          "cycle": 16,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 1,
+          "different_outputs": [
+            "N7476"
+          ]
+        }
+      ],
+      "status": "independent_simplified_scan_trace_pass"
+    },
+    {
+      "run_id": "c5315_sequential_s11",
+      "host": "c5315",
+      "source_path": "c5315_TI/c5315_T1.v",
+      "source_sha256": "ca2e4aab3722af349c511d2a64ba571c77487a7c7cd4d8dacfb9eef8c4f849f3",
+      "clean_sha256": "6857700b86705fa62a990528da1910cd53942c442a2a6802cd05c5790590ecd3",
+      "input_assignment_sha256": "1f37452d0bbdd4b5220429d3516de71dd0be3c4cf6d924adaa83bef420c205ce",
+      "input_count": 178,
+      "clean_ff_count": 0,
+      "infected_ff_count": 4,
+      "expected_fire_cycle": 15,
+      "trigger_held": true,
+      "no_early_fire_or_output_difference": true,
+      "fired_at_expected_cycle": true,
+      "top_output_difference_at_fire": false,
+      "postfire_output_witness": {
+        "attempt": 15,
+        "different_outputs": [
+          "N8075"
+        ],
+        "input_assignment_sha256": "8ee5b38531de6cf97106fc2dd5654aa0433487cc7a23e329dfc5926801737666"
+      },
+      "trace": [
+        {
+          "cycle": 0,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 1,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 2,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 3,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 4,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 5,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 6,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 7,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 8,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 9,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 10,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 11,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 12,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 13,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 14,
+          "trigger": 1,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 15,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 16,
+          "trigger": 1,
+          "fire": 1,
+          "payload_difference": true,
+          "different_output_count": 0,
+          "different_outputs": []
+        }
+      ],
+      "status": "independent_simplified_scan_trace_pass"
+    },
+    {
+      "run_id": "s1423_sequential_s11",
+      "host": "s1423",
+      "source_path": "s1423scan_TI/s1423scan_T0.v",
+      "source_sha256": "6d17e4c62d0f0a3dd2ff139bcc313bbcab2f4f10a6bbce632b021e3d0f71172f",
+      "clean_sha256": "98d5f3a41bce8a5230f2a92b4cdd37201e6806de70a06b6b43c57cdac21b33a5",
+      "input_assignment_sha256": "9429df32a5e36a8f65e518061b5e75a20a7058fb066f4c38686432abec01cda5",
+      "input_count": 20,
+      "clean_ff_count": 74,
+      "infected_ff_count": 78,
+      "expected_fire_cycle": 15,
+      "trigger_held": false,
+      "no_early_fire_or_output_difference": true,
+      "fired_at_expected_cycle": false,
+      "top_output_difference_at_fire": false,
+      "postfire_output_witness": null,
+      "trace": [
+        {
+          "cycle": 0,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 1,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 2,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 3,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 4,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 5,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 6,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 7,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 8,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 9,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 10,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 11,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 12,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 13,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 14,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 15,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 16,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        }
+      ],
+      "status": "independent_simplified_scan_trace_failed"
+    },
+    {
+      "run_id": "s1423_sequential_s11",
+      "host": "s1423",
+      "source_path": "s1423scan_TI/s1423scan_T1.v",
+      "source_sha256": "a2f26b6aa59918d8bd18e2eb6d16d56842f1f62bb3ac4428e648a2cb41eed68a",
+      "clean_sha256": "98d5f3a41bce8a5230f2a92b4cdd37201e6806de70a06b6b43c57cdac21b33a5",
+      "input_assignment_sha256": "92698143309dd61a1ec85886325f96ea90340be4a3527294c973fc1e7eec241a",
+      "input_count": 20,
+      "clean_ff_count": 74,
+      "infected_ff_count": 78,
+      "expected_fire_cycle": 15,
+      "trigger_held": false,
+      "no_early_fire_or_output_difference": true,
+      "fired_at_expected_cycle": false,
+      "top_output_difference_at_fire": false,
+      "postfire_output_witness": null,
+      "trace": [
+        {
+          "cycle": 0,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 1,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 2,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 3,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 4,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 5,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 6,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 7,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 8,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 9,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 10,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 11,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 12,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 13,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 14,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 15,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        },
+        {
+          "cycle": 16,
+          "trigger": 0,
+          "fire": 0,
+          "payload_difference": false,
+          "different_output_count": 0,
+          "different_outputs": []
+        }
+      ],
+      "status": "independent_simplified_scan_trace_failed"
+    }
+  ],
+  "status": "independent_simplified_scan_traces_not_full_RTL_equivalence"
+}

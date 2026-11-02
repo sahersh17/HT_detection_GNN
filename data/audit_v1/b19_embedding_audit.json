@@ -1,0 +1,10 @@
+{
+  "status": "hash_shape_span_verified_not_model_evaluation",
+  "manifest_sha256": "ee88421145149f24b0bbc10a3ee523f3178a750f9db7f5ff1054c874a1c52a74",
+  "graph_protocol_sha256": "30cda23d836d9de35beedf509be6d23f951d17e606f9caed62204eb3c5235b02",
+  "paired_variants": 3,
+  "samples": 6,
+  "independent_clean_sources": 1,
+  "total_chunks": 346,
+  "source_language": "VHDL"
+}

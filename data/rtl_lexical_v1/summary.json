@@ -1,0 +1,462 @@
+{
+  "status": "exploratory_development_folds",
+  "independent_clean_source_groups": 3,
+  "n_design_sides": 42,
+  "model": "microsoft/codebert-base",
+  "threshold": 0.5,
+  "source_artifact_hashes": {
+    "manifest.json": "5267b3aa2cb74a8da38e5d1b8d318209358703b1574e5033e577bcd9fc832cdb",
+    "verification.json": "cbb5e8b7ebc9be8115bdb38f39affdab62dda8a797d034286c345e65b3094cf0",
+    "embedding_progress.json": "1540470542507f4f0f5a532b1da0fab96dc2f603dbab1a76786206272fccbf05"
+  },
+  "results": {
+    "original/within": {
+      "pooled": {
+        "n": 42,
+        "tn": 17,
+        "fp": 4,
+        "fn": 2,
+        "tp": 19,
+        "accuracy": 0.8571428571428571,
+        "balanced_accuracy": 0.8571428571428572,
+        "precision": 0.8260869565217391,
+        "recall": 0.9047619047619048,
+        "fpr": 0.19047619047619047,
+        "macro_f1": 0.8568181818181819,
+        "auroc": 0.8639455782312925
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 2,
+        "tp": 4,
+        "accuracy": 0.8333333333333334,
+        "balanced_accuracy": 0.8333333333333333,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "fpr": 0.0,
+        "macro_f1": 0.8285714285714285,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 0,
+        "fp": 4,
+        "fn": 0,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "paired_ranking": {
+        "pairs": 21,
+        "wins": 17,
+        "ties": 4,
+        "win_rate_with_half_ties": 0.9047619047619048
+      }
+    },
+    "comments/within": {
+      "pooled": {
+        "n": 42,
+        "tn": 21,
+        "fp": 0,
+        "fn": 10,
+        "tp": 11,
+        "accuracy": 0.7619047619047619,
+        "balanced_accuracy": 0.7619047619047619,
+        "precision": 1.0,
+        "recall": 0.5238095238095238,
+        "fpr": 0.0,
+        "macro_f1": 0.747596153846154,
+        "auroc": 0.8276643990929705
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 6,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 4,
+        "fp": 0,
+        "fn": 4,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "paired_ranking": {
+        "pairs": 21,
+        "wins": 17,
+        "ties": 4,
+        "win_rate_with_half_ties": 0.9047619047619048
+      }
+    },
+    "comments/original_to_control": {
+      "pooled": {
+        "n": 42,
+        "tn": 17,
+        "fp": 4,
+        "fn": 17,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.19047619047619047,
+        "fpr": 0.19047619047619047,
+        "macro_f1": 0.4470219435736677,
+        "auroc": 0.5963718820861678
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 11,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 1.0
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 6,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 0,
+        "fp": 4,
+        "fn": 0,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "paired_ranking": {
+        "pairs": 21,
+        "wins": 11,
+        "ties": 4,
+        "win_rate_with_half_ties": 0.6190476190476191
+      }
+    },
+    "names/within": {
+      "pooled": {
+        "n": 42,
+        "tn": 17,
+        "fp": 4,
+        "fn": 0,
+        "tp": 21,
+        "accuracy": 0.9047619047619048,
+        "balanced_accuracy": 0.9047619047619048,
+        "precision": 0.84,
+        "recall": 1.0,
+        "fpr": 0.19047619047619047,
+        "macro_f1": 0.9038901601830664,
+        "auroc": 0.8684807256235828
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 0,
+        "tp": 6,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 0,
+        "fp": 4,
+        "fn": 0,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "paired_ranking": {
+        "pairs": 21,
+        "wins": 17,
+        "ties": 4,
+        "win_rate_with_half_ties": 0.9047619047619048
+      }
+    },
+    "names/original_to_control": {
+      "pooled": {
+        "n": 42,
+        "tn": 6,
+        "fp": 15,
+        "fn": 3,
+        "tp": 18,
+        "accuracy": 0.5714285714285714,
+        "balanced_accuracy": 0.5714285714285714,
+        "precision": 0.5454545454545454,
+        "recall": 0.8571428571428571,
+        "fpr": 0.7142857142857143,
+        "macro_f1": 0.5333333333333332,
+        "auroc": 0.7392290249433107
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 0,
+        "fp": 11,
+        "fn": 1,
+        "tp": 10,
+        "accuracy": 0.45454545454545453,
+        "balanced_accuracy": 0.45454545454545453,
+        "precision": 0.47619047619047616,
+        "recall": 0.9090909090909091,
+        "fpr": 1.0,
+        "macro_f1": 0.31249999999999994,
+        "auroc": 0.9090909090909091
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 2,
+        "tp": 4,
+        "accuracy": 0.8333333333333334,
+        "balanced_accuracy": 0.8333333333333333,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "fpr": 0.0,
+        "macro_f1": 0.8285714285714285,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 0,
+        "fp": 4,
+        "fn": 0,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "paired_ranking": {
+        "pairs": 21,
+        "wins": 16,
+        "ties": 4,
+        "win_rate_with_half_ties": 0.8571428571428571
+      }
+    },
+    "both/within": {
+      "pooled": {
+        "n": 42,
+        "tn": 21,
+        "fp": 0,
+        "fn": 10,
+        "tp": 11,
+        "accuracy": 0.7619047619047619,
+        "balanced_accuracy": 0.7619047619047619,
+        "precision": 1.0,
+        "recall": 0.5238095238095238,
+        "fpr": 0.0,
+        "macro_f1": 0.747596153846154,
+        "auroc": 0.8276643990929705
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "macro_f1": 1.0,
+        "auroc": 1.0
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 6,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 1.0
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 4,
+        "fp": 0,
+        "fn": 4,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "paired_ranking": {
+        "pairs": 21,
+        "wins": 17,
+        "ties": 4,
+        "win_rate_with_half_ties": 0.9047619047619048
+      }
+    },
+    "both/original_to_control": {
+      "pooled": {
+        "n": 42,
+        "tn": 17,
+        "fp": 4,
+        "fn": 17,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.19047619047619047,
+        "fpr": 0.19047619047619047,
+        "macro_f1": 0.4470219435736677,
+        "auroc": 0.5487528344671202
+      },
+      "fold_1": {
+        "n": 22,
+        "tn": 11,
+        "fp": 0,
+        "fn": 11,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.7272727272727273
+      },
+      "fold_2": {
+        "n": 12,
+        "tn": 6,
+        "fp": 0,
+        "fn": 6,
+        "tp": 0,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.3333333333333333
+      },
+      "fold_3": {
+        "n": 8,
+        "tn": 0,
+        "fp": 4,
+        "fn": 0,
+        "tp": 4,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "fpr": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "auroc": 0.5
+      },
+      "paired_ranking": {
+        "pairs": 21,
+        "wins": 10,
+        "ties": 4,
+        "win_rate_with_half_ties": 0.5714285714285714
+      }
+    }
+  }
+}

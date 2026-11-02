@@ -1,0 +1,61 @@
+[
+  {
+    "benchmark": "s38584-T100",
+    "status": "frozen_mechanical_candidate_pending_independent_review",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "positive_candidates": 9,
+    "negative_candidates": 6462,
+    "unknown": 11,
+    "candidate_sha256": "b78b56bf95d81191ac910af2a2b44cc153c430f7d91bd1999fd90d35b28fe375",
+    "source_sha256": "f03a82940da9ea99bee4a0cd0f0ce0f4b52bf5c52efee0e7db4e1831b6307698",
+    "description_sha256": "743c9f703c69f9f5f864fd47696f303aa93101722c5e29f2f698a9a60c91719e",
+    "yosys_log_sha256": "5a94f61c324a51c977aa17bf945df3bfe17bd8fbfd7cd479b4f4f54485e24f8f",
+    "finding": "NOT_test_se inverts test enable; its output enters Trojan_Trigger, which drives Trojan_Payload and a changed flip-flop D input.",
+    "evidence_fragments": [
+      "INVX0 NOT_test_se ( .IN(test_se), .QN(test_se_NOT) )",
+      ".IN3(test_se_NOT), .Q(Tj_Trigger)",
+      "Trojan_Payload (.IN1(Tj_Trigger)",
+      ".D(g34028_Tj_Payload)"
+    ],
+    "reviewed": false
+  },
+  {
+    "benchmark": "s38584-T200",
+    "status": "frozen_mechanical_candidate_pending_independent_review",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "positive_candidates": 83,
+    "negative_candidates": 6469,
+    "unknown": 4,
+    "candidate_sha256": "1930345860fbe5786006344e9e7b8c2faca0d525fb7b93939f3840cd5f07cb71",
+    "source_sha256": "a5decc4850a3d837ba47601a6343cd813f32546e0678572390570740955bf94f",
+    "description_sha256": "2f3df7b17cb7f8bcdcb9a829622c75629017fd7abde1c51e19818b18113f97ae",
+    "yosys_log_sha256": "3b1d241756c324a384047bd4d1c4996844ef3f9493410d0055693cc498f3a10b",
+    "finding": "RareVectorTrigger drives Trigger_out, which selects the payload mux from g25715 to g10122.",
+    "evidence_fragments": [
+      "RareVectorTrigger TrojanTrigger",
+      ".S(Trigger_out)",
+      ".IN2(g25715)",
+      ".Q(g10122)"
+    ],
+    "reviewed": false
+  },
+  {
+    "benchmark": "s38584-T300",
+    "status": "quarantined_functional_disconnect",
+    "graph_id": "new_gate_v1/s38584-T300/trojan",
+    "positive_candidates": 731,
+    "negative_candidates": 6469,
+    "unknown": 4,
+    "candidate_sha256": "cdab5b8f7581a23b99ffde1138ec286aa1237262dfe496e0cd5c3b8158ed5df3",
+    "source_sha256": "4defe52343b3ad7dea8cdbfd59d0e0e9258093c2cdbade92ee9fd9c1168eb796",
+    "description_sha256": "74c78264d6ec3c18e819eb0f1b3223041886314e20b1ce5f3bd2a92c118c85ac",
+    "yosys_log_sha256": "a0261a8e42088c3ff15cffb02f49a03278233ecd995a2770f840f204c393cf6b",
+    "finding": "Trigger module drives Tj_Trigger, payload mux selects Trigger_out; Yosys warns Trigger_out is implicitly declared.",
+    "evidence_fragments": [
+      "HighActiveRegionDetection TrojanTrigger",
+      "Tj_Trigger);",
+      ".S(Trigger_out)"
+    ],
+    "reviewed": false
+  }
+]

@@ -1,0 +1,2108 @@
+[
+  {
+    "review_id": "60eef1d0007bb52e",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8480,
+        8480
+      ]
+    ],
+    "node_index": 1594,
+    "instance_name": "Trojan2"
+  },
+  {
+    "review_id": "5b9b06bf1e3b7a0d",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4162,
+        4163
+      ]
+    ],
+    "node_index": 727,
+    "instance_name": "DFF_1655_Q_reg"
+  },
+  {
+    "review_id": "974ab32c321f38a6",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8482,
+        8482
+      ]
+    ],
+    "node_index": 1568,
+    "instance_name": "Trojan4"
+  },
+  {
+    "review_id": "428aaee560b89319",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        937,
+        938
+      ]
+    ],
+    "node_index": 827,
+    "instance_name": "DFF_18_Q_reg"
+  },
+  {
+    "review_id": "f81eff44e8042379",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        6058,
+        6059
+      ]
+    ],
+    "node_index": 3125,
+    "instance_name": "U4755"
+  },
+  {
+    "review_id": "41585f6885c7132a",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8485,
+        8485
+      ]
+    ],
+    "node_index": 1597,
+    "instance_name": "Trojan5"
+  },
+  {
+    "review_id": "ff66fcbf411efb1a",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8431,
+        8431
+      ]
+    ],
+    "node_index": 5302,
+    "instance_name": "U7498"
+  },
+  {
+    "review_id": "e7f8eb4f431711ba",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        1822,
+        1823
+      ]
+    ],
+    "node_index": 779,
+    "instance_name": "DFF_496_Q_reg"
+  },
+  {
+    "review_id": "3e3385377d126780",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9934,
+        9934
+      ]
+    ],
+    "node_index": 1282,
+    "instance_name": "Trojan_Payload"
+  },
+  {
+    "review_id": "29ef98f7ce3bd90b",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8482,
+        8482
+      ]
+    ],
+    "node_index": 1568,
+    "instance_name": "Trojan4"
+  },
+  {
+    "review_id": "72a63ef5c1dd9a9d",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8488,
+        8488
+      ]
+    ],
+    "node_index": 1573,
+    "instance_name": "Trojan8"
+  },
+  {
+    "review_id": "4f0f5e393c657c1e",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        3878,
+        3878
+      ]
+    ],
+    "node_index": 569,
+    "instance_name": "DFF_1512_Q_reg"
+  },
+  {
+    "review_id": "7f31a0405e02fbab",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        7000,
+        7000
+      ]
+    ],
+    "node_index": 4173,
+    "instance_name": "U6369"
+  },
+  {
+    "review_id": "54ff402a834cc1fa",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        5502,
+        5502
+      ]
+    ],
+    "node_index": 3103,
+    "instance_name": "U5270"
+  },
+  {
+    "review_id": "28f7f49dea5aee5c",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        10070,
+        10070
+      ]
+    ],
+    "node_index": 1357,
+    "instance_name": "Trojan_Paylod"
+  },
+  {
+    "review_id": "781ec2505d8909a1",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8608,
+        8608
+      ]
+    ],
+    "node_index": 1729,
+    "instance_name": "Trojan1"
+  },
+  {
+    "review_id": "8ed140a194865d49",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4371,
+        4371
+      ]
+    ],
+    "node_index": 1814,
+    "instance_name": "U3441"
+  },
+  {
+    "review_id": "4c3707f04bef51f0",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8467,
+        8467
+      ]
+    ],
+    "node_index": 5367,
+    "instance_name": "U7534"
+  },
+  {
+    "review_id": "9a948f2aa63aa53f",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        7295,
+        7295
+      ]
+    ],
+    "node_index": 4162,
+    "instance_name": "U5789"
+  },
+  {
+    "review_id": "a8fa5c54661f23ef",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4435,
+        4435
+      ]
+    ],
+    "node_index": 1878,
+    "instance_name": "U3508"
+  },
+  {
+    "review_id": "d9b4fdc549abe652",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        5563,
+        5563
+      ]
+    ],
+    "node_index": 3489,
+    "instance_name": "U7007"
+  },
+  {
+    "review_id": "d6f74aee42b8a40f",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        7328,
+        7328
+      ]
+    ],
+    "node_index": 4428,
+    "instance_name": "U6627"
+  },
+  {
+    "review_id": "570f032e0b4fc4f8",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8609,
+        8609
+      ]
+    ],
+    "node_index": 1731,
+    "instance_name": "Trojan2"
+  },
+  {
+    "review_id": "4ecf1020abe812ef",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8612,
+        8612
+      ]
+    ],
+    "node_index": 1730,
+    "instance_name": "Trojan1234_NOT"
+  },
+  {
+    "review_id": "660354dc830397ee",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8611,
+        8611
+      ]
+    ],
+    "node_index": 1733,
+    "instance_name": "Trojan4"
+  },
+  {
+    "review_id": "a284f2b0baf52572",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8485,
+        8485
+      ]
+    ],
+    "node_index": 1569,
+    "instance_name": "Trojan5"
+  },
+  {
+    "review_id": "6438f3d766a3f0e4",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8610,
+        8610
+      ]
+    ],
+    "node_index": 1732,
+    "instance_name": "Trojan3"
+  },
+  {
+    "review_id": "31c28e5ea19c0ce6",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        120,
+        120
+      ]
+    ],
+    "node_index": 1275,
+    "instance_name": "TrojanTrigger.Trojan_U14"
+  },
+  {
+    "review_id": "e251ef2f24f59402",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4158,
+        4159
+      ]
+    ],
+    "node_index": 725,
+    "instance_name": "DFF_1653_Q_reg"
+  },
+  {
+    "review_id": "a35015a3eadc4024",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        127,
+        128
+      ]
+    ],
+    "node_index": 1282,
+    "instance_name": "TrojanTrigger.Trojan_U21"
+  },
+  {
+    "review_id": "ac34d0262211fb61",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8601,
+        8601
+      ]
+    ],
+    "node_index": 5433,
+    "instance_name": "U7063"
+  },
+  {
+    "review_id": "542b929771b7bcf8",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9582,
+        9583
+      ]
+    ],
+    "node_index": 6510,
+    "instance_name": "U9954"
+  },
+  {
+    "review_id": "9adbc12c82fa9b0e",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8598,
+        8598
+      ]
+    ],
+    "node_index": 1730,
+    "instance_name": "Trojan1234_NOT"
+  },
+  {
+    "review_id": "daf051fe3c0ccf90",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8487,
+        8487
+      ]
+    ],
+    "node_index": 1572,
+    "instance_name": "Trojan7"
+  },
+  {
+    "review_id": "671090816141dd15",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        70,
+        71
+      ]
+    ],
+    "node_index": 1302,
+    "instance_name": "TrojanTrigger.Trojan_counter_reg_18_"
+  },
+  {
+    "review_id": "784ef909ddff7c93",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        4251,
+        4251
+      ]
+    ],
+    "node_index": 2074,
+    "instance_name": "U4241"
+  },
+  {
+    "review_id": "3475fcc82653372b",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8614,
+        8614
+      ]
+    ],
+    "node_index": 1734,
+    "instance_name": "Trojan5"
+  },
+  {
+    "review_id": "b41662c5494929fa",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8618,
+        8618
+      ]
+    ],
+    "node_index": 1735,
+    "instance_name": "Trojan5678_NOT"
+  },
+  {
+    "review_id": "fe68f63ac20ac631",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8597,
+        8597
+      ]
+    ],
+    "node_index": 1733,
+    "instance_name": "Trojan4"
+  },
+  {
+    "review_id": "2cee02b8441ffcf3",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        7947,
+        7947
+      ]
+    ],
+    "node_index": 5267,
+    "instance_name": "U8711"
+  },
+  {
+    "review_id": "4dc86362be61201b",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8480,
+        8480
+      ]
+    ],
+    "node_index": 1566,
+    "instance_name": "Trojan2"
+  },
+  {
+    "review_id": "02b98e6906b1a2dc",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        6073,
+        6073
+      ]
+    ],
+    "node_index": 3522,
+    "instance_name": "U5721"
+  },
+  {
+    "review_id": "57940c231bfdf35c",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        862,
+        863
+      ]
+    ],
+    "node_index": 1463,
+    "instance_name": "DFF_90_Q_reg"
+  },
+  {
+    "review_id": "9c62a81d488e20dd",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        2377,
+        2378
+      ]
+    ],
+    "node_index": 1015,
+    "instance_name": "DFF_740_Q_reg"
+  },
+  {
+    "review_id": "d8f5ba2455c2a6aa",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8489,
+        8489
+      ]
+    ],
+    "node_index": 1570,
+    "instance_name": "Trojan5678_NOT"
+  },
+  {
+    "review_id": "984936e708a1be8d",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        5459,
+        5459
+      ]
+    ],
+    "node_index": 3387,
+    "instance_name": "U6905"
+  },
+  {
+    "review_id": "df08ed421e2538b2",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        15,
+        15
+      ]
+    ],
+    "node_index": 1327,
+    "instance_name": "TrojanTrigger.add_73.Trojan_U1_1_10"
+  },
+  {
+    "review_id": "8382e47fad83ec5c",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8520,
+        8520
+      ]
+    ],
+    "node_index": 1577,
+    "instance_name": "Ring_Inv21"
+  },
+  {
+    "review_id": "41c8520360279540",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        8860,
+        8861
+      ]
+    ],
+    "node_index": 5992,
+    "instance_name": "U9510"
+  },
+  {
+    "review_id": "ca43b2798884c3be",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8483,
+        8483
+      ]
+    ],
+    "node_index": 1565,
+    "instance_name": "Trojan1234_NOT"
+  },
+  {
+    "review_id": "457508f9cfd030d3",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9924,
+        9924
+      ]
+    ],
+    "node_index": 1278,
+    "instance_name": "Trojan2"
+  },
+  {
+    "review_id": "de2f0aaa50340e10",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        4872,
+        4872
+      ]
+    ],
+    "node_index": 2922,
+    "instance_name": "U6440"
+  },
+  {
+    "review_id": "2d76e885e52db7ef",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        2617,
+        2618
+      ]
+    ],
+    "node_index": 26,
+    "instance_name": "DFF_1032_Q_reg"
+  },
+  {
+    "review_id": "4feb7661d786e8e5",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8596,
+        8596
+      ]
+    ],
+    "node_index": 1732,
+    "instance_name": "Trojan3"
+  },
+  {
+    "review_id": "359462bfad874f67",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        6174,
+        6174
+      ]
+    ],
+    "node_index": 3632,
+    "instance_name": "U5799"
+  },
+  {
+    "review_id": "28a017c5094dc59d",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9927,
+        9927
+      ]
+    ],
+    "node_index": 1277,
+    "instance_name": "Trojan1234_NOT"
+  },
+  {
+    "review_id": "00a23d85ee95bf9a",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4485,
+        4485
+      ]
+    ],
+    "node_index": 1928,
+    "instance_name": "U3555"
+  },
+  {
+    "review_id": "aab20f49a24ec159",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        24,
+        24
+      ]
+    ],
+    "node_index": 1326,
+    "instance_name": "TrojanTrigger.add_73.Trojan_U1_1_1"
+  },
+  {
+    "review_id": "3b997b4a7b3d85b1",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        5987,
+        5988
+      ]
+    ],
+    "node_index": 3813,
+    "instance_name": "U7257"
+  },
+  {
+    "review_id": "050499fec2f048d4",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8481,
+        8481
+      ]
+    ],
+    "node_index": 1567,
+    "instance_name": "Trojan3"
+  },
+  {
+    "review_id": "28c241c52d01c54e",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8491,
+        8491
+      ]
+    ],
+    "node_index": 1574,
+    "instance_name": "Trojan_CLK_NOT"
+  },
+  {
+    "review_id": "28181e473317098d",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        5387,
+        5388
+      ]
+    ],
+    "node_index": 2978,
+    "instance_name": "U5177"
+  },
+  {
+    "review_id": "43a01cf01feb73ce",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        3349,
+        3350
+      ]
+    ],
+    "node_index": 260,
+    "instance_name": "DFF_1234_Q_reg"
+  },
+  {
+    "review_id": "52e566b12db16375",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4029,
+        4030
+      ]
+    ],
+    "node_index": 653,
+    "instance_name": "DFF_1589_Q_reg"
+  },
+  {
+    "review_id": "4b8bcc98dcdb6b75",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        3852,
+        3852
+      ]
+    ],
+    "node_index": 1691,
+    "instance_name": "U3858"
+  },
+  {
+    "review_id": "fa684af206144c4a",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8495,
+        8495
+      ]
+    ],
+    "node_index": 1606,
+    "instance_name": "Trojan_Payload2"
+  },
+  {
+    "review_id": "970441a72dfea3a6",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        5725,
+        5725
+      ]
+    ],
+    "node_index": 3284,
+    "instance_name": "U5483"
+  },
+  {
+    "review_id": "013d17d1ee858b67",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9925,
+        9925
+      ]
+    ],
+    "node_index": 1279,
+    "instance_name": "Trojan3"
+  },
+  {
+    "review_id": "2c4400e22cee770f",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        7054,
+        7054
+      ]
+    ],
+    "node_index": 3918,
+    "instance_name": "U5548"
+  },
+  {
+    "review_id": "faa8e1322b780dea",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        1143,
+        1144
+      ]
+    ],
+    "node_index": 244,
+    "instance_name": "DFF_121_Q_reg"
+  },
+  {
+    "review_id": "75619b94a7c52caf",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        8099,
+        8100
+      ]
+    ],
+    "node_index": 5418,
+    "instance_name": "U8936"
+  },
+  {
+    "review_id": "62cceacadefd1a6e",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9931,
+        9931
+      ]
+    ],
+    "node_index": 1283,
+    "instance_name": "Trojan_Trigger"
+  },
+  {
+    "review_id": "c17763a49a75a93e",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8601,
+        8601
+      ]
+    ],
+    "node_index": 1737,
+    "instance_name": "Trojan7"
+  },
+  {
+    "review_id": "69f4d917228f7725",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9576,
+        9576
+      ]
+    ],
+    "node_index": 6504,
+    "instance_name": "U9948"
+  },
+  {
+    "review_id": "faa669b3f54deab4",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        1860,
+        1861
+      ]
+    ],
+    "node_index": 802,
+    "instance_name": "DFF_520_Q_reg"
+  },
+  {
+    "review_id": "c1c39f854297d27d",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8198,
+        8198
+      ]
+    ],
+    "node_index": 5138,
+    "instance_name": "U7334"
+  },
+  {
+    "review_id": "a1830745fbfd3a14",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8491,
+        8491
+      ]
+    ],
+    "node_index": 1578,
+    "instance_name": "Trojan_Trigger"
+  },
+  {
+    "review_id": "b65bc3b0687a3f8f",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9888,
+        9888
+      ]
+    ],
+    "node_index": 1579,
+    "instance_name": "U10295"
+  },
+  {
+    "review_id": "788eca39aa57df95",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        961,
+        962
+      ]
+    ],
+    "node_index": 485,
+    "instance_name": "DFF_19_Q_reg"
+  },
+  {
+    "review_id": "11278e774f61004e",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        944,
+        944
+      ]
+    ],
+    "node_index": 1274,
+    "instance_name": "DFF_9_Q_reg"
+  },
+  {
+    "review_id": "bb42781d5563f2c9",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        1350,
+        1351
+      ]
+    ],
+    "node_index": 871,
+    "instance_name": "DFF_353_Q_reg"
+  },
+  {
+    "review_id": "89c12e8f93d3e837",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4164,
+        4165
+      ]
+    ],
+    "node_index": 728,
+    "instance_name": "DFF_1656_Q_reg"
+  },
+  {
+    "review_id": "e152f8f6083bb6bc",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4476,
+        4476
+      ]
+    ],
+    "node_index": 1919,
+    "instance_name": "U3549"
+  },
+  {
+    "review_id": "af66dcdd1f4762d7",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4168,
+        4169
+      ]
+    ],
+    "node_index": 730,
+    "instance_name": "DFF_1658_Q_reg"
+  },
+  {
+    "review_id": "c3e2dc2da20f6b01",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8605,
+        8605
+      ]
+    ],
+    "node_index": 1728,
+    "instance_name": "INV_test_se"
+  },
+  {
+    "review_id": "9499a87311598e73",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8272,
+        8272
+      ]
+    ],
+    "node_index": 5110,
+    "instance_name": "U6740"
+  },
+  {
+    "review_id": "4ef21b6f58138fbd",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9923,
+        9923
+      ]
+    ],
+    "node_index": 1276,
+    "instance_name": "Trojan1"
+  },
+  {
+    "review_id": "a9c7ede8bdc38436",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9926,
+        9926
+      ]
+    ],
+    "node_index": 1280,
+    "instance_name": "Trojan4"
+  },
+  {
+    "review_id": "8e1770703b729a7d",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8594,
+        8594
+      ]
+    ],
+    "node_index": 1729,
+    "instance_name": "Trojan1"
+  },
+  {
+    "review_id": "18a25061704a7417",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8610,
+        8610
+      ]
+    ],
+    "node_index": 1740,
+    "instance_name": "Trojan_Payload1"
+  },
+  {
+    "review_id": "31ab734f78e8f9c8",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8615,
+        8615
+      ]
+    ],
+    "node_index": 1736,
+    "instance_name": "Trojan6"
+  },
+  {
+    "review_id": "dee45635de09a8d2",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9930,
+        9930
+      ]
+    ],
+    "node_index": 1275,
+    "instance_name": "NOT_test_se"
+  },
+  {
+    "review_id": "51a5cd233e1851d3",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8494,
+        8494
+      ]
+    ],
+    "node_index": 1575,
+    "instance_name": "Trojan_Payload"
+  },
+  {
+    "review_id": "5e7833a4a83c7785",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8489,
+        8489
+      ]
+    ],
+    "node_index": 1598,
+    "instance_name": "Trojan5678_NOT"
+  },
+  {
+    "review_id": "b0952e41acdc1ca7",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8487,
+        8487
+      ]
+    ],
+    "node_index": 1572,
+    "instance_name": "Trojan7"
+  },
+  {
+    "review_id": "049fd7ead28f442d",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        7948,
+        7948
+      ]
+    ],
+    "node_index": 4921,
+    "instance_name": "U7117"
+  },
+  {
+    "review_id": "427ed9ad598e25ad",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        1560,
+        1561
+      ]
+    ],
+    "node_index": 991,
+    "instance_name": "DFF_469_Q_reg"
+  },
+  {
+    "review_id": "0d57d2edbcacf17f",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8616,
+        8616
+      ]
+    ],
+    "node_index": 1737,
+    "instance_name": "Trojan7"
+  },
+  {
+    "review_id": "1570e580ce2db4ac",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8494,
+        8494
+      ]
+    ],
+    "node_index": 1574,
+    "instance_name": "Trojan_Payload_1"
+  },
+  {
+    "review_id": "af2ac085eaec7be4",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8338,
+        8338
+      ]
+    ],
+    "node_index": 5172,
+    "instance_name": "U6802"
+  },
+  {
+    "review_id": "0651e448eb236740",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8495,
+        8495
+      ]
+    ],
+    "node_index": 1575,
+    "instance_name": "Trojan_Payload_2"
+  },
+  {
+    "review_id": "071d7857edb05dbf",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        2627,
+        2628
+      ]
+    ],
+    "node_index": 1575,
+    "instance_name": "DFF_863_Q_reg"
+  },
+  {
+    "review_id": "cebb22281908306b",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8617,
+        8617
+      ]
+    ],
+    "node_index": 1738,
+    "instance_name": "Trojan8"
+  },
+  {
+    "review_id": "9589211a417cd6c7",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8595,
+        8595
+      ]
+    ],
+    "node_index": 1731,
+    "instance_name": "Trojan2"
+  },
+  {
+    "review_id": "f1a6930744954b08",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8508,
+        8508
+      ]
+    ],
+    "node_index": 1591,
+    "instance_name": "Ring_Inv9"
+  },
+  {
+    "review_id": "bbb717597ac09cb9",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8523,
+        8523
+      ]
+    ],
+    "node_index": 1580,
+    "instance_name": "Ring_Inv24"
+  },
+  {
+    "review_id": "469043f710538d9c",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8516,
+        8516
+      ]
+    ],
+    "node_index": 1572,
+    "instance_name": "Ring_Inv17"
+  },
+  {
+    "review_id": "02572b693488ed22",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8607,
+        8607
+      ]
+    ],
+    "node_index": 1739,
+    "instance_name": "TrojanScanEnable"
+  },
+  {
+    "review_id": "1c43ad732448c468",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        6003,
+        6004
+      ]
+    ],
+    "node_index": 3845,
+    "instance_name": "U7363"
+  },
+  {
+    "review_id": "287dcedde3559d91",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9928,
+        9928
+      ]
+    ],
+    "node_index": 1281,
+    "instance_name": "Trojan5"
+  },
+  {
+    "review_id": "975560462a7878be",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        7993,
+        7993
+      ]
+    ],
+    "node_index": 4860,
+    "instance_name": "U6487"
+  },
+  {
+    "review_id": "becd926d446aafaa",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        6901,
+        6902
+      ]
+    ],
+    "node_index": 4115,
+    "instance_name": "U6311"
+  },
+  {
+    "review_id": "32fc27bc29f560a2",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        957,
+        958
+      ]
+    ],
+    "node_index": 465,
+    "instance_name": "DFF_17_Q_reg"
+  },
+  {
+    "review_id": "8803e05a7ef422ea",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8496,
+        8496
+      ]
+    ],
+    "node_index": 1576,
+    "instance_name": "Trojan_Payload_3"
+  },
+  {
+    "review_id": "339c553489b95a9d",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        6318,
+        6319
+      ]
+    ],
+    "node_index": 3742,
+    "instance_name": "U5909"
+  },
+  {
+    "review_id": "0bf22e147e0e309c",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        6347,
+        6348
+      ]
+    ],
+    "node_index": 3731,
+    "instance_name": "U5927"
+  },
+  {
+    "review_id": "ca79959840b44ae1",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4250,
+        4250
+      ]
+    ],
+    "node_index": 775,
+    "instance_name": "DFF_1699_Q_reg"
+  },
+  {
+    "review_id": "47be6e494b0cd241",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        8643,
+        8643
+      ]
+    ],
+    "node_index": 5793,
+    "instance_name": "U9237"
+  },
+  {
+    "review_id": "9f098bc8513145bb",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        4384,
+        4384
+      ]
+    ],
+    "node_index": 2172,
+    "instance_name": "U4368"
+  },
+  {
+    "review_id": "97f9213307616ef7",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        5721,
+        5721
+      ]
+    ],
+    "node_index": 3312,
+    "instance_name": "U5479"
+  },
+  {
+    "review_id": "70e3ce0cf0ca2d39",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8424,
+        8424
+      ]
+    ],
+    "node_index": 5295,
+    "instance_name": "U7491"
+  },
+  {
+    "review_id": "518209dd0860b14f",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        7076,
+        7076
+      ]
+    ],
+    "node_index": 3936,
+    "instance_name": "U5566"
+  },
+  {
+    "review_id": "f1256c0be07d8918",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        4750,
+        4751
+      ]
+    ],
+    "node_index": 2459,
+    "instance_name": "U4655"
+  },
+  {
+    "review_id": "a75e5f36a5c6b700",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8486,
+        8486
+      ]
+    ],
+    "node_index": 1571,
+    "instance_name": "Trojan6"
+  },
+  {
+    "review_id": "73daf780fa00c8ad",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        7114,
+        7115
+      ]
+    ],
+    "node_index": 4283,
+    "instance_name": "U6450"
+  },
+  {
+    "review_id": "2eed61f6b26e21af",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        4240,
+        4240
+      ]
+    ],
+    "node_index": 2033,
+    "instance_name": "U4232"
+  },
+  {
+    "review_id": "6e87852dadbc2af2",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        5383,
+        5383
+      ]
+    ],
+    "node_index": 3284,
+    "instance_name": "U6728"
+  },
+  {
+    "review_id": "5f6b082221117070",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8483,
+        8483
+      ]
+    ],
+    "node_index": 1565,
+    "instance_name": "Trojan1234"
+  },
+  {
+    "review_id": "0294b6551017461d",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8518,
+        8518
+      ]
+    ],
+    "node_index": 1574,
+    "instance_name": "Ring_Inv19"
+  },
+  {
+    "review_id": "caff48264510c648",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        1832,
+        1833
+      ]
+    ],
+    "node_index": 1144,
+    "instance_name": "DFF_606_Q_reg"
+  },
+  {
+    "review_id": "c8605f3770112f32",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        7623,
+        7623
+      ]
+    ],
+    "node_index": 4490,
+    "instance_name": "U6117"
+  },
+  {
+    "review_id": "88ce559a0d54e4d5",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        2097,
+        2098
+      ]
+    ],
+    "node_index": 1295,
+    "instance_name": "DFF_751_Q_reg"
+  },
+  {
+    "review_id": "35ab78dc8ba3759b",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        4428,
+        4428
+      ]
+    ],
+    "node_index": 2422,
+    "instance_name": "U5866"
+  },
+  {
+    "review_id": "9c864650f99a3ee9",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        5695,
+        5695
+      ]
+    ],
+    "node_index": 3551,
+    "instance_name": "U6995"
+  },
+  {
+    "review_id": "14002e984e2cd58a",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        5629,
+        5629
+      ]
+    ],
+    "node_index": 3551,
+    "instance_name": "U7069"
+  },
+  {
+    "review_id": "b4402bac5a51e627",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        3614,
+        3615
+      ]
+    ],
+    "node_index": 589,
+    "instance_name": "DFF_1563_Q_reg"
+  },
+  {
+    "review_id": "fc67617cbbd0863d",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        31,
+        31
+      ]
+    ],
+    "node_index": 1336,
+    "instance_name": "TrojanTrigger.add_73.Trojan_U1_1_19"
+  },
+  {
+    "review_id": "dbcd91acdeab49c3",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        3543,
+        3543
+      ]
+    ],
+    "node_index": 375,
+    "instance_name": "DFF_1338_Q_reg"
+  },
+  {
+    "review_id": "3657e4157de16601",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        2375,
+        2376
+      ]
+    ],
+    "node_index": 1013,
+    "instance_name": "DFF_739_Q_reg"
+  },
+  {
+    "review_id": "ef6105b35a3e38ea",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4156,
+        4157
+      ]
+    ],
+    "node_index": 724,
+    "instance_name": "DFF_1652_Q_reg"
+  },
+  {
+    "review_id": "61302526f5d7bbc4",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        6612,
+        6612
+      ]
+    ],
+    "node_index": 3479,
+    "instance_name": "U5106"
+  },
+  {
+    "review_id": "1acb6b534c27a473",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9012,
+        9013
+      ]
+    ],
+    "node_index": 6071,
+    "instance_name": "U9515"
+  },
+  {
+    "review_id": "95fc9585a720d28e",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        945,
+        946
+      ]
+    ],
+    "node_index": 104,
+    "instance_name": "DFF_10_Q_reg"
+  },
+  {
+    "review_id": "694ca874e2208cfa",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8481,
+        8481
+      ]
+    ],
+    "node_index": 1567,
+    "instance_name": "Trojan3"
+  },
+  {
+    "review_id": "dfac67e986feb578",
+    "graph_id": "new_gate_v1/s35932-T200/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4939,
+        4939
+      ]
+    ],
+    "node_index": 2382,
+    "instance_name": "U4012"
+  },
+  {
+    "review_id": "512ed6cf9620ce68",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        4891,
+        4891
+      ]
+    ],
+    "node_index": 2597,
+    "instance_name": "U4764"
+  },
+  {
+    "review_id": "d6837474866f026d",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        7823,
+        7824
+      ]
+    ],
+    "node_index": 4801,
+    "instance_name": "U7000"
+  },
+  {
+    "review_id": "1a3d6f8f63d81790",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        4380,
+        4380
+      ]
+    ],
+    "node_index": 2165,
+    "instance_name": "U4364"
+  },
+  {
+    "review_id": "5d63293584594489",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        9592,
+        9592
+      ]
+    ],
+    "node_index": 6518,
+    "instance_name": "U9962"
+  },
+  {
+    "review_id": "993dce9617692ee3",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        7572,
+        7573
+      ]
+    ],
+    "node_index": 4611,
+    "instance_name": "U6810"
+  },
+  {
+    "review_id": "8abb6ee7fea6ebed",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8485,
+        8485
+      ]
+    ],
+    "node_index": 1569,
+    "instance_name": "Trojan5"
+  },
+  {
+    "review_id": "0a0039a085b4f124",
+    "graph_id": "new_gate_v1/s38417-T200/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8435,
+        8435
+      ]
+    ],
+    "node_index": 5306,
+    "instance_name": "U7502"
+  },
+  {
+    "review_id": "763d0a8710e25f6e",
+    "graph_id": "new_gate_v1/s38584-T100/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        947,
+        948
+      ]
+    ],
+    "node_index": 302,
+    "instance_name": "DFF_12_Q_reg"
+  },
+  {
+    "review_id": "8fde7fcdb6dc55ff",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        1668,
+        1669
+      ]
+    ],
+    "node_index": 615,
+    "instance_name": "DFF_325_Q_reg"
+  },
+  {
+    "review_id": "9b9548a0544abe8d",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        25,
+        25
+      ]
+    ],
+    "node_index": 1337,
+    "instance_name": "TrojanTrigger.add_73.Trojan_U1_1_2"
+  },
+  {
+    "review_id": "a69f637a813074c7",
+    "graph_id": "new_gate_v1/s38417-T300/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        8486,
+        8486
+      ]
+    ],
+    "node_index": 1599,
+    "instance_name": "Trojan6"
+  },
+  {
+    "review_id": "72dbcae7aae27cc5",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        8602,
+        8602
+      ]
+    ],
+    "node_index": 1738,
+    "instance_name": "Trojan8"
+  },
+  {
+    "review_id": "497a85e6b8ceea43",
+    "graph_id": "new_gate_v1/s35932-T100/trojan",
+    "source_spans": [
+      [
+        "s35932_scan.v",
+        4133,
+        4134
+      ]
+    ],
+    "node_index": 712,
+    "instance_name": "DFF_1641_Q_reg"
+  },
+  {
+    "review_id": "1042baf208baf8d9",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        112,
+        113
+      ]
+    ],
+    "node_index": 1323,
+    "instance_name": "TrojanTrigger.Trojan_counter_reg_8_"
+  },
+  {
+    "review_id": "ff741c8fef8a75df",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        98,
+        99
+      ]
+    ],
+    "node_index": 1296,
+    "instance_name": "TrojanTrigger.Trojan_counter_reg_12_"
+  },
+  {
+    "review_id": "469355a9e5370238",
+    "graph_id": "new_gate_v1/s38417-T100/trojan",
+    "source_spans": [
+      [
+        "s38417_scan.v",
+        7811,
+        7812
+      ]
+    ],
+    "node_index": 4793,
+    "instance_name": "U6992"
+  },
+  {
+    "review_id": "99e6de032a462dce",
+    "graph_id": "new_gate_v1/s38584-T200/trojan",
+    "source_spans": [
+      [
+        "s38584_scan.v",
+        4264,
+        4264
+      ]
+    ],
+    "node_index": 2258,
+    "instance_name": "U5702"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "protocol_version": "independent_benchmark_v1_2026-11-02",
+  "status": "frozen_before_multi_host_generation",
+  "upstream_tree": "experiments/independent_benchmark_v1/upstream_tree.json",
+  "source_kind": "gate_level_verilog_only",
+  "threat_model": "golden_reference_free_at_inference; clean twins used only for benchmark verification",
+  "host_split": {
+    "development": ["c2670", "c3540", "c5315", "s1423"],
+    "sealed_final_candidate": ["c6288", "s13207"],
+    "split_basis": "fixed before multi-host generation; three combinational and one sequential development host, one of each reserved",
+    "sealed_rule": "Do not synthesize, generate Trojan variants, inspect labels, or tune on sealed hosts until all controls and model settings are fixed. Their source files are fetched and hashed only."
+  },
+  "generator": {
+    "commit": "c7a1269c2c6fd4ebfaec2245c7613dba84fd0228",
+    "pilot_parameters": {
+      "trigger_nodes": 5,
+      "instances_per_host_mechanism": 2,
+      "vectors": 1000,
+      "max_rare": 100,
+      "detect": 1000,
+      "seeds": [11],
+      "mechanisms": ["combinational", "sequential"],
+      "counter_width": 4,
+      "no_visualize": true
+    },
+    "role": "one independent insertion implementation, not a held-out-generator test"
+  },
+  "required_before_model_training": [
+    "all upstream files match pinned Git blob hashes",
+    "development hosts have no exact source duplicate in local collection",
+    "generated source and summary hashes recorded",
+    "clean and infected netlists parse and have the expected top interface",
+    "Trojan-on output divergence witnessed independently for each variant",
+    "trigger reachable under a declared state/input domain",
+    "benign decoys exist and are independently proved equivalent",
+    "final graph gate lineage and unknown labels verified",
+    "size, gate statistics, WL, output-cone, generator ID and language/flow controls reported",
+    "no transparent control perfectly ranks every held-out development host"
+  ],
+  "claim_limits": [
+    "No paired original RTL for this source; gate-only result until a true RTL modality exists",
+    "Two reserved hosts are too few for a strong final uncertainty estimate",
+    "No second independent insertion generator yet",
+    "No expert-reviewed real Trust-Hub gate labels"
+  ]
+}

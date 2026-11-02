@@ -1,0 +1,177 @@
+[
+  {
+    "family": "AES",
+    "records": 34,
+    "domains": [
+      "yosys_verilog"
+    ],
+    "unique_clean_sources": 2,
+    "unique_trojan_sources": 17,
+    "unknown_fraction_range": [
+      0.04127669786417087,
+      0.04387755102040816
+    ],
+    "numeric_min": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "numeric_max": [
+      8.0,
+      131.0,
+      133.0,
+      132.0
+    ]
+  },
+  {
+    "family": "MC8051",
+    "records": 14,
+    "domains": [
+      "ghdl"
+    ],
+    "unique_clean_sources": 1,
+    "unique_trojan_sources": 7,
+    "unknown_fraction_range": [
+      0.0,
+      0.0
+    ],
+    "numeric_min": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "numeric_max": [
+      3.0,
+      511.0,
+      126.0,
+      126.0
+    ]
+  },
+  {
+    "family": "PIC16F84",
+    "records": 8,
+    "domains": [
+      "yosys_verilog"
+    ],
+    "unique_clean_sources": 1,
+    "unique_trojan_sources": 4,
+    "unknown_fraction_range": [
+      0.0016863406408094434,
+      0.001799370220422852
+    ],
+    "numeric_min": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "numeric_max": [
+      17.0,
+      106.0,
+      20.0,
+      38.0
+    ]
+  },
+  {
+    "family": "RS232",
+    "records": 8,
+    "domains": [
+      "yosys_verilog"
+    ],
+    "unique_clean_sources": 1,
+    "unique_trojan_sources": 4,
+    "unknown_fraction_range": [
+      0.0,
+      0.0
+    ],
+    "numeric_min": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "numeric_max": [
+      3.0,
+      15.0,
+      23.0,
+      22.0
+    ]
+  },
+  {
+    "family": "b15",
+    "records": 8,
+    "domains": [
+      "mapped"
+    ],
+    "unique_clean_sources": 1,
+    "unique_trojan_sources": 4,
+    "unknown_fraction_range": [
+      0.25484120836560803,
+      0.2991220102936724
+    ],
+    "numeric_min": [
+      0.0,
+      1.0,
+      0.0,
+      13.0
+    ],
+    "numeric_max": [
+      6.0,
+      150.0,
+      13.0,
+      14.0
+    ]
+  },
+  {
+    "family": "memctrl",
+    "records": 2,
+    "domains": [
+      "yosys_verilog"
+    ],
+    "unique_clean_sources": 1,
+    "unique_trojan_sources": 1,
+    "unknown_fraction_range": [
+      0.00021743857360295715,
+      0.00021829294913774285
+    ],
+    "numeric_min": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "numeric_max": [
+      4.0,
+      130.0,
+      17.0,
+      52.0
+    ]
+  },
+  {
+    "family": "s38584",
+    "records": 6,
+    "domains": [
+      "mapped"
+    ],
+    "unique_clean_sources": 1,
+    "unique_trojan_sources": 3,
+    "unknown_fraction_range": [
+      0.24298056155507558,
+      0.25652415324819544
+    ],
+    "numeric_min": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "numeric_max": [
+      6.0,
+      288.0,
+      12.0,
+      16.0
+    ]
+  }
+]

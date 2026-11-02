@@ -1,0 +1,7 @@
+{
+  "status": "awaiting_independent_review",
+  "rows": 162,
+  "graphs": 7,
+  "csv_sha256": "118a6786f72932d5189e3f080cf4c2c165430a47751c480970665ab94849e4a4",
+  "instructions": "Review each cell from the netlist and benchmark context; use 1 inserted trigger/payload, 0 confidently unrelated, -1 uncertain. Candidate labels and model scores are absent."
+}

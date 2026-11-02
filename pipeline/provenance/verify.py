@@ -25,7 +25,7 @@ def verify_one(folder):
     line_counts = {}
     for relative, expected_hash in metadata["sources"].items():
         if sha256(ROOT / relative) != expected_hash:
-            raise ValueError(f"Source RTL hash mismatch: {relative}")
+            raise ValueError(f"Source file hash mismatch: {relative}")
         filename = Path(relative).name
         if filename in line_counts:
             raise ValueError(f"Ambiguous source basename: {filename}")
@@ -46,7 +46,7 @@ def verify_one(folder):
     for ranges in metadata["source_ranges"]:
         for filename, start, end in ranges:
             if filename not in line_counts or not 1 <= start <= end <= line_counts[filename]:
-                raise ValueError(f"Source span points outside original RTL: {folder}: {filename}:{start}-{end}")
+                raise ValueError(f"Source span points outside recorded source: {folder}: {filename}:{start}-{end}")
     if names != expected_meta["node_names"] or metadata["source_ranges"] != json.loads(json.dumps(expected_meta["source_ranges"])):
         raise ValueError(f"Source/node order differs from Yosys JSON: {folder}")
     candidates_path = folder / "candidate_labels.json"
@@ -56,7 +56,8 @@ def verify_one(folder):
             raise ValueError(f"Candidate alignment/status mismatch: {folder}")
         if len(candidates["labels"]) != graph.num_nodes or any(v not in (-1, 0, 1) for v in candidates["labels"]):
             raise ValueError(f"Candidate label shape/value mismatch: {folder}")
-    return {"graph_id": graph.graph_id, "nodes": graph.num_nodes,
+    return {"graph_id": graph.graph_id, "source_level": metadata.get("source_level", "original_verilog_RTL"),
+            "nodes": graph.num_nodes,
             "source_covered_nodes": metadata["source_covered_nodes"],
             "candidate_trojan": (candidates["coverage"]["candidate_trojan"] if candidates_path.exists() else None)}
 
@@ -75,7 +76,8 @@ def main():
                "source_covered_nodes": sum(row["source_covered_nodes"] for row in rows),
                "trojan_candidate_nodes": sum(row["candidate_trojan"] or 0 for row in rows),
                "reviewed_gate_labels": 0,
-               "graph_version": "provenance_v1 (no ABC; differs from earlier and supplied ZIP graphs)"}
+               "graph_versions": sorted({row["graph_id"].split("/")[0] for row in rows}),
+               "source_levels": sorted({row["source_level"] for row in rows})}
     if args.verbose:
         summary["graphs_detail"] = rows
     print(json.dumps(summary, indent=2))

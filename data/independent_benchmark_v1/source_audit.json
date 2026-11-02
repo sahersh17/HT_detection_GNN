@@ -1,0 +1,193 @@
+{
+  "status": "source_intake_only",
+  "upstream_commit": "c7a1269c2c6fd4ebfaec2245c7613dba84fd0228",
+  "protocol_sha256": "a599b369b90f5f17ef70a8e0f709e4b01f06f4dae9898d28e94700c07349d578",
+  "upstream_tree_sha256": "6346a9c713d4c0c89ee4bcb7d86035447d4491c42a4c303905526cc0795f7a54",
+  "verified_files": [
+    {
+      "path": "LICENSE",
+      "sha256": "313f8cce1ca89eecd4f0c83906c19e0aceb781287671287ba37a295bb3947f91",
+      "git_blob_sha1": "16e23fdd90619a80a049970d362ea28b3bd62a6e",
+      "bytes": 1069
+    },
+    {
+      "path": "ht_framework/__init__.py",
+      "sha256": "19034177243c7bec6e9c4533232525ac224e8d12fbc6b818f167148ee1fdba6c",
+      "git_blob_sha1": "5e32aa1af04569bda342233edd89883da308e514",
+      "bytes": 104
+    },
+    {
+      "path": "ht_framework/compatibility_graph.py",
+      "sha256": "c80caacec1b9427746e518cacb278d93406f1207b2f402e2d5d3d5b3ecc556bf",
+      "git_blob_sha1": "97c06719ad26c4afe31405f7a656157a7d16098f",
+      "bytes": 11638
+    },
+    {
+      "path": "ht_framework/mero_detection.py",
+      "sha256": "3bdf98096f05bc65edd99925003fdbd792c97ede5ccb1c85bb953d93377d6699",
+      "git_blob_sha1": "97d68eed80e9a61bbf7449c91d0327c4e04f61fc",
+      "bytes": 4626
+    },
+    {
+      "path": "ht_framework/nangate_converter.py",
+      "sha256": "09bdf51dd37b098e86d14b42027a16e58ab0496237cfa7e00d975ad629d0487e",
+      "git_blob_sha1": "3b853f73c84348a175925efb2d6ad5545ae234e7",
+      "bytes": 14851
+    },
+    {
+      "path": "ht_framework/netlist_converter.py",
+      "sha256": "6f5ba39fd1c42487ba8e6a04f4608ce297df0278b5c47c25ed5754c8412e235f",
+      "git_blob_sha1": "dde71ac1f39536e442323ec3806ebd8a8005a615",
+      "bytes": 12563
+    },
+    {
+      "path": "ht_framework/netlist_simulation.py",
+      "sha256": "0237daf7873d88e3848ca51666707bde1f173626e2f27824249867e60aba3d6d",
+      "git_blob_sha1": "8b9781d4b769d11eb5eaa056c3299d4c3c9ed329",
+      "bytes": 7934
+    },
+    {
+      "path": "ht_framework/pipeline.py",
+      "sha256": "2f74e7b797c3aa279729555078085e1b402b86b7a336ccec07146410ef323968",
+      "git_blob_sha1": "321e6554065f73f3ed155634951f1c6043463a47",
+      "bytes": 10746
+    },
+    {
+      "path": "ht_framework/podem_atpg.py",
+      "sha256": "bb6ccee25f295cca6a31ff61bfc59cefd79d6840b4937b3f6c4de4521c7f5fb3",
+      "git_blob_sha1": "4671a7e9a7e45fab66cd6aa12088f8b0d862dc78",
+      "bytes": 19429
+    },
+    {
+      "path": "ht_framework/rare_nodes.py",
+      "sha256": "68ece5206ab9d1bf18a010b02a63c518d86ca093b1ae1f1cf14f48916abe3eee",
+      "git_blob_sha1": "b69ed0aa7a33ea22f06b64f947cd4e5be7b02a11",
+      "bytes": 4529
+    },
+    {
+      "path": "ht_framework/trojan_insertion.py",
+      "sha256": "eb2f76a476f2ff409743935cd9f4c81e89c610db475e30c87da0a1f9dfb3f597",
+      "git_blob_sha1": "3b1202b41ba61b8b9018368da57f16ad19f52708",
+      "bytes": 23084
+    },
+    {
+      "path": "ht_framework/trojan_validation.py",
+      "sha256": "c9ff987aa0133e6f2d4b6c6421e83ec85a181ab66ac27ccc9092dd6a3b978505",
+      "git_blob_sha1": "8582f1a53f1bd51f6efad061aaf1b342311e5175",
+      "bytes": 11122
+    },
+    {
+      "path": "ht_framework/trojan_visualize.py",
+      "sha256": "9354c5740450d12507341d75af76d048f4e19bfc401fd1393af19eac0a75d09c",
+      "git_blob_sha1": "6f3c4e0ef2c788fdd8321130b70a05083eb1fb9e",
+      "bytes": 16720
+    },
+    {
+      "path": "main.py",
+      "sha256": "5fb77672c01442678173636257a373f3c8034b1a3564d7329648f9a343cea2fd",
+      "git_blob_sha1": "d85bd467789de429162ca95bcc0718c560be0bbe",
+      "bytes": 5720
+    },
+    {
+      "path": "netlists/c2670.v",
+      "sha256": "2a994880951891d7ea020e62189bcd7ee536a706defddd1bfe4f47e9ef5684a5",
+      "git_blob_sha1": "460f19ac75b05edffbdddf4319d082671e9ec257",
+      "bytes": 48630
+    },
+    {
+      "path": "netlists/c3540.v",
+      "sha256": "22c7abf90406fb06a9d1d835912195b8948703d3bb4120ae7823cc3eb13a2b94",
+      "git_blob_sha1": "fd1e49325546e8f180f7cf6928815d34744a0683",
+      "bytes": 71849
+    },
+    {
+      "path": "netlists/c5315.v",
+      "sha256": "2b9fc2d4db5b397853218b84367cb575e9d06cc66fbf1a1132751ab5a073ac54",
+      "git_blob_sha1": "e884120704e687e316f7f1dd5c3bb313156a0b26",
+      "bytes": 136796
+    },
+    {
+      "path": "netlists/c6288.v",
+      "sha256": "236c6812c0c48587506d4020e0c37f3ec502acb597d56c655ec2e745dace7c6f",
+      "git_blob_sha1": "e0106331e780056e8eb990dfd471323fb001e778",
+      "bytes": 145163
+    },
+    {
+      "path": "netlists/s13207scan.v",
+      "sha256": "7e9299f2d8c7fceacfba468bbfcd36c254a1bd66bba71280a12341b90cacf95c",
+      "git_blob_sha1": "137d9f1ac36f6b2d2593eed956aceb551b781dd8",
+      "bytes": 188448
+    },
+    {
+      "path": "netlists/s1423scan.v",
+      "sha256": "015e52d56c886b4d333adc4c23b84318a0a6d33b45f7c874a6f15aad762de030",
+      "git_blob_sha1": "ceddb89c4762d56e14dec8322886dfc5eab2c603",
+      "bytes": 33499
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "2a4a82f9b1df3d9dc2aaf0554f03012ff9acc9726e53b8dcf1166ad050ab56c5",
+      "git_blob_sha1": "42106b74d2b62e63056e5b90f79c65eac031869a",
+      "bytes": 63
+    }
+  ],
+  "host_dedup": [
+    {
+      "host": "c2670",
+      "source": "netlists/c2670.v",
+      "source_sha256": "2a994880951891d7ea020e62189bcd7ee536a706defddd1bfe4f47e9ef5684a5",
+      "normalized_sha256": "e9501265c3138fc5bf7af54bbb1adbbcf4471011738956b276b03c96a0dd81c5",
+      "exact_local_matches": [],
+      "comment_whitespace_normalized_matches": []
+    },
+    {
+      "host": "c3540",
+      "source": "netlists/c3540.v",
+      "source_sha256": "22c7abf90406fb06a9d1d835912195b8948703d3bb4120ae7823cc3eb13a2b94",
+      "normalized_sha256": "c2c49eb9905139c48a6d10032c8bcc94e887494e7643cc95b71221ad90254d7f",
+      "exact_local_matches": [],
+      "comment_whitespace_normalized_matches": []
+    },
+    {
+      "host": "c5315",
+      "source": "netlists/c5315.v",
+      "source_sha256": "2b9fc2d4db5b397853218b84367cb575e9d06cc66fbf1a1132751ab5a073ac54",
+      "normalized_sha256": "de61af8935460ee222660813ca42177ae7e45797d90133ce338fe73c1746f35b",
+      "exact_local_matches": [],
+      "comment_whitespace_normalized_matches": []
+    },
+    {
+      "host": "s1423",
+      "source": "netlists/s1423scan.v",
+      "source_sha256": "015e52d56c886b4d333adc4c23b84318a0a6d33b45f7c874a6f15aad762de030",
+      "normalized_sha256": "68cf3d888200590d377839025804f5234bfde798595da5a21a64263009b14c73",
+      "exact_local_matches": [],
+      "comment_whitespace_normalized_matches": []
+    },
+    {
+      "host": "c6288",
+      "source": "netlists/c6288.v",
+      "source_sha256": "236c6812c0c48587506d4020e0c37f3ec502acb597d56c655ec2e745dace7c6f",
+      "normalized_sha256": "833471aa7c976491c5f7b8234d44d178e61cd11de7b0b69f30ab23b54539bb64",
+      "exact_local_matches": [],
+      "comment_whitespace_normalized_matches": []
+    },
+    {
+      "host": "s13207",
+      "source": "netlists/s13207scan.v",
+      "source_sha256": "7e9299f2d8c7fceacfba468bbfcd36c254a1bd66bba71280a12341b90cacf95c",
+      "normalized_sha256": "593eee3914c9ad2faa0ba963812ce44d743e6d46ed9b65a75cbdd76dc3975f72",
+      "exact_local_matches": [],
+      "comment_whitespace_normalized_matches": []
+    }
+  ],
+  "sealed_final_candidate": [
+    "c6288",
+    "s13207"
+  ],
+  "limitations": [
+    "Only exact and whitespace/comment-normalized source duplicates checked",
+    "No final host generated or synthesized",
+    "No semantic benchmark gate passed"
+  ]
+}

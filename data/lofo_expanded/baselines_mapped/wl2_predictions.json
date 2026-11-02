@@ -1,0 +1,282 @@
+[
+  {
+    "fold": 0,
+    "family": "b15",
+    "benchmark": "b15-T100",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "46c793d7f2846b8f1075c06ae92a64b0d16bfe1880285177932e02173794ab64"
+  },
+  {
+    "fold": 0,
+    "family": "b15",
+    "benchmark": "b15-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "958d5d219e2d18e7703b8028b758f6909272139d25f67ead230147d6a0eedc6b"
+  },
+  {
+    "fold": 0,
+    "family": "b15",
+    "benchmark": "b15-T200",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "46c793d7f2846b8f1075c06ae92a64b0d16bfe1880285177932e02173794ab64"
+  },
+  {
+    "fold": 0,
+    "family": "b15",
+    "benchmark": "b15-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "24cd10967661776652a3deea4d457ea156f912a83eaf8e466808614cec1fa9f3"
+  },
+  {
+    "fold": 0,
+    "family": "b15",
+    "benchmark": "b15-T300",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "46c793d7f2846b8f1075c06ae92a64b0d16bfe1880285177932e02173794ab64"
+  },
+  {
+    "fold": 0,
+    "family": "b15",
+    "benchmark": "b15-T300",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "c4bc0ac4439876cdd1dae0587d7a1b6d44c5c73f8171c974356851f22d08d809"
+  },
+  {
+    "fold": 0,
+    "family": "b15",
+    "benchmark": "b15-T400",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "46c793d7f2846b8f1075c06ae92a64b0d16bfe1880285177932e02173794ab64"
+  },
+  {
+    "fold": 0,
+    "family": "b15",
+    "benchmark": "b15-T400",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "4820514063e72c533eee7a7fbfe427b7d7cf6a92c280410d30cef5045b50dd61"
+  },
+  {
+    "fold": 1,
+    "family": "s15850",
+    "benchmark": "s15850-T100",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 0.9989030361175537,
+    "predicted_label": 1,
+    "source_id": "f555524c57ece56931d2e2addad04e21e8988c7ed0eb6b08a33511da7f965424"
+  },
+  {
+    "fold": 1,
+    "family": "s15850",
+    "benchmark": "s15850-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 0.9999479055404663,
+    "predicted_label": 1,
+    "source_id": "fdd31289e6cbcc1ad6507d8d8e02e0d4573373800c331d56dc929535feb14e68"
+  },
+  {
+    "fold": 2,
+    "family": "s35932",
+    "benchmark": "s35932-T100",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "f1255f61067f8e7239cd80ca18eefb6af9270b412d4e2db0d38cbd93e7505cbe"
+  },
+  {
+    "fold": 2,
+    "family": "s35932",
+    "benchmark": "s35932-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "c402ac88e4721a8485b8731ed2293a6a2d2d23593fdedd5f4979576d113defb4"
+  },
+  {
+    "fold": 2,
+    "family": "s35932",
+    "benchmark": "s35932-T200",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "f1255f61067f8e7239cd80ca18eefb6af9270b412d4e2db0d38cbd93e7505cbe"
+  },
+  {
+    "fold": 2,
+    "family": "s35932",
+    "benchmark": "s35932-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "78693ceb98418371e0cc91aa5146516268a89fa5696b6e90362e764286682724"
+  },
+  {
+    "fold": 2,
+    "family": "s35932",
+    "benchmark": "s35932-T300",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "f1255f61067f8e7239cd80ca18eefb6af9270b412d4e2db0d38cbd93e7505cbe"
+  },
+  {
+    "fold": 2,
+    "family": "s35932",
+    "benchmark": "s35932-T300",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "1aa298872aa267e432df7351f98f1c5c0eca201462ef50d30f7165a921517701"
+  },
+  {
+    "fold": 3,
+    "family": "s38417",
+    "benchmark": "s38417-T100",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 0.9981765747070312,
+    "predicted_label": 1,
+    "source_id": "a674215b6edb0fb80f0fd1baa640b1ce6210b1e2f04b70ec46f2ead5a5fe11fc"
+  },
+  {
+    "fold": 3,
+    "family": "s38417",
+    "benchmark": "s38417-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 0.9957695007324219,
+    "predicted_label": 1,
+    "source_id": "5a1f51a3a9e83dc27c3ba12e607f5484c0686b6d06a9a432d448c6861dac0e7b"
+  },
+  {
+    "fold": 3,
+    "family": "s38417",
+    "benchmark": "s38417-T200",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 0.9981765747070312,
+    "predicted_label": 1,
+    "source_id": "a674215b6edb0fb80f0fd1baa640b1ce6210b1e2f04b70ec46f2ead5a5fe11fc"
+  },
+  {
+    "fold": 3,
+    "family": "s38417",
+    "benchmark": "s38417-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 0.9979138970375061,
+    "predicted_label": 1,
+    "source_id": "5162df9da9b33d8838dde24e111ff6cb93e098c4f867b538cea358b289935a82"
+  },
+  {
+    "fold": 3,
+    "family": "s38417",
+    "benchmark": "s38417-T300",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 0.9981765747070312,
+    "predicted_label": 1,
+    "source_id": "a674215b6edb0fb80f0fd1baa640b1ce6210b1e2f04b70ec46f2ead5a5fe11fc"
+  },
+  {
+    "fold": 3,
+    "family": "s38417",
+    "benchmark": "s38417-T300",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 0.9999878406524658,
+    "predicted_label": 1,
+    "source_id": "7c14c100e1614470c0e0b92a8a0edf853c2e9b2ab7e95db039a6be45660420d6"
+  },
+  {
+    "fold": 4,
+    "family": "s38584",
+    "benchmark": "s38584-T100",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "7132cdfaecbb46e1381f13d026d12ca14d698e604d7da2d655bcf9f4edff2402"
+  },
+  {
+    "fold": 4,
+    "family": "s38584",
+    "benchmark": "s38584-T100",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "866dfb6137cb83e8ecaf40bcb5169d5658191115d4ffcdefdc6180e688ffeea3"
+  },
+  {
+    "fold": 4,
+    "family": "s38584",
+    "benchmark": "s38584-T200",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "7132cdfaecbb46e1381f13d026d12ca14d698e604d7da2d655bcf9f4edff2402"
+  },
+  {
+    "fold": 4,
+    "family": "s38584",
+    "benchmark": "s38584-T200",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "5889586c07faa329d4ca26668a13b10c95d9ebdc9a35f773e0ac36655c66addd"
+  },
+  {
+    "fold": 4,
+    "family": "s38584",
+    "benchmark": "s38584-T300",
+    "side": "clean",
+    "true_label": 0,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "7132cdfaecbb46e1381f13d026d12ca14d698e604d7da2d655bcf9f4edff2402"
+  },
+  {
+    "fold": 4,
+    "family": "s38584",
+    "benchmark": "s38584-T300",
+    "side": "trojan",
+    "true_label": 1,
+    "prob_trojan": 1.0,
+    "predicted_label": 1,
+    "source_id": "394bcd2a207912974427c0604e547504f991f218b65b8deedef29065cb87d82b"
+  }
+]

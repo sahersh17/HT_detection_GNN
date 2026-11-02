@@ -1,0 +1,122 @@
+{
+  "status": "preflight_not_a_valid_length_decoupling_result",
+  "model_revision": "3b0952feddeffad0063f274080e3c23d75e7eb39",
+  "benchmark_pairs": 2,
+  "records": [
+    {
+      "benchmark": "AES-T100",
+      "side": "clean",
+      "original": {
+        "chars": 20067,
+        "lines": 764,
+        "chunks": 28
+      },
+      "final": {
+        "chars": 29027,
+        "lines": 966,
+        "chunks": 38
+      },
+      "padding_assignment_lines": 199,
+      "padding_extra_xor_terms": 0,
+      "padding_bytes": 8958,
+      "padding_sha256": "e4090d79cb7c18c9f53edeb199df2d379a7bd2d9b16c4ab9b9155db9e96d844e",
+      "source_sha256": {
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/aes_128.v": "53599f6bd706619001582894a8133f649c6bae3ad3b547df105297914f57cfde",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/round.v": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjFree/table.v": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157"
+      },
+      "yosys_json_sha256": "778185d1f8f37a2044d5b41c5eff80a327315d4b0377a1b57940af3fca81485a",
+      "top_inventory_unchanged": true
+    },
+    {
+      "benchmark": "AES-T100",
+      "side": "trojan",
+      "original": {
+        "chars": 24310,
+        "lines": 926,
+        "chunks": 32
+      },
+      "final": {
+        "chars": 29027,
+        "lines": 966,
+        "chunks": 39
+      },
+      "padding_assignment_lines": 37,
+      "padding_extra_xor_terms": 306,
+      "padding_bytes": 4715,
+      "padding_sha256": "729099bb3b52acb82e0a106feb38b03a841c5659f970c3fe8ef615d331d6929d",
+      "source_sha256": {
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjIn/aes_128.v": "53599f6bd706619001582894a8133f649c6bae3ad3b547df105297914f57cfde",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjIn/lfsr.v": "7344df17ce639b499eac4a14cf47ebb6ccbc275f856879ea75bdcbdf76f9b20c",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjIn/round.v": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjIn/table.v": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjIn/top.v": "56d6e4938acc5db29a543c731c10c8b138bc0f43ac62a96a985186e8c17f4631",
+        "trusthub/AES_unzipped/AES-T100/AES-T100/src/TjIn/TSC.v": "805429e2a0f02794b158b30c650e77e1e09ae1fcdca2daa90736ae7eccae339a"
+      },
+      "yosys_json_sha256": "a39b31dd27a58b8e8fd31667534a11ff7b5289a429c8440e6e6cee46dd1f28a1",
+      "top_inventory_unchanged": true
+    },
+    {
+      "benchmark": "RS232-T2100",
+      "side": "clean",
+      "original": {
+        "chars": 7515,
+        "lines": 422,
+        "chunks": 10
+      },
+      "final": {
+        "chars": 9668,
+        "lines": 469,
+        "chunks": 12
+      },
+      "padding_assignment_lines": 44,
+      "padding_extra_xor_terms": 0,
+      "padding_bytes": 2151,
+      "padding_sha256": "05165e8b860778f1ebb4559cdb8965bc262dac24ebe43d39aeb1bb45d98c5c86",
+      "source_sha256": {
+        "trusthub/netlists/RS232/RS232-T2100/tjfree_patched_src/u_rec.v": "3b3b810ac5d041faa49c003ce73bff192f935b49ff4e1c389755e7b2e10816cc",
+        "trusthub/netlists/RS232/RS232-T2100/tjfree_patched_src/u_xmit.v": "8c0d4854444ffa3aa79bd8fa1b6a518ae52f0f9ec1715561c605d28eaaaf8499",
+        "trusthub/netlists/RS232/RS232-T2100/tjfree_patched_src/uart.v": "6ba811c694f72eeb265d6187bf7c9ee7a693a48d3a0aa041c1ded3716d34da34"
+      },
+      "yosys_json_sha256": "b7f160e67a6f3b15c122ab78d71ed27f78aa2d62863f23bc52efda67859e65c4",
+      "top_inventory_unchanged": true
+    },
+    {
+      "benchmark": "RS232-T2100",
+      "side": "trojan",
+      "original": {
+        "chars": 7741,
+        "lines": 429,
+        "chunks": 10
+      },
+      "final": {
+        "chars": 9668,
+        "lines": 469,
+        "chunks": 12
+      },
+      "padding_assignment_lines": 37,
+      "padding_extra_xor_terms": 0,
+      "padding_bytes": 1925,
+      "padding_sha256": "577993e8f17c0ad05c56446317106948d971da7d5b26b9a116692305a82ef01c",
+      "source_sha256": {
+        "trusthub/netlists/RS232/RS232-T2100/tjin_patched_src/u_rec.v": "dad824d461ab800082ea296e82ca06d8202a68088e306e4f5160e6cee2934449",
+        "trusthub/netlists/RS232/RS232-T2100/tjin_patched_src/u_xmit.v": "8c0d4854444ffa3aa79bd8fa1b6a518ae52f0f9ec1715561c605d28eaaaf8499",
+        "trusthub/netlists/RS232/RS232-T2100/tjin_patched_src/uart.v": "6ba811c694f72eeb265d6187bf7c9ee7a693a48d3a0aa041c1ded3716d34da34"
+      },
+      "yosys_json_sha256": "404d9fec22049e8c16a397413dad2980cad9740979c35d982006bc9144912b6a",
+      "top_inventory_unchanged": false
+    }
+  ],
+  "all_chars_lines_chunks_matched": false,
+  "matched_by_pair": {
+    "AES-T100": false,
+    "RS232-T2100": true
+  },
+  "top_inventory_unchanged_sides": 3,
+  "transparent_rule": "more padding assignment lines implies clean",
+  "rule_correct_pairs": 2,
+  "limits": [
+    "Uninstantiated modules are removed by synthesis; only top port/cell inventory equality checked",
+    "No RTL detector trained because padding amount is a label shortcut"
+  ]
+}

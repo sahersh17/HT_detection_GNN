@@ -1,0 +1,32 @@
+{
+  "protocol_version": "independent_benchmark_v2_2026-11-02",
+  "status": "separate_reproducibility_repair_of_v1_exploratory_generator",
+  "reason_for_new_version": "The upstream tool generated different gate netlists at the same documented seed in distinct Python processes; hash iteration was not pinned in v1.",
+  "upstream_tree": "experiments/independent_benchmark_v1/upstream_tree.json",
+  "upstream_commit": "c7a1269c2c6fd4ebfaec2245c7613dba84fd0228",
+  "pythonhashseed": "0",
+  "host_split": {
+    "development": ["c2670", "c3540", "c5315", "s1423"],
+    "sealed_final_candidate": ["c6288", "s13207"]
+  },
+  "generator_settings": {
+    "trigger_nodes": 5,
+    "instances_per_host_mechanism": 2,
+    "vectors": 1000,
+    "max_rare": 100,
+    "detect": 1000,
+    "seeds": [11],
+    "mechanisms": ["combinational", "sequential"],
+    "counter_width": 4,
+    "no_visualize": true
+  },
+  "model_training_allowed": false,
+  "pending_gates": [
+    "deterministic independent rerun",
+    "independent Trojan-on behavior witnesses",
+    "verified equivalent benign decoys",
+    "synthesized graph label lineage",
+    "transparent shortcut controls",
+    "second independent insertion generator and untouched host test"
+  ]
+}

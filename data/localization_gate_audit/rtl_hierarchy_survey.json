@@ -1,0 +1,438 @@
+[
+  {
+    "benchmark": "AES-T100",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 12,
+    "trojan_only_modules": [
+      "TSC",
+      "lfsr_counter",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T1000",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 13,
+    "trojan_only_modules": [
+      "TSC",
+      "Trojan_Trigger",
+      "lfsr_counter",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T1100",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 13,
+    "trojan_only_modules": [
+      "TSC",
+      "Trojan_Trigger",
+      "lfsr_counter",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T1200",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 13,
+    "trojan_only_modules": [
+      "TSC",
+      "Trojan_Trigger",
+      "lfsr_counter",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T1600",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 12,
+    "trojan_only_modules": [
+      "AM_Transmission",
+      "Trojan_Trigger",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T1700",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 12,
+    "trojan_only_modules": [
+      "AM_Transmission",
+      "Trojan_Trigger",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T200",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 12,
+    "trojan_only_modules": [
+      "TSC",
+      "lfsr_counter",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T2300",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 10,
+    "trojan_only_modules": [
+      "TSC"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T2400",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 10,
+    "trojan_only_modules": [
+      "TSC"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T2500",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 10,
+    "trojan_only_modules": [
+      "TSC"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T2600",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 10,
+    "trojan_only_modules": [
+      "TSC"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T2700",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 10,
+    "trojan_only_modules": [
+      "TSC"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T2800",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 10,
+    "trojan_only_modules": [
+      "TSC"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T400",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 12,
+    "trojan_only_modules": [
+      "AM_Transmission",
+      "Trojan_Trigger",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T700",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 13,
+    "trojan_only_modules": [
+      "TSC",
+      "Trojan_Trigger",
+      "lfsr_counter",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T800",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 13,
+    "trojan_only_modules": [
+      "TSC",
+      "Trojan_Trigger",
+      "lfsr_counter",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "AES-T900",
+    "family": "AES",
+    "clean_module_count": 9,
+    "trojan_module_count": 13,
+    "trojan_only_modules": [
+      "TSC",
+      "Trojan_Trigger",
+      "lfsr_counter",
+      "top"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "MC8051-T200",
+    "family": "MC8051",
+    "clean_module_count": 29,
+    "trojan_module_count": 29,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "MC8051-T300",
+    "family": "MC8051",
+    "clean_module_count": 29,
+    "trojan_module_count": 29,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "MC8051-T400",
+    "family": "MC8051",
+    "clean_module_count": 29,
+    "trojan_module_count": 29,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "MC8051-T500",
+    "family": "MC8051",
+    "clean_module_count": 29,
+    "trojan_module_count": 29,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "MC8051-T600",
+    "family": "MC8051",
+    "clean_module_count": 29,
+    "trojan_module_count": 29,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "MC8051-T700",
+    "family": "MC8051",
+    "clean_module_count": 29,
+    "trojan_module_count": 29,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "MC8051-T800",
+    "family": "MC8051",
+    "clean_module_count": 29,
+    "trojan_module_count": 29,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "PIC16F84-T100",
+    "family": "PIC16F84",
+    "clean_module_count": 1,
+    "trojan_module_count": 1,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "PIC16F84-T200",
+    "family": "PIC16F84",
+    "clean_module_count": 1,
+    "trojan_module_count": 1,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "PIC16F84-T300",
+    "family": "PIC16F84",
+    "clean_module_count": 1,
+    "trojan_module_count": 1,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "PIC16F84-T400",
+    "family": "PIC16F84",
+    "clean_module_count": 1,
+    "trojan_module_count": 1,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "RS232-T2100",
+    "family": "RS232",
+    "clean_module_count": 3,
+    "trojan_module_count": 3,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "RS232-T2200",
+    "family": "RS232",
+    "clean_module_count": 3,
+    "trojan_module_count": 3,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "RS232-T2300",
+    "family": "RS232",
+    "clean_module_count": 3,
+    "trojan_module_count": 3,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "RS232-T2400",
+    "family": "RS232",
+    "clean_module_count": 3,
+    "trojan_module_count": 3,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "b15-T100",
+    "family": "b15",
+    "clean_module_count": 16,
+    "trojan_module_count": 16,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "b15-T200",
+    "family": "b15",
+    "clean_module_count": 16,
+    "trojan_module_count": 16,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "b15-T300",
+    "family": "b15",
+    "clean_module_count": 16,
+    "trojan_module_count": 16,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "b15-T400",
+    "family": "b15",
+    "clean_module_count": 16,
+    "trojan_module_count": 16,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "memctrl-T100",
+    "family": "memctrl",
+    "clean_module_count": 15,
+    "trojan_module_count": 15,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "s38584-T100",
+    "family": "s38584",
+    "clean_module_count": 1,
+    "trojan_module_count": 1,
+    "trojan_only_modules": [],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "s38584-T200",
+    "family": "s38584",
+    "clean_module_count": 1,
+    "trojan_module_count": 3,
+    "trojan_only_modules": [
+      "RareVectorTrigger",
+      "RareVectorTrigger_DW01_inc_0"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  },
+  {
+    "benchmark": "s38584-T300",
+    "family": "s38584",
+    "clean_module_count": 1,
+    "trojan_module_count": 11,
+    "trojan_only_modules": [
+      "HighActiveRegionDetection",
+      "HighActiveRegionDetection_DW01_inc_0",
+      "HighActiveRegionDetection_DW01_inc_1",
+      "HighActiveRegionDetection_DW01_inc_2",
+      "HighActiveRegionDetection_DW01_inc_3",
+      "HighActiveRegionDetection_DW01_inc_4",
+      "HighActiveRegionDetection_DW01_inc_5",
+      "HighActiveRegionDetection_DW01_inc_6",
+      "HighActiveRegionDetection_DW01_inc_7",
+      "HighActiveRegionDetection_DW01_inc_8"
+    ],
+    "clean_only_modules": [],
+    "status": "unreviewed_module_inventory"
+  }
+]

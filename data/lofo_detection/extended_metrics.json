@@ -1,0 +1,120 @@
+{
+  "status": "derived_from_fixed_seed_42_predictions",
+  "metrics": {
+    "AES": {
+      "samples": 34,
+      "unique_clean_sources": 2,
+      "auroc": 0.8823529411764706,
+      "average_precision": 0.9402852049910875,
+      "pairwise": {
+        "pairs": 17,
+        "wins": 15,
+        "accuracy": 0.8823529411764706
+      },
+      "predicted_classes": {
+        "clean": 17,
+        "trojan": 0
+      }
+    },
+    "MC8051": {
+      "samples": 14,
+      "unique_clean_sources": 1,
+      "auroc": 0.14285714285714285,
+      "average_precision": 0.4662948162948163,
+      "pairwise": {
+        "pairs": 7,
+        "wins": 1,
+        "accuracy": 0.14285714285714285
+      },
+      "predicted_classes": {
+        "clean": 0,
+        "trojan": 7
+      }
+    },
+    "PIC16F84": {
+      "samples": 8,
+      "unique_clean_sources": 1,
+      "auroc": 0.25,
+      "average_precision": 0.5654761904761905,
+      "pairwise": {
+        "pairs": 4,
+        "wins": 1,
+        "accuracy": 0.25
+      },
+      "predicted_classes": {
+        "clean": 0,
+        "trojan": 4
+      }
+    },
+    "RS232": {
+      "samples": 8,
+      "unique_clean_sources": 1,
+      "auroc": 0.0,
+      "average_precision": 0.36547619047619045,
+      "pairwise": {
+        "pairs": 4,
+        "wins": 0,
+        "accuracy": 0.0
+      },
+      "predicted_classes": {
+        "clean": 4,
+        "trojan": 0
+      }
+    },
+    "b15": {
+      "samples": 8,
+      "unique_clean_sources": 1,
+      "auroc": 1.0,
+      "average_precision": 1.0,
+      "pairwise": {
+        "pairs": 4,
+        "wins": 4,
+        "accuracy": 1.0
+      },
+      "predicted_classes": {
+        "clean": 4,
+        "trojan": 4
+      }
+    },
+    "memctrl": {
+      "samples": 2,
+      "unique_clean_sources": 1,
+      "auroc": 1.0,
+      "average_precision": 1.0,
+      "pairwise": {
+        "pairs": 1,
+        "wins": 1,
+        "accuracy": 1.0
+      },
+      "predicted_classes": {
+        "clean": 0,
+        "trojan": 1
+      }
+    },
+    "s38584": {
+      "samples": 6,
+      "unique_clean_sources": 1,
+      "auroc": 1.0,
+      "average_precision": 1.0,
+      "pairwise": {
+        "pairs": 3,
+        "wins": 3,
+        "accuracy": 1.0
+      },
+      "predicted_classes": {
+        "clean": 3,
+        "trojan": 2
+      }
+    },
+    "_pooled": {
+      "samples": 80,
+      "auroc": 0.565625,
+      "average_precision": 0.5473190228327167,
+      "pairwise": {
+        "pairs": 40,
+        "wins": 25,
+        "accuracy": 0.625
+      }
+    }
+  }
+}
