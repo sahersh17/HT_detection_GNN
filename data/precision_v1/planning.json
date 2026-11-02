@@ -1,0 +1,560 @@
+{
+  "basis": "Pointwise expected normal-approximation half-width, pilot sample SD, means and variances held fixed. No simultaneous assurance.",
+  "pilot_families": 6,
+  "estimated_total": 69,
+  "estimated_additional": 63,
+  "centered_scenario_total": 24,
+  "intervals": [
+    {
+      "domain": "class",
+      "arm": "clean",
+      "control": "characters",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.75
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "class",
+      "arm": "clean",
+      "control": "comment_fraction",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.75
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "class",
+      "arm": "clean",
+      "control": "normalized_tokens",
+      "mean": 0.5833333333333334,
+      "ci95": [
+        0.5,
+        0.75
+      ],
+      "sd": 0.2041241452319315,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.5,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 12,
+      "planning_n_if_centered": 5
+    },
+    {
+      "domain": "class",
+      "arm": "clean",
+      "control": "normalized_characters",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.75
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "class",
+      "arm": "clean",
+      "control": "cells",
+      "mean": 0.5833333333333334,
+      "ci95": [
+        0.25,
+        0.9166666666666666
+      ],
+      "sd": 0.4915960401250875,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.5,
+        0.7
+      ],
+      "planning_n_if_mean_persists": 69,
+      "planning_n_if_centered": 24
+    },
+    {
+      "domain": "class",
+      "arm": "clean",
+      "control": "edges",
+      "mean": 0.4166666666666667,
+      "ci95": [
+        0.08333333333333333,
+        0.75
+      ],
+      "sd": 0.4915960401250875,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.3,
+        0.5
+      ],
+      "planning_n_if_mean_persists": 69,
+      "planning_n_if_centered": 24
+    },
+    {
+      "domain": "class",
+      "arm": "benign",
+      "control": "characters",
+      "mean": 0.4166666666666667,
+      "ci95": [
+        0.16666666666666666,
+        0.6666666666666666
+      ],
+      "sd": 0.3763863263545405,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.3,
+        0.5
+      ],
+      "planning_n_if_mean_persists": 40,
+      "planning_n_if_centered": 14
+    },
+    {
+      "domain": "class",
+      "arm": "benign",
+      "control": "comment_fraction",
+      "mean": 0.5833333333333334,
+      "ci95": [
+        0.3333333333333333,
+        0.8333333333333334
+      ],
+      "sd": 0.3763863263545405,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.5,
+        0.7
+      ],
+      "planning_n_if_mean_persists": 40,
+      "planning_n_if_centered": 14
+    },
+    {
+      "domain": "class",
+      "arm": "benign",
+      "control": "normalized_tokens",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.75
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "class",
+      "arm": "benign",
+      "control": "normalized_characters",
+      "mean": 0.4166666666666667,
+      "ci95": [
+        0.16666666666666666,
+        0.6666666666666666
+      ],
+      "sd": 0.3763863263545405,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.3,
+        0.5
+      ],
+      "planning_n_if_mean_persists": 40,
+      "planning_n_if_centered": 14
+    },
+    {
+      "domain": "class",
+      "arm": "benign",
+      "control": "cells",
+      "mean": 0.5833333333333334,
+      "ci95": [
+        0.25,
+        0.9166666666666666
+      ],
+      "sd": 0.4915960401250875,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.5,
+        0.7
+      ],
+      "planning_n_if_mean_persists": 69,
+      "planning_n_if_centered": 24
+    },
+    {
+      "domain": "class",
+      "arm": "benign",
+      "control": "edges",
+      "mean": 0.5,
+      "ci95": [
+        0.16666666666666666,
+        0.8333333333333334
+      ],
+      "sd": 0.4472135954999579,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 20,
+      "planning_n_if_centered": 20
+    },
+    {
+      "domain": "origin",
+      "arm": "clean",
+      "control": "characters",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.7083333333333334
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.45,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "origin",
+      "arm": "clean",
+      "control": "lines",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.7083333333333334
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.45,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "origin",
+      "arm": "clean",
+      "control": "windows",
+      "mean": 0.5208333333333334,
+      "ci95": [
+        0.3125,
+        0.7083333333333334
+      ],
+      "sd": 0.278575244174113,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.475,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 8
+    },
+    {
+      "domain": "origin",
+      "arm": "clean",
+      "control": "comment_fraction",
+      "mean": 0.5,
+      "ci95": [
+        0.3333333333333333,
+        0.7083333333333334
+      ],
+      "sd": 0.27386127875258304,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.55
+      ],
+      "planning_n_if_mean_persists": 8,
+      "planning_n_if_centered": 8
+    },
+    {
+      "domain": "origin",
+      "arm": "clean",
+      "control": "normalized_windows",
+      "mean": 0.4583333333333333,
+      "ci95": [
+        0.2916666666666667,
+        0.625
+      ],
+      "sd": 0.24579802006254375,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.5
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 6
+    },
+    {
+      "domain": "origin",
+      "arm": "benign",
+      "control": "characters",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.7083333333333334
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.45,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "origin",
+      "arm": "benign",
+      "control": "lines",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.7083333333333334
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.45,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "origin",
+      "arm": "benign",
+      "control": "windows",
+      "mean": 0.5208333333333334,
+      "ci95": [
+        0.3125,
+        0.7083333333333334
+      ],
+      "sd": 0.278575244174113,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.475,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 8
+    },
+    {
+      "domain": "origin",
+      "arm": "benign",
+      "control": "comment_fraction",
+      "mean": 0.5,
+      "ci95": [
+        0.3333333333333333,
+        0.7083333333333334
+      ],
+      "sd": 0.27386127875258304,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.55
+      ],
+      "planning_n_if_mean_persists": 8,
+      "planning_n_if_centered": 8
+    },
+    {
+      "domain": "origin",
+      "arm": "benign",
+      "control": "normalized_windows",
+      "mean": 0.4583333333333333,
+      "ci95": [
+        0.2916666666666667,
+        0.625
+      ],
+      "sd": 0.24579802006254375,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4,
+        0.5
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 6
+    },
+    {
+      "domain": "origin",
+      "arm": "trojan",
+      "control": "characters",
+      "mean": 0.5,
+      "ci95": [
+        0.25,
+        0.7083333333333334
+      ],
+      "sd": 0.31622776601683794,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.45,
+        0.6
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "origin",
+      "arm": "trojan",
+      "control": "lines",
+      "mean": 0.4803921568627451,
+      "ci95": [
+        0.23039215686274508,
+        0.6887254901960785
+      ],
+      "sd": 0.31985434978278965,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4264705882352941,
+        0.5764705882352941
+      ],
+      "planning_n_if_mean_persists": 13,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "origin",
+      "arm": "trojan",
+      "control": "windows",
+      "mean": 0.4987745098039216,
+      "ci95": [
+        0.29044117647058826,
+        0.6862745098039215
+      ],
+      "sd": 0.2857037941927752,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4485294117647059,
+        0.5735294117647058
+      ],
+      "planning_n_if_mean_persists": 8,
+      "planning_n_if_centered": 8
+    },
+    {
+      "domain": "origin",
+      "arm": "trojan",
+      "control": "comment_fraction",
+      "mean": 0.49264705882352944,
+      "ci95": [
+        0.32598039215686275,
+        0.7083333333333334
+      ],
+      "sd": 0.2744529002646316,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.3911764705882353,
+        0.5411764705882353
+      ],
+      "planning_n_if_mean_persists": 8,
+      "planning_n_if_centered": 8
+    },
+    {
+      "domain": "origin",
+      "arm": "trojan",
+      "control": "normalized_tokens",
+      "mean": 0.4699754901960784,
+      "ci95": [
+        0.2916666666666667,
+        0.65625
+      ],
+      "sd": 0.268240460745305,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.4139705882352941,
+        0.5264705882352941
+      ],
+      "planning_n_if_mean_persists": 10,
+      "planning_n_if_centered": 7
+    },
+    {
+      "domain": "origin",
+      "arm": "trojan",
+      "control": "normalized_characters",
+      "mean": 0.43137254901960786,
+      "ci95": [
+        0.20833333333333334,
+        0.6397058823529412
+      ],
+      "sd": 0.3096860038683153,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.36764705882352944,
+        0.5176470588235295
+      ],
+      "planning_n_if_mean_persists": 22,
+      "planning_n_if_centered": 10
+    },
+    {
+      "domain": "origin",
+      "arm": "trojan",
+      "control": "normalized_windows",
+      "mean": 0.4375,
+      "ci95": [
+        0.25,
+        0.625
+      ],
+      "sd": 0.270993542358485,
+      "includes_chance": true,
+      "mean_inside_band": true,
+      "leave_one_out_range": [
+        0.375,
+        0.5
+      ],
+      "planning_n_if_mean_persists": 15,
+      "planning_n_if_centered": 8
+    }
+  ]
+}
