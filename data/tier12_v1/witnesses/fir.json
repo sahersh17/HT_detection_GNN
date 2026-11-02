@@ -1,0 +1,41 @@
+{
+  "description": "Three-tap unsigned sample filter with coefficients 1,2,1; op=1 advances.",
+  "columns": [
+    "reset",
+    "op",
+    "a",
+    "b"
+  ],
+  "vectors": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      193,
+      0
+    ],
+    [
+      0,
+      1,
+      74,
+      0
+    ],
+    [
+      0,
+      1,
+      15,
+      0
+    ]
+  ],
+  "expected_clean": [
+    0,
+    193,
+    460,
+    356
+  ]
+}

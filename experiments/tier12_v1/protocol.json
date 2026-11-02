@@ -1,0 +1,7 @@
+{
+  "scope": "Nine original small development hosts, three related versions per host. All derivatives remain in one group. One authored RTL insertion source, no sealed hosts.",
+  "normal_domain": "Fixed 640-cycle random command workload, data bytes 1..127, reset midway, plus CRC check string. Replay a separate directed trace from reset.",
+  "accept_behavior": "Clean agrees with cycle reference; decoy equivalent to clean; Trojan matches normal workload and diverges on witness; repeat after mapping. Require exact RTL versus mapped trace agreement per variant.",
+  "shortcut_stop": "Before any detector fit, a standalone control with equal-host paired win rate >=0.90 in either direction on either original/Trojan or benign/Trojan comparison blocks training. Count ties as 0.5. Evaluate both comparisons separately. Additional audit_v1 checks remain necessary for any go.",
+  "data_handling": "Reference the existing paired dataset by hash in a versioned catalog. Keep generator records in a separate development cohort. Admit zero generated rows for training on a no-go. No pooled performance claim."
+}

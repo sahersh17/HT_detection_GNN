@@ -1,0 +1,20 @@
+{
+  "cohorts": [
+    {
+      "source": "existing_paired",
+      "path": "data/integrated/paired_manifest.json",
+      "sha256_lf_text": "675d630b177ae0c63b9351a233a261b4c9d6c9e0b8e95faf86f616131f7e44cc",
+      "records": 42
+    },
+    {
+      "source": "tier12_rtl_v1",
+      "path": "data/tier12_v1/manifest.json",
+      "sha256": "79a5d6450b94a240b9cbfad9996ff816e5235cb4a788450340e6988598bd9550",
+      "records": 27,
+      "status": "no_go_shortcuts",
+      "admitted_training_records": 0
+    }
+  ],
+  "evaluation": "Separate cohorts. Group synthetic rows by clean host. Existing folds apply only to existing data.",
+  "decision": "data/tier12_v1/decision.json"
+}
