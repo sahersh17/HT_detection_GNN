@@ -1,0 +1,26 @@
+{
+  "v2_nonzero_motif_vectors_out_of_27": {
+    "output_cone_equivalence": 0,
+    "output_xor_motifs": 0
+  },
+  "v2_style_class": {
+    "neutral_name_fraction": {
+      "clean": 0.6666666666666666,
+      "benign": 0.4444444444444444
+    },
+    "comment_fraction": {
+      "clean": 0.5,
+      "benign": 0.5
+    }
+  },
+  "origin_generated_higher": {
+    "neutral_name_fraction": {
+      "clean": 1.0,
+      "trojan": 1.0
+    },
+    "comment_fraction": {
+      "clean": 0.125,
+      "trojan": 0.125
+    }
+  }
+}

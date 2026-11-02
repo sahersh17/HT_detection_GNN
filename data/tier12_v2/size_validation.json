@@ -1,0 +1,289 @@
+{
+  "hosts": 9,
+  "bootstrap": "Exact empirical host percentile, pointwise 95%",
+  "size": {
+    "clean": {
+      "characters": {
+        "mean": 0.5,
+        "ci95": [
+          0.2222222222222222,
+          0.7777777777777778
+        ],
+        "counts": {
+          "0.0": 3,
+          "0.5": 3,
+          "1.0": 3
+        }
+      },
+      "nodes": {
+        "mean": 0.5555555555555556,
+        "ci95": [
+          0.2777777777777778,
+          0.8333333333333334
+        ],
+        "counts": {
+          "0.0": 3,
+          "0.5": 2,
+          "1.0": 4
+        }
+      },
+      "edges": {
+        "mean": 0.5555555555555556,
+        "ci95": [
+          0.2777777777777778,
+          0.8333333333333334
+        ],
+        "counts": {
+          "0.0": 3,
+          "0.5": 2,
+          "1.0": 4
+        }
+      }
+    },
+    "benign": {
+      "characters": {
+        "mean": 0.3888888888888889,
+        "ci95": [
+          0.16666666666666666,
+          0.6666666666666666
+        ],
+        "counts": {
+          "0.5": 3,
+          "0.0": 4,
+          "1.0": 2
+        }
+      },
+      "nodes": {
+        "mean": 0.6111111111111112,
+        "ci95": [
+          0.3333333333333333,
+          0.8888888888888888
+        ],
+        "counts": {
+          "0.0": 3,
+          "1.0": 5,
+          "0.5": 1
+        }
+      },
+      "edges": {
+        "mean": 0.6111111111111112,
+        "ci95": [
+          0.3333333333333333,
+          0.8888888888888888
+        ],
+        "counts": {
+          "0.0": 3,
+          "1.0": 5,
+          "0.5": 1
+        }
+      }
+    }
+  },
+  "counts": {
+    "spi": {
+      "clean": {
+        "characters": 487,
+        "nodes": 83,
+        "edges": 146
+      },
+      "benign": {
+        "characters": 475,
+        "nodes": 82,
+        "edges": 144
+      },
+      "trojan": {
+        "characters": 475,
+        "nodes": 81,
+        "edges": 143
+      }
+    },
+    "i2c": {
+      "clean": {
+        "characters": 519,
+        "nodes": 146,
+        "edges": 264
+      },
+      "benign": {
+        "characters": 511,
+        "nodes": 130,
+        "edges": 239
+      },
+      "trojan": {
+        "characters": 496,
+        "nodes": 143,
+        "edges": 260
+      }
+    },
+    "fifo": {
+      "clean": {
+        "characters": 412,
+        "nodes": 343,
+        "edges": 679
+      },
+      "benign": {
+        "characters": 414,
+        "nodes": 318,
+        "edges": 637
+      },
+      "trojan": {
+        "characters": 412,
+        "nodes": 343,
+        "edges": 679
+      }
+    },
+    "sram_ctrl": {
+      "clean": {
+        "characters": 524,
+        "nodes": 308,
+        "edges": 604
+      },
+      "benign": {
+        "characters": 515,
+        "nodes": 306,
+        "edges": 601
+      },
+      "trojan": {
+        "characters": 487,
+        "nodes": 300,
+        "edges": 590
+      }
+    },
+    "crc32": {
+      "clean": {
+        "characters": 360,
+        "nodes": 179,
+        "edges": 314
+      },
+      "benign": {
+        "characters": 414,
+        "nodes": 256,
+        "edges": 454
+      },
+      "trojan": {
+        "characters": 414,
+        "nodes": 256,
+        "edges": 454
+      }
+    },
+    "alu": {
+      "clean": {
+        "characters": 314,
+        "nodes": 260,
+        "edges": 392
+      },
+      "benign": {
+        "characters": 312,
+        "nodes": 230,
+        "edges": 351
+      },
+      "trojan": {
+        "characters": 314,
+        "nodes": 260,
+        "edges": 392
+      }
+    },
+    "mac": {
+      "clean": {
+        "characters": 261,
+        "nodes": 488,
+        "edges": 855
+      },
+      "benign": {
+        "characters": 292,
+        "nodes": 523,
+        "edges": 906
+      },
+      "trojan": {
+        "characters": 291,
+        "nodes": 537,
+        "edges": 935
+      }
+    },
+    "fir": {
+      "clean": {
+        "characters": 296,
+        "nodes": 127,
+        "edges": 226
+      },
+      "benign": {
+        "characters": 332,
+        "nodes": 194,
+        "edges": 334
+      },
+      "trojan": {
+        "characters": 332,
+        "nodes": 185,
+        "edges": 321
+      }
+    },
+    "pwm": {
+      "clean": {
+        "characters": 329,
+        "nodes": 107,
+        "edges": 172
+      },
+      "benign": {
+        "characters": 327,
+        "nodes": 110,
+        "edges": 178
+      },
+      "trojan": {
+        "characters": 329,
+        "nodes": 111,
+        "edges": 179
+      }
+    }
+  },
+  "trusthub_origin_by_cell_count": {
+    "clean": {
+      "synthetic_range": [
+        83,
+        488
+      ],
+      "trusthub_by_family": {
+        "AES": [
+          15680,
+          15680
+        ],
+        "RS232": [
+          190,
+          190
+        ],
+        "memctrl": [
+          9162,
+          9162
+        ],
+        "PIC16F84": [
+          2223,
+          2223
+        ]
+      },
+      "equal_family_origin_auc": 0.8888888888888888
+    },
+    "trojan": {
+      "synthetic_range": [
+        81,
+        537
+      ],
+      "trusthub_by_family": {
+        "AES": [
+          15682,
+          16668
+        ],
+        "RS232": [
+          198,
+          229
+        ],
+        "memctrl": [
+          9198,
+          9198
+        ],
+        "PIC16F84": [
+          2339,
+          2372
+        ]
+      },
+      "equal_family_origin_auc": 0.8611111111111112
+    }
+  }
+}
