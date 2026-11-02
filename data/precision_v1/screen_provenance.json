@@ -1,0 +1,3059 @@
+{
+  "shuttle_commits": {
+    "tt04": "f83a6a7af440b1a54ed1d12d01a3b4ec169cc606",
+    "tt05": "76b55d6fed30a50ef1df1dccbe3f4b4fea734092",
+    "tt06": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+    "tt07": "3c541b4b416e60c8aca1efc2eeb3c05875f8c526",
+    "tt08": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+    "tt09": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+    "tt10": "46f0a2f45c3b1fcc27aac7acb7faa054631d9955",
+    "ttsky25a": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+    "ttsky25b": "3587faf4b3aab468369747597fa1acadb69cb1d2",
+    "ttsky26a": "071ada00384fe1282ca50d4d7aae5867e183c086",
+    "ttsky26b": "5a0e49b94fffc99433f226ec74a985a03ffdd9f9"
+  },
+  "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+  "source_candidates": 1156,
+  "origin_replay_attempts": 434,
+  "oracle_pass": 114,
+  "records": [
+    {
+      "host": "tt_um_8bit_cpu",
+      "repo": "https://github.com/ramyadhadidi/tt06-8bit-cpu",
+      "revision": "885b5b338e37e554a2cdce4324f3a225b923d3c0",
+      "tokens": 1653,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_ADPCM_COMPRESSOR",
+      "repo": "https://github.com/hesscharlie/tt06-ADPCM-Compressor",
+      "revision": "0d6f738b1b678284285b3109dd56587bb0ebbfda",
+      "tokens": 3107,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_aiju_8080",
+      "repo": "https://github.com/aiju/tt06-aiju-8080",
+      "revision": "81601ef6eb4dda2f359e8d91cca1aa1f51ebd17a",
+      "tokens": 7125,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_alu",
+      "repo": "https://github.com/brtgio/UART_4-bits_ALU_System",
+      "revision": "d12b1162b3da999eca2c4b5d2e9b300988aa3903",
+      "tokens": 1431,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_andrewtron3000",
+      "repo": "https://github.com/andrewtron3000/tt06-verilog-template",
+      "revision": "4e0a338e8642ad320ac7eca58951cf19140bc519",
+      "tokens": 8089,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_chatgpt_rsnn_paolaunisa",
+      "repo": "https://github.com/Andreou-JHULabOrg/tinytapeout_06_chatgpt_rsnn",
+      "revision": "ee362f748299c2480ccb546c884cba3633f8ac37",
+      "tokens": 4353,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_CKPope_top",
+      "repo": "https://github.com/CKPope/tt06-verilog-template",
+      "revision": "c93539faf09c864f1e4ed1ac31a8b16fcb5d7b73",
+      "tokens": 1710,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_couchand_cora16",
+      "repo": "https://github.com/couchand/tt06-cora16",
+      "revision": "6c2688c68d55da29e970b6b656358e535ee0afb3",
+      "tokens": 4772,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_devinatkin_fastreadout",
+      "repo": "https://github.com/devinatkin/tt06-fastreadout",
+      "revision": "3304c13567f167b9e856332b249de98ed436d53c",
+      "tokens": 1350,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_dgkaminski",
+      "repo": "https://github.com/dgkaminski/tto6-submission",
+      "revision": "775e124468f88ca72b5277bd402ab9832f296187",
+      "tokens": 1500,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_dieroller_nathangross1",
+      "repo": "https://github.com/nathangross1/tt06-verilog-template",
+      "revision": "2b11416dda44f3f172a2d9f5a60a9baf9e836ff8",
+      "tokens": 2929,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_dr_skyler_clock",
+      "repo": "https://github.com/dr-skyler/tt_um_dr_skyler_clock",
+      "revision": "9d5bdb1c9d9a83bf73bd1cda6e0f8607c283bcbc",
+      "tokens": 1835,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_ejfogleman_smsdac",
+      "repo": "https://github.com/ejfogleman/ef_smsdac",
+      "revision": "65fd05492cf31a53f0d17d11e8dfa3052d8aa094",
+      "tokens": 1635,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_enieman",
+      "repo": "https://github.com/enieman/uart_programmable_rv32i",
+      "revision": "c1d3dde23a45e62ed61d32d66a5491bd5b2f740f",
+      "tokens": 6991,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_faramire_stopwatch",
+      "repo": "https://github.com/faramire/TT06-simple-clock",
+      "revision": "10dec78b9429e276595893de125336b62d608b7f",
+      "tokens": 2245,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_fpu",
+      "repo": "https://github.com/fabricchip/tt06_um_fpu",
+      "revision": "a0db1e19141ae2860879177c93617f09242a575a",
+      "tokens": 2797,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_fstolzcode",
+      "repo": "https://github.com/fstolzcode/tt06-tinyZuse",
+      "revision": "fcd1985da2ff437954392caaf54e7910af6283c8",
+      "tokens": 6676,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_gabejessil_timer",
+      "repo": "https://github.com/gabejessil/tt06-verilog-template",
+      "revision": "aaf10a330eb7792b30f05dbd1caadc6b1ff1d09b",
+      "tokens": 2971,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_gak25_8bit_cpu_ext",
+      "repo": "https://github.com/gak25/tt06-8bit-cpu-ext",
+      "revision": "2ccac0ec37ac16846be40052159bc8ae92431993",
+      "tokens": 1813,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_histefan_top",
+      "repo": "https://github.com/histefan/jku-tt06-snake_game",
+      "revision": "a658755e60fcc4273e1e7f7600d75b8d26528bcc",
+      "tokens": 4029,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_I2C_to_SPI",
+      "repo": "https://github.com/ReinstatedSamit/tt_um_I2C_to_SPI",
+      "revision": "bbb595f4dae6e6f939e843ea13636fa2a7192956",
+      "tokens": 4240,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_iron_violet_simon",
+      "repo": "https://github.com/johnbentcope/iron_violet",
+      "revision": "a276d861fa2cda700f697511bb313295f9e97b10",
+      "tokens": 1789,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\originals\\a276d861fa2cda700f697511bb313295f9e97b10\\controller.v:26: Include file constants.vh not found\nC:\\HT_detection_GNN\\runs\\precision_v1\\originals\\a276d861fa2cda700f697511bb313295f9e97b10\\controller.v:25: syntax error\nI give up.\n"
+    },
+    {
+      "host": "tt_um_jv_sigdel",
+      "repo": "https://github.com/JVollrath/tt06_jv_sigdel_v",
+      "revision": "6725319ea7d73496fad411689efb281ca0485f81",
+      "tokens": 2603,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_koconnor_kstep",
+      "repo": "https://github.com/KevinOConnor/tt06-kstep",
+      "revision": "98a794a3c3f6458b4456fc1abfc772b5d665b772",
+      "tokens": 3117,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_ks_pyamnihc",
+      "repo": "https://github.com/pyamnihc/tt06_um_ks_pyamnihc",
+      "revision": "26b00f4b5be491b993244667f175b148313f6a84",
+      "tokens": 4531,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_lk_ans_top",
+      "repo": "https://github.com/LK/tt06-ans",
+      "revision": "4573843406d63b90c5c67fc616e9df3d7407973e",
+      "tokens": 2463,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_loco_choco",
+      "repo": "https://github.com/loco-choco/tt-bf-processor",
+      "revision": "b65fa57f35552c92e80a675ba81ec542ebc2f3a4",
+      "tokens": 1782,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_lucaz97_monobit",
+      "repo": "https://github.com/Lucaz97/tt06-monoibit-test",
+      "revision": "2c55c8900b5dd3a54507179fba0f70c60b987c17",
+      "tokens": 20811,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_minibyte",
+      "repo": "https://github.com/zacharysfrazee/tt06-minibyte-cpu",
+      "revision": "da731883e25f1efe488a968a9e5f31d14f24f097",
+      "tokens": 9203,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_mitssdd",
+      "repo": "https://github.com/mitsece/tt06-verilog-mitssdd",
+      "revision": "a402374097c2e4e746cc151d03c9c56757588c7b",
+      "tokens": 1481,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_MNSLab_BLDC",
+      "repo": "https://github.com/BatuCem/tt06-mnslab-bldc-0",
+      "revision": "0d6ce2c0a5b0b1780600dd711800506df73fdf3e",
+      "tokens": 5061,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_mw73_pmic",
+      "repo": "https://github.com/wongmatthew73/tt06-mw-pmic",
+      "revision": "ab844616e5d87530b7ed307e3fd94f74338ec2d9",
+      "tokens": 1396,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_neurocore",
+      "repo": "https://github.com/kir486680/tt6_test",
+      "revision": "741cafb8f8a2537e174654d97a534f8a52da5f57",
+      "tokens": 5001,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\originals\\741cafb8f8a2537e174654d97a534f8a52da5f57\\project.v:8: Include file define.v not found\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_neurocore\\tb.v:1: error: Unknown module type: tt_um_neurocore\n2 error(s) during elaboration.\n*** These modules were missing:\n        tt_um_neurocore referenced 1 times.\n***\n"
+    },
+    {
+      "host": "tt_um_noritsuna_i4004",
+      "repo": "https://github.com/noritsuna/tt06-tt_um_i4004",
+      "revision": "cb935ca7c180df083e3ef02e8f61507e2f0c7498",
+      "tokens": 6414,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_petersn_micro1",
+      "repo": "https://github.com/petersn/tt06-submission",
+      "revision": "cc90c612d334d0ee6b9ec8524439db7ac435a0bd",
+      "tokens": 5212,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_ppca",
+      "repo": "https://github.com/calsokk/tt6_drEEm_tEEm_ppca",
+      "revision": "29e983233831642bf9d758f3defe10faa38c00e2",
+      "tokens": 2834,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_ps2_morse_encoder_top",
+      "repo": "https://github.com/byte-me404/jku-tt06-ps2-morse-encoder",
+      "revision": "f9879387313c8d27491ae149a8047c196df78ca7",
+      "tokens": 6443,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_PWM_Sine_UART",
+      "repo": "https://github.com/JerryAvila06/PWM_Sinewave",
+      "revision": "742058e4706912992813d3a16d64aa516a10038d",
+      "tokens": 3033,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_qubitbytes_alive",
+      "repo": "https://github.com/Qubitbytesltd/tt06-its-alive",
+      "revision": "797082644de0b54a84c37f2f35460e1579f190d7",
+      "tokens": 3292,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_rejunity_1_58bit",
+      "repo": "https://github.com/rejunity/tiny-asic-1_58bit-matrix-mul",
+      "revision": "1ba434f7055f036d086b7e4eafff3b8afee1e976",
+      "tokens": 3962,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_sanojn_ttrpg_dice",
+      "repo": "https://github.com/sanojn/tt06_ttrpg_dice",
+      "revision": "9652a951e606134d4c0032d433870a949ed70c21",
+      "tokens": 2406,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_sap_1",
+      "repo": "https://github.com/kevinwguan/tt06-SAP-1_Computer-",
+      "revision": "5b67f826e2ca3df6ed1a60721ad1e4eb78dd762c",
+      "tokens": 1904,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_soundgen",
+      "repo": "https://github.com/dyanik9/jku-tt06-soundgen",
+      "revision": "081f7b2914ec0ad979e7b0ccec58816258c426db",
+      "tokens": 4360,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_spi_pwm_djuara",
+      "repo": "https://github.com/djuara-rbz/tt_spi_pwm",
+      "revision": "44ec47fb6976c579f5fc432f23b27b8bfef6d91b",
+      "tokens": 1963,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_spiff42_exp_led_pwm",
+      "repo": "https://github.com/spiff42/tt06-exp-led-pwm",
+      "revision": "17e882d06a1ede26ae933e6653011f8f31b980ba",
+      "tokens": 1972,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_thorkn_audiochip_v2",
+      "repo": "https://github.com/ThorKn/TT06_AudioChip_V2",
+      "revision": "11f0144ba906f521638acc2429fc8e8564e0a7f1",
+      "tokens": 2167,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_timer_counter_UGM",
+      "repo": "https://github.com/Shofuuu/tt06-timer_counter-UGM",
+      "revision": "9934d4de2b86c58d1985e71582c9687908dded4f",
+      "tokens": 1395,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_tomkeddie_a",
+      "repo": "https://github.com/TomKeddie/tinytapeout-2024-tt06a",
+      "revision": "17fa311998ec1dd681721bee7250d91ba8c219c9",
+      "tokens": 3528,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_tommythorn_4b_cpu_v2",
+      "repo": "https://github.com/tommythorn/tt06-tommythorn-4b-cpu",
+      "revision": "26b037760cd534540b2e9fb5859ec2047b174bf2",
+      "tokens": 1533,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_topTDC",
+      "repo": "https://github.com/jferrer08/latinpractice",
+      "revision": "ad02bf4051a0f0cce24b58344ec7c2722ad6a061",
+      "tokens": 1504,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_Uart_Transciver",
+      "repo": "https://github.com/theuppercaseguy/GIKI-Tapeout",
+      "revision": "00cb1c265b1513e1146560ba5ed19a0ee636ca84",
+      "tokens": 1499,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_urish_simon",
+      "repo": "https://github.com/urish/tt06-simon-game",
+      "revision": "37f3538ba18fb3eeea73ad37d0f36e631189ae75",
+      "tokens": 1885,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_urish_spell",
+      "repo": "https://github.com/urish/tt06-spell",
+      "revision": "faf79a5c35be799a5d361876a4060eda82a86978",
+      "tokens": 3103,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_28add11_QOAdecode",
+      "repo": "https://github.com/28add11/tt07_qoa_decode",
+      "revision": "593ae752357e232fbc652ca066c163b3c4014d69",
+      "tokens": 2567,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_8bit_vector_compute_in_SRAM",
+      "repo": "https://github.com/ramyadhadidi/tt07-8bit-vector-compute-in-SRAM",
+      "revision": "5f9c5f7b862115bc0431242f63e472443a60c9db",
+      "tokens": 1459,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_adonairc_dda",
+      "repo": "https://github.com/adonairc/tt07-dda-van-der-pol",
+      "revision": "3432bfa2a219c475e3e8a918b96ca25cba5a656c",
+      "tokens": 6846,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_afasolino",
+      "repo": "https://github.com/afasolino/tt06_posit",
+      "revision": "7d8d4bdfd701fd1f2d709ccfa13ee79cec82a348",
+      "tokens": 5126,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_btflv_subleq",
+      "repo": "https://github.com/BTFLV/tt07-subleq-fram-cpu",
+      "revision": "07bab2e36185c61102b0ebc22f546fc62394eb2c",
+      "tokens": 3068,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_ejfogleman_smsdac8",
+      "repo": "https://github.com/ejfogleman/tt07-ef-smsdac8",
+      "revision": "e23e444963376e79c4f496b77f13daf53bc454ed",
+      "tokens": 1884,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_ender_clock",
+      "repo": "https://github.com/ender110/tt07-clock",
+      "revision": "06e62234b91c5e0854619810968ef71996dbc96b",
+      "tokens": 1772,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_fp_mac",
+      "repo": "https://github.com/wilfredkisku/tt07_wilfred_fp_mac",
+      "revision": "8e5e57a8b22f458857412d33e08d36c6e5844ba8",
+      "tokens": 3177,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_maheredia",
+      "repo": "https://github.com/maheredia/tt07-gps_signal_gen",
+      "revision": "9e58d5aa85add5d1556098b82ee06d64ee8d720e",
+      "tokens": 3828,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_mandelbrot_accel",
+      "repo": "https://github.com/urish/tt07-mandelbrot-accelarator",
+      "revision": "e6465bb67ce0c0205f7c21be5a683f2ca857183e",
+      "tokens": 5195,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_mitssdd",
+      "repo": "https://github.com/mitsece/tt07-verilog-mitssdd",
+      "revision": "29a4fa2926c7d9ecdd780c3448515357b9d92569",
+      "tokens": 1811,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_multiplier_mbm",
+      "repo": "https://github.com/sreeramtirumalasetty/major",
+      "revision": "6b0a6abe2462a443ed9aebd336ca2717c15b38c9",
+      "tokens": 6295,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_neural_network",
+      "repo": "https://github.com/Kevomlml/tt07_chipusm_neural_network",
+      "revision": "bffdd5672e393de450e66fd86f7f2300ee9ccb31",
+      "tokens": 1949,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_njp_micro",
+      "repo": "https://github.com/neilbluejohn/tt07-micro-mult",
+      "revision": "76516adea73d30b3385675bd5d65d8f6ea0e4eae",
+      "tokens": 2248,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_PS_PWM",
+      "repo": "https://github.com/NelsonSalvadorPinilla/tt07-PS_PWM_Modulator",
+      "revision": "599326540ad879cc5947373811eaffa53b8867e2",
+      "tokens": 1693,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_revenantx86_tinytpu",
+      "repo": "https://github.com/Revenantx86/tt07-tinytpu",
+      "revision": "cdc35f3558339f664cd42404c190f08a2e85b8d6",
+      "tokens": 3140,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_router",
+      "repo": "https://github.com/leeja-j/router_tinytapeout",
+      "revision": "203cfc74c587d9687d7527de39c482ef231acada",
+      "tokens": 2955,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_serdes",
+      "repo": "https://github.com/Santeep/TT_UM_SERDES",
+      "revision": "b8aba214a7adf76361c6c767eccd904c04f3af1c",
+      "tokens": 1581,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_shadow1229_vga_player",
+      "repo": "https://github.com/shadow1229/tt07-vga-player",
+      "revision": "a24d72850178dce0c3b696872e5a8690f02c29b3",
+      "tokens": 2644,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_The_Chairman_send_receive",
+      "repo": "https://github.com/The-Chairman/tt07-verilog-template",
+      "revision": "7b4a2c96e89d08e0067d8a5671f1c50d78d45145",
+      "tokens": 1997,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_tinytapeout_dvd_screensaver",
+      "repo": "https://github.com/TinyTapeout/tt07-dvd-screensaver",
+      "revision": "3c59c2f366595854edc1f8a9477f8304e6eaf832",
+      "tokens": 15466,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_unisnano",
+      "repo": "https://github.com/vicvicvarunis/tt_unis_nano_24",
+      "revision": "596a16f097b86d9d560e4e7597cd3ef12ade67cd",
+      "tokens": 3242,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_urish_simon",
+      "repo": "https://github.com/urish/tt07-simon-game",
+      "revision": "857fc56465b720bea0c22239a976aa3b2e47de02",
+      "tokens": 1980,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_urish_spell",
+      "repo": "https://github.com/urish/tt07-spell",
+      "revision": "1aa1740ca4b21cf5c10d935dee1864fced67f9f2",
+      "tokens": 3714,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_urish_spell\\reference_cells.v:12460: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\tt07\\projects\\tt_um_urish_spell\\tt_um_urish_spell.v:33830: error: Unknown module type: RAM32\nC:\\HT_detection_GNN\\runs\\precision_v1\\tt07\\projects\\tt_um_urish_spell\\tt_um_urish_spell.v:33907: error: Unknown "
+    },
+    {
+      "host": "tt_um_vga_perlin",
+      "repo": "https://github.com/urish/tt07-vga-perlin",
+      "revision": "fffbcba2a9c5f96a2381f2d6790d94b088cc9eaa",
+      "tokens": 3131,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_vga_snake",
+      "repo": "https://github.com/barakhoffer/tt07-vga-snake",
+      "revision": "22d1353a124a7302bc5e30722266480236e392e2",
+      "tokens": 1550,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_vzayakov_top",
+      "repo": "https://github.com/vzayakov/tt07-pong-vga",
+      "revision": "991830edb2b3f3a98edc5bfef38a7bb6240bed73",
+      "tokens": 9106,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_16_mic_beamformer_arghunter",
+      "repo": "https://github.com/arghunter/CIC-Filter-Verilog",
+      "revision": "dbdd7c07f17e7abcd619f34b3c8fa26e3e5d2ef4",
+      "tokens": 2117,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_betz_morse_keyer",
+      "repo": "https://github.com/b-etz/tt08-morse-keyer",
+      "revision": "0fbb3c5c77f2acc871ad060cdc5da30bd89080c4",
+      "tokens": 4479,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_brandonramos_VGA_Pong_with_NES_Controllers",
+      "repo": "https://github.com/J0NTrollston/tt08-VGA-Pong-with-NES-Controllers",
+      "revision": "53e38925cb7987a9b900e4312febe1aaf9af7625",
+      "tokens": 5918,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\originals\\53e38925cb7987a9b900e4312febe1aaf9af7625\\control_unit.v:139: error: Possible nested comment.\n"
+    },
+    {
+      "host": "tt_um_bytex64_munch",
+      "repo": "https://github.com/bytex64/tt-munch",
+      "revision": "7428bdc8ceb4d3c4ed4c7be23137f9e19d85cb27",
+      "tokens": 6216,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_cfib_demo",
+      "repo": "https://github.com/cfib/tt08-cfib-demo",
+      "revision": "6a8ba7c70c6913362b0ef2009978116ee7ec5f80",
+      "tokens": 2699,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_comm_ic_bhavuk",
+      "repo": "https://github.com/Bhavuk-HDL/tty8_comm_ic",
+      "revision": "f1cb2df40ff540ad3d8a22d0b6d4bc27a5150aaa",
+      "tokens": 4631,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_daosvik_aesinvsbox",
+      "repo": "https://github.com/daosvik/tt08-aes-invsbox",
+      "revision": "e78636840df3af0a11027db7fe2a0d3a82821521",
+      "tokens": 16819,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_ddc_arghunter",
+      "repo": "https://github.com/arghunter/DDC-Digital-to-DIgital-Converter",
+      "revision": "73d05d45cedb8eda8526502c03179d0eb99dc122",
+      "tokens": 1470,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_demosiine_sda",
+      "repo": "https://github.com/SagarDevAchar/tt08-demosiine",
+      "revision": "396391b25440e8c8202c4723a872cdd98d2e3a8e",
+      "tokens": 4537,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_dendraws_donut",
+      "repo": "https://github.com/daniel-endraws/tt08-donut",
+      "revision": "7b69c908d0541b151c67b8543aeb44cced6a3892",
+      "tokens": 2814,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_dlfloatmac",
+      "repo": "https://github.com/ananya343B/tt08_dlfloat_mac",
+      "revision": "7ea09d55d6d3b1f9bea796369bdb7c2436280ff1",
+      "tokens": 1772,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_favoritohjs_scroller",
+      "repo": "https://github.com/FavoritoHJS/tt08-favoritohjs-scroller",
+      "revision": "38c700b6e2a04212e34f9b74e5a21c62d5963aff",
+      "tokens": 1948,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_gfg_development_tinymandelbrot",
+      "repo": "https://github.com/gfg-development/tt08-tiny-mandelbrot",
+      "revision": "10eeed2afdf5cfaf34288f3fe2b833865a597fbc",
+      "tokens": 4395,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_johshoff_metaballs",
+      "repo": "https://github.com/johshoff/tt08-metaballs",
+      "revision": "ce37dd6b8c13ac1706fc06b203f6f3a7e497624f",
+      "tokens": 2822,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_neural_navigators",
+      "repo": "https://github.com/piboi/tt08-nn",
+      "revision": "64c3b3ba55093b06d14084689caf6334e73bceba",
+      "tokens": 5950,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_NicklausThompson_SkyKing",
+      "repo": "https://github.com/FangameEmpire/tt08_skyking",
+      "revision": "6346dd0a2a31cec81d6e90ce4540dc08e2bb2e84",
+      "tokens": 5145,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_nvious_graphics",
+      "repo": "https://github.com/jar/tt08_nvious_graphics",
+      "revision": "c5dcc60dbb3f29fa8e7ee46fc099eb3bfcc370c5",
+      "tokens": 4142,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_nyan",
+      "repo": "https://github.com/peter-noerlund/tt08-nyan",
+      "revision": "17e4b17efffa07ba0b28ed237faf67cf5dd8567f",
+      "tokens": 1604,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\originals\\17e4b17efffa07ba0b28ed237faf67cf5dd8567f\\graphics.v:57: Include file palette.v not found\nC:\\HT_detection_GNN\\runs\\precision_v1\\originals\\17e4b17efffa07ba0b28ed237faf67cf5dd8567f\\graphics.v:56: syntax error\nI give up.\n"
+    },
+    {
+      "host": "tt_um_patater_demokit",
+      "repo": "https://github.com/Patater/tt08-demokit",
+      "revision": "26890e3157ffa460ef6ff13103085089c78c9643",
+      "tokens": 3395,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_pdm_correlator_arghunter",
+      "repo": "https://github.com/arghunter/Customizable-PDM-Cross-Correlator-ASIC",
+      "revision": "afff7fd117bc7b414bece84b478138da168af41a",
+      "tokens": 1443,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_pdm_pitch_filter_arghunter",
+      "repo": "https://github.com/arghunter/Customizable-PDM-Pitch-Filter-ASIC",
+      "revision": "46eff68076441968f33cb253346c14714afb6984",
+      "tokens": 1465,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rebeccargb_hardware_utf8",
+      "repo": "https://github.com/RebeccaRGB/hardware-utf8",
+      "revision": "18d5793bb77dfba79794e0a83d0ae59432ace696",
+      "tokens": 3859,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_rebeccargb_intercal_alu",
+      "repo": "https://github.com/RebeccaRGB/intercal-alu",
+      "revision": "247c3a758ce5ed3dc05300dcc9bbf5269777cd4b",
+      "tokens": 2522,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_rebeccargb_styler",
+      "repo": "https://github.com/RebeccaRGB/styler",
+      "revision": "220307c7d6da71a4b1fa86ca2636e2488fe726d7",
+      "tokens": 2296,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_rebeccargb_universal_decoder",
+      "repo": "https://github.com/RebeccaRGB/ubcd",
+      "revision": "d84feed75990ba265da3c1e19b5f2c143bc619bc",
+      "tokens": 3978,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_rejunity_vga_logo",
+      "repo": "https://github.com/rejunity/tt08-huge-480x480-tiny-tapeout-logo-in-1-tile",
+      "revision": "db5615f0a8d3fd5ee738526bbc2e877fc608d1d2",
+      "tokens": 1528,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rejunity_vga_test01",
+      "repo": "https://github.com/rejunity/tt08-vga-drop",
+      "revision": "1b0ec59b7b894bde70c3c29beec77c16ede98361",
+      "tokens": 2554,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_roy1707018",
+      "repo": "https://github.com/Secure-Embedded-Systems/tt08-trng",
+      "revision": "e51a231cd8bff95ce4d9bda1aa411a105c7f0403",
+      "tokens": 1833,
+      "outcome": "Command '['vvp', '-n', 'C:\\\\HT_detection_GNN\\\\runs\\\\precision_v1\\\\hosts\\\\tt_um_roy1707018\\\\reference.vvp']' timed out after 40 seconds"
+    },
+    {
+      "host": "tt_um_shuangyu_top",
+      "repo": "https://github.com/Cooooobra/tt08_calculator",
+      "revision": "77e5f3dfcf5a672a106639376c775d1660b2e903",
+      "tokens": 2322,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_simon_cipher",
+      "repo": "https://github.com/Secure-Embedded-Systems/tt08-simon",
+      "revision": "a664d54750680b69a53c0eea2a295cdffefa8985",
+      "tokens": 1972,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_stochastic_addmultiply_CL123abc",
+      "repo": "https://github.com/CL-123-abc/tt_um_stochastic_addmultiply_CL123abc",
+      "revision": "dfdcbcaa7487be93ac28cda393b6c3771dcd7e22",
+      "tokens": 1672,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_supermic_arghunter",
+      "repo": "https://github.com/arghunter/Supermic-tt08",
+      "revision": "2382b04870a83d488a717366cebb333c5c96c206",
+      "tokens": 5220,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_thexeno_rgbw_controller",
+      "repo": "https://github.com/thexeno/tt08-rgbw-controller",
+      "revision": "88398e21373a5c0841b546c785e66b76fc3a3ade",
+      "tokens": 4138,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_tinytapeout_logo_screensaver",
+      "repo": "https://github.com/TinyTapeout/tt08-logo-screensaver",
+      "revision": "d4bb3d3c16c38f3dd1a69381eb3a7989bd8637cb",
+      "tokens": 15511,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_top",
+      "repo": "https://github.com/kbeckmann/tt08-flame",
+      "revision": "aad26d0e271c3a95495de35f3ea3c436debabba1",
+      "tokens": 1905,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_urish_simon",
+      "repo": "https://github.com/urish/tt08-simon-game",
+      "revision": "be0087f2e506370da743b6c06f9c73aa826dee8c",
+      "tokens": 1999,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_vga_cbtest",
+      "repo": "https://github.com/AniruddhaRanade/TT08_VGA_CBTest",
+      "revision": "7e9549940b329fa9876a7e44343c0ca4a804f869",
+      "tokens": 15191,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_vga_glyph_mode",
+      "repo": "https://github.com/jar/tt08_vga_glyph_mode",
+      "revision": "a0aac243a05f7eaea7c9b833bb8f79a568b8875f",
+      "tokens": 8200,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_whynot",
+      "repo": "https://github.com/sylefeb/tt08-fun",
+      "revision": "1fa1d5e1052f74c6e4a81b58ed9260529608e1fa",
+      "tokens": 8980,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_zec_square1",
+      "repo": "https://github.com/zec/tt08-square1",
+      "revision": "3ffb0b92796285a12e370371a42e1e0024848e83",
+      "tokens": 3272,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_zoom_zoom",
+      "repo": "https://github.com/ringedSquid/BWSI-ASICS-24-Zoom-Zoom",
+      "revision": "0e5654aa1e428432a9c5e632ddcdbe02aa33bd21",
+      "tokens": 4611,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_adriannovosel_top",
+      "repo": "https://github.com/DinkoOletic/tt04-HDL_unizgfer_multich_pulse_counter_v01b",
+      "revision": "625610fd9db48129b830ebdcd11fe7bae105e3a9",
+      "tokens": 2544,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_alu4_alonso59",
+      "repo": "https://github.com/alonso59/tt04-submission-alu4",
+      "revision": "53b0963e85c28a8b4c2edc9c1e85ab6881e90855",
+      "tokens": 1559,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_chip_SP_Soy_de_Zacapa",
+      "repo": "https://github.com/NoelFPB/Soy_de_Zacapa",
+      "revision": "32511838179bc2b43ff8474e2c64cecf0f73f4f6",
+      "tokens": 2053,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_chiplet_jtag",
+      "repo": "https://github.com/chiplet/tt04-jtag",
+      "revision": "8b18aa0a14114f1a1d2bc4524e0863363344e462",
+      "tokens": 10280,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_currymottled",
+      "repo": "https://github.com/currymottled/tt04-pidcontroller-currymottled",
+      "revision": "a6ace278bb2b25e59239cdb4df67ea319d364c69",
+      "tokens": 2526,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_dandy_dance",
+      "repo": "https://github.com/DavidoRotho/tt04-davidroth-dandy-vga",
+      "revision": "d3ce7431b142ba8ea9007b37121f8ac9d029a00d",
+      "tokens": 3088,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_darkfsegura_collatz",
+      "repo": "https://github.com/darkfsegura/tt04-verilog-cmua-uDATAPATH_Collatz",
+      "revision": "daa909aa6d6a593d189138ced9c6a59d7b310cdb",
+      "tokens": 4070,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_devinatkin_arduino_vga",
+      "repo": "https://github.com/devinatkin/tt04-arduino-gpu-vga",
+      "revision": "efa9cc7b21f7e541114130dd2a897eaf659c3354",
+      "tokens": 4484,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_dlmiles_muldiv4",
+      "repo": "https://github.com/dlmiles/tt04-muldiv4",
+      "revision": "1be4eb1afe68dd31b53dc008477c6746e870d557",
+      "tokens": 5677,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\originals\\1be4eb1afe68dd31b53dc008477c6746e870d557\\tb.v:10: error: 'tb' has already been declared in this scope.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_dlmiles_muldiv4\\tb.v:1:      : It was declared here as a module.\nC:\\HT_detection_GNN\\runs\\precision_v1\\originals\\1be4eb1afe68dd31b53dc008477c6746e870d557\\tb.v:50: Module tb was already declared here:"
+    },
+    {
+      "host": "tt_um_eldritch_pwm_peripheral",
+      "repo": "https://github.com/EldritchIHC/tt04-pwm-peripheral",
+      "revision": "cd634bb3f2686c8bede5ee8a03a5fb96420a1c2f",
+      "tokens": 4698,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_fabian",
+      "repo": "https://github.com/cirofabianbermudezmarquez/tt04-submission-template_fabian",
+      "revision": "2458bacc47a4b7471335bda6d5281d83634b2c2e",
+      "tokens": 1737,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_fing_synchronizer_hga",
+      "repo": "https://github.com/pacoveirano/tt04-synchronizer",
+      "revision": "93995bb0afee626cb8a735ed4a443f6c9224abc9",
+      "tokens": 1599,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_fm_transmitter",
+      "repo": "https://github.com/jankralx/tt04-fm-transmitter",
+      "revision": "c8411b9087fa8cc9aa896b9406c062e76f66e0ff",
+      "tokens": 2740,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_FreqMeter_Juan_Garcial",
+      "repo": "https://github.com/Juan-garcial2/tt04-submission-template",
+      "revision": "5a1432f5c72ab9d5d5153db17dba97e5d4be4bea",
+      "tokens": 2091,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_jayraj4021_SAP1_cpu",
+      "repo": "https://github.com/jayraj4021/tt04-submission-jayraj4021-SAP1",
+      "revision": "877044ec879dc2409f1d86ca5819b6bb13f97555",
+      "tokens": 1824,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_jk2102",
+      "repo": "https://github.com/jk2102/tt04-submission-ppt-controller",
+      "revision": "dba447263d971c3bc2cc275553e92de117611732",
+      "tokens": 2078,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_ks_pyamnihc",
+      "repo": "https://github.com/pyamnihc/tt04-um-ks-pyamnihc",
+      "revision": "400c09bf89a44b6aa30819eb9c1ab44f034740b1",
+      "tokens": 4547,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_losaias",
+      "repo": "https://github.com/Iosaias/VLSI_Bootcamp",
+      "revision": "ba0e4b0b34da54081fa68c0d0ff436728b2cf17d",
+      "tokens": 1918,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\originals\\ba0e4b0b34da54081fa68c0d0ff436728b2cf17d\\tb.v:10: error: 'tb' has already been declared in this scope.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_losaias\\tb.v:1:      : It was declared here as a module.\nC:\\HT_detection_GNN\\runs\\precision_v1\\originals\\ba0e4b0b34da54081fa68c0d0ff436728b2cf17d\\tb.v:47: Module tb was already declared here: C:\\HT_d"
+    },
+    {
+      "host": "tt_um_machinaut_systolic",
+      "repo": "https://github.com/machinaut/tt04-machinaut-systolic",
+      "revision": "3f0d3ce81b65f2706ee330c126fa9814df0a9266",
+      "tokens": 5622,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_marno_factorize",
+      "repo": "https://github.com/marnovandermaas/tiny-factorizer",
+      "revision": "dd5af897531e5ecd155423cbeb55b02ae1c91c31",
+      "tokens": 1554,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_mgyenik_bfcpu",
+      "repo": "https://github.com/mgyenik/tt04-mgyenik-bfcpu",
+      "revision": "ba6aa28727eefaaac4d09d8af3940d3193943f3b",
+      "tokens": 2537,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\originals\\ba6aa28727eefaaac4d09d8af3940d3193943f3b\\tt_um_mgyenik_bfcpu.v:16: Include file params.vh not found\nC:\\HT_detection_GNN\\runs\\precision_v1\\originals\\ba6aa28727eefaaac4d09d8af3940d3193943f3b\\tt_um_mgyenik_bfcpu.v:15: syntax error\nI give up.\n"
+    },
+    {
+      "host": "tt_um_morningjava_top",
+      "repo": "https://github.com/WallieEverest/tt04",
+      "revision": "3a96e34ebd6c26e85b939d9ec51664e0690e3065",
+      "tokens": 4473,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_MultiPatternLEDSequencer_RSYO3000",
+      "repo": "https://github.com/RSYO3000/tt04-submission-mpls",
+      "revision": "26d7367bb4eb712eaeb0e418da98110f86b31751",
+      "tokens": 1899,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_phansel_laplace_lut",
+      "repo": "https://github.com/phansel/tt04-experiment-number-six",
+      "revision": "a36f7cbd6f7cf142ab073abec894d5a0f4e84a60",
+      "tokens": 6358,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rejunity_telluride2023_neuron",
+      "repo": "https://github.com/rejunity/tt04-LIF-neuron-telluride2023",
+      "revision": "e7b473e67a3e38cf5c82f6efed2d37a1e7f7ea39",
+      "tokens": 2905,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_RELOG_10M_Juan_Garcial",
+      "repo": "https://github.com/Juan-Garcial/tt04_jcgarcia",
+      "revision": "5238d217df90032695323392c244d7b2fc9c8fb0",
+      "tokens": 2103,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_robojan_pong_top",
+      "repo": "https://github.com/robojan/tt04-pong",
+      "revision": "63cd03d58c611ec0017b8bcfd74143d2426683c9",
+      "tokens": 5138,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_robojan_top",
+      "repo": "https://github.com/robojan/tt04-breakout-submission",
+      "revision": "19bec184c8db4208729cbac44f92abc956d84f39",
+      "tokens": 6758,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_santacrc_tamagotchi",
+      "repo": "https://github.com/SantaCRC/tamagotchi",
+      "revision": "c64563990c746de45d25006f21a1c0afeae21755",
+      "tokens": 2367,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_simple_processor_pablopabota",
+      "repo": "https://github.com/Pablopabota/tt04-submission-demo_design",
+      "revision": "93a0dcd4c6a26e1ae4b651515d71cdbce7e3bdf8",
+      "tokens": 1557,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_simplepiano",
+      "repo": "https://github.com/diadatp/vlsi-iisc-tt4",
+      "revision": "fc8b684ef446404e1eb8031e63395b1086f1066a",
+      "tokens": 4393,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_tomkeddie_a",
+      "repo": "https://github.com/TomKeddie/tinytapeout-2023-tt04a",
+      "revision": "df73c3f8094abf4ecb063267088f9f45ac119e36",
+      "tokens": 2829,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_uninorte",
+      "repo": "https://github.com/mnarducci80/tt04-verilog-demouninorte",
+      "revision": "8ac5d1a4ffe268ac9622b26a9fd87070b7c6bd2e",
+      "tokens": 4923,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_urish_simon",
+      "repo": "https://github.com/urish/tt04-simon-game",
+      "revision": "0b7bbd095039e237b1975d7aa294ea0d686e6712",
+      "tokens": 1866,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_vc_cpu",
+      "repo": "https://github.com/MoonbaseOtago/tt04-vc",
+      "revision": "d5cab8527a9e822913731af5ac9c917cd1f855d0",
+      "tokens": 5667,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_7segx4_clock_abhishek_top",
+      "repo": "https://github.com/abhishek-kakkar/tt05-verilog-7seg-clock",
+      "revision": "01e64af26eb0dbb951b0f9eb198718e55bef256f",
+      "tokens": 2051,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_chatgpt_snn_mtomlin5",
+      "repo": "https://github.com/AndreouLab/tinytapeout_05_chatgpt_snn",
+      "revision": "f73eda61cca4b5c9f67d1e1f83e21a5c3aa6a1cd",
+      "tokens": 1874,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_digital_clock_sellicott",
+      "repo": "https://github.com/sellicott/sellicott_tt5_digital_clock",
+      "revision": "65279706284327df645cfe9cdf98eec6ace2c5f2",
+      "tokens": 4813,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_gharenthi_top",
+      "repo": "https://github.com/Gharenthi/tt05-verilog-fork-stdp",
+      "revision": "35f99389c62c71f4a5edd015169d7eb2669a8ff9",
+      "tokens": 1608,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_ja1tye_sound_generator",
+      "repo": "https://github.com/JA1TYE/tt05-TYE-tone-generator",
+      "revision": "cf77ffb47429130d903c3fff620263bfc4022d7b",
+      "tokens": 2890,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_jaylennee_wta_pwm",
+      "repo": "https://github.com/Jaylenne/tt05-wta-pwm",
+      "revision": "fffe6a5de507f2de92762ce76da8c18b38ebea6f",
+      "tokens": 1564,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_ks_pyamnihc",
+      "repo": "https://github.com/pyamnihc/tt05-um-ks-pyamnihc",
+      "revision": "c6a218dff76274fcbe2c58a1784d1909d4f0f8e9",
+      "tokens": 4547,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_morningjava_top",
+      "repo": "https://github.com/WallieEverest/tt05",
+      "revision": "65b588b52691b3a75e9ff8ed16a53132690d2a6a",
+      "tokens": 4585,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_nickjhay_processor",
+      "repo": "https://github.com/nickjhay/tt05-submission-template",
+      "revision": "f4e0d2db7a1876bb6e601dba1b7b3c7966c6432f",
+      "tokens": 1651,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_no_time_for_squares_tommythorn",
+      "repo": "https://github.com/tommythorn/no-time-for-squares",
+      "revision": "e790eadb9ef3e7cea80ea629d8d2abceb4f720fe",
+      "tokens": 4392,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_prg",
+      "repo": "https://github.com/fleathlushby/tt05_boolean_pseudo_random_generator",
+      "revision": "14d900acb3f4df216e7ec80fd274d1e96a5c484b",
+      "tokens": 11301,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rejunity_ay8913",
+      "repo": "https://github.com/rejunity/tt05-psg-ay8913",
+      "revision": "a93ee1da79593aca863c5d507e2177e233f67ffe",
+      "tokens": 2522,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rejunity_sn76489",
+      "repo": "https://github.com/rejunity/tt05-psg-sn76489",
+      "revision": "5fc7f1186ae25ed8de399b36a7ab149162ab61d1",
+      "tokens": 2071,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_sap_1",
+      "repo": "https://github.com/brandcrz88/SAP-1_Computer",
+      "revision": "ccf5a7d99625a32149f2964ae943f80e002cc70b",
+      "tokens": 1661,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_thermocouple",
+      "repo": "https://github.com/AidanMedcalf/tt05-thermocouple",
+      "revision": "2f2f4ce3a9db1936e46730120e1fd6b0a4c4419c",
+      "tokens": 1662,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_toivoh_synth",
+      "repo": "https://github.com/toivoh/tt05-synth",
+      "revision": "166eb2e9d0b3a1e6c0ec31fc7e841200e3819ac9",
+      "tokens": 3417,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_tomkeddie_a",
+      "repo": "https://github.com/TomKeddie/tinytapeout-2023-tt05a",
+      "revision": "621f0f1604bb5d5ea33630bae4f026edd93948cb",
+      "tokens": 1675,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_urish_silife",
+      "repo": "https://github.com/urish/tt05-silife-8x8",
+      "revision": "4dcd977a84860ebe7f7ea7e2d5e9f9d95ed3c4f2",
+      "tokens": 9524,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_urish_simon",
+      "repo": "https://github.com/urish/tt05-simon-game-openlane2",
+      "revision": "75d174a3ad9d7affc594297f0e9e9196f3a822d5",
+      "tokens": 1866,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_baud_rate_cdr",
+      "repo": "https://github.com/Soumobrata/Baud_Rate_CDR",
+      "revision": "3555320dce8fcc67f0356533918a7b0958f5fb91",
+      "tokens": 1757,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_baud_rate_cdr\\reference_cells.v:9553: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_baud_rate_cdr\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_baud_rate_cdr\\reference_tb.v:1: error: Inout port "
+    },
+    {
+      "host": "tt_um_brainfck_asic",
+      "repo": "https://github.com/map588/tt_um_brainfck_asic",
+      "revision": "a2c72df6e2df0e18c9561333cf947c94edb5be25",
+      "tokens": 4289,
+      "outcome": "uns\\precision_v1\\hosts\\tt_um_brainfck_asic\\reference_cells.v:11883: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_brainfck_asic\\reference_cells.v:12415: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_brainfck_asic\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_camdenmil_sky25b",
+      "repo": "https://github.com/camdenmil/tinytapeout_sky25b",
+      "revision": "56042c7080711df7cf685f96ec4c805480d92f9d",
+      "tokens": 1509,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_camdenmil_sky25b\\reference_cells.v:10059: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_camdenmil_sky25b\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_camdenmil_sky25b\\reference_tb.v:1: error: I"
+    },
+    {
+      "host": "tt_um_chrimenz_tinyturing",
+      "repo": "https://github.com/chrimenz/tiny-turing-machine",
+      "revision": "e76be8081205ad8a761cf0db5b5b40d93d04a576",
+      "tokens": 1589,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_chrimenz_tinyturing\\reference_cells.v:8317: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_chrimenz_tinyturing\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_chrimenz_tinyturing\\reference_tb.v:1: "
+    },
+    {
+      "host": "tt_um_classic_vga_clock",
+      "repo": "https://github.com/Some-Other-Random-Person/tt_classic_vga_clock_by_TT",
+      "revision": "950427ba6e6e85351d9821079886b7372e3e4683",
+      "tokens": 4746,
+      "outcome": "ga_clock\\reference_cells.v:4503: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_classic_vga_clock\\reference_cells.v:4926: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_classic_vga_clock\\reference_tb.v:1: error: expression not valid as argument to inout "
+    },
+    {
+      "host": "tt_um_dumb_turing_yliu_hashed",
+      "repo": "https://github.com/yliu-hashed/ttsky25b-dumb-turing",
+      "revision": "7a0ee907c2efacfb1b4258312fbe94a9a7fe38e8",
+      "tokens": 3431,
+      "outcome": "LAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_dumb_turing_yliu_hashed\\reference_cells.v:10966: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_dumb_turing_yliu_hashed\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precis"
+    },
+    {
+      "host": "tt_um_enjimneering_tts_top",
+      "repo": "https://github.com/Sheffield-Chip-Design-Team/TinyTapeStation",
+      "revision": "9d11d45acbbb02424ec7f9fd22b56a3d6b32046f",
+      "tokens": 11151,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_enjimneering_tts_top\\reference_cells.v:12061: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_enjimneering_tts_top\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_enjimneering_tts_top\\reference_tb.v"
+    },
+    {
+      "host": "tt_um_felixzhou_spi_slave_ctrl",
+      "repo": "https://github.com/zhoufelix0558/spi_slave",
+      "revision": "129a23d677b1269c7c759897b7144332008cd0a1",
+      "tokens": 2723,
+      "outcome": "fined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_felixzhou_spi_slave_ctrl\\reference_cells.v:8964: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_felixzhou_spi_slave_ctrl\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\"
+    },
+    {
+      "host": "tt_um_femto",
+      "repo": "https://github.com/cicamargoba/femto_UN",
+      "revision": "baab83f5b7fe16083744b88fc54fe699873517e1",
+      "tokens": 4958,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_femto\\reference_cells.v:13753: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_femto\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_femto\\reference_tb.v:1: error: Inout port expression must support"
+    },
+    {
+      "host": "tt_um_four_bit_cpu_top_level",
+      "repo": "https://github.com/MaxZGit/Custom-4Bit-CPU",
+      "revision": "afdd91939ad0a32c858447185b7dbdfa975a37e4",
+      "tokens": 5241,
+      "outcome": "ro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_four_bit_cpu_top_level\\reference_cells.v:9810: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_four_bit_cpu_top_level\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs"
+    },
+    {
+      "host": "tt_um_instrumented_ring_oscillator_two",
+      "repo": "https://github.com/AnotherPseudonym/instrumented_ring_oscillator_two",
+      "revision": "9ab111333684dc94c895e259e2f71c33a3691750",
+      "tokens": 1726,
+      "outcome": "on_v1\\hosts\\tt_um_instrumented_ring_oscillator_two\\reference_cells.v:3305: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_instrumented_ring_oscillator_two\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_instrumented_ring_oscillator_two\\reference_t"
+    },
+    {
+      "host": "tt_um_Jsilicon",
+      "repo": "https://github.com/mirseo/JSilicon",
+      "revision": "e2485c351ea82d3985e9788c780cfdc3728e73a6",
+      "tokens": 2047,
+      "outcome": "assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Jsilicon\\reference_cells.v:11323: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Jsilicon\\reference_cells.v:11627: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Jsilicon\\refe"
+    },
+    {
+      "host": "tt_um_libokuohai_asap_cpu_v1",
+      "repo": "https://github.com/libokuohai/ttsky-2025-asap-cpu",
+      "revision": "8369e670638b43e1f6076ba84ecdaebabb9e9739",
+      "tokens": 2162,
+      "outcome": "ro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_libokuohai_asap_cpu_v1\\reference_cells.v:9997: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_libokuohai_asap_cpu_v1\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs"
+    },
+    {
+      "host": "tt_um_Max00Ker_Traffic_Light",
+      "repo": "https://github.com/Max00Ker/TinyTapeoutV1",
+      "revision": "0020ba699c602a2b4a908b85241eb53743ee245d",
+      "tokens": 2999,
+      "outcome": "o UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Max00Ker_Traffic_Light\\reference_cells.v:11207: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Max00Ker_Traffic_Light\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs"
+    },
+    {
+      "host": "tt_um_morse",
+      "repo": "https://github.com/yphoenixs/morse_code_tto",
+      "revision": "a5209d346eb9a13b868e9109f09b9a20cf8b8cd6",
+      "tokens": 4058,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_morse\\reference_cells.v:6634: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_morse\\reference_cells.v:7057: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_morse\\reference_tb.v:1: error: expression not vali"
+    },
+    {
+      "host": "tt_um_morse_w_serial",
+      "repo": "https://github.com/KerCrafter/morse_code_tto",
+      "revision": "5b7c285eb87ee134d9c3a46a999a55d654dc5165",
+      "tokens": 4404,
+      "outcome": "ision_v1\\hosts\\tt_um_morse_w_serial\\reference_cells.v:9416: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_morse_w_serial\\reference_cells.v:9829: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_morse_w_serial\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_nco",
+      "repo": "https://github.com/snevindsouza/NCO_TTO",
+      "revision": "32a3974be0ba02e24156468af2b8829a136e84e7",
+      "tokens": 2142,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_nco\\reference_cells.v:7361: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_nco\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_nco\\reference_tb.v:1: error: Inout port expression must support contin"
+    },
+    {
+      "host": "tt_um_pantelis300_nco",
+      "repo": "https://github.com/pantelis300/tt_um_pantelis300_nco",
+      "revision": "48b76a8ac1c366060269728f77cc67bd0dc31e62",
+      "tokens": 1569,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pantelis300_nco\\reference_cells.v:8835: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pantelis300_nco\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pantelis300_nco\\reference_tb.v:1: error: Inout"
+    },
+    {
+      "host": "tt_um_pongsagon_tinygpu_v2",
+      "repo": "https://github.com/pongsagon/tt_um_pongsagon_tinygpu_v2",
+      "revision": "98b605f6ff91ccce131f6a39e1b024c6f06c1e1a",
+      "tokens": 20180,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pongsagon_tinygpu_v2\\reference_cells.v:16158: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pongsagon_tinygpu_v2\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pongsagon_tinygpu_v2\\reference_tb.v"
+    },
+    {
+      "host": "tt_um_PseudoSM_ASIC",
+      "repo": "https://github.com/CristianValenti/Pseudo_Softmax",
+      "revision": "d96800d4a676a94ad75d5a1ccbbf21ca00a5b2d7",
+      "tokens": 19393,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_PseudoSM_ASIC\\reference_cells.v:8958: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_PseudoSM_ASIC\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_PseudoSM_ASIC\\reference_tb.v:1: error: Inout port "
+    },
+    {
+      "host": "tt_um_rc_servo_motor_xy_ea",
+      "repo": "https://github.com/yavarhadi/rc_servo_motor_xy",
+      "revision": "15aaa657163a0b6423539b7ec520c504de215b2d",
+      "tokens": 3410,
+      "outcome": "491: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rc_servo_motor_xy_ea\\reference_cells.v:10013: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rc_servo_motor_xy_ea\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_dete"
+    },
+    {
+      "host": "tt_um_rejunity_vga_playground",
+      "repo": "https://github.com/rejunity/tt-vga-sandbox",
+      "revision": "31ff60842e3b333b4a232f1eb489729583dff58d",
+      "tokens": 1989,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rejunity_vga_playground\\reference_cells.v:10577: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rejunity_vga_playground\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rejunity_vga_playground\\refer"
+    },
+    {
+      "host": "tt_um_rejunity_ym2413_ika_opll",
+      "repo": "https://github.com/rejunity/tt-ym2413-IKAOPLL",
+      "revision": "1a669e01039485b35385b24c8d94901cbc133046",
+      "tokens": 16608,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rejunity_ym2413_ika_opll\\reference_cells.v:13370: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rejunity_ym2413_ika_opll\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rejunity_ym2413_ika_opll\\re"
+    },
+    {
+      "host": "tt_um_rh_bf_top",
+      "repo": "https://github.com/renehahn/TinyBF",
+      "revision": "52eb0646546a335897c071bcc10b6ae9ce5e46f8",
+      "tokens": 4323,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rh_bf_top\\reference_cells.v:9073: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rh_bf_top\\reference_cells.v:9605: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rh_bf_top\\reference_tb.v:1: error: express"
+    },
+    {
+      "host": "tt_um_Sai222777",
+      "repo": "https://github.com/Sai-222777/TinyTapeout_Cipher",
+      "revision": "c837152a7b5186f877f4f16484919c89075af8b9",
+      "tokens": 1416,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Sai222777\\reference_cells.v:7273: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Sai222777\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Sai222777\\reference_tb.v:1: error: Inout port expression m"
+    },
+    {
+      "host": "tt_um_seven_segment_games",
+      "repo": "https://github.com/userbanana47/7-segment-games",
+      "revision": "6aa0f89d3ae2665e052cbef47f232e7575e442c3",
+      "tokens": 1871,
+      "outcome": "_cells.v:9480: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_seven_segment_games\\reference_cells.v:9784: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_seven_segment_games\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\"
+    },
+    {
+      "host": "tt_um_sleepy_module",
+      "repo": "https://github.com/teafella/sleepy_tapeout",
+      "revision": "f764fd27014c830fb0cc74c4ac4bd5bb436ea1b6",
+      "tokens": 1785,
+      "outcome": "\\runs\\precision_v1\\hosts\\tt_um_sleepy_module\\reference_cells.v:9461: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_sleepy_module\\reference_cells.v:9993: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_sleepy_module\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_tiny_hardware_authentication_engine",
+      "repo": "https://github.com/raghul-g1322/tiny_hardware_authentication_tto",
+      "revision": "380d6dd5b401e32ad9fb3235380ccf42ae8c42fd",
+      "tokens": 2597,
+      "outcome": "are_authentication_engine\\reference_cells.v:10615: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tiny_hardware_authentication_engine\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tiny_hardware_authentication_engine\\reference_tb.v:1: error: Inou"
+    },
+    {
+      "host": "tt_um_tinytapeout_logo_screensaver",
+      "repo": "https://github.com/TinyTapeout/tt-logo-screensaver",
+      "revision": "ff16b27c18ab118670d96f0954e453cdcdec19ac",
+      "tokens": 16798,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tinytapeout_logo_screensaver\\reference_cells.v:12943: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tinytapeout_logo_screensaver\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tinytapeout_logo_sc"
+    },
+    {
+      "host": "tt_um_top_axis_uart",
+      "repo": "https://github.com/KShreeni/AXIS_UART_TTO",
+      "revision": "324b609430d23b8fea9a9e197d703ad5e12667bc",
+      "tokens": 2329,
+      "outcome": "\\runs\\precision_v1\\hosts\\tt_um_top_axis_uart\\reference_cells.v:8761: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_top_axis_uart\\reference_cells.v:9293: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_top_axis_uart\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_top_general",
+      "repo": "https://github.com/EduHolg/Dual_PWM_Generator",
+      "revision": "505c4e6b786218dd378a6cec99f3b76885627ed0",
+      "tokens": 1548,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_top_general\\reference_cells.v:5806: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_top_general\\reference_cells.v:6328: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_top_general\\reference_tb.v:1: error: e"
+    },
+    {
+      "host": "tt_um_urish_sic1",
+      "repo": "https://github.com/urish/tt-subleq-sic1",
+      "revision": "7199d1be4ab74d9f0d7f83ff86bcb80d69b4130a",
+      "tokens": 1911,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_urish_sic1\\reference_cells.v:11245: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\ttsky25b\\projects\\tt_um_urish_sic1\\tt_um_urish_sic1.v:5793: error: Unknown module type: rf_top\nC:\\HT_detection_GNN\\runs\\precision_v1\\ttsky25b\\projects\\tt_um_urish_sic1\\tt_um_urish_sic1.v:5908: error: Unknow"
+    },
+    {
+      "host": "tt_um_urish_simon",
+      "repo": "https://github.com/urish/tt-simon-game",
+      "revision": "4863ed7a78662ad37f0d7b05a4f3273cd163d650",
+      "tokens": 2482,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_urish_simon\\reference_cells.v:10011: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_urish_simon\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_urish_simon\\reference_tb.v:1: error: Inout port expre"
+    },
+    {
+      "host": "tt_um_urish_spell",
+      "repo": "https://github.com/urish/tt-spell",
+      "revision": "d5222bb4c3073f18e65a883226f7417cc3b9b306",
+      "tokens": 3766,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_urish_spell\\reference_cells.v:13159: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\ttsky25b\\projects\\tt_um_urish_spell\\tt_um_urish_spell.v:33356: error: Unknown module type: rf_top\nC:\\HT_detection_GNN\\runs\\precision_v1\\ttsky25b\\projects\\tt_um_urish_spell\\tt_um_urish_spell.v:33471: error:"
+    },
+    {
+      "host": "tt_um_willwhang",
+      "repo": "https://github.com/will127534/TinyTapeOut_SuperCon2025",
+      "revision": "64e6516c9d222a1d8702c7919849fedff3e2d382",
+      "tokens": 2008,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_willwhang\\reference_cells.v:10542: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_willwhang\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_willwhang\\reference_tb.v:1: error: Inout port expression "
+    },
+    {
+      "host": "tt_um_yorimichi_kittscanner",
+      "repo": "https://github.com/yorimichiykhm/ttsky-um_yorimichi_kittscanner",
+      "revision": "5830f9b6013a538b0c5e4f57c32d4a4bd854f675",
+      "tokens": 3698,
+      "outcome": "ing: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_yorimichi_kittscanner\\reference_cells.v:10307: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_yorimichi_kittscanner\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_G"
+    },
+    {
+      "host": "tt_um_zerotoasic_logo_screensaver",
+      "repo": "https://github.com/Bynaryman/ttihp0p3-z2a-logo-screensaver",
+      "revision": "8d96cbfee53d979806d26879bb40b5f94af44746",
+      "tokens": 16807,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_zerotoasic_logo_screensaver\\reference_cells.v:12205: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_zerotoasic_logo_screensaver\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_zerotoasic_logo_scree"
+    },
+    {
+      "host": "tt_um_5482582_cat_vga",
+      "repo": "https://github.com/5482582/ttsky26a_totp_2fa",
+      "revision": "c5fbdbc49ab698c1267390e39a8bee377c12362d",
+      "tokens": 4727,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_5482582_cat_vga\\reference_cells.v:9162: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_5482582_cat_vga\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_5482582_cat_vga\\reference_tb.v:1: error: Inout"
+    },
+    {
+      "host": "tt_um_Acrazt05_titan_proccesing_unit",
+      "repo": "https://github.com/Acrazt05/Titan-Processing-Unit-TPU",
+      "revision": "1da2d01aaeeb58f059f3242fda32aee564388c44",
+      "tokens": 2942,
+      "outcome": "n_GNN\\runs\\precision_v1\\hosts\\tt_um_Acrazt05_titan_proccesing_unit\\reference_cells.v:8722: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Acrazt05_titan_proccesing_unit\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Acrazt05_titan_proccesing_unit"
+    },
+    {
+      "host": "tt_um_advaittej_stopwatch",
+      "repo": "https://github.com/AdvaittejPS/vit",
+      "revision": "b1d76d9409d892845a55d813fa9dc10a029f9e45",
+      "tokens": 1356,
+      "outcome": "_cells.v:8830: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_advaittej_stopwatch\\reference_cells.v:9134: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_advaittej_stopwatch\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\"
+    },
+    {
+      "host": "tt_um_aes_sbox",
+      "repo": "https://github.com/MavenRain/tt-aes-sbox",
+      "revision": "193b2899ad1349ca6b1a6b841b369542386c53c8",
+      "tokens": 3363,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_aes_sbox\\reference_cells.v:8643: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_aes_sbox\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_aes_sbox\\reference_tb.v:1: error: Inout port expression must"
+    },
+    {
+      "host": "tt_um_AlephNaNsea_space_time_waves_and_filaments",
+      "repo": "https://github.com/AlephNaNsea/space_time_waves_and_filaments",
+      "revision": "5b9d94421a4a273f8f0eaa27bf64354ac70fc2d3",
+      "tokens": 2309,
+      "outcome": "ng: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_AlephNaNsea_space_time_waves_and_filaments\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_AlephNaNsea_space_time_waves_and_filaments\\reference_tb.v:1: error: Inout port expression must support continuous "
+    },
+    {
+      "host": "tt_um_algofoogle_dottee",
+      "repo": "https://github.com/algofoogle/ttsky26a-demoscene-dottee",
+      "revision": "4bf41a170cc7a892566b205456cebf2d75d91f09",
+      "tokens": 7404,
+      "outcome": "dottee\\reference_cells.v:10202: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_algofoogle_dottee\\reference_cells.v:10506: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_algofoogle_dottee\\reference_tb.v:1: error: expression not valid as argument to inout "
+    },
+    {
+      "host": "tt_um_alu_bns",
+      "repo": "https://github.com/mahmoudmq/tinytapeout_alu_bns",
+      "revision": "9887fe985ab5298afee43ec40cca6cdf60efec55",
+      "tokens": 2952,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_alu_bns\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_alu_bns\\reference_tb.v:1: error: Inout port expression must support continuous assignment.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_alu_bns\\reference_tb.v:1:      : Port 4 (VPWR) of tt_um_alu_bns is connec"
+    },
+    {
+      "host": "tt_um_AmitChen1415",
+      "repo": "https://github.com/AmitChen1415/tiny-blackjack",
+      "revision": "66aa7e15d2cf1a3d1c728cae79f46c6bcda3728a",
+      "tokens": 10093,
+      "outcome": "tion_GNN\\runs\\precision_v1\\hosts\\tt_um_AmitChen1415\\reference_cells.v:13586: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_AmitChen1415\\reference_cells.v:14118: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_AmitChen1415\\reference_tb.v:1: error: express"
+    },
+    {
+      "host": "tt_um_axi4lite2x2_top",
+      "repo": "https://github.com/cccir/Dual_AXI_lite",
+      "revision": "4f9b7c53c1d5fc6edf519861933216072ef0c41c",
+      "tokens": 1642,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_axi4lite2x2_top\\reference_cells.v:6737: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_axi4lite2x2_top\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_axi4lite2x2_top\\reference_tb.v:1: error: Inout"
+    },
+    {
+      "host": "tt_um_axi4lite_top",
+      "repo": "https://github.com/cccir/ttsky-CCCIR_AXI_Lite",
+      "revision": "05766ca8626c9c36f115f7adc2d88074a011e9ec",
+      "tokens": 1412,
+      "outcome": "ection_GNN\\runs\\precision_v1\\hosts\\tt_um_axi4lite_top\\reference_cells.v:4489: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_axi4lite_top\\reference_cells.v:4793: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_axi4lite_top\\reference_tb.v:1: error: express"
+    },
+    {
+      "host": "tt_um_bad_ode_plotter_vga",
+      "repo": "https://github.com/BigTurtle8/ttsky26a-bad-ode-plotter",
+      "revision": "9c8775c7868ad03053b3bd6b071caa5290be18d1",
+      "tokens": 1970,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bad_ode_plotter_vga\\reference_cells.v:8750: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bad_ode_plotter_vga\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bad_ode_plotter_vga\\reference_tb.v:1: "
+    },
+    {
+      "host": "tt_um_canvas",
+      "repo": "https://github.com/ajamous1/tiny_tapeout",
+      "revision": "dc71ffa289f8c4da73a3899084a149fc0255d1e8",
+      "tokens": 5267,
+      "outcome": "DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_canvas\\reference_cells.v:9766: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_canvas\\reference_cells.v:10070: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_"
+    },
+    {
+      "host": "tt_um_chinghey",
+      "repo": "https://github.com/altcar/ttsky-sesh",
+      "revision": "1bca4093a096384e5f9bff6d9c25ddc4b7b919fd",
+      "tokens": 1798,
+      "outcome": "d assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_chinghey\\reference_cells.v:9678: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_chinghey\\reference_cells.v:9982: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_chinghey\\refe"
+    },
+    {
+      "host": "tt_um_ChristmasTree_MaligayangPasko",
+      "repo": "https://github.com/alexandercoabad/ChristmasTree_MaligayangPasko",
+      "revision": "32787f8cca06db70557314ec88b1b4bfb575a6e8",
+      "tokens": 2345,
+      "outcome": "detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ChristmasTree_MaligayangPasko\\reference_cells.v:10885: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ChristmasTree_MaligayangPasko\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ChristmasTree_Maligayan"
+    },
+    {
+      "host": "tt_um_cmos_inverter",
+      "repo": "https://github.com/Pathan-Rehman/tt_um_cmos_inv_VISUALIZER",
+      "revision": "42150d7e1a27d335e8103e2cd87ba5c0e6c04052",
+      "tokens": 3623,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_cmos_inverter\\reference_cells.v:9776: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_cmos_inverter\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_cmos_inverter\\reference_tb.v:1: error: Inout port "
+    },
+    {
+      "host": "tt_um_ds_missile_command",
+      "repo": "https://github.com/dsatizabal/demoscene-missile-command",
+      "revision": "9445978f5cf329f49ee48938cf3006ca43b9a35b",
+      "tokens": 10381,
+      "outcome": "ference_cells.v:11783: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ds_missile_command\\reference_cells.v:12087: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ds_missile_command\\reference_tb.v:1: error: expression not valid as argument to inout port: 1"
+    },
+    {
+      "host": "tt_um_electron65_vga",
+      "repo": "https://github.com/electron65/ttsky-electron65",
+      "revision": "dd5cec8e141130985bbc8143fcac65022de57dd9",
+      "tokens": 5343,
+      "outcome": "sion_v1\\hosts\\tt_um_electron65_vga\\reference_cells.v:9896: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_electron65_vga\\reference_cells.v:10200: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_electron65_vga\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_fp_id",
+      "repo": "https://github.com/sriram829/tt_um_fp_id_tape",
+      "revision": "d43767d36efd0361ec8c8255d19d2d7c9574176c",
+      "tokens": 2977,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_fp_id\\reference_cells.v:8936: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_fp_id\\reference_cells.v:9250: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_fp_id\\reference_tb.v:1: error: expression not vali"
+    },
+    {
+      "host": "tt_um_game_of_life",
+      "repo": "https://github.com/HoangDang04/Conway-Game-of-Life-Demoscene",
+      "revision": "f4260eb9f1955613af9afc3fc2f74fe7fc4b8c02",
+      "tokens": 1642,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_game_of_life\\reference_cells.v:12450: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_game_of_life\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_game_of_life\\reference_tb.v:1: error: Inout port ex"
+    },
+    {
+      "host": "tt_um_ghtag_trinity_gf16",
+      "repo": "https://github.com/gHashTag/tt-trinity-gf16",
+      "revision": "29bf1ded85d2abd08e9cab70b4a71bc1471a8cdf",
+      "tokens": 2532,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ghtag_trinity_gf16\\reference_cells.v:1638: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ghtag_trinity_gf16\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ghtag_trinity_gf16\\reference_tb.v:1: err"
+    },
+    {
+      "host": "tt_um_glyph_mode_hd",
+      "repo": "https://github.com/jar/ttsky26a_glyph_mode_hd",
+      "revision": "91096e4c0777d33206af2e9ff4d6fa93483c14f6",
+      "tokens": 3844,
+      "outcome": "\\runs\\precision_v1\\hosts\\tt_um_glyph_mode_hd\\reference_cells.v:9673: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_glyph_mode_hd\\reference_cells.v:9977: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_glyph_mode_hd\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_goose_game",
+      "repo": "https://github.com/Krisphy/tt-ece298a-demoscene",
+      "revision": "537e4ffc820292ce52f5aa3b39573b1d1bbe3b5c",
+      "tokens": 4218,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_goose_game\\reference_cells.v:12401: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_goose_game\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_goose_game\\reference_tb.v:1: error: Inout port expressi"
+    },
+    {
+      "host": "tt_um_grammartile",
+      "repo": "https://github.com/plawanrath/grammartile",
+      "revision": "3700248903b14295bba929e88f644a60a419573f",
+      "tokens": 4627,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_grammartile\\reference_cells.v:9890: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_grammartile\\reference_cells.v:10204: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_grammartile\\reference_tb.v:1: error: "
+    },
+    {
+      "host": "tt_um_immrudul_w7khan",
+      "repo": "https://github.com/Immrudul/298a-mrudul-wahhaj",
+      "revision": "81e44a412b548f05f6e960c29c9b42b29051d8d9",
+      "tokens": 2186,
+      "outcome": "ts\\tt_um_immrudul_w7khan\\reference_cells.v:10250: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_immrudul_w7khan\\reference_cells.v:10554: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_immrudul_w7khan\\reference_tb.v:1: error: expression not valid as argu"
+    },
+    {
+      "host": "tt_um_isa084_uart_servo",
+      "repo": "https://github.com/isa084/ttsky-submission-May2026-01",
+      "revision": "6e55b1d225073a44b7ca8d2f993de72e462a79d2",
+      "tokens": 1521,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_isa084_uart_servo\\reference_cells.v:8532: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_isa084_uart_servo\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_isa084_uart_servo\\reference_tb.v:1: error:"
+    },
+    {
+      "host": "tt_um_jackthoene_frogger",
+      "repo": "https://github.com/jackthoene/sky130-frogger",
+      "revision": "8b9ce5899223af15c119f47168e920439c581878",
+      "tokens": 4293,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_jackthoene_frogger\\reference_cells.v:8724: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_jackthoene_frogger\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_jackthoene_frogger\\reference_tb.v:1: err"
+    },
+    {
+      "host": "tt_um_johshoff_metaballs",
+      "repo": "https://github.com/johshoff/ttsky-26a",
+      "revision": "20a9e6ae4a49b1cdbdce9cd23af781bf3daa8c06",
+      "tokens": 2854,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_johshoff_metaballs\\reference_cells.v:8841: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_johshoff_metaballs\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_johshoff_metaballs\\reference_tb.v:1: err"
+    },
+    {
+      "host": "tt_um_josenbm",
+      "repo": "https://github.com/JosenBM/tt_asic_jb_sky",
+      "revision": "cd7d4eee3e606fb0905f02a78154034fb390575c",
+      "tokens": 4784,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_josenbm\\reference_cells.v:11177: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_josenbm\\reference_cells.v:11491: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_josenbm\\reference_tb.v:1: error: expression "
+    },
+    {
+      "host": "tt_um_katomata",
+      "repo": "https://github.com/kavsdev/kavi-26a",
+      "revision": "b30ccecab289b76e3dab561e94cd7bcede8901ec",
+      "tokens": 1790,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_katomata\\reference_cells.v:7995: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_katomata\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_katomata\\reference_tb.v:1: error: Inout port expression must"
+    },
+    {
+      "host": "tt_um_kilian_interference",
+      "repo": "https://github.com/Zufallsgenerat0r/tt-interference",
+      "revision": "6efd41a399a79f494ca044677da08ab86bacfb32",
+      "tokens": 3348,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_kilian_interference\\reference_cells.v:8708: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_kilian_interference\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_kilian_interference\\reference_tb.v:1: "
+    },
+    {
+      "host": "tt_um_lambda_clock",
+      "repo": "https://github.com/tbemre/lambda_clock",
+      "revision": "c02570a594c9d97b718d95b5fee2085a86c51958",
+      "tokens": 3023,
+      "outcome": "ection_GNN\\runs\\precision_v1\\hosts\\tt_um_lambda_clock\\reference_cells.v:9044: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_lambda_clock\\reference_cells.v:9348: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_lambda_clock\\reference_tb.v:1: error: express"
+    },
+    {
+      "host": "tt_um_libokuohai_asap_cpu_v2",
+      "repo": "https://github.com/libokuohai/asap-cpu-sky26-2026-05",
+      "revision": "bc761a0b5137454a0780632179021bf82cf0dd9c",
+      "tokens": 2439,
+      "outcome": "ro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_libokuohai_asap_cpu_v2\\reference_cells.v:8411: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_libokuohai_asap_cpu_v2\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs"
+    },
+    {
+      "host": "tt_um_madech_8bit_processor_vga",
+      "repo": "https://github.com/BigTurtle8/chip-w26",
+      "revision": "3c27a9831c81aade6e8743693317bc1279b2a332",
+      "tokens": 5048,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_madech_8bit_processor_vga\\reference_cells.v:8003: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_madech_8bit_processor_vga\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_madech_8bit_processor_vga\\"
+    },
+    {
+      "host": "tt_um_mastensg_ttsky26a_demo",
+      "repo": "https://github.com/mastensg/ttsky26a-demo",
+      "revision": "520de82eaba280e0cd22d7db1b1f853a6cccd3ae",
+      "tokens": 2440,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_mastensg_ttsky26a_demo\\reference_cells.v:8623: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_mastensg_ttsky26a_demo\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_mastensg_ttsky26a_demo\\reference"
+    },
+    {
+      "host": "tt_um_maze",
+      "repo": "https://github.com/ckdur/tt_maze",
+      "revision": "048ebe44554b6ed5a6590b2b1e3512638bb15ec3",
+      "tokens": 20124,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_maze\\reference_cells.v:8932: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_maze\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_maze\\reference_tb.v:1: error: Inout port expression must support con"
+    },
+    {
+      "host": "tt_um_Melody_Generator_JLANordhal",
+      "repo": "https://github.com/JLANordhal/ttsky26a-Markov-Chains-Melody-Generator",
+      "revision": "95fc046afa74b7165807c4bcffcc0ee2bc18635a",
+      "tokens": 4225,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Melody_Generator_JLANordhal\\reference_cells.v:8227: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Melody_Generator_JLANordhal\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Melody_Generator_JLANo"
+    },
+    {
+      "host": "tt_um_NguyenHuuHenry_vga_project",
+      "repo": "https://github.com/NguyenHuuHenry/tt_vga_project",
+      "revision": "922a9cbe188c1f5e3bfa8099047b6d040a873e94",
+      "tokens": 15476,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_NguyenHuuHenry_vga_project\\reference_cells.v:8837: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_NguyenHuuHenry_vga_project\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_NguyenHuuHenry_vga_proje"
+    },
+    {
+      "host": "tt_um_pakesson_glitcher",
+      "repo": "https://github.com/pakesson/tt_glitcher",
+      "revision": "805ff8e56fc8cdcd1b58323f394fea9462f32f64",
+      "tokens": 2565,
+      "outcome": "glitcher\\reference_cells.v:9688: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pakesson_glitcher\\reference_cells.v:9992: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pakesson_glitcher\\reference_tb.v:1: error: expression not valid as argument to inout "
+    },
+    {
+      "host": "tt_um_pakesson_simon64_128",
+      "repo": "https://github.com/pakesson/tt_simon_spi",
+      "revision": "fd7e0cb6119489d85ae318eea16788d59f7e35e5",
+      "tokens": 2566,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pakesson_simon64_128\\reference_cells.v:7353: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pakesson_simon64_128\\reference_cells.v:7657: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\ttsky26a\\projects\\tt_um_pakesson"
+    },
+    {
+      "host": "tt_um_pakesson_vga_rocket",
+      "repo": "https://github.com/pakesson/tt_vga_rocket",
+      "revision": "9733a8ae919ebac7488065b61e821ac676383b39",
+      "tokens": 2884,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pakesson_vga_rocket\\reference_cells.v:9047: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pakesson_vga_rocket\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pakesson_vga_rocket\\reference_tb.v:1: "
+    },
+    {
+      "host": "tt_um_parakeet",
+      "repo": "https://github.com/Fivetonsofflax/ttsky-um-parakeet",
+      "revision": "6f6177af93df2d758c09029397365cd443e0c47f",
+      "tokens": 2777,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_parakeet\\reference_cells.v:8732: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_parakeet\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_parakeet\\reference_tb.v:1: error: Inout port expression must"
+    },
+    {
+      "host": "tt_um_pong",
+      "repo": "https://github.com/warriorjacq9-no2fa/ttpong",
+      "revision": "ed12dd742c633575cea588c34edd502078bb1d8a",
+      "tokens": 2832,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pong\\reference_cells.v:9998: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pong\\reference_cells.v:10530: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pong\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_ppu_aebarthyi",
+      "repo": "https://github.com/aebarthyi/TT_posit_processing_unit",
+      "revision": "de5c855da0fd156d37e2d2c112afc5b6661886e7",
+      "tokens": 4633,
+      "outcome": "uns\\precision_v1\\hosts\\tt_um_ppu_aebarthyi\\reference_cells.v:10907: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ppu_aebarthyi\\reference_cells.v:11221: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ppu_aebarthyi\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_present",
+      "repo": "https://github.com/Gabbo28/tt_present",
+      "revision": "0311477a0e565513e8752cbdc35dd63499d16fc8",
+      "tokens": 1913,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_present\\reference_cells.v:7446: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_present\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_present\\reference_tb.v:1: error: Inout port expression must su"
+    },
+    {
+      "host": "tt_um_remedy_cpu",
+      "repo": "https://github.com/leonidas213/ttsky-tt_um_aerkany_ffd16_cpu",
+      "revision": "b3ca1d6269264b59d8a11d60da4f7aa5cd61b888",
+      "tokens": 14049,
+      "outcome": "s point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_remedy_cpu\\reference_cells.v:14195: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_remedy_cpu\\reference_cells.v:14608: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_remedy_cpu\\reference_tb.v:1: "
+    },
+    {
+      "host": "tt_um_riscv_core",
+      "repo": "https://github.com/soujanyacccir/ttsky-CIT_RISCV",
+      "revision": "397b97a496bc1ae9826d48cb120cc97e3d46902f",
+      "tokens": 1442,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_riscv_core\\reference_cells.v:8212: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_riscv_core\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_riscv_core\\reference_tb.v:1: error: Inout port expressio"
+    },
+    {
+      "host": "tt_um_rongbin99_happyredmapleleaf_audio_chip",
+      "repo": "https://github.com/Rongbin99/ece298a-f25",
+      "revision": "24e2e66784f519cbc5b4b36f11dd0f2b0e7da9be",
+      "tokens": 1594,
+      "outcome": "p\\reference_cells.v:10101: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rongbin99_happyredmapleleaf_audio_chip\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rongbin99_happyredmapleleaf_audio_chip\\reference_tb.v:1: error: Inout port expression "
+    },
+    {
+      "host": "tt_um_rowantylerr_RC_TDC",
+      "repo": "https://github.com/rowantylerr/tt02-RC-TDC",
+      "revision": "c5517429d8aa03792db323d79d72c2932d72d136",
+      "tokens": 1557,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rowantylerr_RC_TDC\\reference_cells.v:8733: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rowantylerr_RC_TDC\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rowantylerr_RC_TDC\\reference_tb.v:1: err"
+    },
+    {
+      "host": "tt_um_santhosh_stdp_ctrl",
+      "repo": "https://github.com/santhoshs93/tt_um_santhosh_stdp_ctrl",
+      "revision": "8385cf0ad475fad8424d6cb6916c9fadf0553f76",
+      "tokens": 2250,
+      "outcome": "reference_cells.v:8349: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_santhosh_stdp_ctrl\\reference_cells.v:8663: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_santhosh_stdp_ctrl\\reference_tb.v:1: error: expression not valid as argument to inout port: 1"
+    },
+    {
+      "host": "tt_um_santhosh_stoch_neuron",
+      "repo": "https://github.com/santhoshs93/tt_um_santhosh_stoch_neuron",
+      "revision": "225ce6e781b143a3bf05c25812468d187c808e46",
+      "tokens": 1717,
+      "outcome": "ning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_santhosh_stoch_neuron\\reference_cells.v:9814: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_santhosh_stoch_neuron\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_G"
+    },
+    {
+      "host": "tt_um_santhosh_xbar_ctrl",
+      "repo": "https://github.com/santhoshs93/tt_um_santhosh_xbar_ctrl",
+      "revision": "718f170bab4f35ae68ef18e6c66bb24c4b802c20",
+      "tokens": 2129,
+      "outcome": "reference_cells.v:7399: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_santhosh_xbar_ctrl\\reference_cells.v:7713: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_santhosh_xbar_ctrl\\reference_tb.v:1: error: expression not valid as argument to inout port: 1"
+    },
+    {
+      "host": "tt_um_sap_alexanderholden",
+      "repo": "https://github.com/alexanderholden/tinytapeoutalexander",
+      "revision": "369e83ebf8c644162ca0738145e0f989c046edd9",
+      "tokens": 2057,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_sap_alexanderholden\\reference_cells.v:7242: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_sap_alexanderholden\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_sap_alexanderholden\\reference_tb.v:1: "
+    },
+    {
+      "host": "tt_um_shiho_space_invaders",
+      "repo": "https://github.com/kyulicht/mi-chip-ttsky",
+      "revision": "6617b27e8f600659eb96e6b57c8c788035183769",
+      "tokens": 2437,
+      "outcome": "9369: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_shiho_space_invaders\\reference_cells.v:9673: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_shiho_space_invaders\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_dete"
+    },
+    {
+      "host": "tt_um_siliconimist",
+      "repo": "https://github.com/johnisanerd/ttsky-verilog-siliconimist-demoscene",
+      "revision": "9d5b95d73089804d5364c42a2bb938cb010c4eff",
+      "tokens": 17529,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_siliconimist\\reference_cells.v:9352: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_siliconimist\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_siliconimist\\reference_tb.v:1: error: Inout port exp"
+    },
+    {
+      "host": "tt_um_sriaxi4lite_top",
+      "repo": "https://github.com/cyrilprasannarajp/Sri_Shakti_Ins_AXI_lite",
+      "revision": "4aac6f488a754a656c73c9b490a4c6238b8de603",
+      "tokens": 1412,
+      "outcome": "osts\\tt_um_sriaxi4lite_top\\reference_cells.v:4489: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_sriaxi4lite_top\\reference_cells.v:4793: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_sriaxi4lite_top\\reference_tb.v:1: error: expression not valid as argu"
+    },
+    {
+      "host": "tt_um_systolic_top",
+      "repo": "https://github.com/Coizi/tt_um_systolicmac",
+      "revision": "eac903831bba3045983ca71902b139325b6fcc97",
+      "tokens": 2269,
+      "outcome": "tion_GNN\\runs\\precision_v1\\hosts\\tt_um_systolic_top\\reference_cells.v:10721: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_systolic_top\\reference_cells.v:11025: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_systolic_top\\reference_tb.v:1: error: express"
+    },
+    {
+      "host": "tt_um_tinytensorcore",
+      "repo": "https://github.com/noyades/tinytensorcore",
+      "revision": "3e5ad910d4a435ec2403da056e6673eafcc4c182",
+      "tokens": 1698,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tinytensorcore\\reference_cells.v:9906: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tinytensorcore\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tinytensorcore\\reference_tb.v:1: error: Inout po"
+    },
+    {
+      "host": "tt_um_tomvdsch_cyclonerunner",
+      "repo": "https://github.com/Tomvdsch/tt-cyclonerunner",
+      "revision": "c8b4dab5af0b37a1db17645a4ecf3d998bc2dbc0",
+      "tokens": 3777,
+      "outcome": "o UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tomvdsch_cyclonerunner\\reference_cells.v:10497: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tomvdsch_cyclonerunner\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs"
+    },
+    {
+      "host": "tt_um_topadi",
+      "repo": "https://github.com/adityavs674/time",
+      "revision": "a1ee2510210f95e6647cd1b21aba62f78c384b67",
+      "tokens": 2096,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_topadi\\reference_cells.v:8534: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_topadi\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_topadi\\reference_tb.v:1: error: Inout port expression must suppo"
+    },
+    {
+      "host": "tt_um_tpu",
+      "repo": "https://github.com/SAM-RANJITH/tt_um_tpu",
+      "revision": "70484bfeb282a5889294bb52d9add63eb83e3f6d",
+      "tokens": 2557,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tpu\\reference_cells.v:9972: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tpu\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tpu\\reference_tb.v:1: error: Inout port expression must support contin"
+    },
+    {
+      "host": "tt_um_uwasic_crypto",
+      "repo": "https://github.com/UW-ASIC/Crypto-Digital-Top",
+      "revision": "c48254bbf92eb19b51ce282dc7386afb6b0907e9",
+      "tokens": 19020,
+      "outcome": "uns\\precision_v1\\hosts\\tt_um_uwasic_crypto\\reference_cells.v:10313: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_uwasic_crypto\\reference_cells.v:10617: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_uwasic_crypto\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_vga_ocarina",
+      "repo": "https://github.com/leonidas213/ttsky-tt_um_vga_ocarina",
+      "revision": "d0d0a1849640b50500913aff67d29b61d59d9b47",
+      "tokens": 4666,
+      "outcome": ":\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_ocarina\\reference_cells.v:10003: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_ocarina\\reference_cells.v:10307: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_ocarina\\reference_tb.v:1: error: "
+    },
+    {
+      "host": "tt_um_vighnesh_sawant_plane",
+      "repo": "https://github.com/vighnesh-sawant/tinytapeout-demoscene-competition",
+      "revision": "a5f0b5b3ee7442c2f1ca8a435f7961600fd9b1a5",
+      "tokens": 1990,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vighnesh_sawant_plane\\reference_cells.v:9251: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vighnesh_sawant_plane\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vighnesh_sawant_plane\\reference_tb"
+    },
+    {
+      "host": "tt_um_weird_numbers",
+      "repo": "https://github.com/s-m33r/sky26a_demoscene_entry",
+      "revision": "75ce4775aeec2a9cd68d9f99dd508db1503ef1ed",
+      "tokens": 2689,
+      "outcome": "\\runs\\precision_v1\\hosts\\tt_um_weird_numbers\\reference_cells.v:9416: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_weird_numbers\\reference_cells.v:9720: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_weird_numbers\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_william_pll",
+      "repo": "https://github.com/wlmoi/TTIHP-PLL",
+      "revision": "4d90608357a3429001160abffa130c3f02a94321",
+      "tokens": 3182,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_william_pll\\reference_cells.v:6165: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_william_pll\\reference_cells.v:6479: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_william_pll\\reference_tb.v:1: error: e"
+    },
+    {
+      "host": "tt_um_27jorge05_crc_fifo",
+      "repo": "https://github.com/27jorge05/CRC_V4",
+      "revision": "a340260b96d27052da1f0dbf51ea92fa13779b91",
+      "tokens": 1619,
+      "outcome": "reference_cells.v:7245: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_27jorge05_crc_fifo\\reference_cells.v:7549: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_27jorge05_crc_fifo\\reference_tb.v:1: error: expression not valid as argument to inout port: 1"
+    },
+    {
+      "host": "tt_um_AlephNaNsea_decentvgachipIEEEIESIPSPH",
+      "repo": "https://github.com/AlephNaNsea/decentvgachipIEEEIESIPSPH",
+      "revision": "44f14655d2d3b5f2a92602ec1223aa4bf2541d62",
+      "tokens": 5355,
+      "outcome": "EEIESIPSPH\\reference_cells.v:9772: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_AlephNaNsea_decentvgachipIEEEIESIPSPH\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_AlephNaNsea_decentvgachipIEEEIESIPSPH\\reference_tb.v:1: error: Inout port expre"
+    },
+    {
+      "host": "tt_um_ascon_cxof_chain",
+      "repo": "https://github.com/mealycpp/tt-ascon-cxof-chain",
+      "revision": "6da261473d80648833ffeecb6850e032fc2b090d",
+      "tokens": 10400,
+      "outcome": "scon_cxof_chain\\reference_cells.v:10221: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ascon_cxof_chain\\reference_cells.v:10535: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ascon_cxof_chain\\reference_tb.v:1: error: expression not valid as argument to"
+    },
+    {
+      "host": "tt_um_auth_dmac",
+      "repo": "https://github.com/thkaratzas/TinyTapeout-DMA-Controller-AUTh",
+      "revision": "7b5f5e5743d69c65a26e8c206865d4aba712947e",
+      "tokens": 1369,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_auth_dmac\\reference_cells.v:6276: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_auth_dmac\\reference_cells.v:6590: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_auth_dmac\\reference_tb.v:1: error: express"
+    },
+    {
+      "host": "tt_um_authQV",
+      "repo": "https://github.com/stavspirid/ttsky-verilog-template",
+      "revision": "cc079875221416fd7c40c52f94d2b26ed481caeb",
+      "tokens": 2470,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_authQV\\reference_cells.v:6935: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_authQV\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_authQV\\reference_tb.v:1: error: Inout port expression must suppo"
+    },
+    {
+      "host": "tt_um_bad_apple",
+      "repo": "https://github.com/brendtam/ece298a-f25",
+      "revision": "98714c7220a025c43b8373b8489c8b62fc8e3d66",
+      "tokens": 1848,
+      "outcome": "ll) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bad_apple\\reference_cells.v:11733: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bad_apple\\reference_cells.v:12037: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bad_apple\\reference_t"
+    },
+    {
+      "host": "tt_um_basic_na",
+      "repo": "https://github.com/Erenkriger/tt-basic-national-anthem-buzzer",
+      "revision": "0ebd6e6bd973416d3ee84fbc8ce25aa502c1c86a",
+      "tokens": 2087,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_basic_na\\reference_cells.v:7441: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_basic_na\\reference_cells.v:7755: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_basic_na\\reference_tb.v:1: error: expression"
+    },
+    {
+      "host": "tt_um_BFD100_Logic",
+      "repo": "https://github.com/bekaben/BFD1000_LineFolower_SKY26b",
+      "revision": "c5f8f620a8b5a453ad0f061b3d59ed721f003640",
+      "tokens": 1443,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_BFD100_Logic\\reference_cells.v:6426: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_BFD100_Logic\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_BFD100_Logic\\reference_tb.v:1: error: Inout port exp"
+    },
+    {
+      "host": "tt_um_bfloat16",
+      "repo": "https://github.com/jimarinh/bfloat16_tt_chip",
+      "revision": "630f0221953f4f3673488b022addcfd9b0134fe4",
+      "tokens": 3767,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bfloat16\\reference_cells.v:10480: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bfloat16\\reference_cells.v:10784: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bfloat16\\reference_tb.v:1: error: expressi"
+    },
+    {
+      "host": "tt_um_bytex64_wave_hi",
+      "repo": "https://github.com/bytex64/tt-wave-hi",
+      "revision": "83db86e35e55ade42a34b2fb3f34daa4fa1b4b66",
+      "tokens": 3186,
+      "outcome": "osts\\tt_um_bytex64_wave_hi\\reference_cells.v:9165: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bytex64_wave_hi\\reference_cells.v:9469: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_bytex64_wave_hi\\reference_tb.v:1: error: expression not valid as argu"
+    },
+    {
+      "host": "tt_um_CNN4IC_sky",
+      "repo": "https://github.com/UNIC-CASS-2025-uniandes/CNN4IC_sky130",
+      "revision": "dc11b2d864242e94d04b5e2b1b2220929f9b6e93",
+      "tokens": 6788,
+      "outcome": "s point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_CNN4IC_sky\\reference_cells.v:12962: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_CNN4IC_sky\\reference_cells.v:13266: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_CNN4IC_sky\\reference_tb.v:1: "
+    },
+    {
+      "host": "tt_um_cycho",
+      "repo": "https://github.com/CorinYCho/tiny_tapeout",
+      "revision": "b390d76fdb299894d287385746e93c80d07ed02a",
+      "tokens": 2659,
+      "outcome": "macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_cycho\\reference_cells.v:6148: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_cycho\\reference_cells.v:6452: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\h"
+    },
+    {
+      "host": "tt_um_digit_serial_divider",
+      "repo": "https://github.com/Chimmy-U/ttsky-verilog-fp24b-digit-serial-divider",
+      "revision": "5d9a5c1dc45693caa10d14215d6beacbf1cfa6c9",
+      "tokens": 1799,
+      "outcome": "6466: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_digit_serial_divider\\reference_cells.v:6780: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_digit_serial_divider\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_dete"
+    },
+    {
+      "host": "tt_um_digitalclock",
+      "repo": "https://github.com/alexandercoabad/DigitalClock",
+      "revision": "48e58a68f5321e78ffec4ca73ae077219f95de28",
+      "tokens": 1967,
+      "outcome": "tion_GNN\\runs\\precision_v1\\hosts\\tt_um_digitalclock\\reference_cells.v:11540: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_digitalclock\\reference_cells.v:11953: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_digitalclock\\reference_tb.v:1: error: express"
+    },
+    {
+      "host": "tt_um_enjimneering_bss_uart",
+      "repo": "https://github.com/Sheffield-Chip-Design-Team/tiny-uart-test",
+      "revision": "059739e20cadbe26b54966ac36165cee443e71d8",
+      "tokens": 2466,
+      "outcome": "ning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_enjimneering_bss_uart\\reference_cells.v:8523: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_enjimneering_bss_uart\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_G"
+    },
+    {
+      "host": "tt_um_enjimneering_spi_mem",
+      "repo": "https://github.com/Sheffield-Chip-Design-Team/tiny-spi-mem-ctrl-test",
+      "revision": "e0c2be56252f4984507dcdc3ff75ac8f4114d90a",
+      "tokens": 1570,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_enjimneering_spi_mem\\reference_cells.v:7167: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_enjimneering_spi_mem\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_enjimneering_spi_mem\\reference_tb.v:"
+    },
+    {
+      "host": "tt_um_fidel_makatia_digital_tapeout",
+      "repo": "https://github.com/fidel-makatia/ttsky-8bit-cpu-soc",
+      "revision": "a387ce8517dc875e9c575e1e5c894cf1710453d2",
+      "tokens": 3372,
+      "outcome": "_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_fidel_makatia_digital_tapeout\\reference_cells.v:9953: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_fidel_makatia_digital_tapeout\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_fidel_makatia_digital_t"
+    },
+    {
+      "host": "tt_um_Floppy_LIGHT",
+      "repo": "https://github.com/AbderX/LIGHT_logo_IEEE",
+      "revision": "8854111717b48e6bebfef7d298e59b0376a232be",
+      "tokens": 4967,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Floppy_LIGHT\\reference_cells.v:9661: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Floppy_LIGHT\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Floppy_LIGHT\\reference_tb.v:1: error: Inout port exp"
+    },
+    {
+      "host": "tt_um_hackin7_coprocessor",
+      "repo": "https://github.com/Hackin7/ttsky26b-hackin7-hackaday2026",
+      "revision": "a3b7854d0e1e3ecbe79439f02770b4c15687e9b3",
+      "tokens": 2001,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_hackin7_coprocessor\\reference_cells.v:7432: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_hackin7_coprocessor\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_hackin7_coprocessor\\reference_tb.v:1: "
+    },
+    {
+      "host": "tt_um_Halcy0nnnn",
+      "repo": "https://github.com/seapanda0/IEEE_MMU_Cybertron_Logo",
+      "revision": "6b5569755237034cf9d2161ba3b68847ebabed0e",
+      "tokens": 15292,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Halcy0nnnn\\reference_cells.v:9560: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Halcy0nnnn\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Halcy0nnnn\\reference_tb.v:1: error: Inout port expressio"
+    },
+    {
+      "host": "tt_um_IEEE_OpenSilicon_SubmissionCredits",
+      "repo": "https://github.com/7-DVD-7/-IEEE_IES-IPS_OpenSilicon_Submission-EventCredits",
+      "revision": "1cf24f7400448169d1393a8b07a8197c0200a721",
+      "tokens": 5940,
+      "outcome": "IEEE_OpenSilicon_SubmissionCredits\\reference_cells.v:9558: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_IEEE_OpenSilicon_SubmissionCredits\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_IEEE_OpenSilicon_SubmissionCredits\\reference_tb.v:1: error"
+    },
+    {
+      "host": "tt_um_iporre_rm121",
+      "repo": "https://github.com/iporre-rm121/IEEE__IPORRE_PONG_VGA_ver",
+      "revision": "599bf4f94f74123c0e2aa67fa3c30cb48390b43b",
+      "tokens": 1553,
+      "outcome": "ection_GNN\\runs\\precision_v1\\hosts\\tt_um_iporre_rm121\\reference_cells.v:8858: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_iporre_rm121\\reference_cells.v:9162: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_iporre_rm121\\reference_tb.v:1: error: express"
+    },
+    {
+      "host": "tt_um_jasonbrave_terre",
+      "repo": "https://github.com/JasonBrave/tt-sky26b-vga",
+      "revision": "78e1b42b102c5cb27a711f5b2f3e4292ddeb5c68",
+      "tokens": 15476,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_jasonbrave_terre\\reference_cells.v:8116: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_jasonbrave_terre\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_jasonbrave_terre\\reference_tb.v:1: error: In"
+    },
+    {
+      "host": "tt_um_kazan_rqpu",
+      "repo": "https://github.com/kaz4n/tt_um_kazan_rqpu",
+      "revision": "0473ee9ea69df81c95352943d381853535cec918",
+      "tokens": 4634,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_kazan_rqpu\\reference_cells.v:8645: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_kazan_rqpu\\reference_cells.v:8959: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_kazan_rqpu\\reference_tb.v:1: error: expr"
+    },
+    {
+      "host": "tt_um_KK_VGA01",
+      "repo": "https://github.com/magnetoField/ttsky-zuzel-ieee",
+      "revision": "3cb736cc17304add62f5cf4f2de477c5041dc56c",
+      "tokens": 3964,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_KK_VGA01\\reference_cells.v:8831: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_KK_VGA01\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_KK_VGA01\\reference_tb.v:1: error: Inout port expression must"
+    },
+    {
+      "host": "tt_um_leongamboa_OpenSilicon_SubmissionChapterLogo",
+      "repo": "https://github.com/leongamboa/IEEE_IES-IPS_OpenSilicon_Submission-ChapterLogo",
+      "revision": "5b6be497bfd373e4c094bcc43e5d572a7b76dfd5",
+      "tokens": 1920,
+      "outcome": "ELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_leongamboa_OpenSilicon_SubmissionChapterLogo\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_leongamboa_OpenSilicon_SubmissionChapterLogo\\reference_tb.v:1: error: Inout port expression must support continuous assignment.\n"
+    },
+    {
+      "host": "tt_um_lstm_wakeword",
+      "repo": "https://github.com/wlmoi/TTSKY26A-NN",
+      "revision": "1d85fd34b935c6a9970ba0e2cfaa2581409bea8b",
+      "tokens": 5442,
+      "outcome": "\\runs\\precision_v1\\hosts\\tt_um_lstm_wakeword\\reference_cells.v:7114: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_lstm_wakeword\\reference_cells.v:7428: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_lstm_wakeword\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_magnetofield_ieee",
+      "repo": "https://github.com/magnetoField/ttsky-hs3logo-ieee",
+      "revision": "12294940979c916977aac74711288f06f7e72fa7",
+      "tokens": 15616,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_magnetofield_ieee\\reference_cells.v:9043: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_magnetofield_ieee\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_magnetofield_ieee\\reference_tb.v:1: error:"
+    },
+    {
+      "host": "tt_um_Medidor_Jitter",
+      "repo": "https://github.com/guschavez-rf/ttsky-verilog-project",
+      "revision": "80e97570e9151211681430e72abe6ef97649b24b",
+      "tokens": 3003,
+      "outcome": "sion_v1\\hosts\\tt_um_Medidor_Jitter\\reference_cells.v:9717: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Medidor_Jitter\\reference_cells.v:10021: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Medidor_Jitter\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_Mitchell_s_Approximation_based_EML",
+      "repo": "https://github.com/setup99/-Mitchell-s_Approximation_based_EML",
+      "revision": "4fe67e0ee8df8acfbc13e9e96c3dc4cbe9f68df2",
+      "tokens": 2016,
+      "outcome": "Mitchell_s_Approximation_based_EML\\reference_cells.v:7779: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Mitchell_s_Approximation_based_EML\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Mitchell_s_Approximation_based_EML\\reference_tb.v:1: error"
+    },
+    {
+      "host": "tt_um_ml_coprocessor",
+      "repo": "https://github.com/kunalghosh0000/tt-kunal-wowki-new",
+      "revision": "205e85309cb739cca212f18f3583130baab8f924",
+      "tokens": 1511,
+      "outcome": "ision_v1\\hosts\\tt_um_ml_coprocessor\\reference_cells.v:9587: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ml_coprocessor\\reference_cells.v:9901: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ml_coprocessor\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_Nay0805_detector_de_patrones_generados_aleatoreamente",
+      "repo": "https://github.com/Nay0805/CursoTinyP1",
+      "revision": "990b1c9efc166caf05c452a75e9427f8a9366784",
+      "tokens": 10392,
+      "outcome": "s\\precision_v1\\hosts\\tt_um_Nay0805_detector_de_patrones_generados_aleatoreamente\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Nay0805_detector_de_patrones_generados_aleatoreamente\\reference_tb.v:1: error: Inout port expression must support continuous assignment.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Nay0"
+    },
+    {
+      "host": "tt_um_nezumi_tech_adc_sq_compare",
+      "repo": "https://github.com/nezumi-tech/ttsky-verilog-26b-ADC_Comp",
+      "revision": "b5811df433dc54bca097504f9659d05ef011bc2e",
+      "tokens": 2459,
+      "outcome": "null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_nezumi_tech_adc_sq_compare\\reference_cells.v:11063: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_nezumi_tech_adc_sq_compare\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ne"
+    },
+    {
+      "host": "tt_um_ocpu",
+      "repo": "https://github.com/ayan20985/tt26-ocpu",
+      "revision": "aafb9a6d5935a348231c0edad4d04592a6a6ad78",
+      "tokens": 4883,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ocpu\\reference_cells.v:9809: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ocpu\\reference_cells.v:10123: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ocpu\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_pcs_link_lite",
+      "repo": "https://github.com/ieeeuoft-asic/pcs-link-controller-lite",
+      "revision": "2063bc0ac5aa03c691564728702efa17b8bb48c6",
+      "tokens": 3569,
+      "outcome": "\\runs\\precision_v1\\hosts\\tt_um_pcs_link_lite\\reference_cells.v:8846: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pcs_link_lite\\reference_cells.v:9150: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pcs_link_lite\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_pfw_tpu",
+      "repo": "https://github.com/wangantian/pfw_tpu",
+      "revision": "5709a42b12562c3ef5f34c17761aeeaf81920b9e",
+      "tokens": 2701,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pfw_tpu\\reference_cells.v:9972: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pfw_tpu\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pfw_tpu\\reference_tb.v:1: error: Inout port expression must su"
+    },
+    {
+      "host": "tt_um_pmendoza_ieee_tinyscan",
+      "repo": "https://github.com/pmendozap/ieee_tiny_scan",
+      "revision": "66717c6c94a2a2d1b1cc12322446c8018b54aa26",
+      "tokens": 4224,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pmendoza_ieee_tinyscan\\reference_cells.v:5456: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pmendoza_ieee_tinyscan\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pmendoza_ieee_tinyscan\\reference"
+    },
+    {
+      "host": "tt_um_processor_top",
+      "repo": "https://github.com/amc1635/ttsky-verilog-bootcamp",
+      "revision": "5b648c495739377a1c11c8ae05ed24933ac0ef9c",
+      "tokens": 2148,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_processor_top\\reference_cells.v:7494: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_processor_top\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_processor_top\\reference_tb.v:1: error: Inout port "
+    },
+    {
+      "host": "tt_um_pwm_4ch",
+      "repo": "https://github.com/pvc2k5/tinytapeout_2026",
+      "revision": "4795358cf126ae785266c809cf8e0dbdfe7b3f06",
+      "tokens": 2777,
+      "outcome": "efined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pwm_4ch\\reference_cells.v:9432: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pwm_4ch\\reference_cells.v:9736: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_pwm_4"
+    },
+    {
+      "host": "tt_um_RaphRaphyRofl_VerilogIEEEBounce",
+      "repo": "https://github.com/RaphRaphyRofl/Verilog---IEEE-Bounce",
+      "revision": "d26e8b8d1241a959f90aeb79dd12aff2863b2828",
+      "tokens": 1612,
+      "outcome": "s\\precision_v1\\hosts\\tt_um_RaphRaphyRofl_VerilogIEEEBounce\\reference_cells.v:8946: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_RaphRaphyRofl_VerilogIEEEBounce\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_RaphRaphyRofl_VerilogIEEEBounce\\refer"
+    },
+    {
+      "host": "tt_um_reaction_game",
+      "repo": "https://github.com/MikkelKofoed/TinyTapeoutWorkshop",
+      "revision": "78d372b3c2247789fdf86c07359e47bbf7b7abe7",
+      "tokens": 1398,
+      "outcome": "\\runs\\precision_v1\\hosts\\tt_um_reaction_game\\reference_cells.v:7603: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_reaction_game\\reference_cells.v:7917: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_reaction_game\\reference_tb.v:1: error: expression not"
+    },
+    {
+      "host": "tt_um_Richard_Tarqui_contador_uart_simple",
+      "repo": "https://github.com/redprogramer100/UART-Controlled-Frecuency-Meter-and-Timer-IEEE",
+      "revision": "ccf58daa11184259daf127630ab8e6edfb54bdcc",
+      "tokens": 3131,
+      "outcome": "arqui_contador_uart_simple\\reference_cells.v:8738: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Richard_Tarqui_contador_uart_simple\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_Richard_Tarqui_contador_uart_simple\\reference_tb.v:1: error: Inou"
+    },
+    {
+      "host": "tt_um_riscv_gpu",
+      "repo": "https://github.com/5iri/tt-riscv-gpu",
+      "revision": "254a07bda17d2121f54f852016a7fb3594b523ce",
+      "tokens": 2288,
+      "outcome": "null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_riscv_gpu\\reference_cells.v:8873: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_riscv_gpu\\reference_cells.v:9177: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_riscv_gpu\\reference_t"
+    },
+    {
+      "host": "tt_um_ross_systolic",
+      "repo": "https://github.com/Ross0907/tt_um_SystolicMultiplierIEEE",
+      "revision": "5c04b395d5663a6c59a811d66082d277d9022f3e",
+      "tokens": 1811,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ross_systolic\\reference_cells.v:8843: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ross_systolic\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_ross_systolic\\reference_tb.v:1: error: Inout port "
+    },
+    {
+      "host": "tt_um_rv32_vga",
+      "repo": "https://github.com/5iri/tt-riscv-cpu",
+      "revision": "bcbeae3511355a61b26fc4fecd4dea91e0dc358f",
+      "tokens": 3116,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rv32_vga\\reference_cells.v:8831: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rv32_vga\\reference_cells.v:9145: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_rv32_vga\\reference_tb.v:1: error: expression"
+    },
+    {
+      "host": "tt_um_snk_smart_io_hub",
+      "repo": "https://github.com/snknaveenkumaar/tt-um-3t-uart",
+      "revision": "20f85a59a5eeff42df04be4cae71af821e1665c4",
+      "tokens": 1481,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_snk_smart_io_hub\\reference_cells.v:8632: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_snk_smart_io_hub\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_snk_smart_io_hub\\reference_tb.v:1: error: In"
+    },
+    {
+      "host": "tt_um_snn_afib_detector",
+      "repo": "https://github.com/AdvaittejPS/vspace-snn-afib-detector",
+      "revision": "b1cfc6a3372e65935ecfd85c17e7ec5e29369e6b",
+      "tokens": 2749,
+      "outcome": "detector\\reference_cells.v:8001: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_snn_afib_detector\\reference_cells.v:8315: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_snn_afib_detector\\reference_tb.v:1: error: expression not valid as argument to inout "
+    },
+    {
+      "host": "tt_um_systolic_array",
+      "repo": "https://github.com/link422/SystolicArrayTinyTapeout",
+      "revision": "cb13412543e7237dd1e3bc61e8bbf50410838a9c",
+      "tokens": 4629,
+      "outcome": "ision_v1\\hosts\\tt_um_systolic_array\\reference_cells.v:9271: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_systolic_array\\reference_cells.v:9575: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_systolic_array\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_tiny8_risclike",
+      "repo": "https://github.com/luisjavierB0/Bootcamp_CPU_ALU_",
+      "revision": "05da5b919405de2b647d7b54337b06880e8dce6b",
+      "tokens": 1951,
+      "outcome": "ision_v1\\hosts\\tt_um_tiny8_risclike\\reference_cells.v:7765: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tiny8_risclike\\reference_cells.v:8079: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tiny8_risclike\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_tiny_8bit_cpu",
+      "repo": "https://github.com/Aymene-ml/IEEE-tiny-8bit-cpu",
+      "revision": "d64546239bcee40909a863506eff5a5eba83a8f2",
+      "tokens": 2830,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tiny_8bit_cpu\\reference_cells.v:9595: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tiny_8bit_cpu\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tiny_8bit_cpu\\reference_tb.v:1: error: Inout port "
+    },
+    {
+      "host": "tt_um_top_module_16_mips",
+      "repo": "https://github.com/PDimosthenis/Tiny_Tapeout_16_MIPS",
+      "revision": "0c242d5f405723f866eb4624d3fdcd799e7c5b8d",
+      "tokens": 1669,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_top_module_16_mips\\reference_cells.v:10648: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_top_module_16_mips\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_top_module_16_mips\\reference_tb.v:1: er"
+    },
+    {
+      "host": "tt_um_tron_game",
+      "repo": "https://github.com/Jacome1005/tiny-vga-TRON-Light-Cycles",
+      "revision": "925cba363089398db4a0f3eeb4a9a22115ec4bae",
+      "tokens": 2779,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tron_game\\reference_cells.v:10177: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tron_game\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_tron_game\\reference_tb.v:1: error: Inout port expression "
+    },
+    {
+      "host": "tt_um_vga_ascii",
+      "repo": "https://github.com/Halcy0nnnn/ascii-typewriter",
+      "revision": "b092b1aea95850d11892720700b97da6768a3700",
+      "tokens": 2676,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_ascii\\reference_cells.v:9156: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_ascii\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_ascii\\reference_tb.v:1: error: Inout port expression m"
+    },
+    {
+      "host": "tt_um_vga_glyph_mode_clone",
+      "repo": "https://github.com/alexandercoabad/Philippine_IC_Design_Boot_Camp_2026",
+      "revision": "361944ecbaf94a7a2df48dd54d09017f6fce9a31",
+      "tokens": 2798,
+      "outcome": "768: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_glyph_mode_clone\\reference_cells.v:10072: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_glyph_mode_clone\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_dete"
+    },
+    {
+      "host": "tt_um_vga_sharc_demo",
+      "repo": "https://github.com/Sheffield-Chip-Design-Team/tiny-demoscene",
+      "revision": "005c8f3e8c7ac74c249552da1f801b764a5c1eed",
+      "tokens": 17701,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_sharc_demo\\reference_cells.v:10285: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_sharc_demo\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_sharc_demo\\reference_tb.v:1: error: Inout p"
+    },
+    {
+      "host": "tt_um_vga_yusefkarim",
+      "repo": "https://github.com/yusefkarim/ttsky-verilog-yk",
+      "revision": "c2ff2c3323c43df9309ca4906a49375e8813668b",
+      "tokens": 7260,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_yusefkarim\\reference_cells.v:9970: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_yusefkarim\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_vga_yusefkarim\\reference_tb.v:1: error: Inout po"
+    },
+    {
+      "host": "tt_um_wearlevel_controller",
+      "repo": "https://github.com/OlonadeKelvin/EEPROM_Wear",
+      "revision": "9a7e4fb438f10f735f8d378560c3a1f51357dcd1",
+      "tokens": 1568,
+      "outcome": "018: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_wearlevel_controller\\reference_cells.v:11332: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_wearlevel_controller\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_dete"
+    },
+    {
+      "host": "tt_um_william_adc8",
+      "repo": "https://github.com/wlmoi/TTSKY26A-ADC-8BIT",
+      "revision": "82ae03d742a906589dbfc0f2d9fe29490f74eb7e",
+      "tokens": 1851,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_william_adc8\\reference_cells.v:7088: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_william_adc8\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_william_adc8\\reference_tb.v:1: error: Inout port exp"
+    },
+    {
+      "host": "tt_um_xeniarose_sbox",
+      "repo": "https://github.com/xeniarose/tt_um_xeniarose_sbox",
+      "revision": "bc99c8e67e4537ada88ccee12d080c75898285d1",
+      "tokens": 3964,
+      "outcome": "ision_v1\\hosts\\tt_um_xeniarose_sbox\\reference_cells.v:8692: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_xeniarose_sbox\\reference_cells.v:8996: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_xeniarose_sbox\\reference_tb.v:1: error: expression not valid "
+    },
+    {
+      "host": "tt_um_zlj8800_tiny_tapeout_v2",
+      "repo": "https://github.com/zlj8800/tiny-tapeout-v2",
+      "revision": "76a618c6f8e176df201d871b808f25ea727fcb81",
+      "tokens": 15476,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_zlj8800_tiny_tapeout_v2\\reference_cells.v:9574: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_zlj8800_tiny_tapeout_v2\\reference_tb.v:1: error: expression not valid as argument to inout port: 1'd1\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_zlj8800_tiny_tapeout_v2\\refere"
+    },
+    {
+      "host": "tt_um__kwr_lfsr__top",
+      "repo": "https://github.com/overeducated/tt09-um--kwr-lfsr",
+      "revision": "7e7a2c0159b16dee810a32557a7217bba6a40769",
+      "tokens": 1539,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_A_6_array_multiplier",
+      "repo": "https://github.com/jt4808/tt09-A-6-array-multiplier",
+      "revision": "8d79c763aa6d852577828b7e06ade2f3e294ff4e",
+      "tokens": 1427,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_asheldon44_dsm_decimation_filter",
+      "repo": "https://github.com/asheldon44/tt09-delta-sigma-decimation-filter",
+      "revision": "555de2f5fedc77ed02615ae476148b4a74257a4c",
+      "tokens": 1394,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_cdc_test",
+      "repo": "https://github.com/FangameEmpire/tt09-CDC-test",
+      "revision": "8fccc4042690f89b3df493d013ab4db8249621d5",
+      "tokens": 5186,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_CLA8",
+      "repo": "https://github.com/sej3939/Carry-Lookahead-Adder",
+      "revision": "4e553447c4286efc706c3720492d2f14e4bacb4b",
+      "tokens": 1443,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_Coline3003_spect_top",
+      "repo": "https://github.com/DinkoOletic/tt09-HDL_unizgfer_2ch_AE_tf_spectrogram",
+      "revision": "47c65f767e760975226cf4666a4fef081809ae02",
+      "tokens": 3579,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_Coline3003_top",
+      "repo": "https://github.com/DinkoOletic/tt09-HDL_unizgfer_15ch_AE_evt_counter",
+      "revision": "90e15b62b6379c2b15e2a412dcaed24c519c3282",
+      "tokens": 3128,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_couchand_cora16",
+      "repo": "https://github.com/couchand/tt09-cora16",
+      "revision": "f2d152e8afd87940be9a30f7b6e917a7d267ed3a",
+      "tokens": 4772,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_db_MAC",
+      "repo": "https://github.com/devesh-b/tt09-deveshb-8-bitMAC",
+      "revision": "b92c0054ea6cb14cb6d40aae77717146285595ab",
+      "tokens": 2129,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_ece298a_8_bit_cpu_top",
+      "repo": "https://github.com/gjrchen/8-Bit-CPU-top",
+      "revision": "730b2f8b61c1c0592e8e529c32150931fae74475",
+      "tokens": 2718,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_ericsmi_mips",
+      "repo": "https://github.com/ericsmi/tt09-yi-harris-mips",
+      "revision": "502402f4caf14197bb4587a82d20d9b1af0c3bd1",
+      "tokens": 2760,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_Esteban_Oman_Mendoza_maze_2024_top",
+      "repo": "https://github.com/Esteban-Oman-Mendoza/maze_game",
+      "revision": "1ee121d2b5b8e91d7cb510e173ed56e16a03b76d",
+      "tokens": 2399,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_htfab_caterpillar",
+      "repo": "https://github.com/htfab/tt09-caterpillar",
+      "revision": "2cf6f952e568418b99d47c789d4e4b2fd1779499",
+      "tokens": 6943,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_hybrid_adder",
+      "repo": "https://github.com/cameronbed/tt09-hybrid-adder",
+      "revision": "4d20167a25902aba012bb7d5065a5783a9bba1ac",
+      "tokens": 1409,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_I2C",
+      "repo": "https://github.com/arunav321/tt09-i2c",
+      "revision": "4edc262a7f6ced74f10eaab990617041843143da",
+      "tokens": 4240,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_idann",
+      "repo": "https://github.com/arheidar/tt09-chip-tapeout-110",
+      "revision": "124977ae5fda013092afcb849c2eabcf17fbac0e",
+      "tokens": 1894,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_instrumented_ring_oscillator",
+      "repo": "https://github.com/AnotherPseudonym/intstrumented_ring_oscillator",
+      "revision": "3649d25a8408f58ef592f9b6d2a53d14d6449342",
+      "tokens": 1720,
+      "outcome": "Command '['vvp', '-n', 'C:\\\\HT_detection_GNN\\\\runs\\\\precision_v1\\\\hosts\\\\tt_um_instrumented_ring_oscillator\\\\reference.vvp']' timed out after 40 seconds"
+    },
+    {
+      "host": "tt_um_jamesrosssharp_1bitam",
+      "repo": "https://github.com/jamesrosssharp/tt09-am-sdr",
+      "revision": "d874fc4a6fee59b6a94ad066af7c555eb5fb678a",
+      "tokens": 2947,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_jamesrosssharp_tiny1bitam",
+      "repo": "https://github.com/jamesrosssharp/tt09-smaller-am-sdr",
+      "revision": "e2d975204fe41cb3593c174cf813f4e71cd76de6",
+      "tokens": 1422,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_kailinsley",
+      "repo": "https://github.com/kalinsley/tt09-verilog",
+      "revision": "eb66fb049d318d76450295e60daf90bf7d94f8d6",
+      "tokens": 3102,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_kmakise_sram",
+      "repo": "https://github.com/FriedrichWu/tt09-sram",
+      "revision": "7d80fb1f7755ec0e352766d281da0c5279b0e341",
+      "tokens": 3184,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_kmakise_sram\\reference_cells.v:10348: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_kmakise_sram\\reference_cells.v:10870: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\tt09\\projects\\tt_um_kmakise_sram\\tt_um_kmakise"
+    },
+    {
+      "host": "tt_um_led_cipher",
+      "repo": "https://github.com/Secure-Embedded-Systems/tt09-led-serial",
+      "revision": "7f0038bc9a17a429dc585cfec4163ef0e82fa0f6",
+      "tokens": 3345,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_led_matrix_ayla_lin",
+      "repo": "https://github.com/ayla-lin/led-matrix",
+      "revision": "e0c27bd05c048b394fa563ad8259de0976f230aa",
+      "tokens": 1403,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rebeccargb_colorbars",
+      "repo": "https://github.com/RebeccaRGB/tt-colorbars",
+      "revision": "87cceea95d809c363551a3aeb4085f4fecafb1a8",
+      "tokens": 3126,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rebeccargb_tt09ball_screensaver",
+      "repo": "https://github.com/RebeccaRGB/tt09ball-screensaver",
+      "revision": "a22937d5c62aecc39b8016234a584bf8c4d8b2e6",
+      "tokens": 4772,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rebeccargb_vga_timing_experiments",
+      "repo": "https://github.com/RebeccaRGB/vga-timing-experiments",
+      "revision": "817b852ad0c1431e7837be62efc7a9ec47e3084a",
+      "tokens": 1996,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rejunity_decoder",
+      "repo": "https://github.com/rejunity/tt09-ternary-septenary-decoders",
+      "revision": "16f708da01248a5f1bffa11cd1e22741de76bc70",
+      "tokens": 13469,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_snn_with_delays_paolaunisa",
+      "repo": "https://github.com/PaolaUniSa/tt09_chatGPT_SNN_LD",
+      "revision": "da31a93c483ec2a4e3d4100a2b7191a5074a3229",
+      "tokens": 7522,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_stochastic_integrator_tt9_CL123abc",
+      "repo": "https://github.com/CL-123-abc/tt_um_stochastic_integrator_tt9_CL123abc",
+      "revision": "893f41034f967acdf37dfb5f89afd7c09ef51164",
+      "tokens": 2312,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_uart_mvm",
+      "repo": "https://github.com/SkillSurf/tinytapout-matmul-system",
+      "revision": "110d85b1ef8e32502df4b59bea5b22a691c33c7f",
+      "tokens": 2511,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_uart_mvm_sys",
+      "repo": "https://github.com/SkillSurf/tt09-matmul-system",
+      "revision": "ef343f9bc9b9c0b5c5ecc533cf8ba585055d3039",
+      "tokens": 2511,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_urish_simon",
+      "repo": "https://github.com/urish/tt09-simon-game",
+      "revision": "7f5b1d54fcb7a703e43f9f7039e2e46c0905e486",
+      "tokens": 2179,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_wokwi_411379488132926465",
+      "repo": "https://github.com/Franco-Barto/Semana_UCU_verilog",
+      "revision": "fa41d2c56a9a5ff5c3d8bd7276cc50e3ccce0cc2",
+      "tokens": 14973,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_wokwi_413386991502909441",
+      "repo": "https://github.com/parallellogic-/TinyTapeoutLogic2024A",
+      "revision": "d6be687f74bebc59ffe3a60895f4014474a9cab5",
+      "tokens": 2927,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_wokwi_413387065339458561",
+      "repo": "https://github.com/squidgeefish/TT09",
+      "revision": "5ede2c18b39face5fe607c45c25e8b98460c4e2c",
+      "tokens": 1418,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_10_vga_crossyroad",
+      "repo": "https://github.com/mchen26/tt10-vga-crossyroad",
+      "revision": "373df6c609763b8fdfdf3b053eaacc5cff8caed8",
+      "tokens": 2529,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_algofoogle_vga",
+      "repo": "https://github.com/algofoogle/ttihp25a-tt10-vga",
+      "revision": "c8de87dc2639ddd365f3214abe61750f2cf83816",
+      "tokens": 4010,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_bilal_trng",
+      "repo": "https://github.com/engrbilal992/tt10-TRNG",
+      "revision": "d823309df866321011780f9d0fd9f7fef2a1fe9f",
+      "tokens": 7465,
+      "outcome": "Command '['vvp', '-n', 'C:\\\\HT_detection_GNN\\\\runs\\\\precision_v1\\\\hosts\\\\tt_um_bilal_trng\\\\reference.vvp']' timed out after 40 seconds"
+    },
+    {
+      "host": "tt_um_bitty",
+      "repo": "https://github.com/Molidier/bitty-tt10",
+      "revision": "c9b5b5396284e380033c525bc7ae2e565aac0550",
+      "tokens": 5011,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_DaDDS",
+      "repo": "https://github.com/jdados/DaDDS",
+      "revision": "f7829710e720a21f92429a8bf5479046d01ec33e",
+      "tokens": 1696,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_devmonk_ay8913",
+      "repo": "https://github.com/devmonkZA/devmonk-tto-ay8913",
+      "revision": "ade19ba75b8764c4c20efd922d1c078af42fa1c5",
+      "tokens": 2543,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_drum_goekce",
+      "repo": "https://github.com/goekce/tinytapeout10-design",
+      "revision": "aa43207e57b86997c4daf6b55325059acc7bc021",
+      "tokens": 1606,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_gamepad_pmod_demo",
+      "repo": "https://github.com/urish/tt10-gamepad-pmod-demo",
+      "revision": "15b70647923f2be684fb6a36c06a2e0f41ce3e2b",
+      "tokens": 2639,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_gcd_stephan",
+      "repo": "https://github.com/StephanAAU/tt10-verilog",
+      "revision": "2c8a57d6b1596fdae638303473b1007977499d1a",
+      "tokens": 1599,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_gregac_tiny_nn",
+      "repo": "https://github.com/GregAC/tt10-tiny-nn",
+      "revision": "a36dcd90704efe9be273c33b527cd687fe910e18",
+      "tokens": 6509,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_jimktrains_vslc",
+      "repo": "https://github.com/jimktrains/vslc-tto",
+      "revision": "a9f01fa6bd6148af415fd0b476b06a111857acdb",
+      "tokens": 2975,
+      "outcome": "C:\\HT_detection_GNN\\runs\\precision_v1\\hosts\\tt_um_jimktrains_vslc\\reference_cells.v:10393: warning: macro UNIT_DELAY undefined (and assumed null) at this point.\nC:\\HT_detection_GNN\\runs\\precision_v1\\tt10\\projects\\tt_um_jimktrains_vslc\\tt_um_jimktrains_vslc.v:7827: error: Unknown module type: my_logo\n2 error(s) during elaboration.\n*** These modules were missing:\n        my_logo referenced 1 times.\n"
+    },
+    {
+      "host": "tt_um_keszocze_ssmcl",
+      "repo": "https://github.com/keszocze/tt10_SSMCl",
+      "revision": "8b54f83bb10cbd5c9795a8176acbde5d6a29dcad",
+      "tokens": 3346,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_obriensp_jtag",
+      "repo": "https://github.com/obriensp/tt10-spo-jtag",
+      "revision": "f20dd0df92a531b8bd65b4569f76a26536db0cbe",
+      "tokens": 2341,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_Qwendu_spi_fpu",
+      "repo": "https://github.com/Qwendu/tt_spi_fpu",
+      "revision": "4aa2fbd59e2229abedb26c1c76e0404ad0ee7b65",
+      "tokens": 3789,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_reemashivva_fifo",
+      "repo": "https://github.com/reemashivva/CF-2024-TT10-06",
+      "revision": "cbc817bf2f77dd224142198bfe2713ebfa07d958",
+      "tokens": 1525,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rkarl_Spiral",
+      "repo": "https://github.com/rkarl2/TT_spiral",
+      "revision": "c2d0ffd193ad9f1f08463121e1e8fd7204646113",
+      "tokens": 3703,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_space_invaders_game",
+      "repo": "https://github.com/ppurkl/tt10-chip-invaders",
+      "revision": "cb509f22bf4846681a0c83e9110a2e70f602d649",
+      "tokens": 12327,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_spacewar",
+      "repo": "https://github.com/FangameEmpire/tt10_xy_spacewar",
+      "revision": "e87fc978e8acbfb921ce14295e709a2332cb7a2d",
+      "tokens": 2904,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_sushi_demo",
+      "repo": "https://github.com/zacharyzgc/zc-sushi-demo",
+      "revision": "d2ab68559f2e88bc224c544dd1fe764883193f1f",
+      "tokens": 13266,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_synth_simple_mm",
+      "repo": "https://github.com/maurizio-martina/synth_simple",
+      "revision": "b0b605835fe7566ed41fc298584e0dd95b2327bc",
+      "tokens": 9225,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_tinytapeout_logo_screensaver",
+      "repo": "https://github.com/TinyTapeout/tt10-logo-screensaver",
+      "revision": "970bb35f0b91c8ed0aaecd27e0810c1ac1f1b3b0",
+      "tokens": 16810,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_UartMain",
+      "repo": "https://github.com/gantover/tt10-verilog-gantover",
+      "revision": "7389825df6426002f9fa63078a4e7f790558e456",
+      "tokens": 2133,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_urish_simon",
+      "repo": "https://github.com/urish/tt10-simon-game",
+      "revision": "abcf605dc7b38c69764d32ab47bd92f6fa085b71",
+      "tokens": 2478,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_uwasic_dinogame",
+      "repo": "https://github.com/UW-ASIC/Dino",
+      "revision": "5dd4233c7f66dda5a460c9b535351f3ac6103591",
+      "tokens": 11378,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_32_bit_fp_ALU_S_M",
+      "repo": "https://github.com/maxlou05/FP32-Adder",
+      "revision": "669bdf38fe25aa5f6d323c21cef97f8aed1ffe74",
+      "tokens": 1530,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_adpll",
+      "repo": "https://github.com/Shrikris630/pll",
+      "revision": "57f8bee37d8469a371655ad207e9e647cfdaf0c7",
+      "tokens": 2391,
+      "outcome": "published netlist/RTL mismatch"
+    },
+    {
+      "host": "tt_um_axi4lite_top",
+      "repo": "https://github.com/Aravind040/CF-2025-TT12-13",
+      "revision": "88994b26799cc9565c871a1f53c8eee01fbbc237",
+      "tokens": 1378,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_bit_serial_cpu_top",
+      "repo": "https://github.com/ndrwng/SKY130-bit-serial-cpu",
+      "revision": "6895a84ea2f6d691895f7c911a2932a0ed6615d4",
+      "tokens": 2026,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_bitty",
+      "repo": "https://github.com/Molidier/bitty-tt-sky130",
+      "revision": "4559fd1c23c3049c4c99ec7b60924d9a456e023f",
+      "tokens": 5011,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_braun_mult",
+      "repo": "https://github.com/tapeoutcutm/Optimized-Braun-Array-Multiplier-Architecture-for-Digital-Systems",
+      "revision": "00531401172a8bdcfccee53df83c2ad6ac412e9c",
+      "tokens": 1987,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_DelosReyesJordan_HDL",
+      "repo": "https://github.com/DelosReyesJordan/tt_sky_DelosReyesJordan_ReactionTimeTest",
+      "revision": "1c04b3fc373e16142bf9b5b3860fc5f63d0c1da2",
+      "tokens": 1361,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_digital_playground",
+      "repo": "https://github.com/EduHolg/sky130-digital-playground",
+      "revision": "1337ed7452a3c1d205f4dafe81932446b4a85a21",
+      "tokens": 1884,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_flash_raid_controller",
+      "repo": "https://github.com/kobimoneh/ttsky-flash-raid-controller",
+      "revision": "066f612e217cacaa433d4ab6b468a62542648483",
+      "tokens": 4104,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_galaguna_PostSys",
+      "repo": "https://github.com/galaguna/PostCPU4TinyTapeout",
+      "revision": "ae6983ec3ecfcde8be4dc72abc49aae67c343cf3",
+      "tokens": 2968,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_IZ_RG_22",
+      "repo": "https://github.com/Bondrewd117/tt_um_IZ_RG_22",
+      "revision": "2496bf2174eac98d11d620e4c8bd07be92c7c60d",
+      "tokens": 1501,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_javibajocero_top",
+      "repo": "https://github.com/javiBajoCero/ttsky-verilog-template",
+      "revision": "8c6e4170ce1f82030b36783cadcb41df45e6b8b4",
+      "tokens": 1916,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_jonathan_thing_vga",
+      "repo": "https://github.com/JonathanThing/ECE-298A-VGA-Video-Player",
+      "revision": "d342537ec4ba034f5df846fbac5852d9e69786fe",
+      "tokens": 2665,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_kishorenetheti_tt16_mips",
+      "repo": "https://github.com/tapeoutcutm/Single-Cycle-8-bit-MIPS-Processor-Design-in-Verilog",
+      "revision": "f8846410180522df6ea9ddddc204a6e0bf1eff0d",
+      "tokens": 1733,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_lcd_controller_Andres078",
+      "repo": "https://github.com/Andres078/ttsky-verilog-template",
+      "revision": "bd4917ae3308053f4681a6f9136a84422cf55f34",
+      "tokens": 1878,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_LIF_neuron",
+      "repo": "https://github.com/Haihang-Xia/AFM_LIF_Tiny_Tapeout",
+      "revision": "d69e9d8f1e99c738cd75f7c932bb12fd2c3afbc6",
+      "tokens": 7370,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_matrag_chirp_top",
+      "repo": "https://github.com/Elettronica-UnivAQ/ttsky-verilog-tt-chirp",
+      "revision": "dc092af7c0342703101469570683196508397f3b",
+      "tokens": 2358,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_mcs4_cpu",
+      "repo": "https://github.com/munetomo-maruyama/ttsky25a_MCS4_CPU",
+      "revision": "107eb923c46b7aca6b81936c5a5c375ce94d9a18",
+      "tokens": 4072,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_nitelich_conway",
+      "repo": "https://github.com/nitelich/ttsky-conway",
+      "revision": "886de7d83006e675550566be9cbc08ac7e9aa3e3",
+      "tokens": 5518,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_nvious_graphics",
+      "repo": "https://github.com/jar/ttsky25a_nvious_graphics",
+      "revision": "3eea5b9f2e77b8f0997246c7d440d8d9b006b3ea",
+      "tokens": 4182,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_rebeccargb_dipped",
+      "repo": "https://github.com/RebeccaRGB/tt-dipped",
+      "revision": "0beeb6aa333bd8e5be4d0f79bfac8b5c24234621",
+      "tokens": 1849,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_robot_controller_top_module",
+      "repo": "https://github.com/mnslaboratory/tt_ar_chip",
+      "revision": "576d262e2b1c9104489fcbf3ed15c3efe401bd94",
+      "tokens": 17267,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_romless_cordic_engine",
+      "repo": "https://github.com/rohanverma94/ttsky-romless-cordic-engine",
+      "revision": "abbc6c905eb201c258e49a85ea954b89d9633170",
+      "tokens": 3131,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_RoyTr16",
+      "repo": "https://github.com/RoyTr16/tiny-connect-four",
+      "revision": "74749460e1e17ec9b8cdadd7c99581264d5855c7",
+      "tokens": 7817,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_sha256_processor_dvirdc",
+      "repo": "https://github.com/dvirdc/ttsky-verilog-sha256-processor",
+      "revision": "dedcf80d1d4c361828c822ed54c8388efa3d772b",
+      "tokens": 3077,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_shuangyu_top",
+      "repo": "https://github.com/jedicomo/IPN_Abril_2",
+      "revision": "930a72495447cd7bb50e53e9fbc2d8b8560145ce",
+      "tokens": 2322,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_sjsu",
+      "repo": "https://github.com/swrp97/tt-vga-sjsu-bouncing",
+      "revision": "82b3276c14f10db6c0b615fd6ca0c1f090835160",
+      "tokens": 1767,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_sky1",
+      "repo": "https://github.com/DivyaDarshan09/tt-sky-05",
+      "revision": "e0738d3c679ef5e4f44a25011930942d538815d7",
+      "tokens": 1492,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_snn",
+      "repo": "https://github.com/Amonsuzuki/Reward-implemented-Spiking-Neural-Network",
+      "revision": "df17005dc8778143a8cdce2bafecf2096054681b",
+      "tokens": 1656,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_sortaALUAriaMitra",
+      "repo": "https://github.com/AriaMitra/ttsky-verilog-submission-ALUish",
+      "revision": "7ef27311500149c5c9b7106fcdc11b30159df332",
+      "tokens": 1564,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_SummerTT_HDL",
+      "repo": "https://github.com/Thnk189/tt_um_SummerTT_HDL",
+      "revision": "463f7728fb619381e425742c7eb3c8ba171db0a9",
+      "tokens": 1847,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_tc503_countdown_timer",
+      "repo": "https://github.com/tc503/ttsky25a-countdown-timer",
+      "revision": "92359a85f4de08dd0aa06a5c112851d9a247d73c",
+      "tokens": 1648,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_thexeno_rgbw_controller",
+      "repo": "https://github.com/thexeno/ttsky-rgbw-controller",
+      "revision": "ae8974d8945da9fe93520690e32629f2c5b58993",
+      "tokens": 4138,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_top_layer",
+      "repo": "https://github.com/GGChe/ttsky-zdrode",
+      "revision": "6a4224e4e8d2a808ca6f2ee125bd772f114c8b35",
+      "tokens": 2946,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_tpu",
+      "repo": "https://github.com/WilliamZhang20/ECE298A-TPU",
+      "revision": "bb35b879368edef70232d867b44fd75627aa1f1e",
+      "tokens": 2557,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_vga_glyph_mode",
+      "repo": "https://github.com/jar/ttsky25a_vga_glyph_mode",
+      "revision": "6bd4e3284579c76d281f7f27b7ea443a6203f208",
+      "tokens": 8596,
+      "outcome": "passed"
+    },
+    {
+      "host": "tt_um_vga_hello_world",
+      "repo": "https://github.com/enmanuelrdgz/ttsky25a-vga-hello-world",
+      "revision": "2b782e4d0383939ba92f488c2f0e314ac1212ad5",
+      "tokens": 2382,
+      "outcome": "insufficient defined, changing reference output"
+    },
+    {
+      "host": "tt_um_will_keen_solitaire",
+      "repo": "https://github.com/will-keen/tiny-tapeout",
+      "revision": "6df1ad255514c941040ce4d475cdb62c7ab5b110",
+      "tokens": 1549,
+      "outcome": "passed"
+    }
+  ]
+}

@@ -1,0 +1,1963 @@
+{
+  "estimated_additional": 63,
+  "actual": 63,
+  "passed": true,
+  "candidates_with_independent_oracle": 114,
+  "range": [
+    1343,
+    20907
+  ],
+  "new_origin": {
+    "mean": 0.4126984126984127,
+    "ci95": [
+      0.35714285714285715,
+      0.4722222222222222
+    ],
+    "by_host": {
+      "tt_um_braun_mult": 0.25,
+      "tt_um_rejunity_decoder": 0.75,
+      "tt_um_flash_raid_controller": 0.25,
+      "tt_um_robojan_top": 0.75,
+      "tt_um_rebeccargb_dipped": 0.25,
+      "tt_um_htfab_caterpillar": 0.75,
+      "tt_um_mcs4_cpu": 0.25,
+      "tt_um_machinaut_systolic": 0.75,
+      "tt_um_thorkn_audiochip_v2": 0.25,
+      "tt_um_bitty": 0.75,
+      "tt_um_idann": 0.25,
+      "tt_um_urish_silife": 0.75,
+      "tt_um_toivoh_synth": 0.25,
+      "tt_um_andrewtron3000": 0.75,
+      "tt_um_spiff42_exp_led_pwm": 0.25,
+      "tt_um_uwasic_dinogame": 0.75,
+      "tt_um_DelosReyesJordan_HDL": 0.25,
+      "tt_um_NicklausThompson_SkyKing": 0.75,
+      "tt_um_vga_snake": 0.25,
+      "tt_um_multiplier_mbm": 0.75,
+      "tt_um_fabian": 0.25,
+      "tt_um_vga_glyph_mode": 0.75,
+      "tt_um_IZ_RG_22": 0.25,
+      "tt_um_afasolino": 0.75,
+      "tt_um_gcd_stephan": 0.25,
+      "tt_um_aiju_8080": 0.75,
+      "tt_um_thermocouple": 0.25,
+      "tt_um_uninorte": 0.75,
+      "tt_um_chip_SP_Soy_de_Zacapa": 0.25,
+      "tt_um_gregac_tiny_nn": 0.75,
+      "tt_um_favoritohjs_scroller": 0.25,
+      "tt_um_synth_simple_mm": 0.75,
+      "tt_um_demosiine_sda": 0.25,
+      "tt_um_enieman": 0.75,
+      "tt_um_zec_square1": 0.25,
+      "tt_um_snn_with_delays_paolaunisa": 0.75,
+      "tt_um_spi_pwm_djuara": 0.25,
+      "tt_um_minibyte": 0.75,
+      "tt_um_lk_ans_top": 0.25,
+      "tt_um_daosvik_aesinvsbox": 0.75,
+      "tt_um_Coline3003_spect_top": 0.25,
+      "tt_um_hybrid_adder": 0.25,
+      "tt_um_CLA8": 0.25,
+      "tt_um_alu4_alonso59": 0.25,
+      "tt_um_asheldon44_dsm_decimation_filter": 0.25,
+      "tt_um_wokwi_413387065339458561": 0.25,
+      "tt_um_8bit_vector_compute_in_SRAM": 0.25,
+      "tt_um_tomkeddie_a": 0.25,
+      "tt_um_ejfogleman_smsdac": 0.25,
+      "tt_um_32_bit_fp_ALU_S_M": 0.25,
+      "tt_um_bit_serial_cpu_top": 0.25,
+      "tt_um_cfib_demo": 0.25,
+      "tt_um_couchand_cora16": 0.5,
+      "tt_um_will_keen_solitaire": 0.25,
+      "tt_um_ddc_arghunter": 0.25,
+      "tt_um_njp_micro": 0.25,
+      "tt_um_dgkaminski": 0.25,
+      "tt_um_qubitbytes_alive": 0.25,
+      "tt_um__kwr_lfsr__top": 0.25,
+      "tt_um_dlfloatmac": 0.25,
+      "tt_um_sortaALUAriaMitra": 0.25,
+      "tt_um_led_cipher": 0.25,
+      "tt_um_axi4lite_top": 0.25
+    }
+  },
+  "combined_origin": {
+    "mean": 0.42028985507246375,
+    "ci95": [
+      0.36594202898550726,
+      0.4782608695652174
+    ],
+    "by_host": {
+      "divider": 0.25,
+      "logic_scope": 0.25,
+      "sha2": 0.25,
+      "i2c_controller": 0.75,
+      "jpeg_huffman": 0.75,
+      "picorv32": 0.75,
+      "tt_um_braun_mult": 0.25,
+      "tt_um_rejunity_decoder": 0.75,
+      "tt_um_flash_raid_controller": 0.25,
+      "tt_um_robojan_top": 0.75,
+      "tt_um_rebeccargb_dipped": 0.25,
+      "tt_um_htfab_caterpillar": 0.75,
+      "tt_um_mcs4_cpu": 0.25,
+      "tt_um_machinaut_systolic": 0.75,
+      "tt_um_thorkn_audiochip_v2": 0.25,
+      "tt_um_bitty": 0.75,
+      "tt_um_idann": 0.25,
+      "tt_um_urish_silife": 0.75,
+      "tt_um_toivoh_synth": 0.25,
+      "tt_um_andrewtron3000": 0.75,
+      "tt_um_spiff42_exp_led_pwm": 0.25,
+      "tt_um_uwasic_dinogame": 0.75,
+      "tt_um_DelosReyesJordan_HDL": 0.25,
+      "tt_um_NicklausThompson_SkyKing": 0.75,
+      "tt_um_vga_snake": 0.25,
+      "tt_um_multiplier_mbm": 0.75,
+      "tt_um_fabian": 0.25,
+      "tt_um_vga_glyph_mode": 0.75,
+      "tt_um_IZ_RG_22": 0.25,
+      "tt_um_afasolino": 0.75,
+      "tt_um_gcd_stephan": 0.25,
+      "tt_um_aiju_8080": 0.75,
+      "tt_um_thermocouple": 0.25,
+      "tt_um_uninorte": 0.75,
+      "tt_um_chip_SP_Soy_de_Zacapa": 0.25,
+      "tt_um_gregac_tiny_nn": 0.75,
+      "tt_um_favoritohjs_scroller": 0.25,
+      "tt_um_synth_simple_mm": 0.75,
+      "tt_um_demosiine_sda": 0.25,
+      "tt_um_enieman": 0.75,
+      "tt_um_zec_square1": 0.25,
+      "tt_um_snn_with_delays_paolaunisa": 0.75,
+      "tt_um_spi_pwm_djuara": 0.25,
+      "tt_um_minibyte": 0.75,
+      "tt_um_lk_ans_top": 0.25,
+      "tt_um_daosvik_aesinvsbox": 0.75,
+      "tt_um_Coline3003_spect_top": 0.25,
+      "tt_um_hybrid_adder": 0.25,
+      "tt_um_CLA8": 0.25,
+      "tt_um_alu4_alonso59": 0.25,
+      "tt_um_asheldon44_dsm_decimation_filter": 0.25,
+      "tt_um_wokwi_413387065339458561": 0.25,
+      "tt_um_8bit_vector_compute_in_SRAM": 0.25,
+      "tt_um_tomkeddie_a": 0.25,
+      "tt_um_ejfogleman_smsdac": 0.25,
+      "tt_um_32_bit_fp_ALU_S_M": 0.25,
+      "tt_um_bit_serial_cpu_top": 0.25,
+      "tt_um_cfib_demo": 0.25,
+      "tt_um_couchand_cora16": 0.5,
+      "tt_um_will_keen_solitaire": 0.25,
+      "tt_um_ddc_arghunter": 0.25,
+      "tt_um_njp_micro": 0.25,
+      "tt_um_dgkaminski": 0.25,
+      "tt_um_qubitbytes_alive": 0.25,
+      "tt_um__kwr_lfsr__top": 0.25,
+      "tt_um_dlfloatmac": 0.25,
+      "tt_um_sortaALUAriaMitra": 0.25,
+      "tt_um_led_cipher": 0.25,
+      "tt_um_axi4lite_top": 0.25
+    }
+  },
+  "families": [
+    {
+      "repo": "https://github.com/tapeoutcutm/Optimized-Braun-Array-Multiplier-Architecture-for-Digital-Systems",
+      "commit": "00531401172a8bdcfccee53df83c2ad6ac412e9c",
+      "host": "tt_um_braun_mult",
+      "title": "Low-Power 8\u00d78 Braun Array Multiplier for Fast Computing",
+      "author": "Rakesh",
+      "files": [
+        "project.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_braun_mult/info.yaml",
+      "tokens": 1987,
+      "sha256": {
+        "project.v": "e4449f584b83e17afffd2cefa86ec54ac0c8b4039e64a66f042fdd074e77776c"
+      },
+      "oracle_sha256": "948b95c379045bac051131b4be2701404ba09d4f638cdafb4e2e242f51933404",
+      "netlist_sha256": "59c76b2a51aae2565e45b03317ae022a8c89162f5bbb3056f6186677ddc682ab",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/rejunity/tt09-ternary-septenary-decoders",
+      "commit": "16f708da01248a5f1bffa11cd1e22741de76bc70",
+      "host": "tt_um_rejunity_decoder",
+      "title": "ternary, E1M0, E2M0 decoders",
+      "author": "ReJ aka Renaldas Zioma",
+      "files": [
+        "project.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_rejunity_decoder/info.yaml",
+      "tokens": 13469,
+      "sha256": {
+        "project.v": "6cfa1c215436d31719cc45437566ab9db1eb1d7f336ecd11d1f5715d1c804cc8"
+      },
+      "oracle_sha256": "6a31b3c9a9d68d30afb3f292dfa4fbcac11ccf061e4898ba2202a5b2908a966b",
+      "netlist_sha256": "e30d24cc2722bdfb2098711a140bff871a08db1b12d82bc41a20b8c9b8885f66",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/kobimoneh/ttsky-flash-raid-controller",
+      "commit": "066f612e217cacaa433d4ab6b468a62542648483",
+      "host": "tt_um_flash_raid_controller",
+      "title": "SPI flash raid controller",
+      "author": "Kobi Moneh",
+      "files": [
+        "project.v",
+        "flash_mux_miso.v",
+        "flash_mux_no_miso.v",
+        "host_mux.v",
+        "instruction_decoder.v",
+        "raider.v",
+        "serial_interface.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_flash_raid_controller/info.yaml",
+      "tokens": 4104,
+      "sha256": {
+        "project.v": "d4439bbc1bd5a66a8508f9ce861c5fa70537394b69b7cc1442a3f6cc0527253d",
+        "flash_mux_miso.v": "cb24f193004e79f24cf4d6f5398b41dc6ebec9d56c34a83100e9ee955d0012a1",
+        "flash_mux_no_miso.v": "f95f8964b7dcb23a71ea2c023746bcec3387d45a76ae085f64cf73c1b969bd7f",
+        "host_mux.v": "941593b00c0904417bcc5670422663f72dac78eadc56bc8d5aac7a4adf961c01",
+        "instruction_decoder.v": "b479ea59962059ee80fdc5dc0f463dcb230a83724b89a074cb5e77713c519236",
+        "raider.v": "be49cd3d5ebe6e16b55c17abf8da5e45efdd7df42f491cf4815d22a63b54ee28",
+        "serial_interface.v": "7432095ab7727723965272744e9327173eab195aa3f43b31fc43fdc65aa2409b"
+      },
+      "oracle_sha256": "9e45b81c62d3ab3c9b6b3e1a0f20ec998c888cf49456a12eaf89eb8b55dc6892",
+      "netlist_sha256": "6ca19f176c44a085076b9af9d9a6a425b5ffc8e691aab1da874b13b5afed8e01",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/robojan/tt04-breakout-submission",
+      "commit": "19bec184c8db4208729cbac44f92abc956d84f39",
+      "host": "tt_um_robojan_top",
+      "title": "Tiny Breakout",
+      "author": "Robbert-Jan de Jager",
+      "files": [
+        "ball_painter.v",
+        "block_state.v",
+        "blocks_painter.v",
+        "border_painter.v",
+        "breakout.v",
+        "game_logic.v",
+        "lives_painter.v",
+        "paddle_painter.v",
+        "sound_gen.v",
+        "spi_ctrl.v",
+        "spi_if.v",
+        "synchronizer.v",
+        "tt_um_robojan_top.v",
+        "vga_timing.v",
+        "video_mux.v"
+      ],
+      "path": "runs/precision_v1/tt04/projects/tt_um_robojan_top/info.yaml",
+      "tokens": 6758,
+      "sha256": {
+        "ball_painter.v": "3639780fd541bbe918efeedbcb1e31bc85ed7708eed4a7a7967f96bae887e745",
+        "block_state.v": "15503ac0aceab9b704b66d5a6632fda4b79f0ea0bdfe3b33e2b67e9de8d2a191",
+        "blocks_painter.v": "c1108258287f72bc35ac6b1c3b27823aedca034ddc21739c86d36d335da23a01",
+        "border_painter.v": "17e0be2f2f83d0e84a552f05b0a572fdbf4eb1af0cd5142cbd18f7333521ea1f",
+        "breakout.v": "d2597eb721a9ee0def8e6afcd7c1590e9dc2db5f4bcb644b64a4f1b6d2d238e8",
+        "game_logic.v": "03e510038f64fe9919b019461c0c4214b8dde695e0b89702a6a342800ec2b949",
+        "lives_painter.v": "848a8cc8ef2bbf0b83aa818ff00b755d606e752e07fd3854389cb6a4f34844f2",
+        "paddle_painter.v": "f856d42b9c2d7e8d54f0bb97d092bf24e35af842f5d4bea7477765d88c3b47cd",
+        "sound_gen.v": "777196047ebc74e6eb65fd1043d04c83a40679150c1468fef8be4a2c8df082a4",
+        "spi_ctrl.v": "247bcd0af338b821d7c24298775492d7684b6b25c9d2640714234c06c4c50d09",
+        "spi_if.v": "996bbc94699ed32a0874ca7bbcee958b180f181ddadd85c1ab2bc3fab3d744aa",
+        "synchronizer.v": "d766f7ded8c84520c96412fec92e9159dfa485fbbedcb56e226ee76cb9267db0",
+        "tt_um_robojan_top.v": "4e9c78ef08acb515f7e5624deae64e2d37e28be50934fd7234669d6dff2178d9",
+        "vga_timing.v": "d6d74a52b81e5ab9070e45d969d818a52001768733c8da002dcccc37c1e51074",
+        "video_mux.v": "98c78eb46f8dbf5d114bca6fc38c00fb30cbee021a7c6aee7ac97afb486f662a"
+      },
+      "oracle_sha256": "cad6e7e53c720e0fd88654a567308b6620f613caffcfc5cd7da51e18750b7e62",
+      "netlist_sha256": "f56306838c2f5c45e222a70e6fcf3cc93b9bfa998680d105cb5018eba9c5818b",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f83a6a7af440b1a54ed1d12d01a3b4ec169cc606",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/RebeccaRGB/tt-dipped",
+      "commit": "0beeb6aa333bd8e5be4d0f79bfac8b5c24234621",
+      "host": "tt_um_rebeccargb_dipped",
+      "title": "Densely Packed Decimal",
+      "author": "Rebecca G. Bettencourt",
+      "files": [
+        "project.v",
+        "dpd_pack.v",
+        "dpd_unpack.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_rebeccargb_dipped/info.yaml",
+      "tokens": 1849,
+      "sha256": {
+        "project.v": "3e9a17c626797b4adc7df02b0d218b6e25aaca1b76116b2e6aa29df825fc29d8",
+        "dpd_pack.v": "5d8b8e1add7815af3ecb77e0129d43bf06ed5f32203308dd059c8984e42081e1",
+        "dpd_unpack.v": "db778852ced423f8c004d333b12d30e73bbae6853af46b4fbd9b31ad408f42e1"
+      },
+      "oracle_sha256": "0fc335f55eb6406d62f40a0bcf1cc0c69c951280a12ddab68a7dcba072287cd8",
+      "netlist_sha256": "6f90883fbdc6eb5e25a137836d1f0ce0c6aa3367c36ed541d3515e7c5b752b3b",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/htfab/tt09-caterpillar",
+      "commit": "2cf6f952e568418b99d47c789d4e4b2fd1779499",
+      "host": "tt_um_htfab_caterpillar",
+      "title": "Simon's Caterpillar",
+      "author": "htfab",
+      "files": [
+        "buttons.v",
+        "display.v",
+        "sound.v",
+        "rules.v",
+        "solver.v",
+        "game.v",
+        "project.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_htfab_caterpillar/info.yaml",
+      "tokens": 6943,
+      "sha256": {
+        "buttons.v": "6cd47482198a597f64527aa1a9adb4a8f063efeca5a64244f4f2b3c94ea2cecf",
+        "display.v": "111674cde13aa2a40db0c3219df2961adf31210ce5ec778619ffe895e871b3e7",
+        "sound.v": "d9df3c790d8aead0bc9fcc3cb40974e22efcf9eb860beaaa2cebe22dcd5c45c6",
+        "rules.v": "2be7f85c793b3a0ac7ec2ceaba9372bc782a574a1eb1eca23b3d92f4542f00ff",
+        "solver.v": "3f316a4040fb0d76bc1d244b4bf2476b6176b64152493f7c2cf79619ee18a34d",
+        "game.v": "969c389b6cc28441d5504e904526bbc9c0141b6440fb0a608e1c7f8a41fe39c8",
+        "project.v": "ecb2842ebc19d1cb700163988aee3239795ff620c1e645d6ddc83acb3fb49bd3"
+      },
+      "oracle_sha256": "fee7ed75eff15502d3cf6c9a46ba1dfce6ad3e53903703d6dbe358bc3ad47ebe",
+      "netlist_sha256": "5bee609b47ff95fa83f9913c7f44d0d05504072485fa83837e1f1198e792d06a",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/munetomo-maruyama/ttsky25a_MCS4_CPU",
+      "commit": "107eb923c46b7aca6b81936c5a5c375ce94d9a18",
+      "host": "tt_um_mcs4_cpu",
+      "title": "MCS-4 4004 CPU",
+      "author": "Munetomo Maruyama",
+      "files": [
+        "tt_um_mcs4_cpu.v",
+        "mcs4_cpu.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_mcs4_cpu/info.yaml",
+      "tokens": 4072,
+      "sha256": {
+        "tt_um_mcs4_cpu.v": "45bc316222ea0c3174f3d9c3ea00d890756c8aff3b12b46aa7dc5a8046d3c13c",
+        "mcs4_cpu.v": "10d21cc8c97b685e5d88de1e4c625e0eaf023825161ec97460490e4fb782ca2b"
+      },
+      "oracle_sha256": "e6723877bb08cde905c54f447e26c586dd72926ed5937bf9d814d1735512233f",
+      "netlist_sha256": "7ebb81b1c4867307f282dc5e597a93e9826977a1a7a22241be2d8c62ea2a2915",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/machinaut/tt04-machinaut-systolic",
+      "commit": "3f0d3ce81b65f2706ee330c126fa9814df0a9266",
+      "host": "tt_um_machinaut_systolic",
+      "title": "AI Decelerator",
+      "author": "machinaut",
+      "files": [
+        "tt_um_machinaut_systolic.v",
+        "pipe.v"
+      ],
+      "path": "runs/precision_v1/tt04/projects/tt_um_machinaut_systolic/info.yaml",
+      "tokens": 5622,
+      "sha256": {
+        "tt_um_machinaut_systolic.v": "c4ae449b5cfa66cd8e6a73b30b01ddac5824c2474cf78019c5769921e50230f4",
+        "pipe.v": "2bc2326696ca31dbd86df4c6228a5bdff6b17e97b8ac8f6e48bbda621a0858e7"
+      },
+      "oracle_sha256": "c6960c2239f0c7bb2935fd482b140d1b009b43f8fa3e8c8457cb83e365a7283d",
+      "netlist_sha256": "ca8e98a9b46830b523f700c6d711ea78bb61c1e381a56ce9a2750836a791c5e0",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f83a6a7af440b1a54ed1d12d01a3b4ec169cc606",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/ThorKn/TT06_AudioChip_V2",
+      "commit": "11f0144ba906f521638acc2429fc8e8564e0a7f1",
+      "host": "tt_um_thorkn_audiochip_v2",
+      "title": "AudioChip_V2",
+      "author": "Thorsten Knoll",
+      "files": [
+        "PWMaudio.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_thorkn_audiochip_v2/info.yaml",
+      "tokens": 2167,
+      "sha256": {
+        "PWMaudio.v": "6ba6ca90a1b34ca0f146a4da15e50d5496db31517cf886c11f75ddeb7e01b86d"
+      },
+      "oracle_sha256": "a3373875a63f35190136c84aa0f0fd4981254139f040c4dde2ef8ef6f22dec6d",
+      "netlist_sha256": "56c11518f31fcd5e41109ebcfd7b38544705de12ac6b5e8831d1674d35d17fdf",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/Molidier/bitty-tt-sky130",
+      "commit": "4559fd1c23c3049c4c99ec7b60924d9a456e023f",
+      "host": "tt_um_bitty",
+      "title": "Bitty",
+      "author": "Moldir",
+      "files": [
+        "project_final.v",
+        "alu.v",
+        "bitty.v",
+        "branch_logic.v",
+        "cpu.v",
+        "dff_lol.v",
+        "fetch_instruction.v",
+        "lsu.v",
+        "mux.v",
+        "mux2to1.v",
+        "pc.v",
+        "uart_module.v",
+        "uart_tx.v",
+        "uart_rx.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_bitty/info.yaml",
+      "tokens": 5011,
+      "sha256": {
+        "project_final.v": "71236d9c0cc539ca037298d4fd33f80eb36eeebbe7e72004da73e03ce5b19f11",
+        "alu.v": "5a0227ae620dcc48f42ff621dacc8d966bf4e53bd67614fc7e496558501b2e87",
+        "bitty.v": "38768e21a65a2c7dca6988b7bbd79f0c1462ec8c62353567c25cd0b6e18c9b5a",
+        "branch_logic.v": "bb32c4991f0112c720fcfd5f7c8e0f5f8791de2a17bbad0a6f9dbe661f3c2322",
+        "cpu.v": "ac8ba7ea86f838291837a34e67a0c90aa70d83b6ca2d66df2878e73b583e4e46",
+        "dff_lol.v": "03366c6c92273dc5de6b3b8e5457c452756e99c67e4d71dea06959091647aad5",
+        "fetch_instruction.v": "5b514bc7bf720ebe1685236ae3e79016c3d199aeb699a452548b3a9b48f77d85",
+        "lsu.v": "7d97d2c1bc5279e9ee3ad5d7e9dc0bf3b4dca66c01090057abb308fc641e55a6",
+        "mux.v": "e6eaa244ec10025cdf978fb0c55f5dec7be71cb9204454be0d3d0305885de5c1",
+        "mux2to1.v": "7284216d2518b5554345901c7a8496edd28045d54b2a618b5ac909dea4525297",
+        "pc.v": "f8f6647e288f8f882b5e569aa6a7c6b40ac9b96177144e61ea37c2fde62bb94e",
+        "uart_module.v": "53922f30d4a572291b6bc2692cef3230d74a7626519121373d559d5377473e2d",
+        "uart_tx.v": "284d263ad8eb05c05fc97aff5c58cdea1473b27bcc1b7a50e661baf18926028f",
+        "uart_rx.v": "246846dd3894f854173581e9b8fe2e543ce0ab724b259e03bc57c036ced82b27"
+      },
+      "oracle_sha256": "1f8ca8039112363150de764c39f45f90845c14e336bdeb38e2b28515ed4d32ae",
+      "netlist_sha256": "740d7f1b2127e54daab4458fb3f282e74f11d0d4c367ad405fcd8da0273387df",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/arheidar/tt09-chip-tapeout-110",
+      "commit": "124977ae5fda013092afcb849c2eabcf17fbac0e",
+      "host": "tt_um_idann",
+      "title": "Forward Pass Network for Simple ANN",
+      "author": "Arian Heidari",
+      "files": [
+        "tt_um_idann.v",
+        "hidden_neuron.v",
+        "output_neuron.v",
+        "state_mach.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_idann/info.yaml",
+      "tokens": 1894,
+      "sha256": {
+        "tt_um_idann.v": "85bbe35fa10a340ff538a98d73dc492ad9e97c197c6964017434183604a3f2fa",
+        "hidden_neuron.v": "9a748369de4d89c440597d2bedc63e97ca42a93cfb907fb4a6c61198bd65079a",
+        "output_neuron.v": "7db066a86eab769993d0cfe86d3301b61ad1ed0133addd482d755aa5331392fe",
+        "state_mach.v": "729f8a0f65ed7a080ea73930cbf914b3c868b41ccbb628d8395e0779e122987b"
+      },
+      "oracle_sha256": "07437fbc9d07fde7240c2d7533eefb3fe5d49ffa891f078c09d76d05df947f05",
+      "netlist_sha256": "62e916577d2e89217572def04fc61a0b53e241e3a4a7a4a8bfe739a9392a8db3",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/urish/tt05-silife-8x8",
+      "commit": "4dcd977a84860ebe7f7ea7e2d5e9f9d95ed3c4f2",
+      "host": "tt_um_urish_silife",
+      "title": "Game of Life 8x8 (siLife)",
+      "author": "Uri Shaked",
+      "files": [
+        "cell.v",
+        "grid_8x8.v",
+        "silife.v"
+      ],
+      "path": "runs/precision_v1/tt05/projects/tt_um_urish_silife/info.yaml",
+      "tokens": 9524,
+      "sha256": {
+        "cell.v": "72378338fa431f105721e80a525d1d8f0d9e5c5dc9532a37d9f82ee2ccda112b",
+        "grid_8x8.v": "682144507b324efa618032ffb656707cda31e9522f3337c187f78aeb9b3832cb",
+        "silife.v": "1bfdb25bf6c4861ab88b8884b5cfd3621e32b6b650d5ee43faa7772c69686a6c"
+      },
+      "oracle_sha256": "f97b115b0f4ef224d648b1d80bc9bbd399bb996b8b12d9213c8b21a8bdf4bb34",
+      "netlist_sha256": "e0d90cdf8781f6321c8ff5ff96714a4096301d84a87e65abe7308f853c540e68",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "76b55d6fed30a50ef1df1dccbe3f4b4fea734092",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/toivoh/tt05-synth",
+      "commit": "166eb2e9d0b3a1e6c0ec31fc7e841200e3819ac9",
+      "host": "tt_um_toivoh_synth",
+      "title": "Analog emulation monosynth",
+      "author": "Toivo Henningsson",
+      "files": [
+        "tt_um_toivoh_synth.v"
+      ],
+      "path": "runs/precision_v1/tt05/projects/tt_um_toivoh_synth/info.yaml",
+      "tokens": 3417,
+      "sha256": {
+        "tt_um_toivoh_synth.v": "8ab975c5141ef4e425d5449862308a3f80b2089a9ad40e6c2d74de2532aad818"
+      },
+      "oracle_sha256": "7b2dda03df2c14042e275dbea5ac5263655a1db5b6b9834b61c1673badaa3f1e",
+      "netlist_sha256": "a8f489c7b36a2515cb2637e3957025942e52ff459ba8756817d4a06ba1605df9",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "76b55d6fed30a50ef1df1dccbe3f4b4fea734092",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/andrewtron3000/tt06-verilog-template",
+      "commit": "4e0a338e8642ad320ac7eca58951cf19140bc519",
+      "host": "tt_um_andrewtron3000",
+      "title": "Rule 30 Engine!",
+      "author": "andrewtron3000",
+      "files": [
+        "project.v",
+        "mkRule30Driver.v",
+        "mkRule30.v",
+        "Counter.v",
+        "SizedFIFO.v",
+        "FIFO1.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_andrewtron3000/info.yaml",
+      "tokens": 8089,
+      "sha256": {
+        "project.v": "5338ec5b30e6843322cf045891f6ccf3088d0db91d513812d95ad14907077afd",
+        "mkRule30Driver.v": "a68612c6954e877676012477c21cf7655c4a771e6dc2eaa423e6a8270cbbf88a",
+        "mkRule30.v": "620626077df2d9408a61064e74a874dd7372d795112439ab59c904c8aa93d625",
+        "Counter.v": "a879abde58fc72ccbabd5fee05dee150d868fd34df26e7371665147e3d8fcec4",
+        "SizedFIFO.v": "81c228fe5eac8ef039c61eb484bbe83497bc6847bee30d8778a2df880cc991d8",
+        "FIFO1.v": "407cdce6b37ade0beb22d59a308d05a5c29a0bcb98f29d028505dd08086b1e34"
+      },
+      "oracle_sha256": "62f46097e99ad835a79b861423a1e28262bafc6fec7a16bcfb94a33252e029ce",
+      "netlist_sha256": "7f17c1179076b514efac10aa4c1059be287be46948507e470c6b15233a5caa0c",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/spiff42/tt06-exp-led-pwm",
+      "commit": "17e882d06a1ede26ae933e6653011f8f31b980ba",
+      "host": "tt_um_spiff42_exp_led_pwm",
+      "title": "LED PWM controller",
+      "author": "Mikkel Holm Olsen",
+      "files": [
+        "tt_um_spiff42_exp_led_pwm.v",
+        "ramp_gen.v",
+        "pwm_chan.v",
+        "i2c_slave.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_spiff42_exp_led_pwm/info.yaml",
+      "tokens": 1972,
+      "sha256": {
+        "tt_um_spiff42_exp_led_pwm.v": "482370fee7bb1e9511c7ccfe1fffdec01a65a137cae3f0b52d7c0a8269ee0056",
+        "ramp_gen.v": "aaefb8153caf2fd7a0485d118abf9d210d2fe68bede9abc14366092b279e1bcd",
+        "pwm_chan.v": "ecc60ee802da3dd094b044bd622f753eeea1a4a5cb9fbafe1aed6123c3099b00",
+        "i2c_slave.v": "d31907d2263d4031a1f9a262053fbc8f59b4940ea7f7f16eee605fee1b9982f4"
+      },
+      "oracle_sha256": "3b1b1294b12ff8fa0c33ac8d897b067810dc3e29e54553a8e8bb8b2f1421384e",
+      "netlist_sha256": "44b3dee649a3a59b98c07a9bf3b10b6b952bccabc1f7364b2ede5bbf212cd7c1",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/UW-ASIC/Dino",
+      "commit": "5dd4233c7f66dda5a460c9b535351f3ac6103591",
+      "host": "tt_um_uwasic_dinogame",
+      "title": "UW ASIC - Optimized Dino",
+      "author": "University of Waterloo ASIC Design Team",
+      "files": [
+        "debounce.v",
+        "dino_game_top.v",
+        "dino_render.v",
+        "dino_rom.v",
+        "graphics_top.v",
+        "hvsync_generator.v",
+        "lfsr.v",
+        "obs_render.v",
+        "obs_rom.v",
+        "obstacles.v",
+        "player_controller.v",
+        "player_physics.v",
+        "score.v",
+        "score_render.v",
+        "audio_interface.v",
+        "jump_sound_player.v",
+        "game_over_sound_player.v",
+        "bg_object.v",
+        "bg_object_rom.v",
+        "bg_render.v",
+        "bg_line.v",
+        "priority_encoder.v",
+        "color_decoder.v",
+        "ai_controller.v",
+        "gamepad_pmod.v"
+      ],
+      "path": "runs/precision_v1/tt10/projects/tt_um_uwasic_dinogame/info.yaml",
+      "tokens": 11378,
+      "sha256": {
+        "debounce.v": "a1828677b530a75afd2a2677912566ca27e4aeffd90f17dba33ecaf43b346438",
+        "dino_game_top.v": "e2c8e4d208987d7b778590b28cbf0f98205285b38829c2e5657b47fa41e08c63",
+        "dino_render.v": "680a88e804d3909d6784541358f3592ffbd9315f225c2fd8a616229104db8ab3",
+        "dino_rom.v": "d6e19f91c6e21864a23412cd14c57d74e73705e7b52fc187a507f18c65793a56",
+        "graphics_top.v": "76da671fa86596866d0ca34f128f22da4568be0bed6e62bf91cc4137cb04b92b",
+        "hvsync_generator.v": "56380235d63cd0ce4ad234d645afd57b77d7cc0b7b33be1a367f1510a1322786",
+        "lfsr.v": "ea1bf1d35e5776dc960a4d97bf28ec68b6339a447aad1d7adb1655d3cf8cb0e3",
+        "obs_render.v": "4dd68fe1ca8da0b44a72a455e91a70562d79d832792d73949923b9fab65de8a7",
+        "obs_rom.v": "7c1201626184793f9e75da8b72203df4f57be57e529adb22af894bf61240bf8c",
+        "obstacles.v": "9cc3c5a418f5859d17bc45c5a19cbdddf8d64f66d8d4327f0d661b685631bf0d",
+        "player_controller.v": "4af2135b3697ff6df94f38ceac2f878131d04f751289f629e3b694c1c9846bb9",
+        "player_physics.v": "91d44adbee19169b9bfe4d37bede0e9b8890e656c12f57eaa54cf1bffd9257ee",
+        "score.v": "6e024da88656dc2c51e37421fbbb5725b24c1955c0b3d42261dd6c8e96fc41fd",
+        "score_render.v": "8efe3504350c3da86c8e80e47b0aa1ef50de1712d37566608ceb70e1b55d1386",
+        "audio_interface.v": "25222b55cbfd827d1269db7f7230e32808cd5789fdb03434b8799f37bce1af00",
+        "jump_sound_player.v": "d3fa3d76ad70d0cccd246d21dc376f414748c4ad293239da1f0ca118ebb057fe",
+        "game_over_sound_player.v": "042fd67e3cafc7d8dfe2ca01e2ccccaa66705625912b56fd3d2f947cfa8a7ef0",
+        "bg_object.v": "74667e05ff877f896fdba31d987bc568cc820d55ffdfce169dacf943f9c02410",
+        "bg_object_rom.v": "2502ae7a634638c25618ac793c26f9c8b30cf443d3ff53ec40902c4016d5f0c5",
+        "bg_render.v": "a612a96d5941a9c8bc56b51e3c7aa4d48b40d64f0d857e48342c232ff89280e3",
+        "bg_line.v": "b8dea4382050193167fdb64ea48e3f01c13ba82cec3bb92f5e9a5bc58737e81a",
+        "priority_encoder.v": "35aab6df096032412627958b0e85e0877e21687bc72786aabefa6cead3834438",
+        "color_decoder.v": "64b8cf480e23aba9e7204a1119088116b1ae75a457e07944dfe1bb048512c6d8",
+        "ai_controller.v": "0b5e5d31ec2945f6839140f00e5a6abb60c2676a2bd89f65f1a837b89adaba37",
+        "gamepad_pmod.v": "a0fad5d937c4e988e843c6688f5845365d93afeb3f100b83da6da13737c24fe7"
+      },
+      "oracle_sha256": "2059594805373e4746ee327811f33f05242ce78684a9f5067e65ccfd835f70d8",
+      "netlist_sha256": "6d158a787575f45255098b2f99a1e64827bb5bc7047ed62caac4a29d0699a608",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "46f0a2f45c3b1fcc27aac7acb7faa054631d9955",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/DelosReyesJordan/tt_sky_DelosReyesJordan_ReactionTimeTest",
+      "commit": "1c04b3fc373e16142bf9b5b3860fc5f63d0c1da2",
+      "host": "tt_um_DelosReyesJordan_HDL",
+      "title": "Reaction Time Test",
+      "author": "Jordan Delos Reyes",
+      "files": [
+        "tt_um_DelosReyesJordan_HDL.v",
+        "reaction_time_top.v",
+        "reaction_fsm.v",
+        "random_delay.v",
+        "timer.v",
+        "seg7_driver.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_DelosReyesJordan_HDL/info.yaml",
+      "tokens": 1361,
+      "sha256": {
+        "tt_um_DelosReyesJordan_HDL.v": "fe6f91b7f1a5a7733f33e1c58251c5de6ee236cfd60059514cdc952a5648cae6",
+        "reaction_time_top.v": "208f4bcdc9535c55aa0faecacaf8d295277626252536d7dea004d855e070c87f",
+        "reaction_fsm.v": "fe6603ccf84e06d264e38f49590002df08f8c67e6fb0823b0ce990f0bb346d34",
+        "random_delay.v": "1c7810ed7c9cc4ffc4485ee8461743eee85c113911f378d9ae4bccffa89fd541",
+        "timer.v": "5b2ce489d4e61bcf9144b2cbe7fb4cfd80385b578defbd0874667fbd5cf57366",
+        "seg7_driver.v": "d3986f9cad23173908237f665a609a1c6aba0c9a6dc4f566c95754b3c3f80eda"
+      },
+      "oracle_sha256": "a8b6daa5bfad85fba2690dd7694cec05bb1af9d9f22704ec7d37a64b284119ed",
+      "netlist_sha256": "c52d9a9aec85948c4c539f80bc15f4aea62dd4d6f7f8df4e29fa9c6f1005e149",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/FangameEmpire/tt08_skyking",
+      "commit": "6346dd0a2a31cec81d6e90ce4540dc08e2bb2e84",
+      "host": "tt_um_NicklausThompson_SkyKing",
+      "title": "SkyKing Demo",
+      "author": "Nicklaus Thompson",
+      "files": [
+        "project.v",
+        "hvsync_generator.v"
+      ],
+      "path": "runs/precision_v1/tt08/projects/tt_um_NicklausThompson_SkyKing/info.yaml",
+      "tokens": 5145,
+      "sha256": {
+        "project.v": "e51d5f82e9f559f4914e7c20c37e0ebb62a95b48e5844efb87362d6546067a5a",
+        "hvsync_generator.v": "62bf340afe27ecccd91c502b7136040a5ba45bff72cf8b6bef965e4b4abcef7c"
+      },
+      "oracle_sha256": "501e4cfe3b72e7b354aa86f613a835d59e987f0937c2dd1056683c5c8ae597a6",
+      "netlist_sha256": "cca0bbd1cfa8c73a184a6ccd3f7d11c02fc64e20d339e42cf97efeb0fe5de67e",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/barakhoffer/tt07-vga-snake",
+      "commit": "22d1353a124a7302bc5e30722266480236e392e2",
+      "host": "tt_um_vga_snake",
+      "title": "VGA Snake Game",
+      "author": "Barak Hoffer",
+      "files": [
+        "tt_um_vga_snake.v",
+        "VgaSyncGen.v",
+        "snake.v"
+      ],
+      "path": "runs/precision_v1/tt07/projects/tt_um_vga_snake/info.yaml",
+      "tokens": 1550,
+      "sha256": {
+        "tt_um_vga_snake.v": "6966b97fa80ab504051a9dc6d4dd1ec87eed8d95e512ec318626c8c8d580e956",
+        "VgaSyncGen.v": "1b4bc963690c0282d2be52ef7f857978e23b647dbf52116ac261755594d976f2",
+        "snake.v": "12a3cc51778f7167daa98629d809ea070edddbc0cc8b27019217e22c32e4b5ec"
+      },
+      "oracle_sha256": "da1e9b70f2125c9e465979e10eef4892de0a628044ce56c7857ac0a72405f640",
+      "netlist_sha256": "92aadae1942f1cbd63239e1b9e93158e46b0c5f10ec6d890240a32463df1ec18",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "3c541b4b416e60c8aca1efc2eeb3c05875f8c526",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/sreeramtirumalasetty/major",
+      "commit": "6b0a6abe2462a443ed9aebd336ca2717c15b38c9",
+      "host": "tt_um_multiplier_mbm",
+      "title": "Modified Booth Multiplier",
+      "author": "Varun Chandra Pendyala",
+      "files": [
+        "project.v"
+      ],
+      "path": "runs/precision_v1/tt07/projects/tt_um_multiplier_mbm/info.yaml",
+      "tokens": 6295,
+      "sha256": {
+        "project.v": "1bd7920db633ac465fbf5a05e38e76bcece0b2f3da160756ecfb3d4da21fdd5a"
+      },
+      "oracle_sha256": "6f0b90ecf1148feb6604cd79ca48f1df43c1a80992f48d421f2c98c799454a32",
+      "netlist_sha256": "88adf3bf9bfc5d98600fc7c6e086c286232bae786f5abb324a44cacc04c7a71f",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "3c541b4b416e60c8aca1efc2eeb3c05875f8c526",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/cirofabianbermudezmarquez/tt04-submission-template_fabian",
+      "commit": "2458bacc47a4b7471335bda6d5281d83634b2c2e",
+      "host": "tt_um_fabian",
+      "title": "Later",
+      "author": "Fabian",
+      "files": [
+        "tt_um_fabian.v",
+        "piecewise_linear.v",
+        "cu.v",
+        "rom.v",
+        "mux.v",
+        "adder.v",
+        "ff_hab.v",
+        "scm_h.v",
+        "abs.v",
+        "sub.v",
+        "scm_a.v"
+      ],
+      "path": "runs/precision_v1/tt04/projects/tt_um_fabian/info.yaml",
+      "tokens": 1737,
+      "sha256": {
+        "tt_um_fabian.v": "91560af5ea1e1650fdade2ebc7442661ec1f7f0f2d0770915f21894b14ca93a4",
+        "piecewise_linear.v": "d519a8174722db68f87e971cc1f1920b13eac0540b8a53c64d25d146e2940ec4",
+        "cu.v": "e551a7a076c85616e8e0518ed879234546104c971009c4d3f1dc7c892ef2d58e",
+        "rom.v": "f2580f7a732b8dce1f83fd61bce2496384ebe7872e954e2520d1be0499f453f8",
+        "mux.v": "ef948f0edfcc690a602e3b4e85c4cd342ab01ead309fe2344ed92ba9e00c3424",
+        "adder.v": "4d6b0beb5b2399c19845e3734f7525577ac9b3bc89b16a0eb146448c14f6c174",
+        "ff_hab.v": "94cca4666d442a9cb7b6e151740d62d4e8c14ea94cc0a478f2a31ff3038f1412",
+        "scm_h.v": "a2f5af77952ffe6332e08c947742435aa71217df0ccbb167fb0f62fe9ac8af85",
+        "abs.v": "6df61c4de513cd281cbd7cbd6d7154c176623263ac6d4f6b3cd7df2fc33bc5ac",
+        "sub.v": "a94b42a7987723b9a88c68e4e779d3764c54552aa05d835db3bc6d99e9361da5",
+        "scm_a.v": "14ab20a074c2c28b3303217169075c6dde033af82f4b105953308850c306976c"
+      },
+      "oracle_sha256": "ac21a4b21eb2159fa870548998d550e511e4880ebc9ccc09d0c66302bb7cc85a",
+      "netlist_sha256": "02272d522f1e27d7e1902b0379b8cc4160726929e5555e7a73075f84806333bb",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f83a6a7af440b1a54ed1d12d01a3b4ec169cc606",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/jar/ttsky25a_vga_glyph_mode",
+      "commit": "6bd4e3284579c76d281f7f27b7ea443a6203f208",
+      "host": "tt_um_vga_glyph_mode",
+      "title": "VGA Glyph Mode",
+      "author": "James Ross",
+      "files": [
+        "tt_um_vga_glyph_mode.v",
+        "palette_rom.v",
+        "glyphs_rom.v",
+        "hvsync_generator.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_vga_glyph_mode/info.yaml",
+      "tokens": 8596,
+      "sha256": {
+        "tt_um_vga_glyph_mode.v": "530ec388c7438d211ecb746bfba4315ff1fc0735c433c5a1cb72433d8ed2064c",
+        "palette_rom.v": "fd75622774040ea28860b43054f697b074dfbf5f23ec6b0604c1f07b643c609b",
+        "glyphs_rom.v": "3ea386176a7cfa01268298d651392d549149d4c8954ae628b58254e13f314c3c",
+        "hvsync_generator.v": "cc45d781c1f0b3791df5655b6034ac30a6aaa0ed0343f19758a6655b2cd0ce8a"
+      },
+      "oracle_sha256": "5bd037d6125cf73b94113385fc524f2b65a3cb9a7b18a0510e2222a4514ae800",
+      "netlist_sha256": "88a9ceba9eb9fc0153f69212043bd9fdc53cc2d082f49c8091f2ea533808da57",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/Bondrewd117/tt_um_IZ_RG_22",
+      "commit": "2496bf2174eac98d11d620e4c8bd07be92c7c60d",
+      "host": "tt_um_IZ_RG_22",
+      "title": "IZ_RG_22",
+      "author": "Torres",
+      "files": [
+        "project.v",
+        "IZ_RG_22.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_IZ_RG_22/info.yaml",
+      "tokens": 1501,
+      "sha256": {
+        "project.v": "d021754b0d4c84c56fda917a807bc724b25d456b5a07482c71233fbf764ab261",
+        "IZ_RG_22.v": "6623671be960c7e080fe687fc0ce9f6ce960070546869d693c4b6148d0d5032f"
+      },
+      "oracle_sha256": "e209f2d7da9d14c67527dcce60736644bd9e04693b5bbd2cabc2ee4d258c31fc",
+      "netlist_sha256": "7dfea65517dda09dd170e3f70b653b02d5806885f01c99086fb05f0ace467818",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/afasolino/tt06_posit",
+      "commit": "7d8d4bdfd701fd1f2d709ccfa13ee79cec82a348",
+      "host": "tt_um_afasolino",
+      "title": "integer to posit converter and adder ",
+      "author": "A. Fasolino, G.D. Licciardo, A. Torino, F. Del Prete, C. Parrella",
+      "files": [
+        "add.v",
+        "data_posit_encoder.v",
+        "Fixed16toPosit16.v",
+        "LeadingZeroCounter_16b.v",
+        "normalizer_16.v",
+        "posit_top_open_hw.v",
+        "right_shifter_sticky_16.v",
+        "right_shifter_sticky_18.v",
+        "tt_um_afasolino.v"
+      ],
+      "path": "runs/precision_v1/tt07/projects/tt_um_afasolino/info.yaml",
+      "tokens": 5126,
+      "sha256": {
+        "add.v": "9a150d36f7841516442a45ddc889967cfafe57bb29aace87685add25365a0324",
+        "data_posit_encoder.v": "2daa96feb80dd9df2b615fff109febda2d3d0b8a90e61e134df6ecf2281d2b47",
+        "Fixed16toPosit16.v": "e39bd76e6f5b9dc1eb291dede8f8f4471d1583868da945817bbb91efb31e17d5",
+        "LeadingZeroCounter_16b.v": "ce47f49f775b871a16b2cc6a4a740591c26bf986fa57d54eb235443daf4c214f",
+        "normalizer_16.v": "a540584567323a6b6167aa4871b84df988cd1378df03235ec2aaaad41f5c5866",
+        "posit_top_open_hw.v": "0f13d9eb1b52f5c69ef22a74b6741c2e7222b11e7112503f6baeb8d7a01a2697",
+        "right_shifter_sticky_16.v": "11e7cf15de494bd26e5d481e4f332a7b103a32cda4a9686c26dda9fff87c4774",
+        "right_shifter_sticky_18.v": "fd1294f57bb7d064cf4375b3d2f17eabd13438143c839f4d9f297c07e5575b67",
+        "tt_um_afasolino.v": "b290eba93b6520310bdcba0113f23da917c6111f4976237ae2fd26e5f5671ab4"
+      },
+      "oracle_sha256": "0226c99ef3b3a5f4ba8f6c4172c42a178a95e1d9748184b2a133164fa96c972c",
+      "netlist_sha256": "f3d148664314692bfd68d38e1f611d6e510615bbc63c85cd98092ca366920c82",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "3c541b4b416e60c8aca1efc2eeb3c05875f8c526",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/StephanAAU/tt10-verilog",
+      "commit": "2c8a57d6b1596fdae638303473b1007977499d1a",
+      "host": "tt_um_gcd_stephan",
+      "title": "15bit GCD",
+      "author": "stephan",
+      "files": [
+        "tt_um_gcd_stephan.v",
+        "gcd_module.v",
+        "alu.v",
+        "buff.v",
+        "datapath.v",
+        "fsm.v",
+        "mux.v",
+        "regi.v"
+      ],
+      "path": "runs/precision_v1/tt10/projects/tt_um_gcd_stephan/info.yaml",
+      "tokens": 1599,
+      "sha256": {
+        "tt_um_gcd_stephan.v": "44c2ac1f0e0db56321bf461290f2b3d0c3df625334cd3b76a4fbb1de8861ac40",
+        "gcd_module.v": "4c72c7a5fe7e4cac5846cf4f35e236fcf644f4b255fc487171cde29ea739dd1c",
+        "alu.v": "595364c76dad2497f912fd41d68088d3e168082c93079ef5e185077928a4b131",
+        "buff.v": "138433e711fdd6b052dbd4da3ccf26f84519da53cd0d98e2e2c6d94c59e242b7",
+        "datapath.v": "fc1b5c3d0436592887ea31565d7ceeb7e7adfe11937a44589dd4cb0e398ba583",
+        "fsm.v": "a2311252110cf52f84a71e801bad536f6914811c68fb84ba63dee9dfd0ecb000",
+        "mux.v": "8913e56865970366d300f32bcb525d82a36d613a0f60359a1619e814e033e428",
+        "regi.v": "4abf18082e1fba6278d95098dafd899c45671e59b50c1964a5d9013461d18622"
+      },
+      "oracle_sha256": "feedb70226e1ea55e2161a216a90f677331ad80bf95330a8c9d1dcb48953b5a4",
+      "netlist_sha256": "c5141affd30a3eba05e8e37096cd87ff74b19774ee25f575a6a2b4b1a81e19f7",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "46f0a2f45c3b1fcc27aac7acb7faa054631d9955",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/aiju/tt06-aiju-8080",
+      "commit": "81601ef6eb4dda2f359e8d91cca1aa1f51ebd17a",
+      "host": "tt_um_aiju_8080",
+      "title": "8080 CPU",
+      "author": "Emily Schmidt",
+      "files": [
+        "tt_um_aiju_8080.v",
+        "bus_if.v",
+        "cpu.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_aiju_8080/info.yaml",
+      "tokens": 7125,
+      "sha256": {
+        "tt_um_aiju_8080.v": "9e0d596215fb8236e36f7393a96ba0bc3bb14c9c69de9e732520eaaf0525011c",
+        "bus_if.v": "7e540b984c358dc624ee4b5ce1c4321fac48f75d926042c5ba8e13dbd8cdfef3",
+        "cpu.v": "719b0f45418be4e4b8f5231222850b95dc7337dea540dd34b7e7fe54b2ed9ed6"
+      },
+      "oracle_sha256": "61e033d5b3c47bde40bd3e127bc18aa76d15159f57d56ac4c8d6292845ef677c",
+      "netlist_sha256": "8696785f3def79560d3a868858e4eac55ab4cb8ff3b5f7866ddc6cec9580f6a7",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/AidanMedcalf/tt05-thermocouple",
+      "commit": "2f2f4ce3a9db1936e46730120e1fd6b0a4c4419c",
+      "host": "tt_um_thermocouple",
+      "title": "Thermocouple-to-temperature converter (digital backend)",
+      "author": "Aidan Medcalf",
+      "files": [
+        "tt_um_thermocouple.v",
+        "tc_calc.v",
+        "spi_slave.v",
+        "spi_master.v"
+      ],
+      "path": "runs/precision_v1/tt05/projects/tt_um_thermocouple/info.yaml",
+      "tokens": 1662,
+      "sha256": {
+        "tt_um_thermocouple.v": "042d60b1f7d54513b52acd3d66aafd9b3836c49662cb88d7fab90358dc62531b",
+        "tc_calc.v": "9eb4b167a96ba9e5c2ba7010ad445a9b81c0e5347092f576c07f78b803acb37c",
+        "spi_slave.v": "0a4b03122900851451ff62893a642050f34fd21458a6f40e4bc98a4498937c88",
+        "spi_master.v": "8c3ea403a3148589cf46fbe09ad2b8dd103cb684e34accfb587e07f9c26cd59b"
+      },
+      "oracle_sha256": "e1bd4d1df6ab496d6ac68eed87634d325fc427061383edc5098a4a9b32a93a51",
+      "netlist_sha256": "4730efb6a260c51ef47d2ecd00a1863ce577ff65ae969036d42eaa67382029aa",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "76b55d6fed30a50ef1df1dccbe3f4b4fea734092",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/mnarducci80/tt04-verilog-demouninorte",
+      "commit": "8ac5d1a4ffe268ac9622b26a9fd87070b7c6bd2e",
+      "host": "tt_um_uninorte",
+      "title": "Octal classifier",
+      "author": "Eduardo Zurek, Margarita Narducci, Diana Rueda",
+      "files": [
+        "tt_um_uninorte.v"
+      ],
+      "path": "runs/precision_v1/tt04/projects/tt_um_uninorte/info.yaml",
+      "tokens": 4923,
+      "sha256": {
+        "tt_um_uninorte.v": "ed46dae261e4a784417a4d821a76833ae3e02fa65dac470a5930800b0b52554b"
+      },
+      "oracle_sha256": "f1cef542b35ac50997f3ffbf20f336abb08f035e44d1e2efc97b7198572df6a0",
+      "netlist_sha256": "09049d4adb795fb60e85f8dbc2a720227cf6db01be9056cdc9c3324eb7d15827",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f83a6a7af440b1a54ed1d12d01a3b4ec169cc606",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/NoelFPB/Soy_de_Zacapa",
+      "commit": "32511838179bc2b43ff8474e2c64cecf0f73f4f6",
+      "host": "tt_um_chip_SP_Soy_de_Zacapa",
+      "title": "ASCII Text Printer Circuit",
+      "author": "Noel Prado, Daniel Mundo, Angel Orellana and Julio Lopez.",
+      "files": [
+        "main_circuit.v"
+      ],
+      "path": "runs/precision_v1/tt04/projects/tt_um_chip_SP_Soy_de_Zacapa/info.yaml",
+      "tokens": 2053,
+      "sha256": {
+        "main_circuit.v": "58a511a8057fb56ee7d5f54cfdc016bd978eeaa293bba3a1f790b45b28326dae"
+      },
+      "oracle_sha256": "7be4a7bb4b07343d1a035e226a3b50a059cdb09f9785e1fdaeaae8fd0eb020cc",
+      "netlist_sha256": "8da9812d88134b50667dce318a4d4fd5fb5c54dd14cd2d2661df7ae485ffc88c",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f83a6a7af440b1a54ed1d12d01a3b4ec169cc606",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/GregAC/tt10-tiny-nn",
+      "commit": "a36dcd90704efe9be273c33b527cd687fe910e18",
+      "host": "tt_um_gregac_tiny_nn",
+      "title": "Tiny Neural Network Accelerator",
+      "author": "Greg Chadwick",
+      "files": [
+        "project.v",
+        "tiny_nn.v"
+      ],
+      "path": "runs/precision_v1/tt10/projects/tt_um_gregac_tiny_nn/info.yaml",
+      "tokens": 6509,
+      "sha256": {
+        "project.v": "03a57ecda375efc4cd4706e32aa08717983be37f820b00c97103b9b51c136d2b",
+        "tiny_nn.v": "f1c5ade46b57c2be088e0c21f1a0f96a50fa0f5e440480c5f41f2647cf3a4988"
+      },
+      "oracle_sha256": "5dfbaf966b89186402ca4b478297f79cf05e49986bc385feb74d5a601971e531",
+      "netlist_sha256": "feafd2c5b6baef315c3d30efbd6c840092eeb85419cd52a23dce973defb29e9f",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "46f0a2f45c3b1fcc27aac7acb7faa054631d9955",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/FavoritoHJS/tt08-favoritohjs-scroller",
+      "commit": "38c700b6e2a04212e34f9b74e5a21c62d5963aff",
+      "host": "tt_um_favoritohjs_scroller",
+      "title": "VGA Scroller",
+      "author": "FavoritoHJS",
+      "files": [
+        "project.v"
+      ],
+      "path": "runs/precision_v1/tt08/projects/tt_um_favoritohjs_scroller/info.yaml",
+      "tokens": 1948,
+      "sha256": {
+        "project.v": "681201cfa401298dd94809b2b66143aa316691c959b717203ee1bf624a2b8713"
+      },
+      "oracle_sha256": "68c20446bc83661ecc9568e6d882a512b1574b80eeb2a0aae8f44652190e82fd",
+      "netlist_sha256": "2ec3a448cc1ae224a80c836cee98f8014c07bd54b161cb8ceb5dd6e4a0afd7e5",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/maurizio-martina/synth_simple",
+      "commit": "b0b605835fe7566ed41fc298584e0dd95b2327bc",
+      "host": "tt_um_synth_simple_mm",
+      "title": "synth_simple",
+      "author": "MM",
+      "files": [
+        "project.v",
+        "synth_module.v",
+        "adsr.v",
+        "wav_gen_simple.v",
+        "mem_rom_ampl_sin.v",
+        "mem_rom_freq_saw.v",
+        "mem_rom_freq_tri_squ_sin.v"
+      ],
+      "path": "runs/precision_v1/tt10/projects/tt_um_synth_simple_mm/info.yaml",
+      "tokens": 9225,
+      "sha256": {
+        "project.v": "e8247fb854a6646490ae0852418c20428d60a77fee9f585e442c96928698dfa7",
+        "synth_module.v": "8bc3ffed0f26948c8ed596946b688d926df7aeefd0228f2fa03041fe75bcf81c",
+        "adsr.v": "36e1280fce907ea8bb371ba6af568719ae8d990a9bd60b98ca7b5bc55072e731",
+        "wav_gen_simple.v": "13d0d369e7d3352e0854d06a9e64e409179b3359d214e65af28dd4613da3ddf4",
+        "mem_rom_ampl_sin.v": "4fcebe44bd5f5519eaa5f4bd771c3d67fea53c6c70e49f380634d261fd48ec90",
+        "mem_rom_freq_saw.v": "1464423ded6b2a37f0025cd0ddc536d24dba1f5edfc47ffd38c3216e356031f2",
+        "mem_rom_freq_tri_squ_sin.v": "3cb04f2007451f9798f289e3c32378c806d5544b94e7a921640b71b51733b817"
+      },
+      "oracle_sha256": "654934e7b74e0cc265fd6ab464f481f12ce7362f9babbb14fa86febbab855960",
+      "netlist_sha256": "43270d71043efaeeb7519fdf628860cab5d71e2aed728bfc771ed98901ab4a5b",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "46f0a2f45c3b1fcc27aac7acb7faa054631d9955",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/SagarDevAchar/tt08-demosiine",
+      "commit": "396391b25440e8c8202c4723a872cdd98d2e3a8e",
+      "host": "tt_um_demosiine_sda",
+      "title": "DemoSiine",
+      "author": "SagarDevAchar",
+      "files": [
+        "tt_um_demosiine_sda.v",
+        "vga_controller.v",
+        "graphics_engine.v",
+        "overlay_creator.v",
+        "text_demosiine.v",
+        "text_tt08.v",
+        "text_sda.v",
+        "sine_layer.v",
+        "audio_engine.v",
+        "freq_synth.v"
+      ],
+      "path": "runs/precision_v1/tt08/projects/tt_um_demosiine_sda/info.yaml",
+      "tokens": 4537,
+      "sha256": {
+        "tt_um_demosiine_sda.v": "36c76cdb9bd459dac8714cb95b887c5db3a80d5cbf6c81f55f33ff17eded4ddc",
+        "vga_controller.v": "c59a4624e45ab891641b687138e05e00830712a8eff39440806e3721ee461460",
+        "graphics_engine.v": "bc93231dbebfbb8924050bf7f356cee38a3f9a1b2442f53b6e0c2e3a646d50a4",
+        "overlay_creator.v": "b48b9fbe87c84201443321fe138e491d0cc412f6f132f01e0e3a754fb401aea9",
+        "text_demosiine.v": "b0d24b65dd73e70d395eaf7faaa6625fe03a2093df3934d404f950ce93af14b3",
+        "text_tt08.v": "9de2ef9a0fd437233fa1d169ff62e89c83c80ef6306ffab7f7c79b3ea4fa6b1b",
+        "text_sda.v": "f05a334f934d7c5fe72fa5ea00243bb1aefacd00b2b39edd508bde16df56c9d7",
+        "sine_layer.v": "ca6c77f4f78d9b1beea4e901c146aebb1ce5fbb7590bbf04fb7906cf8d1609e4",
+        "audio_engine.v": "1e7aea795d5b2307e85b2131b87047f404a8fa8fdea94053a28b343ba4089a83",
+        "freq_synth.v": "0999f2935616832464f0b3505f092c72f8000930c5fe1595099838cf2fe6676c"
+      },
+      "oracle_sha256": "41652a2633865cf3808cde3a7cb935a00663aa9881b51ccc0f6e25dccb2059fa",
+      "netlist_sha256": "317b68ec905f21804e02e8c4da82d9a8879a386fed9d67ed3543e28bb8435a8a",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/enieman/uart_programmable_rv32i",
+      "commit": "c1d3dde23a45e62ed61d32d66a5491bd5b2f740f",
+      "host": "tt_um_enieman",
+      "title": "UART-Programmable RISC-V 32I Core",
+      "author": "Ethan Nieman",
+      "files": [
+        "byte_to_word.v",
+        "neg_edge_detector.v",
+        "pos_edge_detector.v",
+        "reg_file.v",
+        "shift_register.v",
+        "synchronizer.v",
+        "tt_um_enieman.v",
+        "uart_ctrl.v",
+        "uart_rx.v",
+        "uart_top.v",
+        "uart_tx.v",
+        "word_to_byte.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_enieman/info.yaml",
+      "tokens": 6991,
+      "sha256": {
+        "byte_to_word.v": "bcd4aff87c553d71be6e76106e9c0fa090da5abbe72b35e928bff8aea08ef427",
+        "neg_edge_detector.v": "b77f2d29c3f6a69c779585678d93b14ed247f3a12dea8e599ea937645a8b85e6",
+        "pos_edge_detector.v": "4ef6f22803ed5706540b1e3979f137259bfeae7dbb78e878dc92f466bc6a5cb4",
+        "reg_file.v": "426fa804313020e7c3bcb93226db30dfec48c7a79ded5e61439e963f79c1f734",
+        "shift_register.v": "af4f56b5a15106c343ec93600cbde0bbd3a325a69d4dabd65079cd95e01f27e9",
+        "synchronizer.v": "8d4e82158ec61778374cee0d9263f6312ebac9635c9b73a9a167f13e8febab47",
+        "tt_um_enieman.v": "405d95bdca9b3e030c75587aa1286f11e19f5b5f456c7f2af0df9fdc0708596e",
+        "uart_ctrl.v": "274e5e4b6f6f923c9975b206deba68282ae01d0cf8c115d9ca5ded4ec6e02c93",
+        "uart_rx.v": "abd6edb71005a1467c48939c3ad38e72bbc7696459bce1f8e7a6e9fbb7a42782",
+        "uart_top.v": "f0995c6784b971fcadcd8da5691f0b4b13ef83c7137f4555abc6f614d890eb17",
+        "uart_tx.v": "606de974c042fcba3ba46e83fc10a055c72880d49db78d90589047861dd0a6f8",
+        "word_to_byte.v": "1e8250636da24eadd75d24e8792ecd1df3d4ba59d11810236eb098ffd9e3e510"
+      },
+      "oracle_sha256": "d3d4ec7ad080c4bafd37d4473bd924079f270a6303edf7cd743e96d68203f15f",
+      "netlist_sha256": "42301d9f5708f934411bf19900a207a918ee8ed6c9f9621498b44e66d5aa4473",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/zec/tt08-square1",
+      "commit": "3ffb0b92796285a12e370371a42e1e0024848e83",
+      "host": "tt_um_zec_square1",
+      "title": "\"SQUARE-1\": VGA/audio demo",
+      "author": "Zachary Catlin",
+      "files": [
+        "project.v",
+        "hvsync_generator.v",
+        "logistic_snd.v",
+        "logs_iterate_map.v",
+        "logs_mixer.v",
+        "logs_popcount.v",
+        "logs_nco.v",
+        "logs_divider.v"
+      ],
+      "path": "runs/precision_v1/tt08/projects/tt_um_zec_square1/info.yaml",
+      "tokens": 3272,
+      "sha256": {
+        "project.v": "413d8463603855388521a78ea450ea6f349e004fb03e5c407578f306b4cb7e0f",
+        "hvsync_generator.v": "9b20881892cb2e80a25d29ab0eda2c1ce9bbd0c3c8e126510851c4f02c5bf52f",
+        "logistic_snd.v": "8fdc8e1a2a9a9bd2dc8c70ffff1a64b64fb6e41bf8fc83536d9f22b4075c0088",
+        "logs_iterate_map.v": "a4a4dfb490dde5add741a8752ee31e93f3737d59e845964a5ad05002280f4614",
+        "logs_mixer.v": "ce6943860d855c274dae7d4ce77881c38a1e203660b563950266f0c22b2cdf0e",
+        "logs_popcount.v": "0bfb8a0fa19b9ce13664b40456e1ec749fc49db7585cd34281a402e4a7256f8a",
+        "logs_nco.v": "566ad7d8de3f8a35376d412c5d1a7a8bff3178c53e5a6159490818bdf98da284",
+        "logs_divider.v": "f0785ab216ecc9aff5b5f949cea20854613bde590750afac53c434d96e3675ec"
+      },
+      "oracle_sha256": "5d6139fe20683a686386bf1020f8226e60ebf652f62d8c32fdcefb8c54045b26",
+      "netlist_sha256": "c3ed761fbc147e78aebfa257c86dd4468051e748a67a6d098c3c94696b6e0428",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/PaolaUniSa/tt09_chatGPT_SNN_LD",
+      "commit": "da31a93c483ec2a4e3d4100a2b7191a5074a3229",
+      "host": "tt_um_snn_with_delays_paolaunisa",
+      "title": "ChatGPT-generated Spiking Neural Network with Delays",
+      "author": "Paola Vitolo",
+      "files": [
+        "project.v",
+        "clock_divider.v",
+        "debug_module.v",
+        "InputCurrentCalculator.v",
+        "LeakyIntegrateFireNeuron_debug.v",
+        "LIF_Neuron_debug.v",
+        "memory.v",
+        "neuron_delay.v",
+        "NeuronLayerWithDelays_debug.v",
+        "NeuronWithDelays_debug.v",
+        "programmable_delay.v",
+        "SNNwithDelays_top.v",
+        "spi_control_unit.v",
+        "spi_interface.v",
+        "spi_slave.v",
+        "spiking_network_top.v",
+        "synchronizer.v",
+        "ThreeLayerNetwork_debug.v",
+        "reset_manager.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_snn_with_delays_paolaunisa/info.yaml",
+      "tokens": 7522,
+      "sha256": {
+        "project.v": "d384f478cd7b65874bf060604fcd5e90f28536f504a9ca548878e3a11f0242a6",
+        "clock_divider.v": "719e3ae24ba3fdd9ab2f62892ab7699916d36860831f9d401f5685f785e853eb",
+        "debug_module.v": "cb574241bc9c0da6c3f678a73169272e230f30d8d72f928888f0ab485a5d5609",
+        "InputCurrentCalculator.v": "3292714b29c6557445951b95816aef8de6c05387ab9588ee50aa4a89154aa554",
+        "LeakyIntegrateFireNeuron_debug.v": "87508ab22f19e7d67a682ab2b860299053fe96ae67b020001ed2f9aba53d2a1c",
+        "LIF_Neuron_debug.v": "98777e5c2188d04865dcebda01d3b450a51eaf59efd7775743b4178d2a44291a",
+        "memory.v": "66a77dc47b732f292a500ac30fc9ef51568d1bb9fc2c8141c2d6434889f100d9",
+        "neuron_delay.v": "dc869c99d13fd64fe82411aa2051e1e99132837154c73917eb3d3690cb2f952f",
+        "NeuronLayerWithDelays_debug.v": "2595e7718e5999575189eb4ec7090f903229269b5a4e0e75288136327c1d6c6c",
+        "NeuronWithDelays_debug.v": "e3ab088d454a5867caa014c6b2d4b651c5ddd99658199f1c50ee167eed601846",
+        "programmable_delay.v": "398575e54ad8f9c8f9aa6dff2874eca14db376f166f828e32813fd9161c336d8",
+        "SNNwithDelays_top.v": "1ea7ab9613ac614b90cffb1f7b303bb2f8adf8e0fd04fcef7a1556c81697847c",
+        "spi_control_unit.v": "e57adb51cf2281cfcbe3c944e831389b36038c69d6a25e49692e0a36c037bf5f",
+        "spi_interface.v": "e1a65a64cbd96cc78f10f336c8506db7bccaaa1421c8bde7fb5e9c6d88d0f990",
+        "spi_slave.v": "0a6887eb2d455660aa19fe2305efc4b73532cf4b99c0762227acc9bf888d4b2a",
+        "spiking_network_top.v": "0ebdbef2e1872fb248e3a7568688d721cda7f3e8b1054b2e1d9af3619c26db7d",
+        "synchronizer.v": "d7ed08db8715bc7346e7f4ca36cc566f5f041cf23378d37ce551baca90404144",
+        "ThreeLayerNetwork_debug.v": "f7fd87e37c218c06442a412ad1558b39a772af1ea7933fd0dcc2f817390eb0e7",
+        "reset_manager.v": "b10210ef796cd2f79a9579f6b859072506b590510ddd376f7ce8ebec2560c4c3"
+      },
+      "oracle_sha256": "c556b76ed0424aababb962c060bed00654a3e5db46fe8a5861553798792c6642",
+      "netlist_sha256": "105925f714ac7f8a8fd132585bce2440e262ceadad788793711481f74f8bcac4",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/djuara-rbz/tt_spi_pwm",
+      "commit": "44ec47fb6976c579f5fc432f23b27b8bfef6d91b",
+      "host": "tt_um_spi_pwm_djuara",
+      "title": "spi_pwm",
+      "author": "djuara",
+      "files": [
+        "project.v",
+        "edge_detector.v",
+        "spi_own_clock.v",
+        "spi_sampled.v",
+        "pwm.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_spi_pwm_djuara/info.yaml",
+      "tokens": 1963,
+      "sha256": {
+        "project.v": "439d4518e6a711ff54ecbe943dd6795251af80b46b3e207d6ab4ba6ee4a5dc74",
+        "edge_detector.v": "b4059f3550197ff0a2be4e0dc55b446246e16645654fe8c8df877b6434c39009",
+        "spi_own_clock.v": "6da9a4bd89bc79ce7db2bc1835297d9a8bfb81b79b7c1faaa86980549a499ec4",
+        "spi_sampled.v": "1658e21589651e04e76c326ec47b4322da85c2c83ebd85c362f5cd63290f8a29",
+        "pwm.v": "d16540d3efadf39871a5210e2ee9de5c1bdf2494c8d2ac6ac0207c34536af09f"
+      },
+      "oracle_sha256": "43896eeb1fc0651d0b60b54bdff395453639228bd598b4182cc5044e0b598e48",
+      "netlist_sha256": "d161571af0fc6c6a1504ea1bc41485d99ee8273e0579a4ad4f3335f4a9ed14d6",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/zacharysfrazee/tt06-minibyte-cpu",
+      "commit": "da731883e25f1efe488a968a9e5f31d14f24f097",
+      "host": "tt_um_minibyte",
+      "title": "Minibyte CPU",
+      "author": "Zach Frazee",
+      "files": [
+        "project.v",
+        "cpu.v",
+        "control_unit.v",
+        "alu.v",
+        "register.v",
+        "mux.v",
+        "drive.v",
+        "demo_rom.v",
+        "reg_ram.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_minibyte/info.yaml",
+      "tokens": 9203,
+      "sha256": {
+        "project.v": "7e1c1f43c448e9d29cb77bfad99a3865818073f2a125a142e4341343910b964b",
+        "cpu.v": "2078af82262a20c15b97bc998814c0a944c0c0230d4c91c7788384aa0666fb67",
+        "control_unit.v": "387411eadeb125d8920dffb93d64b0da38ae74bec934b3c1945abc3c7e2d42a5",
+        "alu.v": "7b1eb03168e222562f766599b1a6ac736a306b71bedca879449e001bf29fe70d",
+        "register.v": "36cf80ccafb84347b8eb55fd551983ef380dd19eedbfa29a1292128cc3d3cff2",
+        "mux.v": "668465a2448333289ff8a32f4a81d18b5f75d40f4b385ad7193e4d3b3a9dabf7",
+        "drive.v": "57a25173fc242771f18ed05ef2af67a51795c4bcddeb5663b5cf39e8a44c7486",
+        "demo_rom.v": "b222494dc81212cba16ed58fdc31b27d453483e4272e25e60b688399ed6b4809",
+        "reg_ram.v": "421eb687cd13c625e16a75c062e9d7a37857c12fe5efd5be8b8c3bb003eae45b"
+      },
+      "oracle_sha256": "ba9312ae49d17d7a59f795e1576cbf31689271e86ddf69c8e88c2c1e2e16c607",
+      "netlist_sha256": "2352fa087944a52b576095ae5687a925431eda3a325e3184c787cedb1caef415",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/LK/tt06-ans",
+      "commit": "4573843406d63b90c5c67fc616e9df3d7407973e",
+      "host": "tt_um_lk_ans_top",
+      "title": "ANS Encoder/Decoder",
+      "author": "Davide Asnaghi & Lenny Khazan",
+      "files": [
+        "project.v",
+        "loader.v",
+        "encoder.v",
+        "decoder.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_lk_ans_top/info.yaml",
+      "tokens": 2463,
+      "sha256": {
+        "project.v": "1e8f0da93c4cbd363bc166cd5366c339c7ced57d9d4f1b9d2d0f8595f667c147",
+        "loader.v": "cabedb7859dcb8bb4afc75d8dddda1068ed207e54d0ba9f681a9ff5171119104",
+        "encoder.v": "f745f71e233f2ddd6f99b6fa8417718e73650a7ae91d88dad4965e3823bd88f7",
+        "decoder.v": "582cab315d479b1042d2ff40673791c55310451823453dee830f687e9080d339"
+      },
+      "oracle_sha256": "071ac6e45c4ca4d02cfcb63bef408917e7b7bd0c8225d70ea63ddfbf73c93667",
+      "netlist_sha256": "dffe192712264640248c1518401f9693f5213dedc83a1a2cc4ea3448c5ffe8bf",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/daosvik/tt08-aes-invsbox",
+      "commit": "e78636840df3af0a11027db7fe2a0d3a82821521",
+      "host": "tt_um_daosvik_aesinvsbox",
+      "title": "AES Inverse S-box",
+      "author": "Dag Arne Osvik",
+      "files": [
+        "sky130.v",
+        "sbox_aesinv.v",
+        "tt_um_daosvik_aesinvsbox.v"
+      ],
+      "path": "runs/precision_v1/tt08/projects/tt_um_daosvik_aesinvsbox/info.yaml",
+      "tokens": 16819,
+      "sha256": {
+        "sky130.v": "a5889c29a46d09d3cf533dfb9449460fb2c14851f22f52fbe69f4abd8fa106a4",
+        "sbox_aesinv.v": "3b8d5650d02f721ac1e7a87d72ca676040189c265483e94c9b06dddd4c4c010b",
+        "tt_um_daosvik_aesinvsbox.v": "f247817429154d52be172ae4ce310c9de9669e9017b5eff1c81c2b45c4c7dcbc"
+      },
+      "oracle_sha256": "7ff69672d9e875cd6130e43e42ece4da4a72306c4e3f2e21286635dc528a8519",
+      "netlist_sha256": "2b5f27a3e4aad14249c5fd4c68a6e1dfca81c04ec767356ed51ef38d96db2edc",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+      "rank": 0.75
+    },
+    {
+      "repo": "https://github.com/DinkoOletic/tt09-HDL_unizgfer_2ch_AE_tf_spectrogram",
+      "commit": "47c65f767e760975226cf4666a4fef081809ae02",
+      "host": "tt_um_Coline3003_spect_top",
+      "title": "Spectrogram extractor, 2 channels",
+      "author": "Coline Chehense, Dinko Oletic",
+      "files": [
+        "FSM.v",
+        "PISO_register.v",
+        "PISO_time_register.v",
+        "RTC.v",
+        "mux_2to1.v",
+        "time_register.v",
+        "encoder.v",
+        "memory.v",
+        "memory_controller.v",
+        "top.v",
+        "tt_um_Coline3003_spect_top.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_Coline3003_spect_top/info.yaml",
+      "tokens": 3579,
+      "sha256": {
+        "FSM.v": "7415ec2cdfb880b6b293d0b3619680284c92568e07587b9b11d430ce55075fde",
+        "PISO_register.v": "8f66fc8d05ba91c625e5715ee1dc549d40d1fb4b9699ed2316e85e9d21df1202",
+        "PISO_time_register.v": "36224567250d021302469ec05468df7240283228672936aefa67a94f815f2a30",
+        "RTC.v": "dd459b999c51507ddc97ed4315b29e58b878d2c4f78142671e97aae78cf5975e",
+        "mux_2to1.v": "49b69114e06577f69bf92893e2ba768f64d01880e6df096f90a9e74afa772179",
+        "time_register.v": "ce9ab5b0dfd4ed1e852e4462ca5455089a1c0f7de5b5f75e5da004f27b44289e",
+        "encoder.v": "41ca68b4d63caa350922c472ab76ca4d92303d14706359b4f2b3ae6e9b7e290b",
+        "memory.v": "2571c848de9797565b99280f56ce0909824b87d5c4873c52440cd402a5b9fac6",
+        "memory_controller.v": "3d82a736991d6c48ed5d27dd1c1addf7b00a577c3e95c6a4a1bf6127f98765ad",
+        "top.v": "79412e1ad9640333c4247ed0b52db24338ab617fc57f859c8d2494090c53af67",
+        "tt_um_Coline3003_spect_top.v": "afc2668636f612749fb0feacb7468f652dc0be3e90ab8af03331614454fcb621"
+      },
+      "oracle_sha256": "5fd38dff1609689661b46bc9c2dd438e3b24c127fafb0efcdf6e242f0eeade3a",
+      "netlist_sha256": "7f57f44c7dc0c404e3dbd53ea5cbcfffcdccf23001a846335f8a539901e4b924",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/cameronbed/tt09-hybrid-adder",
+      "commit": "4d20167a25902aba012bb7d5065a5783a9bba1ac",
+      "host": "tt_um_hybrid_adder",
+      "title": "Hybrid_Adder_8bit",
+      "author": "James Xie, Cameron Bedard",
+      "files": [
+        "project.v",
+        "HybridAdder.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_hybrid_adder/info.yaml",
+      "tokens": 1409,
+      "sha256": {
+        "project.v": "754b9871e10f915d7fb0853ca72b281fbf44610beb9e51afb4294021849c7a9b",
+        "HybridAdder.v": "84d9b7e7ea6136b39f31444352fd1cb0c52ece0df78c19d33715b1b39e758608"
+      },
+      "oracle_sha256": "efc3f0d47bb4471776efc6f4649a76857120334c5bfa6d061b8dc837f2ffa433",
+      "netlist_sha256": "a9ed13dbf0aa8dc6e360ce186509bd68f736c4ace0f5eca43cdc2f14d97b60dd",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/sej3939/Carry-Lookahead-Adder",
+      "commit": "4e553447c4286efc706c3720492d2f14e4bacb4b",
+      "host": "tt_um_CLA8",
+      "title": "8-bit Carry Look-Ahead Adder",
+      "author": "Seongwan Jeon and Michael Zeng",
+      "files": [
+        "project.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_CLA8/info.yaml",
+      "tokens": 1443,
+      "sha256": {
+        "project.v": "4c3d0f221e01acb3e0d05c8be46c8ae695a6802d82528d0da0cd2a8b3f1d44e4"
+      },
+      "oracle_sha256": "efc3f0d47bb4471776efc6f4649a76857120334c5bfa6d061b8dc837f2ffa433",
+      "netlist_sha256": "e97f4e958b3a44212d54519f83c9c8eb7e8a2e84b22a13980ca028a305501e9e",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/alonso59/tt04-submission-alu4",
+      "commit": "53b0963e85c28a8b4c2edc9c1e85ab6881e90855",
+      "host": "tt_um_alu4_alonso59",
+      "title": "4-bits 1-channel PWM and ALU 4 bits",
+      "author": "Alonso",
+      "files": [
+        "tt_um_alu4_alonso59.v"
+      ],
+      "path": "runs/precision_v1/tt04/projects/tt_um_alu4_alonso59/info.yaml",
+      "tokens": 1559,
+      "sha256": {
+        "tt_um_alu4_alonso59.v": "8359e729e9236c077900ef7113d1eb20a0b31966dae3ecf0ddde011d2e1a15c8"
+      },
+      "oracle_sha256": "b78fa5c22585136de66b835a647929c856aeefc52bf172eca45bb7091b0588d2",
+      "netlist_sha256": "92dd1afd203e73766649613047113f6896de5e600929b2231dad1c3654c77d22",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f83a6a7af440b1a54ed1d12d01a3b4ec169cc606",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/asheldon44/tt09-delta-sigma-decimation-filter",
+      "commit": "555de2f5fedc77ed02615ae476148b4a74257a4c",
+      "host": "tt_um_asheldon44_dsm_decimation_filter",
+      "title": "Delta-Sigma ADC Decimation Filter",
+      "author": "Alexander Sheldon",
+      "files": [
+        "tt_um_asheldon44_dsm_decimation_filter.v",
+        "CIC.v",
+        "adder.v",
+        "incrementor.v",
+        "integrator.v",
+        "mux.v",
+        "op_differentiator.v",
+        "divideby2.v",
+        "divideby64.v",
+        "outmux.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_asheldon44_dsm_decimation_filter/info.yaml",
+      "tokens": 1394,
+      "sha256": {
+        "tt_um_asheldon44_dsm_decimation_filter.v": "b8b43060b0db53bd3dc9a30c66097a37b5ec95e85e82870ce43a45bcde326a05",
+        "CIC.v": "60c2a3d03aef8fe7601690b19973fffef8feb1d354357e12587243ef9365415b",
+        "adder.v": "4f0fabb506a317e3faf088b85dacd2176252de66f9e7fa54d3c4b21538455f98",
+        "incrementor.v": "2831c5758096168b3e921ab5d2cf832a79133a387b8857ac14b10a03753eb0ee",
+        "integrator.v": "a66c4e40404d8e27864aa7aca21ba0de4ec538d93fb7e935617dd4702aa41117",
+        "mux.v": "24ea229ccced78bca5522e752e8e6a0acbd75f054775b95591895731af137621",
+        "op_differentiator.v": "a73dca1f8d682a1098aa42d1802d6e72ab591a14dcb36c3f7ed34cea72c1a376",
+        "divideby2.v": "70faae65dcbffed82fa6941a133041653077946bea839e9148f9675d78ad0ece",
+        "divideby64.v": "f43a6df2b28395c6657f5a398c4b88ab12a806b1b320149a3e00876f558a78ec",
+        "outmux.v": "0aa50b3b41e4b839e465b2e5519807a2bd8de2bbe1b49dc0b9c1d3fd75f7f9a3"
+      },
+      "oracle_sha256": "676383be54ebbd4c9205ac022ef82f2a5da96f914a4b002381a4f39ab8c0a3bc",
+      "netlist_sha256": "750e51b1dab9b82386dd9a4cd6b6d5797717afe68be251bcc56592e191d61d89",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/squidgeefish/TT09",
+      "commit": "5ede2c18b39face5fe607c45c25e8b98460c4e2c",
+      "host": "tt_um_wokwi_413387065339458561",
+      "title": "APA102 to WS2812 Translator",
+      "author": "Squidgeefish",
+      "files": [
+        "project.v",
+        "apa102_in.v",
+        "led.v",
+        "uart.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_wokwi_413387065339458561/info.yaml",
+      "tokens": 1418,
+      "sha256": {
+        "project.v": "4a29cb461a707eac44bdaa29083b2080b89e941ff6eb7d4d6edab7331c308e6b",
+        "apa102_in.v": "2a1d43e2aefa469a9a274624297eab53a3c76eca83acecfb66d796370f607460",
+        "led.v": "bb2a8e0ba73853d8fcc88487f70539a812f424d76f01b032bf03672605227b14",
+        "uart.v": "1767bd7c61e1437e0476e06d77833b91ea74f4583f9dc66be2de9e10e18ae541"
+      },
+      "oracle_sha256": "18c610116a211bfe1a48c48a4b21cc423294612b0261e22c1726be5fdf85eea0",
+      "netlist_sha256": "36814ff41741a803359dc7983dd22089636ca6900cd8cff879052a041771604a",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/ramyadhadidi/tt07-8bit-vector-compute-in-SRAM",
+      "commit": "5f9c5f7b862115bc0431242f63e472443a60c9db",
+      "host": "tt_um_8bit_vector_compute_in_SRAM",
+      "title": "8-bit Vector Compute-in-SRAM",
+      "author": "Ramyad Hadidi",
+      "files": [
+        "tt07-8bit-vector-compute-in-SRAM.v"
+      ],
+      "path": "runs/precision_v1/tt07/projects/tt_um_8bit_vector_compute_in_SRAM/info.yaml",
+      "tokens": 1459,
+      "sha256": {
+        "tt07-8bit-vector-compute-in-SRAM.v": "cbe92b3edb69e1a6834d8c2469207b20d0d0a700fd3a03cda142752f3b438a50"
+      },
+      "oracle_sha256": "04018b802559759d03fc8904dac7b308abf516581265b168c23b583dc8f7c35e",
+      "netlist_sha256": "60af7ca9354438e758732a2f3642973a912146ca08d580b54ff06d2f5a42dc67",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "3c541b4b416e60c8aca1efc2eeb3c05875f8c526",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/TomKeddie/tinytapeout-2023-tt05a",
+      "commit": "621f0f1604bb5d5ea33630bae4f026edd93948cb",
+      "host": "tt_um_tomkeddie_a",
+      "title": "VGA Experiments",
+      "author": "Tom Keddie",
+      "files": [
+        "top_tto.v",
+        "vga.v"
+      ],
+      "path": "runs/precision_v1/tt05/projects/tt_um_tomkeddie_a/info.yaml",
+      "tokens": 1675,
+      "sha256": {
+        "top_tto.v": "88693f33f7c9785d85448fd628f828dd30f3273f57aef6e55aaf709b52986c1a",
+        "vga.v": "e76bb0c2ed870f12fb3a123de74aa3727ab55dc4fc2283e297f5f9a0a6e05a9c"
+      },
+      "oracle_sha256": "b3eaf478ba6462404f61c7552fa6bf7d82acec3764a59c1c4d834928628fbe0e",
+      "netlist_sha256": "724de24e57b5ef0795c60d5f05da843b8d74340f19daf89c9861c2f807c9b46a",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "76b55d6fed30a50ef1df1dccbe3f4b4fea734092",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/ejfogleman/ef_smsdac",
+      "commit": "65fd05492cf31a53f0d17d11e8dfa3052d8aa094",
+      "host": "tt_um_ejfogleman_smsdac",
+      "title": "8-bit DEM R2R DAC",
+      "author": "Eric Fogleman",
+      "files": [
+        "tt_um_ejfogleman_smsdac.v",
+        "ef_smsdac_top.v",
+        "ef_smsdac_sync.v",
+        "ef_smsdac_reg.v",
+        "ef_smsdac_mse.v",
+        "ef_smsdac_mse_sb.v",
+        "ef_smsdac_lfsr10_7.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_ejfogleman_smsdac/info.yaml",
+      "tokens": 1635,
+      "sha256": {
+        "tt_um_ejfogleman_smsdac.v": "647388c8ca8f46f2f0d0d6c2d604b6df5b9ce9a7a42d52e6d8819b7150492a2c",
+        "ef_smsdac_top.v": "67638a2c96cc75e1eee37aa152eb9e397b76bbd4c8d46bf8e7144af4ab571104",
+        "ef_smsdac_sync.v": "132a1f9002139bcafa4d981b642b84b7856378029f5f5d5042d9a111b15a96ca",
+        "ef_smsdac_reg.v": "59c4329c2ed93f929dfe04ad2a6f431b81db8c2bb2757e32c1bca9b48e7efb93",
+        "ef_smsdac_mse.v": "783213f0468d4acc94700aea9ed64c200787da8e54bec674ebd2ecd181e9d207",
+        "ef_smsdac_mse_sb.v": "4d4a1592ac0d9618231ae6f3e14975c0234ccdd68765a366b01b19999b08f57d",
+        "ef_smsdac_lfsr10_7.v": "80123fdda14bfbcb23800252621ef0270ed6c2a5813b507fac27828725526791"
+      },
+      "oracle_sha256": "9f7d1f7edb43e46435d3e8afc21329688b7e66597aa32ffd91578815cfea28c9",
+      "netlist_sha256": "f0ac859bc29dc2565e313c28afacc4172d7776d80e184e5a87e21f112da21c13",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/maxlou05/FP32-Adder",
+      "commit": "669bdf38fe25aa5f6d323c21cef97f8aed1ffe74",
+      "host": "tt_um_32_bit_fp_ALU_S_M",
+      "title": "32-bit floating point ALU",
+      "author": "Sean and Maxwell",
+      "files": [
+        "project.v",
+        "alu_top.v",
+        "fp_addsub.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_32_bit_fp_ALU_S_M/info.yaml",
+      "tokens": 1530,
+      "sha256": {
+        "project.v": "bf6ddd82a824ff847e878ba72cdfe2f8e58b63d705d0677c5af809bbee051bde",
+        "alu_top.v": "43d0bbb33ed0185759e2efafa082c2e92eb11490a6ca902d318b4ea2f68181ed",
+        "fp_addsub.v": "ef4069ad4218b1e1389036b7937502adf8ff6daefa5f3bde9d6c07e054f9743a"
+      },
+      "oracle_sha256": "4e99c1c56dc9d124b927573160fd810685d198262379152c0d52a248a0325d0f",
+      "netlist_sha256": "a2552344664f7eeb2bca562ead3a51496549344e4c265534b58eb4810f2fe9d8",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/ndrwng/SKY130-bit-serial-cpu",
+      "commit": "6895a84ea2f6d691895f7c911a2932a0ed6615d4",
+      "host": "tt_um_bit_serial_cpu_top",
+      "title": "16-bit bit-serial CPU",
+      "author": "Tim Gu, Andrew Wang",
+      "files": [
+        "top.v",
+        "cpu_core.v",
+        "alu_1bit.v",
+        "fsm_control.v",
+        "accumulator.v",
+        "regfile_serial.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_bit_serial_cpu_top/info.yaml",
+      "tokens": 2026,
+      "sha256": {
+        "top.v": "acd8e65ce057044aadbd7281e6c9770c82a58ba8d0fc0baa1291a032a19b28d9",
+        "cpu_core.v": "df143b4fd32b42a6b0d89feb51bb6c5ca88d4195d791cb370e5a049b9bcc2d5b",
+        "alu_1bit.v": "7b57ea2e6bb7eafdb34205ad19237a09308755a7862092fc5a9d5f21f273b3f5",
+        "fsm_control.v": "6945206cdb2b3d6e6ddc51300428c33507c232fc05e257e9beb89d9a26d022c7",
+        "accumulator.v": "3951d3b9895c52457d984df974e75c5c18090f6160cd13ff9a420bd1565a1070",
+        "regfile_serial.v": "b00f3c3a0d2b9d83b5c32ddd2f3b6cce58f8e85c7294e99ddf650629c85626ef"
+      },
+      "oracle_sha256": "74e1b2f82786f106790dbe7d99f98e9e8e8962cafe5d94371495c7de38594432",
+      "netlist_sha256": "5a5f2b20a3e3b7a0d1a2acb235a7db261308c5db4b26a69984f3ac38cdcb93f5",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/cfib/tt08-cfib-demo",
+      "commit": "6a8ba7c70c6913362b0ef2009978116ee7ec5f80",
+      "host": "tt_um_cfib_demo",
+      "title": "cfib Demoscene Entry",
+      "author": "Christian Fibich",
+      "files": [
+        "pwm4bit.v",
+        "sndgen.v",
+        "vga.v",
+        "top.v",
+        "tt_um_cfib_demo.v"
+      ],
+      "path": "runs/precision_v1/tt08/projects/tt_um_cfib_demo/info.yaml",
+      "tokens": 2699,
+      "sha256": {
+        "pwm4bit.v": "283c8aab2e013ababfb3e4f8179fcb767e857717bdfcd0b14dc5aaf73f19d042",
+        "sndgen.v": "b830b976d8ca2a824776651b7caf9c720f9b5ff0e0758b7d9970cfa049d56818",
+        "vga.v": "7a78bf54f9b369b6aafc159aed0f425d981ea6c8fd8c01cc19d27c19b6114c99",
+        "top.v": "bfb7d6edefb05fbda91fd7f62cb2daf403f5f41c502cff74eeea79f6e5f74793",
+        "tt_um_cfib_demo.v": "0a8036ea48e28c72eadd0707366838c0b1940ed80db63ca32b2868b6dd92e8c3"
+      },
+      "oracle_sha256": "d5774f321116a86924e0c2d98329dbc69653f3e3b82ca396b77c63736871243c",
+      "netlist_sha256": "ee6860ec35e32da7b1882ae51a592f121c58efcc5262e31f2cdc879000b28304",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/couchand/tt06-cora16",
+      "commit": "6c2688c68d55da29e970b6b656358e535ee0afb3",
+      "host": "tt_um_couchand_cora16",
+      "title": "CORA-16",
+      "author": "Andrew Dona-Couch",
+      "files": [
+        "project.v",
+        "cpu.v",
+        "decoder.v",
+        "alu.v",
+        "spi.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_couchand_cora16/info.yaml",
+      "tokens": 4772,
+      "sha256": {
+        "project.v": "dfef490d305a548be3949846fc81e89ff8641b0842d96d139dd378e850be1f50",
+        "cpu.v": "eb4fc2117023e31853611a2f37efd2e226eae498ca7bb06e6812332491068ce2",
+        "decoder.v": "f250d56e5b4ad2834d062c3612664da7b54219e6ac1541c5c9d8e0b483c64a31",
+        "alu.v": "b811f0864b0fa7fba9974de7e80f73f1a140545ac2cf8cbfaf9964ad04a3b40c",
+        "spi.v": "b5d153a0dc7d945c9c3af1375c835928ccd6006949fb6ceb454c7ae5ab26870a"
+      },
+      "oracle_sha256": "05928c4f2f5c1134bef65cca33bebe7c65e24a54ab9c355f84317ccd0635d2a6",
+      "netlist_sha256": "91a259dd4ea9fd1863ea604c3212e40f895906d06766806273a97dae89fd2060",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.5
+    },
+    {
+      "repo": "https://github.com/will-keen/tiny-tapeout",
+      "commit": "6df1ad255514c941040ce4d475cdb62c7ab5b110",
+      "host": "tt_um_will_keen_solitaire",
+      "title": "solitaire",
+      "author": "Will Keen",
+      "files": [
+        "project.v",
+        "solitaire.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_will_keen_solitaire/info.yaml",
+      "tokens": 1549,
+      "sha256": {
+        "project.v": "b131a6fc1d78d3e8ba9e52809e530c4feb93de6d79a305b87f0d0310eb8bbfe1",
+        "solitaire.v": "58498539f23eb7ab5cd59a9e154ea610853c7a54f8dc053ec6843ada48ee3297"
+      },
+      "oracle_sha256": "42a69f49a98c65ccd50edd3d999e6ab87b23c8dacf7240d9080fbc341159a74a",
+      "netlist_sha256": "46d995b37afb2786f1fa09a8de59fdf9b9be018a826c07259d7cbd4280f691d8",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/arghunter/DDC-Digital-to-DIgital-Converter",
+      "commit": "73d05d45cedb8eda8526502c03179d0eb99dc122",
+      "host": "tt_um_ddc_arghunter",
+      "title": "DDC",
+      "author": "Armaan Gomes",
+      "files": [
+        "project.v",
+        "cic3_interpolator.v",
+        "ddc_top_level.v",
+        "i2s_rx_64x.v",
+        "lfsr.v",
+        "mod2_dsm.v"
+      ],
+      "path": "runs/precision_v1/tt08/projects/tt_um_ddc_arghunter/info.yaml",
+      "tokens": 1470,
+      "sha256": {
+        "project.v": "f1bb1c2788cadb9dd1e50b67d2e86f24db9070adc135024fead4bc6a37364ea0",
+        "cic3_interpolator.v": "67e71df585d7100e58ed913b89a4930fbfd431ff9a8c703e3b805d20db6c5791",
+        "ddc_top_level.v": "dc2345665984cbe08587c2950faf9e4b04b3f26b90ddd7d58e642c90f2b22133",
+        "i2s_rx_64x.v": "d6b47257c8077813af5c439baa172877cb91dd1b9fa256b5c0078ec870f0f458",
+        "lfsr.v": "be1b6e5483352f1c9405db7afee54da1bd46fd835808c3b9c01f8c1db7a567f2",
+        "mod2_dsm.v": "5a43ff429cdb37992b10ed6e3ff39c197996ebbb98c1e5d0b80ea9230fecefec"
+      },
+      "oracle_sha256": "e02e2891770d64b146ce21e139a6254a522d1fd763769710d2b56b70455efd18",
+      "netlist_sha256": "716b68799363ef83c70c0c5cb8f7cd4cf353278740ffbbf3f6ec203c9fa245ea",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/neilbluejohn/tt07-micro-mult",
+      "commit": "76516adea73d30b3385675bd5d65d8f6ea0e4eae",
+      "host": "tt_um_njp_micro",
+      "title": "MicroCode Multiplier",
+      "author": "Neil Powell",
+      "files": [
+        "tt_um_njp_micro.v",
+        "ControlUnit.v",
+        "DataPath.v",
+        "Decoder.v",
+        "ALU.v",
+        "MicroCodeROM.v",
+        "Mux2to1V1.v",
+        "Mux2to1V2.v",
+        "ProgramCounter.v",
+        "RegEight.v",
+        "RegFour.v",
+        "TimingGenerator.v",
+        "UniversalShiftReg.v"
+      ],
+      "path": "runs/precision_v1/tt07/projects/tt_um_njp_micro/info.yaml",
+      "tokens": 2248,
+      "sha256": {
+        "tt_um_njp_micro.v": "4d1341bf05001146b31fc7aea5809effd567da70021b3dc34dd51fc890c9522d",
+        "ControlUnit.v": "5c895bc42d882c386dd5fbd47f9650a71460f068b704f646feab66eeb436d235",
+        "DataPath.v": "558511537a8f3281e0f6d17ef29849c30ff43d0bb6cc2ec9e049f24bf2245a1b",
+        "Decoder.v": "f2f1f782721fcc3ff34d52efa20b3a3af29ab310378d2149eefd847e20f64a92",
+        "ALU.v": "8f32ce0e486250c59cca63e202abebb84dd6a41cb8aa3697a18f6bdce814e726",
+        "MicroCodeROM.v": "a707e764bfcdf91517c90ea85281ebfeef128f7871b84de7118312676705a67d",
+        "Mux2to1V1.v": "c2c31cc524221840dd1bc825e9edae44bf2bf8e9864fa618f3136a6691faa40d",
+        "Mux2to1V2.v": "40c1bb100f8b847181c56795d17580c87b0ee9d8ab68a24b7a2e51fb7e4a4e39",
+        "ProgramCounter.v": "23189185ce9032fde7c8844cee5b88d3ff5851dddabf50a4c7b233b5dbd959fb",
+        "RegEight.v": "0e5c66f8389b492d7ba5e4559249dbda69db02e32922b80f30642083beaab82e",
+        "RegFour.v": "e8676e7f71a37380af7e6ffcac0b74094619ac4cb337987aaf29379fecff68d9",
+        "TimingGenerator.v": "ea244335569ab651212f118d0e8141ce89696a08cd5a15228ee1c39471fff2c3",
+        "UniversalShiftReg.v": "12ac8306e382a38812aafb53259787f215a5b91a13d3a7aa0f8fb3844ff9061d"
+      },
+      "oracle_sha256": "200b28153483d5ec4625a231691803f9e8e68762bc7f3421e13dc0fa6c70ffad",
+      "netlist_sha256": "51a56a066b442446e129eb91aa2ed35a71bd432e69bf546f0f2ae014101fd1f0",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "3c541b4b416e60c8aca1efc2eeb3c05875f8c526",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/dgkaminski/tto6-submission",
+      "commit": "775e124468f88ca72b5277bd402ab9832f296187",
+      "host": "tt_um_dgkaminski",
+      "title": "4-Bit ALU",
+      "author": "Daniel Kaminski",
+      "files": [
+        "project.v",
+        "adder.v",
+        "alu.v",
+        "control.v",
+        "fullAdder.v",
+        "logical.v",
+        "shifter.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_dgkaminski/info.yaml",
+      "tokens": 1500,
+      "sha256": {
+        "project.v": "0f6db7fe14bb75c3bd7cc0028aad36710960be0e52b299da73ce210b1e89b6ea",
+        "adder.v": "219f53beafeebb12c9ab2636517249a5550fd18b7bc0cf1c447babb02742d5db",
+        "alu.v": "3fb9c676b0fd659d69d47704e150e03fb3b7fc2c9719b2cc266d494ce37ee9c4",
+        "control.v": "4565f9cc7f760359029ac3a2bb3447562a660187c45423b4947cea0488fcebdb",
+        "fullAdder.v": "f1ba5a6c26f8d37584b9dfd5741639ec145c9886cf6b45b5579dca150117c12b",
+        "logical.v": "469ea66482af17d4d7d895aee98b8c850f8eca5658569917ba3dd6d04d0078a2",
+        "shifter.v": "eb97337615428450d825caf88f0e8b766c0c3804952e04a10e0ea85b5e3ee038"
+      },
+      "oracle_sha256": "c8b701aaf4c35655195cb6b16630fb0eba6805c481d0c7105d713e90c9f5d3a8",
+      "netlist_sha256": "fcfbd461fe7ec781156d5e405ab1ce7bb6fed6087ad8ed71aee97b279e90c0e9",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/Qubitbytesltd/tt06-its-alive",
+      "commit": "797082644de0b54a84c37f2f35460e1579f190d7",
+      "host": "tt_um_qubitbytes_alive",
+      "title": "It's Alive",
+      "author": "Jonathan Anderson, Qubitbytes Ltd",
+      "files": [
+        "tt_um_qubitbytes_alive.v",
+        "music_processor.v"
+      ],
+      "path": "runs/precision_v1/tt06/projects/tt_um_qubitbytes_alive/info.yaml",
+      "tokens": 3292,
+      "sha256": {
+        "tt_um_qubitbytes_alive.v": "744b5178b15d92926f682773aa089cfa37f741b4b228fc8a1264afa83069ff1d",
+        "music_processor.v": "265643f5c1d34d8ac41b9ac987a09c2a0a6bbad638b12c652086445c1e1fcda5"
+      },
+      "oracle_sha256": "641f911792fa10155144852779459ca7725913978fb02ba4a6a577ae68383a70",
+      "netlist_sha256": "1dc672ca5c3fd62f3f149433f425ea500e1f4b4e5220b44c0a9540db6b35a5ac",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "a0a6d975825bfad0ffda6e3a2d4319b73990bdf0",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/overeducated/tt09-um--kwr-lfsr",
+      "commit": "7e7a2c0159b16dee810a32557a7217bba6a40769",
+      "host": "tt_um__kwr_lfsr__top",
+      "title": "Multi-LFSR",
+      "author": "Kevin W. Rudd",
+      "files": [
+        "lfsr.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um__kwr_lfsr__top/info.yaml",
+      "tokens": 1539,
+      "sha256": {
+        "lfsr.v": "bd39836eb51e37f36f23fdede27be691f0be87fb8fa1b2cf858207f68084d129"
+      },
+      "oracle_sha256": "2982f544b0ed75ca60d4898ec52835a645a60d3e1ad4f4d3872c161b0b638e31",
+      "netlist_sha256": "92bc68c26eea96c9e8b8aa4fd982f0403b903b91638c803da430f8040b7211a5",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/ananya343B/tt08_dlfloat_mac",
+      "commit": "7ea09d55d6d3b1f9bea796369bdb7c2436280ff1",
+      "host": "tt_um_dlfloatmac",
+      "title": "DL float MAC",
+      "author": "Ananya P & Nidhi M D",
+      "files": [
+        "project.v"
+      ],
+      "path": "runs/precision_v1/tt08/projects/tt_um_dlfloatmac/info.yaml",
+      "tokens": 1772,
+      "sha256": {
+        "project.v": "953aafb76b1c76ebbd6f40dac9e542fc563a059fd13cba2c3213d8a112866797"
+      },
+      "oracle_sha256": "a766da4d16ac00890353335ac1e8433a3fcffbec93f049b155fdc1a7d13a6051",
+      "netlist_sha256": "041565612e4f556bcb8e425c10c64b371f68ddc93306f779514f4880e3ea7e65",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "99071af79732e5ce37eb6d405bb446a69fc0bb60",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/AriaMitra/ttsky-verilog-submission-ALUish",
+      "commit": "7ef27311500149c5c9b7106fcdc11b30159df332",
+      "host": "tt_um_sortaALUAriaMitra",
+      "title": "Sorta 4-Bit ALU",
+      "author": "Aria Mitra",
+      "files": [
+        "project.v",
+        "four_add.v",
+        "four_sub.v",
+        "full_add.v",
+        "half_add.v",
+        "mult.v",
+        "two_comp.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_sortaALUAriaMitra/info.yaml",
+      "tokens": 1564,
+      "sha256": {
+        "project.v": "36823dfd2272c6d3dacbdf0c70179d7391a9df60533d4d155e2bb78a53affaa1",
+        "four_add.v": "4e7641a0afe2ed020dbfa43392e38e59e331d2842867d38ecb404a6820d227e0",
+        "four_sub.v": "9c9d2ed9afb8d170c1323f8876be6e0302f67c99279f100c3a4263ca1bc40605",
+        "full_add.v": "8764115be8df7ac7055073562bab525e98471ea3040d25ee4be039c2494cb10f",
+        "half_add.v": "426634a3741469a0726a1babfd1f1a4ea8ff9aa30bdd24d88f59426dcfea04ac",
+        "mult.v": "bbaeaf92630457b9bda50232973ce79a86efc73e985bd6ef658fbc9f786defeb",
+        "two_comp.v": "fc227ceae10dc7b73616222531486bed809f0edd76c4daf7533f1fc435978147"
+      },
+      "oracle_sha256": "545e505465484c835f5011db42b0413132c8f472d14ddf7df5d24abf331f8f74",
+      "netlist_sha256": "52ed4a1ffafaf4fd49f73d7296b1ac1b740de304db8fc1e94a72abf521854594",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/Secure-Embedded-Systems/tt09-led-serial",
+      "commit": "7f0038bc9a17a429dc585cfec4163ef0e82fa0f6",
+      "host": "tt_um_led_cipher",
+      "title": "LED Bitserial Cipher",
+      "author": "simon cipher",
+      "files": [
+        "tt_um_led_cipher.v",
+        "led_serial.v"
+      ],
+      "path": "runs/precision_v1/tt09/projects/tt_um_led_cipher/info.yaml",
+      "tokens": 3345,
+      "sha256": {
+        "tt_um_led_cipher.v": "55796970adffdadd6cdc91581fae80f5f38217975b11ec137950557b233f2d5c",
+        "led_serial.v": "90851a9d2327deae2b93791929c8564515b3e10136339786ca85a9c53c982958"
+      },
+      "oracle_sha256": "61ab40b47c106e18d82146d791d390f067ab0ce4ea405333691f702a35e4d232",
+      "netlist_sha256": "0049640f54d495d696487c845e799835f8e834e66b1df7f76e4b684673bde12e",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "f39380d4d2045211ee37ac0e9bbd32ccc207d5bb",
+      "rank": 0.25
+    },
+    {
+      "repo": "https://github.com/Aravind040/CF-2025-TT12-13",
+      "commit": "88994b26799cc9565c871a1f53c8eee01fbbc237",
+      "host": "tt_um_axi4lite_top",
+      "title": "Axi4_Lite",
+      "author": "Team_13",
+      "files": [
+        "tt_um_axi4lite_top.v",
+        "axi4lite_master.v",
+        "axi4lite_slave.v"
+      ],
+      "path": "runs/precision_v1/ttsky25a/projects/tt_um_axi4lite_top/info.yaml",
+      "tokens": 1378,
+      "sha256": {
+        "tt_um_axi4lite_top.v": "9eee4a16ea4d4785aca674adf4ecb7542c372b40b5996c160f766b1d2e27d52e",
+        "axi4lite_master.v": "d5101999add8886a792f736e112ee175f9b605b9df5dec83aafaadd18b1933bc",
+        "axi4lite_slave.v": "f1e7272847c61ae21424ada0fced337e69d761363eed02c60b6fcef2622ce1cf"
+      },
+      "oracle_sha256": "4c1d4f014abba1a0dd6cbb10ad8885b766b9da4a2fe40c10c6e7ad63f4858ffa",
+      "netlist_sha256": "37bca29d32fbb96625ce615c2a6e1f7512da8f349d28cb05fcdf7163602bc6f2",
+      "pdk_revision": "ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1",
+      "shuttle_commit": "287b3332e8f6ea0579e89a6d6daf3217d4a2f1fe",
+      "rank": 0.25
+    }
+  ],
+  "parent_protocol_sha256": "c8bd80b2e7d0640a7b070261e4b29a391a1106bcd8ea8bf8836d395f6d4664be"
+}
