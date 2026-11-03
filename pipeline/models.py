@@ -33,15 +33,17 @@ class CrossAttentionFusion(nn.Module):
         self.classifier = nn.Sequential(nn.Linear(4 * hidden_dim, hidden_dim), nn.ReLU(),
                                         nn.Dropout(dropout), nn.Linear(hidden_dim, 2))
 
-    def forward(self, graph, rtl):
+    def forward(self, graph, rtl, return_attention=True):
         x = self.drop(F.relu(self.gcn1(graph.x, graph.edge_index)))
         node = self.graph_norm(F.relu(self.gcn2(x, graph.edge_index)))
         g, r = node.unsqueeze(0), self.rtl_projection(rtl).unsqueeze(0)
-        g_ctx, g2r = self.g_q_r(g, r, r, need_weights=True, average_attn_weights=True)
+        g_ctx, g2r = self.g_q_r(g, r, r, need_weights=return_attention, average_attn_weights=True)
         g_ctx = self.gn(g + self.drop(g_ctx))
-        r_ctx, r2g = self.r_q_g(r, g, g, need_weights=True, average_attn_weights=True)
+        r_ctx, r2g = self.r_q_g(r, g, g, need_weights=return_attention, average_attn_weights=True)
         r_ctx = self.rn(r + self.drop(r_ctx))
         fused = torch.cat([g_ctx.mean(1), g_ctx.max(1).values, r_ctx.mean(1), r_ctx.max(1).values], -1)
         return {"logits": self.classifier(fused), "node_embeddings": node,
-                "contextual_node_embeddings": g_ctx.squeeze(0), "graph_to_rtl_attention": g2r.squeeze(0),
-                "rtl_to_graph_attention": r2g.squeeze(0), "fused_embedding": fused}
+                "contextual_node_embeddings": g_ctx.squeeze(0),
+                "graph_to_rtl_attention": g2r.squeeze(0) if g2r is not None else None,
+                "rtl_to_graph_attention": r2g.squeeze(0) if r2g is not None else None,
+                "fused_embedding": fused}

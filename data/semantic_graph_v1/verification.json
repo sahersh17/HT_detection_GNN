@@ -1,0 +1,15 @@
+{
+  "graphs": 195,
+  "nodes": 4352812,
+  "edges": 11113838,
+  "bits": 2003176,
+  "memory_states": 190,
+  "memory_operations": 2690,
+  "initial_bits": 1368,
+  "status": "verified",
+  "node_dim": 127,
+  "schema_sha256": "703bf6e7e77b50d1d5bb10a3c158cd0aeb278f1b10845c2540e0d057d82c9335",
+  "rtl_embeddings_identical": true,
+  "source_netlists_unchanged": true,
+  "manifest_sha256": "da6f722f9eb9b562829aa94bd7ec89dea3561ce1c4e875d086597025b1ff84b4"
+}

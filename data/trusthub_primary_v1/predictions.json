@@ -1,0 +1,3146 @@
+{
+  "size_logistic": [
+    {
+      "key": "trusthub_AES-T1000_clean",
+      "family": "AES",
+      "benchmark": "AES-T1000",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T1000_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1000",
+      "label": 1,
+      "fold": 0,
+      "score": 0.49746633821121405
+    },
+    {
+      "key": "trusthub_AES-T100_clean",
+      "family": "AES",
+      "benchmark": "AES-T100",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T100_trojan",
+      "family": "AES",
+      "benchmark": "AES-T100",
+      "label": 1,
+      "fold": 0,
+      "score": 0.49750393914724256
+    },
+    {
+      "key": "trusthub_AES-T1100_clean",
+      "family": "AES",
+      "benchmark": "AES-T1100",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T1100_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1100",
+      "label": 1,
+      "fold": 0,
+      "score": 0.49744547233118824
+    },
+    {
+      "key": "trusthub_AES-T1200_clean",
+      "family": "AES",
+      "benchmark": "AES-T1200",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T1200_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1200",
+      "label": 1,
+      "fold": 0,
+      "score": 0.49757490090173984
+    },
+    {
+      "key": "trusthub_AES-T1600_clean",
+      "family": "AES",
+      "benchmark": "AES-T1600",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T1600_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1600",
+      "label": 1,
+      "fold": 0,
+      "score": 0.49756308873371874
+    },
+    {
+      "key": "trusthub_AES-T1700_clean",
+      "family": "AES",
+      "benchmark": "AES-T1700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T1700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4976871110064251
+    },
+    {
+      "key": "trusthub_AES-T200_clean",
+      "family": "AES",
+      "benchmark": "AES-T200",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T200_trojan",
+      "family": "AES",
+      "benchmark": "AES-T200",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4974989730095434
+    },
+    {
+      "key": "trusthub_AES-T2300_clean",
+      "family": "AES",
+      "benchmark": "AES-T2300",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T2300_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2300",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4975126494782914
+    },
+    {
+      "key": "trusthub_AES-T2400_clean",
+      "family": "AES",
+      "benchmark": "AES-T2400",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T2400_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2400",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4975126494782914
+    },
+    {
+      "key": "trusthub_AES-T2500_clean",
+      "family": "AES",
+      "benchmark": "AES-T2500",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T2500_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2500",
+      "label": 1,
+      "fold": 0,
+      "score": 0.497511433198226
+    },
+    {
+      "key": "trusthub_AES-T2600_clean",
+      "family": "AES",
+      "benchmark": "AES-T2600",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T2600_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2600",
+      "label": 1,
+      "fold": 0,
+      "score": 0.49751448726816655
+    },
+    {
+      "key": "trusthub_AES-T2700_clean",
+      "family": "AES",
+      "benchmark": "AES-T2700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T2700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.497513528773721
+    },
+    {
+      "key": "trusthub_AES-T2800_clean",
+      "family": "AES",
+      "benchmark": "AES-T2800",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T2800_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2800",
+      "label": 1,
+      "fold": 0,
+      "score": 0.49751404244460584
+    },
+    {
+      "key": "trusthub_AES-T400_clean",
+      "family": "AES",
+      "benchmark": "AES-T400",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T400_trojan",
+      "family": "AES",
+      "benchmark": "AES-T400",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4975685774431139
+    },
+    {
+      "key": "trusthub_AES-T700_clean",
+      "family": "AES",
+      "benchmark": "AES-T700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4974662824920359
+    },
+    {
+      "key": "trusthub_AES-T800_clean",
+      "family": "AES",
+      "benchmark": "AES-T800",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T800_trojan",
+      "family": "AES",
+      "benchmark": "AES-T800",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4974453263582372
+    },
+    {
+      "key": "trusthub_AES-T900_clean",
+      "family": "AES",
+      "benchmark": "AES-T900",
+      "label": 0,
+      "fold": 0,
+      "score": 0.49751213487741147
+    },
+    {
+      "key": "trusthub_AES-T900_trojan",
+      "family": "AES",
+      "benchmark": "AES-T900",
+      "label": 1,
+      "fold": 0,
+      "score": 0.49757500590760745
+    },
+    {
+      "key": "trusthub_MC8051-T200_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T200",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5022043958200759
+    },
+    {
+      "key": "trusthub_MC8051-T200_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T200",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5022049815348408
+    },
+    {
+      "key": "trusthub_MC8051-T300_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T300",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5022043958200759
+    },
+    {
+      "key": "trusthub_MC8051-T300_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T300",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5022087370151738
+    },
+    {
+      "key": "trusthub_MC8051-T400_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T400",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5022043958200759
+    },
+    {
+      "key": "trusthub_MC8051-T400_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T400",
+      "label": 1,
+      "fold": 1,
+      "score": 0.502165066290426
+    },
+    {
+      "key": "trusthub_MC8051-T500_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T500",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5022043958200759
+    },
+    {
+      "key": "trusthub_MC8051-T500_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T500",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5022257427832528
+    },
+    {
+      "key": "trusthub_MC8051-T600_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T600",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5022043958200759
+    },
+    {
+      "key": "trusthub_MC8051-T600_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T600",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5022126975665177
+    },
+    {
+      "key": "trusthub_MC8051-T700_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T700",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5022043958200759
+    },
+    {
+      "key": "trusthub_MC8051-T700_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T700",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5022345613047292
+    },
+    {
+      "key": "trusthub_MC8051-T800_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T800",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5022043958200759
+    },
+    {
+      "key": "trusthub_MC8051-T800_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T800",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5022041903440673
+    },
+    {
+      "key": "trusthub_s38584-T100_clean",
+      "family": "s38584",
+      "benchmark": "s38584-T100",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5032111403417066
+    },
+    {
+      "key": "trusthub_s38584-T100_trojan",
+      "family": "s38584",
+      "benchmark": "s38584-T100",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5032106167942751
+    },
+    {
+      "key": "trusthub_s38584-T200_clean",
+      "family": "s38584",
+      "benchmark": "s38584-T200",
+      "label": 0,
+      "fold": 1,
+      "score": 0.5032111403417066
+    },
+    {
+      "key": "trusthub_s38584-T200_trojan",
+      "family": "s38584",
+      "benchmark": "s38584-T200",
+      "label": 1,
+      "fold": 1,
+      "score": 0.5032487421212031
+    },
+    {
+      "key": "trusthub_PIC16F84-T100_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T100",
+      "label": 0,
+      "fold": 2,
+      "score": 0.4976151053326076
+    },
+    {
+      "key": "trusthub_PIC16F84-T100_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T100",
+      "label": 1,
+      "fold": 2,
+      "score": 0.49775929340808106
+    },
+    {
+      "key": "trusthub_PIC16F84-T200_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T200",
+      "label": 0,
+      "fold": 2,
+      "score": 0.4976151053326076
+    },
+    {
+      "key": "trusthub_PIC16F84-T200_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T200",
+      "label": 1,
+      "fold": 2,
+      "score": 0.4977328045555253
+    },
+    {
+      "key": "trusthub_PIC16F84-T300_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T300",
+      "label": 0,
+      "fold": 2,
+      "score": 0.4976151053326076
+    },
+    {
+      "key": "trusthub_PIC16F84-T300_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T300",
+      "label": 1,
+      "fold": 2,
+      "score": 0.4976941920943553
+    },
+    {
+      "key": "trusthub_PIC16F84-T400_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T400",
+      "label": 0,
+      "fold": 2,
+      "score": 0.4976151053326076
+    },
+    {
+      "key": "trusthub_PIC16F84-T400_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T400",
+      "label": 1,
+      "fold": 2,
+      "score": 0.4977116439804327
+    },
+    {
+      "key": "trusthub_b19-T300_clean",
+      "family": "b19",
+      "benchmark": "b19-T300",
+      "label": 0,
+      "fold": 2,
+      "score": 0.508253115009337
+    },
+    {
+      "key": "trusthub_b19-T300_trojan",
+      "family": "b19",
+      "benchmark": "b19-T300",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5083290207696797
+    },
+    {
+      "key": "trusthub_b19-T400_clean",
+      "family": "b19",
+      "benchmark": "b19-T400",
+      "label": 0,
+      "fold": 2,
+      "score": 0.508253115009337
+    },
+    {
+      "key": "trusthub_b19-T400_trojan",
+      "family": "b19",
+      "benchmark": "b19-T400",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5082971354773961
+    },
+    {
+      "key": "trusthub_b19-T500_clean",
+      "family": "b19",
+      "benchmark": "b19-T500",
+      "label": 0,
+      "fold": 2,
+      "score": 0.508253115009337
+    },
+    {
+      "key": "trusthub_b19-T500_trojan",
+      "family": "b19",
+      "benchmark": "b19-T500",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5082665913143247
+    },
+    {
+      "key": "trusthub_memctrl-T100_clean",
+      "family": "memctrl",
+      "benchmark": "memctrl-T100",
+      "label": 0,
+      "fold": 2,
+      "score": 0.500452913993054
+    },
+    {
+      "key": "trusthub_memctrl-T100_trojan",
+      "family": "memctrl",
+      "benchmark": "memctrl-T100",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5004505393278801
+    },
+    {
+      "key": "trusthub_RS232-T2100_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.47806594298518706
+    },
+    {
+      "key": "trusthub_RS232-T2100_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.4788678632025182
+    },
+    {
+      "key": "trusthub_RS232-T2200_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2200",
+      "label": 0,
+      "fold": 3,
+      "score": 0.47806594298518706
+    },
+    {
+      "key": "trusthub_RS232-T2200_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2200",
+      "label": 1,
+      "fold": 3,
+      "score": 0.47827044865214935
+    },
+    {
+      "key": "trusthub_RS232-T2300_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2300",
+      "label": 0,
+      "fold": 3,
+      "score": 0.47806594298518706
+    },
+    {
+      "key": "trusthub_RS232-T2300_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2300",
+      "label": 1,
+      "fold": 3,
+      "score": 0.4788272600064459
+    },
+    {
+      "key": "trusthub_RS232-T2400_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2400",
+      "label": 0,
+      "fold": 3,
+      "score": 0.47806594298518706
+    },
+    {
+      "key": "trusthub_RS232-T2400_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2400",
+      "label": 1,
+      "fold": 3,
+      "score": 0.47937951270947093
+    },
+    {
+      "key": "trusthub_s15850-T100_clean",
+      "family": "s15850",
+      "benchmark": "s15850-T100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.49739006180106793
+    },
+    {
+      "key": "trusthub_s15850-T100_trojan",
+      "family": "s15850",
+      "benchmark": "s15850-T100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.4974264035447021
+    },
+    {
+      "key": "trusthub_s35932-T100_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.49951398404051406
+    },
+    {
+      "key": "trusthub_s35932-T100_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.4995402872180801
+    },
+    {
+      "key": "trusthub_s35932-T200_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T200",
+      "label": 0,
+      "fold": 3,
+      "score": 0.49951398404051406
+    },
+    {
+      "key": "trusthub_s35932-T200_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T200",
+      "label": 1,
+      "fold": 3,
+      "score": 0.49953227533137146
+    },
+    {
+      "key": "trusthub_s35932-T300_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T300",
+      "label": 0,
+      "fold": 3,
+      "score": 0.49951398404051406
+    },
+    {
+      "key": "trusthub_s35932-T300_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T300",
+      "label": 1,
+      "fold": 3,
+      "score": 0.4994861366468138
+    },
+    {
+      "key": "trusthub_b15-T100_clean",
+      "family": "b15",
+      "benchmark": "b15-T100",
+      "label": 0,
+      "fold": 4,
+      "score": 0.49840914224152816
+    },
+    {
+      "key": "trusthub_b15-T100_trojan",
+      "family": "b15",
+      "benchmark": "b15-T100",
+      "label": 1,
+      "fold": 4,
+      "score": 0.4982691191032282
+    },
+    {
+      "key": "trusthub_b15-T200_clean",
+      "family": "b15",
+      "benchmark": "b15-T200",
+      "label": 0,
+      "fold": 4,
+      "score": 0.49840914224152816
+    },
+    {
+      "key": "trusthub_b15-T200_trojan",
+      "family": "b15",
+      "benchmark": "b15-T200",
+      "label": 1,
+      "fold": 4,
+      "score": 0.4982691191032282
+    },
+    {
+      "key": "trusthub_b15-T300_clean",
+      "family": "b15",
+      "benchmark": "b15-T300",
+      "label": 0,
+      "fold": 4,
+      "score": 0.49840914224152816
+    },
+    {
+      "key": "trusthub_b15-T300_trojan",
+      "family": "b15",
+      "benchmark": "b15-T300",
+      "label": 1,
+      "fold": 4,
+      "score": 0.4982697633259884
+    },
+    {
+      "key": "trusthub_b15-T400_clean",
+      "family": "b15",
+      "benchmark": "b15-T400",
+      "label": 0,
+      "fold": 4,
+      "score": 0.49840914224152816
+    },
+    {
+      "key": "trusthub_b15-T400_trojan",
+      "family": "b15",
+      "benchmark": "b15-T400",
+      "label": 1,
+      "fold": 4,
+      "score": 0.4982697633259884
+    },
+    {
+      "key": "trusthub_s38417-T100_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T100",
+      "label": 0,
+      "fold": 4,
+      "score": 0.49925351277387214
+    },
+    {
+      "key": "trusthub_s38417-T100_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T100",
+      "label": 1,
+      "fold": 4,
+      "score": 0.499259129134305
+    },
+    {
+      "key": "trusthub_s38417-T200_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T200",
+      "label": 0,
+      "fold": 4,
+      "score": 0.49925351277387214
+    },
+    {
+      "key": "trusthub_s38417-T200_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T200",
+      "label": 1,
+      "fold": 4,
+      "score": 0.4992604473172349
+    },
+    {
+      "key": "trusthub_s38417-T300_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T300",
+      "label": 0,
+      "fold": 4,
+      "score": 0.49925351277387214
+    },
+    {
+      "key": "trusthub_s38417-T300_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T300",
+      "label": 1,
+      "fold": 4,
+      "score": 0.4992699149325465
+    }
+  ],
+  "graph_aggregate_logistic": [
+    {
+      "key": "trusthub_AES-T1000_clean",
+      "family": "AES",
+      "benchmark": "AES-T1000",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T1000_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1000",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7775151250492492
+    },
+    {
+      "key": "trusthub_AES-T100_clean",
+      "family": "AES",
+      "benchmark": "AES-T100",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T100_trojan",
+      "family": "AES",
+      "benchmark": "AES-T100",
+      "label": 1,
+      "fold": 0,
+      "score": 0.6666189625659585
+    },
+    {
+      "key": "trusthub_AES-T1100_clean",
+      "family": "AES",
+      "benchmark": "AES-T1100",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T1100_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1100",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7677047551464558
+    },
+    {
+      "key": "trusthub_AES-T1200_clean",
+      "family": "AES",
+      "benchmark": "AES-T1200",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T1200_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1200",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8310634209397062
+    },
+    {
+      "key": "trusthub_AES-T1600_clean",
+      "family": "AES",
+      "benchmark": "AES-T1600",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T1600_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1600",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7978456566709986
+    },
+    {
+      "key": "trusthub_AES-T1700_clean",
+      "family": "AES",
+      "benchmark": "AES-T1700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T1700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9674405269259221
+    },
+    {
+      "key": "trusthub_AES-T200_clean",
+      "family": "AES",
+      "benchmark": "AES-T200",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T200_trojan",
+      "family": "AES",
+      "benchmark": "AES-T200",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8941608545203171
+    },
+    {
+      "key": "trusthub_AES-T2300_clean",
+      "family": "AES",
+      "benchmark": "AES-T2300",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T2300_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2300",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8453777248080683
+    },
+    {
+      "key": "trusthub_AES-T2400_clean",
+      "family": "AES",
+      "benchmark": "AES-T2400",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T2400_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2400",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8250603698687965
+    },
+    {
+      "key": "trusthub_AES-T2500_clean",
+      "family": "AES",
+      "benchmark": "AES-T2500",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T2500_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2500",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8930277104607612
+    },
+    {
+      "key": "trusthub_AES-T2600_clean",
+      "family": "AES",
+      "benchmark": "AES-T2600",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T2600_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2600",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9319553020099717
+    },
+    {
+      "key": "trusthub_AES-T2700_clean",
+      "family": "AES",
+      "benchmark": "AES-T2700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T2700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8933819500371459
+    },
+    {
+      "key": "trusthub_AES-T2800_clean",
+      "family": "AES",
+      "benchmark": "AES-T2800",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T2800_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2800",
+      "label": 1,
+      "fold": 0,
+      "score": 0.9577692265510942
+    },
+    {
+      "key": "trusthub_AES-T400_clean",
+      "family": "AES",
+      "benchmark": "AES-T400",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T400_trojan",
+      "family": "AES",
+      "benchmark": "AES-T400",
+      "label": 1,
+      "fold": 0,
+      "score": 0.800069131947682
+    },
+    {
+      "key": "trusthub_AES-T700_clean",
+      "family": "AES",
+      "benchmark": "AES-T700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4538740018989483
+    },
+    {
+      "key": "trusthub_AES-T800_clean",
+      "family": "AES",
+      "benchmark": "AES-T800",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T800_trojan",
+      "family": "AES",
+      "benchmark": "AES-T800",
+      "label": 1,
+      "fold": 0,
+      "score": 0.44025660484415174
+    },
+    {
+      "key": "trusthub_AES-T900_clean",
+      "family": "AES",
+      "benchmark": "AES-T900",
+      "label": 0,
+      "fold": 0,
+      "score": 0.6423977564513518
+    },
+    {
+      "key": "trusthub_AES-T900_trojan",
+      "family": "AES",
+      "benchmark": "AES-T900",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8311855120815487
+    },
+    {
+      "key": "trusthub_MC8051-T200_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T200",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9509320329054823
+    },
+    {
+      "key": "trusthub_MC8051-T200_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T200",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9525404024109605
+    },
+    {
+      "key": "trusthub_MC8051-T300_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T300",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9509320329054823
+    },
+    {
+      "key": "trusthub_MC8051-T300_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T300",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9505563414463214
+    },
+    {
+      "key": "trusthub_MC8051-T400_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T400",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9509320329054823
+    },
+    {
+      "key": "trusthub_MC8051-T400_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T400",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6678133630247657
+    },
+    {
+      "key": "trusthub_MC8051-T500_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T500",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9509320329054823
+    },
+    {
+      "key": "trusthub_MC8051-T500_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T500",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9529016142631163
+    },
+    {
+      "key": "trusthub_MC8051-T600_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T600",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9509320329054823
+    },
+    {
+      "key": "trusthub_MC8051-T600_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T600",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9561691020107925
+    },
+    {
+      "key": "trusthub_MC8051-T700_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T700",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9509320329054823
+    },
+    {
+      "key": "trusthub_MC8051-T700_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T700",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9510614558059598
+    },
+    {
+      "key": "trusthub_MC8051-T800_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T800",
+      "label": 0,
+      "fold": 1,
+      "score": 0.9509320329054823
+    },
+    {
+      "key": "trusthub_MC8051-T800_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T800",
+      "label": 1,
+      "fold": 1,
+      "score": 0.9520053291342131
+    },
+    {
+      "key": "trusthub_s38584-T100_clean",
+      "family": "s38584",
+      "benchmark": "s38584-T100",
+      "label": 0,
+      "fold": 1,
+      "score": 0.869626188001761
+    },
+    {
+      "key": "trusthub_s38584-T100_trojan",
+      "family": "s38584",
+      "benchmark": "s38584-T100",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8702025854063764
+    },
+    {
+      "key": "trusthub_s38584-T200_clean",
+      "family": "s38584",
+      "benchmark": "s38584-T200",
+      "label": 0,
+      "fold": 1,
+      "score": 0.869626188001761
+    },
+    {
+      "key": "trusthub_s38584-T200_trojan",
+      "family": "s38584",
+      "benchmark": "s38584-T200",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8763309127337905
+    },
+    {
+      "key": "trusthub_PIC16F84-T100_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T100",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8436360131073354
+    },
+    {
+      "key": "trusthub_PIC16F84-T100_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T100",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8565029919818757
+    },
+    {
+      "key": "trusthub_PIC16F84-T200_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T200",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8436360131073354
+    },
+    {
+      "key": "trusthub_PIC16F84-T200_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T200",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8468301760751675
+    },
+    {
+      "key": "trusthub_PIC16F84-T300_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T300",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8436360131073354
+    },
+    {
+      "key": "trusthub_PIC16F84-T300_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T300",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8329233648045652
+    },
+    {
+      "key": "trusthub_PIC16F84-T400_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T400",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8436360131073354
+    },
+    {
+      "key": "trusthub_PIC16F84-T400_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T400",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8308139238197086
+    },
+    {
+      "key": "trusthub_b19-T300_clean",
+      "family": "b19",
+      "benchmark": "b19-T300",
+      "label": 0,
+      "fold": 2,
+      "score": 0.46121920819496326
+    },
+    {
+      "key": "trusthub_b19-T300_trojan",
+      "family": "b19",
+      "benchmark": "b19-T300",
+      "label": 1,
+      "fold": 2,
+      "score": 0.4607760399291175
+    },
+    {
+      "key": "trusthub_b19-T400_clean",
+      "family": "b19",
+      "benchmark": "b19-T400",
+      "label": 0,
+      "fold": 2,
+      "score": 0.46121920819496326
+    },
+    {
+      "key": "trusthub_b19-T400_trojan",
+      "family": "b19",
+      "benchmark": "b19-T400",
+      "label": 1,
+      "fold": 2,
+      "score": 0.4615619336627866
+    },
+    {
+      "key": "trusthub_b19-T500_clean",
+      "family": "b19",
+      "benchmark": "b19-T500",
+      "label": 0,
+      "fold": 2,
+      "score": 0.46121920819496326
+    },
+    {
+      "key": "trusthub_b19-T500_trojan",
+      "family": "b19",
+      "benchmark": "b19-T500",
+      "label": 1,
+      "fold": 2,
+      "score": 0.4608454788618723
+    },
+    {
+      "key": "trusthub_memctrl-T100_clean",
+      "family": "memctrl",
+      "benchmark": "memctrl-T100",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8336084966890974
+    },
+    {
+      "key": "trusthub_memctrl-T100_trojan",
+      "family": "memctrl",
+      "benchmark": "memctrl-T100",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8384093119720193
+    },
+    {
+      "key": "trusthub_RS232-T2100_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.32000077285999445
+    },
+    {
+      "key": "trusthub_RS232-T2100_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.34229109509544975
+    },
+    {
+      "key": "trusthub_RS232-T2200_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2200",
+      "label": 0,
+      "fold": 3,
+      "score": 0.32000077285999445
+    },
+    {
+      "key": "trusthub_RS232-T2200_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2200",
+      "label": 1,
+      "fold": 3,
+      "score": 0.31210187903597314
+    },
+    {
+      "key": "trusthub_RS232-T2300_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2300",
+      "label": 0,
+      "fold": 3,
+      "score": 0.32000077285999445
+    },
+    {
+      "key": "trusthub_RS232-T2300_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2300",
+      "label": 1,
+      "fold": 3,
+      "score": 0.3296538714303523
+    },
+    {
+      "key": "trusthub_RS232-T2400_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2400",
+      "label": 0,
+      "fold": 3,
+      "score": 0.32000077285999445
+    },
+    {
+      "key": "trusthub_RS232-T2400_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2400",
+      "label": 1,
+      "fold": 3,
+      "score": 0.3847838887391581
+    },
+    {
+      "key": "trusthub_s15850-T100_clean",
+      "family": "s15850",
+      "benchmark": "s15850-T100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.33154028763887144
+    },
+    {
+      "key": "trusthub_s15850-T100_trojan",
+      "family": "s15850",
+      "benchmark": "s15850-T100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6915631602530948
+    },
+    {
+      "key": "trusthub_s35932-T100_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0010437916037929818
+    },
+    {
+      "key": "trusthub_s35932-T100_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.007176073753470337
+    },
+    {
+      "key": "trusthub_s35932-T200_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T200",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0010437916037929818
+    },
+    {
+      "key": "trusthub_s35932-T200_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T200",
+      "label": 1,
+      "fold": 3,
+      "score": 0.0010845807421384242
+    },
+    {
+      "key": "trusthub_s35932-T300_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T300",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0010437916037929818
+    },
+    {
+      "key": "trusthub_s35932-T300_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T300",
+      "label": 1,
+      "fold": 3,
+      "score": 0.005308776115400834
+    },
+    {
+      "key": "trusthub_b15-T100_clean",
+      "family": "b15",
+      "benchmark": "b15-T100",
+      "label": 0,
+      "fold": 4,
+      "score": 0.6491234152555783
+    },
+    {
+      "key": "trusthub_b15-T100_trojan",
+      "family": "b15",
+      "benchmark": "b15-T100",
+      "label": 1,
+      "fold": 4,
+      "score": 0.37250199711429083
+    },
+    {
+      "key": "trusthub_b15-T200_clean",
+      "family": "b15",
+      "benchmark": "b15-T200",
+      "label": 0,
+      "fold": 4,
+      "score": 0.6491234152555783
+    },
+    {
+      "key": "trusthub_b15-T200_trojan",
+      "family": "b15",
+      "benchmark": "b15-T200",
+      "label": 1,
+      "fold": 4,
+      "score": 0.37250199711429083
+    },
+    {
+      "key": "trusthub_b15-T300_clean",
+      "family": "b15",
+      "benchmark": "b15-T300",
+      "label": 0,
+      "fold": 4,
+      "score": 0.6491234152555783
+    },
+    {
+      "key": "trusthub_b15-T300_trojan",
+      "family": "b15",
+      "benchmark": "b15-T300",
+      "label": 1,
+      "fold": 4,
+      "score": 0.37253093067198756
+    },
+    {
+      "key": "trusthub_b15-T400_clean",
+      "family": "b15",
+      "benchmark": "b15-T400",
+      "label": 0,
+      "fold": 4,
+      "score": 0.6491234152555783
+    },
+    {
+      "key": "trusthub_b15-T400_trojan",
+      "family": "b15",
+      "benchmark": "b15-T400",
+      "label": 1,
+      "fold": 4,
+      "score": 0.37253093067198756
+    },
+    {
+      "key": "trusthub_s38417-T100_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T100",
+      "label": 0,
+      "fold": 4,
+      "score": 0.15779799968288383
+    },
+    {
+      "key": "trusthub_s38417-T100_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T100",
+      "label": 1,
+      "fold": 4,
+      "score": 0.1671284381188203
+    },
+    {
+      "key": "trusthub_s38417-T200_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T200",
+      "label": 0,
+      "fold": 4,
+      "score": 0.15779799968288383
+    },
+    {
+      "key": "trusthub_s38417-T200_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T200",
+      "label": 1,
+      "fold": 4,
+      "score": 0.16642910654181114
+    },
+    {
+      "key": "trusthub_s38417-T300_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T300",
+      "label": 0,
+      "fold": 4,
+      "score": 0.15779799968288383
+    },
+    {
+      "key": "trusthub_s38417-T300_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T300",
+      "label": 1,
+      "fold": 4,
+      "score": 0.1930543998483039
+    }
+  ],
+  "local_fraction_logistic": [
+    {
+      "key": "trusthub_AES-T1000_clean",
+      "family": "AES",
+      "benchmark": "AES-T1000",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T1000_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1000",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7501156205015304
+    },
+    {
+      "key": "trusthub_AES-T100_clean",
+      "family": "AES",
+      "benchmark": "AES-T100",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T100_trojan",
+      "family": "AES",
+      "benchmark": "AES-T100",
+      "label": 1,
+      "fold": 0,
+      "score": 0.759739285765588
+    },
+    {
+      "key": "trusthub_AES-T1100_clean",
+      "family": "AES",
+      "benchmark": "AES-T1100",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T1100_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1100",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7388949310820252
+    },
+    {
+      "key": "trusthub_AES-T1200_clean",
+      "family": "AES",
+      "benchmark": "AES-T1200",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T1200_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1200",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7521437392494517
+    },
+    {
+      "key": "trusthub_AES-T1600_clean",
+      "family": "AES",
+      "benchmark": "AES-T1600",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T1600_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1600",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7375629338607101
+    },
+    {
+      "key": "trusthub_AES-T1700_clean",
+      "family": "AES",
+      "benchmark": "AES-T1700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T1700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.754244309710713
+    },
+    {
+      "key": "trusthub_AES-T200_clean",
+      "family": "AES",
+      "benchmark": "AES-T200",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T200_trojan",
+      "family": "AES",
+      "benchmark": "AES-T200",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7597094490416179
+    },
+    {
+      "key": "trusthub_AES-T2300_clean",
+      "family": "AES",
+      "benchmark": "AES-T2300",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T2300_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2300",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8063048094639633
+    },
+    {
+      "key": "trusthub_AES-T2400_clean",
+      "family": "AES",
+      "benchmark": "AES-T2400",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T2400_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2400",
+      "label": 1,
+      "fold": 0,
+      "score": 0.8050988841099643
+    },
+    {
+      "key": "trusthub_AES-T2500_clean",
+      "family": "AES",
+      "benchmark": "AES-T2500",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T2500_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2500",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7590109788789953
+    },
+    {
+      "key": "trusthub_AES-T2600_clean",
+      "family": "AES",
+      "benchmark": "AES-T2600",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T2600_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2600",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7813369105275728
+    },
+    {
+      "key": "trusthub_AES-T2700_clean",
+      "family": "AES",
+      "benchmark": "AES-T2700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T2700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7593412692471987
+    },
+    {
+      "key": "trusthub_AES-T2800_clean",
+      "family": "AES",
+      "benchmark": "AES-T2800",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T2800_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2800",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7809301777362606
+    },
+    {
+      "key": "trusthub_AES-T400_clean",
+      "family": "AES",
+      "benchmark": "AES-T400",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T400_trojan",
+      "family": "AES",
+      "benchmark": "AES-T400",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7420724234753185
+    },
+    {
+      "key": "trusthub_AES-T700_clean",
+      "family": "AES",
+      "benchmark": "AES-T700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7502605100524203
+    },
+    {
+      "key": "trusthub_AES-T800_clean",
+      "family": "AES",
+      "benchmark": "AES-T800",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T800_trojan",
+      "family": "AES",
+      "benchmark": "AES-T800",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7409264255289728
+    },
+    {
+      "key": "trusthub_AES-T900_clean",
+      "family": "AES",
+      "benchmark": "AES-T900",
+      "label": 0,
+      "fold": 0,
+      "score": 0.7586508445383389
+    },
+    {
+      "key": "trusthub_AES-T900_trojan",
+      "family": "AES",
+      "benchmark": "AES-T900",
+      "label": 1,
+      "fold": 0,
+      "score": 0.7552850665775829
+    },
+    {
+      "key": "trusthub_MC8051-T200_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T200",
+      "label": 0,
+      "fold": 1,
+      "score": 0.37802105611100184
+    },
+    {
+      "key": "trusthub_MC8051-T200_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T200",
+      "label": 1,
+      "fold": 1,
+      "score": 0.3787340093181086
+    },
+    {
+      "key": "trusthub_MC8051-T300_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T300",
+      "label": 0,
+      "fold": 1,
+      "score": 0.37802105611100184
+    },
+    {
+      "key": "trusthub_MC8051-T300_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T300",
+      "label": 1,
+      "fold": 1,
+      "score": 0.3748820414327356
+    },
+    {
+      "key": "trusthub_MC8051-T400_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T400",
+      "label": 0,
+      "fold": 1,
+      "score": 0.37802105611100184
+    },
+    {
+      "key": "trusthub_MC8051-T400_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T400",
+      "label": 1,
+      "fold": 1,
+      "score": 0.3800513237103716
+    },
+    {
+      "key": "trusthub_MC8051-T500_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T500",
+      "label": 0,
+      "fold": 1,
+      "score": 0.37802105611100184
+    },
+    {
+      "key": "trusthub_MC8051-T500_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T500",
+      "label": 1,
+      "fold": 1,
+      "score": 0.37813957592291014
+    },
+    {
+      "key": "trusthub_MC8051-T600_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T600",
+      "label": 0,
+      "fold": 1,
+      "score": 0.37802105611100184
+    },
+    {
+      "key": "trusthub_MC8051-T600_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T600",
+      "label": 1,
+      "fold": 1,
+      "score": 0.38111002883999434
+    },
+    {
+      "key": "trusthub_MC8051-T700_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T700",
+      "label": 0,
+      "fold": 1,
+      "score": 0.37802105611100184
+    },
+    {
+      "key": "trusthub_MC8051-T700_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T700",
+      "label": 1,
+      "fold": 1,
+      "score": 0.37457245767257535
+    },
+    {
+      "key": "trusthub_MC8051-T800_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T800",
+      "label": 0,
+      "fold": 1,
+      "score": 0.37802105611100184
+    },
+    {
+      "key": "trusthub_MC8051-T800_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T800",
+      "label": 1,
+      "fold": 1,
+      "score": 0.3767899718030367
+    },
+    {
+      "key": "trusthub_s38584-T100_clean",
+      "family": "s38584",
+      "benchmark": "s38584-T100",
+      "label": 0,
+      "fold": 1,
+      "score": 0.8229842449514463
+    },
+    {
+      "key": "trusthub_s38584-T100_trojan",
+      "family": "s38584",
+      "benchmark": "s38584-T100",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8255613938418168
+    },
+    {
+      "key": "trusthub_s38584-T200_clean",
+      "family": "s38584",
+      "benchmark": "s38584-T200",
+      "label": 0,
+      "fold": 1,
+      "score": 0.8229842449514463
+    },
+    {
+      "key": "trusthub_s38584-T200_trojan",
+      "family": "s38584",
+      "benchmark": "s38584-T200",
+      "label": 1,
+      "fold": 1,
+      "score": 0.8289359139185657
+    },
+    {
+      "key": "trusthub_PIC16F84-T100_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T100",
+      "label": 0,
+      "fold": 2,
+      "score": 0.7531764804076094
+    },
+    {
+      "key": "trusthub_PIC16F84-T100_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T100",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7929018540607545
+    },
+    {
+      "key": "trusthub_PIC16F84-T200_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T200",
+      "label": 0,
+      "fold": 2,
+      "score": 0.7531764804076094
+    },
+    {
+      "key": "trusthub_PIC16F84-T200_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T200",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7643102750900149
+    },
+    {
+      "key": "trusthub_PIC16F84-T300_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T300",
+      "label": 0,
+      "fold": 2,
+      "score": 0.7531764804076094
+    },
+    {
+      "key": "trusthub_PIC16F84-T300_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T300",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7438683434853967
+    },
+    {
+      "key": "trusthub_PIC16F84-T400_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T400",
+      "label": 0,
+      "fold": 2,
+      "score": 0.7531764804076094
+    },
+    {
+      "key": "trusthub_PIC16F84-T400_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T400",
+      "label": 1,
+      "fold": 2,
+      "score": 0.7431996956728295
+    },
+    {
+      "key": "trusthub_b19-T300_clean",
+      "family": "b19",
+      "benchmark": "b19-T300",
+      "label": 0,
+      "fold": 2,
+      "score": 0.6203417213180958
+    },
+    {
+      "key": "trusthub_b19-T300_trojan",
+      "family": "b19",
+      "benchmark": "b19-T300",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6204887712518776
+    },
+    {
+      "key": "trusthub_b19-T400_clean",
+      "family": "b19",
+      "benchmark": "b19-T400",
+      "label": 0,
+      "fold": 2,
+      "score": 0.6203417213180958
+    },
+    {
+      "key": "trusthub_b19-T400_trojan",
+      "family": "b19",
+      "benchmark": "b19-T400",
+      "label": 1,
+      "fold": 2,
+      "score": 0.6142283719018035
+    },
+    {
+      "key": "trusthub_b19-T500_clean",
+      "family": "b19",
+      "benchmark": "b19-T500",
+      "label": 0,
+      "fold": 2,
+      "score": 0.6203417213180958
+    },
+    {
+      "key": "trusthub_b19-T500_trojan",
+      "family": "b19",
+      "benchmark": "b19-T500",
+      "label": 1,
+      "fold": 2,
+      "score": 0.618545619103108
+    },
+    {
+      "key": "trusthub_memctrl-T100_clean",
+      "family": "memctrl",
+      "benchmark": "memctrl-T100",
+      "label": 0,
+      "fold": 2,
+      "score": 0.8419115843768319
+    },
+    {
+      "key": "trusthub_memctrl-T100_trojan",
+      "family": "memctrl",
+      "benchmark": "memctrl-T100",
+      "label": 1,
+      "fold": 2,
+      "score": 0.8400474186161345
+    },
+    {
+      "key": "trusthub_RS232-T2100_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6164026310606571
+    },
+    {
+      "key": "trusthub_RS232-T2100_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6786158079766471
+    },
+    {
+      "key": "trusthub_RS232-T2200_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2200",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6164026310606571
+    },
+    {
+      "key": "trusthub_RS232-T2200_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2200",
+      "label": 1,
+      "fold": 3,
+      "score": 0.68872278559931
+    },
+    {
+      "key": "trusthub_RS232-T2300_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2300",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6164026310606571
+    },
+    {
+      "key": "trusthub_RS232-T2300_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2300",
+      "label": 1,
+      "fold": 3,
+      "score": 0.6791751491545441
+    },
+    {
+      "key": "trusthub_RS232-T2400_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2400",
+      "label": 0,
+      "fold": 3,
+      "score": 0.6164026310606571
+    },
+    {
+      "key": "trusthub_RS232-T2400_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2400",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7118893291770656
+    },
+    {
+      "key": "trusthub_s15850-T100_clean",
+      "family": "s15850",
+      "benchmark": "s15850-T100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.7097217940756875
+    },
+    {
+      "key": "trusthub_s15850-T100_trojan",
+      "family": "s15850",
+      "benchmark": "s15850-T100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.7132001869749632
+    },
+    {
+      "key": "trusthub_s35932-T100_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0006870769410317019
+    },
+    {
+      "key": "trusthub_s35932-T100_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.0010787499738458596
+    },
+    {
+      "key": "trusthub_s35932-T200_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T200",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0006870769410317019
+    },
+    {
+      "key": "trusthub_s35932-T200_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T200",
+      "label": 1,
+      "fold": 3,
+      "score": 0.0006960693162750192
+    },
+    {
+      "key": "trusthub_s35932-T300_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T300",
+      "label": 0,
+      "fold": 3,
+      "score": 0.0006870769410317019
+    },
+    {
+      "key": "trusthub_s35932-T300_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T300",
+      "label": 1,
+      "fold": 3,
+      "score": 0.0007263553747623601
+    },
+    {
+      "key": "trusthub_b15-T100_clean",
+      "family": "b15",
+      "benchmark": "b15-T100",
+      "label": 0,
+      "fold": 4,
+      "score": 0.30145953024084426
+    },
+    {
+      "key": "trusthub_b15-T100_trojan",
+      "family": "b15",
+      "benchmark": "b15-T100",
+      "label": 1,
+      "fold": 4,
+      "score": 0.24510111491646747
+    },
+    {
+      "key": "trusthub_b15-T200_clean",
+      "family": "b15",
+      "benchmark": "b15-T200",
+      "label": 0,
+      "fold": 4,
+      "score": 0.30145953024084426
+    },
+    {
+      "key": "trusthub_b15-T200_trojan",
+      "family": "b15",
+      "benchmark": "b15-T200",
+      "label": 1,
+      "fold": 4,
+      "score": 0.24510111491646747
+    },
+    {
+      "key": "trusthub_b15-T300_clean",
+      "family": "b15",
+      "benchmark": "b15-T300",
+      "label": 0,
+      "fold": 4,
+      "score": 0.30145953024084426
+    },
+    {
+      "key": "trusthub_b15-T300_trojan",
+      "family": "b15",
+      "benchmark": "b15-T300",
+      "label": 1,
+      "fold": 4,
+      "score": 0.24504234305908873
+    },
+    {
+      "key": "trusthub_b15-T400_clean",
+      "family": "b15",
+      "benchmark": "b15-T400",
+      "label": 0,
+      "fold": 4,
+      "score": 0.30145953024084426
+    },
+    {
+      "key": "trusthub_b15-T400_trojan",
+      "family": "b15",
+      "benchmark": "b15-T400",
+      "label": 1,
+      "fold": 4,
+      "score": 0.24504234305908873
+    },
+    {
+      "key": "trusthub_s38417-T100_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T100",
+      "label": 0,
+      "fold": 4,
+      "score": 0.07816670167305584
+    },
+    {
+      "key": "trusthub_s38417-T100_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T100",
+      "label": 1,
+      "fold": 4,
+      "score": 0.14077697657127133
+    },
+    {
+      "key": "trusthub_s38417-T200_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T200",
+      "label": 0,
+      "fold": 4,
+      "score": 0.07816670167305584
+    },
+    {
+      "key": "trusthub_s38417-T200_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T200",
+      "label": 1,
+      "fold": 4,
+      "score": 0.116624593389713
+    },
+    {
+      "key": "trusthub_s38417-T300_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T300",
+      "label": 0,
+      "fold": 4,
+      "score": 0.07816670167305584
+    },
+    {
+      "key": "trusthub_s38417-T300_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T300",
+      "label": 1,
+      "fold": 4,
+      "score": 0.08771902534127467
+    }
+  ],
+  "graph_aggregate_stumps": [
+    {
+      "key": "trusthub_AES-T1000_clean",
+      "family": "AES",
+      "benchmark": "AES-T1000",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T1000_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1000",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T100_clean",
+      "family": "AES",
+      "benchmark": "AES-T100",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T100_trojan",
+      "family": "AES",
+      "benchmark": "AES-T100",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T1100_clean",
+      "family": "AES",
+      "benchmark": "AES-T1100",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T1100_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1100",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T1200_clean",
+      "family": "AES",
+      "benchmark": "AES-T1200",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T1200_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1200",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4463392547189213
+    },
+    {
+      "key": "trusthub_AES-T1600_clean",
+      "family": "AES",
+      "benchmark": "AES-T1600",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T1600_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1600",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T1700_clean",
+      "family": "AES",
+      "benchmark": "AES-T1700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T1700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T1700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4463392547189213
+    },
+    {
+      "key": "trusthub_AES-T200_clean",
+      "family": "AES",
+      "benchmark": "AES-T200",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T200_trojan",
+      "family": "AES",
+      "benchmark": "AES-T200",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2300_clean",
+      "family": "AES",
+      "benchmark": "AES-T2300",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2300_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2300",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2400_clean",
+      "family": "AES",
+      "benchmark": "AES-T2400",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2400_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2400",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2500_clean",
+      "family": "AES",
+      "benchmark": "AES-T2500",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2500_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2500",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2600_clean",
+      "family": "AES",
+      "benchmark": "AES-T2600",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2600_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2600",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2700_clean",
+      "family": "AES",
+      "benchmark": "AES-T2700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2800_clean",
+      "family": "AES",
+      "benchmark": "AES-T2800",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T2800_trojan",
+      "family": "AES",
+      "benchmark": "AES-T2800",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T400_clean",
+      "family": "AES",
+      "benchmark": "AES-T400",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T400_trojan",
+      "family": "AES",
+      "benchmark": "AES-T400",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T700_clean",
+      "family": "AES",
+      "benchmark": "AES-T700",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T700_trojan",
+      "family": "AES",
+      "benchmark": "AES-T700",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T800_clean",
+      "family": "AES",
+      "benchmark": "AES-T800",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T800_trojan",
+      "family": "AES",
+      "benchmark": "AES-T800",
+      "label": 1,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T900_clean",
+      "family": "AES",
+      "benchmark": "AES-T900",
+      "label": 0,
+      "fold": 0,
+      "score": 0.43192383556931174
+    },
+    {
+      "key": "trusthub_AES-T900_trojan",
+      "family": "AES",
+      "benchmark": "AES-T900",
+      "label": 1,
+      "fold": 0,
+      "score": 0.4463392547189213
+    },
+    {
+      "key": "trusthub_MC8051-T200_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T200",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T200_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T200",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T300_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T300",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T300_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T300",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T400_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T400",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T400_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T400",
+      "label": 1,
+      "fold": 1,
+      "score": 0.7461286846442481
+    },
+    {
+      "key": "trusthub_MC8051-T500_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T500",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T500_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T500",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T600_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T600",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T600_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T600",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T700_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T700",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T700_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T700",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T800_clean",
+      "family": "MC8051",
+      "benchmark": "MC8051-T800",
+      "label": 0,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_MC8051-T800_trojan",
+      "family": "MC8051",
+      "benchmark": "MC8051-T800",
+      "label": 1,
+      "fold": 1,
+      "score": 0.6413208006488379
+    },
+    {
+      "key": "trusthub_s38584-T100_clean",
+      "family": "s38584",
+      "benchmark": "s38584-T100",
+      "label": 0,
+      "fold": 1,
+      "score": 0.4789378235480566
+    },
+    {
+      "key": "trusthub_s38584-T100_trojan",
+      "family": "s38584",
+      "benchmark": "s38584-T100",
+      "label": 1,
+      "fold": 1,
+      "score": 0.4789378235480566
+    },
+    {
+      "key": "trusthub_s38584-T200_clean",
+      "family": "s38584",
+      "benchmark": "s38584-T200",
+      "label": 0,
+      "fold": 1,
+      "score": 0.4789378235480566
+    },
+    {
+      "key": "trusthub_s38584-T200_trojan",
+      "family": "s38584",
+      "benchmark": "s38584-T200",
+      "label": 1,
+      "fold": 1,
+      "score": 0.4789378235480566
+    },
+    {
+      "key": "trusthub_PIC16F84-T100_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T100",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_PIC16F84-T100_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T100",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_PIC16F84-T200_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T200",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_PIC16F84-T200_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T200",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_PIC16F84-T300_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T300",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_PIC16F84-T300_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T300",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_PIC16F84-T400_clean",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T400",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_PIC16F84-T400_trojan",
+      "family": "PIC16F84",
+      "benchmark": "PIC16F84-T400",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_b19-T300_clean",
+      "family": "b19",
+      "benchmark": "b19-T300",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5411608403544423
+    },
+    {
+      "key": "trusthub_b19-T300_trojan",
+      "family": "b19",
+      "benchmark": "b19-T300",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5411608403544423
+    },
+    {
+      "key": "trusthub_b19-T400_clean",
+      "family": "b19",
+      "benchmark": "b19-T400",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5411608403544423
+    },
+    {
+      "key": "trusthub_b19-T400_trojan",
+      "family": "b19",
+      "benchmark": "b19-T400",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5411608403544423
+    },
+    {
+      "key": "trusthub_b19-T500_clean",
+      "family": "b19",
+      "benchmark": "b19-T500",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5411608403544423
+    },
+    {
+      "key": "trusthub_b19-T500_trojan",
+      "family": "b19",
+      "benchmark": "b19-T500",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5411608403544423
+    },
+    {
+      "key": "trusthub_memctrl-T100_clean",
+      "family": "memctrl",
+      "benchmark": "memctrl-T100",
+      "label": 0,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_memctrl-T100_trojan",
+      "family": "memctrl",
+      "benchmark": "memctrl-T100",
+      "label": 1,
+      "fold": 2,
+      "score": 0.5088685842391862
+    },
+    {
+      "key": "trusthub_RS232-T2100_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_RS232-T2100_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_RS232-T2200_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2200",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_RS232-T2200_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2200",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_RS232-T2300_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2300",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_RS232-T2300_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2300",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_RS232-T2400_clean",
+      "family": "RS232",
+      "benchmark": "RS232-T2400",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_RS232-T2400_trojan",
+      "family": "RS232",
+      "benchmark": "RS232-T2400",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_s15850-T100_clean",
+      "family": "s15850",
+      "benchmark": "s15850-T100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_s15850-T100_trojan",
+      "family": "s15850",
+      "benchmark": "s15850-T100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_s35932-T100_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T100",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_s35932-T100_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T100",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_s35932-T200_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T200",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_s35932-T200_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T200",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_s35932-T300_clean",
+      "family": "s35932",
+      "benchmark": "s35932-T300",
+      "label": 0,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_s35932-T300_trojan",
+      "family": "s35932",
+      "benchmark": "s35932-T300",
+      "label": 1,
+      "fold": 3,
+      "score": 0.5122639774126868
+    },
+    {
+      "key": "trusthub_b15-T100_clean",
+      "family": "b15",
+      "benchmark": "b15-T100",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_b15-T100_trojan",
+      "family": "b15",
+      "benchmark": "b15-T100",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_b15-T200_clean",
+      "family": "b15",
+      "benchmark": "b15-T200",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_b15-T200_trojan",
+      "family": "b15",
+      "benchmark": "b15-T200",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_b15-T300_clean",
+      "family": "b15",
+      "benchmark": "b15-T300",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_b15-T300_trojan",
+      "family": "b15",
+      "benchmark": "b15-T300",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_b15-T400_clean",
+      "family": "b15",
+      "benchmark": "b15-T400",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_b15-T400_trojan",
+      "family": "b15",
+      "benchmark": "b15-T400",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_s38417-T100_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T100",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_s38417-T100_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T100",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_s38417-T200_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T200",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_s38417-T200_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T200",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_s38417-T300_clean",
+      "family": "s38417",
+      "benchmark": "s38417-T300",
+      "label": 0,
+      "fold": 4,
+      "score": 0.5118284704760336
+    },
+    {
+      "key": "trusthub_s38417-T300_trojan",
+      "family": "s38417",
+      "benchmark": "s38417-T300",
+      "label": 1,
+      "fold": 4,
+      "score": 0.5118284704760336
+    }
+  ]
+}

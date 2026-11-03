@@ -1,0 +1,21 @@
+{
+  "status": "development_protocol_frozen_before_fit",
+  "panel": "data/dataset_v2/trusthub_primary.json",
+  "folds": "data/dataset_v2/trusthub_folds.json",
+  "scope": "golden-free Trust-Hub graph detection on previously inspected families",
+  "models": ["size_logistic", "graph_aggregate_logistic", "local_fraction_logistic", "graph_aggregate_stumps"],
+  "input": "single 20-feature gate graph; no clean reference at inference",
+  "split": "five locked leave-family-out folds, all variants of a family held together",
+  "primary_metric": "mean of 11 within-family tie-aware AUROCs",
+  "pass_rule": "graph_aggregate_logistic minus size_logistic has positive lower bound in a paired two-sided 95% percentile bootstrap over 11 families, 10000 draws, seed 20261103",
+  "secondary": ["per-family AUROC", "pooled AUROC", "within-family pair ranking", "fixed-0.5 balanced accuracy", "size-overlap audit"],
+  "feature_rules": {
+    "size": "log1p graph nodes and edges",
+    "graph_aggregate": "size plus 16 gate fractions, 16 gate-presence flags, and mean/std/max/p50/p90/p99 of four numeric node channels",
+    "local_fraction": "size plus 16 gate fractions and fractions of nodes with controllability or observability distance >= 8 or >= 16; numeric channels are raw graph x columns 18 and 19",
+    "normalization": "fit column mean and standard deviation on outer training fold only; clamp standardized values to [-8,8]",
+    "logistic": "class-balanced L2 logistic, penalty 0.01, deterministic LBFGS",
+    "stumps": "40-round deterministic logistic booster from Stage 2"
+  },
+  "cautions": ["Development families already inspected; criterion is a resource gate, not confirmatory significance", "Only 11 family clusters", "Different synthesis flows may confound results", "No node labels or functional attack verification are assumed"]
+}

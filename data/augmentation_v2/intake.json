@@ -1,0 +1,409 @@
+{
+  "records": [
+    {
+      "host": "verilog-axis",
+      "variant": "benign",
+      "top": "arbiter",
+      "sources": {
+        "runs/augmentation_v2/verilog-axis/benign/arbiter.v": "c3e3bfe5122a006ce15ef7b768b7bb23e6205e2f2458a62b57547ba31e687164",
+        "runs/transfer_v1/upstream/verilog-axis/rtl/priority_encoder.v": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5"
+      },
+      "mapped": "runs/augmentation_v2/verilog-axis/benign/yosys.json",
+      "mapped_sha256": "4d9d01de1b9a6037a9c86d11bff70adbe6bc164aa7ff207588966b430f8257cb",
+      "cells": [
+        18,
+        34
+      ],
+      "benign_expression_sat_proved": true,
+      "replay": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "host": "sha1",
+      "variant": "benign",
+      "top": "sha1_w_mem",
+      "sources": {
+        "runs/augmentation_v2/sha1/benign/sha1_w_mem.v": "cc4925d00c044a1fb69ab7b23e421fceb004c22208da14d5ce0160f5581d0c9d"
+      },
+      "mapped": "runs/augmentation_v2/sha1/benign/yosys.json",
+      "mapped_sha256": "b91c9c357afca070d20ce41a310b10414bffe5734130d34ae1a75112b6dedfb5",
+      "cells": [
+        2800,
+        3072
+      ],
+      "benign_expression_sat_proved": true,
+      "replay": [
+        [
+          256,
+          256
+        ],
+        [
+          257,
+          257
+        ],
+        [
+          258,
+          258
+        ],
+        [
+          259,
+          259
+        ],
+        [
+          260,
+          260
+        ],
+        [
+          261,
+          261
+        ],
+        [
+          262,
+          262
+        ],
+        [
+          263,
+          263
+        ],
+        [
+          264,
+          264
+        ],
+        [
+          265,
+          265
+        ],
+        [
+          266,
+          266
+        ],
+        [
+          267,
+          267
+        ],
+        [
+          268,
+          268
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          270,
+          270
+        ],
+        [
+          271,
+          271
+        ]
+      ]
+    },
+    {
+      "host": "uart16550",
+      "variant": "benign",
+      "top": "uart_debug_if",
+      "sources": {
+        "runs/augmentation_v2/uart16550/benign/uart_debug_if.v": "499e6b30e03508f96f0f24a1a14dbdb8b8dd0e0ac26e169036cd1e83ce522479",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/timescale.v": "e32395dbf32d81190e357000592b0a6775dd9a57f598d843cd801289c7393e43",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/uart_defines.v": "4b44d6f9570fec6e7af6de5fe455d67ba1b240885e962003de22b0a3a3aa8402"
+      },
+      "mapped": "runs/augmentation_v2/uart16550/benign/yosys.json",
+      "mapped_sha256": "45e918b33932b9b60003df0cf2d291d468ab2612fafac1cde5a290a3ae243e57",
+      "cells": [
+        124,
+        396
+      ],
+      "benign_expression_sat_proved": true,
+      "replay": [
+        [
+          16777217,
+          16777217
+        ],
+        [
+          33554433,
+          33554433
+        ],
+        [
+          50331649,
+          50331649
+        ],
+        [
+          67108865,
+          67108865
+        ],
+        [
+          83886081,
+          83886081
+        ],
+        [
+          100663297,
+          100663297
+        ],
+        [
+          117440513,
+          117440513
+        ],
+        [
+          134217729,
+          134217729
+        ],
+        [
+          150994945,
+          150994945
+        ],
+        [
+          167772161,
+          167772161
+        ],
+        [
+          184549377,
+          184549377
+        ],
+        [
+          201326593,
+          201326593
+        ],
+        [
+          218103809,
+          218103809
+        ],
+        [
+          234881025,
+          234881025
+        ],
+        [
+          2902458369,
+          2902458369
+        ],
+        [
+          2902458369,
+          2902458369
+        ]
+      ]
+    },
+    {
+      "host": "core_usb_uart",
+      "variant": "benign",
+      "top": "usbf_crc16",
+      "sources": {
+        "runs/augmentation_v2/core_usb_uart/benign/usbf_crc16.v": "81b763eb55297145878641ee2c5a15d417ed444b818846b8e55d640d2ed42489"
+      },
+      "mapped": "runs/augmentation_v2/core_usb_uart/benign/yosys.json",
+      "mapped_sha256": "62208e78c15d4502d839f6033cd24b88f853a325369cff0d3d059f56edbe2aea",
+      "cells": [
+        54,
+        174
+      ],
+      "benign_expression_sat_proved": true,
+      "replay": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "host": "RS232",
+      "benchmark": "RS232-T2100",
+      "variant": "clean",
+      "top": "uart",
+      "sources": {
+        "trusthub/netlists/RS232/RS232-T2100/tjfree_patched_src/u_rec.v": "3b3b810ac5d041faa49c003ce73bff192f935b49ff4e1c389755e7b2e10816cc",
+        "trusthub/netlists/RS232/RS232-T2100/tjfree_patched_src/u_xmit.v": "8c0d4854444ffa3aa79bd8fa1b6a518ae52f0f9ec1715561c605d28eaaaf8499",
+        "trusthub/netlists/RS232/RS232-T2100/tjfree_patched_src/uart.v": "6ba811c694f72eeb265d6187bf7c9ee7a693a48d3a0aa041c1ded3716d34da34",
+        "trusthub/netlists/RS232/RS232-T2100/tjfree_patched_src/inc.h": "b3d58e7661cd1d05a62833833da471421d26b2f50b26699f875cda77a0b2cf96"
+      },
+      "mapped": "runs/provenance_v1/RS232-T2100/clean/yosys.json",
+      "mapped_sha256": "0860d034d82c2a3a143a26291a8ef99f23798f0df5e21a44e44f8ce06fce7c78",
+      "observations": [
+        "00 1",
+        "01 1",
+        "POST a5 1"
+      ],
+      "attack_authorship": "original Trust-Hub source, unchanged"
+    },
+    {
+      "host": "RS232",
+      "benchmark": "RS232-T2100",
+      "variant": "trojan",
+      "top": "uart",
+      "sources": {
+        "trusthub/netlists/RS232/RS232-T2100/tjin_patched_src/u_rec.v": "dad824d461ab800082ea296e82ca06d8202a68088e306e4f5160e6cee2934449",
+        "trusthub/netlists/RS232/RS232-T2100/tjin_patched_src/u_xmit.v": "8c0d4854444ffa3aa79bd8fa1b6a518ae52f0f9ec1715561c605d28eaaaf8499",
+        "trusthub/netlists/RS232/RS232-T2100/tjin_patched_src/uart.v": "6ba811c694f72eeb265d6187bf7c9ee7a693a48d3a0aa041c1ded3716d34da34",
+        "trusthub/netlists/RS232/RS232-T2100/tjin_patched_src/inc.h": "b3d58e7661cd1d05a62833833da471421d26b2f50b26699f875cda77a0b2cf96"
+      },
+      "mapped": "runs/provenance_v1/RS232-T2100/trojan/yosys.json",
+      "mapped_sha256": "66ed4d71161a60e5c0100c2e76042f30fd5291da4846814313458bcb506a086a",
+      "observations": [
+        "00 1",
+        "01 1",
+        "POST 01 0"
+      ],
+      "attack_authorship": "original Trust-Hub source, unchanged"
+    },
+    {
+      "host": "RS232",
+      "benchmark": "RS232-T2200",
+      "variant": "clean",
+      "top": "uart",
+      "sources": {
+        "trusthub/netlists/RS232/RS232-T2200/tjfree_patched_src/u_rec.v": "3b3b810ac5d041faa49c003ce73bff192f935b49ff4e1c389755e7b2e10816cc",
+        "trusthub/netlists/RS232/RS232-T2200/tjfree_patched_src/u_xmit.v": "8c0d4854444ffa3aa79bd8fa1b6a518ae52f0f9ec1715561c605d28eaaaf8499",
+        "trusthub/netlists/RS232/RS232-T2200/tjfree_patched_src/uart.v": "6ba811c694f72eeb265d6187bf7c9ee7a693a48d3a0aa041c1ded3716d34da34",
+        "trusthub/netlists/RS232/RS232-T2200/tjfree_patched_src/inc.h": "b3d58e7661cd1d05a62833833da471421d26b2f50b26699f875cda77a0b2cf96"
+      },
+      "mapped": "runs/provenance_v1/RS232-T2200/clean/yosys.json",
+      "mapped_sha256": "c114a7a0d4414620fb8e15f48812154dd60882a00f69819c1a4114ea2df6a68b",
+      "observations": [
+        "00 1",
+        "01 1"
+      ],
+      "attack_authorship": "original Trust-Hub source, unchanged"
+    },
+    {
+      "host": "RS232",
+      "benchmark": "RS232-T2200",
+      "variant": "trojan",
+      "top": "uart",
+      "sources": {
+        "trusthub/netlists/RS232/RS232-T2200/tjin_patched_src/u_rec.v": "8f1eb6c5736dda4402360c5ecd62551b458ca7b9c06fe5eff33a59deb28f8a71",
+        "trusthub/netlists/RS232/RS232-T2200/tjin_patched_src/u_xmit.v": "8c0d4854444ffa3aa79bd8fa1b6a518ae52f0f9ec1715561c605d28eaaaf8499",
+        "trusthub/netlists/RS232/RS232-T2200/tjin_patched_src/uart.v": "6ba811c694f72eeb265d6187bf7c9ee7a693a48d3a0aa041c1ded3716d34da34",
+        "trusthub/netlists/RS232/RS232-T2200/tjin_patched_src/inc.h": "b3d58e7661cd1d05a62833833da471421d26b2f50b26699f875cda77a0b2cf96"
+      },
+      "mapped": "runs/provenance_v1/RS232-T2200/trojan/yosys.json",
+      "mapped_sha256": "f7861bc86bb84a25df8d91dbea69bee91d6702f2db13bfed02a1b18fc6165bf7",
+      "observations": [
+        "00 0",
+        "00 0"
+      ],
+      "attack_authorship": "original Trust-Hub source, unchanged"
+    }
+  ]
+}

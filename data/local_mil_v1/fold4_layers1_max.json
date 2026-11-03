@@ -1,0 +1,517 @@
+{
+  "scope": "golden-free one-fold training memorization; no held-out evaluation",
+  "fold": 4,
+  "layers": 1,
+  "readout": "max",
+  "epochs": 80,
+  "seed": 20261103,
+  "records": 38,
+  "hosts": 12,
+  "semantic_manifest_sha256": "da6f722f9eb9b562829aa94bd7ec89dea3561ce1c4e875d086597025b1ff84b4",
+  "folds_sha256": "08f4071e4400ccb1327713aa5cbd08955202ebfe0f3dfcc2d3f03e1298cf82e7",
+  "initial": {
+    "pooled_auroc": 0.41517857142857145,
+    "equal_host_auroc": 0.4375,
+    "balanced_accuracy_at_0_5": 0.5,
+    "positive_range": [
+      0.6055103540420532,
+      0.6266782283782959
+    ],
+    "negative_range": [
+      0.6023802161216736,
+      0.6266782283782959
+    ]
+  },
+  "best_pooled_auroc": {
+    "value": 0.6666666666666666,
+    "epoch": 70
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.699643482764562,
+      "pooled_auroc": 0.4494047619047619,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5059523809523809,
+      "positive_range": [
+        0.455153226852417,
+        0.5550285577774048
+      ],
+      "negative_range": [
+        0.4297483265399933,
+        0.5550285577774048
+      ]
+    },
+    {
+      "epoch": 5,
+      "loss": 0.6800425002972285,
+      "pooled_auroc": 0.6011904761904762,
+      "equal_host_auroc": 0.5833333333333334,
+      "balanced_accuracy_at_0_5": 0.5059523809523809,
+      "positive_range": [
+        0.38787755370140076,
+        0.5415607690811157
+      ],
+      "negative_range": [
+        0.27837756276130676,
+        0.5415607690811157
+      ]
+    },
+    {
+      "epoch": 10,
+      "loss": 0.6699931025505066,
+      "pooled_auroc": 0.5029761904761905,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_range": [
+        0.22206474840641022,
+        0.48067596554756165
+      ],
+      "negative_range": [
+        0.06975757330656052,
+        0.48067596554756165
+      ]
+    },
+    {
+      "epoch": 15,
+      "loss": 0.6728622814019521,
+      "pooled_auroc": 0.6056547619047619,
+      "equal_host_auroc": 0.5625,
+      "balanced_accuracy_at_0_5": 0.494047619047619,
+      "positive_range": [
+        0.47444719076156616,
+        0.5013994574546814
+      ],
+      "negative_range": [
+        0.0847974643111229,
+        0.5013994574546814
+      ]
+    },
+    {
+      "epoch": 20,
+      "loss": 0.6658272594213486,
+      "pooled_auroc": 0.5744047619047619,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_range": [
+        0.4773201644420624,
+        0.4845291078090668
+      ],
+      "negative_range": [
+        0.027841029688715935,
+        0.4773201644420624
+      ]
+    },
+    {
+      "epoch": 25,
+      "loss": 0.6642154554526011,
+      "pooled_auroc": 0.6354166666666666,
+      "equal_host_auroc": 0.6041666666666666,
+      "balanced_accuracy_at_0_5": 0.5416666666666666,
+      "positive_range": [
+        0.5013701915740967,
+        0.5436695218086243
+      ],
+      "negative_range": [
+        0.020747961476445198,
+        0.526078462600708
+      ]
+    },
+    {
+      "epoch": 30,
+      "loss": 0.6596065337459246,
+      "pooled_auroc": 0.5684523809523809,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5416666666666666,
+      "positive_range": [
+        0.5032830834388733,
+        0.5492364168167114
+      ],
+      "negative_range": [
+        0.009674719534814358,
+        0.5079106092453003
+      ]
+    },
+    {
+      "epoch": 35,
+      "loss": 0.6551546876629194,
+      "pooled_auroc": 0.6354166666666666,
+      "equal_host_auroc": 0.6041666666666666,
+      "balanced_accuracy_at_0_5": 0.5625,
+      "positive_range": [
+        0.4749363958835602,
+        0.6799774169921875
+      ],
+      "negative_range": [
+        0.007664094213396311,
+        0.5746488571166992
+      ]
+    },
+    {
+      "epoch": 40,
+      "loss": 0.6669854794939359,
+      "pooled_auroc": 0.5744047619047619,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5416666666666666,
+      "positive_range": [
+        0.5129694938659668,
+        0.5761516094207764
+      ],
+      "negative_range": [
+        0.007311172783374786,
+        0.5129694938659668
+      ]
+    },
+    {
+      "epoch": 45,
+      "loss": 0.666073277592659,
+      "pooled_auroc": 0.6339285714285714,
+      "equal_host_auroc": 0.625,
+      "balanced_accuracy_at_0_5": 0.5535714285714286,
+      "positive_range": [
+        0.49312224984169006,
+        0.7163026928901672
+      ],
+      "negative_range": [
+        0.009521127678453922,
+        0.5530669093132019
+      ]
+    },
+    {
+      "epoch": 50,
+      "loss": 0.6864595711231232,
+      "pooled_auroc": 0.49107142857142855,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_range": [
+        0.4206271767616272,
+        0.48048776388168335
+      ],
+      "negative_range": [
+        0.004134146962314844,
+        0.48048776388168335
+      ]
+    },
+    {
+      "epoch": 55,
+      "loss": 0.6714794486761093,
+      "pooled_auroc": 0.5565476190476191,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5357142857142857,
+      "positive_range": [
+        0.48264336585998535,
+        0.6262717843055725
+      ],
+      "negative_range": [
+        0.004531295970082283,
+        0.48264917731285095
+      ]
+    },
+    {
+      "epoch": 60,
+      "loss": 0.69254403313001,
+      "pooled_auroc": 0.4494047619047619,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5059523809523809,
+      "positive_range": [
+        0.45988285541534424,
+        0.5043262839317322
+      ],
+      "negative_range": [
+        0.0017845050897449255,
+        0.5043262839317322
+      ]
+    },
+    {
+      "epoch": 65,
+      "loss": 0.6254905924821893,
+      "pooled_auroc": 0.6041666666666666,
+      "equal_host_auroc": 0.625,
+      "balanced_accuracy_at_0_5": 0.5535714285714286,
+      "positive_range": [
+        0.4864630699157715,
+        0.9470476508140564
+      ],
+      "negative_range": [
+        0.0022011769469827414,
+        0.8202852010726929
+      ]
+    },
+    {
+      "epoch": 70,
+      "loss": 0.6664804021517435,
+      "pooled_auroc": 0.6666666666666666,
+      "equal_host_auroc": 0.5833333333333334,
+      "balanced_accuracy_at_0_5": 0.5416666666666666,
+      "positive_range": [
+        0.5238240957260132,
+        0.5623931884765625
+      ],
+      "negative_range": [
+        0.003847813233733177,
+        0.523824155330658
+      ]
+    },
+    {
+      "epoch": 75,
+      "loss": 0.6497941749791304,
+      "pooled_auroc": 0.6071428571428571,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5416666666666666,
+      "positive_range": [
+        0.5031089782714844,
+        0.9667147397994995
+      ],
+      "negative_range": [
+        0.0017913064220920205,
+        0.5031089782714844
+      ]
+    },
+    {
+      "epoch": 80,
+      "loss": 0.6381585557634631,
+      "pooled_auroc": 0.6071428571428571,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5714285714285714,
+      "positive_range": [
+        0.49703553318977356,
+        0.9866948127746582
+      ],
+      "negative_range": [
+        0.0005661154864355922,
+        0.49703553318977356
+      ]
+    }
+  ],
+  "final_predictions": [
+    {
+      "key": "baseline_i2c_controller_benign",
+      "host": "i2c_controller",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "baseline_i2c_controller_clean",
+      "host": "i2c_controller",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "baseline_i2c_controller_trojan",
+      "host": "i2c_controller",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "four_projects_uart16550_benign",
+      "host": "uart16550",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "four_projects_uart16550_clean",
+      "host": "uart16550",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "four_projects_uart16550_suppress",
+      "host": "uart16550",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "four_projects_uart16550_toggle",
+      "host": "uart16550",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "four_projects_verilog-axis_benign",
+      "host": "verilog-axis",
+      "label": 0,
+      "probability": 0.0005661154864355922
+    },
+    {
+      "key": "four_projects_verilog-axis_clean",
+      "host": "verilog-axis",
+      "label": 0,
+      "probability": 0.0005859271041117609
+    },
+    {
+      "key": "four_projects_verilog-axis_suppress",
+      "host": "verilog-axis",
+      "label": 1,
+      "probability": 0.9390077590942383
+    },
+    {
+      "key": "four_projects_verilog-axis_toggle",
+      "host": "verilog-axis",
+      "label": 1,
+      "probability": 0.9866948127746582
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_benign",
+      "host": "tt_um_alu4_alonso59",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_clean",
+      "host": "tt_um_alu4_alonso59",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_trojan",
+      "host": "tt_um_alu4_alonso59",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_benign",
+      "host": "tt_um_andrewtron3000",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_clean",
+      "host": "tt_um_andrewtron3000",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_trojan",
+      "host": "tt_um_andrewtron3000",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_cfib_demo_benign",
+      "host": "tt_um_cfib_demo",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_cfib_demo_clean",
+      "host": "tt_um_cfib_demo",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_cfib_demo_trojan",
+      "host": "tt_um_cfib_demo",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_dgkaminski_benign",
+      "host": "tt_um_dgkaminski",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_dgkaminski_clean",
+      "host": "tt_um_dgkaminski",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_dgkaminski_trojan",
+      "host": "tt_um_dgkaminski",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_benign",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_clean",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_trojan",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_benign",
+      "host": "tt_um_gcd_stephan",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_clean",
+      "host": "tt_um_gcd_stephan",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_trojan",
+      "host": "tt_um_gcd_stephan",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_benign",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_clean",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_trojan",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_benign",
+      "host": "tt_um_rejunity_decoder",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_clean",
+      "host": "tt_um_rejunity_decoder",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_trojan",
+      "host": "tt_um_rejunity_decoder",
+      "label": 1,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_benign",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_clean",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 0,
+      "probability": 0.49703553318977356
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_trojan",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 1,
+      "probability": 0.49703553318977356
+    }
+  ],
+  "elapsed_seconds": 93.82353640001384
+}

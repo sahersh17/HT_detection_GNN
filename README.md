@@ -37,6 +37,14 @@ The new AES graphs are much larger than the earlier graphs, at roughly 240,000 n
 
 ## Source-traced graph rebuild
 
+The repaired `semantic_v1` view preserves constant bits, memory initialization,
+memory-state bindings, pin positions and initialization parameters. The recorded
+195-circuit cohort has been rebuilt and independently checked. See the
+[repair report and commands](experiments/semantic_graph_v1/README.md) and
+[`data/semantic_graph_v1/manifest.json`](data/semantic_graph_v1/manifest.json).
+Use `--representation semantic_v1` with the provenance builder for new exports.
+This 127-feature view requires newly initialized model input layers.
+
 The additional B15, s38584, MC8051, BasicRSA and duplicate PIC downloads have specialized processing paths. See [new Trust-Hub data engineering](docs/NEW_TRUSTHUB_DATA.md) for formats, commands, validation and exclusions.
 
 The separate `provenance_v1` graph version can be rebuilt on Windows with the pinned YoWASP Yosys package:

@@ -1,0 +1,34 @@
+{
+  "status": "frozen_before_new_scoring",
+  "models": [
+    "GNNOnly",
+    "CrossAttentionFusion"
+  ],
+  "architecture": "pipeline/models.py defaults",
+  "epochs": 5,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "threshold": 0.5,
+  "baseline_training": "six verified project triplets",
+  "augmented_training": "same six plus usable native-edit triplets, four development projects with surviving benign arithmetic rewrites, independently authored verified RS232-T2100 and RS232-T2200",
+  "heldout": "all ten existing PIC16F84 and memctrl diagnostic circuits, zero host overlap",
+  "report": "pooled and equal-host AUROC, balanced accuracy, paired host bootstrap conditional on predictions",
+  "admission": "execute as explicitly requested exploratory augmentation even if shortcut checks fail; record failures with results",
+  "reserved": [
+    "serv",
+    "wb2axip"
+  ],
+  "corpus_counts": {
+    "baseline": 18,
+    "native": 147,
+    "four_projects": 16,
+    "external_authored": 4,
+    "test": 10
+  },
+  "input_transform": "log1p on four nonnegative graph numeric channels, unchanged gate vocabulary; CodeBERT masked mean, pinned revision",
+  "external_authorship_scope": "Two original benchmark attacks from the Trust-Hub RS232 source collection. Distinct from this project's mutations, one shared host and collection. Individual authorship independence between the two is not established.",
+  "additional_control": "baseline_matched_updates repeats only baseline hosts to equal augmented optimizer steps, same seed and optimizer; added before neural model scoring"
+}

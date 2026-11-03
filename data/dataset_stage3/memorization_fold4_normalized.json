@@ -1,0 +1,804 @@
+{
+  "purpose": "single-fold training memorization only; no validation or generalization claim",
+  "fold": 4,
+  "seed": 20261103,
+  "max_epochs": 80,
+  "completed_epochs": 80,
+  "folds_sha256": "08f4071e4400ccb1327713aa5cbd08955202ebfe0f3dfcc2d3f03e1298cf82e7",
+  "semantic_manifest_sha256": "da6f722f9eb9b562829aa94bd7ec89dea3561ce1c4e875d086597025b1ff84b4",
+  "architecture": "127->64->64 GCN; original-cell prefix sum plus max pooling; optional pooled LayerNorm; 64-unit head; no dropout or weight decay",
+  "normalized_pool": true,
+  "records": 38,
+  "hosts": 12,
+  "positive": 14,
+  "total_nodes": 283594,
+  "elapsed_seconds": 72.13487449998502,
+  "snapshots": {
+    "0": {
+      "pooled_auroc": 0.4806547619047619,
+      "equal_host_auroc": 0.3125,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_probability_range": [
+        0.5444172024726868,
+        0.5799616575241089
+      ],
+      "negative_probability_range": [
+        0.544417142868042,
+        0.580989420413971
+      ]
+    },
+    "1": {
+      "pooled_auroc": 0.5639880952380952,
+      "equal_host_auroc": 0.6458333333333334,
+      "balanced_accuracy_at_0_5": 0.5297619047619048,
+      "positive_probability_range": [
+        0.46352896094322205,
+        0.535725474357605
+      ],
+      "negative_probability_range": [
+        0.4635326564311981,
+        0.5357253551483154
+      ]
+    },
+    "5": {
+      "pooled_auroc": 0.6190476190476191,
+      "equal_host_auroc": 0.625,
+      "balanced_accuracy_at_0_5": 0.494047619047619,
+      "positive_probability_range": [
+        0.4523109793663025,
+        0.5078459978103638
+      ],
+      "negative_probability_range": [
+        0.4358707368373871,
+        0.5078458786010742
+      ]
+    },
+    "10": {
+      "pooled_auroc": 0.5997023809523809,
+      "equal_host_auroc": 0.5625,
+      "balanced_accuracy_at_0_5": 0.5625,
+      "positive_probability_range": [
+        0.5204790830612183,
+        0.6358122229576111
+      ],
+      "negative_probability_range": [
+        0.3609409034252167,
+        0.6215198636054993
+      ]
+    },
+    "15": {
+      "pooled_auroc": 0.6666666666666666,
+      "equal_host_auroc": 0.6666666666666666,
+      "balanced_accuracy_at_0_5": 0.5952380952380952,
+      "positive_probability_range": [
+        0.37293657660484314,
+        0.6829827427864075
+      ],
+      "negative_probability_range": [
+        0.1595044881105423,
+        0.5525927543640137
+      ]
+    },
+    "20": {
+      "pooled_auroc": 0.6651785714285714,
+      "equal_host_auroc": 0.6458333333333334,
+      "balanced_accuracy_at_0_5": 0.5476190476190477,
+      "positive_probability_range": [
+        0.49330267310142517,
+        0.8506699800491333
+      ],
+      "negative_probability_range": [
+        0.14103394746780396,
+        0.6795377135276794
+      ]
+    },
+    "25": {
+      "pooled_auroc": 0.6770833333333334,
+      "equal_host_auroc": 0.6041666666666666,
+      "balanced_accuracy_at_0_5": 0.5625,
+      "positive_probability_range": [
+        0.5346360206604004,
+        0.8154542446136475
+      ],
+      "negative_probability_range": [
+        0.15334175527095795,
+        0.7631719708442688
+      ]
+    },
+    "30": {
+      "pooled_auroc": 0.7008928571428571,
+      "equal_host_auroc": 0.6458333333333334,
+      "balanced_accuracy_at_0_5": 0.6339285714285714,
+      "positive_probability_range": [
+        0.43724483251571655,
+        0.7863666415214539
+      ],
+      "negative_probability_range": [
+        0.06833148002624512,
+        0.6063347458839417
+      ]
+    },
+    "35": {
+      "pooled_auroc": 0.7366071428571429,
+      "equal_host_auroc": 0.6875,
+      "balanced_accuracy_at_0_5": 0.6607142857142857,
+      "positive_probability_range": [
+        0.367564857006073,
+        0.8930287957191467
+      ],
+      "negative_probability_range": [
+        0.03150025010108948,
+        0.5788630843162537
+      ]
+    },
+    "40": {
+      "pooled_auroc": 0.6860119047619048,
+      "equal_host_auroc": 0.6875,
+      "balanced_accuracy_at_0_5": 0.5922619047619048,
+      "positive_probability_range": [
+        0.46424001455307007,
+        0.8980445265769958
+      ],
+      "negative_probability_range": [
+        0.033038537949323654,
+        0.6846159100532532
+      ]
+    },
+    "45": {
+      "pooled_auroc": 0.6875,
+      "equal_host_auroc": 0.625,
+      "balanced_accuracy_at_0_5": 0.6398809523809523,
+      "positive_probability_range": [
+        0.4109988212585449,
+        0.9865368008613586
+      ],
+      "negative_probability_range": [
+        0.005671701859682798,
+        0.7702155709266663
+      ]
+    },
+    "50": {
+      "pooled_auroc": 0.59375,
+      "equal_host_auroc": 0.5625,
+      "balanced_accuracy_at_0_5": 0.5386904761904762,
+      "positive_probability_range": [
+        0.1564469337463379,
+        0.9911114573478699
+      ],
+      "negative_probability_range": [
+        0.0016683914000168443,
+        0.5615097284317017
+      ]
+    },
+    "55": {
+      "pooled_auroc": 0.6845238095238095,
+      "equal_host_auroc": 0.6666666666666666,
+      "balanced_accuracy_at_0_5": 0.6160714285714286,
+      "positive_probability_range": [
+        0.4011423885822296,
+        0.9756895303726196
+      ],
+      "negative_probability_range": [
+        0.006555269006639719,
+        0.5381904244422913
+      ]
+    },
+    "60": {
+      "pooled_auroc": 0.7366071428571429,
+      "equal_host_auroc": 0.6875,
+      "balanced_accuracy_at_0_5": 0.6398809523809523,
+      "positive_probability_range": [
+        0.41091495752334595,
+        0.9899959564208984
+      ],
+      "negative_probability_range": [
+        0.001090937526896596,
+        0.594490647315979
+      ]
+    },
+    "65": {
+      "pooled_auroc": 0.7425595238095238,
+      "equal_host_auroc": 0.6875,
+      "balanced_accuracy_at_0_5": 0.6428571428571428,
+      "positive_probability_range": [
+        0.4761846959590912,
+        0.9990260601043701
+      ],
+      "negative_probability_range": [
+        0.0008055469370447099,
+        0.5315777063369751
+      ]
+    },
+    "70": {
+      "pooled_auroc": 0.7648809523809523,
+      "equal_host_auroc": 0.7083333333333334,
+      "balanced_accuracy_at_0_5": 0.6785714285714286,
+      "positive_probability_range": [
+        0.4285741448402405,
+        0.9991356730461121
+      ],
+      "negative_probability_range": [
+        7.542544335592538e-05,
+        0.4940156638622284
+      ]
+    },
+    "75": {
+      "pooled_auroc": 0.7619047619047619,
+      "equal_host_auroc": 0.75,
+      "balanced_accuracy_at_0_5": 0.625,
+      "positive_probability_range": [
+        0.5129421949386597,
+        0.9996008276939392
+      ],
+      "negative_probability_range": [
+        0.00011308449757052585,
+        0.728340744972229
+      ]
+    },
+    "80": {
+      "pooled_auroc": 0.7574404761904762,
+      "equal_host_auroc": 0.6875,
+      "balanced_accuracy_at_0_5": 0.6428571428571428,
+      "positive_probability_range": [
+        0.48195400834083557,
+        0.9848456382751465
+      ],
+      "negative_probability_range": [
+        5.7884342822944745e-05,
+        0.5781251788139343
+      ]
+    }
+  },
+  "curve": [
+    {
+      "epoch": 1,
+      "sampled_loss": 0.6955552597840627
+    },
+    {
+      "epoch": 2,
+      "sampled_loss": 0.6916737705469131
+    },
+    {
+      "epoch": 3,
+      "sampled_loss": 0.6926921407381693
+    },
+    {
+      "epoch": 4,
+      "sampled_loss": 0.6918848554293314
+    },
+    {
+      "epoch": 5,
+      "sampled_loss": 0.6909459133942922
+    },
+    {
+      "epoch": 6,
+      "sampled_loss": 0.6877572983503342
+    },
+    {
+      "epoch": 7,
+      "sampled_loss": 0.6853939294815063
+    },
+    {
+      "epoch": 8,
+      "sampled_loss": 0.6790821999311447
+    },
+    {
+      "epoch": 9,
+      "sampled_loss": 0.6818910737832388
+    },
+    {
+      "epoch": 10,
+      "sampled_loss": 0.6867417097091675
+    },
+    {
+      "epoch": 11,
+      "sampled_loss": 0.6710852334896723
+    },
+    {
+      "epoch": 12,
+      "sampled_loss": 0.6679142018159231
+    },
+    {
+      "epoch": 13,
+      "sampled_loss": 0.6670950924356779
+    },
+    {
+      "epoch": 14,
+      "sampled_loss": 0.6733993167678515
+    },
+    {
+      "epoch": 15,
+      "sampled_loss": 0.6550133749842644
+    },
+    {
+      "epoch": 16,
+      "sampled_loss": 0.6518516937891642
+    },
+    {
+      "epoch": 17,
+      "sampled_loss": 0.6659599021077156
+    },
+    {
+      "epoch": 18,
+      "sampled_loss": 0.6459510996937752
+    },
+    {
+      "epoch": 19,
+      "sampled_loss": 0.6340776135524114
+    },
+    {
+      "epoch": 20,
+      "sampled_loss": 0.6555805479486784
+    },
+    {
+      "epoch": 21,
+      "sampled_loss": 0.6465986346205076
+    },
+    {
+      "epoch": 22,
+      "sampled_loss": 0.6642438520987829
+    },
+    {
+      "epoch": 23,
+      "sampled_loss": 0.6466557284196218
+    },
+    {
+      "epoch": 24,
+      "sampled_loss": 0.6424844612677892
+    },
+    {
+      "epoch": 25,
+      "sampled_loss": 0.631774827837944
+    },
+    {
+      "epoch": 26,
+      "sampled_loss": 0.6477641674379507
+    },
+    {
+      "epoch": 27,
+      "sampled_loss": 0.6398252670963606
+    },
+    {
+      "epoch": 28,
+      "sampled_loss": 0.6443923736612002
+    },
+    {
+      "epoch": 29,
+      "sampled_loss": 0.6345260155697664
+    },
+    {
+      "epoch": 30,
+      "sampled_loss": 0.6230308935046196
+    },
+    {
+      "epoch": 31,
+      "sampled_loss": 0.607414880146583
+    },
+    {
+      "epoch": 32,
+      "sampled_loss": 0.6591149965922037
+    },
+    {
+      "epoch": 33,
+      "sampled_loss": 0.6469321710367998
+    },
+    {
+      "epoch": 34,
+      "sampled_loss": 0.6567582649489244
+    },
+    {
+      "epoch": 35,
+      "sampled_loss": 0.6373180653899908
+    },
+    {
+      "epoch": 36,
+      "sampled_loss": 0.6027759866168102
+    },
+    {
+      "epoch": 37,
+      "sampled_loss": 0.6003710394725204
+    },
+    {
+      "epoch": 38,
+      "sampled_loss": 0.650057869652907
+    },
+    {
+      "epoch": 39,
+      "sampled_loss": 0.6149356067180634
+    },
+    {
+      "epoch": 40,
+      "sampled_loss": 0.6194772658248743
+    },
+    {
+      "epoch": 41,
+      "sampled_loss": 0.593818341071407
+    },
+    {
+      "epoch": 42,
+      "sampled_loss": 0.6475661968191465
+    },
+    {
+      "epoch": 43,
+      "sampled_loss": 0.5972475328793129
+    },
+    {
+      "epoch": 44,
+      "sampled_loss": 0.6337840184569359
+    },
+    {
+      "epoch": 45,
+      "sampled_loss": 0.6306234477087855
+    },
+    {
+      "epoch": 46,
+      "sampled_loss": 0.6044087040548524
+    },
+    {
+      "epoch": 47,
+      "sampled_loss": 0.6681850526171426
+    },
+    {
+      "epoch": 48,
+      "sampled_loss": 0.6176556662345926
+    },
+    {
+      "epoch": 49,
+      "sampled_loss": 0.6138597460618863
+    },
+    {
+      "epoch": 50,
+      "sampled_loss": 0.7198608765999476
+    },
+    {
+      "epoch": 51,
+      "sampled_loss": 0.6163075193762779
+    },
+    {
+      "epoch": 52,
+      "sampled_loss": 0.5759949649994572
+    },
+    {
+      "epoch": 53,
+      "sampled_loss": 0.6207337357724706
+    },
+    {
+      "epoch": 54,
+      "sampled_loss": 0.681442936261495
+    },
+    {
+      "epoch": 55,
+      "sampled_loss": 0.6862099866072336
+    },
+    {
+      "epoch": 56,
+      "sampled_loss": 0.6048740185797215
+    },
+    {
+      "epoch": 57,
+      "sampled_loss": 0.6349158252899846
+    },
+    {
+      "epoch": 58,
+      "sampled_loss": 0.6154012515520056
+    },
+    {
+      "epoch": 59,
+      "sampled_loss": 0.6171284007529417
+    },
+    {
+      "epoch": 60,
+      "sampled_loss": 0.5898788999766111
+    },
+    {
+      "epoch": 61,
+      "sampled_loss": 0.61522395350039
+    },
+    {
+      "epoch": 62,
+      "sampled_loss": 0.6146760278691848
+    },
+    {
+      "epoch": 63,
+      "sampled_loss": 0.6152595421299338
+    },
+    {
+      "epoch": 64,
+      "sampled_loss": 0.5931919445283711
+    },
+    {
+      "epoch": 65,
+      "sampled_loss": 0.5797458797169384
+    },
+    {
+      "epoch": 66,
+      "sampled_loss": 0.5910659390113627
+    },
+    {
+      "epoch": 67,
+      "sampled_loss": 0.6296022733052572
+    },
+    {
+      "epoch": 68,
+      "sampled_loss": 0.609157123719342
+    },
+    {
+      "epoch": 69,
+      "sampled_loss": 0.5926958521207174
+    },
+    {
+      "epoch": 70,
+      "sampled_loss": 0.5722695092845242
+    },
+    {
+      "epoch": 71,
+      "sampled_loss": 0.5967203957649568
+    },
+    {
+      "epoch": 72,
+      "sampled_loss": 0.5991962590875725
+    },
+    {
+      "epoch": 73,
+      "sampled_loss": 0.5604389423970133
+    },
+    {
+      "epoch": 74,
+      "sampled_loss": 0.6536393775216615
+    },
+    {
+      "epoch": 75,
+      "sampled_loss": 0.6069245673716068
+    },
+    {
+      "epoch": 76,
+      "sampled_loss": 0.5975342558667762
+    },
+    {
+      "epoch": 77,
+      "sampled_loss": 0.5947744538037417
+    },
+    {
+      "epoch": 78,
+      "sampled_loss": 0.5795130897313356
+    },
+    {
+      "epoch": 79,
+      "sampled_loss": 0.6557892343650261
+    },
+    {
+      "epoch": 80,
+      "sampled_loss": 0.6136390455067158
+    }
+  ],
+  "final_predictions": [
+    {
+      "key": "baseline_i2c_controller_benign",
+      "host": "i2c_controller",
+      "label": 0,
+      "probability": 0.5037426948547363
+    },
+    {
+      "key": "baseline_i2c_controller_clean",
+      "host": "i2c_controller",
+      "label": 0,
+      "probability": 0.5036543607711792
+    },
+    {
+      "key": "baseline_i2c_controller_trojan",
+      "host": "i2c_controller",
+      "label": 1,
+      "probability": 0.5066606402397156
+    },
+    {
+      "key": "four_projects_uart16550_benign",
+      "host": "uart16550",
+      "label": 0,
+      "probability": 0.0013424346689134836
+    },
+    {
+      "key": "four_projects_uart16550_clean",
+      "host": "uart16550",
+      "label": 0,
+      "probability": 0.3099890947341919
+    },
+    {
+      "key": "four_projects_uart16550_suppress",
+      "host": "uart16550",
+      "label": 1,
+      "probability": 0.6944737434387207
+    },
+    {
+      "key": "four_projects_uart16550_toggle",
+      "host": "uart16550",
+      "label": 1,
+      "probability": 0.5786007642745972
+    },
+    {
+      "key": "four_projects_verilog-axis_benign",
+      "host": "verilog-axis",
+      "label": 0,
+      "probability": 5.7884342822944745e-05
+    },
+    {
+      "key": "four_projects_verilog-axis_clean",
+      "host": "verilog-axis",
+      "label": 0,
+      "probability": 0.00048361276276409626
+    },
+    {
+      "key": "four_projects_verilog-axis_suppress",
+      "host": "verilog-axis",
+      "label": 1,
+      "probability": 0.9848456382751465
+    },
+    {
+      "key": "four_projects_verilog-axis_toggle",
+      "host": "verilog-axis",
+      "label": 1,
+      "probability": 0.877683162689209
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_benign",
+      "host": "tt_um_alu4_alonso59",
+      "label": 0,
+      "probability": 0.27001240849494934
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_clean",
+      "host": "tt_um_alu4_alonso59",
+      "label": 0,
+      "probability": 0.27001240849494934
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_trojan",
+      "host": "tt_um_alu4_alonso59",
+      "label": 1,
+      "probability": 0.5381724238395691
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_benign",
+      "host": "tt_um_andrewtron3000",
+      "label": 0,
+      "probability": 0.5111746191978455
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_clean",
+      "host": "tt_um_andrewtron3000",
+      "label": 0,
+      "probability": 0.5111746788024902
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_trojan",
+      "host": "tt_um_andrewtron3000",
+      "label": 1,
+      "probability": 0.5111632347106934
+    },
+    {
+      "key": "native_tt_um_cfib_demo_benign",
+      "host": "tt_um_cfib_demo",
+      "label": 0,
+      "probability": 0.48722466826438904
+    },
+    {
+      "key": "native_tt_um_cfib_demo_clean",
+      "host": "tt_um_cfib_demo",
+      "label": 0,
+      "probability": 0.48732608556747437
+    },
+    {
+      "key": "native_tt_um_cfib_demo_trojan",
+      "host": "tt_um_cfib_demo",
+      "label": 1,
+      "probability": 0.4872090518474579
+    },
+    {
+      "key": "native_tt_um_dgkaminski_benign",
+      "host": "tt_um_dgkaminski",
+      "label": 0,
+      "probability": 0.5781251788139343
+    },
+    {
+      "key": "native_tt_um_dgkaminski_clean",
+      "host": "tt_um_dgkaminski",
+      "label": 0,
+      "probability": 0.5751143097877502
+    },
+    {
+      "key": "native_tt_um_dgkaminski_trojan",
+      "host": "tt_um_dgkaminski",
+      "label": 1,
+      "probability": 0.5864317417144775
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_benign",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 0,
+      "probability": 0.5088584423065186
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_clean",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 0,
+      "probability": 0.5088583827018738
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_trojan",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 1,
+      "probability": 0.5089594125747681
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_benign",
+      "host": "tt_um_gcd_stephan",
+      "label": 0,
+      "probability": 0.5104477405548096
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_clean",
+      "host": "tt_um_gcd_stephan",
+      "label": 0,
+      "probability": 0.5106120109558105
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_trojan",
+      "host": "tt_um_gcd_stephan",
+      "label": 1,
+      "probability": 0.5105836987495422
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_benign",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 0,
+      "probability": 0.4819878041744232
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_clean",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 0,
+      "probability": 0.48325175046920776
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_trojan",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 1,
+      "probability": 0.48195400834083557
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_benign",
+      "host": "tt_um_rejunity_decoder",
+      "label": 0,
+      "probability": 0.49593690037727356
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_clean",
+      "host": "tt_um_rejunity_decoder",
+      "label": 0,
+      "probability": 0.49593690037727356
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_trojan",
+      "host": "tt_um_rejunity_decoder",
+      "label": 1,
+      "probability": 0.495937317609787
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_benign",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 0,
+      "probability": 0.5232402086257935
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_clean",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 0,
+      "probability": 0.522545576095581
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_trojan",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 1,
+      "probability": 0.5232402086257935
+    }
+  ]
+}

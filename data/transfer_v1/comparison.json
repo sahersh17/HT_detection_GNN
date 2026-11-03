@@ -1,0 +1,6518 @@
+{
+  "new_projects": {
+    "six_projects": {
+      "hosts": {
+        "core_usb_uart": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sha1": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "uart16550": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "verilog-axis": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 1.0
+        }
+      },
+      "host_auc": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "by_host": {
+          "core_usb_uart": 1.0,
+          "sha1": 1.0,
+          "uart16550": 1.0,
+          "verilog-axis": 1.0
+        }
+      },
+      "pooled_auc": 0.6875,
+      "predictions": [
+        [
+          "verilog-axis",
+          "clean",
+          0.046138692647218704
+        ],
+        [
+          "verilog-axis",
+          "benign",
+          0.046138692647218704
+        ],
+        [
+          "verilog-axis",
+          "toggle",
+          0.8369467258453369
+        ],
+        [
+          "verilog-axis",
+          "suppress",
+          0.831288754940033
+        ],
+        [
+          "sha1",
+          "clean",
+          0.9993089437484741
+        ],
+        [
+          "sha1",
+          "benign",
+          0.9993089437484741
+        ],
+        [
+          "sha1",
+          "toggle",
+          0.999332845211029
+        ],
+        [
+          "sha1",
+          "suppress",
+          0.9993917942047119
+        ],
+        [
+          "uart16550",
+          "clean",
+          0.0347866527736187
+        ],
+        [
+          "uart16550",
+          "benign",
+          0.0347866527736187
+        ],
+        [
+          "uart16550",
+          "toggle",
+          0.21321025490760803
+        ],
+        [
+          "uart16550",
+          "suppress",
+          0.1822025328874588
+        ],
+        [
+          "core_usb_uart",
+          "clean",
+          0.9663649201393127
+        ],
+        [
+          "core_usb_uart",
+          "benign",
+          0.9663649201393127
+        ],
+        [
+          "core_usb_uart",
+          "toggle",
+          0.9967355132102966
+        ],
+        [
+          "core_usb_uart",
+          "suppress",
+          0.9951153993606567
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "core_usb_uart": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sha1": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "uart16550": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "verilog-axis": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 1.0
+        }
+      },
+      "host_auc": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "by_host": {
+          "core_usb_uart": 1.0,
+          "sha1": 1.0,
+          "uart16550": 1.0,
+          "verilog-axis": 1.0
+        }
+      },
+      "pooled_auc": 0.6875,
+      "predictions": [
+        [
+          "verilog-axis",
+          "clean",
+          0.4715479016304016
+        ],
+        [
+          "verilog-axis",
+          "benign",
+          0.4715479016304016
+        ],
+        [
+          "verilog-axis",
+          "toggle",
+          0.6869677305221558
+        ],
+        [
+          "verilog-axis",
+          "suppress",
+          0.6195048689842224
+        ],
+        [
+          "sha1",
+          "clean",
+          0.6350876092910767
+        ],
+        [
+          "sha1",
+          "benign",
+          0.6350876092910767
+        ],
+        [
+          "sha1",
+          "toggle",
+          0.6392344832420349
+        ],
+        [
+          "sha1",
+          "suppress",
+          0.6995216012001038
+        ],
+        [
+          "uart16550",
+          "clean",
+          0.38289904594421387
+        ],
+        [
+          "uart16550",
+          "benign",
+          0.38289904594421387
+        ],
+        [
+          "uart16550",
+          "toggle",
+          0.46767088770866394
+        ],
+        [
+          "uart16550",
+          "suppress",
+          0.4351200759410858
+        ],
+        [
+          "core_usb_uart",
+          "clean",
+          0.23058441281318665
+        ],
+        [
+          "core_usb_uart",
+          "benign",
+          0.23058441281318665
+        ],
+        [
+          "core_usb_uart",
+          "toggle",
+          0.3848896026611328
+        ],
+        [
+          "core_usb_uart",
+          "suppress",
+          0.3631308674812317
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "by_host": {
+        "core_usb_uart": 0.0,
+        "sha1": 0.0,
+        "uart16550": 0.0,
+        "verilog-axis": 0.0
+      }
+    },
+    "plus_four_projects": {
+      "hosts": {
+        "core_usb_uart": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 1.0
+        },
+        "sha1": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "uart16550": {
+          "auroc": 1.0,
+          "recall": 0.5,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "verilog-axis": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 1.0
+        }
+      },
+      "host_auc": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "by_host": {
+          "core_usb_uart": 1.0,
+          "sha1": 1.0,
+          "uart16550": 1.0,
+          "verilog-axis": 1.0
+        }
+      },
+      "pooled_auc": 0.8125,
+      "predictions": [
+        [
+          "core_usb_uart",
+          "clean",
+          0.2864784598350525
+        ],
+        [
+          "core_usb_uart",
+          "benign",
+          0.2864784598350525
+        ],
+        [
+          "core_usb_uart",
+          "toggle",
+          0.5572157502174377
+        ],
+        [
+          "core_usb_uart",
+          "suppress",
+          0.5106943845748901
+        ],
+        [
+          "sha1",
+          "clean",
+          0.8223590850830078
+        ],
+        [
+          "sha1",
+          "benign",
+          0.8223590850830078
+        ],
+        [
+          "sha1",
+          "toggle",
+          0.8268418312072754
+        ],
+        [
+          "sha1",
+          "suppress",
+          0.8660968542098999
+        ],
+        [
+          "uart16550",
+          "clean",
+          0.36658743023872375
+        ],
+        [
+          "uart16550",
+          "benign",
+          0.36658743023872375
+        ],
+        [
+          "uart16550",
+          "toggle",
+          0.5177139639854431
+        ],
+        [
+          "uart16550",
+          "suppress",
+          0.47982707619667053
+        ],
+        [
+          "verilog-axis",
+          "clean",
+          0.4839276969432831
+        ],
+        [
+          "verilog-axis",
+          "benign",
+          0.4839276969432831
+        ],
+        [
+          "verilog-axis",
+          "toggle",
+          0.8533523678779602
+        ],
+        [
+          "verilog-axis",
+          "suppress",
+          0.7555480003356934
+        ]
+      ]
+    },
+    "four_project_delta": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "by_host": {
+        "core_usb_uart": 0.0,
+        "sha1": 0.0,
+        "uart16550": 0.0,
+        "verilog-axis": 0.0
+      }
+    }
+  },
+  "lineage_exclusions": [],
+  "new_project_size_control": {
+    "core_usb_uart": 1.0,
+    "sha1": 1.0,
+    "uart16550": 1.0,
+    "verilog-axis": 1.0
+  },
+  "trusthub_diagnostic": {
+    "six_projects": {
+      "hosts": {
+        "PIC16F84": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "memctrl": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "by_host": {
+          "PIC16F84": 1.0,
+          "memctrl": 0.0
+        }
+      },
+      "pooled_auc": 0.8,
+      "predictions": [
+        [
+          "memctrl",
+          "clean",
+          0.5881847143173218
+        ],
+        [
+          "memctrl",
+          "trojan",
+          0.5880606174468994
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.1060016006231308
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.1286027729511261
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.1060016006231308
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.3775346279144287
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.1060016006231308
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.13319072127342224
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.1060016006231308
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.13449455797672272
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "PIC16F84": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "memctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "by_host": {
+          "PIC16F84": 1.0,
+          "memctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.84,
+      "predictions": [
+        [
+          "memctrl",
+          "clean",
+          0.5827988386154175
+        ],
+        [
+          "memctrl",
+          "trojan",
+          0.5833021998405457
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.4597954750061035
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.46654826402664185
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.4597954750061035
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.4673130512237549
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.4597954750061035
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.4700304865837097
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.4597954750061035
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.47155582904815674
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": 0.5,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "by_host": {
+        "PIC16F84": 0.0,
+        "memctrl": 1.0
+      }
+    },
+    "plus_four_projects": {
+      "hosts": {
+        "PIC16F84": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "memctrl": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "by_host": {
+          "PIC16F84": 1.0,
+          "memctrl": 0.0
+        }
+      },
+      "pooled_auc": 0.8,
+      "predictions": [
+        [
+          "memctrl",
+          "clean",
+          0.5298441052436829
+        ],
+        [
+          "memctrl",
+          "trojan",
+          0.5298144817352295
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.4768068790435791
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.48692819476127625
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.4768068790435791
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.48912695050239563
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.4768068790435791
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.489249587059021
+        ],
+        [
+          "PIC16F84",
+          "clean",
+          0.4768068790435791
+        ],
+        [
+          "PIC16F84",
+          "trojan",
+          0.49108442664146423
+        ]
+      ]
+    },
+    "four_project_delta": {
+      "mean": -0.5,
+      "ci95": [
+        -1.0,
+        0.0
+      ],
+      "by_host": {
+        "PIC16F84": 0.0,
+        "memctrl": -1.0
+      }
+    }
+  },
+  "same_engine_unseen_host": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 0.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sram_ctrl": {
+          "auroc": 0.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.5277777777777778,
+        "ci95": [
+          0.3055555555555556,
+          0.75
+        ],
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.75,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 0.0,
+          "sram_ctrl": 0.0
+        }
+      },
+      "pooled_auc": 0.595679012345679,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.6000677943229675
+        ],
+        [
+          "alu",
+          "benign",
+          0.3965330719947815
+        ],
+        [
+          "alu",
+          "trojan",
+          0.6000677347183228
+        ],
+        [
+          "crc32",
+          "clean",
+          0.0029330698307603598
+        ],
+        [
+          "crc32",
+          "benign",
+          0.7921178936958313
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.7921178936958313
+        ],
+        [
+          "fifo",
+          "clean",
+          0.6055973768234253
+        ],
+        [
+          "fifo",
+          "benign",
+          0.5456368327140808
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.6055973172187805
+        ],
+        [
+          "fir",
+          "clean",
+          0.265002578496933
+        ],
+        [
+          "fir",
+          "benign",
+          0.5707634687423706
+        ],
+        [
+          "fir",
+          "trojan",
+          0.5630661845207214
+        ],
+        [
+          "i2c",
+          "clean",
+          0.8185096979141235
+        ],
+        [
+          "i2c",
+          "benign",
+          0.8492593169212341
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.8365155458450317
+        ],
+        [
+          "mac",
+          "clean",
+          0.6034923195838928
+        ],
+        [
+          "mac",
+          "benign",
+          0.7186265587806702
+        ],
+        [
+          "mac",
+          "trojan",
+          0.7246631383895874
+        ],
+        [
+          "pwm",
+          "clean",
+          0.5946543216705322
+        ],
+        [
+          "pwm",
+          "benign",
+          0.5757178068161011
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.5955010056495667
+        ],
+        [
+          "spi",
+          "clean",
+          0.4713795781135559
+        ],
+        [
+          "spi",
+          "benign",
+          0.4894837737083435
+        ],
+        [
+          "spi",
+          "trojan",
+          0.4255831837654114
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.22059063613414764
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.22301265597343445
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.18799427151679993
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fifo": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "i2c": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 1.0
+        },
+        "spi": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sram_ctrl": {
+          "auroc": 0.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.5833333333333334,
+        "ci95": [
+          0.3333333333333333,
+          0.8055555555555556
+        ],
+        "by_host": {
+          "alu": 0.75,
+          "crc32": 0.75,
+          "fifo": 0.75,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 0.0,
+          "sram_ctrl": 0.0
+        }
+      },
+      "pooled_auc": 0.5833333333333334,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.5430722832679749
+        ],
+        [
+          "alu",
+          "benign",
+          0.48693782091140747
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5430722832679749
+        ],
+        [
+          "crc32",
+          "clean",
+          0.39533933997154236
+        ],
+        [
+          "crc32",
+          "benign",
+          0.6264384388923645
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.6264384388923645
+        ],
+        [
+          "fifo",
+          "clean",
+          0.5195755958557129
+        ],
+        [
+          "fifo",
+          "benign",
+          0.4943302869796753
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.5195755958557129
+        ],
+        [
+          "fir",
+          "clean",
+          0.1928594410419464
+        ],
+        [
+          "fir",
+          "benign",
+          0.32953858375549316
+        ],
+        [
+          "fir",
+          "trojan",
+          0.322643518447876
+        ],
+        [
+          "i2c",
+          "clean",
+          0.5210080146789551
+        ],
+        [
+          "i2c",
+          "benign",
+          0.4948183000087738
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.514928936958313
+        ],
+        [
+          "mac",
+          "clean",
+          0.6747560501098633
+        ],
+        [
+          "mac",
+          "benign",
+          0.6830658912658691
+        ],
+        [
+          "mac",
+          "trojan",
+          0.6870483756065369
+        ],
+        [
+          "pwm",
+          "clean",
+          0.49490296840667725
+        ],
+        [
+          "pwm",
+          "benign",
+          0.4702202081680298
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.5063058733940125
+        ],
+        [
+          "spi",
+          "clean",
+          0.5346111059188843
+        ],
+        [
+          "spi",
+          "benign",
+          0.5382172465324402
+        ],
+        [
+          "spi",
+          "trojan",
+          0.5217753052711487
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.46262189745903015
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.46113285422325134
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.4507940709590912
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": 0.05555555555555555,
+      "ci95": [
+        0.0,
+        0.1388888888888889
+      ],
+      "by_host": {
+        "alu": 0.25,
+        "crc32": 0.0,
+        "fifo": 0.25,
+        "fir": 0.0,
+        "i2c": 0.0,
+        "mac": 0.0,
+        "pwm": 0.0,
+        "spi": 0.0,
+        "sram_ctrl": 0.0
+      }
+    }
+  },
+  "yosys_addition": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.25
+        },
+        "spi": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.8888888888888888,
+        "ci95": [
+          0.7222222222222222,
+          1.0
+        ],
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 1.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 1.0,
+          "mac": 1.0,
+          "pwm": 0.5,
+          "spi": 1.0,
+          "sram_ctrl": 0.5
+        }
+      },
+      "pooled_auc": 0.6358024691358025,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.49853724241256714
+        ],
+        [
+          "spi",
+          "benign",
+          0.9915841817855835
+        ],
+        [
+          "spi",
+          "trojan",
+          0.9917581677436829
+        ],
+        [
+          "i2c",
+          "clean",
+          0.6100391745567322
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9596968293190002
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.9601939916610718
+        ],
+        [
+          "fifo",
+          "clean",
+          0.3875233829021454
+        ],
+        [
+          "fifo",
+          "benign",
+          0.6902695894241333
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.6912245154380798
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.3614669740200043
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6566813588142395
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.6555317640304565
+        ],
+        [
+          "crc32",
+          "clean",
+          0.06532574445009232
+        ],
+        [
+          "crc32",
+          "benign",
+          0.46892476081848145
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.47138339281082153
+        ],
+        [
+          "alu",
+          "clean",
+          0.9885539412498474
+        ],
+        [
+          "alu",
+          "benign",
+          0.9922400712966919
+        ],
+        [
+          "alu",
+          "trojan",
+          0.9923018217086792
+        ],
+        [
+          "mac",
+          "clean",
+          0.9941071271896362
+        ],
+        [
+          "mac",
+          "benign",
+          0.9953815937042236
+        ],
+        [
+          "mac",
+          "trojan",
+          0.9953996539115906
+        ],
+        [
+          "fir",
+          "clean",
+          0.19526824355125427
+        ],
+        [
+          "fir",
+          "benign",
+          0.8754586577415466
+        ],
+        [
+          "fir",
+          "trojan",
+          0.876888632774353
+        ],
+        [
+          "pwm",
+          "clean",
+          0.6376628875732422
+        ],
+        [
+          "pwm",
+          "benign",
+          0.306810200214386
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.3102421760559082
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.25
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.25
+        },
+        "i2c": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "spi": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.5555555555555556,
+        "ci95": [
+          0.5,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.4506172839506173,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.3320649564266205
+        ],
+        [
+          "spi",
+          "benign",
+          0.9996669292449951
+        ],
+        [
+          "spi",
+          "trojan",
+          0.6231023669242859
+        ],
+        [
+          "i2c",
+          "clean",
+          0.4342237114906311
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9934724569320679
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.6030809283256531
+        ],
+        [
+          "fifo",
+          "clean",
+          0.4890581965446472
+        ],
+        [
+          "fifo",
+          "benign",
+          0.8732277154922485
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.5834773182868958
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.44468721747398376
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.539381206035614
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.877934992313385
+        ],
+        [
+          "crc32",
+          "clean",
+          0.2550032138824463
+        ],
+        [
+          "crc32",
+          "benign",
+          0.9579578638076782
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.403667688369751
+        ],
+        [
+          "alu",
+          "clean",
+          0.49149245023727417
+        ],
+        [
+          "alu",
+          "benign",
+          0.9556143283843994
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5507646203041077
+        ],
+        [
+          "mac",
+          "clean",
+          0.6527752876281738
+        ],
+        [
+          "mac",
+          "benign",
+          0.895675778388977
+        ],
+        [
+          "mac",
+          "trojan",
+          0.6786565184593201
+        ],
+        [
+          "fir",
+          "clean",
+          0.20742876827716827
+        ],
+        [
+          "fir",
+          "benign",
+          0.98661869764328
+        ],
+        [
+          "fir",
+          "trojan",
+          0.4023730456829071
+        ],
+        [
+          "pwm",
+          "clean",
+          0.47254982590675354
+        ],
+        [
+          "pwm",
+          "benign",
+          0.9984695315361023
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.6790243983268738
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": -0.3333333333333333,
+      "ci95": [
+        -0.5,
+        -0.1111111111111111
+      ],
+      "by_host": {
+        "alu": -0.5,
+        "crc32": -0.5,
+        "fifo": -0.5,
+        "fir": -0.5,
+        "i2c": -0.5,
+        "mac": -0.5,
+        "pwm": 0.0,
+        "spi": -0.5,
+        "sram_ctrl": 0.5
+      }
+    },
+    "plus_four_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.25
+        },
+        "i2c": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.5555555555555556,
+        "ci95": [
+          0.5,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.49382716049382713,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.3913893401622772
+        ],
+        [
+          "spi",
+          "benign",
+          0.9999972581863403
+        ],
+        [
+          "spi",
+          "trojan",
+          0.859115481376648
+        ],
+        [
+          "i2c",
+          "clean",
+          0.522624135017395
+        ],
+        [
+          "i2c",
+          "benign",
+          0.999687671661377
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.7898665070533752
+        ],
+        [
+          "fifo",
+          "clean",
+          0.5657204985618591
+        ],
+        [
+          "fifo",
+          "benign",
+          0.9614202380180359
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.707464873790741
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.5174951553344727
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6642917394638062
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.9658023715019226
+        ],
+        [
+          "crc32",
+          "clean",
+          0.4751996397972107
+        ],
+        [
+          "crc32",
+          "benign",
+          0.9976073503494263
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.7074993252754211
+        ],
+        [
+          "alu",
+          "clean",
+          0.5180886387825012
+        ],
+        [
+          "alu",
+          "benign",
+          0.9892962574958801
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5816593170166016
+        ],
+        [
+          "mac",
+          "clean",
+          0.6649967432022095
+        ],
+        [
+          "mac",
+          "benign",
+          0.9545807242393494
+        ],
+        [
+          "mac",
+          "trojan",
+          0.7293655276298523
+        ],
+        [
+          "fir",
+          "clean",
+          0.0986068844795227
+        ],
+        [
+          "fir",
+          "benign",
+          0.9983166456222534
+        ],
+        [
+          "fir",
+          "trojan",
+          0.37939953804016113
+        ],
+        [
+          "pwm",
+          "clean",
+          0.601529061794281
+        ],
+        [
+          "pwm",
+          "benign",
+          0.9999679327011108
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.875790536403656
+        ]
+      ]
+    },
+    "four_project_delta": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "by_host": {
+        "alu": 0.0,
+        "crc32": 0.0,
+        "fifo": 0.0,
+        "fir": 0.0,
+        "i2c": 0.0,
+        "mac": 0.0,
+        "pwm": 0.0,
+        "spi": 0.0,
+        "sram_ctrl": 0.0
+      }
+    }
+  },
+  "unseen_engine_seen_hosts_addition": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.8888888888888888,
+        "ci95": [
+          0.7222222222222222,
+          1.0
+        ],
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 1.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 1.0,
+          "mac": 1.0,
+          "pwm": 0.5,
+          "spi": 1.0,
+          "sram_ctrl": 0.5
+        }
+      },
+      "pooled_auc": 0.6728395061728395,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.26854291558265686
+        ],
+        [
+          "alu",
+          "benign",
+          0.5951427817344666
+        ],
+        [
+          "alu",
+          "trojan",
+          0.6047335267066956
+        ],
+        [
+          "crc32",
+          "clean",
+          0.005113260820508003
+        ],
+        [
+          "crc32",
+          "benign",
+          0.0327875018119812
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.03437864035367966
+        ],
+        [
+          "fifo",
+          "clean",
+          0.37027978897094727
+        ],
+        [
+          "fifo",
+          "benign",
+          0.715561032295227
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.720059871673584
+        ],
+        [
+          "fir",
+          "clean",
+          0.1743212193250656
+        ],
+        [
+          "fir",
+          "benign",
+          0.6001034379005432
+        ],
+        [
+          "fir",
+          "trojan",
+          0.6157103776931763
+        ],
+        [
+          "i2c",
+          "clean",
+          0.48573189973831177
+        ],
+        [
+          "i2c",
+          "benign",
+          0.7739390730857849
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.784980297088623
+        ],
+        [
+          "mac",
+          "clean",
+          0.3397470712661743
+        ],
+        [
+          "mac",
+          "benign",
+          0.445332407951355
+        ],
+        [
+          "mac",
+          "trojan",
+          0.45016828179359436
+        ],
+        [
+          "pwm",
+          "clean",
+          0.309739351272583
+        ],
+        [
+          "pwm",
+          "benign",
+          0.01436584535986185
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.015542546287178993
+        ],
+        [
+          "spi",
+          "clean",
+          0.2759139835834503
+        ],
+        [
+          "spi",
+          "benign",
+          0.691281795501709
+        ],
+        [
+          "spi",
+          "trojan",
+          0.713155210018158
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.428926944732666
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.828484058380127
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.8248573541641235
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.25
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.25
+        },
+        "i2c": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "spi": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.5555555555555556,
+        "ci95": [
+          0.5,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.4691358024691358,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.4804976284503937
+        ],
+        [
+          "alu",
+          "benign",
+          0.9346798658370972
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5555667877197266
+        ],
+        [
+          "crc32",
+          "clean",
+          0.24191616475582123
+        ],
+        [
+          "crc32",
+          "benign",
+          0.9203928709030151
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.36737194657325745
+        ],
+        [
+          "fifo",
+          "clean",
+          0.47567838430404663
+        ],
+        [
+          "fifo",
+          "benign",
+          0.8484139442443848
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.5908151865005493
+        ],
+        [
+          "fir",
+          "clean",
+          0.27813830971717834
+        ],
+        [
+          "fir",
+          "benign",
+          0.9781429767608643
+        ],
+        [
+          "fir",
+          "trojan",
+          0.45175692439079285
+        ],
+        [
+          "i2c",
+          "clean",
+          0.49488434195518494
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9877191781997681
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.6150296330451965
+        ],
+        [
+          "mac",
+          "clean",
+          0.5550229549407959
+        ],
+        [
+          "mac",
+          "benign",
+          0.8240904808044434
+        ],
+        [
+          "mac",
+          "trojan",
+          0.5869293808937073
+        ],
+        [
+          "pwm",
+          "clean",
+          0.4902965724468231
+        ],
+        [
+          "pwm",
+          "benign",
+          0.9959251880645752
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.6509968042373657
+        ],
+        [
+          "spi",
+          "clean",
+          0.40100741386413574
+        ],
+        [
+          "spi",
+          "benign",
+          0.9989283680915833
+        ],
+        [
+          "spi",
+          "trojan",
+          0.6116513013839722
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.4825487434864044
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.5834720134735107
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.867741048336029
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": -0.3333333333333333,
+      "ci95": [
+        -0.5,
+        -0.1111111111111111
+      ],
+      "by_host": {
+        "alu": -0.5,
+        "crc32": -0.5,
+        "fifo": -0.5,
+        "fir": -0.5,
+        "i2c": -0.5,
+        "mac": -0.5,
+        "pwm": 0.0,
+        "spi": -0.5,
+        "sram_ctrl": 0.5
+      }
+    }
+  },
+  "unseen_engine_unseen_hosts_addition": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.8888888888888888,
+        "ci95": [
+          0.7222222222222222,
+          1.0
+        ],
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 1.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 1.0,
+          "mac": 1.0,
+          "pwm": 0.5,
+          "spi": 1.0,
+          "sram_ctrl": 0.5
+        }
+      },
+      "pooled_auc": 0.6728395061728395,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.39970725774765015
+        ],
+        [
+          "alu",
+          "benign",
+          0.6082069277763367
+        ],
+        [
+          "alu",
+          "trojan",
+          0.6126819849014282
+        ],
+        [
+          "crc32",
+          "clean",
+          0.0029330698307603598
+        ],
+        [
+          "crc32",
+          "benign",
+          0.016569867730140686
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.023735538125038147
+        ],
+        [
+          "fifo",
+          "clean",
+          0.5006191730499268
+        ],
+        [
+          "fifo",
+          "benign",
+          0.712116003036499
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.7224766612052917
+        ],
+        [
+          "fir",
+          "clean",
+          0.265002578496933
+        ],
+        [
+          "fir",
+          "benign",
+          0.5802338719367981
+        ],
+        [
+          "fir",
+          "trojan",
+          0.6210018992424011
+        ],
+        [
+          "i2c",
+          "clean",
+          0.8532976508140564
+        ],
+        [
+          "i2c",
+          "benign",
+          0.826901912689209
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.9058412313461304
+        ],
+        [
+          "mac",
+          "clean",
+          0.6034923195838928
+        ],
+        [
+          "mac",
+          "benign",
+          0.6430510878562927
+        ],
+        [
+          "mac",
+          "trojan",
+          0.6768158078193665
+        ],
+        [
+          "pwm",
+          "clean",
+          0.47687214612960815
+        ],
+        [
+          "pwm",
+          "benign",
+          0.0237678624689579
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.04035355895757675
+        ],
+        [
+          "spi",
+          "clean",
+          0.1917642205953598
+        ],
+        [
+          "spi",
+          "benign",
+          0.5321294069290161
+        ],
+        [
+          "spi",
+          "trojan",
+          0.7189804315567017
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.2159854620695114
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6608589291572571
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.6285204291343689
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.25
+        },
+        "i2c": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "spi": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.5555555555555556,
+        "ci95": [
+          0.5,
+          0.6666666666666666
+        ],
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.5,
+          "i2c": 0.5,
+          "mac": 0.5,
+          "pwm": 0.5,
+          "spi": 0.5,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.4567901234567901,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.49842432141304016
+        ],
+        [
+          "alu",
+          "benign",
+          0.9385477304458618
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5592408776283264
+        ],
+        [
+          "crc32",
+          "clean",
+          0.39533933997154236
+        ],
+        [
+          "crc32",
+          "benign",
+          0.9467253684997559
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.5162387490272522
+        ],
+        [
+          "fifo",
+          "clean",
+          0.4870453476905823
+        ],
+        [
+          "fifo",
+          "benign",
+          0.8497476577758789
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.59239262342453
+        ],
+        [
+          "fir",
+          "clean",
+          0.1928594410419464
+        ],
+        [
+          "fir",
+          "benign",
+          0.9900059103965759
+        ],
+        [
+          "fir",
+          "trojan",
+          0.37886324524879456
+        ],
+        [
+          "i2c",
+          "clean",
+          0.49688512086868286
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9891330599784851
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.6213417053222656
+        ],
+        [
+          "mac",
+          "clean",
+          0.6747560501098633
+        ],
+        [
+          "mac",
+          "benign",
+          0.8676962852478027
+        ],
+        [
+          "mac",
+          "trojan",
+          0.6971188187599182
+        ],
+        [
+          "pwm",
+          "clean",
+          0.4908251464366913
+        ],
+        [
+          "pwm",
+          "benign",
+          0.9951038360595703
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.6454175710678101
+        ],
+        [
+          "spi",
+          "clean",
+          0.4095810651779175
+        ],
+        [
+          "spi",
+          "benign",
+          0.9992018342018127
+        ],
+        [
+          "spi",
+          "trojan",
+          0.632036566734314
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.46229812502861023
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.5661492943763733
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.8616378307342529
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": -0.3333333333333333,
+      "ci95": [
+        -0.5,
+        -0.1111111111111111
+      ],
+      "by_host": {
+        "alu": -0.5,
+        "crc32": -0.5,
+        "fifo": -0.5,
+        "fir": -0.5,
+        "i2c": -0.5,
+        "mac": -0.5,
+        "pwm": 0.0,
+        "spi": -0.5,
+        "sram_ctrl": 0.5
+      }
+    }
+  },
+  "yosys_removal": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "i2c": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sram_ctrl": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.1111111111111111,
+          0.5555555555555556
+        ],
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.5,
+          "fifo": 0.0,
+          "fir": 0.0,
+          "i2c": 1.0,
+          "mac": 0.5,
+          "pwm": 0.0,
+          "spi": 0.5,
+          "sram_ctrl": 0.0
+        }
+      },
+      "pooled_auc": 0.48148148148148145,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.9901168942451477
+        ],
+        [
+          "spi",
+          "benign",
+          0.9907659292221069
+        ],
+        [
+          "spi",
+          "trojan",
+          0.9905751943588257
+        ],
+        [
+          "i2c",
+          "clean",
+          0.9570791125297546
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9574357867240906
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.9579530358314514
+        ],
+        [
+          "fifo",
+          "clean",
+          0.691525936126709
+        ],
+        [
+          "fifo",
+          "benign",
+          0.690858006477356
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.6899065375328064
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.6476276516914368
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6465421319007874
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.6453827619552612
+        ],
+        [
+          "crc32",
+          "clean",
+          0.4715603291988373
+        ],
+        [
+          "crc32",
+          "benign",
+          0.4649737775325775
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.46740642189979553
+        ],
+        [
+          "alu",
+          "clean",
+          0.9928094148635864
+        ],
+        [
+          "alu",
+          "benign",
+          0.9929859042167664
+        ],
+        [
+          "alu",
+          "trojan",
+          0.9929303526878357
+        ],
+        [
+          "mac",
+          "clean",
+          0.9950740933418274
+        ],
+        [
+          "mac",
+          "benign",
+          0.9951318502426147
+        ],
+        [
+          "mac",
+          "trojan",
+          0.9951127171516418
+        ],
+        [
+          "fir",
+          "clean",
+          0.8713627457618713
+        ],
+        [
+          "fir",
+          "benign",
+          0.8725353479385376
+        ],
+        [
+          "fir",
+          "trojan",
+          0.8710810542106628
+        ],
+        [
+          "pwm",
+          "clean",
+          0.31955692172050476
+        ],
+        [
+          "pwm",
+          "benign",
+          0.31200146675109863
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.3086118996143341
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.7777777777777778,
+        "ci95": [
+          0.4444444444444444,
+          1.0
+        ],
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.6358024691358025,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.9995505213737488
+        ],
+        [
+          "spi",
+          "benign",
+          0.6210260987281799
+        ],
+        [
+          "spi",
+          "trojan",
+          0.9996089339256287
+        ],
+        [
+          "i2c",
+          "clean",
+          0.9999176263809204
+        ],
+        [
+          "i2c",
+          "benign",
+          0.999927282333374
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.993166983127594
+        ],
+        [
+          "fifo",
+          "clean",
+          0.8711279630661011
+        ],
+        [
+          "fifo",
+          "benign",
+          0.583597719669342
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.8725125789642334
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.8696975111961365
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.5262170433998108
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.8711452484130859
+        ],
+        [
+          "crc32",
+          "clean",
+          0.9985135197639465
+        ],
+        [
+          "crc32",
+          "benign",
+          0.9986411929130554
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.9575935006141663
+        ],
+        [
+          "alu",
+          "clean",
+          0.9536792039871216
+        ],
+        [
+          "alu",
+          "benign",
+          0.5539559721946716
+        ],
+        [
+          "alu",
+          "trojan",
+          0.9547346830368042
+        ],
+        [
+          "mac",
+          "clean",
+          0.8938037157058716
+        ],
+        [
+          "mac",
+          "benign",
+          0.6775897145271301
+        ],
+        [
+          "mac",
+          "trojan",
+          0.8947120308876038
+        ],
+        [
+          "fir",
+          "clean",
+          0.9834458231925964
+        ],
+        [
+          "fir",
+          "benign",
+          0.3832980990409851
+        ],
+        [
+          "fir",
+          "trojan",
+          0.9846416115760803
+        ],
+        [
+          "pwm",
+          "clean",
+          0.9981443881988525
+        ],
+        [
+          "pwm",
+          "benign",
+          0.6799579858779907
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.9983347058296204
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": 0.4444444444444444,
+      "ci95": [
+        -0.05555555555555558,
+        0.8333333333333333
+      ],
+      "by_host": {
+        "alu": 0.5,
+        "crc32": -0.5,
+        "fifo": 1.0,
+        "fir": 1.0,
+        "i2c": -1.0,
+        "mac": 0.5,
+        "pwm": 1.0,
+        "spi": 0.5,
+        "sram_ctrl": 1.0
+      }
+    },
+    "plus_four_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.7777777777777778,
+        "ci95": [
+          0.4444444444444444,
+          1.0
+        ],
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.6296296296296297,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.9999951124191284
+        ],
+        [
+          "spi",
+          "benign",
+          0.8562225699424744
+        ],
+        [
+          "spi",
+          "trojan",
+          0.9999964237213135
+        ],
+        [
+          "i2c",
+          "clean",
+          0.9999995231628418
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9999995231628418
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.999658465385437
+        ],
+        [
+          "fifo",
+          "clean",
+          0.960246741771698
+        ],
+        [
+          "fifo",
+          "benign",
+          0.7071533203125
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.9609850645065308
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.9612442255020142
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6427182555198669
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.9620323777198792
+        ],
+        [
+          "crc32",
+          "clean",
+          0.9999828338623047
+        ],
+        [
+          "crc32",
+          "benign",
+          0.9999849796295166
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.9975481629371643
+        ],
+        [
+          "alu",
+          "clean",
+          0.9888436794281006
+        ],
+        [
+          "alu",
+          "benign",
+          0.5924938321113586
+        ],
+        [
+          "alu",
+          "trojan",
+          0.989250659942627
+        ],
+        [
+          "mac",
+          "clean",
+          0.9529311060905457
+        ],
+        [
+          "mac",
+          "benign",
+          0.7261343002319336
+        ],
+        [
+          "mac",
+          "trojan",
+          0.9535201787948608
+        ],
+        [
+          "fir",
+          "clean",
+          0.9976397752761841
+        ],
+        [
+          "fir",
+          "benign",
+          0.3467545807361603
+        ],
+        [
+          "fir",
+          "trojan",
+          0.9978845715522766
+        ],
+        [
+          "pwm",
+          "clean",
+          0.9999560117721558
+        ],
+        [
+          "pwm",
+          "benign",
+          0.8740041851997375
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.9999628067016602
+        ]
+      ]
+    },
+    "four_project_delta": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "by_host": {
+        "alu": 0.0,
+        "crc32": 0.0,
+        "fifo": 0.0,
+        "fir": 0.0,
+        "i2c": 0.0,
+        "mac": 0.0,
+        "pwm": 0.0,
+        "spi": 0.0,
+        "sram_ctrl": 0.0
+      }
+    }
+  },
+  "unseen_engine_seen_hosts_removal": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "i2c": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 0.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sram_ctrl": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.2777777777777778,
+        "ci95": [
+          0.05555555555555555,
+          0.5
+        ],
+        "by_host": {
+          "alu": 0.0,
+          "crc32": 0.5,
+          "fifo": 0.5,
+          "fir": 0.0,
+          "i2c": 1.0,
+          "mac": 0.0,
+          "pwm": 0.0,
+          "spi": 0.0,
+          "sram_ctrl": 0.5
+        }
+      },
+      "pooled_auc": 0.4691358024691358,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.5935716032981873
+        ],
+        [
+          "alu",
+          "benign",
+          0.5953294634819031
+        ],
+        [
+          "alu",
+          "trojan",
+          0.585780143737793
+        ],
+        [
+          "crc32",
+          "clean",
+          0.0330866202712059
+        ],
+        [
+          "crc32",
+          "benign",
+          0.031224282458424568
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.032727234065532684
+        ],
+        [
+          "fifo",
+          "clean",
+          0.7064323425292969
+        ],
+        [
+          "fifo",
+          "benign",
+          0.7141631841659546
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.7096278071403503
+        ],
+        [
+          "fir",
+          "clean",
+          0.6047683954238892
+        ],
+        [
+          "fir",
+          "benign",
+          0.6111574769020081
+        ],
+        [
+          "fir",
+          "trojan",
+          0.5956880450248718
+        ],
+        [
+          "i2c",
+          "clean",
+          0.758093535900116
+        ],
+        [
+          "i2c",
+          "benign",
+          0.754458487033844
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.766019880771637
+        ],
+        [
+          "mac",
+          "clean",
+          0.4356990456581116
+        ],
+        [
+          "mac",
+          "benign",
+          0.43598246574401855
+        ],
+        [
+          "mac",
+          "trojan",
+          0.43119797110557556
+        ],
+        [
+          "pwm",
+          "clean",
+          0.0164053775370121
+        ],
+        [
+          "pwm",
+          "benign",
+          0.015799427404999733
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.014621413312852383
+        ],
+        [
+          "spi",
+          "clean",
+          0.7495332360267639
+        ],
+        [
+          "spi",
+          "benign",
+          0.6751023530960083
+        ],
+        [
+          "spi",
+          "trojan",
+          0.6522238254547119
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.6133437752723694
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6228184700012207
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.6168837547302246
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.7777777777777778,
+        "ci95": [
+          0.4444444444444444,
+          1.0
+        ],
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.6419753086419753,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.9318774342536926
+        ],
+        [
+          "alu",
+          "benign",
+          0.5554541349411011
+        ],
+        [
+          "alu",
+          "trojan",
+          0.9328924417495728
+        ],
+        [
+          "crc32",
+          "clean",
+          0.9951210618019104
+        ],
+        [
+          "crc32",
+          "benign",
+          0.9954842329025269
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.9193143248558044
+        ],
+        [
+          "fifo",
+          "clean",
+          0.8459171056747437
+        ],
+        [
+          "fifo",
+          "benign",
+          0.5901252627372742
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.8472843170166016
+        ],
+        [
+          "fir",
+          "clean",
+          0.9743431210517883
+        ],
+        [
+          "fir",
+          "benign",
+          0.43749693036079407
+        ],
+        [
+          "fir",
+          "trojan",
+          0.9756955504417419
+        ],
+        [
+          "i2c",
+          "clean",
+          0.9996998310089111
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9997283816337585
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.9871439337730408
+        ],
+        [
+          "mac",
+          "clean",
+          0.8216524124145508
+        ],
+        [
+          "mac",
+          "benign",
+          0.5851439237594604
+        ],
+        [
+          "mac",
+          "trojan",
+          0.822352945804596
+        ],
+        [
+          "pwm",
+          "clean",
+          0.995197594165802
+        ],
+        [
+          "pwm",
+          "benign",
+          0.6497827172279358
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.9955832362174988
+        ],
+        [
+          "spi",
+          "clean",
+          0.998656153678894
+        ],
+        [
+          "spi",
+          "benign",
+          0.6054034233093262
+        ],
+        [
+          "spi",
+          "trojan",
+          0.998748779296875
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.8454545140266418
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.5434147119522095
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.8469041585922241
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": 0.5,
+      "ci95": [
+        0.0,
+        0.8888888888888888
+      ],
+      "by_host": {
+        "alu": 1.0,
+        "crc32": -0.5,
+        "fifo": 0.5,
+        "fir": 1.0,
+        "i2c": -1.0,
+        "mac": 1.0,
+        "pwm": 1.0,
+        "spi": 1.0,
+        "sram_ctrl": 0.5
+      }
+    }
+  },
+  "unseen_engine_unseen_hosts_removal": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "i2c": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 0.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.0
+        },
+        "sram_ctrl": {
+          "auroc": 0.5,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.1111111111111111,
+          0.6111111111111112
+        ],
+        "by_host": {
+          "alu": 0.0,
+          "crc32": 1.0,
+          "fifo": 0.5,
+          "fir": 0.0,
+          "i2c": 1.0,
+          "mac": 0.0,
+          "pwm": 0.0,
+          "spi": 0.0,
+          "sram_ctrl": 0.5
+        }
+      },
+      "pooled_auc": 0.4506172839506173,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.6059763431549072
+        ],
+        [
+          "alu",
+          "benign",
+          0.6027863621711731
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5983247756958008
+        ],
+        [
+          "crc32",
+          "clean",
+          0.012053439393639565
+        ],
+        [
+          "crc32",
+          "benign",
+          0.011360508389770985
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.016254546120762825
+        ],
+        [
+          "fifo",
+          "clean",
+          0.7004967927932739
+        ],
+        [
+          "fifo",
+          "benign",
+          0.7160689234733582
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.7056127190589905
+        ],
+        [
+          "fir",
+          "clean",
+          0.5830052495002747
+        ],
+        [
+          "fir",
+          "benign",
+          0.618087649345398
+        ],
+        [
+          "fir",
+          "trojan",
+          0.5777482986450195
+        ],
+        [
+          "i2c",
+          "clean",
+          0.7100697755813599
+        ],
+        [
+          "i2c",
+          "benign",
+          0.6969594359397888
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.8211507797241211
+        ],
+        [
+          "mac",
+          "clean",
+          0.6351910829544067
+        ],
+        [
+          "mac",
+          "benign",
+          0.6650554537773132
+        ],
+        [
+          "mac",
+          "trojan",
+          0.6308670043945312
+        ],
+        [
+          "pwm",
+          "clean",
+          0.026382604613900185
+        ],
+        [
+          "pwm",
+          "benign",
+          0.039960023015737534
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.023727592080831528
+        ],
+        [
+          "spi",
+          "clean",
+          0.6118107438087463
+        ],
+        [
+          "spi",
+          "benign",
+          0.6817041039466858
+        ],
+        [
+          "spi",
+          "trojan",
+          0.49181994795799255
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.3848513662815094
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.4189814031124115
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.38520702719688416
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 0.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.7777777777777778,
+        "ci95": [
+          0.4444444444444444,
+          1.0
+        ],
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.0,
+          "fifo": 1.0,
+          "fir": 1.0,
+          "i2c": 0.0,
+          "mac": 1.0,
+          "pwm": 1.0,
+          "spi": 1.0,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.6296296296296297,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.9359451532363892
+        ],
+        [
+          "alu",
+          "benign",
+          0.5594174861907959
+        ],
+        [
+          "alu",
+          "trojan",
+          0.9368935823440552
+        ],
+        [
+          "crc32",
+          "clean",
+          0.9962130784988403
+        ],
+        [
+          "crc32",
+          "benign",
+          0.9964878559112549
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.9459542632102966
+        ],
+        [
+          "fifo",
+          "clean",
+          0.8471917510032654
+        ],
+        [
+          "fifo",
+          "benign",
+          0.5917352437973022
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.8486408591270447
+        ],
+        [
+          "fir",
+          "clean",
+          0.9875516295433044
+        ],
+        [
+          "fir",
+          "benign",
+          0.36064115166664124
+        ],
+        [
+          "fir",
+          "trojan",
+          0.988486647605896
+        ],
+        [
+          "i2c",
+          "clean",
+          0.9997583031654358
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9997815489768982
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.9886012673377991
+        ],
+        [
+          "mac",
+          "clean",
+          0.8655018210411072
+        ],
+        [
+          "mac",
+          "benign",
+          0.6952664852142334
+        ],
+        [
+          "mac",
+          "trojan",
+          0.8662225008010864
+        ],
+        [
+          "pwm",
+          "clean",
+          0.9942552447319031
+        ],
+        [
+          "pwm",
+          "benign",
+          0.6439819931983948
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.9947015047073364
+        ],
+        [
+          "spi",
+          "clean",
+          0.998981773853302
+        ],
+        [
+          "spi",
+          "benign",
+          0.625227153301239
+        ],
+        [
+          "spi",
+          "trojan",
+          0.9990612864494324
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.8394089341163635
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.5272351503372192
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.8407870531082153
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": 0.4444444444444444,
+      "ci95": [
+        -0.11111111111111116,
+        0.8888888888888888
+      ],
+      "by_host": {
+        "alu": 1.0,
+        "crc32": -1.0,
+        "fifo": 0.5,
+        "fir": 1.0,
+        "i2c": -1.0,
+        "mac": 1.0,
+        "pwm": 1.0,
+        "spi": 1.0,
+        "sram_ctrl": 0.5
+      }
+    }
+  },
+  "yosys_replacement": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.7777777777777778,
+        "ci95": [
+          0.75,
+          0.8333333333333334
+        ],
+        "by_host": {
+          "alu": 0.75,
+          "crc32": 0.75,
+          "fifo": 1.0,
+          "fir": 0.75,
+          "i2c": 0.75,
+          "mac": 0.75,
+          "pwm": 0.75,
+          "spi": 0.75,
+          "sram_ctrl": 0.75
+        }
+      },
+      "pooled_auc": 0.6419753086419753,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.4985373318195343
+        ],
+        [
+          "spi",
+          "benign",
+          0.9888237118721008
+        ],
+        [
+          "spi",
+          "trojan",
+          0.9888237118721008
+        ],
+        [
+          "i2c",
+          "clean",
+          0.610039234161377
+        ],
+        [
+          "i2c",
+          "benign",
+          0.9524218440055847
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.9524218440055847
+        ],
+        [
+          "fifo",
+          "clean",
+          0.3875233829021454
+        ],
+        [
+          "fifo",
+          "benign",
+          0.672260582447052
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.6722606420516968
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.3614669740200043
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6327046155929565
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.6327046155929565
+        ],
+        [
+          "crc32",
+          "clean",
+          0.06532574445009232
+        ],
+        [
+          "crc32",
+          "benign",
+          0.4293110966682434
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.4293110966682434
+        ],
+        [
+          "alu",
+          "clean",
+          0.9885539412498474
+        ],
+        [
+          "alu",
+          "benign",
+          0.9925026893615723
+        ],
+        [
+          "alu",
+          "trojan",
+          0.9925026893615723
+        ],
+        [
+          "mac",
+          "clean",
+          0.9941071271896362
+        ],
+        [
+          "mac",
+          "benign",
+          0.9949953556060791
+        ],
+        [
+          "mac",
+          "trojan",
+          0.9949953556060791
+        ],
+        [
+          "fir",
+          "clean",
+          0.19526812434196472
+        ],
+        [
+          "fir",
+          "benign",
+          0.8554739356040955
+        ],
+        [
+          "fir",
+          "trojan",
+          0.8554739356040955
+        ],
+        [
+          "pwm",
+          "clean",
+          0.6376628875732422
+        ],
+        [
+          "pwm",
+          "benign",
+          0.9763215184211731
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.9763215184211731
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "i2c": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "spi": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.7222222222222222,
+        "ci95": [
+          0.6666666666666666,
+          0.75
+        ],
+        "by_host": {
+          "alu": 0.75,
+          "crc32": 0.75,
+          "fifo": 0.5,
+          "fir": 0.75,
+          "i2c": 0.75,
+          "mac": 0.75,
+          "pwm": 0.75,
+          "spi": 0.75,
+          "sram_ctrl": 0.75
+        }
+      },
+      "pooled_auc": 0.6419753086419753,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.3320649266242981
+        ],
+        [
+          "spi",
+          "benign",
+          0.623425304889679
+        ],
+        [
+          "spi",
+          "trojan",
+          0.623425304889679
+        ],
+        [
+          "i2c",
+          "clean",
+          0.4342236816883087
+        ],
+        [
+          "i2c",
+          "benign",
+          0.5727959871292114
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.5727959871292114
+        ],
+        [
+          "fifo",
+          "clean",
+          0.4890581965446472
+        ],
+        [
+          "fifo",
+          "benign",
+          0.5797072052955627
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.579707145690918
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.44468724727630615
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.5199114680290222
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.5199114680290222
+        ],
+        [
+          "crc32",
+          "clean",
+          0.2550032138824463
+        ],
+        [
+          "crc32",
+          "benign",
+          0.3955495357513428
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.3955495357513428
+        ],
+        [
+          "alu",
+          "clean",
+          0.4914924204349518
+        ],
+        [
+          "alu",
+          "benign",
+          0.5412173867225647
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5412173867225647
+        ],
+        [
+          "mac",
+          "clean",
+          0.6527752876281738
+        ],
+        [
+          "mac",
+          "benign",
+          0.6780732274055481
+        ],
+        [
+          "mac",
+          "trojan",
+          0.6780732274055481
+        ],
+        [
+          "fir",
+          "clean",
+          0.20742878317832947
+        ],
+        [
+          "fir",
+          "benign",
+          0.3912125527858734
+        ],
+        [
+          "fir",
+          "trojan",
+          0.3912125527858734
+        ],
+        [
+          "pwm",
+          "clean",
+          0.47254982590675354
+        ],
+        [
+          "pwm",
+          "benign",
+          0.6613166928291321
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.6613166928291321
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": -0.05555555555555555,
+      "ci95": [
+        -0.16666666666666669,
+        0.0
+      ],
+      "by_host": {
+        "alu": 0.0,
+        "crc32": 0.0,
+        "fifo": -0.5,
+        "fir": 0.0,
+        "i2c": 0.0,
+        "mac": 0.0,
+        "pwm": 0.0,
+        "spi": 0.0,
+        "sram_ctrl": 0.0
+      }
+    },
+    "plus_four_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fifo": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "i2c": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "spi": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.6944444444444444,
+        "ci95": [
+          0.6111111111111112,
+          0.75
+        ],
+        "by_host": {
+          "alu": 0.5,
+          "crc32": 0.75,
+          "fifo": 0.5,
+          "fir": 0.75,
+          "i2c": 0.75,
+          "mac": 0.75,
+          "pwm": 0.75,
+          "spi": 0.75,
+          "sram_ctrl": 0.75
+        }
+      },
+      "pooled_auc": 0.6759259259259259,
+      "predictions": [
+        [
+          "spi",
+          "clean",
+          0.39138931035995483
+        ],
+        [
+          "spi",
+          "benign",
+          0.8568586707115173
+        ],
+        [
+          "spi",
+          "trojan",
+          0.8568586707115173
+        ],
+        [
+          "i2c",
+          "clean",
+          0.522624135017395
+        ],
+        [
+          "i2c",
+          "benign",
+          0.7505013942718506
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.7505013942718506
+        ],
+        [
+          "fifo",
+          "clean",
+          0.5657204985618591
+        ],
+        [
+          "fifo",
+          "benign",
+          0.7029221653938293
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.7029221057891846
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.5174952149391174
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6306280493736267
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.6306280493736267
+        ],
+        [
+          "crc32",
+          "clean",
+          0.4751996397972107
+        ],
+        [
+          "crc32",
+          "benign",
+          0.6993868947029114
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.6993868947029114
+        ],
+        [
+          "alu",
+          "clean",
+          0.5180885791778564
+        ],
+        [
+          "alu",
+          "benign",
+          0.5772495865821838
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5772495269775391
+        ],
+        [
+          "mac",
+          "clean",
+          0.6649967432022095
+        ],
+        [
+          "mac",
+          "benign",
+          0.7261194586753845
+        ],
+        [
+          "mac",
+          "trojan",
+          0.7261194586753845
+        ],
+        [
+          "fir",
+          "clean",
+          0.09860691428184509
+        ],
+        [
+          "fir",
+          "benign",
+          0.3655017018318176
+        ],
+        [
+          "fir",
+          "trojan",
+          0.3655017018318176
+        ],
+        [
+          "pwm",
+          "clean",
+          0.601529061794281
+        ],
+        [
+          "pwm",
+          "benign",
+          0.8665807247161865
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.8665807247161865
+        ]
+      ]
+    },
+    "four_project_delta": {
+      "mean": -0.027777777777777776,
+      "ci95": [
+        -0.08333333333333334,
+        0.0
+      ],
+      "by_host": {
+        "alu": -0.25,
+        "crc32": 0.0,
+        "fifo": 0.0,
+        "fir": 0.0,
+        "i2c": 0.0,
+        "mac": 0.0,
+        "pwm": 0.0,
+        "spi": 0.0,
+        "sram_ctrl": 0.0
+      }
+    }
+  },
+  "unseen_engine_seen_hosts_replacement": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "spi": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.7222222222222222,
+        "ci95": [
+          0.6666666666666666,
+          0.75
+        ],
+        "by_host": {
+          "alu": 0.75,
+          "crc32": 0.75,
+          "fifo": 0.75,
+          "fir": 0.5,
+          "i2c": 0.75,
+          "mac": 0.75,
+          "pwm": 0.75,
+          "spi": 0.75,
+          "sram_ctrl": 0.75
+        }
+      },
+      "pooled_auc": 0.691358024691358,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.26854291558265686
+        ],
+        [
+          "alu",
+          "benign",
+          0.5945702791213989
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5945702791213989
+        ],
+        [
+          "crc32",
+          "clean",
+          0.005113260820508003
+        ],
+        [
+          "crc32",
+          "benign",
+          0.033036116510629654
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.033036116510629654
+        ],
+        [
+          "fifo",
+          "clean",
+          0.37027978897094727
+        ],
+        [
+          "fifo",
+          "benign",
+          0.7006855010986328
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.7006855010986328
+        ],
+        [
+          "fir",
+          "clean",
+          0.17432120442390442
+        ],
+        [
+          "fir",
+          "benign",
+          0.6065537929534912
+        ],
+        [
+          "fir",
+          "trojan",
+          0.6065537333488464
+        ],
+        [
+          "i2c",
+          "clean",
+          0.48573195934295654
+        ],
+        [
+          "i2c",
+          "benign",
+          0.7890971899032593
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.7890971899032593
+        ],
+        [
+          "mac",
+          "clean",
+          0.3397470712661743
+        ],
+        [
+          "mac",
+          "benign",
+          0.4401082396507263
+        ],
+        [
+          "mac",
+          "trojan",
+          0.4401082396507263
+        ],
+        [
+          "pwm",
+          "clean",
+          0.309739351272583
+        ],
+        [
+          "pwm",
+          "benign",
+          0.7007449269294739
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.7007449269294739
+        ],
+        [
+          "spi",
+          "clean",
+          0.27591392397880554
+        ],
+        [
+          "spi",
+          "benign",
+          0.7241076827049255
+        ],
+        [
+          "spi",
+          "trojan",
+          0.7241076827049255
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.4289269745349884
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.6237263679504395
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.6237263679504395
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "i2c": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "spi": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.75,
+        "ci95": [
+          0.75,
+          0.75
+        ],
+        "by_host": {
+          "alu": 0.75,
+          "crc32": 0.75,
+          "fifo": 0.75,
+          "fir": 0.75,
+          "i2c": 0.75,
+          "mac": 0.75,
+          "pwm": 0.75,
+          "spi": 0.75,
+          "sram_ctrl": 0.75
+        }
+      },
+      "pooled_auc": 0.6574074074074074,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.4804975986480713
+        ],
+        [
+          "alu",
+          "benign",
+          0.5425770282745361
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5425770282745361
+        ],
+        [
+          "crc32",
+          "clean",
+          0.24191616475582123
+        ],
+        [
+          "crc32",
+          "benign",
+          0.35907596349716187
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.35907596349716187
+        ],
+        [
+          "fifo",
+          "clean",
+          0.47567838430404663
+        ],
+        [
+          "fifo",
+          "benign",
+          0.5871237516403198
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.5871237516403198
+        ],
+        [
+          "fir",
+          "clean",
+          0.27813833951950073
+        ],
+        [
+          "fir",
+          "benign",
+          0.44078823924064636
+        ],
+        [
+          "fir",
+          "trojan",
+          0.44078823924064636
+        ],
+        [
+          "i2c",
+          "clean",
+          0.49488431215286255
+        ],
+        [
+          "i2c",
+          "benign",
+          0.6017459630966187
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.6017459630966187
+        ],
+        [
+          "mac",
+          "clean",
+          0.5550229549407959
+        ],
+        [
+          "mac",
+          "benign",
+          0.5859726667404175
+        ],
+        [
+          "mac",
+          "trojan",
+          0.5859726667404175
+        ],
+        [
+          "pwm",
+          "clean",
+          0.4902965724468231
+        ],
+        [
+          "pwm",
+          "benign",
+          0.6320812106132507
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.6320812106132507
+        ],
+        [
+          "spi",
+          "clean",
+          0.40100738406181335
+        ],
+        [
+          "spi",
+          "benign",
+          0.6147046089172363
+        ],
+        [
+          "spi",
+          "trojan",
+          0.6147046089172363
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.4825487434864044
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.5417006015777588
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.5417006015777588
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": 0.027777777777777776,
+      "ci95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "by_host": {
+        "alu": 0.0,
+        "crc32": 0.0,
+        "fifo": 0.0,
+        "fir": 0.25,
+        "i2c": 0.0,
+        "mac": 0.0,
+        "pwm": 0.0,
+        "spi": 0.0,
+        "sram_ctrl": 0.0
+      }
+    }
+  },
+  "unseen_engine_unseen_hosts_replacement": {
+    "six_projects": {
+      "hosts": {
+        "alu": {
+          "auroc": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fifo": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "fir": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "i2c": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "mac": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.5,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "spi": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 1.0,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        }
+      },
+      "host_auc": {
+        "mean": 0.7777777777777778,
+        "ci95": [
+          0.6944444444444444,
+          0.8611111111111112
+        ],
+        "by_host": {
+          "alu": 1.0,
+          "crc32": 0.75,
+          "fifo": 0.75,
+          "fir": 0.75,
+          "i2c": 0.75,
+          "mac": 0.75,
+          "pwm": 0.5,
+          "spi": 0.75,
+          "sram_ctrl": 1.0
+        }
+      },
+      "pooled_auc": 0.6358024691358025,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.3997073471546173
+        ],
+        [
+          "alu",
+          "benign",
+          0.6019906997680664
+        ],
+        [
+          "alu",
+          "trojan",
+          0.6019907593727112
+        ],
+        [
+          "crc32",
+          "clean",
+          0.0029330698307603598
+        ],
+        [
+          "crc32",
+          "benign",
+          0.02278769202530384
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.02278769202530384
+        ],
+        [
+          "fifo",
+          "clean",
+          0.5006191730499268
+        ],
+        [
+          "fifo",
+          "benign",
+          0.7024216055870056
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.7024216055870056
+        ],
+        [
+          "fir",
+          "clean",
+          0.2650025188922882
+        ],
+        [
+          "fir",
+          "benign",
+          0.6140230298042297
+        ],
+        [
+          "fir",
+          "trojan",
+          0.6140230298042297
+        ],
+        [
+          "i2c",
+          "clean",
+          0.8532976508140564
+        ],
+        [
+          "i2c",
+          "benign",
+          0.8960437774658203
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.8960437774658203
+        ],
+        [
+          "mac",
+          "clean",
+          0.603492259979248
+        ],
+        [
+          "mac",
+          "benign",
+          0.6673223972320557
+        ],
+        [
+          "mac",
+          "trojan",
+          0.6673223972320557
+        ],
+        [
+          "pwm",
+          "clean",
+          0.47687214612960815
+        ],
+        [
+          "pwm",
+          "benign",
+          0.7329555153846741
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.7329554557800293
+        ],
+        [
+          "spi",
+          "clean",
+          0.19176419079303741
+        ],
+        [
+          "spi",
+          "benign",
+          0.7346361875534058
+        ],
+        [
+          "spi",
+          "trojan",
+          0.7346361875534058
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.2159854620695114
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.41505154967308044
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.4150516390800476
+        ]
+      ]
+    },
+    "plus_native": {
+      "hosts": {
+        "alu": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "crc32": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fifo": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "fir": {
+          "auroc": 0.75,
+          "recall": 0.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 0.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "i2c": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "mac": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 1.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.5
+        },
+        "pwm": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "spi": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        },
+        "sram_ctrl": {
+          "auroc": 0.75,
+          "recall": 1.0,
+          "false_positive_rate": {
+            "clean": 0.0,
+            "benign": 1.0
+          },
+          "balanced_accuracy": 0.75
+        }
+      },
+      "host_auc": {
+        "mean": 0.75,
+        "ci95": [
+          0.75,
+          0.75
+        ],
+        "by_host": {
+          "alu": 0.75,
+          "crc32": 0.75,
+          "fifo": 0.75,
+          "fir": 0.75,
+          "i2c": 0.75,
+          "mac": 0.75,
+          "pwm": 0.75,
+          "spi": 0.75,
+          "sram_ctrl": 0.75
+        }
+      },
+      "pooled_auc": 0.6574074074074074,
+      "predictions": [
+        [
+          "alu",
+          "clean",
+          0.4984242916107178
+        ],
+        [
+          "alu",
+          "benign",
+          0.5468743443489075
+        ],
+        [
+          "alu",
+          "trojan",
+          0.5468743443489075
+        ],
+        [
+          "crc32",
+          "clean",
+          0.39533933997154236
+        ],
+        [
+          "crc32",
+          "benign",
+          0.5088006258010864
+        ],
+        [
+          "crc32",
+          "trojan",
+          0.5088006258010864
+        ],
+        [
+          "fifo",
+          "clean",
+          0.4870453476905823
+        ],
+        [
+          "fifo",
+          "benign",
+          0.588855504989624
+        ],
+        [
+          "fifo",
+          "trojan",
+          0.588855504989624
+        ],
+        [
+          "fir",
+          "clean",
+          0.19285948574543
+        ],
+        [
+          "fir",
+          "benign",
+          0.3679681420326233
+        ],
+        [
+          "fir",
+          "trojan",
+          0.3679681420326233
+        ],
+        [
+          "i2c",
+          "clean",
+          0.49688515067100525
+        ],
+        [
+          "i2c",
+          "benign",
+          0.6048571467399597
+        ],
+        [
+          "i2c",
+          "trojan",
+          0.6048571467399597
+        ],
+        [
+          "mac",
+          "clean",
+          0.6747560501098633
+        ],
+        [
+          "mac",
+          "benign",
+          0.6959089636802673
+        ],
+        [
+          "mac",
+          "trojan",
+          0.6959089636802673
+        ],
+        [
+          "pwm",
+          "clean",
+          0.4908251464366913
+        ],
+        [
+          "pwm",
+          "benign",
+          0.6266440153121948
+        ],
+        [
+          "pwm",
+          "trojan",
+          0.6266440153121948
+        ],
+        [
+          "spi",
+          "clean",
+          0.4095810353755951
+        ],
+        [
+          "spi",
+          "benign",
+          0.635326087474823
+        ],
+        [
+          "spi",
+          "trojan",
+          0.635326087474823
+        ],
+        [
+          "sram_ctrl",
+          "clean",
+          0.462298184633255
+        ],
+        [
+          "sram_ctrl",
+          "benign",
+          0.5250219106674194
+        ],
+        [
+          "sram_ctrl",
+          "trojan",
+          0.5250219106674194
+        ]
+      ]
+    },
+    "paired_delta": {
+      "mean": -0.027777777777777776,
+      "ci95": [
+        -0.1111111111111111,
+        0.05555555555555558
+      ],
+      "by_host": {
+        "alu": -0.25,
+        "crc32": 0.0,
+        "fifo": 0.0,
+        "fir": 0.0,
+        "i2c": 0.0,
+        "mac": 0.0,
+        "pwm": 0.25,
+        "spi": 0.0,
+        "sram_ctrl": -0.25
+      }
+    }
+  }
+}

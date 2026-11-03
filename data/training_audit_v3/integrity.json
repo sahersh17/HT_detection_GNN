@@ -1,0 +1,12 @@
+{
+  "records": 195,
+  "graph_tensors_unchanged": true,
+  "labels_verified": true,
+  "finite_and_bounded": true,
+  "sanitized_terms_absent": true,
+  "train_hosts": 60,
+  "test_hosts": [
+    "PIC16F84",
+    "memctrl"
+  ]
+}

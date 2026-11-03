@@ -1,0 +1,208 @@
+{
+  "fold_audit": [
+    {
+      "fold": 0,
+      "records": 37,
+      "hosts": 12,
+      "negative": 24,
+      "positive": 13,
+      "positive_mechanisms": {
+        "conditional_output_fault": 2,
+        "constant_change": 1,
+        "literal": 9,
+        "pin_select": 1
+      },
+      "unicode_copies": 0,
+      "unicode_negative": 0,
+      "unicode_positive": 0,
+      "unicode_hosts": []
+    },
+    {
+      "fold": 1,
+      "records": 37,
+      "hosts": 12,
+      "negative": 24,
+      "positive": 13,
+      "positive_mechanisms": {
+        "conditional_output_fault": 2,
+        "constant_change": 1,
+        "literal": 8,
+        "pin_select": 2
+      },
+      "unicode_copies": 6,
+      "unicode_negative": 4,
+      "unicode_positive": 2,
+      "unicode_hosts": [
+        "tt_um_Max00Ker_Traffic_Light",
+        "tt_um_snn_with_delays_paolaunisa"
+      ]
+    },
+    {
+      "fold": 2,
+      "records": 36,
+      "hosts": 12,
+      "negative": 24,
+      "positive": 12,
+      "positive_mechanisms": {
+        "bitwise_operator_change": 1,
+        "literal": 8,
+        "mask_change": 1,
+        "pin_select": 2
+      },
+      "unicode_copies": 3,
+      "unicode_negative": 2,
+      "unicode_positive": 1,
+      "unicode_hosts": [
+        "tt_um_lstm_wakeword"
+      ]
+    },
+    {
+      "fold": 3,
+      "records": 37,
+      "hosts": 12,
+      "negative": 24,
+      "positive": 13,
+      "positive_mechanisms": {
+        "bitwise_operator_change": 1,
+        "literal": 8,
+        "pin_select": 2,
+        "receive_readiness_suppression": 2
+      },
+      "unicode_copies": 3,
+      "unicode_negative": 2,
+      "unicode_positive": 1,
+      "unicode_hosts": [
+        "tt_um_DelosReyesJordan_HDL"
+      ]
+    },
+    {
+      "fold": 4,
+      "records": 38,
+      "hosts": 12,
+      "negative": 24,
+      "positive": 14,
+      "positive_mechanisms": {
+        "bit_slice_change": 1,
+        "conditional_output_fault": 4,
+        "literal": 8,
+        "pin_select": 1
+      },
+      "unicode_copies": 0,
+      "unicode_negative": 0,
+      "unicode_positive": 0,
+      "unicode_hosts": []
+    }
+  ],
+  "unicode_total": 12,
+  "unicode_hosts": 4,
+  "uncertainty": {
+    "size_only/logistic": {
+      "equal_host_auroc": 0.4791666666666667,
+      "host_bootstrap_95pct_interval": [
+        0.3875,
+        0.575
+      ],
+      "delta_vs_size_only": 0.0,
+      "delta_host_bootstrap_95pct_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "graph_aggregates/logistic": {
+      "equal_host_auroc": 0.5708333333333333,
+      "host_bootstrap_95pct_interval": [
+        0.4708333333333333,
+        0.6666666666666666
+      ],
+      "delta_vs_size_only": 0.09166666666666666,
+      "delta_host_bootstrap_95pct_interval": [
+        -0.058437499999999906,
+        0.24166666666666667
+      ]
+    },
+    "pooled_codebert/logistic": {
+      "equal_host_auroc": 0.4666666666666667,
+      "host_bootstrap_95pct_interval": [
+        0.36666666666666664,
+        0.5666666666666667
+      ],
+      "delta_vs_size_only": -0.0125,
+      "delta_host_bootstrap_95pct_interval": [
+        -0.15,
+        0.12083333333333333
+      ]
+    },
+    "combined/logistic": {
+      "equal_host_auroc": 0.5833333333333334,
+      "host_bootstrap_95pct_interval": [
+        0.475,
+        0.6833333333333333
+      ],
+      "delta_vs_size_only": 0.10416666666666667,
+      "delta_host_bootstrap_95pct_interval": [
+        -0.041666666666666664,
+        0.24583333333333332
+      ]
+    }
+  },
+  "bootstrap_seed": 20261103,
+  "bootstrap_draws": 10000,
+  "subgroups": {
+    "size_only/logistic": {
+      "native": {
+        "hosts": 49,
+        "equal_host_auroc": 0.46938775510204084
+      },
+      "non_native": {
+        "hosts": 11,
+        "equal_host_auroc": 0.5227272727272727
+      },
+      "excluding_unicode_hosts": {
+        "hosts": 56,
+        "equal_host_auroc": 0.4732142857142857
+      }
+    },
+    "graph_aggregates/logistic": {
+      "native": {
+        "hosts": 49,
+        "equal_host_auroc": 0.5612244897959183
+      },
+      "non_native": {
+        "hosts": 11,
+        "equal_host_auroc": 0.6136363636363636
+      },
+      "excluding_unicode_hosts": {
+        "hosts": 56,
+        "equal_host_auroc": 0.5892857142857143
+      }
+    },
+    "pooled_codebert/logistic": {
+      "native": {
+        "hosts": 49,
+        "equal_host_auroc": 0.5
+      },
+      "non_native": {
+        "hosts": 11,
+        "equal_host_auroc": 0.3181818181818182
+      },
+      "excluding_unicode_hosts": {
+        "hosts": 56,
+        "equal_host_auroc": 0.4732142857142857
+      }
+    },
+    "combined/logistic": {
+      "native": {
+        "hosts": 49,
+        "equal_host_auroc": 0.6020408163265306
+      },
+      "non_native": {
+        "hosts": 11,
+        "equal_host_auroc": 0.5
+      },
+      "excluding_unicode_hosts": {
+        "hosts": 56,
+        "equal_host_auroc": 0.6071428571428571
+      }
+    }
+  }
+}

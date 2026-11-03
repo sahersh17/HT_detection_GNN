@@ -1,0 +1,84 @@
+{
+  "gnn": {
+    "old_five_epoch_test_auc": 0.26666666666666666,
+    "balanced_train_auc": 0.5942521367521367,
+    "balanced_train_nll": 0.6902551032471225,
+    "balanced_test_auc": 0.6133333333333333,
+    "balanced_equal_host_auc": 0.6666666666666666,
+    "balanced_test_accuracy": 0.5,
+    "per_seed": [
+      {
+        "seed": 42,
+        "train_auc": 0.5985897435897436,
+        "test_auc": 0.8,
+        "test_accuracy": 0.5,
+        "training_threshold_accuracy": 0.5
+      },
+      {
+        "seed": 43,
+        "train_auc": 0.587948717948718,
+        "test_auc": 0.84,
+        "test_accuracy": 0.5,
+        "training_threshold_accuracy": 0.5
+      },
+      {
+        "seed": 44,
+        "train_auc": 0.5962179487179488,
+        "test_auc": 0.2,
+        "test_accuracy": 0.5,
+        "training_threshold_accuracy": 0.5
+      }
+    ],
+    "legacy": {
+      "epochs": 100,
+      "updates": 18500,
+      "train_auc": 0.6076282051282051,
+      "train_nll": 1.7146531670134977,
+      "test_auc": 0.16
+    }
+  },
+  "fusion": {
+    "old_five_epoch_test_auc": 0.3333333333333333,
+    "balanced_train_auc": 0.6030341880341881,
+    "balanced_train_nll": 0.6963806806349433,
+    "balanced_test_auc": 0.52,
+    "balanced_equal_host_auc": 0.75,
+    "balanced_test_accuracy": 0.5,
+    "per_seed": [
+      {
+        "seed": 42,
+        "train_auc": 0.6169871794871795,
+        "test_auc": 0.84,
+        "test_accuracy": 0.5,
+        "training_threshold_accuracy": 0.5
+      },
+      {
+        "seed": 43,
+        "train_auc": 0.6125641025641025,
+        "test_auc": 0.52,
+        "test_accuracy": 0.5,
+        "training_threshold_accuracy": 0.5
+      },
+      {
+        "seed": 44,
+        "train_auc": 0.579551282051282,
+        "test_auc": 0.2,
+        "test_accuracy": 0.5,
+        "training_threshold_accuracy": 0.5
+      }
+    ],
+    "legacy": {
+      "epochs": 25,
+      "updates": 4625,
+      "train_auc": 0.5769871794871795,
+      "train_nll": 2.0522107576259767,
+      "test_auc": 0.84
+    }
+  },
+  "artifacts": {
+    "runs": 8,
+    "all_training_records_seen": true,
+    "sanitized_manifest_sha256": "7799e67ef0011074d1ef9b440b42160caab8cb5615e1be2dc04fe5e07b81db72",
+    "model_sha256": "c28b7e637bc3162759c2c693115f40e8be455bc60dff7fc0595419af1bd910f6"
+  }
+}

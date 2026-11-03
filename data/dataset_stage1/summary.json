@@ -1,0 +1,137 @@
+{
+  "diagnostic_chunk_max": 191,
+  "diagnostic_hosts": [
+    "PIC16F84",
+    "memctrl"
+  ],
+  "diagnostic_records": 10,
+  "final_test_records": 0,
+  "folds": [
+    {
+      "fold": 0,
+      "test_cohorts": {
+        "baseline": 3,
+        "four_projects": 4,
+        "native": 30
+      },
+      "test_hosts": 12,
+      "test_labels": {
+        "0": 24,
+        "1": 13
+      },
+      "test_records": 37
+    },
+    {
+      "fold": 1,
+      "test_cohorts": {
+        "baseline": 3,
+        "four_projects": 4,
+        "native": 30
+      },
+      "test_hosts": 12,
+      "test_labels": {
+        "0": 24,
+        "1": 13
+      },
+      "test_records": 37
+    },
+    {
+      "fold": 2,
+      "test_cohorts": {
+        "baseline": 6,
+        "native": 30
+      },
+      "test_hosts": 12,
+      "test_labels": {
+        "0": 24,
+        "1": 12
+      },
+      "test_records": 36
+    },
+    {
+      "fold": 3,
+      "test_cohorts": {
+        "baseline": 3,
+        "external_authored": 4,
+        "native": 30
+      },
+      "test_hosts": 12,
+      "test_labels": {
+        "0": 24,
+        "1": 13
+      },
+      "test_records": 37
+    },
+    {
+      "fold": 4,
+      "test_cohorts": {
+        "baseline": 3,
+        "four_projects": 8,
+        "native": 27
+      },
+      "test_hosts": 12,
+      "test_labels": {
+        "0": 24,
+        "1": 14
+      },
+      "test_records": 38
+    }
+  ],
+  "native_mechanism_hosts": {
+    "literal": 41,
+    "pin_select": 8
+  },
+  "saved_model_view_mismatches": [
+    "native_tt_um_DelosReyesJordan_HDL_clean",
+    "native_tt_um_DelosReyesJordan_HDL_benign",
+    "native_tt_um_DelosReyesJordan_HDL_trojan",
+    "native_tt_um_snn_with_delays_paolaunisa_clean",
+    "native_tt_um_snn_with_delays_paolaunisa_benign",
+    "native_tt_um_snn_with_delays_paolaunisa_trojan",
+    "native_tt_um_lstm_wakeword_clean",
+    "native_tt_um_lstm_wakeword_benign",
+    "native_tt_um_lstm_wakeword_trojan",
+    "native_tt_um_Max00Ker_Traffic_Light_clean",
+    "native_tt_um_Max00Ker_Traffic_Light_benign",
+    "native_tt_um_Max00Ker_Traffic_Light_trojan"
+  ],
+  "shared_source_owners": {
+    "alexforencich": [
+      "i2c_controller",
+      "verilog-axis"
+    ],
+    "secworks": [
+      "sha1",
+      "sha2"
+    ],
+    "ultraembedded": [
+      "core_usb_uart",
+      "jpeg_huffman"
+    ]
+  },
+  "source_files_hashed": 450,
+  "status": "stage1_locked",
+  "training_cohorts": {
+    "baseline": 18,
+    "external_authored": 4,
+    "four_projects": 16,
+    "native": 147
+  },
+  "training_hosts": 60,
+  "training_labels": {
+    "0": 120,
+    "1": 65
+  },
+  "training_legacy_node_range": [
+    17,
+    1444.0,
+    11710
+  ],
+  "training_records": 185,
+  "training_rtl_chunk_range": [
+    4,
+    18.0,
+    150
+  ],
+  "undocumented_diagnostic_attack_records": 5
+}

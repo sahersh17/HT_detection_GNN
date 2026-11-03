@@ -1,0 +1,3592 @@
+{
+  "protocol": {
+    "status": "frozen_before_new_scoring",
+    "models": [
+      "GNNOnly",
+      "CrossAttentionFusion"
+    ],
+    "architecture": "pipeline/models.py defaults",
+    "epochs": 5,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "threshold": 0.5,
+    "baseline_training": "six verified project triplets",
+    "augmented_training": "same six plus usable native-edit triplets, four development projects with surviving benign arithmetic rewrites, independently authored verified RS232-T2100 and RS232-T2200",
+    "heldout": "all ten existing PIC16F84 and memctrl diagnostic circuits, zero host overlap",
+    "report": "pooled and equal-host AUROC, balanced accuracy, paired host bootstrap conditional on predictions",
+    "admission": "execute as explicitly requested exploratory augmentation even if shortcut checks fail; record failures with results",
+    "reserved": [
+      "serv",
+      "wb2axip"
+    ],
+    "corpus_counts": {
+      "baseline": 18,
+      "native": 147,
+      "four_projects": 16,
+      "external_authored": 4,
+      "test": 10
+    },
+    "input_transform": "log1p on four nonnegative graph numeric channels, unchanged gate vocabulary; CodeBERT masked mean, pinned revision",
+    "external_authorship_scope": "Two original benchmark attacks from the Trust-Hub RS232 source collection. Distinct from this project's mutations, one shared host and collection. Individual authorship independence between the two is not established.",
+    "additional_control": "baseline_matched_updates repeats only baseline hosts to equal augmented optimizer steps, same seed and optimizer; added before neural model scoring"
+  },
+  "comparison": {
+    "gnn": {
+      "baseline": {
+        "pooled_auc_mean": 0.18666666666666668,
+        "host_auc_mean": 0.3333333333333333,
+        "balanced_accuracy_mean": 0.5,
+        "per_seed": [
+          {
+            "seed": 42,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.2
+            },
+            "host_auc": {
+              "mean": 0.5,
+              "ci95": [
+                0.0,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 1.0
+              }
+            }
+          },
+          {
+            "seed": 43,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.16
+            },
+            "host_auc": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 0.0
+              }
+            }
+          },
+          {
+            "seed": 44,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.2
+            },
+            "host_auc": {
+              "mean": 0.5,
+              "ci95": [
+                0.0,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "baseline_matched_updates": {
+        "pooled_auc_mean": 0.18666666666666668,
+        "host_auc_mean": 0.3333333333333333,
+        "balanced_accuracy_mean": 0.5,
+        "per_seed": [
+          {
+            "seed": 42,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.2
+            },
+            "host_auc": {
+              "mean": 0.5,
+              "ci95": [
+                0.0,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 1.0
+              }
+            }
+          },
+          {
+            "seed": 43,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.16
+            },
+            "host_auc": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 0.0
+              }
+            }
+          },
+          {
+            "seed": 44,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.2
+            },
+            "host_auc": {
+              "mean": 0.5,
+              "ci95": [
+                0.0,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "augmented": {
+        "pooled_auc_mean": 0.26666666666666666,
+        "host_auc_mean": 0.08333333333333333,
+        "balanced_accuracy_mean": 0.5,
+        "per_seed": [
+          {
+            "seed": 42,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.48
+            },
+            "host_auc": {
+              "mean": 0.25,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "by_host": {
+                "PIC16F84": 0.5,
+                "memctrl": 0.0
+              }
+            }
+          },
+          {
+            "seed": 43,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.16
+            },
+            "host_auc": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 0.0
+              }
+            }
+          },
+          {
+            "seed": 44,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.16
+            },
+            "host_auc": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 0.0
+              }
+            }
+          }
+        ]
+      },
+      "paired_deltas": [
+        {
+          "seed": 42,
+          "pooled_auc": 0.27999999999999997,
+          "host_delta": {
+            "PIC16F84": 0.5,
+            "memctrl": -1.0
+          }
+        },
+        {
+          "seed": 43,
+          "pooled_auc": 0.0,
+          "host_delta": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        {
+          "seed": 44,
+          "pooled_auc": -0.04000000000000001,
+          "host_delta": {
+            "PIC16F84": 0.0,
+            "memctrl": -1.0
+          }
+        }
+      ],
+      "mean_seed_host_delta": {
+        "mean": -0.25,
+        "ci95": [
+          -0.6666666666666666,
+          0.16666666666666666
+        ],
+        "by_host": {
+          "PIC16F84": 0.16666666666666666,
+          "memctrl": -0.6666666666666666
+        }
+      }
+    },
+    "fusion": {
+      "baseline": {
+        "pooled_auc_mean": 0.18666666666666668,
+        "host_auc_mean": 0.3333333333333333,
+        "balanced_accuracy_mean": 0.5,
+        "per_seed": [
+          {
+            "seed": 42,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.2
+            },
+            "host_auc": {
+              "mean": 0.5,
+              "ci95": [
+                0.0,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 1.0
+              }
+            }
+          },
+          {
+            "seed": 43,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.2
+            },
+            "host_auc": {
+              "mean": 0.5,
+              "ci95": [
+                0.0,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 1.0
+              }
+            }
+          },
+          {
+            "seed": 44,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.16
+            },
+            "host_auc": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 0.0
+              }
+            }
+          }
+        ]
+      },
+      "baseline_matched_updates": {
+        "pooled_auc_mean": 0.18666666666666668,
+        "host_auc_mean": 0.3333333333333333,
+        "balanced_accuracy_mean": 0.5,
+        "per_seed": [
+          {
+            "seed": 42,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.2
+            },
+            "host_auc": {
+              "mean": 0.5,
+              "ci95": [
+                0.0,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 1.0
+              }
+            }
+          },
+          {
+            "seed": 43,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.2
+            },
+            "host_auc": {
+              "mean": 0.5,
+              "ci95": [
+                0.0,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 1.0
+              }
+            }
+          },
+          {
+            "seed": 44,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.16
+            },
+            "host_auc": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 0.0
+              }
+            }
+          }
+        ]
+      },
+      "augmented": {
+        "pooled_auc_mean": 0.3333333333333333,
+        "host_auc_mean": 0.2916666666666667,
+        "balanced_accuracy_mean": 0.5,
+        "per_seed": [
+          {
+            "seed": 42,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.68
+            },
+            "host_auc": {
+              "mean": 0.875,
+              "ci95": [
+                0.75,
+                1.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.75,
+                "memctrl": 1.0
+              }
+            }
+          },
+          {
+            "seed": 43,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.16
+            },
+            "host_auc": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 0.0
+              }
+            }
+          },
+          {
+            "seed": 44,
+            "pooled": {
+              "n": 10,
+              "tn": 5,
+              "fp": 0,
+              "fn": 5,
+              "tp": 0,
+              "accuracy": 0.5,
+              "balanced_accuracy": 0.5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "fpr": 0.0,
+              "macro_f1": 0.3333333333333333,
+              "auroc": 0.16
+            },
+            "host_auc": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "by_host": {
+                "PIC16F84": 0.0,
+                "memctrl": 0.0
+              }
+            }
+          }
+        ]
+      },
+      "paired_deltas": [
+        {
+          "seed": 42,
+          "pooled_auc": 0.48000000000000004,
+          "host_delta": {
+            "PIC16F84": 0.75,
+            "memctrl": 0.0
+          }
+        },
+        {
+          "seed": 43,
+          "pooled_auc": -0.04000000000000001,
+          "host_delta": {
+            "PIC16F84": 0.0,
+            "memctrl": -1.0
+          }
+        },
+        {
+          "seed": 44,
+          "pooled_auc": 0.0,
+          "host_delta": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        }
+      ],
+      "mean_seed_host_delta": {
+        "mean": -0.04166666666666666,
+        "ci95": [
+          -0.3333333333333333,
+          0.25
+        ],
+        "by_host": {
+          "PIC16F84": 0.25,
+          "memctrl": -0.3333333333333333
+        }
+      }
+    }
+  },
+  "runs": [
+    {
+      "arm": "gnn",
+      "condition": "baseline",
+      "seed": 42,
+      "epochs": 5,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 90,
+      "losses": [
+        0.794059556391504,
+        0.7765030099285973,
+        0.9142555768291155,
+        1.0677142217755318,
+        1.420509087542693
+      ],
+      "elapsed_seconds": 2.831925800011959,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.2
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.06991179287433624
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.06996041536331177
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.07635209709405899
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.07419738173484802
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.07635209709405899
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.07488738745450974
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.07635209709405899
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.07527316361665726
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.07635209709405899
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.0753142386674881
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "gnn",
+      "condition": "baseline_matched_updates",
+      "seed": 42,
+      "epochs": 52,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 925,
+      "losses": [
+        0.794059556391504,
+        0.7765030099285973,
+        0.9142555768291155,
+        1.0677142217755318,
+        1.420509087542693,
+        1.45958769083437,
+        1.6649893747332196,
+        1.6185672347330384,
+        1.7004232974722981,
+        1.7349383217903476,
+        1.7699270569201973,
+        1.7140950641284387,
+        1.7228252787867353,
+        1.5812481632456183,
+        1.5197463700961735,
+        1.7269943242168262,
+        1.756063358961708,
+        1.8589705813469157,
+        1.7387938179179199,
+        1.589265123113162,
+        1.6229104284817975,
+        1.6728575243614614,
+        1.7629429762148194,
+        1.8737417586768668,
+        1.5311304189575214,
+        1.6900501841058333,
+        1.800021773100727,
+        1.686120503116399,
+        1.8702162766001291,
+        1.6539105872830584,
+        1.890941465118279,
+        1.6458092099055648,
+        1.710494947930177,
+        1.7288900372675724,
+        1.8758568314628468,
+        1.698999876052969,
+        1.6804352685188253,
+        1.5304024105684624,
+        1.8704342509930332,
+        1.799006751531528,
+        1.7225255802687671,
+        1.858882910727213,
+        1.8292519625069366,
+        1.6871311619049973,
+        1.7567214383743703,
+        1.8488891441892419,
+        1.6782538787358336,
+        1.8022691097317471,
+        1.721055386070576,
+        1.745938988816407,
+        1.646385946414537,
+        0.8148037254189452
+      ],
+      "elapsed_seconds": 22.973443199996836,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.2
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.046818025410175323
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04684745892882347
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0494060292840004
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04802002012729645
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0494060292840004
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04848621040582657
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0494060292840004
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04883064329624176
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0494060292840004
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.048857975751161575
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "gnn",
+      "condition": "augmented",
+      "seed": 42,
+      "epochs": 5,
+      "train_circuits": 185,
+      "train_hosts": 60,
+      "updates": 925,
+      "losses": [
+        1.076009215213157,
+        1.770602726757627,
+        1.6918874336331076,
+        1.6418223011987032,
+        1.6903381863332076
+      ],
+      "elapsed_seconds": 12.980106899980456,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.48
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.5
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.25,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "by_host": {
+            "PIC16F84": 0.5,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03554709255695343
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03552396968007088
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03933136537671089
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03829529136419296
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03933136537671089
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03908298537135124
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03933136537671089
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.039531409740448
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03933136537671089
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.039556246250867844
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "baseline",
+      "seed": 42,
+      "epochs": 5,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 90,
+      "losses": [
+        1.5035973848361108,
+        1.4634155179891322,
+        1.7760193224271967,
+        2.181401318870485,
+        1.5453939428552985
+      ],
+      "elapsed_seconds": 8.966724800004158,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.2
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04303118586540222
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04314055293798447
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0477762371301651
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04500813037157059
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0477762371301651
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04629936441779137
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0477762371301651
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04652399942278862
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0477762371301651
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.046587131917476654
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "baseline_matched_updates",
+      "seed": 42,
+      "epochs": 52,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 925,
+      "losses": [
+        1.5035973848361108,
+        1.4634155179891322,
+        1.7760193224271967,
+        2.181401318870485,
+        1.5453939428552985,
+        1.6535207915326788,
+        1.747598208176593,
+        1.775282273741646,
+        1.8608052443143808,
+        1.8283508827702866,
+        1.6367126195691526,
+        1.6975346400609448,
+        1.8706588082843356,
+        1.6696692497676446,
+        2.031539506330672,
+        1.7171389910702903,
+        1.6303132730018761,
+        1.9526089129245117,
+        1.9437097110268142,
+        1.92909045294962,
+        1.6129708281821675,
+        1.723617537257572,
+        1.7569701686087582,
+        1.7410737884541352,
+        1.6840469991374347,
+        1.8119667840914593,
+        1.7361971530028515,
+        1.475051130582061,
+        1.8791714148182008,
+        1.8125603801260393,
+        1.6576586211514142,
+        1.787389459916287,
+        1.889938227366656,
+        1.5716238961968985,
+        1.7004769491031766,
+        1.590679543868949,
+        1.8270182993987367,
+        1.824388291893734,
+        1.6547671844147973,
+        1.715550036014368,
+        1.7111764312204387,
+        1.8057471534444227,
+        1.9006627368119855,
+        1.7126486461816564,
+        1.7245593778789043,
+        1.6619927149472966,
+        1.8262964214405253,
+        1.94803080180039,
+        1.796499272601472,
+        1.7853144222042627,
+        1.9302036283123825,
+        0.7529798027955823
+      ],
+      "elapsed_seconds": 87.30912029999308,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.2
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.045341722667217255
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04551700875163078
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04942856356501579
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04738704860210419
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04942856356501579
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.047922562807798386
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04942856356501579
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04810948669910431
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04942856356501579
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04814793914556503
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "augmented",
+      "seed": 42,
+      "epochs": 5,
+      "train_circuits": 185,
+      "train_hosts": 60,
+      "updates": 925,
+      "losses": [
+        1.6269869094311789,
+        1.687061665904381,
+        1.7019971262160185,
+        1.7214398717004302,
+        1.7078014516900923
+      ],
+      "elapsed_seconds": 42.000265600014245,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.68
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.75
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.875,
+          "ci95": [
+            0.75,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.75,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0458865724503994
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04591326788067818
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.047548532485961914
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04683781415224075
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.047548532485961914
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04756954684853554
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.047548532485961914
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.047634825110435486
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.047548532485961914
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.047651201486587524
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "gnn",
+      "condition": "baseline",
+      "seed": 43,
+      "epochs": 5,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 90,
+      "losses": [
+        0.725185961359077,
+        1.0618017084068723,
+        1.4737310498538945,
+        1.5943050427983205,
+        1.5878013545233343
+      ],
+      "elapsed_seconds": 2.4219689999881666,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.07581934332847595
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.0757962316274643
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.08672402799129486
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.0815262496471405
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.08672402799129486
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.08324771374464035
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.08672402799129486
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.08461008965969086
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.08672402799129486
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.084615558385849
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "gnn",
+      "condition": "baseline_matched_updates",
+      "seed": 43,
+      "epochs": 52,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 925,
+      "losses": [
+        0.725185961359077,
+        1.0618017084068723,
+        1.4737310498538945,
+        1.5943050427983205,
+        1.5878013545233343,
+        1.553062715826349,
+        1.7312881704419851,
+        1.6658371125554874,
+        1.7647909332687657,
+        1.818188213588049,
+        1.555102478298876,
+        1.6444249644668565,
+        1.7755588919131293,
+        1.6659986473516457,
+        1.7835442507122126,
+        1.7596720104726653,
+        1.8835196984517906,
+        1.757956323110395,
+        1.7788751859528322,
+        1.67119769534717,
+        1.7055070677565203,
+        1.8137440397404134,
+        2.0088321424296334,
+        1.7285011818425522,
+        1.71561815092961,
+        1.8317257022588618,
+        1.682769080520504,
+        1.6067609458437397,
+        1.6772787992118134,
+        1.569808668974373,
+        1.5639055614463158,
+        1.7733585378672514,
+        1.5211188709363341,
+        1.8790299178411562,
+        1.865735603703393,
+        1.6416964685647852,
+        1.5543357112134497,
+        1.8291287428906395,
+        1.764185054693371,
+        1.5499256719421182,
+        1.477358834300604,
+        1.662025280141582,
+        1.6015500178974535,
+        1.8479425630325244,
+        1.6635787212807271,
+        1.823534032743838,
+        1.8819837083315685,
+        1.9678196464147832,
+        1.799225877194355,
+        1.6350091842210128,
+        1.758437383092112,
+        0.8364436394638486
+      ],
+      "elapsed_seconds": 24.03824930000701,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05338427796959877
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.053384050726890564
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.059619348496198654
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.058014243841171265
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.059619348496198654
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.059333302080631256
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.059619348496198654
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.05900944396853447
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.059619348496198654
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.05903221294283867
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "gnn",
+      "condition": "augmented",
+      "seed": 43,
+      "epochs": 5,
+      "train_circuits": 185,
+      "train_hosts": 60,
+      "updates": 925,
+      "losses": [
+        1.4720383698095543,
+        1.7631567484447481,
+        1.7261420353189916,
+        1.699307717639651,
+        1.5514138817233412
+      ],
+      "elapsed_seconds": 12.968177600007039,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04141805320978165
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04139022156596184
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0467640683054924
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.045288778841495514
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0467640683054924
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04606932774186134
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0467640683054924
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04592185467481613
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.0467640683054924
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04595145583152771
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "baseline",
+      "seed": 43,
+      "epochs": 5,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 90,
+      "losses": [
+        1.348625024780631,
+        1.8922315401852958,
+        1.8137960296331181,
+        1.6145214247517288,
+        2.1704938114724226
+      ],
+      "elapsed_seconds": 9.547790800017538,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.2
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.02366815134882927
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.023914659395813942
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.026143208146095276
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.02535320818424225
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.026143208146095276
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.02571379579603672
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.026143208146095276
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.02561068907380104
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.026143208146095276
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.025622176006436348
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "baseline_matched_updates",
+      "seed": 43,
+      "epochs": 52,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 925,
+      "losses": [
+        1.348625024780631,
+        1.8922315401852958,
+        1.8137960296331181,
+        1.6145214247517288,
+        2.1704938114724226,
+        1.5910158765812714,
+        1.8357933992519975,
+        1.9044412614570723,
+        1.9429376204498112,
+        1.5807822878575988,
+        1.5744840850432713,
+        1.6880020070821047,
+        1.8224228866812255,
+        1.7853555059474375,
+        1.6512721294744148,
+        1.7826688112173643,
+        1.7516261675498552,
+        1.801522144426902,
+        1.7467228106430008,
+        1.598962198735939,
+        1.75460563486235,
+        1.7102699591260817,
+        1.9330352774510782,
+        1.8214752554583054,
+        1.8641102348661258,
+        1.7701594965118501,
+        1.7665128684085276,
+        1.8258038417746623,
+        1.7922795125697222,
+        1.686750382805864,
+        1.5041409863366022,
+        1.712340138386935,
+        1.8553740442730486,
+        1.8788941462213795,
+        1.7005140735871263,
+        1.6794713661074638,
+        1.7148754977517657,
+        1.6341480121740863,
+        1.7491803297048643,
+        1.5834836594036057,
+        1.7582662987729742,
+        1.7168029761976666,
+        1.7332303202711046,
+        1.8771425945063431,
+        1.788746771402657,
+        1.7157607193415363,
+        1.5822029348669782,
+        1.7328383572813537,
+        2.0205650974789426,
+        1.8463828726154234,
+        1.6770696845940418,
+        0.8281800033938553
+      ],
+      "elapsed_seconds": 114.43774339999072,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.2
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03409554064273834
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.034151460975408554
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03660542890429497
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.036134447902441025
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03660542890429497
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03632836043834686
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03660542890429497
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03627917915582657
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03660542890429497
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.0362878143787384
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "augmented",
+      "seed": 43,
+      "epochs": 5,
+      "train_circuits": 185,
+      "train_hosts": 60,
+      "updates": 925,
+      "losses": [
+        1.4251713081942619,
+        1.798426770091661,
+        1.7850325156179432,
+        1.6520721376143597,
+        1.6864250504260732
+      ],
+      "elapsed_seconds": 106.54374140000436,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.031021341681480408
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.030979005619883537
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.034070566296577454
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03350948914885521
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.034070566296577454
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.033648621290922165
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.034070566296577454
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03380344435572624
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.034070566296577454
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03382251784205437
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "gnn",
+      "condition": "baseline",
+      "seed": 44,
+      "epochs": 5,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 90,
+      "losses": [
+        0.7947410543759664,
+        0.7469467404815886,
+        0.957054609225856,
+        1.1108830362144444,
+        1.5313187945220206
+      ],
+      "elapsed_seconds": 6.552621599985287,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.2
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.06694376468658447
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.06705635040998459
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.08507903665304184
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.08366715908050537
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.08507903665304184
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.0845814123749733
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.08507903665304184
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.08492668718099594
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.08507903665304184
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.08494284003973007
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "gnn",
+      "condition": "baseline_matched_updates",
+      "seed": 44,
+      "epochs": 52,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 925,
+      "losses": [
+        0.7947410543759664,
+        0.7469467404815886,
+        0.957054609225856,
+        1.1108830362144444,
+        1.5313187945220206,
+        1.9374725236040022,
+        1.7615302193702922,
+        1.7488130406580038,
+        1.7939057622311845,
+        1.8111343504860997,
+        1.7387560533566608,
+        1.6879086936306622,
+        1.7070233845669363,
+        1.755494688430594,
+        1.7788979065501027,
+        1.6860879703631833,
+        1.7572256668677761,
+        1.7763583477483027,
+        1.7364107156172395,
+        1.5360345045725505,
+        1.5451755647857983,
+        1.8508341091995437,
+        1.8039209697809484,
+        2.0629560119317225,
+        1.9814664426570137,
+        1.8730414072569046,
+        1.5573827475309372,
+        1.9041546472451754,
+        1.5424680995444457,
+        1.65644292657574,
+        1.7048411628024445,
+        1.6570560064477224,
+        1.856762544148498,
+        1.704862771762742,
+        1.984458814116402,
+        1.7053545085299346,
+        1.581292538644953,
+        1.750131711570753,
+        1.8045226572495368,
+        1.5988169339381986,
+        1.6812206707480881,
+        1.8496733686058886,
+        1.738186112811996,
+        1.8380210783539548,
+        1.718541216933065,
+        1.6373456400405202,
+        1.827118517468787,
+        1.8073268521370158,
+        1.6534288795664907,
+        1.5895480131730437,
+        1.8815424415903788,
+        0.0063772085640165545
+      ],
+      "elapsed_seconds": 68.94176400001743,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.2
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 1.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05018994212150574
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.05021457001566887
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.057749807834625244
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.0570564866065979
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.057749807834625244
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.057346198707818985
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.057749807834625244
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.05686817318201065
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.057749807834625244
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.0568586103618145
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "gnn",
+      "condition": "augmented",
+      "seed": 44,
+      "epochs": 5,
+      "train_circuits": 185,
+      "train_hosts": 60,
+      "updates": 925,
+      "losses": [
+        1.2384718699431096,
+        1.649231320156439,
+        1.6827207291070876,
+        1.7785126861109324,
+        1.6927376824280096
+      ],
+      "elapsed_seconds": 36.816197400010424,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04754520207643509
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.047534193843603134
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05567607283592224
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.05532555282115936
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05567607283592224
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.055212508887052536
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05567607283592224
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.05511236935853958
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05567607283592224
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.055121202021837234
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "baseline",
+      "seed": 44,
+      "epochs": 5,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 90,
+      "losses": [
+        0.7825790014531877,
+        0.9256922122504976,
+        1.0310250595211983,
+        1.4078910413922534,
+        1.7352205304842856
+      ],
+      "elapsed_seconds": 28.29523240000708,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03555798530578613
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03548644855618477
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03912714123725891
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.038757890462875366
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03912714123725891
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.0384669303894043
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03912714123725891
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.038349449634552
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03912714123725891
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.03836176171898842
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "baseline_matched_updates",
+      "seed": 44,
+      "epochs": 52,
+      "train_circuits": 18,
+      "train_hosts": 6,
+      "updates": 925,
+      "losses": [
+        0.7825790014531877,
+        0.9256922122504976,
+        1.0310250595211983,
+        1.4078910413922534,
+        1.7352205304842856,
+        1.735915737071385,
+        2.0050384645971158,
+        1.9696199198046491,
+        1.8621556081084742,
+        1.9837555307894945,
+        1.7846417211823993,
+        1.8536080546263192,
+        1.7051416082928579,
+        1.6937812467416127,
+        1.9217492477295712,
+        1.7681375370464392,
+        1.70245115707318,
+        2.0034050282815263,
+        2.003761776464267,
+        1.9985300714357033,
+        1.7767609086715512,
+        1.7830409170128405,
+        2.040230675108938,
+        2.060865212645796,
+        1.8489038441330194,
+        1.9174816067227058,
+        1.8746418588691287,
+        1.8128570095739431,
+        1.772825162185149,
+        1.947281211407648,
+        1.9990859003737569,
+        1.8846307944299445,
+        1.8532922092514734,
+        1.8520630202773545,
+        1.7387777185067534,
+        1.9607739328510232,
+        1.768094818935626,
+        2.000631938636717,
+        1.8641632256718974,
+        1.9468843535416656,
+        1.6574195760509207,
+        1.7505604274984863,
+        1.883718163913323,
+        2.0153064360428186,
+        1.8756530398192506,
+        1.7437400141110022,
+        1.8703482230711315,
+        1.8028135045121114,
+        1.9997828751285043,
+        1.9939940795819793,
+        1.684174897097465,
+        0.5533740501850843
+      ],
+      "elapsed_seconds": 137.77455069997814,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.03855913132429123
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.038491539657115936
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04046827182173729
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.040436528623104095
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04046827182173729
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.040218889713287354
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04046827182173729
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04005611315369606
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.04046827182173729
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.04005400463938713
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    },
+    {
+      "arm": "fusion",
+      "condition": "augmented",
+      "seed": 44,
+      "epochs": 5,
+      "train_circuits": 185,
+      "train_hosts": 60,
+      "updates": 925,
+      "losses": [
+        1.5736387782226744,
+        1.7580296797778558,
+        1.6114579474226245,
+        1.7579969111427263,
+        1.8071105698098404
+      ],
+      "elapsed_seconds": 48.64369260001695,
+      "metrics": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "host_auc": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "by_host": {
+            "PIC16F84": 0.0,
+            "memctrl": 0.0
+          }
+        },
+        "predictions": [
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.050273798406124115
+          },
+          {
+            "host": "memctrl",
+            "benchmark": "memctrl-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.050186559557914734
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05120418593287468
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T100",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.050932612270116806
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05120418593287468
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T200",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.05082319304347038
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05120418593287468
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T300",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.05060025677084923
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "clean",
+            "label": 0,
+            "probability": 0.05120418593287468
+          },
+          {
+            "host": "PIC16F84",
+            "benchmark": "PIC16F84-T400",
+            "variant": "trojan",
+            "label": 1,
+            "probability": 0.050597596913576126
+          }
+        ]
+      },
+      "manifest_sha256": "2b296de62b8a725b73faf1311d0b2a7c6d8b7ecbe16484d0d55cd70118a42e5a"
+    }
+  ]
+}

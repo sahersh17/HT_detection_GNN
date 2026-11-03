@@ -1,0 +1,105 @@
+{
+  "controls": {
+    "characters": {
+      "mean": 0.875,
+      "ci95": [
+        0.625,
+        1.0
+      ],
+      "by_host": {
+        "core_usb_uart": 0.5,
+        "sha1": 1.0,
+        "uart16550": 1.0,
+        "verilog-axis": 1.0
+      }
+    },
+    "lines": {
+      "mean": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "by_host": {
+        "core_usb_uart": 0.5,
+        "sha1": 0.5,
+        "uart16550": 0.5,
+        "verilog-axis": 0.5
+      }
+    },
+    "cells": {
+      "mean": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "by_host": {
+        "core_usb_uart": 0.5,
+        "sha1": 0.5,
+        "uart16550": 0.5,
+        "verilog-axis": 0.5
+      }
+    },
+    "edges": {
+      "mean": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "by_host": {
+        "core_usb_uart": 0.5,
+        "sha1": 0.5,
+        "uart16550": 0.5,
+        "verilog-axis": 0.5
+      }
+    },
+    "stats": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "by_host": {
+        "core_usb_uart": 1.0,
+        "sha1": 1.0,
+        "uart16550": 1.0,
+        "verilog-axis": 1.0
+      }
+    },
+    "wl": {
+      "mean": 0.8125,
+      "ci95": [
+        0.625,
+        1.0
+      ],
+      "by_host": {
+        "core_usb_uart": 0.5,
+        "sha1": 1.0,
+        "uart16550": 1.0,
+        "verilog-axis": 0.75
+      }
+    },
+    "hist": {
+      "mean": 0.625,
+      "ci95": [
+        0.5,
+        0.875
+      ],
+      "by_host": {
+        "core_usb_uart": 1.0,
+        "sha1": 0.5,
+        "uart16550": 0.5,
+        "verilog-axis": 0.5
+      }
+    }
+  },
+  "port_signature_counts": {
+    "core_usb_uart": 1,
+    "sha1": 1,
+    "uart16550": 1,
+    "verilog-axis": 1
+  },
+  "hard_stops": [
+    "stats"
+  ],
+  "scope": "host-held-out fitted controls; one external host cannot support a fitted host-held-out probe"
+}

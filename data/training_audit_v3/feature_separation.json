@@ -1,0 +1,10 @@
+{
+  "rtl_mean": {
+    "median_positive_to_host_negative": 0.044763486832380295,
+    "median_between_host_negative": 3.144468307495117
+  },
+  "graph_statistics": {
+    "median_positive_to_host_negative": 0.007083098404109478,
+    "median_between_host_negative": 2.195823907852173
+  }
+}

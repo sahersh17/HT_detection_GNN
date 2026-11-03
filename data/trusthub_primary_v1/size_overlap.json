@@ -1,0 +1,393 @@
+{
+  "family_provenance": {
+    "AES": {
+      "circuits": 34,
+      "clean_source_bundles": 2,
+      "synthesis_flows": [
+        "read_verilog; hierarchy; proc; opt; flatten; opt; techmap; opt; write_json (no ABC)"
+      ]
+    },
+    "MC8051": {
+      "circuits": 14,
+      "clean_source_bundles": 7,
+      "synthesis_flows": [
+        "GHDL 6.0.0 --synth --out=verilog (MC8051 --latches); Yosys 0.69 no ABC"
+      ]
+    },
+    "PIC16F84": {
+      "circuits": 8,
+      "clean_source_bundles": 1,
+      "synthesis_flows": [
+        "read_verilog; hierarchy; proc; opt; flatten; opt; techmap; opt; write_json (no ABC)"
+      ]
+    },
+    "RS232": {
+      "circuits": 8,
+      "clean_source_bundles": 1,
+      "synthesis_flows": [
+        "read_verilog; hierarchy; proc; opt; flatten; opt; techmap; opt; write_json (no ABC)"
+      ]
+    },
+    "b15": {
+      "circuits": 8,
+      "clean_source_bundles": 1,
+      "synthesis_flows": [
+        "mapped netlist parse; blackbox cell port stubs; flatten; write_json"
+      ]
+    },
+    "b19": {
+      "circuits": 6,
+      "clean_source_bundles": 3,
+      "synthesis_flows": [
+        "GHDL 6.0.0 --synth --out=verilog (MC8051 --latches); Yosys 0.69 no ABC"
+      ]
+    },
+    "memctrl": {
+      "circuits": 2,
+      "clean_source_bundles": 1,
+      "synthesis_flows": [
+        "read_verilog; hierarchy; proc; opt; flatten; opt; techmap; opt; write_json (no ABC)"
+      ]
+    },
+    "s15850": {
+      "circuits": 2,
+      "clean_source_bundles": 1,
+      "synthesis_flows": [
+        "mapped netlist parse; blackbox cell port stubs; flatten; write_json"
+      ]
+    },
+    "s35932": {
+      "circuits": 6,
+      "clean_source_bundles": 1,
+      "synthesis_flows": [
+        "mapped netlist parse; blackbox cell port stubs; flatten; write_json"
+      ]
+    },
+    "s38417": {
+      "circuits": 6,
+      "clean_source_bundles": 1,
+      "synthesis_flows": [
+        "mapped netlist parse; blackbox cell port stubs; flatten; write_json"
+      ]
+    },
+    "s38584": {
+      "circuits": 4,
+      "clean_source_bundles": 1,
+      "synthesis_flows": [
+        "mapped netlist parse; blackbox cell port stubs; flatten; write_json"
+      ]
+    }
+  },
+  "size_matched_within_family": {
+    "size_logistic": {
+      "node_tolerance": 0.05,
+      "families_with_overlap": [
+        "AES",
+        "MC8051",
+        "PIC16F84",
+        "RS232",
+        "b19",
+        "memctrl",
+        "s15850",
+        "s35932",
+        "s38417",
+        "s38584"
+      ],
+      "n_families": 10,
+      "n_comparisons": 349,
+      "equal_family_pair_accuracy": 0.7414285714285714,
+      "by_family": {
+        "AES": 0.5333333333333333,
+        "MC8051": 0.7142857142857143,
+        "PIC16F84": 1.0,
+        "RS232": 1.0,
+        "b19": 1.0,
+        "memctrl": 0.0,
+        "s15850": 1.0,
+        "s35932": 0.6666666666666666,
+        "s38417": 1.0,
+        "s38584": 0.5
+      }
+    },
+    "graph_aggregate_logistic": {
+      "node_tolerance": 0.05,
+      "families_with_overlap": [
+        "AES",
+        "MC8051",
+        "PIC16F84",
+        "RS232",
+        "b19",
+        "memctrl",
+        "s15850",
+        "s35932",
+        "s38417",
+        "s38584"
+      ],
+      "n_families": 10,
+      "n_comparisons": 349,
+      "equal_family_pair_accuracy": 0.7414285714285714,
+      "by_family": {
+        "AES": 0.8666666666666667,
+        "MC8051": 0.7142857142857143,
+        "PIC16F84": 0.5,
+        "RS232": 0.0,
+        "b19": 0.3333333333333333,
+        "memctrl": 1.0,
+        "s15850": 1.0,
+        "s35932": 1.0,
+        "s38417": 1.0,
+        "s38584": 1.0
+      }
+    },
+    "local_fraction_logistic": {
+      "node_tolerance": 0.05,
+      "families_with_overlap": [
+        "AES",
+        "MC8051",
+        "PIC16F84",
+        "RS232",
+        "b19",
+        "memctrl",
+        "s15850",
+        "s35932",
+        "s38417",
+        "s38584"
+      ],
+      "n_families": 10,
+      "n_comparisons": 349,
+      "equal_family_pair_accuracy": 0.6938095238095239,
+      "by_family": {
+        "AES": 0.5333333333333333,
+        "MC8051": 0.5714285714285714,
+        "PIC16F84": 0.5,
+        "RS232": 1.0,
+        "b19": 0.3333333333333333,
+        "memctrl": 0.0,
+        "s15850": 1.0,
+        "s35932": 1.0,
+        "s38417": 1.0,
+        "s38584": 1.0
+      }
+    },
+    "graph_aggregate_stumps": {
+      "node_tolerance": 0.05,
+      "families_with_overlap": [
+        "AES",
+        "MC8051",
+        "PIC16F84",
+        "RS232",
+        "b19",
+        "memctrl",
+        "s15850",
+        "s35932",
+        "s38417",
+        "s38584"
+      ],
+      "n_families": 10,
+      "n_comparisons": 349,
+      "equal_family_pair_accuracy": 0.5104761904761904,
+      "by_family": {
+        "AES": 0.5333333333333333,
+        "MC8051": 0.5714285714285714,
+        "PIC16F84": 0.5,
+        "RS232": 0.5,
+        "b19": 0.5,
+        "memctrl": 0.5,
+        "s15850": 0.5,
+        "s35932": 0.5,
+        "s38417": 0.5,
+        "s38584": 0.5
+      }
+    }
+  },
+  "within_size_quartile": {
+    "size_logistic": [
+      {
+        "quartile": 0,
+        "negative": 9,
+        "positive": 13,
+        "pooled_auroc": 0.7948717948717948,
+        "families": [
+          "PIC16F84",
+          "RS232",
+          "b15",
+          "s15850"
+        ]
+      },
+      {
+        "quartile": 1,
+        "negative": 13,
+        "positive": 9,
+        "pooled_auroc": 0.7008547008547008,
+        "families": [
+          "b15",
+          "memctrl",
+          "s35932",
+          "s38417",
+          "s38584"
+        ]
+      },
+      {
+        "quartile": 2,
+        "negative": 17,
+        "positive": 12,
+        "pooled_auroc": 0.5,
+        "families": [
+          "AES"
+        ]
+      },
+      {
+        "quartile": 3,
+        "negative": 10,
+        "positive": 15,
+        "pooled_auroc": 0.43333333333333335,
+        "families": [
+          "AES",
+          "MC8051",
+          "b19"
+        ]
+      }
+    ],
+    "graph_aggregate_logistic": [
+      {
+        "quartile": 0,
+        "negative": 9,
+        "positive": 13,
+        "pooled_auroc": 0.5726495726495726,
+        "families": [
+          "PIC16F84",
+          "RS232",
+          "b15",
+          "s15850"
+        ]
+      },
+      {
+        "quartile": 1,
+        "negative": 13,
+        "positive": 9,
+        "pooled_auroc": 0.5470085470085471,
+        "families": [
+          "b15",
+          "memctrl",
+          "s35932",
+          "s38417",
+          "s38584"
+        ]
+      },
+      {
+        "quartile": 2,
+        "negative": 17,
+        "positive": 12,
+        "pooled_auroc": 0.8333333333333334,
+        "families": [
+          "AES"
+        ]
+      },
+      {
+        "quartile": 3,
+        "negative": 10,
+        "positive": 15,
+        "pooled_auroc": 0.54,
+        "families": [
+          "AES",
+          "MC8051",
+          "b19"
+        ]
+      }
+    ],
+    "local_fraction_logistic": [
+      {
+        "quartile": 0,
+        "negative": 9,
+        "positive": 13,
+        "pooled_auroc": 0.42735042735042733,
+        "families": [
+          "PIC16F84",
+          "RS232",
+          "b15",
+          "s15850"
+        ]
+      },
+      {
+        "quartile": 1,
+        "negative": 13,
+        "positive": 9,
+        "pooled_auroc": 0.5384615384615384,
+        "families": [
+          "b15",
+          "memctrl",
+          "s35932",
+          "s38417",
+          "s38584"
+        ]
+      },
+      {
+        "quartile": 2,
+        "negative": 17,
+        "positive": 12,
+        "pooled_auroc": 0.6666666666666666,
+        "families": [
+          "AES"
+        ]
+      },
+      {
+        "quartile": 3,
+        "negative": 10,
+        "positive": 15,
+        "pooled_auroc": 0.68,
+        "families": [
+          "AES",
+          "MC8051",
+          "b19"
+        ]
+      }
+    ],
+    "graph_aggregate_stumps": [
+      {
+        "quartile": 0,
+        "negative": 9,
+        "positive": 13,
+        "pooled_auroc": 0.4829059829059829,
+        "families": [
+          "PIC16F84",
+          "RS232",
+          "b15",
+          "s15850"
+        ]
+      },
+      {
+        "quartile": 1,
+        "negative": 13,
+        "positive": 9,
+        "pooled_auroc": 0.5,
+        "families": [
+          "b15",
+          "memctrl",
+          "s35932",
+          "s38417",
+          "s38584"
+        ]
+      },
+      {
+        "quartile": 2,
+        "negative": 17,
+        "positive": 12,
+        "pooled_auroc": 0.5,
+        "families": [
+          "AES"
+        ]
+      },
+      {
+        "quartile": 3,
+        "negative": 10,
+        "positive": 15,
+        "pooled_auroc": 0.3566666666666667,
+        "families": [
+          "AES",
+          "MC8051",
+          "b19"
+        ]
+      }
+    ]
+  }
+}

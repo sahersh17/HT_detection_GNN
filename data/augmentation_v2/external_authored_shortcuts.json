@@ -1,0 +1,54 @@
+{
+  "controls": {
+    "characters": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "by_host": {
+        "RS232": 1.0
+      }
+    },
+    "lines": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "by_host": {
+        "RS232": 1.0
+      }
+    },
+    "cells": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "by_host": {
+        "RS232": 1.0
+      }
+    },
+    "edges": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "by_host": {
+        "RS232": 1.0
+      }
+    }
+  },
+  "port_signature_counts": {
+    "RS232": 1
+  },
+  "hard_stops": [
+    "characters",
+    "lines",
+    "cells",
+    "edges"
+  ],
+  "scope": "host-held-out fitted controls; one external host cannot support a fitted host-held-out probe"
+}

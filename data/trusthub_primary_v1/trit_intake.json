@@ -1,0 +1,53 @@
+{
+  "status": "archive_inventory_only_no_records_admitted",
+  "archives": [
+    {
+      "host": "s953",
+      "status": "integrity_and_layout_checked_only",
+      "archive_sha256": "459f98e9086ad9a7cf7d05364b5e09977162535892e2c002a652018ed34880e2",
+      "original_netlist_sha256": "ec62dc762fff7f22b9aa3e3549c46a04f120f2d11d3e168e11501bce2b42987a",
+      "bytes": 3203067,
+      "trojan_variants": 200,
+      "logs": 200,
+      "mechanism_counts": {
+        "sequential": 100,
+        "combinational": 100
+      },
+      "primary_family_name_overlap": false,
+      "behavior_verified_here": false,
+      "benign_decoys_present": false
+    },
+    {
+      "host": "s1196",
+      "status": "integrity_and_layout_checked_only",
+      "archive_sha256": "1261d0f4e22c52d5734ae2a8c1439ad4e9e691d5cdc46b716086947f490bb8e5",
+      "original_netlist_sha256": "d069d32546c238dae916527b033b0a194cb9330dd1ef98c54ad9890c0ac12237",
+      "bytes": 3302245,
+      "trojan_variants": 200,
+      "logs": 200,
+      "mechanism_counts": {
+        "sequential": 100,
+        "combinational": 100
+      },
+      "primary_family_name_overlap": false,
+      "behavior_verified_here": false,
+      "benign_decoys_present": false
+    },
+    {
+      "host": "s1238",
+      "status": "integrity_and_layout_checked_only",
+      "archive_sha256": "f60127698efa034e131d93b271c317793f3eb3cf07f1d33d6bb10f7e646a2f90",
+      "original_netlist_sha256": "9db2951c81f160ccd7a5279d249ad09c9403ae734e477e57ce941f2c39d167e1",
+      "bytes": 3291702,
+      "trojan_variants": 200,
+      "logs": 200,
+      "mechanism_counts": {
+        "sequential": 100,
+        "combinational": 100
+      },
+      "primary_family_name_overlap": false,
+      "behavior_verified_here": false,
+      "benign_decoys_present": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "before_mean": -0.4473396490957286,
+  "after_mean": -0.0005351595781944894,
+  "by_class": {
+    "0": {
+      "clipped_fraction": 0.0,
+      "before_mean": 0.04058534807215134,
+      "after_mean": 0.04058534807215134
+    },
+    "1": {
+      "clipped_fraction": 1.0,
+      "before_mean": -1.3481242592518146,
+      "after_mean": -0.07644994293267911
+    }
+  }
+}

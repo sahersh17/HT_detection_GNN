@@ -30,15 +30,22 @@ def verify_one(folder):
         if filename in line_counts:
             raise ValueError(f"Ambiguous source basename: {filename}")
         line_counts[filename] = len((ROOT / relative).read_text(encoding="utf-8", errors="replace").splitlines())
-    rebuilt, expected_meta = graph_from_json(document, metadata["top"], metadata["graph_id"], metadata["label"], line_counts)
+    representation = metadata.get("representation", "legacy")
+    rebuilt, expected_meta = graph_from_json(document, metadata["top"], metadata["graph_id"],
+                                            metadata["label"], line_counts, representation=representation)
     if not torch.equal(graph.x, rebuilt.x) or not torch.equal(graph.edge_index, rebuilt.edge_index):
         raise ValueError(f"Graph tensor differs from Yosys JSON reconstruction: {folder}")
     names = metadata["node_names"]
     checksum = hashlib.sha256(json.dumps(names, ensure_ascii=False, separators=(",", ":")).encode()).hexdigest()
     if graph.graph_id != metadata["graph_id"] or graph.num_nodes != metadata["num_nodes"]:
         raise ValueError(f"Graph identity or node count mismatch: {folder}")
-    if graph.num_edges != metadata["num_edges"] or graph.x.shape[1] != 20:
+    if graph.num_edges != metadata["num_edges"] or graph.x.shape[1] != metadata.get("node_dim", 20):
         raise ValueError(f"Graph edge count or feature dimension mismatch: {folder}")
+    if representation == "semantic_v1":
+        from semantic import SCHEMA_SHA256, verify_semantic_values
+        if metadata["schema_sha256"] != SCHEMA_SHA256 or not torch.equal(graph.edge_type, rebuilt.edge_type):
+            raise ValueError(f"Semantic schema or edge types differ: {folder}")
+        verify_semantic_values(document, metadata["top"], graph, metadata)
     if len(names) != graph.num_nodes or len(set(names)) != len(names) or checksum != metadata["node_names_sha256"]:
         raise ValueError(f"Node order checksum mismatch: {folder}")
     if len(metadata["source_ranges"]) != graph.num_nodes or len(metadata["node_src"]) != graph.num_nodes:

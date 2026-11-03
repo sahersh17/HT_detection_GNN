@@ -1,0 +1,29 @@
+{
+  "status": "prospective_intake_only_zero_admitted_records",
+  "written": "2026-11-03",
+  "purpose": "untouched host and insertion-source evaluation after development is complete",
+  "candidate_hosts": ["c6288", "s13207", "olofk/serv", "ZipCPU/wb2axip"],
+  "candidate_generator_sources": ["DATE 2025 pinned commit c7a1269c2c6fd4ebfaec2245c7613dba84fd0228", "TRIT corpus from CAD for Assurance; archive versions, host independence, license and witness traces pending audit"],
+  "second_source_candidate_url": "https://cadforassurance.org/benchmarks/synthetic-trojan-inserted-asic-benchmarks/",
+  "second_source_candidate_hosts": ["s953", "s1196", "s1238", "s1488", "s5378", "s9234"],
+  "admission_rules": [
+    "Pin host revision, source files, generator revision, insertion parameters and synthesis flow before graph construction",
+    "Reject exact or structurally duplicated development hosts; group derivatives by host and generator",
+    "Verify clean and benign functional equivalence under an explicit oracle or bounded protocol",
+    "Verify an attainable Trojan trigger and an observed payload difference with saved stimulus, trace and output witness",
+    "Verify mapped graph hashes, node order, source lineage, and survival of inserted and benign logic",
+    "Require benign additions matched on mapped graph size and broad gate statistics; measure remaining size and generator shortcuts before model scoring",
+    "Quarantine ambiguous behavior, missing clean counterpart, and failed graph correspondence",
+    "Freeze admitted manifest, model checkpoint selection, size bins, primary metric, uncertainty method and exclusions before first prediction"
+  ],
+  "scoring": {
+    "inference_input": "single suspect graph, no clean twin, generator ID or host ID",
+    "primary": "equal-host within-host AUROC on admitted clean, benign and Trojan circuits",
+    "comparison": "paired host-bootstrap difference against size-only baseline, two-sided 95% interval",
+    "secondary": ["per-host AUROC", "false positives on benign additions", "fixed-threshold balanced accuracy", "within-size-overlap ranking", "separate generator and mechanism breakdown"],
+    "bootstrap_unit": "independent host family",
+    "no_tuning_on_final": true
+  },
+  "current_admitted_records": 0,
+  "claim_boundary": "No untouched-test performance or independent-generator generalization claim until admission and a frozen first evaluation are complete"
+}

@@ -87,7 +87,15 @@ def distances(adjacency, starts):
     return result
 
 
-def graph_from_json(document, top, graph_id, label, source_line_counts=None):
+def graph_from_json(document, top, graph_id, label, source_line_counts=None, representation="legacy"):
+    if representation == "semantic_v1":
+        if __package__:
+            from .semantic import semantic_graph_from_json
+        else:
+            from semantic import semantic_graph_from_json
+        return semantic_graph_from_json(document, top, graph_id, label, source_line_counts)
+    if representation != "legacy":
+        raise ValueError(f"Unknown graph representation: {representation}")
     module = document["modules"][top]
     cells = {name: cell for name, cell in module["cells"].items() if cell["type"].lower() not in CELL_EXCLUDE}
     names = sorted(cells)
@@ -153,7 +161,7 @@ def graph_from_json(document, top, graph_id, label, source_line_counts=None):
     return data, metadata
 
 
-def build_one(benchmark, side, out_root, yosys):
+def build_one(benchmark, side, out_root, yosys, representation="legacy"):
     files, top = source_files(benchmark, side)
     target = out_root / benchmark / side
     target.mkdir(parents=True, exist_ok=True)
@@ -165,11 +173,13 @@ def build_one(benchmark, side, out_root, yosys):
     if completed.returncode or not json_path.is_file():
         raise RuntimeError(f"Yosys failed for {benchmark}/{side}; see {target / 'yosys.log'}")
     document = json.loads(json_path.read_text(encoding="utf-8"))
-    graph_id = f"provenance_v1/{benchmark}/{side}"
+    version = "provenance_semantic_v1" if representation == "semantic_v1" else "provenance_v1"
+    graph_id = f"{version}/{benchmark}/{side}"
     source_line_counts = {p.name: len(p.read_text(encoding="utf-8", errors="replace").splitlines()) for p in files}
     if len(source_line_counts) != len(files):
         raise ValueError(f"Duplicate source basenames for {benchmark}/{side}")
-    data, metadata = graph_from_json(document, top, graph_id, int(side == "trojan"), source_line_counts)
+    data, metadata = graph_from_json(document, top, graph_id, int(side == "trojan"), source_line_counts,
+                                     representation=representation)
     metadata.update({"benchmark": benchmark, "side": side, "top": top, "synthesis_flow": FLOW,
                      "yosys_script": script, "yosys_json_sha256": sha256(json_path),
                      "sources": {p.relative_to(ROOT).as_posix(): sha256(p) for p in files}})
@@ -205,12 +215,14 @@ def main():
     selection.add_argument("--benchmark", action="append", help="Repeat for multiple paired benchmarks")
     selection.add_argument("--all-paired", action="store_true", help="Build every benchmark in the 21-pair manifest")
     parser.add_argument("--side", choices=["clean", "trojan", "both"], default="both")
-    parser.add_argument("--out", type=Path, default=ROOT / "runs" / "provenance_v1")
+    parser.add_argument("--out", type=Path)
+    parser.add_argument("--representation", choices=["legacy", "semantic_v1"], default="legacy")
     parser.add_argument("--yosys", type=Path, default=ROOT / "trusthub" / "venv" / "Scripts" / "yowasp-yosys.exe")
     args = parser.parse_args()
     if not args.yosys.is_file():
         parser.error(f"Yosys not found: {args.yosys}")
-    out_root = args.out.resolve()
+    version = "provenance_semantic_v1" if args.representation == "semantic_v1" else "provenance_v1"
+    out_root = (args.out or ROOT / "runs" / version).resolve()
     if not out_root.is_relative_to(ROOT):
         parser.error("Output must stay inside the repository so Yosys can write to it")
     references = json.loads((ROOT / "data" / "localization_reference" / "manifest.json").read_text(encoding="utf-8"))
@@ -218,7 +230,7 @@ def main():
     results = []
     for benchmark in benchmarks:
         for side in (("clean", "trojan") if args.side == "both" else (args.side,)):
-            result = build_one(benchmark, side, out_root, args.yosys)
+            result = build_one(benchmark, side, out_root, args.yosys, args.representation)
             results.append(result)
             print(json.dumps(result), flush=True)
     (out_root / "build_summary.json").write_text(json.dumps(results, indent=2), encoding="utf-8")

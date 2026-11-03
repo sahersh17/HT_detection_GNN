@@ -1,0 +1,188 @@
+[
+  {
+    "host": "logic_scope",
+    "cohort": "overlap_six_v1",
+    "cells": {
+      "$memwr_v2": 1,
+      "$memrd": 1
+    }
+  },
+  {
+    "host": "sha2",
+    "cohort": "overlap_six_v1",
+    "cells": {
+      "$memrd_v2": 1,
+      "$meminit": 1
+    }
+  },
+  {
+    "host": "i2c_controller",
+    "cohort": "overlap_six_v1",
+    "cells": {
+      "$memwr_v2": 3,
+      "$memrd": 3
+    }
+  },
+  {
+    "host": "picorv32",
+    "cohort": "overlap_six_v1",
+    "cells": {
+      "$memwr_v2": 1,
+      "$memrd": 2
+    }
+  },
+  {
+    "host": "tt_um_rejunity_decoder",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 3,
+      "$meminit": 3
+    }
+  },
+  {
+    "host": "tt_um_andrewtron3000",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memwr_v2": 1,
+      "$memrd": 1
+    }
+  },
+  {
+    "host": "tt_um_DelosReyesJordan_HDL",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 1,
+      "$meminit": 1
+    }
+  },
+  {
+    "host": "tt_um_NicklausThompson_SkyKing",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 2,
+      "$meminit": 2
+    }
+  },
+  {
+    "host": "tt_um_multiplier_mbm",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 4,
+      "$meminit": 4
+    }
+  },
+  {
+    "host": "tt_um_demosiine_sda",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 2,
+      "$meminit": 2
+    }
+  },
+  {
+    "host": "tt_um_minibyte",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 3,
+      "$meminit": 3
+    }
+  },
+  {
+    "host": "tt_um_Coline3003_spect_top",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memwr_v2": 4,
+      "$memrd": 4
+    }
+  },
+  {
+    "host": "tt_um_cfib_demo",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 2,
+      "$meminit": 2
+    }
+  },
+  {
+    "host": "tt_um_njp_micro",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 2,
+      "$meminit": 2
+    }
+  },
+  {
+    "host": "tt_um_qubitbytes_alive",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 1,
+      "$meminit": 1
+    }
+  },
+  {
+    "host": "tt_um__kwr_lfsr__top",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 2,
+      "$meminit": 2
+    }
+  },
+  {
+    "host": "tt_um_led_cipher",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 1,
+      "$meminit": 1
+    }
+  },
+  {
+    "host": "tt_um_axi4lite_top",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memwr_v2": 5,
+      "$memrd": 1
+    }
+  },
+  {
+    "host": "tt_um_lstm_wakeword",
+    "cohort": "precision_v1",
+    "cells": {
+      "$meminit_v2": 768,
+      "$memrd": 3
+    }
+  },
+  {
+    "host": "tt_um_Max00Ker_Traffic_Light",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 13,
+      "$meminit": 13
+    }
+  },
+  {
+    "host": "tt_um_aes_sbox",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 2,
+      "$meminit": 2
+    }
+  },
+  {
+    "host": "tt_um_pcs_link_lite",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 2,
+      "$meminit": 2,
+      "$memwr_v2": 2,
+      "$memrd": 2
+    }
+  },
+  {
+    "host": "tt_um_four_bit_cpu_top_level",
+    "cohort": "precision_v1",
+    "cells": {
+      "$memrd_v2": 1,
+      "$meminit": 1
+    }
+  }
+]

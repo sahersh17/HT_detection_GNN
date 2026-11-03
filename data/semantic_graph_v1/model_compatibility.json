@@ -1,0 +1,12 @@
+{
+  "gnn": {
+    "node_dim": 127,
+    "finite_forward_and_backward": true,
+    "random_head_logit_difference": 1.2934207916259766e-05
+  },
+  "fusion": {
+    "node_dim": 127,
+    "finite_forward_and_backward": true,
+    "random_head_logit_difference": 5.930662155151367e-06
+  }
+}

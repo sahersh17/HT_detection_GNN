@@ -1,0 +1,91 @@
+{
+  "scope": "descriptive uncertainty on 48 development hosts; one-way fold-4-trained comparison",
+  "seed": 20261103,
+  "draws": 10000,
+  "models": {
+    "prior_cell_pool_gnn": {
+      "equal_host_auroc": 0.6041666666666666,
+      "host_bootstrap_95pct_interval": [
+        0.4791666666666667,
+        0.71875
+      ],
+      "delta_vs_prior_gnn": 0.0,
+      "delta_bootstrap_95pct_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "local_1layer_max": {
+      "equal_host_auroc": 0.4947916666666667,
+      "host_bootstrap_95pct_interval": [
+        0.453125,
+        0.53125
+      ],
+      "delta_vs_prior_gnn": -0.109375,
+      "delta_bootstrap_95pct_interval": [
+        -0.22916666666666666,
+        0.015625
+      ]
+    },
+    "local_2layer_topk": {
+      "equal_host_auroc": 0.53125,
+      "host_bootstrap_95pct_interval": [
+        0.4479166666666667,
+        0.6145833333333334
+      ],
+      "delta_vs_prior_gnn": -0.07291666666666667,
+      "delta_bootstrap_95pct_interval": [
+        -0.203125,
+        0.0625
+      ]
+    },
+    "local_2layer_attention": {
+      "equal_host_auroc": 0.6041666666666666,
+      "host_bootstrap_95pct_interval": [
+        0.484375,
+        0.7239583333333334
+      ],
+      "delta_vs_prior_gnn": 0.0,
+      "delta_bootstrap_95pct_interval": [
+        -0.140625,
+        0.140625
+      ]
+    },
+    "local_2layer_topk_pretrain10": {
+      "equal_host_auroc": 0.5364583333333334,
+      "host_bootstrap_95pct_interval": [
+        0.46875,
+        0.6041666666666666
+      ],
+      "delta_vs_prior_gnn": -0.06770833333333333,
+      "delta_bootstrap_95pct_interval": [
+        -0.19270833333333334,
+        0.0625
+      ]
+    },
+    "size_logistic": {
+      "equal_host_auroc": 0.4479166666666667,
+      "host_bootstrap_95pct_interval": [
+        0.34375,
+        0.5520833333333334
+      ],
+      "delta_vs_prior_gnn": -0.15625,
+      "delta_bootstrap_95pct_interval": [
+        -0.3333333333333333,
+        0.03125
+      ]
+    },
+    "graph_aggregates_logistic": {
+      "equal_host_auroc": 0.5885416666666666,
+      "host_bootstrap_95pct_interval": [
+        0.46875,
+        0.703125
+      ],
+      "delta_vs_prior_gnn": -0.015625,
+      "delta_bootstrap_95pct_interval": [
+        -0.13020833333333334,
+        0.10416666666666667
+      ]
+    }
+  }
+}

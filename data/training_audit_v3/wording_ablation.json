@@ -1,0 +1,332 @@
+[
+  {
+    "seed": 42,
+    "metrics": {
+      "raw": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.68
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.75
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "equal_host_auc": 0.875,
+        "equal_host_ba": 0.5,
+        "score_range": [
+          0.0458865724503994,
+          0.04765119031071663
+        ]
+      },
+      "sanitized": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.68
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.75
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 1.0
+          }
+        },
+        "equal_host_auc": 0.875,
+        "equal_host_ba": 0.5,
+        "score_range": [
+          0.0458865724503994,
+          0.047731176018714905
+        ]
+      }
+    },
+    "maximum_probability_change": 0.0001768246293067932
+  },
+  {
+    "seed": 43,
+    "metrics": {
+      "raw": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "equal_host_auc": 0.0,
+        "equal_host_ba": 0.5,
+        "score_range": [
+          0.030979005619883537,
+          0.034070566296577454
+        ]
+      },
+      "sanitized": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "equal_host_auc": 0.0,
+        "equal_host_ba": 0.5,
+        "score_range": [
+          0.030979005619883537,
+          0.034070566296577454
+        ]
+      }
+    },
+    "maximum_probability_change": 8.890405297279358e-05
+  },
+  {
+    "seed": 44,
+    "metrics": {
+      "raw": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "equal_host_auc": 0.0,
+        "equal_host_ba": 0.5,
+        "score_range": [
+          0.05018656700849533,
+          0.05120420083403587
+        ]
+      },
+      "sanitized": {
+        "pooled": {
+          "n": 10,
+          "tn": 5,
+          "fp": 0,
+          "fn": 5,
+          "tp": 0,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "auroc": 0.16
+        },
+        "hosts": {
+          "PIC16F84": {
+            "n": 8,
+            "tn": 4,
+            "fp": 0,
+            "fn": 4,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          },
+          "memctrl": {
+            "n": 2,
+            "tn": 1,
+            "fp": 0,
+            "fn": 1,
+            "tp": 0,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "fpr": 0.0,
+            "macro_f1": 0.3333333333333333,
+            "auroc": 0.0
+          }
+        },
+        "equal_host_auc": 0.0,
+        "equal_host_ba": 0.5,
+        "score_range": [
+          0.05018656700849533,
+          0.05120420083403587
+        ]
+      }
+    },
+    "maximum_probability_change": 4.3895095586776733e-05
+  }
+]

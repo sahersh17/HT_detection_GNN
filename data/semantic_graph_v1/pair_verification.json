@@ -1,0 +1,114 @@
+{
+  "schema_sha256": "703bf6e7e77b50d1d5bb10a3c158cd0aeb278f1b10845c2540e0d057d82c9335",
+  "node_dim": 127,
+  "records": [
+    {
+      "key": "native_tt_um_rejunity_decoder_clean",
+      "file": "runs/semantic_graph_v1/prepared/native_tt_um_rejunity_decoder_clean.pt",
+      "sha256": "588b0e61347e8040f3bd1fb23b4b2590e9e8d71631eba094f22814fe7bace6ad",
+      "host": "tt_um_rejunity_decoder",
+      "cohort": "native",
+      "variant": "clean",
+      "label": 0,
+      "source_sha256": {
+        "runs/precision_v1/originals/16f708da01248a5f1bffa11cd1e22741de76bc70/project.v": "6cfa1c215436d31719cc45437566ab9db1eb1d7f336ecd11d1f5715d1c804cc8"
+      },
+      "mapped_sha256": "c925bdda84a9ee286d1cfb7bb902a651d2b85de1cc75be2dd770261b5b5d93fa",
+      "nodes": 10345,
+      "chunks": 89,
+      "wording_occurrences_removed": 0,
+      "sanitized_text_sha256": "6cfa1c215436d31719cc45437566ab9db1eb1d7f336ecd11d1f5715d1c804cc8",
+      "metadata": "runs/semantic_graph_v1/prepared/native_tt_um_rejunity_decoder_clean.json",
+      "representation": "semantic_v1",
+      "edges": 38555,
+      "checked": {
+        "vectors": 189,
+        "bits": 10027,
+        "memory_operations": 6,
+        "memory_states": 3,
+        "initial_bits": 0
+      },
+      "source_prepared_file": "runs/training_audit_v3/prepared/native_tt_um_rejunity_decoder_clean.pt",
+      "source_prepared_sha256": "632908a66d9e7b3f2004a0489ff9b199e5af99d8617555b7e231c765b6b902cf",
+      "source_embedding_sha256": "0474de8a4157526ce4891677b481a1075eaebd97cecedf295ea74a22c6725fb4",
+      "rtl_tensor_sha256": "54e2fd681b613151bdcca47fb50a0d8a3f108c0089c306294222d609fd0515c3",
+      "mapped_json": "runs/precision_v1/hosts/tt_um_rejunity_decoder/clean/yosys.json"
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_benign",
+      "file": "runs/semantic_graph_v1/prepared/native_tt_um_rejunity_decoder_benign.pt",
+      "sha256": "72115dd060c5fe6ad4a1f1753140df3d24570a00b8e20353c97f3f101e8fd13c",
+      "host": "tt_um_rejunity_decoder",
+      "cohort": "native",
+      "variant": "benign",
+      "label": 0,
+      "source_sha256": {
+        "runs/precision_v1/hosts/tt_um_rejunity_decoder/benign/project.v": "96aa1442e03e9131b5962ba8f07aad9bacae17d751db202bf51439ab2bd24f66"
+      },
+      "mapped_sha256": "286eba4b240797114cb3364f18ab25f8d6ed1e794a95423ae2d96b1e5add3776",
+      "nodes": 10345,
+      "chunks": 89,
+      "wording_occurrences_removed": 0,
+      "sanitized_text_sha256": "96aa1442e03e9131b5962ba8f07aad9bacae17d751db202bf51439ab2bd24f66",
+      "metadata": "runs/semantic_graph_v1/prepared/native_tt_um_rejunity_decoder_benign.json",
+      "representation": "semantic_v1",
+      "edges": 38555,
+      "checked": {
+        "vectors": 189,
+        "bits": 10027,
+        "memory_operations": 6,
+        "memory_states": 3,
+        "initial_bits": 0
+      },
+      "source_prepared_file": "runs/training_audit_v3/prepared/native_tt_um_rejunity_decoder_benign.pt",
+      "source_prepared_sha256": "0a2fcfc114154efe8057be1e30ce5262af7dc38081ef494c4702682c1be5025d",
+      "source_embedding_sha256": "34614e0f7aa8589ca887cfe9e2abd788363accfb219244bd956c212be01ab80c",
+      "rtl_tensor_sha256": "a464c8c833c0d0fb5b198b98a7621ec95b58e55036ae3c5ca3a02e22dbd3e6b0",
+      "mapped_json": "runs/precision_v1/hosts/tt_um_rejunity_decoder/benign/yosys.json"
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_trojan",
+      "file": "runs/semantic_graph_v1/prepared/native_tt_um_rejunity_decoder_trojan.pt",
+      "sha256": "e8f4f025db62149925ff19f48f63a473a84af73359267a17f277adce07c98460",
+      "host": "tt_um_rejunity_decoder",
+      "cohort": "native",
+      "variant": "trojan",
+      "label": 1,
+      "source_sha256": {
+        "runs/precision_v1/hosts/tt_um_rejunity_decoder/trojan/project.v": "d5f3c8654e260209e143efdfd16f4382043ae8542ceec6d233fa487c41fb5939"
+      },
+      "mapped_sha256": "8d968cd2eaa04fb40fc649b3b08c34600a8154ff132ee04edb1586a44e5b19cd",
+      "nodes": 10345,
+      "chunks": 89,
+      "wording_occurrences_removed": 0,
+      "sanitized_text_sha256": "d5f3c8654e260209e143efdfd16f4382043ae8542ceec6d233fa487c41fb5939",
+      "metadata": "runs/semantic_graph_v1/prepared/native_tt_um_rejunity_decoder_trojan.json",
+      "representation": "semantic_v1",
+      "edges": 38555,
+      "checked": {
+        "vectors": 189,
+        "bits": 10027,
+        "memory_operations": 6,
+        "memory_states": 3,
+        "initial_bits": 0
+      },
+      "source_prepared_file": "runs/training_audit_v3/prepared/native_tt_um_rejunity_decoder_trojan.pt",
+      "source_prepared_sha256": "9e549d0327f15893dc7bbbc0979c66839c4b2d34bdc30258e17b1dbc643e74c8",
+      "source_embedding_sha256": "2d3b2c441a64c36380cdbc6ba478607261a2e8d43603b23a87bd3eab20ce4f35",
+      "rtl_tensor_sha256": "b32cf5760f6e5f986216539d31b9030d39fb453369153d9e9e454ca42cc987ab",
+      "mapped_json": "runs/precision_v1/hosts/tt_um_rejunity_decoder/trojan/yosys.json"
+    }
+  ],
+  "known_pair": {
+    "legacy_identical": true,
+    "semantic_distinguished": true,
+    "permutation_invariant": true,
+    "benign_nodes": 10345,
+    "fault_nodes": 10345,
+    "checked_bits": [
+      10027,
+      10027
+    ]
+  },
+  "representation": "semantic_v1"
+}

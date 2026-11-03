@@ -1,0 +1,6 @@
+{
+  "primary": "Exploratory, fixed linear graph-statistics probe. Compare six-project original panel versus adding native-edit hosts, same estimator and same holdout circuits. Host-average AUROC against original and benign equally; host bootstrap delta. Fixed probability threshold 0.5.",
+  "development": ["alexforencich/verilog-axis", "secworks/sha1", "freecores/uart16550", "ultraembedded/core_usb_uart"],
+  "reserved_project_candidates": ["olofk/serv", "ZipCPU/wb2axip"],
+  "reserve_policy": "Exclude both reserved repositories and derivatives from feature inspection, training, tuning and present evaluation. Final blind evaluation also requires an independently sourced mechanism."
+}

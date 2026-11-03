@@ -1,0 +1,1795 @@
+{
+  "scope": "fold 4 training, folds 0-3 scoring; same split as local_mil_v1 transfer",
+  "models": {
+    "size_logistic": {
+      "overall": {
+        "pooled_auroc": 0.5046977124183006,
+        "equal_host_auroc": 0.4479166666666667,
+        "within_host_pair_ranking": 0.4411764705882353,
+        "balanced_log_loss": 0.7001075233532033,
+        "balanced_accuracy_at_0_5": 0.5061274509803921,
+        "n_hosts": 48,
+        "n_pairs": 102
+      },
+      "predictions": [
+        {
+          "key": "baseline_divider_benign",
+          "host": "divider",
+          "label": 0,
+          "probability": 0.41217269104523574
+        },
+        {
+          "key": "baseline_divider_clean",
+          "host": "divider",
+          "label": 0,
+          "probability": 0.41219556489942816
+        },
+        {
+          "key": "baseline_divider_trojan",
+          "host": "divider",
+          "label": 1,
+          "probability": 0.4121669753563113
+        },
+        {
+          "key": "baseline_jpeg_huffman_benign",
+          "host": "jpeg_huffman",
+          "label": 0,
+          "probability": 0.4253459953605457
+        },
+        {
+          "key": "baseline_jpeg_huffman_clean",
+          "host": "jpeg_huffman",
+          "label": 0,
+          "probability": 0.4253459953605457
+        },
+        {
+          "key": "baseline_jpeg_huffman_trojan",
+          "host": "jpeg_huffman",
+          "label": 1,
+          "probability": 0.42531034533268547
+        },
+        {
+          "key": "baseline_logic_scope_benign",
+          "host": "logic_scope",
+          "label": 0,
+          "probability": 0.4796428548948712
+        },
+        {
+          "key": "baseline_logic_scope_clean",
+          "host": "logic_scope",
+          "label": 0,
+          "probability": 0.4796428548948712
+        },
+        {
+          "key": "baseline_logic_scope_trojan",
+          "host": "logic_scope",
+          "label": 1,
+          "probability": 0.47982554045912734
+        },
+        {
+          "key": "baseline_picorv32_benign",
+          "host": "picorv32",
+          "label": 0,
+          "probability": 0.40563454712665326
+        },
+        {
+          "key": "baseline_picorv32_clean",
+          "host": "picorv32",
+          "label": 0,
+          "probability": 0.4056253979110234
+        },
+        {
+          "key": "baseline_picorv32_trojan",
+          "host": "picorv32",
+          "label": 1,
+          "probability": 0.40594271102339446
+        },
+        {
+          "key": "baseline_sha2_benign",
+          "host": "sha2",
+          "label": 0,
+          "probability": 0.3959968686511303
+        },
+        {
+          "key": "baseline_sha2_clean",
+          "host": "sha2",
+          "label": 0,
+          "probability": 0.3959968686511303
+        },
+        {
+          "key": "baseline_sha2_trojan",
+          "host": "sha2",
+          "label": 1,
+          "probability": 0.3959968686511303
+        },
+        {
+          "key": "external_authored_RS232-T2100_clean",
+          "host": "RS232",
+          "label": 0,
+          "probability": 0.5198599452419371
+        },
+        {
+          "key": "external_authored_RS232-T2100_trojan",
+          "host": "RS232",
+          "label": 1,
+          "probability": 0.5160496477374213
+        },
+        {
+          "key": "external_authored_RS232-T2200_clean",
+          "host": "RS232",
+          "label": 0,
+          "probability": 0.5198599452419371
+        },
+        {
+          "key": "external_authored_RS232-T2200_trojan",
+          "host": "RS232",
+          "label": 1,
+          "probability": 0.5185555572593356
+        },
+        {
+          "key": "four_projects_core_usb_uart_benign",
+          "host": "core_usb_uart",
+          "label": 0,
+          "probability": 0.5278652937236751
+        },
+        {
+          "key": "four_projects_core_usb_uart_clean",
+          "host": "core_usb_uart",
+          "label": 0,
+          "probability": 0.5830663762508632
+        },
+        {
+          "key": "four_projects_core_usb_uart_suppress",
+          "host": "core_usb_uart",
+          "label": 1,
+          "probability": 0.576105842784413
+        },
+        {
+          "key": "four_projects_core_usb_uart_toggle",
+          "host": "core_usb_uart",
+          "label": 1,
+          "probability": 0.5755844160057533
+        },
+        {
+          "key": "four_projects_sha1_benign",
+          "host": "sha1",
+          "label": 0,
+          "probability": 0.4317935859131697
+        },
+        {
+          "key": "four_projects_sha1_clean",
+          "host": "sha1",
+          "label": 0,
+          "probability": 0.4347361818377768
+        },
+        {
+          "key": "four_projects_sha1_suppress",
+          "host": "sha1",
+          "label": 1,
+          "probability": 0.4342944341681757
+        },
+        {
+          "key": "four_projects_sha1_toggle",
+          "host": "sha1",
+          "label": 1,
+          "probability": 0.43465711963279674
+        },
+        {
+          "key": "native_tt_um_32_bit_fp_ALU_S_M_benign",
+          "host": "tt_um_32_bit_fp_ALU_S_M",
+          "label": 0,
+          "probability": 0.43755583681231397
+        },
+        {
+          "key": "native_tt_um_32_bit_fp_ALU_S_M_clean",
+          "host": "tt_um_32_bit_fp_ALU_S_M",
+          "label": 0,
+          "probability": 0.43755583681231397
+        },
+        {
+          "key": "native_tt_um_32_bit_fp_ALU_S_M_trojan",
+          "host": "tt_um_32_bit_fp_ALU_S_M",
+          "label": 1,
+          "probability": 0.43755583681231397
+        },
+        {
+          "key": "native_tt_um_Coline3003_spect_top_benign",
+          "host": "tt_um_Coline3003_spect_top",
+          "label": 0,
+          "probability": 0.4632355817784188
+        },
+        {
+          "key": "native_tt_um_Coline3003_spect_top_clean",
+          "host": "tt_um_Coline3003_spect_top",
+          "label": 0,
+          "probability": 0.46320435999029375
+        },
+        {
+          "key": "native_tt_um_Coline3003_spect_top_trojan",
+          "host": "tt_um_Coline3003_spect_top",
+          "label": 1,
+          "probability": 0.4632355817784188
+        },
+        {
+          "key": "native_tt_um_DelosReyesJordan_HDL_benign",
+          "host": "tt_um_DelosReyesJordan_HDL",
+          "label": 0,
+          "probability": 0.407118645634766
+        },
+        {
+          "key": "native_tt_um_DelosReyesJordan_HDL_clean",
+          "host": "tt_um_DelosReyesJordan_HDL",
+          "label": 0,
+          "probability": 0.407118645634766
+        },
+        {
+          "key": "native_tt_um_DelosReyesJordan_HDL_trojan",
+          "host": "tt_um_DelosReyesJordan_HDL",
+          "label": 1,
+          "probability": 0.407118645634766
+        },
+        {
+          "key": "native_tt_um_Max00Ker_Traffic_Light_benign",
+          "host": "tt_um_Max00Ker_Traffic_Light",
+          "label": 0,
+          "probability": 0.4468645625834003
+        },
+        {
+          "key": "native_tt_um_Max00Ker_Traffic_Light_clean",
+          "host": "tt_um_Max00Ker_Traffic_Light",
+          "label": 0,
+          "probability": 0.4469010613342868
+        },
+        {
+          "key": "native_tt_um_Max00Ker_Traffic_Light_trojan",
+          "host": "tt_um_Max00Ker_Traffic_Light",
+          "label": 1,
+          "probability": 0.44688280646741524
+        },
+        {
+          "key": "native_tt_um_NicklausThompson_SkyKing_benign",
+          "host": "tt_um_NicklausThompson_SkyKing",
+          "label": 0,
+          "probability": 0.45686843084185114
+        },
+        {
+          "key": "native_tt_um_NicklausThompson_SkyKing_clean",
+          "host": "tt_um_NicklausThompson_SkyKing",
+          "label": 0,
+          "probability": 0.45686843084185114
+        },
+        {
+          "key": "native_tt_um_NicklausThompson_SkyKing_trojan",
+          "host": "tt_um_NicklausThompson_SkyKing",
+          "label": 1,
+          "probability": 0.45686843084185114
+        },
+        {
+          "key": "native_tt_um__kwr_lfsr__top_benign",
+          "host": "tt_um__kwr_lfsr__top",
+          "label": 0,
+          "probability": 0.5119700151126847
+        },
+        {
+          "key": "native_tt_um__kwr_lfsr__top_clean",
+          "host": "tt_um__kwr_lfsr__top",
+          "label": 0,
+          "probability": 0.5119700151126847
+        },
+        {
+          "key": "native_tt_um__kwr_lfsr__top_trojan",
+          "host": "tt_um__kwr_lfsr__top",
+          "label": 1,
+          "probability": 0.5119700151126847
+        },
+        {
+          "key": "native_tt_um_aes_sbox_benign",
+          "host": "tt_um_aes_sbox",
+          "label": 0,
+          "probability": 0.6007458536838438
+        },
+        {
+          "key": "native_tt_um_aes_sbox_clean",
+          "host": "tt_um_aes_sbox",
+          "label": 0,
+          "probability": 0.6007458536838438
+        },
+        {
+          "key": "native_tt_um_aes_sbox_trojan",
+          "host": "tt_um_aes_sbox",
+          "label": 1,
+          "probability": 0.4536678969483903
+        },
+        {
+          "key": "native_tt_um_afasolino_benign",
+          "host": "tt_um_afasolino",
+          "label": 0,
+          "probability": 0.4408027637681887
+        },
+        {
+          "key": "native_tt_um_afasolino_clean",
+          "host": "tt_um_afasolino",
+          "label": 0,
+          "probability": 0.44071330787746127
+        },
+        {
+          "key": "native_tt_um_afasolino_trojan",
+          "host": "tt_um_afasolino",
+          "label": 1,
+          "probability": 0.44054999120486127
+        },
+        {
+          "key": "native_tt_um_aiju_8080_benign",
+          "host": "tt_um_aiju_8080",
+          "label": 0,
+          "probability": 0.4268045599167977
+        },
+        {
+          "key": "native_tt_um_aiju_8080_clean",
+          "host": "tt_um_aiju_8080",
+          "label": 0,
+          "probability": 0.426983021778778
+        },
+        {
+          "key": "native_tt_um_aiju_8080_trojan",
+          "host": "tt_um_aiju_8080",
+          "label": 1,
+          "probability": 0.4268045599167977
+        },
+        {
+          "key": "native_tt_um_axi4lite_top_benign",
+          "host": "tt_um_axi4lite_top",
+          "label": 0,
+          "probability": 0.5254351985797628
+        },
+        {
+          "key": "native_tt_um_axi4lite_top_clean",
+          "host": "tt_um_axi4lite_top",
+          "label": 0,
+          "probability": 0.5254351985797628
+        },
+        {
+          "key": "native_tt_um_axi4lite_top_trojan",
+          "host": "tt_um_axi4lite_top",
+          "label": 1,
+          "probability": 0.5398603065848334
+        },
+        {
+          "key": "native_tt_um_chip_SP_Soy_de_Zacapa_benign",
+          "host": "tt_um_chip_SP_Soy_de_Zacapa",
+          "label": 0,
+          "probability": 0.44806857324506705
+        },
+        {
+          "key": "native_tt_um_chip_SP_Soy_de_Zacapa_clean",
+          "host": "tt_um_chip_SP_Soy_de_Zacapa",
+          "label": 0,
+          "probability": 0.4480954639036525
+        },
+        {
+          "key": "native_tt_um_chip_SP_Soy_de_Zacapa_trojan",
+          "host": "tt_um_chip_SP_Soy_de_Zacapa",
+          "label": 1,
+          "probability": 0.4480306258436931
+        },
+        {
+          "key": "native_tt_um_couchand_cora16_benign",
+          "host": "tt_um_couchand_cora16",
+          "label": 0,
+          "probability": 0.41516881435322495
+        },
+        {
+          "key": "native_tt_um_couchand_cora16_clean",
+          "host": "tt_um_couchand_cora16",
+          "label": 0,
+          "probability": 0.4151095189662615
+        },
+        {
+          "key": "native_tt_um_couchand_cora16_trojan",
+          "host": "tt_um_couchand_cora16",
+          "label": 1,
+          "probability": 0.41516881435322495
+        },
+        {
+          "key": "native_tt_um_ddc_arghunter_benign",
+          "host": "tt_um_ddc_arghunter",
+          "label": 0,
+          "probability": 0.42843741137369235
+        },
+        {
+          "key": "native_tt_um_ddc_arghunter_clean",
+          "host": "tt_um_ddc_arghunter",
+          "label": 0,
+          "probability": 0.42843741137369235
+        },
+        {
+          "key": "native_tt_um_ddc_arghunter_trojan",
+          "host": "tt_um_ddc_arghunter",
+          "label": 1,
+          "probability": 0.42843741137369235
+        },
+        {
+          "key": "native_tt_um_demosiine_sda_benign",
+          "host": "tt_um_demosiine_sda",
+          "label": 0,
+          "probability": 0.4099166914459726
+        },
+        {
+          "key": "native_tt_um_demosiine_sda_clean",
+          "host": "tt_um_demosiine_sda",
+          "label": 0,
+          "probability": 0.4099166914459726
+        },
+        {
+          "key": "native_tt_um_demosiine_sda_trojan",
+          "host": "tt_um_demosiine_sda",
+          "label": 1,
+          "probability": 0.40990175812052543
+        },
+        {
+          "key": "native_tt_um_dlfloatmac_benign",
+          "host": "tt_um_dlfloatmac",
+          "label": 0,
+          "probability": 0.4442281293754237
+        },
+        {
+          "key": "native_tt_um_dlfloatmac_clean",
+          "host": "tt_um_dlfloatmac",
+          "label": 0,
+          "probability": 0.4442281293754237
+        },
+        {
+          "key": "native_tt_um_dlfloatmac_trojan",
+          "host": "tt_um_dlfloatmac",
+          "label": 1,
+          "probability": 0.44421140972905676
+        },
+        {
+          "key": "native_tt_um_fabian_benign",
+          "host": "tt_um_fabian",
+          "label": 0,
+          "probability": 0.454027845770102
+        },
+        {
+          "key": "native_tt_um_fabian_clean",
+          "host": "tt_um_fabian",
+          "label": 0,
+          "probability": 0.454027845770102
+        },
+        {
+          "key": "native_tt_um_fabian_trojan",
+          "host": "tt_um_fabian",
+          "label": 1,
+          "probability": 0.454027845770102
+        },
+        {
+          "key": "native_tt_um_gregac_tiny_nn_benign",
+          "host": "tt_um_gregac_tiny_nn",
+          "label": 0,
+          "probability": 0.3964995394737689
+        },
+        {
+          "key": "native_tt_um_gregac_tiny_nn_clean",
+          "host": "tt_um_gregac_tiny_nn",
+          "label": 0,
+          "probability": 0.396476149985892
+        },
+        {
+          "key": "native_tt_um_gregac_tiny_nn_trojan",
+          "host": "tt_um_gregac_tiny_nn",
+          "label": 1,
+          "probability": 0.39681424380960195
+        },
+        {
+          "key": "native_tt_um_idann_benign",
+          "host": "tt_um_idann",
+          "label": 0,
+          "probability": 0.4684945183048726
+        },
+        {
+          "key": "native_tt_um_idann_clean",
+          "host": "tt_um_idann",
+          "label": 0,
+          "probability": 0.4684945183048726
+        },
+        {
+          "key": "native_tt_um_idann_trojan",
+          "host": "tt_um_idann",
+          "label": 1,
+          "probability": 0.4684789784595838
+        },
+        {
+          "key": "native_tt_um_kazan_rqpu_benign",
+          "host": "tt_um_kazan_rqpu",
+          "label": 0,
+          "probability": 0.4133465270037367
+        },
+        {
+          "key": "native_tt_um_kazan_rqpu_clean",
+          "host": "tt_um_kazan_rqpu",
+          "label": 0,
+          "probability": 0.4133248018099454
+        },
+        {
+          "key": "native_tt_um_kazan_rqpu_trojan",
+          "host": "tt_um_kazan_rqpu",
+          "label": 1,
+          "probability": 0.4135255497007805
+        },
+        {
+          "key": "native_tt_um_led_cipher_benign",
+          "host": "tt_um_led_cipher",
+          "label": 0,
+          "probability": 0.45149126565089365
+        },
+        {
+          "key": "native_tt_um_led_cipher_clean",
+          "host": "tt_um_led_cipher",
+          "label": 0,
+          "probability": 0.4514063760407617
+        },
+        {
+          "key": "native_tt_um_led_cipher_trojan",
+          "host": "tt_um_led_cipher",
+          "label": 1,
+          "probability": 0.4511951837380526
+        },
+        {
+          "key": "native_tt_um_lstm_wakeword_benign",
+          "host": "tt_um_lstm_wakeword",
+          "label": 0,
+          "probability": 0.48555994509118494
+        },
+        {
+          "key": "native_tt_um_lstm_wakeword_clean",
+          "host": "tt_um_lstm_wakeword",
+          "label": 0,
+          "probability": 0.48555994509118494
+        },
+        {
+          "key": "native_tt_um_lstm_wakeword_trojan",
+          "host": "tt_um_lstm_wakeword",
+          "label": 1,
+          "probability": 0.48555994509118494
+        },
+        {
+          "key": "native_tt_um_machinaut_systolic_benign",
+          "host": "tt_um_machinaut_systolic",
+          "label": 0,
+          "probability": 0.4314979525719788
+        },
+        {
+          "key": "native_tt_um_machinaut_systolic_clean",
+          "host": "tt_um_machinaut_systolic",
+          "label": 0,
+          "probability": 0.43141050405050435
+        },
+        {
+          "key": "native_tt_um_machinaut_systolic_trojan",
+          "host": "tt_um_machinaut_systolic",
+          "label": 1,
+          "probability": 0.4314979525719788
+        },
+        {
+          "key": "native_tt_um_mcs4_cpu_benign",
+          "host": "tt_um_mcs4_cpu",
+          "label": 0,
+          "probability": 0.4401356991775346
+        },
+        {
+          "key": "native_tt_um_mcs4_cpu_clean",
+          "host": "tt_um_mcs4_cpu",
+          "label": 0,
+          "probability": 0.44051514739953773
+        },
+        {
+          "key": "native_tt_um_mcs4_cpu_trojan",
+          "host": "tt_um_mcs4_cpu",
+          "label": 1,
+          "probability": 0.43947128655072154
+        },
+        {
+          "key": "native_tt_um_minibyte_benign",
+          "host": "tt_um_minibyte",
+          "label": 0,
+          "probability": 0.44660711903187916
+        },
+        {
+          "key": "native_tt_um_minibyte_clean",
+          "host": "tt_um_minibyte",
+          "label": 0,
+          "probability": 0.44660711903187916
+        },
+        {
+          "key": "native_tt_um_minibyte_trojan",
+          "host": "tt_um_minibyte",
+          "label": 1,
+          "probability": 0.44681606867160495
+        },
+        {
+          "key": "native_tt_um_multiplier_mbm_benign",
+          "host": "tt_um_multiplier_mbm",
+          "label": 0,
+          "probability": 0.4691702645321311
+        },
+        {
+          "key": "native_tt_um_multiplier_mbm_clean",
+          "host": "tt_um_multiplier_mbm",
+          "label": 0,
+          "probability": 0.4691702645321311
+        },
+        {
+          "key": "native_tt_um_multiplier_mbm_trojan",
+          "host": "tt_um_multiplier_mbm",
+          "label": 1,
+          "probability": 0.46922408142822636
+        },
+        {
+          "key": "native_tt_um_njp_micro_benign",
+          "host": "tt_um_njp_micro",
+          "label": 0,
+          "probability": 0.49472590955524337
+        },
+        {
+          "key": "native_tt_um_njp_micro_clean",
+          "host": "tt_um_njp_micro",
+          "label": 0,
+          "probability": 0.49472590955524337
+        },
+        {
+          "key": "native_tt_um_njp_micro_trojan",
+          "host": "tt_um_njp_micro",
+          "label": 1,
+          "probability": 0.48425251763898136
+        },
+        {
+          "key": "native_tt_um_pcs_link_lite_benign",
+          "host": "tt_um_pcs_link_lite",
+          "label": 0,
+          "probability": 0.47165267557852886
+        },
+        {
+          "key": "native_tt_um_pcs_link_lite_clean",
+          "host": "tt_um_pcs_link_lite",
+          "label": 0,
+          "probability": 0.47165267557852886
+        },
+        {
+          "key": "native_tt_um_pcs_link_lite_trojan",
+          "host": "tt_um_pcs_link_lite",
+          "label": 1,
+          "probability": 0.47157063946158795
+        },
+        {
+          "key": "native_tt_um_qubitbytes_alive_benign",
+          "host": "tt_um_qubitbytes_alive",
+          "label": 0,
+          "probability": 0.4260317502854921
+        },
+        {
+          "key": "native_tt_um_qubitbytes_alive_clean",
+          "host": "tt_um_qubitbytes_alive",
+          "label": 0,
+          "probability": 0.4260043869770375
+        },
+        {
+          "key": "native_tt_um_qubitbytes_alive_trojan",
+          "host": "tt_um_qubitbytes_alive",
+          "label": 1,
+          "probability": 0.4256471904693004
+        },
+        {
+          "key": "native_tt_um_rebeccargb_dipped_benign",
+          "host": "tt_um_rebeccargb_dipped",
+          "label": 0,
+          "probability": 0.4573998650580594
+        },
+        {
+          "key": "native_tt_um_rebeccargb_dipped_clean",
+          "host": "tt_um_rebeccargb_dipped",
+          "label": 0,
+          "probability": 0.4573998650580594
+        },
+        {
+          "key": "native_tt_um_rebeccargb_dipped_trojan",
+          "host": "tt_um_rebeccargb_dipped",
+          "label": 1,
+          "probability": 0.4573998650580594
+        },
+        {
+          "key": "native_tt_um_robojan_top_benign",
+          "host": "tt_um_robojan_top",
+          "label": 0,
+          "probability": 0.4421196913336041
+        },
+        {
+          "key": "native_tt_um_robojan_top_clean",
+          "host": "tt_um_robojan_top",
+          "label": 0,
+          "probability": 0.4421040978872195
+        },
+        {
+          "key": "native_tt_um_robojan_top_trojan",
+          "host": "tt_um_robojan_top",
+          "label": 1,
+          "probability": 0.4421196913336041
+        },
+        {
+          "key": "native_tt_um_rongbin99_happyredmapleleaf_audio_chip_benign",
+          "host": "tt_um_rongbin99_happyredmapleleaf_audio_chip",
+          "label": 0,
+          "probability": 0.4635213627975346
+        },
+        {
+          "key": "native_tt_um_rongbin99_happyredmapleleaf_audio_chip_clean",
+          "host": "tt_um_rongbin99_happyredmapleleaf_audio_chip",
+          "label": 0,
+          "probability": 0.4635213627975346
+        },
+        {
+          "key": "native_tt_um_rongbin99_happyredmapleleaf_audio_chip_trojan",
+          "host": "tt_um_rongbin99_happyredmapleleaf_audio_chip",
+          "label": 1,
+          "probability": 0.4635213627975346
+        },
+        {
+          "key": "native_tt_um_santhosh_stoch_neuron_benign",
+          "host": "tt_um_santhosh_stoch_neuron",
+          "label": 0,
+          "probability": 0.45024780626981775
+        },
+        {
+          "key": "native_tt_um_santhosh_stoch_neuron_clean",
+          "host": "tt_um_santhosh_stoch_neuron",
+          "label": 0,
+          "probability": 0.45024780626981775
+        },
+        {
+          "key": "native_tt_um_santhosh_stoch_neuron_trojan",
+          "host": "tt_um_santhosh_stoch_neuron",
+          "label": 1,
+          "probability": 0.45024780626981775
+        },
+        {
+          "key": "native_tt_um_snk_smart_io_hub_benign",
+          "host": "tt_um_snk_smart_io_hub",
+          "label": 0,
+          "probability": 0.42214457868938665
+        },
+        {
+          "key": "native_tt_um_snk_smart_io_hub_clean",
+          "host": "tt_um_snk_smart_io_hub",
+          "label": 0,
+          "probability": 0.4221365716339167
+        },
+        {
+          "key": "native_tt_um_snk_smart_io_hub_trojan",
+          "host": "tt_um_snk_smart_io_hub",
+          "label": 1,
+          "probability": 0.42214457868938665
+        },
+        {
+          "key": "native_tt_um_snn_with_delays_paolaunisa_benign",
+          "host": "tt_um_snn_with_delays_paolaunisa",
+          "label": 0,
+          "probability": 0.3844823645978233
+        },
+        {
+          "key": "native_tt_um_snn_with_delays_paolaunisa_clean",
+          "host": "tt_um_snn_with_delays_paolaunisa",
+          "label": 0,
+          "probability": 0.38447796736910234
+        },
+        {
+          "key": "native_tt_um_snn_with_delays_paolaunisa_trojan",
+          "host": "tt_um_snn_with_delays_paolaunisa",
+          "label": 1,
+          "probability": 0.3844823645978233
+        },
+        {
+          "key": "native_tt_um_sortaALUAriaMitra_benign",
+          "host": "tt_um_sortaALUAriaMitra",
+          "label": 0,
+          "probability": 0.5320792851226442
+        },
+        {
+          "key": "native_tt_um_sortaALUAriaMitra_clean",
+          "host": "tt_um_sortaALUAriaMitra",
+          "label": 0,
+          "probability": 0.5320792851226442
+        },
+        {
+          "key": "native_tt_um_sortaALUAriaMitra_trojan",
+          "host": "tt_um_sortaALUAriaMitra",
+          "label": 1,
+          "probability": 0.5332410384611375
+        },
+        {
+          "key": "native_tt_um_thermocouple_benign",
+          "host": "tt_um_thermocouple",
+          "label": 0,
+          "probability": 0.45557576455549725
+        },
+        {
+          "key": "native_tt_um_thermocouple_clean",
+          "host": "tt_um_thermocouple",
+          "label": 0,
+          "probability": 0.4556244146199653
+        },
+        {
+          "key": "native_tt_um_thermocouple_trojan",
+          "host": "tt_um_thermocouple",
+          "label": 1,
+          "probability": 0.45557576455549725
+        },
+        {
+          "key": "native_tt_um_thorkn_audiochip_v2_benign",
+          "host": "tt_um_thorkn_audiochip_v2",
+          "label": 0,
+          "probability": 0.4572703927303315
+        },
+        {
+          "key": "native_tt_um_thorkn_audiochip_v2_clean",
+          "host": "tt_um_thorkn_audiochip_v2",
+          "label": 0,
+          "probability": 0.4571678197152306
+        },
+        {
+          "key": "native_tt_um_thorkn_audiochip_v2_trojan",
+          "host": "tt_um_thorkn_audiochip_v2",
+          "label": 1,
+          "probability": 0.4587290077157782
+        },
+        {
+          "key": "native_tt_um_toivoh_synth_benign",
+          "host": "tt_um_toivoh_synth",
+          "label": 0,
+          "probability": 0.44337108273530007
+        },
+        {
+          "key": "native_tt_um_toivoh_synth_clean",
+          "host": "tt_um_toivoh_synth",
+          "label": 0,
+          "probability": 0.44337108273530007
+        },
+        {
+          "key": "native_tt_um_toivoh_synth_trojan",
+          "host": "tt_um_toivoh_synth",
+          "label": 1,
+          "probability": 0.4431443271285378
+        },
+        {
+          "key": "native_tt_um_tomkeddie_a_benign",
+          "host": "tt_um_tomkeddie_a",
+          "label": 0,
+          "probability": 0.4480482262110804
+        },
+        {
+          "key": "native_tt_um_tomkeddie_a_clean",
+          "host": "tt_um_tomkeddie_a",
+          "label": 0,
+          "probability": 0.4480482262110804
+        },
+        {
+          "key": "native_tt_um_tomkeddie_a_trojan",
+          "host": "tt_um_tomkeddie_a",
+          "label": 1,
+          "probability": 0.4480482262110804
+        },
+        {
+          "key": "native_tt_um_uninorte_benign",
+          "host": "tt_um_uninorte",
+          "label": 0,
+          "probability": 0.49139925296981934
+        },
+        {
+          "key": "native_tt_um_uninorte_clean",
+          "host": "tt_um_uninorte",
+          "label": 0,
+          "probability": 0.49139925296981934
+        },
+        {
+          "key": "native_tt_um_uninorte_trojan",
+          "host": "tt_um_uninorte",
+          "label": 1,
+          "probability": 0.49133075443285673
+        }
+      ]
+    },
+    "graph_aggregates_logistic": {
+      "overall": {
+        "pooled_auroc": 0.5211397058823529,
+        "equal_host_auroc": 0.5885416666666666,
+        "within_host_pair_ranking": 0.5833333333333334,
+        "balanced_log_loss": 0.9646038355815516,
+        "balanced_accuracy_at_0_5": 0.5199142156862745,
+        "n_hosts": 48,
+        "n_pairs": 102
+      },
+      "predictions": [
+        {
+          "key": "baseline_divider_benign",
+          "host": "divider",
+          "label": 0,
+          "probability": 0.8289218583725062
+        },
+        {
+          "key": "baseline_divider_clean",
+          "host": "divider",
+          "label": 0,
+          "probability": 0.819740206255084
+        },
+        {
+          "key": "baseline_divider_trojan",
+          "host": "divider",
+          "label": 1,
+          "probability": 0.8289498158453436
+        },
+        {
+          "key": "baseline_jpeg_huffman_benign",
+          "host": "jpeg_huffman",
+          "label": 0,
+          "probability": 0.9582190525080083
+        },
+        {
+          "key": "baseline_jpeg_huffman_clean",
+          "host": "jpeg_huffman",
+          "label": 0,
+          "probability": 0.9582190525080083
+        },
+        {
+          "key": "baseline_jpeg_huffman_trojan",
+          "host": "jpeg_huffman",
+          "label": 1,
+          "probability": 0.9582495217715046
+        },
+        {
+          "key": "baseline_logic_scope_benign",
+          "host": "logic_scope",
+          "label": 0,
+          "probability": 0.14661255715053656
+        },
+        {
+          "key": "baseline_logic_scope_clean",
+          "host": "logic_scope",
+          "label": 0,
+          "probability": 0.14661254108895055
+        },
+        {
+          "key": "baseline_logic_scope_trojan",
+          "host": "logic_scope",
+          "label": 1,
+          "probability": 0.14928811371444842
+        },
+        {
+          "key": "baseline_picorv32_benign",
+          "host": "picorv32",
+          "label": 0,
+          "probability": 0.2442366467108568
+        },
+        {
+          "key": "baseline_picorv32_clean",
+          "host": "picorv32",
+          "label": 0,
+          "probability": 0.24415544148314441
+        },
+        {
+          "key": "baseline_picorv32_trojan",
+          "host": "picorv32",
+          "label": 1,
+          "probability": 0.24452848710042624
+        },
+        {
+          "key": "baseline_sha2_benign",
+          "host": "sha2",
+          "label": 0,
+          "probability": 0.0692880206952336
+        },
+        {
+          "key": "baseline_sha2_clean",
+          "host": "sha2",
+          "label": 0,
+          "probability": 0.0692880206952336
+        },
+        {
+          "key": "baseline_sha2_trojan",
+          "host": "sha2",
+          "label": 1,
+          "probability": 0.06928932116571698
+        },
+        {
+          "key": "external_authored_RS232-T2100_clean",
+          "host": "RS232",
+          "label": 0,
+          "probability": 0.8178872415468691
+        },
+        {
+          "key": "external_authored_RS232-T2100_trojan",
+          "host": "RS232",
+          "label": 1,
+          "probability": 0.7128691648327729
+        },
+        {
+          "key": "external_authored_RS232-T2200_clean",
+          "host": "RS232",
+          "label": 0,
+          "probability": 0.8178872415468691
+        },
+        {
+          "key": "external_authored_RS232-T2200_trojan",
+          "host": "RS232",
+          "label": 1,
+          "probability": 0.755321987696747
+        },
+        {
+          "key": "four_projects_core_usb_uart_benign",
+          "host": "core_usb_uart",
+          "label": 0,
+          "probability": 0.013229591784080352
+        },
+        {
+          "key": "four_projects_core_usb_uart_clean",
+          "host": "core_usb_uart",
+          "label": 0,
+          "probability": 0.008297848329762728
+        },
+        {
+          "key": "four_projects_core_usb_uart_suppress",
+          "host": "core_usb_uart",
+          "label": 1,
+          "probability": 0.04099021904199812
+        },
+        {
+          "key": "four_projects_core_usb_uart_toggle",
+          "host": "core_usb_uart",
+          "label": 1,
+          "probability": 0.05055539286558304
+        },
+        {
+          "key": "four_projects_sha1_benign",
+          "host": "sha1",
+          "label": 0,
+          "probability": 0.5214807163384892
+        },
+        {
+          "key": "four_projects_sha1_clean",
+          "host": "sha1",
+          "label": 0,
+          "probability": 0.4289556216093866
+        },
+        {
+          "key": "four_projects_sha1_suppress",
+          "host": "sha1",
+          "label": 1,
+          "probability": 0.4415977921238132
+        },
+        {
+          "key": "four_projects_sha1_toggle",
+          "host": "sha1",
+          "label": 1,
+          "probability": 0.4402536566416258
+        },
+        {
+          "key": "native_tt_um_32_bit_fp_ALU_S_M_benign",
+          "host": "tt_um_32_bit_fp_ALU_S_M",
+          "label": 0,
+          "probability": 0.7595730087016394
+        },
+        {
+          "key": "native_tt_um_32_bit_fp_ALU_S_M_clean",
+          "host": "tt_um_32_bit_fp_ALU_S_M",
+          "label": 0,
+          "probability": 0.7595730087016394
+        },
+        {
+          "key": "native_tt_um_32_bit_fp_ALU_S_M_trojan",
+          "host": "tt_um_32_bit_fp_ALU_S_M",
+          "label": 1,
+          "probability": 0.7595730087016394
+        },
+        {
+          "key": "native_tt_um_Coline3003_spect_top_benign",
+          "host": "tt_um_Coline3003_spect_top",
+          "label": 0,
+          "probability": 0.5992666774889231
+        },
+        {
+          "key": "native_tt_um_Coline3003_spect_top_clean",
+          "host": "tt_um_Coline3003_spect_top",
+          "label": 0,
+          "probability": 0.6019034889468469
+        },
+        {
+          "key": "native_tt_um_Coline3003_spect_top_trojan",
+          "host": "tt_um_Coline3003_spect_top",
+          "label": 1,
+          "probability": 0.5992666774889231
+        },
+        {
+          "key": "native_tt_um_DelosReyesJordan_HDL_benign",
+          "host": "tt_um_DelosReyesJordan_HDL",
+          "label": 0,
+          "probability": 0.69408083845412
+        },
+        {
+          "key": "native_tt_um_DelosReyesJordan_HDL_clean",
+          "host": "tt_um_DelosReyesJordan_HDL",
+          "label": 0,
+          "probability": 0.6940793770697172
+        },
+        {
+          "key": "native_tt_um_DelosReyesJordan_HDL_trojan",
+          "host": "tt_um_DelosReyesJordan_HDL",
+          "label": 1,
+          "probability": 0.6940808518035854
+        },
+        {
+          "key": "native_tt_um_Max00Ker_Traffic_Light_benign",
+          "host": "tt_um_Max00Ker_Traffic_Light",
+          "label": 0,
+          "probability": 0.6406072254603195
+        },
+        {
+          "key": "native_tt_um_Max00Ker_Traffic_Light_clean",
+          "host": "tt_um_Max00Ker_Traffic_Light",
+          "label": 0,
+          "probability": 0.6477199050361171
+        },
+        {
+          "key": "native_tt_um_Max00Ker_Traffic_Light_trojan",
+          "host": "tt_um_Max00Ker_Traffic_Light",
+          "label": 1,
+          "probability": 0.6403873976382792
+        },
+        {
+          "key": "native_tt_um_NicklausThompson_SkyKing_benign",
+          "host": "tt_um_NicklausThompson_SkyKing",
+          "label": 0,
+          "probability": 0.43377381310304014
+        },
+        {
+          "key": "native_tt_um_NicklausThompson_SkyKing_clean",
+          "host": "tt_um_NicklausThompson_SkyKing",
+          "label": 0,
+          "probability": 0.4337738027181062
+        },
+        {
+          "key": "native_tt_um_NicklausThompson_SkyKing_trojan",
+          "host": "tt_um_NicklausThompson_SkyKing",
+          "label": 1,
+          "probability": 0.43377381310304014
+        },
+        {
+          "key": "native_tt_um__kwr_lfsr__top_benign",
+          "host": "tt_um__kwr_lfsr__top",
+          "label": 0,
+          "probability": 0.07121691104377954
+        },
+        {
+          "key": "native_tt_um__kwr_lfsr__top_clean",
+          "host": "tt_um__kwr_lfsr__top",
+          "label": 0,
+          "probability": 0.07121689966860491
+        },
+        {
+          "key": "native_tt_um__kwr_lfsr__top_trojan",
+          "host": "tt_um__kwr_lfsr__top",
+          "label": 1,
+          "probability": 0.07121690638858054
+        },
+        {
+          "key": "native_tt_um_aes_sbox_benign",
+          "host": "tt_um_aes_sbox",
+          "label": 0,
+          "probability": 0.48650415541292386
+        },
+        {
+          "key": "native_tt_um_aes_sbox_clean",
+          "host": "tt_um_aes_sbox",
+          "label": 0,
+          "probability": 0.48650415541292386
+        },
+        {
+          "key": "native_tt_um_aes_sbox_trojan",
+          "host": "tt_um_aes_sbox",
+          "label": 1,
+          "probability": 0.9348527912347829
+        },
+        {
+          "key": "native_tt_um_afasolino_benign",
+          "host": "tt_um_afasolino",
+          "label": 0,
+          "probability": 0.5173323878557744
+        },
+        {
+          "key": "native_tt_um_afasolino_clean",
+          "host": "tt_um_afasolino",
+          "label": 0,
+          "probability": 0.5164323803503684
+        },
+        {
+          "key": "native_tt_um_afasolino_trojan",
+          "host": "tt_um_afasolino",
+          "label": 1,
+          "probability": 0.5157562601551411
+        },
+        {
+          "key": "native_tt_um_aiju_8080_benign",
+          "host": "tt_um_aiju_8080",
+          "label": 0,
+          "probability": 0.4713432889419153
+        },
+        {
+          "key": "native_tt_um_aiju_8080_clean",
+          "host": "tt_um_aiju_8080",
+          "label": 0,
+          "probability": 0.47279049265800627
+        },
+        {
+          "key": "native_tt_um_aiju_8080_trojan",
+          "host": "tt_um_aiju_8080",
+          "label": 1,
+          "probability": 0.4713433014267535
+        },
+        {
+          "key": "native_tt_um_axi4lite_top_benign",
+          "host": "tt_um_axi4lite_top",
+          "label": 0,
+          "probability": 0.39713182638246114
+        },
+        {
+          "key": "native_tt_um_axi4lite_top_clean",
+          "host": "tt_um_axi4lite_top",
+          "label": 0,
+          "probability": 0.39699952510236025
+        },
+        {
+          "key": "native_tt_um_axi4lite_top_trojan",
+          "host": "tt_um_axi4lite_top",
+          "label": 1,
+          "probability": 0.5706669286634574
+        },
+        {
+          "key": "native_tt_um_chip_SP_Soy_de_Zacapa_benign",
+          "host": "tt_um_chip_SP_Soy_de_Zacapa",
+          "label": 0,
+          "probability": 0.8970870054844109
+        },
+        {
+          "key": "native_tt_um_chip_SP_Soy_de_Zacapa_clean",
+          "host": "tt_um_chip_SP_Soy_de_Zacapa",
+          "label": 0,
+          "probability": 0.8941588956596075
+        },
+        {
+          "key": "native_tt_um_chip_SP_Soy_de_Zacapa_trojan",
+          "host": "tt_um_chip_SP_Soy_de_Zacapa",
+          "label": 1,
+          "probability": 0.8970212333299068
+        },
+        {
+          "key": "native_tt_um_couchand_cora16_benign",
+          "host": "tt_um_couchand_cora16",
+          "label": 0,
+          "probability": 0.70733169292743
+        },
+        {
+          "key": "native_tt_um_couchand_cora16_clean",
+          "host": "tt_um_couchand_cora16",
+          "label": 0,
+          "probability": 0.7085245485858607
+        },
+        {
+          "key": "native_tt_um_couchand_cora16_trojan",
+          "host": "tt_um_couchand_cora16",
+          "label": 1,
+          "probability": 0.70733169292743
+        },
+        {
+          "key": "native_tt_um_ddc_arghunter_benign",
+          "host": "tt_um_ddc_arghunter",
+          "label": 0,
+          "probability": 0.0096935572270162
+        },
+        {
+          "key": "native_tt_um_ddc_arghunter_clean",
+          "host": "tt_um_ddc_arghunter",
+          "label": 0,
+          "probability": 0.0096935572270162
+        },
+        {
+          "key": "native_tt_um_ddc_arghunter_trojan",
+          "host": "tt_um_ddc_arghunter",
+          "label": 1,
+          "probability": 0.009693556986527524
+        },
+        {
+          "key": "native_tt_um_demosiine_sda_benign",
+          "host": "tt_um_demosiine_sda",
+          "label": 0,
+          "probability": 0.346940144842101
+        },
+        {
+          "key": "native_tt_um_demosiine_sda_clean",
+          "host": "tt_um_demosiine_sda",
+          "label": 0,
+          "probability": 0.3469401414398397
+        },
+        {
+          "key": "native_tt_um_demosiine_sda_trojan",
+          "host": "tt_um_demosiine_sda",
+          "label": 1,
+          "probability": 0.3482364977121738
+        },
+        {
+          "key": "native_tt_um_dlfloatmac_benign",
+          "host": "tt_um_dlfloatmac",
+          "label": 0,
+          "probability": 0.6348314977862711
+        },
+        {
+          "key": "native_tt_um_dlfloatmac_clean",
+          "host": "tt_um_dlfloatmac",
+          "label": 0,
+          "probability": 0.6348314977862711
+        },
+        {
+          "key": "native_tt_um_dlfloatmac_trojan",
+          "host": "tt_um_dlfloatmac",
+          "label": 1,
+          "probability": 0.6367562306612627
+        },
+        {
+          "key": "native_tt_um_fabian_benign",
+          "host": "tt_um_fabian",
+          "label": 0,
+          "probability": 0.14092704339642917
+        },
+        {
+          "key": "native_tt_um_fabian_clean",
+          "host": "tt_um_fabian",
+          "label": 0,
+          "probability": 0.14092704192773725
+        },
+        {
+          "key": "native_tt_um_fabian_trojan",
+          "host": "tt_um_fabian",
+          "label": 1,
+          "probability": 0.14092703578490695
+        },
+        {
+          "key": "native_tt_um_gregac_tiny_nn_benign",
+          "host": "tt_um_gregac_tiny_nn",
+          "label": 0,
+          "probability": 0.6088029126254625
+        },
+        {
+          "key": "native_tt_um_gregac_tiny_nn_clean",
+          "host": "tt_um_gregac_tiny_nn",
+          "label": 0,
+          "probability": 0.6124382742975351
+        },
+        {
+          "key": "native_tt_um_gregac_tiny_nn_trojan",
+          "host": "tt_um_gregac_tiny_nn",
+          "label": 1,
+          "probability": 0.6152629347469314
+        },
+        {
+          "key": "native_tt_um_idann_benign",
+          "host": "tt_um_idann",
+          "label": 0,
+          "probability": 0.006905199758084861
+        },
+        {
+          "key": "native_tt_um_idann_clean",
+          "host": "tt_um_idann",
+          "label": 0,
+          "probability": 0.006905199973652773
+        },
+        {
+          "key": "native_tt_um_idann_trojan",
+          "host": "tt_um_idann",
+          "label": 1,
+          "probability": 0.007038107749270998
+        },
+        {
+          "key": "native_tt_um_kazan_rqpu_benign",
+          "host": "tt_um_kazan_rqpu",
+          "label": 0,
+          "probability": 0.2102206498308029
+        },
+        {
+          "key": "native_tt_um_kazan_rqpu_clean",
+          "host": "tt_um_kazan_rqpu",
+          "label": 0,
+          "probability": 0.21163174743712654
+        },
+        {
+          "key": "native_tt_um_kazan_rqpu_trojan",
+          "host": "tt_um_kazan_rqpu",
+          "label": 1,
+          "probability": 0.20910331114760589
+        },
+        {
+          "key": "native_tt_um_led_cipher_benign",
+          "host": "tt_um_led_cipher",
+          "label": 0,
+          "probability": 0.1588631527340008
+        },
+        {
+          "key": "native_tt_um_led_cipher_clean",
+          "host": "tt_um_led_cipher",
+          "label": 0,
+          "probability": 0.15858948821748647
+        },
+        {
+          "key": "native_tt_um_led_cipher_trojan",
+          "host": "tt_um_led_cipher",
+          "label": 1,
+          "probability": 0.1574320467309176
+        },
+        {
+          "key": "native_tt_um_lstm_wakeword_benign",
+          "host": "tt_um_lstm_wakeword",
+          "label": 0,
+          "probability": 0.8962394043840918
+        },
+        {
+          "key": "native_tt_um_lstm_wakeword_clean",
+          "host": "tt_um_lstm_wakeword",
+          "label": 0,
+          "probability": 0.8962393814674394
+        },
+        {
+          "key": "native_tt_um_lstm_wakeword_trojan",
+          "host": "tt_um_lstm_wakeword",
+          "label": 1,
+          "probability": 0.8962394043840918
+        },
+        {
+          "key": "native_tt_um_machinaut_systolic_benign",
+          "host": "tt_um_machinaut_systolic",
+          "label": 0,
+          "probability": 0.7449474469441377
+        },
+        {
+          "key": "native_tt_um_machinaut_systolic_clean",
+          "host": "tt_um_machinaut_systolic",
+          "label": 0,
+          "probability": 0.7378412172791928
+        },
+        {
+          "key": "native_tt_um_machinaut_systolic_trojan",
+          "host": "tt_um_machinaut_systolic",
+          "label": 1,
+          "probability": 0.7449332479540578
+        },
+        {
+          "key": "native_tt_um_mcs4_cpu_benign",
+          "host": "tt_um_mcs4_cpu",
+          "label": 0,
+          "probability": 0.7916172369693523
+        },
+        {
+          "key": "native_tt_um_mcs4_cpu_clean",
+          "host": "tt_um_mcs4_cpu",
+          "label": 0,
+          "probability": 0.7897273920662905
+        },
+        {
+          "key": "native_tt_um_mcs4_cpu_trojan",
+          "host": "tt_um_mcs4_cpu",
+          "label": 1,
+          "probability": 0.7919539768840408
+        },
+        {
+          "key": "native_tt_um_minibyte_benign",
+          "host": "tt_um_minibyte",
+          "label": 0,
+          "probability": 0.5332309607479696
+        },
+        {
+          "key": "native_tt_um_minibyte_clean",
+          "host": "tt_um_minibyte",
+          "label": 0,
+          "probability": 0.5332309753399976
+        },
+        {
+          "key": "native_tt_um_minibyte_trojan",
+          "host": "tt_um_minibyte",
+          "label": 1,
+          "probability": 0.5355863317305756
+        },
+        {
+          "key": "native_tt_um_multiplier_mbm_benign",
+          "host": "tt_um_multiplier_mbm",
+          "label": 0,
+          "probability": 0.10966045567716884
+        },
+        {
+          "key": "native_tt_um_multiplier_mbm_clean",
+          "host": "tt_um_multiplier_mbm",
+          "label": 0,
+          "probability": 0.10966045714327642
+        },
+        {
+          "key": "native_tt_um_multiplier_mbm_trojan",
+          "host": "tt_um_multiplier_mbm",
+          "label": 1,
+          "probability": 0.10789521486581703
+        },
+        {
+          "key": "native_tt_um_njp_micro_benign",
+          "host": "tt_um_njp_micro",
+          "label": 0,
+          "probability": 0.18873945961857724
+        },
+        {
+          "key": "native_tt_um_njp_micro_clean",
+          "host": "tt_um_njp_micro",
+          "label": 0,
+          "probability": 0.18873952845037884
+        },
+        {
+          "key": "native_tt_um_njp_micro_trojan",
+          "host": "tt_um_njp_micro",
+          "label": 1,
+          "probability": 0.6259886536602508
+        },
+        {
+          "key": "native_tt_um_pcs_link_lite_benign",
+          "host": "tt_um_pcs_link_lite",
+          "label": 0,
+          "probability": 0.6083566082108459
+        },
+        {
+          "key": "native_tt_um_pcs_link_lite_clean",
+          "host": "tt_um_pcs_link_lite",
+          "label": 0,
+          "probability": 0.5995068530269623
+        },
+        {
+          "key": "native_tt_um_pcs_link_lite_trojan",
+          "host": "tt_um_pcs_link_lite",
+          "label": 1,
+          "probability": 0.6062724172063253
+        },
+        {
+          "key": "native_tt_um_qubitbytes_alive_benign",
+          "host": "tt_um_qubitbytes_alive",
+          "label": 0,
+          "probability": 0.5971328918577838
+        },
+        {
+          "key": "native_tt_um_qubitbytes_alive_clean",
+          "host": "tt_um_qubitbytes_alive",
+          "label": 0,
+          "probability": 0.591183075389179
+        },
+        {
+          "key": "native_tt_um_qubitbytes_alive_trojan",
+          "host": "tt_um_qubitbytes_alive",
+          "label": 1,
+          "probability": 0.5852585301135597
+        },
+        {
+          "key": "native_tt_um_rebeccargb_dipped_benign",
+          "host": "tt_um_rebeccargb_dipped",
+          "label": 0,
+          "probability": 0.4319572875265151
+        },
+        {
+          "key": "native_tt_um_rebeccargb_dipped_clean",
+          "host": "tt_um_rebeccargb_dipped",
+          "label": 0,
+          "probability": 0.4319572375315715
+        },
+        {
+          "key": "native_tt_um_rebeccargb_dipped_trojan",
+          "host": "tt_um_rebeccargb_dipped",
+          "label": 1,
+          "probability": 0.4319572875265151
+        },
+        {
+          "key": "native_tt_um_robojan_top_benign",
+          "host": "tt_um_robojan_top",
+          "label": 0,
+          "probability": 0.7387284632535074
+        },
+        {
+          "key": "native_tt_um_robojan_top_clean",
+          "host": "tt_um_robojan_top",
+          "label": 0,
+          "probability": 0.73870592831276
+        },
+        {
+          "key": "native_tt_um_robojan_top_trojan",
+          "host": "tt_um_robojan_top",
+          "label": 1,
+          "probability": 0.7387284680887557
+        },
+        {
+          "key": "native_tt_um_rongbin99_happyredmapleleaf_audio_chip_benign",
+          "host": "tt_um_rongbin99_happyredmapleleaf_audio_chip",
+          "label": 0,
+          "probability": 0.5125197751980195
+        },
+        {
+          "key": "native_tt_um_rongbin99_happyredmapleleaf_audio_chip_clean",
+          "host": "tt_um_rongbin99_happyredmapleleaf_audio_chip",
+          "label": 0,
+          "probability": 0.5126347387743814
+        },
+        {
+          "key": "native_tt_um_rongbin99_happyredmapleleaf_audio_chip_trojan",
+          "host": "tt_um_rongbin99_happyredmapleleaf_audio_chip",
+          "label": 1,
+          "probability": 0.5125197561435504
+        },
+        {
+          "key": "native_tt_um_santhosh_stoch_neuron_benign",
+          "host": "tt_um_santhosh_stoch_neuron",
+          "label": 0,
+          "probability": 0.5423391565481199
+        },
+        {
+          "key": "native_tt_um_santhosh_stoch_neuron_clean",
+          "host": "tt_um_santhosh_stoch_neuron",
+          "label": 0,
+          "probability": 0.5438030987985559
+        },
+        {
+          "key": "native_tt_um_santhosh_stoch_neuron_trojan",
+          "host": "tt_um_santhosh_stoch_neuron",
+          "label": 1,
+          "probability": 0.5423391528209873
+        },
+        {
+          "key": "native_tt_um_snk_smart_io_hub_benign",
+          "host": "tt_um_snk_smart_io_hub",
+          "label": 0,
+          "probability": 0.49862649829000094
+        },
+        {
+          "key": "native_tt_um_snk_smart_io_hub_clean",
+          "host": "tt_um_snk_smart_io_hub",
+          "label": 0,
+          "probability": 0.517275220389521
+        },
+        {
+          "key": "native_tt_um_snk_smart_io_hub_trojan",
+          "host": "tt_um_snk_smart_io_hub",
+          "label": 1,
+          "probability": 0.49862651294666
+        },
+        {
+          "key": "native_tt_um_snn_with_delays_paolaunisa_benign",
+          "host": "tt_um_snn_with_delays_paolaunisa",
+          "label": 0,
+          "probability": 0.38255142415591586
+        },
+        {
+          "key": "native_tt_um_snn_with_delays_paolaunisa_clean",
+          "host": "tt_um_snn_with_delays_paolaunisa",
+          "label": 0,
+          "probability": 0.38286270503488523
+        },
+        {
+          "key": "native_tt_um_snn_with_delays_paolaunisa_trojan",
+          "host": "tt_um_snn_with_delays_paolaunisa",
+          "label": 1,
+          "probability": 0.3825514204296188
+        },
+        {
+          "key": "native_tt_um_sortaALUAriaMitra_benign",
+          "host": "tt_um_sortaALUAriaMitra",
+          "label": 0,
+          "probability": 0.05371463762189823
+        },
+        {
+          "key": "native_tt_um_sortaALUAriaMitra_clean",
+          "host": "tt_um_sortaALUAriaMitra",
+          "label": 0,
+          "probability": 0.0537146467437689
+        },
+        {
+          "key": "native_tt_um_sortaALUAriaMitra_trojan",
+          "host": "tt_um_sortaALUAriaMitra",
+          "label": 1,
+          "probability": 0.053392386858201524
+        },
+        {
+          "key": "native_tt_um_thermocouple_benign",
+          "host": "tt_um_thermocouple",
+          "label": 0,
+          "probability": 0.02544814548299287
+        },
+        {
+          "key": "native_tt_um_thermocouple_clean",
+          "host": "tt_um_thermocouple",
+          "label": 0,
+          "probability": 0.025345304796371718
+        },
+        {
+          "key": "native_tt_um_thermocouple_trojan",
+          "host": "tt_um_thermocouple",
+          "label": 1,
+          "probability": 0.025448147014847353
+        },
+        {
+          "key": "native_tt_um_thorkn_audiochip_v2_benign",
+          "host": "tt_um_thorkn_audiochip_v2",
+          "label": 0,
+          "probability": 0.46530165036502097
+        },
+        {
+          "key": "native_tt_um_thorkn_audiochip_v2_clean",
+          "host": "tt_um_thorkn_audiochip_v2",
+          "label": 0,
+          "probability": 0.5046382678494818
+        },
+        {
+          "key": "native_tt_um_thorkn_audiochip_v2_trojan",
+          "host": "tt_um_thorkn_audiochip_v2",
+          "label": 1,
+          "probability": 0.501967078307096
+        },
+        {
+          "key": "native_tt_um_toivoh_synth_benign",
+          "host": "tt_um_toivoh_synth",
+          "label": 0,
+          "probability": 0.43467589665745654
+        },
+        {
+          "key": "native_tt_um_toivoh_synth_clean",
+          "host": "tt_um_toivoh_synth",
+          "label": 0,
+          "probability": 0.43467589050136723
+        },
+        {
+          "key": "native_tt_um_toivoh_synth_trojan",
+          "host": "tt_um_toivoh_synth",
+          "label": 1,
+          "probability": 0.43560343413482705
+        },
+        {
+          "key": "native_tt_um_tomkeddie_a_benign",
+          "host": "tt_um_tomkeddie_a",
+          "label": 0,
+          "probability": 0.46754054085038166
+        },
+        {
+          "key": "native_tt_um_tomkeddie_a_clean",
+          "host": "tt_um_tomkeddie_a",
+          "label": 0,
+          "probability": 0.4673222535153964
+        },
+        {
+          "key": "native_tt_um_tomkeddie_a_trojan",
+          "host": "tt_um_tomkeddie_a",
+          "label": 1,
+          "probability": 0.46760056996516053
+        },
+        {
+          "key": "native_tt_um_uninorte_benign",
+          "host": "tt_um_uninorte",
+          "label": 0,
+          "probability": 0.8760976207383658
+        },
+        {
+          "key": "native_tt_um_uninorte_clean",
+          "host": "tt_um_uninorte",
+          "label": 0,
+          "probability": 0.8760976558775758
+        },
+        {
+          "key": "native_tt_um_uninorte_trojan",
+          "host": "tt_um_uninorte",
+          "label": 1,
+          "probability": 0.8763684391176121
+        }
+      ]
+    }
+  }
+}

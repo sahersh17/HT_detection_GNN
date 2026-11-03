@@ -1,0 +1,12 @@
+{
+  "recorded_before_stage2_fit": "2026-11-03",
+  "development_folds": "data/dataset_stage1/folds.json",
+  "claim_scope": "development detection of native edits and faults, not general hardware Trojan detection",
+  "untouched_project_candidates": ["olofk/serv", "ZipCPU/wb2axip"],
+  "untouched_date_framework_host_candidates": ["c6288", "s13207"],
+  "date_framework_revision": "c7a1269c2c6fd4ebfaec2245c7613dba84fd0228",
+  "independent_source_candidate": "https://data.mendeley.com/datasets/37fdy2k7cj/1",
+  "independent_source_status": "candidate only: file contents, host overlap, generator provenance, semantics, and benign matching not vetted",
+  "admitted_final_records": 0,
+  "rule": "Do not inspect candidate features, variants, or labels for model selection. Pin revisions and inputs, verify independent generator and new hosts, then freeze final protocol and thresholds before first final prediction."
+}

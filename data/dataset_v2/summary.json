@@ -1,0 +1,54 @@
+{
+  "balanced_mixed_training_view": {
+    "circuits": 224,
+    "negative": 112,
+    "positive": 112,
+    "removed_benign_negative_records": 55
+  },
+  "claim_limits": [
+    "All Trust-Hub families here have already been inspected during development.",
+    "Trust-Hub labels and pairs are source/hash verified; Trojan-on behavior and matched benign decoys are not independently verified for all pairs.",
+    "Mixed synthesis flows and repeated clean designs remain. Leave entire family out for evaluation.",
+    "Trust-Hub primary is graph-only; do not silently fill missing RTL embeddings.",
+    "Balanced training view omits 55 benign decoys; evaluate those hard negatives separately from training balance.",
+    "No untouched final test is admitted."
+  ],
+  "duplicate_handling": "The original Stage-1 RS232-T2100/T2200 copies are replaced by their Trust-Hub pool records, never counted twice.",
+  "full_registry": {
+    "circuits": 279,
+    "host_families": 70,
+    "negative": 167,
+    "positive": 112,
+    "source_lineage_groups": 67
+  },
+  "input_sha256": {
+    "data/dataset_stage1/records.json": "39eeec56cd5474b82a8e813ca94bad8a3818c7229bbee8e04bf871b5e9d2310e",
+    "data/lofo_expanded_b19/protocol.json": "30cda23d836d9de35beedf509be6d23f951d17e606f9caed62204eb3c5235b02"
+  },
+  "native_edit_records_separate_from_primary": 147,
+  "quarantined_pairs": {
+    "s38584-T300": "Unresolved trigger-to-payload connection; see docs/LOCALIZATION_LABEL_AUDIT.md"
+  },
+  "source_files_verified": 1301,
+  "status": "balanced_graph_only_development_dataset_locked",
+  "trusthub_primary": {
+    "circuits": 98,
+    "clean_source_bundle_fingerprints": 20,
+    "families": {
+      "AES": 17,
+      "MC8051": 7,
+      "PIC16F84": 4,
+      "RS232": 4,
+      "b15": 4,
+      "b19": 3,
+      "memctrl": 1,
+      "s15850": 1,
+      "s35932": 3,
+      "s38417": 3,
+      "s38584": 2
+    },
+    "negative": 49,
+    "pairs": 49,
+    "positive": 49
+  }
+}

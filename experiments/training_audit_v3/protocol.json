@@ -1,0 +1,33 @@
+{
+  "epochs": 100,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.001,
+  "dropout": 0.2,
+  "balanced_seeds": [
+    42,
+    43,
+    44
+  ],
+  "legacy_seeds": [
+    42
+  ],
+  "host_batch_size": 4,
+  "checkpoints": [
+    5,
+    25,
+    50,
+    100
+  ],
+  "training": "same 185 supervised circuits as augmentation_v2",
+  "test": "same ten previously inspected PIC16F84/memctrl circuits",
+  "selection": "fixed epoch 100; no test-based checkpoint, threshold or hyperparameter selection",
+  "thresholds": "0.5 and a secondary threshold selected from training predictions only",
+  "balanced": "sample both labels per host, average gradients across each batch, clip once and update once",
+  "legacy": "original single-circuit weighted loss, clip and update per circuit",
+  "input_change": "remove explicit attack wording from model RTL views; retain exact graph tensors and class metadata",
+  "legacy_epochs": {
+    "gnn": 100,
+    "fusion": 25
+  },
+  "control_budget_amendment": "Legacy fusion shortened for compute after the GNN control completed. Its 4625 updates exceed corrected training's 1500 updates. All corrected endpoints stay at 100 epochs. No test score selects the endpoint."
+}

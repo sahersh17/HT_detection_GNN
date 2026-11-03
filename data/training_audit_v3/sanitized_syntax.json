@@ -1,0 +1,10 @@
+{
+  "compiled": [
+    "external_authored_RS232-T2100_trojan",
+    "external_authored_RS232-T2200_trojan",
+    "test_PIC16F84-T100_trojan",
+    "test_PIC16F84-T200_trojan",
+    "test_PIC16F84-T300_trojan",
+    "test_PIC16F84-T400_trojan"
+  ]
+}

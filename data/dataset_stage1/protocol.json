@@ -1,0 +1,34 @@
+{
+  "controls": [
+    "graph_size",
+    "rtl_length",
+    "chunk_count",
+    "graph_statistics",
+    "gate_histogram"
+  ],
+  "final_test_policy": "Freeze independent hosts, mechanisms, thresholds and scoring code before first final prediction.",
+  "fold_file": "data/dataset_stage1/folds.json",
+  "inference_assumption": "single suspect circuit; no clean reference at inference",
+  "input_manifests": {
+    "data/semantic_graph_v1/manifest.json": "da6f722f9eb9b562829aa94bd7ec89dea3561ce1c4e875d086597025b1ff84b4",
+    "data/training_audit_v3/manifest.json": "7799e67ef0011074d1ef9b440b42160caab8cb5615e1be2dc04fe5e07b81db72"
+  },
+  "primary_development_metrics": [
+    "equal_host_auroc",
+    "within_host_pair_ranking",
+    "balanced_accuracy_at_training_selected_threshold",
+    "balanced_log_loss"
+  ],
+  "reserved_project_candidates": [
+    "olofk/serv",
+    "ZipCPU/wb2axip"
+  ],
+  "roles": {
+    "development": "185 records / 60 hosts for model selection with source-owner-grouped folds",
+    "final_test": "none admitted; source and lock new independent hosts before scoring",
+    "inspected_diagnostic": "10 PIC16F84/memctrl records; report only, never select model or threshold"
+  },
+  "seed": 20261103,
+  "stage": 1,
+  "status": "locked_before_stage2"
+}

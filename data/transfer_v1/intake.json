@@ -1,0 +1,1272 @@
+{
+  "pins": {
+    "verilog-axis": "48ff7a7e2ef782cf778d47910cf85835c64b1bce",
+    "sha1": "50f82f4ca2f8194fd47d8360270ac7dd141d53d1",
+    "uart16550": "2b0ad80d0968f201f95506854ad769c8a44abe2b",
+    "core_usb_uart": "e35daa6874a0764abf2391b42cdba4a5803c5b6e",
+    "serv": "f200eb2ed7b69ac1c6b8eddd47654522aeee5ce8",
+    "wb2axip": "2e8d3bc2d26ddc33d1881022a2a2b9d3f0c16b9b"
+  },
+  "records": [
+    {
+      "host": "verilog-axis",
+      "variant": "clean",
+      "top": "arbiter",
+      "sources": {
+        "runs/transfer_v1/upstream/verilog-axis/rtl/arbiter.v": "d54d337db4812f927b2e9b5788dfa39f9bd578ad01b7846c5fa7f2610b0923fa",
+        "runs/transfer_v1/upstream/verilog-axis/rtl/priority_encoder.v": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5"
+      },
+      "mapped": "runs/transfer_v1/verilog-axis/clean/yosys.json",
+      "mapped_sha256": "2ad56d6383431f983a05932c1c93eda5293a13da6bfdf6c5e21b884925612533",
+      "bench_sha256": "58238133bd1883ffade47f73f0f39bc31e4171c76c88db9bd248108559f4fb04",
+      "observed_and_reference": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "trigger": "acknowledge == 4'hd"
+    },
+    {
+      "host": "verilog-axis",
+      "variant": "benign",
+      "top": "arbiter",
+      "sources": {
+        "runs/transfer_v1/verilog-axis/benign/arbiter.v": "89945d170a1710196355a76184b76468824af58fb9a683e7539e51ef79f3a5f7",
+        "runs/transfer_v1/upstream/verilog-axis/rtl/priority_encoder.v": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5"
+      },
+      "mapped": "runs/transfer_v1/verilog-axis/benign/yosys.json",
+      "mapped_sha256": "cd8a0ea51d7f80664693304188cc017e1e5b2274ff740208809f906953c22922",
+      "bench_sha256": "58238133bd1883ffade47f73f0f39bc31e4171c76c88db9bd248108559f4fb04",
+      "observed_and_reference": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "trigger": "acknowledge == 4'hd"
+    },
+    {
+      "host": "verilog-axis",
+      "variant": "toggle",
+      "top": "arbiter",
+      "sources": {
+        "runs/transfer_v1/verilog-axis/toggle/arbiter.v": "52efcde045e4d93754880aaae44771f5b5ee9178f1b1b70e69250fc60d610f29",
+        "runs/transfer_v1/upstream/verilog-axis/rtl/priority_encoder.v": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5"
+      },
+      "mapped": "runs/transfer_v1/verilog-axis/toggle/yosys.json",
+      "mapped_sha256": "5852d1391e493b689123a33fcd07e915021ff905b693499346b2a0f6f48f6a84",
+      "bench_sha256": "58238133bd1883ffade47f73f0f39bc31e4171c76c88db9bd248108559f4fb04",
+      "observed_and_reference": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          9,
+          8
+        ]
+      ],
+      "trigger": "acknowledge == 4'hd"
+    },
+    {
+      "host": "verilog-axis",
+      "variant": "suppress",
+      "top": "arbiter",
+      "sources": {
+        "runs/transfer_v1/verilog-axis/suppress/arbiter.v": "10a9535c59c0cf04868863ce475e876e669b96be9af563f1710ec5b4b66b15cd",
+        "runs/transfer_v1/upstream/verilog-axis/rtl/priority_encoder.v": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5"
+      },
+      "mapped": "runs/transfer_v1/verilog-axis/suppress/yosys.json",
+      "mapped_sha256": "9cbed2d3dfdc976bede6fd67f284854dc9da835f7a1959062f7a5e6851cca57f",
+      "bench_sha256": "58238133bd1883ffade47f73f0f39bc31e4171c76c88db9bd248108559f4fb04",
+      "observed_and_reference": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      "trigger": "acknowledge == 4'hd"
+    },
+    {
+      "host": "sha1",
+      "variant": "clean",
+      "top": "sha1_w_mem",
+      "sources": {
+        "runs/transfer_v1/upstream/sha1/src/rtl/sha1_w_mem.v": "ca93c241cc6786df0c8756029698b17d30be1fbc4a1e19de2caba6539a0781e0"
+      },
+      "mapped": "runs/transfer_v1/sha1/clean/yosys.json",
+      "mapped_sha256": "23895484fd1a29c9270b912d4e52044ddbe4537e7a809fc8f3518f7a79b5d3d7",
+      "bench_sha256": "8af0547dbb1530256165c091f906f4695979d823fd44cdfad3712fdf2fbddb33",
+      "observed_and_reference": [
+        [
+          256,
+          256
+        ],
+        [
+          257,
+          257
+        ],
+        [
+          258,
+          258
+        ],
+        [
+          259,
+          259
+        ],
+        [
+          260,
+          260
+        ],
+        [
+          261,
+          261
+        ],
+        [
+          262,
+          262
+        ],
+        [
+          263,
+          263
+        ],
+        [
+          264,
+          264
+        ],
+        [
+          265,
+          265
+        ],
+        [
+          266,
+          266
+        ],
+        [
+          267,
+          267
+        ],
+        [
+          268,
+          268
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          270,
+          270
+        ],
+        [
+          271,
+          271
+        ]
+      ],
+      "trigger": "block[7:0] == 8'had"
+    },
+    {
+      "host": "sha1",
+      "variant": "benign",
+      "top": "sha1_w_mem",
+      "sources": {
+        "runs/transfer_v1/sha1/benign/sha1_w_mem.v": "4b69e759955a623cb80f38c3a0ec14a39540cb88cbf134448146decda0250334"
+      },
+      "mapped": "runs/transfer_v1/sha1/benign/yosys.json",
+      "mapped_sha256": "e432dcb1eafe0a817854d29661eaf016da5269394d8b7c90db2f9b72822ef18f",
+      "bench_sha256": "8af0547dbb1530256165c091f906f4695979d823fd44cdfad3712fdf2fbddb33",
+      "observed_and_reference": [
+        [
+          256,
+          256
+        ],
+        [
+          257,
+          257
+        ],
+        [
+          258,
+          258
+        ],
+        [
+          259,
+          259
+        ],
+        [
+          260,
+          260
+        ],
+        [
+          261,
+          261
+        ],
+        [
+          262,
+          262
+        ],
+        [
+          263,
+          263
+        ],
+        [
+          264,
+          264
+        ],
+        [
+          265,
+          265
+        ],
+        [
+          266,
+          266
+        ],
+        [
+          267,
+          267
+        ],
+        [
+          268,
+          268
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          270,
+          270
+        ],
+        [
+          271,
+          271
+        ]
+      ],
+      "trigger": "block[7:0] == 8'had"
+    },
+    {
+      "host": "sha1",
+      "variant": "toggle",
+      "top": "sha1_w_mem",
+      "sources": {
+        "runs/transfer_v1/sha1/toggle/sha1_w_mem.v": "cd359df3c513d3aa2c791d6ca24958429e75729ab5158bfc6bd9c86aa031d300"
+      },
+      "mapped": "runs/transfer_v1/sha1/toggle/yosys.json",
+      "mapped_sha256": "688335720dd2fbdca6126e4ac7c0d98f872eb43e7f615ee311e953f71e4bbbed",
+      "bench_sha256": "8af0547dbb1530256165c091f906f4695979d823fd44cdfad3712fdf2fbddb33",
+      "observed_and_reference": [
+        [
+          256,
+          256
+        ],
+        [
+          257,
+          257
+        ],
+        [
+          258,
+          258
+        ],
+        [
+          259,
+          259
+        ],
+        [
+          260,
+          260
+        ],
+        [
+          261,
+          261
+        ],
+        [
+          262,
+          262
+        ],
+        [
+          263,
+          263
+        ],
+        [
+          264,
+          264
+        ],
+        [
+          265,
+          265
+        ],
+        [
+          266,
+          266
+        ],
+        [
+          267,
+          267
+        ],
+        [
+          268,
+          268
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          271,
+          270
+        ],
+        [
+          270,
+          271
+        ]
+      ],
+      "trigger": "block[7:0] == 8'had"
+    },
+    {
+      "host": "sha1",
+      "variant": "suppress",
+      "top": "sha1_w_mem",
+      "sources": {
+        "runs/transfer_v1/sha1/suppress/sha1_w_mem.v": "1dac9938673cc22b0042f602b9b5952550490c2e2d360d44761e0ba443fab281"
+      },
+      "mapped": "runs/transfer_v1/sha1/suppress/yosys.json",
+      "mapped_sha256": "63dab14058ce53de8a5d96675e1d26cd11cc0aacf0501e18023beddf124b7c4c",
+      "bench_sha256": "8af0547dbb1530256165c091f906f4695979d823fd44cdfad3712fdf2fbddb33",
+      "observed_and_reference": [
+        [
+          256,
+          256
+        ],
+        [
+          257,
+          257
+        ],
+        [
+          258,
+          258
+        ],
+        [
+          259,
+          259
+        ],
+        [
+          260,
+          260
+        ],
+        [
+          261,
+          261
+        ],
+        [
+          262,
+          262
+        ],
+        [
+          263,
+          263
+        ],
+        [
+          264,
+          264
+        ],
+        [
+          265,
+          265
+        ],
+        [
+          266,
+          266
+        ],
+        [
+          267,
+          267
+        ],
+        [
+          268,
+          268
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          0,
+          270
+        ],
+        [
+          0,
+          271
+        ]
+      ],
+      "trigger": "block[7:0] == 8'had"
+    },
+    {
+      "host": "uart16550",
+      "variant": "clean",
+      "top": "uart_debug_if",
+      "sources": {
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/uart_debug_if.v": "1dcb11ee99850778f7b73163493050a57e6d9b98c65265f8ace085a43545417a",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/timescale.v": "e32395dbf32d81190e357000592b0a6775dd9a57f598d843cd801289c7393e43",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/uart_defines.v": "4b44d6f9570fec6e7af6de5fe455d67ba1b240885e962003de22b0a3a3aa8402"
+      },
+      "mapped": "runs/transfer_v1/uart16550/clean/yosys.json",
+      "mapped_sha256": "95025d37ed3e4864b2acaf7cea6a238b883a8246f015066b2de0c2c9316eac8c",
+      "bench_sha256": "5dbafc7771c100bcd9fbd5145e2c6e45e466f9f2ebfd07594ce542302f086680",
+      "observed_and_reference": [
+        [
+          16777217,
+          16777217
+        ],
+        [
+          33554433,
+          33554433
+        ],
+        [
+          50331649,
+          50331649
+        ],
+        [
+          67108865,
+          67108865
+        ],
+        [
+          83886081,
+          83886081
+        ],
+        [
+          100663297,
+          100663297
+        ],
+        [
+          117440513,
+          117440513
+        ],
+        [
+          134217729,
+          134217729
+        ],
+        [
+          150994945,
+          150994945
+        ],
+        [
+          167772161,
+          167772161
+        ],
+        [
+          184549377,
+          184549377
+        ],
+        [
+          201326593,
+          201326593
+        ],
+        [
+          218103809,
+          218103809
+        ],
+        [
+          234881025,
+          234881025
+        ],
+        [
+          2902458369,
+          2902458369
+        ],
+        [
+          2902458369,
+          2902458369
+        ]
+      ],
+      "trigger": "msr == 8'had"
+    },
+    {
+      "host": "uart16550",
+      "variant": "benign",
+      "top": "uart_debug_if",
+      "sources": {
+        "runs/transfer_v1/uart16550/benign/uart_debug_if.v": "0f84457db92d01edcb1c8982f754a0e98042fefe3a33311030955665d9a0adf4",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/timescale.v": "e32395dbf32d81190e357000592b0a6775dd9a57f598d843cd801289c7393e43",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/uart_defines.v": "4b44d6f9570fec6e7af6de5fe455d67ba1b240885e962003de22b0a3a3aa8402"
+      },
+      "mapped": "runs/transfer_v1/uart16550/benign/yosys.json",
+      "mapped_sha256": "85f0d9734402499bbffbf34443d81fb084110e217c5abccb2a6ead6368ae320a",
+      "bench_sha256": "5dbafc7771c100bcd9fbd5145e2c6e45e466f9f2ebfd07594ce542302f086680",
+      "observed_and_reference": [
+        [
+          16777217,
+          16777217
+        ],
+        [
+          33554433,
+          33554433
+        ],
+        [
+          50331649,
+          50331649
+        ],
+        [
+          67108865,
+          67108865
+        ],
+        [
+          83886081,
+          83886081
+        ],
+        [
+          100663297,
+          100663297
+        ],
+        [
+          117440513,
+          117440513
+        ],
+        [
+          134217729,
+          134217729
+        ],
+        [
+          150994945,
+          150994945
+        ],
+        [
+          167772161,
+          167772161
+        ],
+        [
+          184549377,
+          184549377
+        ],
+        [
+          201326593,
+          201326593
+        ],
+        [
+          218103809,
+          218103809
+        ],
+        [
+          234881025,
+          234881025
+        ],
+        [
+          2902458369,
+          2902458369
+        ],
+        [
+          2902458369,
+          2902458369
+        ]
+      ],
+      "trigger": "msr == 8'had"
+    },
+    {
+      "host": "uart16550",
+      "variant": "toggle",
+      "top": "uart_debug_if",
+      "sources": {
+        "runs/transfer_v1/uart16550/toggle/uart_debug_if.v": "0affa0b6867257d3fa628f914ba20f80aadb167f5756bca9431892fca488d066",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/timescale.v": "e32395dbf32d81190e357000592b0a6775dd9a57f598d843cd801289c7393e43",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/uart_defines.v": "4b44d6f9570fec6e7af6de5fe455d67ba1b240885e962003de22b0a3a3aa8402"
+      },
+      "mapped": "runs/transfer_v1/uart16550/toggle/yosys.json",
+      "mapped_sha256": "37964b94435612b5e80aa7770f7e6c70fc2b6e987fa401106e7c78afb4e52b08",
+      "bench_sha256": "5dbafc7771c100bcd9fbd5145e2c6e45e466f9f2ebfd07594ce542302f086680",
+      "observed_and_reference": [
+        [
+          16777217,
+          16777217
+        ],
+        [
+          33554433,
+          33554433
+        ],
+        [
+          50331649,
+          50331649
+        ],
+        [
+          67108865,
+          67108865
+        ],
+        [
+          83886081,
+          83886081
+        ],
+        [
+          100663297,
+          100663297
+        ],
+        [
+          117440513,
+          117440513
+        ],
+        [
+          134217729,
+          134217729
+        ],
+        [
+          150994945,
+          150994945
+        ],
+        [
+          167772161,
+          167772161
+        ],
+        [
+          184549377,
+          184549377
+        ],
+        [
+          201326593,
+          201326593
+        ],
+        [
+          218103809,
+          218103809
+        ],
+        [
+          234881025,
+          234881025
+        ],
+        [
+          2902458368,
+          2902458369
+        ],
+        [
+          2902458368,
+          2902458369
+        ]
+      ],
+      "trigger": "msr == 8'had"
+    },
+    {
+      "host": "uart16550",
+      "variant": "suppress",
+      "top": "uart_debug_if",
+      "sources": {
+        "runs/transfer_v1/uart16550/suppress/uart_debug_if.v": "b596efb958f1e36e1763d2ee2ca0d9366cebba4379e4e8f86906668bcc95fdbd",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/timescale.v": "e32395dbf32d81190e357000592b0a6775dd9a57f598d843cd801289c7393e43",
+        "runs/transfer_v1/upstream/uart16550/rtl/verilog/uart_defines.v": "4b44d6f9570fec6e7af6de5fe455d67ba1b240885e962003de22b0a3a3aa8402"
+      },
+      "mapped": "runs/transfer_v1/uart16550/suppress/yosys.json",
+      "mapped_sha256": "43c1e11f53417908e06fb9930a40b91f61d503fd366e6f10ad6ea401b34b6c87",
+      "bench_sha256": "5dbafc7771c100bcd9fbd5145e2c6e45e466f9f2ebfd07594ce542302f086680",
+      "observed_and_reference": [
+        [
+          16777217,
+          16777217
+        ],
+        [
+          33554433,
+          33554433
+        ],
+        [
+          50331649,
+          50331649
+        ],
+        [
+          67108865,
+          67108865
+        ],
+        [
+          83886081,
+          83886081
+        ],
+        [
+          100663297,
+          100663297
+        ],
+        [
+          117440513,
+          117440513
+        ],
+        [
+          134217729,
+          134217729
+        ],
+        [
+          150994945,
+          150994945
+        ],
+        [
+          167772161,
+          167772161
+        ],
+        [
+          184549377,
+          184549377
+        ],
+        [
+          201326593,
+          201326593
+        ],
+        [
+          218103809,
+          218103809
+        ],
+        [
+          234881025,
+          234881025
+        ],
+        [
+          0,
+          2902458369
+        ],
+        [
+          0,
+          2902458369
+        ]
+      ],
+      "trigger": "msr == 8'had"
+    },
+    {
+      "host": "core_usb_uart",
+      "variant": "clean",
+      "top": "usbf_crc16",
+      "sources": {
+        "runs/transfer_v1/upstream/core_usb_uart/src_v/usbf_crc16.v": "6f06657bae01f7d93c46bfa341a5e925bd07c55341ade50bd04fc9030abd4e6f"
+      },
+      "mapped": "runs/transfer_v1/core_usb_uart/clean/yosys.json",
+      "mapped_sha256": "81727215174341c0e71dec44ef10383626564d8c77aae61f390aed0004d1d2a8",
+      "bench_sha256": "e7221e79aae03f5079922a74ca1c2d4c5aa14311ae029931c01228a516d6af6d",
+      "observed_and_reference": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "trigger": "din_i == 8'had"
+    },
+    {
+      "host": "core_usb_uart",
+      "variant": "benign",
+      "top": "usbf_crc16",
+      "sources": {
+        "runs/transfer_v1/core_usb_uart/benign/usbf_crc16.v": "cbaa97ead60c1f07710c3c85d35db4f68b612c91f6e2bd166a31ee8e50f7963e"
+      },
+      "mapped": "runs/transfer_v1/core_usb_uart/benign/yosys.json",
+      "mapped_sha256": "759efbf71a1d55b258510ad0610d843b91c3a10b2650fd3684a11475e89c1ac2",
+      "bench_sha256": "e7221e79aae03f5079922a74ca1c2d4c5aa14311ae029931c01228a516d6af6d",
+      "observed_and_reference": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "trigger": "din_i == 8'had"
+    },
+    {
+      "host": "core_usb_uart",
+      "variant": "toggle",
+      "top": "usbf_crc16",
+      "sources": {
+        "runs/transfer_v1/core_usb_uart/toggle/usbf_crc16.v": "b9f260d83d29b60ba64a499f36c98f3143ac55fee10a9fc3e77f0ad4fd08abcb"
+      },
+      "mapped": "runs/transfer_v1/core_usb_uart/toggle/yosys.json",
+      "mapped_sha256": "7f2aa276ba908a2517839c9b1de4b7ebe0d99febd3a47ab422eee5d3f6bede30",
+      "bench_sha256": "e7221e79aae03f5079922a74ca1c2d4c5aa14311ae029931c01228a516d6af6d",
+      "observed_and_reference": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "trigger": "din_i == 8'had"
+    },
+    {
+      "host": "core_usb_uart",
+      "variant": "suppress",
+      "top": "usbf_crc16",
+      "sources": {
+        "runs/transfer_v1/core_usb_uart/suppress/usbf_crc16.v": "e1cbdb889221cbbfd50dcf80c9b6360209b049e0723a1f2729ef91c862969b63"
+      },
+      "mapped": "runs/transfer_v1/core_usb_uart/suppress/yosys.json",
+      "mapped_sha256": "d027faf0a00b29398091f19e7ff4b1a4d1e47b80314a43f656dc7b7b54230263",
+      "bench_sha256": "e7221e79aae03f5079922a74ca1c2d4c5aa14311ae029931c01228a516d6af6d",
+      "observed_and_reference": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "trigger": "din_i == 8'had"
+    }
+  ]
+}

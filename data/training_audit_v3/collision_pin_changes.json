@@ -1,0 +1,12 @@
+[
+  {
+    "node": 33,
+    "benign_cell": "$flatten\\unpack_775_weights.$auto$mem.cc:351:emit$168",
+    "trojan_cell": "$flatten\\unpack_775_weights.$auto$mem.cc:351:emit$318",
+    "type": "$meminit",
+    "pin": "DATA",
+    "bit": 20,
+    "benign": "0",
+    "trojan": "1"
+  }
+]

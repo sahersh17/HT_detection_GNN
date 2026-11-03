@@ -1,0 +1,605 @@
+{
+  "purpose": "single-fold training memorization only; no validation or generalization claim",
+  "fold": 4,
+  "seed": 20261103,
+  "max_epochs": 50,
+  "completed_epochs": 50,
+  "folds_sha256": "08f4071e4400ccb1327713aa5cbd08955202ebfe0f3dfcc2d3f03e1298cf82e7",
+  "semantic_manifest_sha256": "da6f722f9eb9b562829aa94bd7ec89dea3561ce1c4e875d086597025b1ff84b4",
+  "architecture": "127->64->64 GCN; original-cell prefix sum plus max pooling; 64-unit head; no dropout or weight decay",
+  "records": 38,
+  "hosts": 12,
+  "positive": 14,
+  "total_nodes": 283594,
+  "elapsed_seconds": 41.845146299980115,
+  "snapshots": {
+    "0": {
+      "pooled_auroc": 0.48214285714285715,
+      "equal_host_auroc": 0.5,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_probability_range": [
+        0.8481500148773193,
+        1.0
+      ],
+      "negative_probability_range": [
+        0.8481481075286865,
+        1.0
+      ]
+    },
+    "1": {
+      "pooled_auroc": 0.5535714285714286,
+      "equal_host_auroc": 0.7083333333333334,
+      "balanced_accuracy_at_0_5": 0.5297619047619048,
+      "positive_probability_range": [
+        8.133136286941238e-42,
+        0.7630060315132141
+      ],
+      "negative_probability_range": [
+        1.2457543347847624e-42,
+        0.7630031704902649
+      ]
+    },
+    "5": {
+      "pooled_auroc": 0.44047619047619047,
+      "equal_host_auroc": 0.4791666666666667,
+      "balanced_accuracy_at_0_5": 0.47619047619047616,
+      "positive_probability_range": [
+        0.34593120217323303,
+        1.0
+      ],
+      "negative_probability_range": [
+        0.2783341705799103,
+        1.0
+      ]
+    },
+    "10": {
+      "pooled_auroc": 0.47767857142857145,
+      "equal_host_auroc": 0.6041666666666666,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_probability_range": [
+        0.6252526044845581,
+        1.0
+      ],
+      "negative_probability_range": [
+        0.5858311057090759,
+        1.0
+      ]
+    },
+    "15": {
+      "pooled_auroc": 0.5148809523809523,
+      "equal_host_auroc": 0.6666666666666666,
+      "balanced_accuracy_at_0_5": 0.5029761904761905,
+      "positive_probability_range": [
+        1.0462970294611296e-06,
+        1.0
+      ],
+      "negative_probability_range": [
+        1.300967795714314e-07,
+        1.0
+      ]
+    },
+    "20": {
+      "pooled_auroc": 0.4732142857142857,
+      "equal_host_auroc": 0.5625,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_probability_range": [
+        0.9429551362991333,
+        1.0
+      ],
+      "negative_probability_range": [
+        0.7200974822044373,
+        1.0
+      ]
+    },
+    "25": {
+      "pooled_auroc": 0.5773809523809523,
+      "equal_host_auroc": 0.7083333333333334,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_probability_range": [
+        2.5718823065957036e-36,
+        0.37448829412460327
+      ],
+      "negative_probability_range": [
+        1.883050975478923e-36,
+        0.23028765618801117
+      ]
+    },
+    "30": {
+      "pooled_auroc": 0.5744047619047619,
+      "equal_host_auroc": 0.6458333333333334,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_probability_range": [
+        2.6568589438842576e-33,
+        0.4136188328266144
+      ],
+      "negative_probability_range": [
+        2.5958675011368816e-33,
+        0.4044020473957062
+      ]
+    },
+    "35": {
+      "pooled_auroc": 0.5267857142857143,
+      "equal_host_auroc": 0.5,
+      "balanced_accuracy_at_0_5": 0.5297619047619048,
+      "positive_probability_range": [
+        0.0012558138696476817,
+        0.999901533126831
+      ],
+      "negative_probability_range": [
+        4.379015990707558e-06,
+        0.9999052286148071
+      ]
+    },
+    "40": {
+      "pooled_auroc": 0.46130952380952384,
+      "equal_host_auroc": 0.4791666666666667,
+      "balanced_accuracy_at_0_5": 0.5,
+      "positive_probability_range": [
+        0.6971954107284546,
+        1.0
+      ],
+      "negative_probability_range": [
+        0.605656623840332,
+        1.0
+      ]
+    },
+    "45": {
+      "pooled_auroc": 0.4851190476190476,
+      "equal_host_auroc": 0.5416666666666666,
+      "balanced_accuracy_at_0_5": 0.5625,
+      "positive_probability_range": [
+        0.777453601360321,
+        1.0
+      ],
+      "negative_probability_range": [
+        4.045707464683801e-05,
+        1.0
+      ]
+    },
+    "50": {
+      "pooled_auroc": 0.53125,
+      "equal_host_auroc": 0.5208333333333334,
+      "balanced_accuracy_at_0_5": 0.5952380952380952,
+      "positive_probability_range": [
+        0.0030501873698085546,
+        0.9999995231628418
+      ],
+      "negative_probability_range": [
+        1.5277977771788187e-09,
+        0.9999995231628418
+      ]
+    }
+  },
+  "curve": [
+    {
+      "epoch": 1,
+      "sampled_loss": 27.42131432890892
+    },
+    {
+      "epoch": 2,
+      "sampled_loss": 18.320232500632603
+    },
+    {
+      "epoch": 3,
+      "sampled_loss": 31.27060341835022
+    },
+    {
+      "epoch": 4,
+      "sampled_loss": 18.156199097633362
+    },
+    {
+      "epoch": 5,
+      "sampled_loss": 31.89575739701589
+    },
+    {
+      "epoch": 6,
+      "sampled_loss": 24.547598878542583
+    },
+    {
+      "epoch": 7,
+      "sampled_loss": 18.903648575146992
+    },
+    {
+      "epoch": 8,
+      "sampled_loss": 5.556439362466335
+    },
+    {
+      "epoch": 9,
+      "sampled_loss": 18.823959464828175
+    },
+    {
+      "epoch": 10,
+      "sampled_loss": 6.56970489025116
+    },
+    {
+      "epoch": 11,
+      "sampled_loss": 5.565509915351868
+    },
+    {
+      "epoch": 12,
+      "sampled_loss": 5.884793962041537
+    },
+    {
+      "epoch": 13,
+      "sampled_loss": 8.823346510529518
+    },
+    {
+      "epoch": 14,
+      "sampled_loss": 8.781964235007763
+    },
+    {
+      "epoch": 15,
+      "sampled_loss": 11.411128406723341
+    },
+    {
+      "epoch": 16,
+      "sampled_loss": 21.346606050928433
+    },
+    {
+      "epoch": 17,
+      "sampled_loss": 8.304170459508896
+    },
+    {
+      "epoch": 18,
+      "sampled_loss": 8.607671275734901
+    },
+    {
+      "epoch": 19,
+      "sampled_loss": 9.99132864549756
+    },
+    {
+      "epoch": 20,
+      "sampled_loss": 25.072996112207573
+    },
+    {
+      "epoch": 21,
+      "sampled_loss": 17.331129543483257
+    },
+    {
+      "epoch": 22,
+      "sampled_loss": 8.308729711920023
+    },
+    {
+      "epoch": 23,
+      "sampled_loss": 14.244351580739021
+    },
+    {
+      "epoch": 24,
+      "sampled_loss": 15.200416261951128
+    },
+    {
+      "epoch": 25,
+      "sampled_loss": 14.729012529055277
+    },
+    {
+      "epoch": 26,
+      "sampled_loss": 4.474690942714612
+    },
+    {
+      "epoch": 27,
+      "sampled_loss": 6.330983842412631
+    },
+    {
+      "epoch": 28,
+      "sampled_loss": 9.25045721232891
+    },
+    {
+      "epoch": 29,
+      "sampled_loss": 5.070241118470828
+    },
+    {
+      "epoch": 30,
+      "sampled_loss": 5.033525004982948
+    },
+    {
+      "epoch": 31,
+      "sampled_loss": 12.059527342518171
+    },
+    {
+      "epoch": 32,
+      "sampled_loss": 5.656011278430621
+    },
+    {
+      "epoch": 33,
+      "sampled_loss": 14.549671245117983
+    },
+    {
+      "epoch": 34,
+      "sampled_loss": 9.93953557809194
+    },
+    {
+      "epoch": 35,
+      "sampled_loss": 4.338883134226005
+    },
+    {
+      "epoch": 36,
+      "sampled_loss": 5.695762614409129
+    },
+    {
+      "epoch": 37,
+      "sampled_loss": 7.927549148599307
+    },
+    {
+      "epoch": 38,
+      "sampled_loss": 5.726696158448855
+    },
+    {
+      "epoch": 39,
+      "sampled_loss": 4.915135918185115
+    },
+    {
+      "epoch": 40,
+      "sampled_loss": 6.872109075387319
+    },
+    {
+      "epoch": 41,
+      "sampled_loss": 17.851212250224005
+    },
+    {
+      "epoch": 42,
+      "sampled_loss": 13.041887011379004
+    },
+    {
+      "epoch": 43,
+      "sampled_loss": 5.584854197998841
+    },
+    {
+      "epoch": 44,
+      "sampled_loss": 11.236206471920013
+    },
+    {
+      "epoch": 45,
+      "sampled_loss": 8.238980585088333
+    },
+    {
+      "epoch": 46,
+      "sampled_loss": 7.983076844985287
+    },
+    {
+      "epoch": 47,
+      "sampled_loss": 9.195644487937292
+    },
+    {
+      "epoch": 48,
+      "sampled_loss": 6.2121890770892305
+    },
+    {
+      "epoch": 49,
+      "sampled_loss": 5.263225024566054
+    },
+    {
+      "epoch": 50,
+      "sampled_loss": 4.306933891028166
+    }
+  ],
+  "final_predictions": [
+    {
+      "key": "baseline_i2c_controller_benign",
+      "host": "i2c_controller",
+      "label": 0,
+      "probability": 0.9924962520599365
+    },
+    {
+      "key": "baseline_i2c_controller_clean",
+      "host": "i2c_controller",
+      "label": 0,
+      "probability": 0.9933518171310425
+    },
+    {
+      "key": "baseline_i2c_controller_trojan",
+      "host": "i2c_controller",
+      "label": 1,
+      "probability": 0.9970580339431763
+    },
+    {
+      "key": "four_projects_uart16550_benign",
+      "host": "uart16550",
+      "label": 0,
+      "probability": 1.5277977771788187e-09
+    },
+    {
+      "key": "four_projects_uart16550_clean",
+      "host": "uart16550",
+      "label": 0,
+      "probability": 0.03387078642845154
+    },
+    {
+      "key": "four_projects_uart16550_suppress",
+      "host": "uart16550",
+      "label": 1,
+      "probability": 0.7160876393318176
+    },
+    {
+      "key": "four_projects_uart16550_toggle",
+      "host": "uart16550",
+      "label": 1,
+      "probability": 0.6499891877174377
+    },
+    {
+      "key": "four_projects_verilog-axis_benign",
+      "host": "verilog-axis",
+      "label": 0,
+      "probability": 0.03734712675213814
+    },
+    {
+      "key": "four_projects_verilog-axis_clean",
+      "host": "verilog-axis",
+      "label": 0,
+      "probability": 0.18577031791210175
+    },
+    {
+      "key": "four_projects_verilog-axis_suppress",
+      "host": "verilog-axis",
+      "label": 1,
+      "probability": 0.9070376753807068
+    },
+    {
+      "key": "four_projects_verilog-axis_toggle",
+      "host": "verilog-axis",
+      "label": 1,
+      "probability": 0.8990533947944641
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_benign",
+      "host": "tt_um_alu4_alonso59",
+      "label": 0,
+      "probability": 0.6853019595146179
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_clean",
+      "host": "tt_um_alu4_alonso59",
+      "label": 0,
+      "probability": 0.6853014826774597
+    },
+    {
+      "key": "native_tt_um_alu4_alonso59_trojan",
+      "host": "tt_um_alu4_alonso59",
+      "label": 1,
+      "probability": 0.84380704164505
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_benign",
+      "host": "tt_um_andrewtron3000",
+      "label": 0,
+      "probability": 0.9950488209724426
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_clean",
+      "host": "tt_um_andrewtron3000",
+      "label": 0,
+      "probability": 0.9950488209724426
+    },
+    {
+      "key": "native_tt_um_andrewtron3000_trojan",
+      "host": "tt_um_andrewtron3000",
+      "label": 1,
+      "probability": 0.9949609041213989
+    },
+    {
+      "key": "native_tt_um_cfib_demo_benign",
+      "host": "tt_um_cfib_demo",
+      "label": 0,
+      "probability": 0.0031236899085342884
+    },
+    {
+      "key": "native_tt_um_cfib_demo_clean",
+      "host": "tt_um_cfib_demo",
+      "label": 0,
+      "probability": 0.0033835130743682384
+    },
+    {
+      "key": "native_tt_um_cfib_demo_trojan",
+      "host": "tt_um_cfib_demo",
+      "label": 1,
+      "probability": 0.0030501873698085546
+    },
+    {
+      "key": "native_tt_um_dgkaminski_benign",
+      "host": "tt_um_dgkaminski",
+      "label": 0,
+      "probability": 0.9683258533477783
+    },
+    {
+      "key": "native_tt_um_dgkaminski_clean",
+      "host": "tt_um_dgkaminski",
+      "label": 0,
+      "probability": 0.9668554663658142
+    },
+    {
+      "key": "native_tt_um_dgkaminski_trojan",
+      "host": "tt_um_dgkaminski",
+      "label": 1,
+      "probability": 0.9667479395866394
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_benign",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 0,
+      "probability": 0.9999995231628418
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_clean",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 0,
+      "probability": 0.9999995231628418
+    },
+    {
+      "key": "native_tt_um_four_bit_cpu_top_level_trojan",
+      "host": "tt_um_four_bit_cpu_top_level",
+      "label": 1,
+      "probability": 0.9999995231628418
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_benign",
+      "host": "tt_um_gcd_stephan",
+      "label": 0,
+      "probability": 0.989234447479248
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_clean",
+      "host": "tt_um_gcd_stephan",
+      "label": 0,
+      "probability": 0.9891546368598938
+    },
+    {
+      "key": "native_tt_um_gcd_stephan_trojan",
+      "host": "tt_um_gcd_stephan",
+      "label": 1,
+      "probability": 0.9864351749420166
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_benign",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 0,
+      "probability": 0.006307944189757109
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_clean",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 0,
+      "probability": 0.008501027710735798
+    },
+    {
+      "key": "native_tt_um_madech_8bit_processor_vga_trojan",
+      "host": "tt_um_madech_8bit_processor_vga",
+      "label": 1,
+      "probability": 0.006216809153556824
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_benign",
+      "host": "tt_um_rejunity_decoder",
+      "label": 0,
+      "probability": 0.6620740294456482
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_clean",
+      "host": "tt_um_rejunity_decoder",
+      "label": 0,
+      "probability": 0.6620739698410034
+    },
+    {
+      "key": "native_tt_um_rejunity_decoder_trojan",
+      "host": "tt_um_rejunity_decoder",
+      "label": 1,
+      "probability": 0.6620742082595825
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_benign",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 0,
+      "probability": 0.999592125415802
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_clean",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 0,
+      "probability": 0.9995315074920654
+    },
+    {
+      "key": "native_tt_um_spi_pwm_djuara_trojan",
+      "host": "tt_um_spi_pwm_djuara",
+      "label": 1,
+      "probability": 0.999592125415802
+    }
+  ]
+}

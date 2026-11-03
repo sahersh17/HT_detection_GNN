@@ -1,0 +1,775 @@
+{
+  "reservation_sha256": "a7aeddd50bdf735e3af8961e8a0a0995385410771166d500e8f8ce9d11694a74",
+  "folds_sha256": "08f4071e4400ccb1327713aa5cbd08955202ebfe0f3dfcc2d3f03e1298cf82e7",
+  "scope": "development detection of synthetic edits and faults",
+  "models": {
+    "size_only/logistic": {
+      "overall": {
+        "pooled_auroc": 0.5080769230769231,
+        "equal_host_auroc": 0.4791666666666667,
+        "within_host_pair_ranking": 0.47692307692307695,
+        "balanced_log_loss": 0.6948484797817418,
+        "balanced_accuracy_at_0_5": 0.5096153846153846,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.507051282051282
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.4326923076923077,
+          "equal_host_auroc": 0.3333333333333333,
+          "within_host_pair_ranking": 0.34615384615384615,
+          "balanced_log_loss": 0.7057509303019824,
+          "balanced_accuracy_at_0_5": 0.4487179487179487,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4551282051282052
+        },
+        "1": {
+          "pooled_auroc": 0.5240384615384616,
+          "equal_host_auroc": 0.3541666666666667,
+          "within_host_pair_ranking": 0.36538461538461536,
+          "balanced_log_loss": 0.6913765479826852,
+          "balanced_accuracy_at_0_5": 0.532051282051282,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.532051282051282
+        },
+        "2": {
+          "pooled_auroc": 0.4947916666666667,
+          "equal_host_auroc": 0.5208333333333334,
+          "within_host_pair_ranking": 0.5208333333333334,
+          "balanced_log_loss": 0.6935897039892771,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.5384615384615384,
+          "equal_host_auroc": 0.5833333333333334,
+          "within_host_pair_ranking": 0.5384615384615384,
+          "balanced_log_loss": 0.6918742281489635,
+          "balanced_accuracy_at_0_5": 0.5352564102564102,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "4": {
+          "pooled_auroc": 0.5773809523809523,
+          "equal_host_auroc": 0.6041666666666666,
+          "within_host_pair_ranking": 0.6071428571428571,
+          "balanced_log_loss": 0.6921517919377845,
+          "balanced_accuracy_at_0_5": 0.5238095238095238,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5238095238095238
+        }
+      }
+    },
+    "size_only/boosted_stumps": {
+      "overall": {
+        "pooled_auroc": 0.4692948717948718,
+        "equal_host_auroc": 0.49583333333333335,
+        "within_host_pair_ranking": 0.49230769230769234,
+        "balanced_log_loss": 0.7458021133190811,
+        "balanced_accuracy_at_0_5": 0.5,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.4932692307692308
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.4326923076923077,
+          "equal_host_auroc": 0.4583333333333333,
+          "within_host_pair_ranking": 0.46153846153846156,
+          "balanced_log_loss": 0.7626194272199577,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4583333333333333
+        },
+        "1": {
+          "pooled_auroc": 0.5352564102564102,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.739325495775268,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5352564102564102
+        },
+        "2": {
+          "pooled_auroc": 0.5625,
+          "equal_host_auroc": 0.5416666666666666,
+          "within_host_pair_ranking": 0.5416666666666666,
+          "balanced_log_loss": 0.7339589069467702,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5416666666666667
+        },
+        "3": {
+          "pooled_auroc": 0.46474358974358976,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7463122611161214,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "4": {
+          "pooled_auroc": 0.4270833333333333,
+          "equal_host_auroc": 0.4791666666666667,
+          "within_host_pair_ranking": 0.4642857142857143,
+          "balanced_log_loss": 0.7462019356784003,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.43154761904761907
+        }
+      }
+    },
+    "rtl_length_only/logistic": {
+      "overall": {
+        "pooled_auroc": 0.5198717948717949,
+        "equal_host_auroc": 0.5166666666666667,
+        "within_host_pair_ranking": 0.5,
+        "balanced_log_loss": 0.692640064929385,
+        "balanced_accuracy_at_0_5": 0.5089743589743589,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5102564102564102
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.5400641025641025,
+          "equal_host_auroc": 0.6041666666666666,
+          "within_host_pair_ranking": 0.6346153846153846,
+          "balanced_log_loss": 0.6924205622050508,
+          "balanced_accuracy_at_0_5": 0.5160256410256411,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5224358974358975
+        },
+        "1": {
+          "pooled_auroc": 0.5384615384615384,
+          "equal_host_auroc": 0.5416666666666666,
+          "within_host_pair_ranking": 0.5384615384615384,
+          "balanced_log_loss": 0.6909255685481627,
+          "balanced_accuracy_at_0_5": 0.5256410256410257,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5352564102564102
+        },
+        "2": {
+          "pooled_auroc": 0.5069444444444444,
+          "equal_host_auroc": 0.5833333333333334,
+          "within_host_pair_ranking": 0.5833333333333334,
+          "balanced_log_loss": 0.6935058120593425,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.4807692307692308,
+          "equal_host_auroc": 0.4166666666666667,
+          "within_host_pair_ranking": 0.38461538461538464,
+          "balanced_log_loss": 0.6935510242035395,
+          "balanced_accuracy_at_0_5": 0.5096153846153846,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.48397435897435903
+        },
+        "4": {
+          "pooled_auroc": 0.5133928571428571,
+          "equal_host_auroc": 0.4375,
+          "within_host_pair_ranking": 0.375,
+          "balanced_log_loss": 0.6922100145021981,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5178571428571428
+        }
+      }
+    },
+    "rtl_length_only/boosted_stumps": {
+      "overall": {
+        "pooled_auroc": 0.5151923076923077,
+        "equal_host_auroc": 0.49583333333333335,
+        "within_host_pair_ranking": 0.49615384615384617,
+        "balanced_log_loss": 0.7402656805491422,
+        "balanced_accuracy_at_0_5": 0.5,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5067307692307692
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.5352564102564102,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7362955016886276,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5288461538461539
+        },
+        "1": {
+          "pooled_auroc": 0.5288461538461539,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7384088099776817,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4967948717948718
+        },
+        "2": {
+          "pooled_auroc": 0.5,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7420198304649926,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.4983974358974359,
+          "equal_host_auroc": 0.4791666666666667,
+          "within_host_pair_ranking": 0.4807692307692308,
+          "balanced_log_loss": 0.7472743174499378,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4791666666666667
+        },
+        "4": {
+          "pooled_auroc": 0.5238095238095238,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7378326804112826,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5178571428571428
+        }
+      }
+    },
+    "host_id_only/logistic": {
+      "overall": {
+        "pooled_auroc": 0.5123076923076924,
+        "equal_host_auroc": 0.5,
+        "within_host_pair_ranking": 0.5,
+        "balanced_log_loss": 0.6931427368865752,
+        "balanced_accuracy_at_0_5": 0.5,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.5,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.6931508972617317,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "1": {
+          "pooled_auroc": 0.5,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.6931508972617317,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "2": {
+          "pooled_auroc": 0.5,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.6931523725056472,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.5,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.6931508972617317,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "4": {
+          "pooled_auroc": 0.5,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.6931495175294191,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        }
+      }
+    },
+    "cohort_only/logistic": {
+      "overall": {
+        "pooled_auroc": 0.5352564102564102,
+        "equal_host_auroc": 0.5,
+        "within_host_pair_ranking": 0.5,
+        "balanced_log_loss": 0.6878730955012888,
+        "balanced_accuracy_at_0_5": 0.5352564102564102,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5352564102564102
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.5352564102564102,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.687139572100248,
+          "balanced_accuracy_at_0_5": 0.5352564102564102,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5352564102564102
+        },
+        "1": {
+          "pooled_auroc": 0.5352564102564102,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.687139572100248,
+          "balanced_accuracy_at_0_5": 0.5352564102564102,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5352564102564102
+        },
+        "2": {
+          "pooled_auroc": 0.5,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.6942350345830599,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.5352564102564102,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.6907606028642925,
+          "balanced_accuracy_at_0_5": 0.5352564102564102,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5352564102564102
+        },
+        "4": {
+          "pooled_auroc": 0.5595238095238095,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.6839190330293237,
+          "balanced_accuracy_at_0_5": 0.5595238095238095,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5595238095238095
+        }
+      }
+    },
+    "graph_aggregates/logistic": {
+      "overall": {
+        "pooled_auroc": 0.5573076923076923,
+        "equal_host_auroc": 0.5708333333333333,
+        "within_host_pair_ranking": 0.5769230769230769,
+        "balanced_log_loss": 0.6847491618189465,
+        "balanced_accuracy_at_0_5": 0.5278846153846154,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5227564102564103
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.5753205128205128,
+          "equal_host_auroc": 0.625,
+          "within_host_pair_ranking": 0.5961538461538461,
+          "balanced_log_loss": 0.6738326003948336,
+          "balanced_accuracy_at_0_5": 0.5288461538461539,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5288461538461539
+        },
+        "1": {
+          "pooled_auroc": 0.6169871794871795,
+          "equal_host_auroc": 0.6041666666666666,
+          "within_host_pair_ranking": 0.6346153846153846,
+          "balanced_log_loss": 0.6641310664553558,
+          "balanced_accuracy_at_0_5": 0.5608974358974359,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5608974358974359
+        },
+        "2": {
+          "pooled_auroc": 0.5277777777777778,
+          "equal_host_auroc": 0.4166666666666667,
+          "within_host_pair_ranking": 0.4166666666666667,
+          "balanced_log_loss": 0.7014935706284444,
+          "balanced_accuracy_at_0_5": 0.5833333333333333,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.5176282051282052,
+          "equal_host_auroc": 0.5208333333333334,
+          "within_host_pair_ranking": 0.4807692307692308,
+          "balanced_log_loss": 0.7064532117819249,
+          "balanced_accuracy_at_0_5": 0.4310897435897436,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4519230769230769
+        },
+        "4": {
+          "pooled_auroc": 0.5907738095238095,
+          "equal_host_auroc": 0.6875,
+          "within_host_pair_ranking": 0.7321428571428571,
+          "balanced_log_loss": 0.6841031418181013,
+          "balanced_accuracy_at_0_5": 0.5297619047619048,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5565476190476191
+        }
+      }
+    },
+    "graph_aggregates/boosted_stumps": {
+      "overall": {
+        "pooled_auroc": 0.5225,
+        "equal_host_auroc": 0.5166666666666667,
+        "within_host_pair_ranking": 0.5269230769230769,
+        "balanced_log_loss": 0.7389865879119875,
+        "balanced_accuracy_at_0_5": 0.5,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5163461538461538
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.5128205128205128,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7452620051333589,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4583333333333333
+        },
+        "1": {
+          "pooled_auroc": 0.5064102564102564,
+          "equal_host_auroc": 0.5416666666666666,
+          "within_host_pair_ranking": 0.5769230769230769,
+          "balanced_log_loss": 0.7363222231163588,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5368589743589743
+        },
+        "2": {
+          "pooled_auroc": 0.4947916666666667,
+          "equal_host_auroc": 0.4791666666666667,
+          "within_host_pair_ranking": 0.4791666666666667,
+          "balanced_log_loss": 0.7469275618089871,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.5352564102564102,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7421509780028162,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.532051282051282
+        },
+        "4": {
+          "pooled_auroc": 0.5357142857142857,
+          "equal_host_auroc": 0.5625,
+          "within_host_pair_ranking": 0.5714285714285714,
+          "balanced_log_loss": 0.7271211391748125,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5297619047619048
+        }
+      }
+    },
+    "pooled_codebert/logistic": {
+      "overall": {
+        "pooled_auroc": 0.49846153846153846,
+        "equal_host_auroc": 0.4666666666666667,
+        "within_host_pair_ranking": 0.43846153846153846,
+        "balanced_log_loss": 0.6962978909150499,
+        "balanced_accuracy_at_0_5": 0.5086538461538461,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5022435897435897
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.5256410256410257,
+          "equal_host_auroc": 0.4166666666666667,
+          "within_host_pair_ranking": 0.38461538461538464,
+          "balanced_log_loss": 0.6919502926638839,
+          "balanced_accuracy_at_0_5": 0.5256410256410257,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5288461538461539
+        },
+        "1": {
+          "pooled_auroc": 0.5192307692307693,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.46153846153846156,
+          "balanced_log_loss": 0.6941539915541556,
+          "balanced_accuracy_at_0_5": 0.546474358974359,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5288461538461539
+        },
+        "2": {
+          "pooled_auroc": 0.4756944444444444,
+          "equal_host_auroc": 0.2916666666666667,
+          "within_host_pair_ranking": 0.2916666666666667,
+          "balanced_log_loss": 0.6984646389424106,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.47435897435897434,
+          "equal_host_auroc": 0.4583333333333333,
+          "within_host_pair_ranking": 0.4230769230769231,
+          "balanced_log_loss": 0.699603284243554,
+          "balanced_accuracy_at_0_5": 0.4967948717948718,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4487179487179487
+        },
+        "4": {
+          "pooled_auroc": 0.4791666666666667,
+          "equal_host_auroc": 0.6666666666666666,
+          "within_host_pair_ranking": 0.6071428571428571,
+          "balanced_log_loss": 0.6978545642300849,
+          "balanced_accuracy_at_0_5": 0.47023809523809523,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.49702380952380953
+        }
+      }
+    },
+    "pooled_codebert/boosted_stumps": {
+      "overall": {
+        "pooled_auroc": 0.5130128205128205,
+        "equal_host_auroc": 0.5083333333333333,
+        "within_host_pair_ranking": 0.5115384615384615,
+        "balanced_log_loss": 0.7418682688272672,
+        "balanced_accuracy_at_0_5": 0.5,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5166666666666666
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.4791666666666667,
+          "equal_host_auroc": 0.4791666666666667,
+          "within_host_pair_ranking": 0.4807692307692308,
+          "balanced_log_loss": 0.7419401963094078,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.48397435897435903
+        },
+        "1": {
+          "pooled_auroc": 0.48717948717948717,
+          "equal_host_auroc": 0.5416666666666666,
+          "within_host_pair_ranking": 0.5384615384615384,
+          "balanced_log_loss": 0.747559890234125,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5048076923076923
+        },
+        "2": {
+          "pooled_auroc": 0.5173611111111112,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7385333472991381,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.5208333333333334,
+          "equal_host_auroc": 0.4791666666666667,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7436299266563235,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5016025641025641
+        },
+        "4": {
+          "pooled_auroc": 0.5491071428571429,
+          "equal_host_auroc": 0.5416666666666666,
+          "within_host_pair_ranking": 0.5357142857142857,
+          "balanced_log_loss": 0.7375503356302877,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5714285714285714
+        }
+      }
+    },
+    "combined/logistic": {
+      "overall": {
+        "pooled_auroc": 0.5276923076923077,
+        "equal_host_auroc": 0.5833333333333334,
+        "within_host_pair_ranking": 0.5846153846153846,
+        "balanced_log_loss": 0.7172672122308912,
+        "balanced_accuracy_at_0_5": 0.5028846153846154,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5112179487179487
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.5641025641025641,
+          "equal_host_auroc": 0.5416666666666666,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7288195137238239,
+          "balanced_accuracy_at_0_5": 0.5224358974358975,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5224358974358975
+        },
+        "1": {
+          "pooled_auroc": 0.4935897435897436,
+          "equal_host_auroc": 0.6666666666666666,
+          "within_host_pair_ranking": 0.6923076923076923,
+          "balanced_log_loss": 0.7363771972710839,
+          "balanced_accuracy_at_0_5": 0.48717948717948717,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.46955128205128205
+        },
+        "2": {
+          "pooled_auroc": 0.5347222222222222,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7046279776876994,
+          "balanced_accuracy_at_0_5": 0.5208333333333334,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5208333333333334
+        },
+        "3": {
+          "pooled_auroc": 0.5352564102564102,
+          "equal_host_auroc": 0.4583333333333333,
+          "within_host_pair_ranking": 0.4230769230769231,
+          "balanced_log_loss": 0.7122149009665513,
+          "balanced_accuracy_at_0_5": 0.4519230769230769,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.5080128205128205
+        },
+        "4": {
+          "pooled_auroc": 0.6011904761904762,
+          "equal_host_auroc": 0.75,
+          "within_host_pair_ranking": 0.7857142857142857,
+          "balanced_log_loss": 0.7132718462088622,
+          "balanced_accuracy_at_0_5": 0.5178571428571428,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5178571428571428
+        }
+      }
+    },
+    "combined/boosted_stumps": {
+      "overall": {
+        "pooled_auroc": 0.5069230769230769,
+        "equal_host_auroc": 0.5,
+        "within_host_pair_ranking": 0.5,
+        "balanced_log_loss": 0.7393133171524399,
+        "balanced_accuracy_at_0_5": 0.5,
+        "n_hosts": 60,
+        "n_pairs": 130,
+        "balanced_accuracy_at_training_selected_threshold": 0.5189102564102563
+      },
+      "folds": {
+        "0": {
+          "pooled_auroc": 0.4935897435897436,
+          "equal_host_auroc": 0.4583333333333333,
+          "within_host_pair_ranking": 0.46153846153846156,
+          "balanced_log_loss": 0.742113778408665,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4791666666666667
+        },
+        "1": {
+          "pooled_auroc": 0.483974358974359,
+          "equal_host_auroc": 0.5625,
+          "within_host_pair_ranking": 0.5769230769230769,
+          "balanced_log_loss": 0.7440264665187494,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.4903846153846154
+        },
+        "2": {
+          "pooled_auroc": 0.4791666666666667,
+          "equal_host_auroc": 0.4583333333333333,
+          "within_host_pair_ranking": 0.4583333333333333,
+          "balanced_log_loss": 0.7410595268237061,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 24,
+          "balanced_accuracy_at_training_selected_threshold": 0.5
+        },
+        "3": {
+          "pooled_auroc": 0.5352564102564102,
+          "equal_host_auroc": 0.5,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7442261688147143,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 26,
+          "balanced_accuracy_at_training_selected_threshold": 0.532051282051282
+        },
+        "4": {
+          "pooled_auroc": 0.5386904761904762,
+          "equal_host_auroc": 0.5208333333333334,
+          "within_host_pair_ranking": 0.5,
+          "balanced_log_loss": 0.7270168165459118,
+          "balanced_accuracy_at_0_5": 0.5,
+          "n_hosts": 12,
+          "n_pairs": 28,
+          "balanced_accuracy_at_training_selected_threshold": 0.5654761904761905
+        }
+      }
+    }
+  }
+}

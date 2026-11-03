@@ -1,0 +1,89 @@
+{
+  "balanced_mixed": {
+    "circuits": 224,
+    "negative": 112,
+    "positive": 112
+  },
+  "conclusion": "Class balance and family separation pass. Size, repeated hosts, synthesis flow, and unverified attack behavior remain limitations.",
+  "fold_test_balance": [
+    {
+      "families": [
+        "AES"
+      ],
+      "fold": 0,
+      "negative": 17,
+      "positive": 17
+    },
+    {
+      "families": [
+        "MC8051",
+        "s38584"
+      ],
+      "fold": 1,
+      "negative": 9,
+      "positive": 9
+    },
+    {
+      "families": [
+        "PIC16F84",
+        "b19",
+        "memctrl"
+      ],
+      "fold": 2,
+      "negative": 8,
+      "positive": 8
+    },
+    {
+      "families": [
+        "RS232",
+        "s15850",
+        "s35932"
+      ],
+      "fold": 3,
+      "negative": 8,
+      "positive": 8
+    },
+    {
+      "families": [
+        "b15",
+        "s38417"
+      ],
+      "fold": 4,
+      "negative": 7,
+      "positive": 7
+    }
+  ],
+  "full_registry": {
+    "circuits": 279,
+    "negative": 167,
+    "positive": 112
+  },
+  "trusthub_primary": {
+    "circuits": 98,
+    "clean_source_bundles_by_family": {
+      "AES": 2,
+      "MC8051": 7,
+      "PIC16F84": 1,
+      "RS232": 1,
+      "b15": 1,
+      "b19": 3,
+      "memctrl": 1,
+      "s15850": 1,
+      "s35932": 1,
+      "s38417": 1,
+      "s38584": 1
+    },
+    "distinct_clean_source_bundles": 20,
+    "families": 11,
+    "negative": 49,
+    "positive": 49
+  },
+  "trusthub_size_control": {
+    "edge_count_auc_untrained": 0.5814244064972928,
+    "node_count_auc_untrained": 0.5835068721366098,
+    "paired_node_count_sign": {
+      "positive_larger": 43,
+      "positive_smaller": 6
+    }
+  }
+}
